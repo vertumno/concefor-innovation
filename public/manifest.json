@@ -1,0 +1,17 @@
+{
+  "name": "VIII Concefor",
+  "short_name": "Concefor",
+  "description": "Programação, reações ao vivo e a sua linha do tempo do VIII Concefor.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#13123a",
+  "theme_color": "#13123a",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

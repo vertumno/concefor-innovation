@@ -1,0 +1,215 @@
+:root {
+  --bg: #13123a;
+  --bg-2: #1c1b4e;
+  --surface: #211f57;
+  --ink: #f4f3ff;
+  --ink-dim: #b9b6e0;
+  --accent: #f3a712;
+  --line: #36336f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  /* Placeholder da identidade: malha de quadradinhos do selo 20 anos.
+     Trocar pelos assets finais (ver contexto/identidade-selo.md). */
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-attachment: fixed;
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-shell {
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100dvh;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: rgba(19, 18, 58, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.brand strong {
+  color: var(--accent);
+}
+
+.topnav {
+  display: flex;
+  gap: 16px;
+}
+.topnav a {
+  color: var(--ink-dim);
+  text-decoration: none;
+  font-size: 14px;
+}
+.topnav a:hover {
+  color: var(--ink);
+}
+
+.content {
+  padding: 18px;
+}
+
+h1.page-title {
+  font-size: 22px;
+  margin: 4px 0 2px;
+}
+.page-sub {
+  color: var(--ink-dim);
+  margin: 0 0 18px;
+  font-size: 14px;
+}
+
+.section-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin: 22px 0 10px;
+}
+
+.card {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.card-body {
+  padding: 12px 14px;
+  flex: 1;
+  min-width: 0;
+}
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ink-dim);
+  align-items: center;
+}
+.card-title {
+  font-size: 16px;
+  margin: 6px 0 2px;
+  line-height: 1.3;
+}
+.card-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.card-sub {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-dim);
+}
+.chip {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+
+.star {
+  border: none;
+  background: transparent;
+  color: var(--ink-dim);
+  font-size: 22px;
+  padding: 0 14px;
+  cursor: pointer;
+}
+.star-on {
+  color: var(--accent);
+}
+
+.banner {
+  display: block;
+  background: linear-gradient(135deg, #2a9d8f, #06d6a0);
+  color: #04241f;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.banner small {
+  display: block;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.empty {
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  color: var(--ink-dim);
+  text-align: center;
+  font-size: 14px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.filter-row select,
+.filter-row input {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  padding: 8px 10px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.day-head {
+  font-size: 14px;
+  color: var(--ink);
+  margin: 18px 0 8px;
+  text-transform: capitalize;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+}
+
+.notice {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  color: var(--ink-dim);
+}
+.notice strong {
+  color: var(--ink);
+}
