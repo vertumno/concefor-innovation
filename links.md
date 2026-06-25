@@ -11,6 +11,7 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 
 - **Site oficial:** https://concefor.cefor.ifes.edu.br/
 - **Cefor/IFES:** <link institucional>
+- **Plataforma de inscrição — Even3** (API p/ identidade na fase 2): `<link do evento no Even3>` — confirmar acesso/credenciais da API
 
 ## Drive
 

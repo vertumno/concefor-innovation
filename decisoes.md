@@ -4,6 +4,32 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-06-25 — Identidade dos participantes: fica fase 2, v1 segue anônimo
+
+**Decisão:** o v1 permanece **100% anônimo** (`client_id` no dispositivo, sem PII). A integração com
+a plataforma de inscrição (**Even3**) para identificar quem é quem — puxar inscritos por API e
+**login/check-in via QR do crachá + e-mail** — é **fase 2**.
+
+**Por quê:** identidade destrava coisas boas (timeline pessoal identificada, "quem está no evento",
+networking), mas traz dependência de API externa e cuidado de LGPD/consentimento — risco que não
+combina com "causar com simplicidade" na janela curta. O v1 entrega valor sem saber nomes: a
+identidade anônima consistente (avatar/cor por `client_id`, estilo Google Docs) já dá personalidade
+às reações. Surgiu na conversa de 25/06 (Marquito + Elton). Ver `spec/app-v1.md` §8.
+
+---
+
+## 2026-06-25 — "Minha programação" (favoritos) entra no v1
+
+**Decisão:** favoritar sessões + **banner "não perca"** (avisa quando uma favorita está chegando)
+entram no v1, dentro da feature de programação viva. Funciona **anônimo, no dispositivo**
+(localStorage por `client_id`) — sem login, sem mudança de esquema.
+
+**Por quê:** é a "linha do tempo pessoal que o participante leva pra casa" — o coração do conceito
+dos 20 anos — e custa pouco (cai da timeline que já estamos construindo, sem backend novo). Marquito
+tratou disso quase como parte natural da programação na conversa de 25/06. Ver `spec/app-v1.md` §4.1.
+
+---
+
 ## 2026-06-25 — Escopo do app v1: 3 coisas, nada mais
 
 **Decisão:** o v1 do app entrega exatamente três coisas:

@@ -55,6 +55,15 @@ o ponto que mantém o app simples enquanto cresce.
 - Telas: **Agora** (sessões em andamento), **A seguir**, e **grade/linha do tempo** completa.
 - Filtro por **eixo** e **sala**. Busca por título/palestrante.
 - Detalhe da sessão (descrição, sala, horário, palestrante).
+- **Navegação por timeline com zoom** (interação tipo componente de calendário): rola pra cima/baixo,
+  marcador "você está aqui / presente" (passado pra trás, próximo chegando), e zoom in/out por nível
+  de tempo (dia → hora → ~10 min). No zoom-out dá pra ver a linha inteira dos 4 dias e saltar pro
+  ponto que importa. Layout espinha-dorsal: a linha oficial (sessões/sistema) de um lado, e (quando
+  houver reações na fase de telão) o engajamento do público do outro — uma curva ajuda a achar os picos.
+- **Favoritar sessões / "minha programação"**: a programação oficial vem por padrão; o participante
+  marca favoritos e o app monta a linha do tempo pessoal dele. **Banner "não perca"**: avisa quando
+  uma sessão favoritada está chegando (ex.: falta ~1h). Tudo **anônimo, no dispositivo** (localStorage
+  por `client_id`) — sem login, sem PII. É o "o que ele leva pra casa".
 - Fonte dos dados: tabela `sessions` (importada da programação oficial — ver `links.md`).
 - **Sem login** para navegar.
 
@@ -63,8 +72,11 @@ o ponto que mantém o app simples enquanto cresce.
 - Na tela da sessão em andamento, botões de **reação** (ex.: ❤️ 👏 👍). Toque grava um
   `timeline_events(tipo='reaction')` e publica no canal Realtime da sessão.
 - **Modo telão** (`/telao` ou `/telao/[sessionId]`): tela grande projetada que **agrega e anima**
-  as reações em tempo real (bolhas subindo / contadores / picos). Roda em navegador num PC ligado
-  ao projetor.
+  as reações em tempo real. Direção visual: um **"batimento cardíaco"** — uma linha que corre e dá
+  um pulso a cada reação (inspiração nas reações ao vivo do LinkedIn). Roda em navegador num PC
+  ligado ao projetor; pode haver **mais de uma tela** (palco + TVs laterais).
+- **Identidade anônima consistente:** cada `client_id` ganha um avatar/cor estável (estilo "animal"
+  anônimo do Google Docs) — dá personalidade às reações sem coletar PII.
 - Anti-flood simples: throttle por `client_id` (ex.: máx N reações/segundo).
 - **Fallback físico:** se a rede do evento falhar, plaquinhas (joinha/coração) impressas garantem
   o momento "festa" sem depender do app. Registrar o fallback no roteiro do evento.
@@ -100,6 +112,23 @@ real · networking por QR do crachá · gamificação (pontos/emblemas) · AR/Ea
 instagramável (foto na timeline) · animações Remotion em tempo real · mosaico/grafo nos
 quadradinhos do selo. Justificativas em `contexto/brainstorm/sintese-ideias.md`. Vários são
 destravados pela IA local.
+
+Novidades da conversa de 25/06 (Marquito + Elton):
+
+- **Identidade via plataforma de inscrição** (**Even3** — ver `links.md`): puxar a lista de inscritos
+  pela API do Even3 e permitir associar o `client_id` ao ID do inscrito via **QR do crachá + e-mail**
+  (login/check-in). Destrava "quem está no evento", timeline pessoal identificada e o networking.
+  **Fica fase 2** — v1 segue 100% anônimo (ver `decisoes.md` 25/06). Envolve LGPD.
+- **Parede de insights via IA local:** mais que transcrição crua — a IA gera frases/insights do que
+  está rolando na palestra (fala + reações + comentários) numa tela secundária. Posts público/
+  privado (começar só público); moderação de palavrão pela IA local (block). Pode casar com as
+  animações Remotion na TV (animação + frase que "entrou" na plataforma).
+- **QR codes físicos como reações:** QR espalhados pelo evento que já *são* uma reação ("todo meu
+  amor", "meu respeito") e caem na mesma timeline — reagir fora do app. Vizinho dos **Easter eggs**
+  (achar QR → emblema).
+- **Questão de design em aberto:** como representar **sessões simultâneas** (várias salas no mesmo
+  instante) na timeline — várias "raias" no mesmo tempo. Decisão adiada de propósito: começar simples
+  e entender com o **primeiro protótipo** rodando, em vez de teorizar agora.
 
 ## 9. Cronograma macro (até 17/08)
 
