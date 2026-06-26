@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { SessionCard } from "@/components/SessionCard";
 import { getFavorites, toggleFavorite } from "@/lib/favorites";
 import { fetchSessions, formatDia } from "@/lib/sessions";
+import { useEventClock } from "@/lib/clock";
 import type { Session } from "@/lib/types";
 
 export default function TimelinePage() {
@@ -12,6 +13,7 @@ export default function TimelinePage() {
   const [eixo, setEixo] = useState("");
   const [busca, setBusca] = useState("");
   const [soFavoritos, setSoFavoritos] = useState(false);
+  const now = useEventClock(1000);
 
   useEffect(() => {
     fetchSessions().then(setSessions);
@@ -89,22 +91,26 @@ export default function TimelinePage() {
 
       {filtradas.length === 0 && (
         <div className="empty">
-          Nenhuma sessão para os filtros atuais. Configure o Supabase e rode o seed para ver a
-          programação.
+          Nenhuma sessão para os filtros atuais. Rode <code>npm run dev:demo</code> para a
+          programação de demonstração, ou configure o Supabase.
         </div>
       )}
 
       {porDia.map(([dia, lista]) => (
         <section key={dia}>
           <h2 className="day-head">{dia}</h2>
-          {lista.map((s) => (
-            <SessionCard
-              key={s.id}
-              session={s}
-              favorito={favoritos.has(s.id)}
-              onToggleFavorito={onToggle}
-            />
-          ))}
+          <ol className="timeline">
+            {lista.map((s, i) => (
+              <SessionCard
+                key={s.id}
+                session={s}
+                now={now}
+                index={i}
+                favorito={favoritos.has(s.id)}
+                onToggleFavorito={onToggle}
+              />
+            ))}
+          </ol>
         </section>
       ))}
     </>

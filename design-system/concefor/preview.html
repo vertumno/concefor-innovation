@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Design System — Concefor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./tokens.css" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--cf-font-body);
+    color: var(--cf-ink);
+    background: var(--cf-paper);
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 80px; }
+  .eyebrow {
+    font-family: var(--cf-font-display);
+    text-transform: uppercase;
+    letter-spacing: var(--cf-tracking-eyebrow);
+    font-size: var(--cf-text-sm);
+    color: var(--cf-teal-500);
+    font-weight: 600;
+  }
+  h2 { font-family: var(--cf-font-display); text-transform: uppercase; letter-spacing: var(--cf-tracking-title);
+       font-size: var(--cf-text-xl); margin: 8px 0 18px; }
+  section { margin-top: 56px; }
+
+  /* Hero */
+  .hero {
+    background: var(--cf-gradient);
+    color: var(--cf-white);
+    padding: 72px 24px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero .inner { max-width: 1080px; margin: 0 auto; position: relative; z-index: 2; }
+  .hero .eyebrow { color: var(--cf-cyan-300); }
+  .hero h1 {
+    font-family: var(--cf-font-display);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1.02;
+    font-size: clamp(2.2rem, 6vw, var(--cf-text-3xl));
+    margin: 12px 0 14px;
+    max-width: 16ch;
+  }
+  .hero p { color: rgba(255,255,255,.82); max-width: 48ch; font-size: var(--cf-text-lg); margin: 0 0 26px; }
+  .date-chip {
+    display: inline-block; background: var(--cf-gold); color: var(--cf-navy-900);
+    font-family: var(--cf-font-display); text-transform: uppercase; font-weight: 600;
+    letter-spacing: .04em; padding: 9px 16px; border-radius: var(--cf-radius-pill);
+    font-size: var(--cf-text-sm);
+  }
+  /* mosaic dots floating in hero */
+  .mosaic { position: absolute; top: 26px; right: 28px; display: grid; grid-template-columns: repeat(4, 16px);
+            grid-auto-rows: 16px; gap: 7px; z-index: 1; opacity: .9; }
+  .mosaic i { border-radius: 3px; display: block; }
+  .horizon { position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+             background: linear-gradient(90deg, transparent, var(--cf-cyan-300), transparent); }
+
+  /* Swatches */
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 14px; }
+  .sw { border-radius: var(--cf-radius-md); overflow: hidden; border: 1px solid var(--cf-line-ink); background: #fff; }
+  .sw .chip { height: 78px; }
+  .sw .meta { padding: 10px 12px; font-size: var(--cf-text-xs); }
+  .sw .meta b { display: block; font-size: var(--cf-text-sm); font-family: var(--cf-font-body); }
+  .sw .hex { color: var(--cf-ink-dim); font-variant-numeric: tabular-nums; }
+
+  .gradient-bar { height: 64px; border-radius: var(--cf-radius-md); background: var(--cf-gradient); margin-bottom: 12px; }
+  .gradient-band { height: 44px; border-radius: var(--cf-radius-md); background: var(--cf-gradient-band); }
+
+  /* Type scale */
+  .type-row { display:flex; align-items:baseline; gap:18px; border-bottom:1px solid var(--cf-line-ink); padding:12px 0; }
+  .type-row .tag { width: 64px; color: var(--cf-ink-dim); font-size: var(--cf-text-xs); flex: none; }
+  .type-row .ex { font-family: var(--cf-font-display); text-transform: uppercase; }
+
+  /* Components */
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 720px){ .grid2 { grid-template-columns: 1fr; } }
+  .card {
+    background: #fff; border: 1px solid var(--cf-line-ink); border-radius: var(--cf-radius-lg);
+    padding: 18px 20px; box-shadow: var(--cf-shadow);
+  }
+  .live { display:inline-flex; align-items:center; gap:7px; background: var(--cf-gold); color: var(--cf-navy-900);
+          font-family: var(--cf-font-display); text-transform: uppercase; font-weight:600; letter-spacing:.05em;
+          font-size: var(--cf-text-xs); padding: 5px 11px; border-radius: var(--cf-radius-pill); }
+  .live::before { content:""; width:7px; height:7px; border-radius:50%; background: var(--cf-navy-900); }
+  .card h3 { font-family: var(--cf-font-display); text-transform: uppercase; margin: 12px 0 4px; font-size: var(--cf-text-lg); }
+  .card p { margin: 0; color: var(--cf-ink-dim); font-size: var(--cf-text-sm); }
+  .btn { display:inline-block; margin-top:14px; background: var(--cf-navy-800); color:#fff; text-decoration:none;
+         font-family: var(--cf-font-display); text-transform:uppercase; letter-spacing:.04em; font-weight:600;
+         padding: 11px 18px; border-radius: var(--cf-radius-pill); font-size: var(--cf-text-sm); }
+  .btn.gold { background: var(--cf-gold); color: var(--cf-navy-900); }
+
+  .darkcard { background: var(--cf-gradient); color:#fff; border:none; }
+  .darkcard p { color: rgba(255,255,255,.8); }
+
+  .note { font-size: var(--cf-text-sm); color: var(--cf-ink-dim); background:#fff;
+          border:1px dashed var(--cf-line-ink); border-radius: var(--cf-radius-md); padding: 14px 16px; }
+  img.banner { width: 100%; border-radius: var(--cf-radius-lg); display:block; border:1px solid var(--cf-line-ink); }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="mosaic">
+      <i style="background:var(--cf-mosaic-lime)"></i>
+      <i style="background:var(--cf-cyan-300)"></i>
+      <i style="background:var(--cf-mosaic-chartreuse)"></i>
+      <i style="background:var(--cf-mosaic-magenta)"></i>
+      <i style="background:var(--cf-mosaic-cyan)"></i>
+      <i style="background:var(--cf-gold)"></i>
+      <i style="background:var(--cf-mosaic-lime)"></i>
+      <i style="background:var(--cf-cyan-300)"></i>
+    </div>
+    <div class="inner">
+      <div class="eyebrow">Design System · Marca base do evento</div>
+      <h1>Tecnologia, Transformação e Educação a Distância</h1>
+      <p>20 anos construindo novos cenários educacionais. A identidade do VIII Concefor: gradiente oceano, navy ao ciano, com destaque âmbar para o que importa agora.</p>
+      <span class="date-chip">17 a 20 de agosto de 2026</span>
+    </div>
+    <div class="horizon"></div>
+  </header>
+
+  <div class="wrap">
+    <section>
+      <div class="eyebrow">Origem</div>
+      <h2>Banner oficial</h2>
+      <img class="banner" src="./assets/banner.png" alt="Banner oficial do Concefor" />
+      <p class="note" style="margin-top:14px">Cores amostradas por pixel deste banner. Tipografia dos títulos <b>inferida</b> (Oswald como substituta web) — a página do Concefor não publica manual de identidade.</p>
+    </section>
+
+    <section>
+      <div class="eyebrow">Cores</div>
+      <h2>Paleta</h2>
+      <div class="swatches">
+        <div class="sw"><div class="chip" style="background:var(--cf-navy-900)"></div><div class="meta"><b>Navy 900</b><span class="hex">#102A5C</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-navy-800)"></div><div class="meta"><b>Navy 800</b><span class="hex">#173B79 · primário</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-blue-600)"></div><div class="meta"><b>Blue 600</b><span class="hex">#1E5A8C</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-teal-500)"></div><div class="meta"><b>Teal 500</b><span class="hex">#0E8FA8</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-cyan-400)"></div><div class="meta"><b>Cyan 400</b><span class="hex">#00C9C9</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-cyan-300)"></div><div class="meta"><b>Cyan 300</b><span class="hex">#00DDCA</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-gold)"></div><div class="meta"><b>Gold</b><span class="hex">#F5B82E · acento</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-ink)"></div><div class="meta"><b>Ink</b><span class="hex">#0E2240</span></div></div>
+      </div>
+      <h2 style="margin-top:28px">Gradientes</h2>
+      <div class="gradient-bar"></div>
+      <div class="gradient-band"></div>
+      <h2 style="margin-top:28px">Mosaico festivo <span style="font-size:13px;font-family:var(--cf-font-body);text-transform:none;color:var(--cf-ink-dim)">— uso pontual</span></h2>
+      <div class="swatches">
+        <div class="sw"><div class="chip" style="background:var(--cf-mosaic-lime)"></div><div class="meta"><b>Lime</b><span class="hex">#7AB51D</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-mosaic-magenta)"></div><div class="meta"><b>Magenta</b><span class="hex">#D6004B</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-mosaic-cyan)"></div><div class="meta"><b>Cyan</b><span class="hex">#0AB4C4</span></div></div>
+        <div class="sw"><div class="chip" style="background:var(--cf-mosaic-chartreuse)"></div><div class="meta"><b>Chartreuse</b><span class="hex">#C9D400</span></div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="eyebrow">Tipografia</div>
+      <h2>Oswald (títulos) · Inter (corpo)</h2>
+      <div class="type-row"><span class="tag">56px</span><span class="ex" style="font-size:56px;font-weight:700">Concefor</span></div>
+      <div class="type-row"><span class="tag">40px</span><span class="ex" style="font-size:40px;font-weight:700">Programação</span></div>
+      <div class="type-row"><span class="tag">28px</span><span class="ex" style="font-size:28px;font-weight:600">Ao vivo no telão</span></div>
+      <div class="type-row"><span class="tag">16px</span><span style="font-size:16px">Corpo em Inter — legível, neutro, para descrições de sessões e textos longos do app.</span></div>
+    </section>
+
+    <section>
+      <div class="eyebrow">Componentes</div>
+      <h2>Aplicação</h2>
+      <div class="grid2">
+        <div class="card">
+          <span class="live">Agora</span>
+          <h3>Abertura · Auditório</h3>
+          <p>14h00 — 15h30. Mesa de abertura dos 20 anos do Cefor.</p>
+          <a class="btn gold" href="#">Ver na linha do tempo</a>
+        </div>
+        <div class="card darkcard">
+          <span class="eyebrow" style="color:var(--cf-cyan-300)">O que vem</span>
+          <h3 style="color:#fff">Painel · EaD em 2046</h3>
+          <p>16h00 — Tendências para os próximos 20 anos.</p>
+          <a class="btn" href="#" style="background:#fff;color:var(--cf-navy-900)">Detalhes</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

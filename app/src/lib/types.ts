@@ -6,9 +6,21 @@ export type Session = {
   descricao: string | null;
   sala: string | null;
   eixo: string | null;
-  palestrante: string | null;
+  palestrante: string | null; // resumo textual (fallback); detalhe vem de speakerIds
+  speakerIds?: string[]; // palestrantes estruturados (ver Speaker)
   inicio: string; // ISO timestamptz
   fim: string | null;
+};
+
+// Palestrante como entidade estruturada (não só texto). bio/foto ficam prontos
+// para preencher — não inventamos dados de pessoas reais.
+export type Speaker = {
+  id: string;
+  nome: string;
+  titulo: string | null; // "Profa. Dra.", "Prof. Dr.", "Dra." …
+  instituicao: string | null;
+  bio: string | null;
+  foto: string | null; // URL da foto, quando houver
 };
 
 export type ReactionKind = "heart" | "clap" | "like" | "down";

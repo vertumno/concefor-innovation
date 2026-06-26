@@ -4,6 +4,45 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-06-26 — App: linha do tempo viva, timestamp visual e demo com a programação oficial
+
+**Decisão:** o app passou a ser, visualmente, uma **linha do tempo** (espinha + nós), não uma
+lista. Criamos um **timestamp visual** (a hora como nó na linha) — assinatura temporal usada em
+tudo que tem hora, materializando o princípio "timestamp em tudo". A **demo** usa a **programação
+oficial** (17–20/08) com um **relógio de demonstração** (o "agora" é simulado dentro do evento,
+correndo em tempo real), via flag opt-in `NEXT_PUBLIC_DEMO` (`npm run dev:demo`).
+
+Outras decisões da rodada:
+- **"AO VIVO"** no **vermelho do Concefor** (`#D6004B`); a estrutura da timeline (hora, nó, barra)
+  fica no cyan. Sessões passadas ficam mais discretas; a bolinha "agora" pulsa (escala).
+- **Palestrantes** viram **entidade estruturada** (tabela `speakers` no schema; tipo `Speaker`
+  com `bio`/`foto` a preencher) — sem inventar dados de pessoas reais.
+- O **Telão sai da navegação** do app (responde em outra URL própria); entra a aba
+  **Informações** (local, hospedagem, alimentação).
+
+**Por quê:** reforçar o conceito-espinha (passagem do tempo / 20 anos) e deixar a demo "viva" para
+apresentar. Ideias de evolução (reações na bolinha, onda, zoom-out, fenda temporal) ficam para a
+**semana 3** — ver `design-system/app/roadmap.md`.
+
+---
+
+## 2026-06-26 — Identidade visual: design system + app vestido (Concefor base, selo acento)
+
+**Decisão:** criados dois design systems de marca em `design-system/` — **Concefor** (base, do banner
+oficial) e **selo 20 anos** (acento, do Manual de Identidade Visual oficial) — e um terceiro,
+**design system do app**, que traduz as duas marcas em **tokens semânticos** (`app/src/app/tokens.css`).
+O app foi remarcado: tema escuro navy (oceano Concefor), gold para "o que importa agora", Oswald+Inter,
+selo branco na topbar e selo colorido como ícone do PWA. Hierarquia travada: **Concefor governa, selo é
+acento comemorativo pontual** (só a borda da topbar usa o gradiente do selo).
+
+**Por quê:** o app tinha um placeholder roxo/índigo sem relação com a identidade real do evento. Separar
+*marca* (referência) de *tokens do app* (aplicação) deixa a remarcação futura num arquivo só
+(`tokens.css`), sem cor solta espalhada. Cores do selo são exatas do manual; as do Concefor foram
+amostradas do banner (tipografia dos títulos é inferência — Oswald — a confirmar com o arquivo-fonte).
+Ver `design-system/README.md` e `design-system/app/README.md`.
+
+---
+
 ## 2026-06-25 — Identidade dos participantes: fica fase 2, v1 segue anônimo
 
 **Decisão:** o v1 permanece **100% anônimo** (`client_id` no dispositivo, sem PII). A integração com

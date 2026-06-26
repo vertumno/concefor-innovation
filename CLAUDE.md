@@ -35,6 +35,9 @@ concefor-innovation/
 │   ├── identidade-selo.md    (selo 20 anos, animações Remotion)
 │   ├── livro/                (Livro Cefor 20 anos — fonte de conteúdo)
 │   └── brainstorm/           (transcrição original + síntese curada das ideias)
+├── design-system/            (identidade visual: Concefor base + selo 20 anos acento)
+│   ├── concefor/             (tokens.css/json, preview.html, README)
+│   └── selo-20-anos/         (idem + manual oficial em assets/)
 ├── spec/
 │   └── app-v1.md             (especificação do app)
 └── app/                      (código do PWA — Next.js + Supabase)
@@ -46,6 +49,7 @@ concefor-innovation/
 |---|---|
 | Entender o evento | `contexto/evento.md` |
 | Ver o que vamos construir | `spec/app-v1.md` |
+| Ver cores, tipografia e tokens da identidade | `design-system/` |
 | Entender por que cortamos uma ideia | `contexto/brainstorm/sintese-ideias.md` |
 | Saber onde está um arquivo/recurso | `links.md` |
 | Ver decisões e seus porquês | `decisoes.md` |

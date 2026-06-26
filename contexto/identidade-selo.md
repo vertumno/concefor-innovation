@@ -1,7 +1,20 @@
 # Identidade visual — selo 20 anos
 
-> **Placeholder.** Os assets oficiais (selo dos 20 anos, paleta, tipografia, banner) ainda serão
-> incorporados. Atualizar este arquivo quando chegarem.
+> **Atualizado (26/06/2026).** Paleta, tipografia e regras oficiais já estão incorporadas como
+> **design system** em [`design-system/`](../design-system/) — dois sistemas: **Concefor** (base do
+> evento) e **selo 20 anos** (acento comemorativo). Este arquivo guarda o contexto/raciocínio; os
+> tokens e specs visuais vivem lá. Falta ainda baixar o vetor do selo (ver `links.md`).
+
+## Resumo da identidade (fonte oficial)
+
+- **Selo 20 anos** — cores exatas do manual: magenta `#FF66CC`, azul `#3399CC`, verde `#3C9035`,
+  cinza `#595C5A`; gradiente 45° (magenta 0% → azul 86% → verde 99%); tipografia Futura
+  (substituta web: Jost). Conceito: diversidade, conexão, unicidade, tecnologia, crescimento.
+  Slogan: *"20 anos de conexões que ampliam horizontes."*
+- **Concefor** — gradiente oceano navy `#173B79` → teal `#0E8FA8` → ciano `#00C9C9`, acento âmbar
+  `#F5B82E`; títulos em sans condensada (Oswald, inferido). É a base sóbria; o selo é o acento festivo.
+
+Detalhes completos, tokens (`tokens.css`/`.json`) e preview visual: [`design-system/`](../design-system/).
 
 ## Selo dos 20 anos
 
