@@ -21,6 +21,28 @@ create index if not exists idx_sessions_inicio on sessions (inicio);
 create index if not exists idx_sessions_eixo   on sessions (eixo);
 
 -- =========================================================
+-- speakers: palestrantes como entidade estruturada
+-- (não só texto). bio/foto a preencher quando houver.
+-- =========================================================
+create table if not exists speakers (
+  id          uuid primary key default gen_random_uuid(),
+  nome        text not null,
+  titulo      text,                 -- "Profa. Dra.", "Prof. Dr.", "Dra." …
+  instituicao text,
+  bio         text,
+  foto        text,                 -- URL da foto
+  created_at  timestamptz not null default now()
+);
+
+-- relação N:N: uma mesa-redonda tem vários palestrantes; um palestrante
+-- pode estar em várias sessões.
+create table if not exists session_speakers (
+  session_id uuid references sessions(id)  on delete cascade,
+  speaker_id uuid references speakers(id)  on delete cascade,
+  primary key (session_id, speaker_id)
+);
+
+-- =========================================================
 -- timeline_events: todo evento da linha do tempo
 -- v1 usa tipo='reaction'; fase 2 estende (pergunta, foto, anotacao, checkin...)
 -- sem PII no v1 (client_id é id anônimo de dispositivo)
