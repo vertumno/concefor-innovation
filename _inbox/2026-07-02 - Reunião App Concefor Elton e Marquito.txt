@@ -1,0 +1,138 @@
+# 2026-07-02 - Reunião App Concefor Elton e Marquito
+
+  Meeting started: 02/07/2026, 14:31:42
+  Duration: 28 minutes
+  Participants: Elton Vinicius, Marcos Vinicius Forecchi Accioly
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/rdRdc9uq23RMD8ST5YCW?o=txt)
+
+    
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Elton Vinicius: Agora temos Facebook. Por uma semana. É pessoal Pô, eu estou agendando só no meu pessoal.
+00:28 Marcos Vinicius Forecchi Accioly: Entrei.
+00:40 Elton Vinicius: Não tô te ouvindo.
+00:46 Marcos Vinicius Forecchi Accioly: Talvez seu fone, está mudado aí.
+02:22 Marcos Vinicius Forecchi Accioly: Que eu tenho que fazer aqui mesmo te mostrar o negócio, né?
+02:26 Elton Vinicius: Achei que você tava abrindo.
+02:28 Marcos Vinicius Forecchi Accioly: Não. Perdido mesmo. E acho que minhas coisas não foram todas não velho.
+03:09 Elton Vinicius: esse negócio
+03:11 Marcos Vinicius Forecchi Accioly: Tô achando que não. Tá tenso.
+03:41 Marcos Vinicius Forecchi Accioly: Deixa ele dar uma olhada aqui, como é que tá? Espera aí?
+04:01 Marcos Vinicius Forecchi Accioly: Só instalar que as dependências. Entendeu? Já tá subindo aqui, vamos ver se vai funcionar.
+04:36 Marcos Vinicius Forecchi Accioly: É só para gente falando o que que a gente tinha calma. para você Saber já que você não abriu assim para poder conferir e tal, né?
+04:55 Elton Vinicius: Ele falou eu dei uma pesquisada aqui, só não consegui ver.
+05:00 Marcos Vinicius Forecchi Accioly: Que é isso a coisa da programação vive uma coisa agora depois né? Que horas são? Onde eu tô o que que vem em seguida? Também a coisa das reações ao vivo no telão. E a coisa do dashboard. E aí tem outras ideias, cara que eu já tinha trazido, entendeu então Perguntas as palestras com a Pivot anônimo mais um filtro anotação colaborativa que aquilo que a gente fez só um evento transcrição em tempo real networking porque é recorde do crachá, já tá tudo aqui gameficação de pontos emblemas realidade aumentada Easter Egg mini games essas coisas passam. Tá gravado com câmera própria as animações do remoxo de assuntos como se você não vende palavras alguma coisa assim agora não sei se isso né? Vai entrar ou não, o que que foi descartado era a interface tangíveis a coisa do livro.
+05:52 Marcos Vinicius Forecchi Accioly: Vivo também é coisa do óculos VR e histórias do Instagram para o Story gigante no telão. Por enquanto isso aqui não tá não tá funcionando, tá? O que tá indo para destravar são as coisas que estão aqui mais ou menos. Então o que foi feita até agora foi uma parte de programação Vivo agora depois aí tem que fazer a parte da reação ao vivo agora no telão.
+06:24 Marcos Vinicius Forecchi Accioly: E seria do app de tipo assim indicações de restaurante essas coisas que você precisa, né? indica restaurante Deixa eu ver se vai rodar aqui o app moderno, ele estava subindo aí foi? Deixa eu compartilhar aqui com você. Então, ele tá assim, né? Tá daquele jeito é né? Ele já fez pequeno, entendeu? Não é muito para usar no navegador é para usar no celular, né? Desde de um jeito que vai para o celular que que ele fez de interessante aqui que eu achei legal que eu fui mexendo mexendo mexendo. Já Deu uma mudada primeiro que ele já tá com a identidade visual, né? Pegou a questão dos 20 anos. Botou. Né já Essa parte a segunda.
+07:15 Elton Vinicius: Tá com alguma coisa dentro de visual ali, né?
+07:18 Marcos Vinicius Forecchi Accioly: Tá com alguma coisa, ele tá com rosa para o verde, tá vendo aqui em cima, Barrinha o azul. Tá com essa coisa aí que Ele misturou um pouco a identidade do concephor com a identidade dos 20 anos. Ele não fez em cima da identidade dos 20 anos fez basicamente do concerto. Só que tem uma menção aos 20 anos tem o selo aqui, tá vendo? Tem também as Barrinhas Rosa essas coisas.
+07:42 Elton Vinicius: Eu só não achei que o azul ficou legal assim, né? Mas
+07:45 Marcos Vinicius Forecchi Accioly: É porque é do que você for, né? Cara? É o azul do que você for tá? Os que André tá usando com aquela com aquela paleta aquela paleta de um azul mais claro para um azul escuro.
+07:57 Elton Vinicius: Aqui para poder.
+07:58 Marcos Vinicius Forecchi Accioly: Tem que pensar tem que pensar que é isso aqui, né?
+08:04 Elton Vinicius: É porque não.
+08:09 Marcos Vinicius Forecchi Accioly: Tá quente que você falou que não fez referência.
+08:15 Elton Vinicius: Apesar pontualmente com efeito gradação assim, mas depois a gente
+08:17 Marcos Vinicius Forecchi Accioly: eu acho que é Ah tá. beleza O que que tá rolando agora já né? Tá rolando essa coisa de Da coisa que tá acontecendo em tempo real, então ele tá falando uma hora aqui tá? Mas a ideia que seja a hora real mesmo aqui entraria 1441, por exemplo que ele tá simulando como se fosse no dia do evento. ele vai mostrando com a Barrinha que o tempo que já passou em relação ao início do Relacionamento que tá acontecendo a medida que vai passando aqui na programação completa, por exemplo que já passou.
+09:14 Marcos Vinicius Forecchi Accioly: Ele fica cinzinha tá vendo?
+09:17 Elton Vinicius: Ah legal
+09:17 Marcos Vinicius Forecchi Accioly: É um tipo é uma linha do tempo total do evento aqui.
+09:20 Elton Vinicius: A maneira os favoritos ali que ele criou também, né?
+09:23 Marcos Vinicius Forecchi Accioly: é Se você quiser você coloca no favorito na hora que você vai ver você pode buscar só a sua programação que a gente tem que mexer na interface, né? Fazer ficar mais intuitivo, mas
+09:35 Elton Vinicius: Acho que é porque ele pegou só esse azul que fica no canto do Banner. E aí
+09:36 Marcos Vinicius Forecchi Accioly: Cara isso me lembra a identidade do que você fala assim, eu acho que dá para usar mais aqui, talvez é a parte desse azul mais claro esse azul aqui ó mais claro, né, mas eu acho que esse azul é o mesmo Azul a fonte a mesma fonte.
+09:58 Elton Vinicius: tipo assim virou padrão, tipo assim, não me traz a percepção de que.
+10:03 Marcos Vinicius Forecchi Accioly: Eu acho que dá para trazer também essas linhas essas linhas luminosas que tem no banner aqui que é legal, entendeu? Mas ele tentou fazer parecido usar a fonte com esse azul, tá vendo? Ele acabou usando o amarelo o azul entendeu aí Aqui tem a programação completa quando você entra na programação que tá acontecendo em qualquer uma ele traz as informações então por exemplo é terça de 9 meses 11 meses que tá ao vivo, eu salvo aqui que dá para pessoa salvar ou não na hora que ela tá vendo aqui. Então aqui embaixo ou em algum lugar aqui vai vir as reações ao vivo.
+10:44 Elton Vinicius: Que as pessoas falam isso, né? Que é?
+10:48 Marcos Vinicius Forecchi Accioly: Eu tô aqui nesse quando eu tiver dentro de um evento que tá acontecendo na hora eu tô vendo que que tá acontecendo nele. E quando eu tiver aqui eu tenho que ver só. Um só uma leve coisa então que eu pensei aqui em volta da bolinha, você vê que eu botei essa bolinha com animação, tá vendo tá ao vivo, mas poderia ter alguma coisa em volta ou em volta da Barra ou uma barrinha em cima das como se fosse uma linha fina e que vai mostrando as reações. Quantas coisas enviadas quantos alguma coisa que desse uma noção de como que tá. Nessa parada.
+11:26 Marcos Vinicius Forecchi Accioly: sacou Também tem essa coisa tipo assim quando a pessoa entra numa atividade palestra internacional começa em tantas horas que tá bem mal feito ainda, mas eu acho que no geral as informações entraram aqui. tipo assim Da primeira versão para cá já deu uma mudadinha, entendeu? Aqui também tem filtro, né na programação que você pode buscar aqui direto, então ele já tá filtrando já tá funcionando, entendeu? E aqui tem aquela parte de informações que eu falei que é tipo assim, o evento ai já tem um site oficial, ele já cai no site oficial local e como chegar aí entrar alguma coisa que hospedagem já entrar alguma coisa que tudo que a pessoa pode rolar aqui que é tipo informações gerais assim do evento, né um guia para ela ver tipo. Acabei de sair, não sei onde é que é restaurante mesmo. Ela já pode entrar no app clicou pode ter um mapa Ali pela aquele que já cai no mapa.
+12:22 Elton Vinicius: Eu gosto eu acho melhor as funcionalidades que você falou de das reações,
+12:23 Marcos Vinicius Forecchi Accioly: isso E tem a questão do telão aqui, nós estamos na semana dois agora, né? Tudo isso aqui que eu fiz foi da semana um. Tô dizendo assim semanas de desenvolvimento, né? Então A ideia é que essa semana amanhã ou semana que vem isso aqui deu uma mexida. Mas eu já entendi que tem que dar uma melhorada na cor e adequar mais a identidade do que você for é isso que a gente precisa fazer agora Mas preocupado.
+13:02 Elton Vinicius: talvez a gente ter reações pré-definidas. E reações e espaço para poder você reagir. e durante a Durante a palestra né escrever alguma coisa durante a palestra.
+13:25 Marcos Vinicius Forecchi Accioly: Exatamente reações para definidas e também mandar texto acho que essas são as duas como limite de caracteres, entendeu? Eu acho que o texto na verdade o texto seria para mandar texto para mandar perguntas. Que a gente pode focar o app não é para as pessoas ficar mandando talvez textos à toa, mas vai abrir Em algum momento aberto para perguntas aí abre uma caixa aqui a pessoa consegue entrar e mandar perguntas por um tempo determinado.
+13:54 Elton Vinicius: Boa vamos fechar desse jeito assim que você acha é a reação é sempre pré-definida e eles têm um espaço para mandar texto para mandar. Perguntas as perguntas. Elas não ficam visíveis, né para para outros.
+14:09 Marcos Vinicius Forecchi Accioly: Eu achei que ficaria a ideia que a gente tinha tido, inicialmente com a pergunta fica visível que a pessoa pode votar na pergunta para não botar pergunta repetida.
+14:18 Elton Vinicius: E aí pode ser anormal ou com ou não sempre sempre com o nome da pessoa?
+14:19 Marcos Vinicius Forecchi Accioly: Na verdade as perguntas mais votadas vão para o topo. Entendeu? Você pode ir vendo as perguntas rola numa caixa aqui, sei lá uma coisa assim. Eu acho que pode ser Dos dois jeitos não faz diferença não a pergunta chegando.
+14:41 Elton Vinicius: tá
+14:41 Marcos Vinicius Forecchi Accioly: Eu não sei nem se talvez a gente faz assim, por exemplo a pergunta não aparece o nome de quem botou a pergunta aqui dentro do app, mas a gente sabe por trás. Talvez entendeu? Talvez para acessar o app a pessoa precisa bater o QR Code
+14:53 Elton Vinicius: Pode ser?
+14:56 Marcos Vinicius Forecchi Accioly: dela. Guarda localmente numa Cash, entendeu?
+15:02 Elton Vinicius: Seria a senha.
+15:04 Marcos Vinicius Forecchi Accioly: Tô pensando isso porque aí todas as interações dela ficam marcadas para ela também, então a gente já garante se ela faz tipo um login pelo crachá. Não sei assim. Talvez ela pode ter coisas que ela pode fazer com login pelo crachá e tem coisas que ela não pode não pode fazer. E poderia ser uma coisa de bater informação, tipo assim para não pegar coisa de outra pessoa, ela fez a foto fez autorização no crachá, não QR Code aí ela tem que botar a data de nascimento dela. Por exemplo. Sei lá, entendeu? O que ela alguma coisa do cadastro? E o último nome não sei né? O que que seria que não está no crachá e que ela precisaria saber do cadastro se a gente só vai conseguir saber depois talvez a data de nascimento.
+15:53 Elton Vinicius: Eu acho sim.
+15:55 Marcos Vinicius Forecchi Accioly: É porque eu acho que não tem na inscrição do concertualdade Nascimento.
+16:00 Elton Vinicius: Nascimento a pessoa não todo mundo sabe, né a própria
+16:00 Marcos Vinicius Forecchi Accioly: Deixa eu dar uma olhada aqui que tem aqui. Eu já fiz a minha mas dá para entrar de novo, né? Ó tem nome e-mail confirmar e-mail nacionalidade documento CPF? A senha pode ser o CPF? A Trindade de nascimento também você acha que CPF ou data de nascimento? O CPF menos né?
+16:37 Elton Vinicius: Você prefere.
+16:39 Marcos Vinicius Forecchi Accioly: Então acho que é isso, talvez é o CPF, entendeu? O campo requerido ainda Nascimento também, né? Todo mundo sabe que você diz a própria.
+16:53 Elton Vinicius: Todo mundo sabe a data de nascimento.
+16:55 Marcos Vinicius Forecchi Accioly: Sempre a olhar Ah entendi que você tava dizendo que era ruim porque todo mundo sabe, entendeu?
+17:00 Elton Vinicius: Ah não todo mundo sabe a própria.
+17:02 Marcos Vinicius Forecchi Accioly: Tá beleza, então, vamos pela data de nascimento. A pessoa digita a data de nascimento. Então vou bater o QR Code. E aí com QR Code porque eu entendi aqui quer ver pelo meu QR Code a gente até precisa pegar um QR code para entender, o que que ele é. Aqui a gente percebe. Ó meus eventos. Quando você for. Mas onde que tá a minha? Eu do participante.
+17:48 Elton Vinicius: O seu QR Code é o que o seu confirmação de inscrição?
+17:52 Marcos Vinicius Forecchi Accioly: início programação realizar a escrever tá aqui tinha algum lugar que eu tinha meu QR code
+18:13 Elton Vinicius: É por e-mail.
+18:15 Marcos Vinicius Forecchi Accioly: Não eu no dia que eu fiz minha inscrição aqui. Ele apareceu para mim a parada do meu. tinha engraçado como se eu não tivesse escrito então escrito mas não tô Quando eu me inscrevi tinha uma coisa assim apareceu assim, meu meu crachá imprimir meu crachá, não sei o quê. Isso apareceu para mim, entendeu?
+19:02 Elton Vinicius: TV sem falar comprovante de inscrição cara
+19:05 Marcos Vinicius Forecchi Accioly: Aonde? Não quando você se inscreve sim, na hora que eu me inscrevi apareceu, mas agora que eu loguei que eu não tô vendo.
+19:14 Elton Vinicius: Cadê volta lá, vamos lá?
+19:15 Marcos Vinicius Forecchi Accioly: Tô aqui na tela.
+19:19 Elton Vinicius: Chega mais vem aqui dar início.
+19:23 Marcos Vinicius Forecchi Accioly: início
+19:25 Elton Vinicius: Você não está escrito não?
+19:28 Marcos Vinicius Forecchi Accioly: Claro que eu.
+19:31 Elton Vinicius: É porque aqui é o meu como é que é, tá?
+19:33 Marcos Vinicius Forecchi Accioly: Ah tá, não sabe o que que é eu me inscrevi com o login do IFES. É que eu me inscrevi com o e-mail do ifs, Ali. Eu entrei com meu e-mail do Gmail.
+19:49 Elton Vinicius: o número do ingresso
+19:52 Marcos Vinicius Forecchi Accioly: Só não sei qual que é a senha não tem. Acho que eu entrei com o Google, pera aí.
+20:02 Elton Vinicius: número do ingresso acho que é
+20:05 Marcos Vinicius Forecchi Accioly: Isso aí eu queria pegar o QR. Code aqui o comprovante de inscrição. Deixa eu já pegar isso aqui botar lá no cérebro, né? Do que que tem no
+20:16 Elton Vinicius: Esse aqui ó, aí ele cria um QR. Code disso.
+20:24 Marcos Vinicius Forecchi Accioly: crachá?
+20:29 Elton Vinicius: Caraca eu pensei a mesma coisa cara, porque eu jogo na raiz e peço para ele
+20:30 Marcos Vinicius Forecchi Accioly: o nosso negócio lá Você fora e não vejo. É difícil que não tem todos os projetos. Parece que eles precisam de uma inbox. Porque é muito difícil. Entendeu?
+20:54 Elton Vinicius: guardar depois no lugar Mesma coisa.
+20:55 Marcos Vinicius Forecchi Accioly: Mas é ruim
+21:07 Elton Vinicius: aqui ó
+21:09 Marcos Vinicius Forecchi Accioly: Criei não.
+21:11 Elton Vinicius: Adicionei na minha na minha carteira do Google. Aí o que que ele salva? nome lugar início término o e-mail
+21:55 Marcos Vinicius Forecchi Accioly: Beleza, eu coloquei lá o crachá. Que mais tem aqui adicionar o calendário compartilhar? Acho que não tem mais nada. Mas é isso agora já coloquei o crachá lá, acho que a gente pode começar a pensar nisso aí também, né.
+22:16 Elton Vinicius: De integrar né? Isso que você tá falando integral ou
+22:19 Marcos Vinicius Forecchi Accioly: Não sei se isso mas ele já vai saber que o crachá não é número, o que que é que o QR Code representa, né? Acho que começar. Também fazer esse filtro de número de inscrição e data de nascimento, entendeu? E aí ela acho que a pessoa consegue usar o App. Né? Mas algumas coisas ela não vai conseguir fazer interagir mandar reação isso só se ela logar. Então a gente tem que botar uma barreira de login aí.
+22:54 Elton Vinicius: café
+22:54 Marcos Vinicius Forecchi Accioly: de autorização Alguma coisa assim, né?
+23:00 Elton Vinicius: Aí só para algumas tipos de interações.
+23:04 Marcos Vinicius Forecchi Accioly: Eu acho que para mandar a reação para mandar pergunta. Você acha que não precisaria de nada disso?
+23:11 Elton Vinicius: É isso que eu pensei talvez isso, sabe?
+23:13 Marcos Vinicius Forecchi Accioly: ela precisa já ter inscrição e botar o número dela e número de inscrição e data de nascimento então É isso.
+23:28 Elton Vinicius: É o número de inscrição vai ser ruim porque ele não vai.
+23:32 Marcos Vinicius Forecchi Accioly: O número do ingresso ele vai ter que entrar no ventre e pegar.
+23:36 Elton Vinicius: É muito ruim, cara.
+23:37 Marcos Vinicius Forecchi Accioly: Então, por isso que eu pensei deixa o entre aberta, ele consegue ver programação informações interagir na hora do evento ele vai precisar fazer esse login.
+23:50 Elton Vinicius: Não dá para só ter a data de nascimento. E aí? Casa teria que ter um banco de não sei como é que funciona.
+24:01 Marcos Vinicius Forecchi Accioly: Não vai ter um banco de dados de interações isso aqui já tá ligado no superbase, já é que agora tá com dados de demonstração. Mas a questão é Só a data de nascimento não dá, né?
+24:13 Elton Vinicius: Porque assim o que eu tô imaginando é já estaria todo mundo cadastrado também na no sopa base de acordo.
+24:29 Marcos Vinicius Forecchi Accioly: Isso todos os inscritos vão estar lá, isso é verdade o negócio aqui para pessoa começar a usar o aplicativo antes. né Não sei.
+24:49 Elton Vinicius: antes do consenso
+24:50 Marcos Vinicius Forecchi Accioly: É ou não vai ter isso que a gente podia liberar o app um pouco antes, talvez mandar para todos os usuários, né pedir para mandar por mensagem dentro do ventrica, entendeu? Pessoal temos um app que você for prepares você vai poder interagir com as palestras. Seria legal ter essa coisa do Avatar, né? Pessoal. Manda uma foto dela a gente. Transforma com iaco a cara do com ser forte para sempre um robozinho com a cara dela sei lá, entendeu? E ao invés de ser a cara do Elton é a cara do avatarzinho do Elton que lembra o Elton. Por exemplo você mandar essa foto que você tá aí agora ficaria com esse negócio com o seu óculos com a barbicha no robozinho.
+25:46 Marcos Vinicius Forecchi Accioly: Sei lá, entendeu? Eu tô viajando aqui, mas tem uma brincadeira com ela tem um jeito das pessoas querendo entrar. Asinha dela, entendeu?
+25:56 Elton Vinicius: pois é
+25:59 Marcos Vinicius Forecchi Accioly: Porque fora essas ideias que estão aqui que é mandar pergunta. E reagir nas coisas que estão acontecendo, depois as outras coisas a gente define essa base tipo ela logar com a identidade dela e ter uma vaca. A coisa de Network né? Tipo se ela encontrou alguém ela pode mandar uma solicitação aí a pessoa autoriza, sei lá. Ela vai colocando as pessoas numa área em que ela quer conhecer essas pessoas.
+26:37 Marcos Vinicius Forecchi Accioly: Não sei depois a gente pode pensar mais eu acho agora já tem umas coisas aí para eu trabalhar entendo uma semana que vem. então
+26:46 Elton Vinicius: Eu acho que fechar essa parte da das reações. E a gente podia tentar fazer esse teste. De ele aparecendo né de aparecer.
+27:00 Marcos Vinicius Forecchi Accioly: É tem que ter uma área administrativa também, então eu vou de alguma forma fazer um tipos reações aparecem, entendeu? Quantas pessoas estão no App no momento em que entrou. E quantas reações para cada evento entendeu algo dessa linha aí?
+27:19 Elton Vinicius: uma coisa que eu fiquei pensando cara é que A gente botou os horários fixos, né? Tipo o horário mas se o negócio atrasou, tipo tá 30 minutos atrasado. Ou 40 uma hora atrasado, sei lá que fica tudo isso. O agora vai estar totalmente errado, né? A gente vai ter que meio que
+27:46 Marcos Vinicius Forecchi Accioly: É legal essa essa ideia de O que que a gente faz quando atrasar?
+27:51 Elton Vinicius: Por nada administrativo a gente poder atualizar.
+27:58 Marcos Vinicius Forecchi Accioly: Não sei não porque é difícil isso não acontece no evento de fato atrasa um pouco não fica totalmente errado. As pessoas vão tentar. Voltar para o cronograma, elas não ficam tipo empurra tudo para frente, né? A palestra não atrasa uma hora tipo assim, mas às vezes troca uma programação de lugar. Então, isso a gente vai ter que ter liberdade de fazer ele também, depois a gente vê como é que vai ser.
+28:24 Elton Vinicius: Você quer que subir cara? Tá pegando ar em você?
+28:25 Marcos Vinicius Forecchi Accioly: vamos Aumentar com calor eu acho.
+28:31 Elton Vinicius: Então falou, tchau.
+  
