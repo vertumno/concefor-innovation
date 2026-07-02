@@ -1,0 +1,282 @@
+# Papo com IA.IÁ [Semanal]
+
+  Meeting started: 02/07/2026, 15:02:39
+  Duration: 48 minutes
+  Participants: Carlos T. Valadao, Douglas Baessa, Douglas Espindola Baessa, Elton Vinicius, Leonardo Coutinho, Marcos Vinícius Forecchi Accioly, Rutinha
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/1Lge8gbo89PSKR3YYewK?o=txt)
+
+    
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Elton Vinicius: Ele tem um filtro assim, né? Que diminui essas rugas. que tá desde a idade que eu entrei no Vamos e vamos aí Leo, tá na hora de você já mostrar as coisas que você tá
+00:56 Marcos Vinícius Forecchi Accioly: gente Hoje vou ficar só nós Será que milagre
+01:09 Elton Vinicius: fazendo aí.
+01:17 Leonardo Coutinho: Deixa deixa passar o seminário lá no projeto.
+01:21 Elton Vinicius: Tá certo
+01:27 Marcos Vinícius Forecchi Accioly: Deixa passar o seminário.
+01:35 Carlos T. Valadao: Boa tarde!
+01:37 Elton Vinicius: Fizeram Dois de Julho. cara Já vai dar dois anos, cara? dois anos de Cunha, Iaiá
+02:06 Marcos Vinícius Forecchi Accioly: Não.
+02:07 Elton Vinicius: Caramba que foi a gente começou logo depois do consertou, né? E aí tá chegando próximo quando você for já. dois anos Vão começar com as notícias.
+02:23 Marcos Vinícius Forecchi Accioly: Bora de notícias?
+02:25 Elton Vinicius: Você que era o homem da Fofoca aí.
+02:30 Marcos Vinícius Forecchi Accioly: Boa notícia mais mais quente do momento é que voltou o Facebook, né ontem.
+02:35 Elton Vinicius: feio bastante esperado
+02:38 Marcos Vinícius Forecchi Accioly: Que também lançou um modelo mais avançado do Sonic. Então meio que são sempre essas jogadas um pouco assim, né? Eles melhoraram o Sonic para chegar mais perto do Opus para as tarefas do dia a dia para ficar melhor trouxeram de volta o Fable. Mas diminuíram a quantidade que você pode usar do Fable então meio que Deu uma equilibrada. Por enquanto né?
+03:10 Elton Vinicius: O Grande Lance do feio todo poderoso né que você falou que ele diminuiu porque eles trouxeram 50% da capacidade dele, né, mas uma outra coisa que vai acontecer com feio boba aqui a gente vai conseguir usar só por até dia 7, né? Aí depois só com API. Então para nós que usamos assinatura subs.
+03:41 Marcos Vinícius Forecchi Accioly: É tipo assim a gente viu que esse movimento aconteceu com outras empresas
+03:42 Elton Vinicius: Porque Pelo que eu entendi o pessoal tá falando aqui a Não vale a pena, né pelo custo assim, ele é muito poderoso usa muito tokens muito processamento, né? E aí eles decidiram botar que é o que Possivelmente pode acontecer. Mais para frente com mais coisas assim, né de tirar da assinatura e deixar para você pagar como apelinho a quantidade que você gastar que como.
+04:22 Leonardo Coutinho: Resumindo a fonte
+04:25 Elton Vinicius: É cada vez mais secando mais cara. Cada vez secando mais.
+04:35 Marcos Vinícius Forecchi Accioly: também, né? Começaram com a fonte infinita de coisas agora todas tem uma barrinha de uso não dá para você usar infinitamente, né? Tanto que você pode usar não sei como é que tá o pney ainda, parece que tinha entrado uma questão também de tokens, mas não sei se tá ou não. Você que tá usando aí. Como é que tá?
+04:53 Elton Vinicius: cara o pneu Eles estão com mesma o mesmo critério de disponibilização de tokens da do Cláudio de cinco horas de uma semana, só que parece que a quantidade é maior assim que eles oferecem.
+05:13 Marcos Vinícius Forecchi Accioly: Mas todos eles estão com limite de Token.
+05:15 Elton Vinicius: Todos agora todos agora é interessante, né? Os modelos eles que eles vão os modelos de negócio que eles vão criando, né? Porque que tem aqui no chat PT que eu voltei assinar para poder usar o código, aí eu vi. Que ele tem um negócio aqui que é o seguinte. Tava mais fácil. Que era Ah, não é no códex mesmo.
+05:49 Marcos Vinícius Forecchi Accioly: Tem que compartilhar a tela aí talvez porque a gente
+05:52 Elton Vinicius: Então era tinha que era o que eu podia eu tinha direito a como é que ele chamou tipo Restart. Em tinha direito a dois restarts de tokens que tipo zerar.
+06:11 Marcos Vinícius Forecchi Accioly: Você dá um restart.
+06:13 Elton Vinicius: Isso Tipo isso eu até uma semana eu tenho um restart assim, então eu posso gastar todo né? Chegar no limite aí eu Restart. Então em vez de eles aumentarem a possibilidade de toque. Eles colocaram tipo essa premiaçãozinha, né? Eu me sinto premiado eu tenho Restart eu consigo usar mais token, eles vão fazendo esses modelos para a gente sentir poder usar mais e sentir que tá ganhando mas Toquinho e sentir que também.
+06:48 Elton Vinicius: Tem uma quantidade limitada, né? Uma coisa que eu queria falar também que eu vi mas acabei não olhando né? Eu vi um vídeo. É pesquisei aqui para para tentar entender para ver se eu achava. Mas eu vi um vídeo que tava dizendo que é o NVIDIA eles criaram. Uma pi assim que consegue aqui ó, disponibiliza acesso gratuito há mais de 80 modelos de Inteligência Artificial de ponta então de psique que Minimax média PI.
+07:22 Elton Vinicius: Aqui no NVIDIA build. Além disso você pode testar e agenerativa diretamente no navegador usando esse aqui. Então o que acontece aquele lance, né? O Marquito a gente pode plugar em serviços, né? Além do Open halter que é. Um que a gente tá bom da possibilidade, né de usar mas tem também isso aqui apis gratuitas. Não você usa você pluga é api no seu no seu serviço, né?
+08:00 Marcos Vinícius Forecchi Accioly: Mas mas tem cli não né? Consegue usar talvez?
+08:11 Elton Vinicius: Você tiver. No site lá que você disponibiliza.
+08:18 Marcos Vinícius Forecchi Accioly: No seu serviço.
+08:19 Elton Vinicius: tipo no negócio de sonhos lá
+08:22 Marcos Vinícius Forecchi Accioly: tem de
+08:22 Leonardo Coutinho: o openrouter tem modelo gratis tb e api gratis
+08:23 Elton Vinicius: Você pode plugar essa aí vai puxar aí, você pode usar gratuitamente de psique, eu sei que também assim Open Open Cloud que é um Cloud code. Também pode plugar esse do Nvidia e usar então, tipo tem que testar né? Mas
+08:46 Leonardo Coutinho: mas dá pra plugar até no claude, fiz isso ai e não cobrou nada
+08:48 Elton Vinicius: eu pelo que eu tô entendendo tá tendo caminhos de você conseguir fazer isso que a gente faz de forma gratuita, sabe tipo usar dentro do computador. Usando vs code e usando uma bem gratuita, por que que eu tô falando isso também que eu acho que é me vem que talvez quando a gente for se a gente for fazer alguma oficina de como de como usar, por exemplo o ICM, né no computador.
+09:21 Elton Vinicius: Acho que um gargalo que a gente tinha era assim. Ah, mas você tem que ter uma assinatura do Cloud sacou que é um problema a pessoa tem. Somente quando a gente vai dar um treinamento aqui dentro do IFES. Ah, você tem que pagar r$ 100 para poder conseguir fazer isso que a gente tá ensinando então é ruim, a gente dá uma formação interna institucional em que o professor né o servidores precisam pagar r$ 100. Então isso acaba ficando impeditivo. Mas se a gente encontrar essa solução, né? Eles não precisam eles vão gastar nada, vai ter talvez menos capacidade, mas dos modelos que a gente usa mas É um caminho mesmo assim.
+10:12 Elton Vinicius: Porque aí ganha um caminho que é de você trabalhar com paz trabalhar com contexto, né trabalhar. localmente bom
+10:23 Marcos Vinícius Forecchi Accioly: tal isso aí Alguém mais com algo para trazer aí Quer comentar. trazer coisas
+10:48 Elton Vinicius: seguindo essa mesma linha de
+11:08 Elton Vinicius: Modelos né que a gente está falando essa notícia aqui. Acho que é legal a gente saber se conhecer Ó modelo de aberto treinada no Rio de Janeiro com financiamento público ao longo do último ano pela prefeitura do Rios tava esperando todos os outros modelos Inteligência Artificial, não é uma coisa distante estrangeira de Laboratórios bilenares não existe só para fazer texto imagens aleatórias o rio acaba de disponibilizar um modelo aberto de inteligência artificial.
+11:41 Elton Vinicius: Que significa capacidade de analisar mais dados responder mais rápido entender problemas complexos Independentes soluções compradas prontas fora? E com a prefeito interagir e atender melhor a população usando e a que acontece tava no Twitter. Tava um bafafá de que aí a do Rio de Janeiro tava em primeiro lugar num trem de um benchmark aqui que é esse aqui.
+12:13 Leonardo Coutinho: o modelo de outro
+12:14 Elton Vinicius: Foi exatamente copiou e treinou, né? E retornou é?
+12:17 Leonardo Coutinho: do
+12:20 Elton Vinicius: Mas eu achei maneiro cara uma notícia legal assim de saber assim, né? Que
+12:27 Leonardo Coutinho: Por causa do dinheiro que eles gastaram.
+12:32 Elton Vinicius: É gastar muito para treinar.
+12:34 Leonardo Coutinho: É os 500 mil reais.
+12:37 Elton Vinicius: Isso eu não tinha visto não.
+12:38 Leonardo Coutinho: Já pegaram o modelo pronto para treinar?
+12:42 Elton Vinicius: Ele gastaram tudo isso, né para questionar isso.
+12:47 Marcos Vinícius Forecchi Accioly: Mas com certeza eles treinaram em servidores fora, né? Tipo pegar um Google
+12:48 Elton Vinicius: 500 mil Você vai precisar de um GPU para rodar?
+12:57 Marcos Vinícius Forecchi Accioly: Cloud uma coisa assim fizeram o treinamento em outro lugar.
+13:01 Elton Vinicius: Não com certeza.
+13:03 Marcos Vinícius Forecchi Accioly: Para não gastar com infra, né.
+13:07 Elton Vinicius: Esse é um que eu tinha visto tinha um que eu tinha visto você vai gostar também o Léo. Eu separei aqui. não vi o vídeo não, mas Que o Rio Nilo agora tinha integração com Cloud code ou codex. Então se executa no terminal ao lado do motor conectando via MCP para controlar totalmente o editor você vai. Comandando aqui, né escrevendo interagindo e ele vai construindo né? Esse aqui um rio em dia para tanto para Parte de arquitetura modelagem como também para jogos né? Principalmente jogos, né? Praticamente qualquer jogo um rio de agora em diante vai precisar de um rótulo de a Então cara
+14:02 Marcos Vinícius Forecchi Accioly: olha
+14:05 Leonardo Coutinho: É uma coisa que eu não vi até hoje, cara. Foi que eu teve uma apresentação da nvid uns três anos atrás. E aí eles botaram.
+14:14 Elton Vinicius: Aqui ó, você vai interagindo aqui.
+14:14 Leonardo Coutinho: não sei se vocês levam lá que Eles usavam para criar NPC e assassino do jogo em tempo real. É mas nunca nunca vi jogo que usa isso. Também rodava um pensamento.
+14:47 Marcos Vinícius Forecchi Accioly: Que doideira, hein, cara?
+14:50 Elton Vinicius: Caraca planejamento Urbano aqui, né? Olha isso.
+15:04 Marcos Vinícius Forecchi Accioly: Vamos jogar umas árvores? E que software é esse, né? Olha. Caraca, é na hora que a cidade tiver fazendo isso levando o próprio concreto levando o próprio minerando as próprias coisas, eles não vão precisar mais
+15:18 Carlos T. Valadao: Perfeito
+15:22 Marcos Vinícius Forecchi Accioly: da gente, né? É um verdadeiro futuro de ficção científica.
+15:29 Elton Vinicius: Para pensar que tudo que isso aqui é código, né? Você tá botando aí aqui para conectar com nossa olhando isso também é sinistro. Aonde aqui?
+15:51 Leonardo Coutinho: Reflexo aí também falsa. Pode ser compreensão também.
+16:02 Elton Vinicius: É muito. Eu tinha uma outra coisa que eu tinha separado. Deixa eu ver se eu não me lembro, o que que é isso? Não é só isso mesmo. E aí gente?
+16:21 Marcos Vinícius Forecchi Accioly: muito maneiro
+16:28 Leonardo Coutinho: Saiu o vídeo também daqueles robô humano você viu? Mandei no grupo lá. É massa demais.
+16:37 Marcos Vinícius Forecchi Accioly: É bem bem com características humanas, né?
+16:40 Leonardo Coutinho: É já dá para separar já das mulheres.
+16:42 Elton Vinicius: Cadê Mostra aí gente para a gente.
+16:53 Leonardo Coutinho: https://www.youtube.com/watch?v=n1A7-UQk5sc
+16:57 Elton Vinicius: já Apresentou novos Androids de aparência hiper-realista com pele macia voz Suave projetados para combater a solidão companheiros emocionais são oferecidos a partir de 119.800 Mil Anos cerca de 91.000 equipados com inteligência artificial e capazes de ficar na sala de casa ouvindo problemas 24 horas por dia os preços chegam a 990.000 de lance 753 mil reais para versão mais sofisticada segundo a empresa o 1 é o primeiro robô uma noite em tamanho real do mundo com aparência Ultra realista pode ser personalizado para se parecer com um ente querido uma celebridade um personagem fictício.
+17:58 Elton Vinicius: A partir de hoje nossos robôs biônicos podem acompanhar você por toda a vida
+18:02 Marcos Vinícius Forecchi Accioly: Na dúvida ali naquele sofá. Quem que era o robô quem que era a pessoa?
+18:02 Elton Vinicius: é um amor infinito, ele nunca trairá sempre será Leal a você e o amará incondicionalmente é uma espécie totalmente nova capaz de dedicar todo o seu amor, exclusivamente a você.
+18:18 Marcos Vinícius Forecchi Accioly: Ou seja é um patacho, né? É um tamagoshi em forma robótica que costumam de reais.
+18:25 Elton Vinicius: Que vai sempre te amar Caraca. Que doideira né, velho? E ele está falando que as pessoas querem ouvir, né?
+18:36 Leonardo Coutinho: Até acabar assinatura, né comprar?
+18:40 Elton Vinicius: Nossa as pessoas vão se matar para poder ter o seu né? Não esse aqui são pessoas. Não são os robôs mesmo, né? Caraca bicho assim dá para perceber um pouco que é Um ano né? Mas é muito absurdo. semelhança
+19:08 Leonardo Coutinho: É porque ali já é um beta, né?
+19:09 Marcos Vinícius Forecchi Accioly: Robótica, né? Tem uma coisa claramente robótica, mas ao mesmo tempo. É bem que é o mais perto que a gente já chegou, né?
+19:21 Elton Vinicius: Se importa, né?
+19:35 Marcos Vinícius Forecchi Accioly: Deve ser atrás do pescoço, né cara embaixo do sovaco, né na mão. Será que carrega Ele senta em cima do plug? Leonardo Boa pergunta
+20:00 Elton Vinicius: É muito bom. E como é que tá aí o Carlos Conseguiu mexer mais alguma coisa aí do seu projeto tá avançando. Tem feito? Olha quem tá aqui Rutinha. E aí como é que tá umas coisas por aí? Tem alguma coisa que você quer que
+20:47 Rutinha: Boa tarde gente.
+20:56 Elton Vinicius: você tá fazendo legal? Você quer compartilhar? Quer dizer de legal? Tá
+20:59 Douglas Espindola Baessa: Vou comprar um humanóide pra me substituir nas discussões de relacionamento.
+21:00 Elton Vinicius: fazendo toda hora, né?
+21:01 Carlos T. Valadao: Tenho usado para preparar as aulas.
+21:04 Rutinha: Eu faço faço minhas palavras do Douglas ou comprar um robô uma noite para mim
+21:05 Carlos T. Valadao: Estou na estrada dentro do ônibus, por isso conexão está caindo.
+21:08 Rutinha: também para ele fazer as coisas não muito legais que eu tenho que fazer e eu ficar fazendo só as legais mas enfim não é hoje eu vim só para acompanhar
+21:16 Elton Vinicius: Maravilha
+21:19 Rutinha: mesmo.
+21:24 Elton Vinicius: Então a gente tá aqui, eu acho que eu posso mostrar algumas coisas que a gente está fazendo, né? Acho que Deixa eu pegar aqui. Que que tem de legal aqui que a gente poderia mostrar? Quer mostrar o aplicativo ou o Marquito que está fazendo? Eu acho.
+21:57 Marcos Vinícius Forecchi Accioly: Podemos do concerto disso.
+22:00 Elton Vinicius: Já aproveita aqui.
+22:01 Marcos Vinícius Forecchi Accioly: Ainda tem pouca coisa, né? Tipo assim muita coisa, mas podemos sim, claro. Deixa eu abrir aqui.
+22:10 Elton Vinicius: Que a gente já aproveita. um projeto todo iniciado com Pensado e aí first a gente faz as reuniões na mesma sala, mas a gente faz pelo MIT. Para justamente transcrever já virar insumo já vira. especificação para poder
+22:40 Marcos Vinícius Forecchi Accioly: É isso aí
+22:41 Elton Vinicius: fazer melhorias
+22:42 Marcos Vinícius Forecchi Accioly: É o famoso mesmo, né? Já pensa que tem que fazer a conversa de um jeito que ela vai entender Em algum momento. Então pega a transcrição e manda para ela hoje. A gente já fez algumas discussões tá gente isso aqui é a primeira versão zero zero mesmo.
+22:59 Elton Vinicius: Se eu já fiz você já fez o convite só para eu eu.
+23:01 Marcos Vinícius Forecchi Accioly: A ideia é a gente fazer um aplicativo para o concerto, né para a gente ter uma linha do Tempo ao vivo do evento. Então a ideia que aqui tá com dados fictícios, tá? Então vai ficar um relógio rolando da hora e também uma amostra do que que tá do que que tá acontecendo agora e o que vai acontecer em seguida Claro evento vai ter sua informação interna e em breve a gente vai colocar aqui reações ao vivo, então, tipo, tô aqui na mesa redonda tecnologia delas e quero mandar um coraçãozinho. Quero mandar uma palminha com algum com alguma reação. Adorei isso mesmo ou Nossa não gostei coisa assim a gente ainda vai entender o que colocar aqui, né? A programação completa também ela fica com essa uma tripa, né? Que seria a linha do tempo do evento de todos os dias. E aí ela mostra para a gente onde a gente tá. E também o que que já passou.
+24:06 Marcos Vinícius Forecchi Accioly: Até o momento a gente tá com essa funcionalidades também de favoritar, né? Então eu consigo. Ah isso aqui é o que eu quero ver e quando eu filtro eu vejo só o que eu quero ver 96 1430. E aí ele vai trazer as reações que vão acontecer por exemplo, entrei aqui, né na mesa redonda as reações e as perguntas só vão abrir durante o horário da programação daquela programação tá acontecendo. Então vim aqui mexer e reagir tal aqui na aqui na programação.
+24:39 Marcos Vinícius Forecchi Accioly: Vai a gente quer mostrar de alguma forma, o que que tá acontecendo? O que que aconteceu, né? Quais reações e tal? Também botar as perguntas em tempo real. Então aquela coisa de ficar mandando bilhetinho ou de levantar a mão ver se a gente faz as perguntas por aqui também, né? Então pergunta poderia chegar por vários lugares. A ideia é trazer algumas informações aqui também. E aí também tem outras ideias aqui, né da gente trazer talvez essa coisa das Perguntas as palestras também tem uma forma talvez de anotar colaborativamente Rute igual a gente fez lá no evento que a gente foi em BH.
+25:17 Marcos Vinícius Forecchi Accioly: Que a gente fez aquela experimentação, a gente pensou também plugar um
+25:17 Elton Vinicius: Maravilha a gente pensar nisso, mas realmente.
+25:23 Marcos Vinícius Forecchi Accioly: computador direto na mesa de som. Onde tá passando o microfone transcrever no MIT em tempo real? E vê um jeito daí haja conseguir pegar o que tá acontecendo da palestra e já aí ou a gente vai fazer isso após a palestra ou durante a palestra então a gente juntar as reações das pessoas com os melhores momentos de acordo com o público com as perguntas com o que saiu do de quem tá falando, né no microfone aí a gente já teria o final de cada palestra mesa redonda e ao final do evento resumos ou pontos principais ou Nuvem de palavras é o que a gente quiser fazer, né?
+26:06 Rutinha: Já teria até as notícias para a gente publicar depois.
+26:09 Marcos Vinícius Forecchi Accioly: exatamente É não tá tá alimentar essa base de dados mesmo. A gente pensou também fazer algum tipo de networking pelo QR. Code do crachá, então tipo adicionar amigos ou você pode abrir em algum lugar do Viu a ponta porque a recorde da pessoa e ela entra numa lista de pessoas com quem você quer o contato e aí a gente poderia fazer um jeito de cruzar, né? O app pedir por exemplo, eu adicionei a Rute então app para Rute autorização para ela me dar os dados dela telefone e tal alguma coisa assim, você ainda tem aí velho? Acho que não tomei.
+26:46 Rutinha: Bom colocar o lá se tiver como botar o late também.
+26:51 Marcos Vinícius Forecchi Accioly: É pois é, a questão é que a gente vai tá lidando com os dados que estão dentro do evento, né? Que poderia fazer é não é que a pessoa se ela tá logada ela colocar esse dado preencher outras informações dela.
+27:04 Rutinha: Se ela tiver interesse, né fazer mais.
+27:08 Marcos Vinícius Forecchi Accioly: Mas acho que poderia ter outras informações que eu posso preencher sobre mim, né? Tipo uma mini Bio por exemplo.
+27:14 Rutinha: É porque isso ia imagina, né? Se a gente faz com lápis ou com uma mini beauco está falando a gente já começa uma talvez até uma rede uma rede específica, né das pessoas interessadas.
+27:27 Elton Vinicius: Começa também você conseguir descobrir é isso? Tipo assim eu conseguiria já ver as pessoas que estão conectadas e envia a bio dela.
+27:35 Rutinha: E isso assim, imagina a gente lança editais, por exemplo essas pessoas estarem interessadas nesses editais ou a gente às vezes interessarem fazer pesquisa com outros parceiros tudo certo para muitas coisas.
+27:49 Marcos Vinícius Forecchi Accioly: É eu acho que tem uma coisa do consentimento dos dados também que a gente não botou em lugar nenhum. Tem que pensar isso aí porque no eventria não sei se tem tem o acordo do ventry, mas esse aqui é o outro app, né? Então a gente tem que de alguma forma falar com a pessoa que no momento que ela faz o login com crachá e número ela tá com sentindo em compartilhar os dados delas com outros membros. Tem que pensar isso aí como é que seria essa dinâmica para não assustar as pessoas, né?
+28:13 Elton Vinicius: Não pode falar.
+28:13 Rutinha: Mas acho que vale a pena na primeira tela mesmo. Desculpa talvez na primeira tela mesmo, né? Você tá baixando o aplicativo é seus dados poderão ser usados para fins acadêmicos para fins de contato da instituição alguma coisa assim que não é assustador, talvez e já deixa de cara, né?
+28:34 Marcos Vinícius Forecchi Accioly: É mas acho que vai ter que ter alguma cor, né? Tipo assim ó, a gente vai armazenar. O que você tá fazendo suas reações Claro que todo mundo que tá usando Imagina isso, mas se a pessoa não quiser não não quero me identificar ela vai fazer as coisas anonimamente algumas interações, ela não vai poder fazer assim mandar pergunta por ali e tal. A gente Mas é uma coisa do consentimento, né? Tipo de cookie ele entendeu? A
+28:56 Elton Vinicius: uma frase já
+29:02 Marcos Vinícius Forecchi Accioly: gente precisa aceitou.
+29:05 Rutinha: E a pessoa clica se aceitar senão não usa né, usa faz continua fazendo do jeito tradicional mandando pergunta tradicionalmente tal gostei disso, hein.
+29:13 Marcos Vinícius Forecchi Accioly: isso ela usa a parte pública do
+29:16 Rutinha: Isso é muito legal.
+29:19 Marcos Vinícius Forecchi Accioly: A gente pensou também espalhar algumas coisas, tipo uns QR codes ou minigames coisas que estão espalhadas pelo que você for que a pessoa poderia colecionar, por exemplo ou ganhar então por exemplo, vamos dizer que tem algum brinde que para ela ganhar ela precisa achar cinco, sei lá cinco personagens da história do cefor. Não sei assim, tá? Tô ela tem que achar cinco palavras escondidas e ela vai ter que falar essas palavras essas palavras estão aonde em QR codes? Que só o app interpreta não entende então ela tem que ir com APP achar em algum lugar, tipo uma sala de apresentação de trabalho.
+30:00 Marcos Vinícius Forecchi Accioly: Dentro da Cantina do banheiro sei lá, tô só pensando uma coisa impressa, entendeu?
+30:08 Leonardo Coutinho: Postar foto com todos os salgadinhos.
+30:11 Marcos Vinícius Forecchi Accioly: E a gente Pensou em fazer também de alguma forma essa aqui que seria a cereja do bolo para mim assim. conseguir Botar alguma animação tipo assim o palestrante que que eu pensei que seria a coisa mais Tchan assim tem uma televisão do lado onde aparece as reações, né que as pessoas estão fazendo durante ou frases ou destaques do evento não é no telão é uma pessoa são telas laterais ou uma tela lateral.
+30:47 Marcos Vinícius Forecchi Accioly: a ideia seria Juntar o que apareceu que tá aparecendo na palestra com que o público tá mandando de pergunta ou a pergunta para a resposta, entendeu? Por exemplo ou as reações juntar isso isso aparecer não só aparecer. Umas palavras ou um coração mas isso mexer junto com a identidade visual do evento dos 20 anos e as animações acontecerem ela cria uma animação joga na tela tudo em tempo real.
+31:21 Marcos Vinícius Forecchi Accioly: Uma brincadeira assim, né? Ao invés da gente ficar criando tem que sentar lá pedir para fazer animação não já prepara o ambiente, beleza? Entrou uma frase uma reação aquilo já entra numa animação para definida ou não uma coisa aleatória que ele define a parte de blocos de animação, monta animação e exibe na tela. Acho que é uma coisa.
+31:44 Elton Vinicius: Assim a gente pegaria. Tecnicamente estaria pegando a transcrição da palestra, né e processando e a processando isso e é processar isso pegaria esses dados
+31:51 Marcos Vinícius Forecchi Accioly: O que tá fazendo o dia?
+31:57 Elton Vinicius: de reações pré-definidas que a gente vai criar, né? E talvez Nos períodos e poderia casar. Já vai fazer de alguma forma isso, né? Talvez casar as reações com o tempo
+32:08 Carlos T. Valadao: Fantástico!
+32:14 Elton Vinicius: da reação com o tempo da transcrição, então a gente sabe que tipo as maiores reações aconteceram tal. E aí.
+32:21 Marcos Vinícius Forecchi Accioly: Você sabe que frase tem que ir para TV qualquer coisa.
+32:23 Elton Vinicius: Isso tem mais relevante, né? E aí pode depois ele fazendo resumão do vídeo melhores momentos. Momentos Mágicos da palestra alguma coisa que casa esses dados e gera um vídeo resumo, né? Talvez mas aí não é só.
+32:37 Marcos Vinícius Forecchi Accioly: A pessoa só reage e manda pergunta tá acontecendo em paralelo.
+32:44 Elton Vinicius: O que que tem Alimenta o motor de dessa animação, né desse vídeo vídeo resumo.
+32:57 Marcos Vinícius Forecchi Accioly: Isso aí algo nessa linha, né?
+33:01 Elton Vinicius: vídeo resumo Vamos fazer um vídeo resumo
+33:04 Marcos Vinícius Forecchi Accioly: Isso são é como se fosse Michael learnings também, né? São coisinhas pequenas, não é bem o Michael, Lane. Mas uma coisa são destaques que aí há mesmo seleciona, entendeu? A gente bota o modelo simples aí para fazer isso por trás, entendeu?
+33:20 Elton Vinicius: Eu acho que também precisa criar. Esse motor de vídeo destaques.
+33:24 Marcos Vinícius Forecchi Accioly: isso
+33:26 Elton Vinicius: Que esse setup né na verdade de vídeo destaques. Que vai pegar esses dados do app da transcrição, né? Casar isso e gerar o vídeo.
+33:40 Marcos Vinícius Forecchi Accioly: aí
+33:40 Elton Vinicius: Anota aí o Iago quando a gente for transcrever precisa fazer isso.
+33:49 Marcos Vinícius Forecchi Accioly: Eu acho que esses QR. Code escondidos também que dão tipo assim figurinhas ou alguma coisa colecionável isso também é legal, porque isso a pessoa vai ela já sabe o que que ela tem que achar entendeu? Tipo assim que poderia ser uma mistura de gameficação como se fosse assim, se eu me conectar com 10 QR outras pessoas o cinco eu ganho uma figurinha dessa se eu achar tal que tá em tal lugar escanear esse QR. Code eu ganho uma outra figurinha isso fica no Enfim, não sei se as pessoas conseguiram ver isso ou não, mas é quase que uma rede social uma gameficação do evento. Não sei se isso faz sentido. O que que vocês acham aí que isso é legal. Que que vocês mais gostaram de ver assim no evento. Tipo, se eu fosse tivesse tal coisa isso seria muito bom.
+34:44 Marcos Vinícius Forecchi Accioly: Que faz falta em evento? Eu acho que essa coisa da rede que a gente falou, né? Não só para instituição poder usar as informações, mas para as pessoas poderem de alguma forma ver currículo da outra isso é muito bom, né? É uma coisa que evento sempre faz falta para mim.
+35:02 Rutinha: No Éden esse mês, né passado e uma das coisas que foi muito legal lá foi o lugar para a gente conversar com as pessoas e podia mandar foto então por exemplo, eu fiz uma amiga belga, a gente teve junto no quando teve o jantar, né do evento. E aí tiramos foto e não tivemos trocado ainda o WhatsApp nem nada,
+35:23 Leonardo Coutinho: A rede é legal, no ESX quando vc escaneava o qrcode do crachá do outro ai vc pegava o contato
+35:24 Rutinha: então foi por lá que eles que ela me mandou as fotos que a gente conversou e aí muito que depois o contato peguei o contato dela. Então assim é podia mandar arquivo.
+35:37 Elton Vinicius: Mas tinha um aplicativo do evento isso.
+35:39 Rutinha: Sim, sim, é o aplicativo do evento. Ele vai ficar disponível por um ano a gente quando entra, ele já avisava tanto do que que era possível fazer quanto que a gente ia receber presente patrocinadores estava avisado já e que a gente e que ia ser mantido as interações lá por um ano depois vai fechar então assim a gente já sabia e nesse aplicativo podia mandar arquivos tanto de foto, quanto arquivos PDF que eu mandei minha apresentação para ela. Ela mandou para mim. Isso foi para mim uma coisa bem legal assim foi desse aplicativo foi um dos melhores.
+36:20 Elton Vinicius: Você podia depois mostrar como tirar um print dessas telas.
+36:24 Marcos Vinícius Forecchi Accioly: Queria também sacar. Que que foi assim tipo? Como que como que mandava?
+36:30 Elton Vinicius: Era tipo.
+36:32 Rutinha: Normal como se fosse mandar no WhatsApp? Sim sim, só que é tudo dentro do
+36:34 Elton Vinicius: no WhatsApp
+36:37 Rutinha: aplicativo é que eu não eu nunca tinha visto um aplicativo que com chat dentro
+36:38 Elton Vinicius: era um chá de
+36:44 Rutinha: podia mandar arquivos, né? Esse foi o primeiro assim de evento para mim, né? Talvez outras pessoas já tem visto nunca tinha visto não e foi muito legal por isso porque a gente podia mandar foto.
+36:56 Elton Vinicius: E tinha então uma área de contatos, né? Tipo assim que você como é que
+36:59 Rutinha: Sim, sim, sim.
+37:01 Elton Vinicius: você adicionava ela como contato. Ou você só pesquisar e achava?
+37:06 Rutinha: Só pesquisar. E aí ela já tava lá não precisava adicionar nada, era só conversar.
+37:12 Elton Vinicius: Então é isso também, né? O todo mundo que tá escrito já tá disponível.
+37:18 Rutinha: Acho que todo mundo que baixava o aplicativo, porque para baixar o aplicativo eu
+37:21 Elton Vinicius: fazer o cada
+37:22 Rutinha: eu fiz algumas eu tive não tava já atrelada minha inscrição não só tava atrelada a minha inscrição um número, mas quando eu baixei o aplicativo eu tive que colocar dados né?
+37:34 Elton Vinicius: Hum, é Talvez seja isso mesmo, hein Makita, a gente faz esse processo assim, ó, temos aplicativo que vai ter essa possibilidade aí ele baixa.
+37:45 Marcos Vinícius Forecchi Accioly: Ele não vai baixar ele vai entrar no link e vai poder instalar, né? Porque a gente não botou o aplicativo na Play Store.
+37:51 Elton Vinicius: Não é pwa.
+37:54 Rutinha: Essa esse foi baixado também via link isso e outra coisa que que é legal é
+37:56 Elton Vinicius: de um link
+38:01 Rutinha: que ele foi disponibilizado antes mesmo uma semana antes aí foi bem bom porque
+38:03 Marcos Vinícius Forecchi Accioly: É isso que a gente pensou também.
+38:07 Rutinha: eu acompanhei toda a programação com ele, né? Para saber aquela aí já é comum tem nos outros que eu já vi também, mas foi legal nesse daí, ele tava em inglês algumas coisas eu precisava olhar com calma. Então eu por exemplo. Fiz a minha programação, né? As minhas escolhas tudo por ele mesmo e seguir pela ordem dele.
+38:27 Marcos Vinícius Forecchi Accioly: É, o Léo tá falando aqui na SX. Quando você escaneavam QR Code do crachá do outro, você pegava o contato, eu acho que algumas é por isso que algumas eu não sei como incômodo é né? E como que seria isso? As pessoas terem acesso a você dentro do app, né? Tipo assim um poder falar com o outro, eu acho que
+38:42 Leonardo Coutinho: eu acho q vai dar trabalho essa parte das msg, melhor compartilhar algum tipo de contato
+38:44 Marcos Vinícius Forecchi Accioly: parece interessante né uma pessoa poder mandar mensagem para outra dentro do app, mas eu fico meio receoso assim. Sem autorização de quem vai receber, entendeu?
+38:57 Elton Vinicius: Essa gente tivesse etapa aqui essa etapa que a Rute falou né? Onde ela meio que faz um cadastro no up. Ele já faz um consentimento, entendeu? Então assim.
+39:09 Rutinha: Sim e também só fica lá assim, eu não ela não me manda nada em outro lugar só por lá agora que a gente já tem trocou contato é que a gente conversa em outro lugar, mas se não fica só no aplicativo.
+39:21 Marcos Vinícius Forecchi Accioly: É essa a última andar, a gente dá uma olhadinha, eu quero saber também quero
+39:24 Elton Vinicius: É legal e assim pegar esse. Esse modelo aí do Éden né? Pelo menos para a gente ter uma noção de como tá?
+39:38 Marcos Vinícius Forecchi Accioly: ver legal.
+39:38 Elton Vinicius: Isso faz depois de todas as telas aí o Rute, mas possível.
+39:42 Rutinha: mano, claro sem
+39:44 Marcos Vinícius Forecchi Accioly: O Léo falou essa coisa QR Code do crachá e pegava o contato da pessoa fico pensando que talvez dá para falar por dentro, mas para pegar o contato para adicionar ela como não sei tô pensando onde que é o limite, entendeu? E o que a gente vai fazer?
+39:59 Elton Vinicius: Aí é legal essa do QR. Code que você meio que obriga realmente a pessoa se conectar.
+40:08 Leonardo Coutinho: pelo qrcode a pessoa tem q tá presencialmente
+40:08 Elton Vinicius: Presencialmente, né? Ao mesmo tempo é assim com licença, eu queria pegar.
+40:15 Marcos Vinícius Forecchi Accioly: É então, mas é isso já tá conversando com alguém. Ai que legal, então, deixa eu aí, deixa eu adicionar você aqui aí Claro aí ponto Qualquer coisa. Entendeu? Vai ter gente querendo roubar também, né passando rápido na frente
+40:26 Douglas Espindola Baessa: Seria interessante ter um ambiente pós palestra para tipo um twitter, fechado para os inscritos na palestra.
+40:28 Marcos Vinícius Forecchi Accioly: de alguém com celular.
+40:31 Elton Vinicius: é a gente tava pensando em fazer uma coisa mais significada também, mas Um pouco de entretenimento também, né? Não só
+40:44 Marcos Vinícius Forecchi Accioly: Acho que isso também o Douglas falou aqui que eu ia colocar um robô para substituir um robô humanoide para substituir ele na discussões de relacionamento lá em cima e que seria interessante ter um ambiente próximo palestra para tipo um Twitter fechado para os inscritos, ou seja as pessoas publicam nos seus feeds. Ô Douglas e aí os outros acompanham. A página interna não sei muito. Qual que é o valor disso, né? Não morre muito rápido. Acho que a gente queria fazer coisas que tem alto valor agregado assim que não morreria junto com o final do evento, né uma coisa que Eliana me falou é que muitas pessoas no evento que ela foi que tinha uma troca de figurinha pessoa conseguir figurinha uma da outra é o aplicativo funciona melhor depois do evento. Porque durante o evento muita gente não tava tão conectada no celular.
+41:35 Marcos Vinícius Forecchi Accioly: Também essa questão que a gente não quer pendurar tanto as pessoas no celular, entendeu?
+41:40 Elton Vinicius: Mas o vento dela é bem diferente, né? Que ela não era no interior, né numa num sítio então assim no nosso é todo conectado, né? A gente então as pessoas vão estar na palestra. Às vezes fica no celular o tempo inteiro, né? Não é acho que
+41:56 Douglas Baessa: É assim, mas eu pensei em algo assim relacionado ao assunto da palestra que às vezes você depois você vai para o coffee break você nos bairro justamente com que um outro tá conversando no outro grupo, né? Então seria um ambiente de postagem e discussão depois pois mesmo, né? Podia deixar depois livre, às vezes às vezes às vezes o próprio palestrante, ele não tem aquele feedback do que o pessoal. Se gostou se não acho legal, né É até um feedback para o palestrante.
+42:30 Marcos Vinícius Forecchi Accioly: É esse feedback, a gente tinha pensado em dar com as interações que vão acontecer em cima do daquele evento, né da palestra em si e não mas eu entendi que seria nesse lugar mesmo, por exemplo é a palestra das 9:30 às 11 horas
+42:44 Leonardo Coutinho: Abre um subreddit do Concefor hein
+42:46 Marcos Vinícius Forecchi Accioly: nesse lugar, eles conseguiam dizer coisas interagir isso vai ficando ali, né?
+42:53 Douglas Baessa: Sim, até mesmo para o palestrante poder publicar algo também. Ah tem um link tal, né? Igual está tendo aqui, né? No chat ou um chat, né? Mas assim voltado somente para aquela palestra.
+43:06 Marcos Vinícius Forecchi Accioly: Tipo durante um vídeo do YouTube, né? As pessoas que estão ali podem
+43:08 Douglas Baessa: é
+43:10 Marcos Vinícius Forecchi Accioly: interagir precisa muito de ferramentas assim de gestão da comunicação, né? Tipo se as pessoas vão xingar se alguém vai ficar postando coisas falar mal do outro vim para bagunçar. Isso aí tudo vai ter que ter uma gestão se é uma gestão de denúncia, né? Que alguém diz Ah isso aqui não tá legal e aquilo sai automaticamente volta se puder acho que adiciona uma camada de complexidade bem.
+43:39 Marcos Vinícius Forecchi Accioly: alta é mas
+43:42 Douglas Baessa: Eu Cheguei a pensar fazer isso daqui no evento que teve na semana dos núcleos aqui no em Linhares, mas já acabou não fazendo né, mas talvez na próxima e assim o as inscrições era só alunos, né? Então ele tá submetido. Se ele xingar de qualquer coisa ao conselho de ética aqui, né? Então assim tem que
+44:02 Marcos Vinícius Forecchi Accioly: Claro
+44:03 Douglas Baessa: saber até para saber a se portar no ambiente social, né? Então é algo é um pouco arriscado, né? Dependendo do que o cara vai escrever, mas mas como ele tem escrito, né? Então só vai participar aquele que está escrito na mesa redonda na palestra. Eu achei que era algo maduro, né? Acho que até na testar.
+44:33 Marcos Vinícius Forecchi Accioly: É mas é isso a gente confiar é bom, né? Mas pode dar uma m**** bem grande assim, a gente vai ter que ter ferramentas de interromper a m**** se acontecer, né? Então pensar direitinho mesmo.
+44:48 Douglas Baessa: Então um fórum mesmo do ava, né? Qualquer coisa tem um moderador lá que apaga.
+44:57 Marcos Vinícius Forecchi Accioly: É mas a gente vai ter que ficar ligado nisso, vamos ter que pensar isso aí ver se isso aí funciona, mas é legal para caramba. Eu acho que é uma
+45:02 Elton Vinicius: Legal mesmo.
+45:03 Marcos Vinícius Forecchi Accioly: possibilidade sim.
+45:06 Douglas Baessa: Ou treinar uma mesmo para fazer Essa gestão.
+45:10 Marcos Vinícius Forecchi Accioly: É exatamente daria para fazer né? Na verdade pode ser um código que pega palavras chaves e tal mas É isso.
+45:20 Rutinha: Eu acho muito interessante sim, mas para iniciar eu falei um negócio mais assim, mas seguro mas assim, né? Coisa de quem já passou pela PRF, por exemplo
+45:25 Marcos Vinícius Forecchi Accioly: É pode ser?
+45:28 Elton Vinicius: é por isso que
+45:31 Rutinha: com um live com mais de mil pessoas acompanhando e que tinha que fazer gestão disso é o Léo tá aí sabe também como foi então assim não sei eu sei que não são tantos. Mas normalmente durante do concelho foto é todo mundo muito ocupado, né? A gente tá tudo muito ocupado muita coisa para fazer acredito que foi por isso que o Douglas por exemplo desistiu então assim Acho que por um Inicial acho que seria legal a gente pensar nas coisas, mas assim quando é bem legais e depois né? Quem sabe consegue mesmo aí há que efetivamente consiga perceber quando alguma coisa foge do controle.
+46:09 Elton Vinicius: É fazer coisas mais controladas, né? Eu acho que é por isso que algumas reações pré-definidas que a gente pensou que aí a gente sabe que é só aquilo ali que pode sair. Mas a gente tinha pensado nessa ideia também de alguma forma assim, né bem legal mesmo.
+46:26 Marcos Vinícius Forecchi Accioly: A gente pensou nesse primeiro momento umas interações mais fechadas, né? Não
+46:29 Leonardo Coutinho: acho q tá muito em cima tb pras essas coisas complexas
+46:29 Marcos Vinícius Forecchi Accioly: texto assim pessoa poder publicar o que ela quiser umas coisas mais fechadas mais ou menos tá Léo? Acho que a ideia também alinhada a gente consegue fazer rápido. O negócio é conseguir testar, né? Experimentar nossa ideia testar no conselho de gestão daqui uns 10 dias.
+46:45 Rutinha: E vai transmitir Não Vai Marquito como fazer antes vai ser transmitido com você?
+46:52 Marcos Vinícius Forecchi Accioly: Mas ainda não.
+46:53 Rutinha: As palestras e tal, né?
+46:55 Marcos Vinícius Forecchi Accioly: Não foi tão claro não, tá tão claro.
+46:57 Rutinha: Porque aí já tem também o chat na transmissão, né? Por isso que eu
+46:58 Elton Vinicius: mas
+47:03 Rutinha: perguntei o chat do YouTube, então, talvez só só enviar para lá exatamente.
+47:08 Marcos Vinícius Forecchi Accioly: E isso também é legal, eu acho que lugar para palestrante poder disponibilizar
+47:12 Rutinha: Alguma coisa assim para pensar.
+47:16 Elton Vinicius: Valeu bom demais. Foi ótimo também a gente ter trazido para cá que já pegou vários insights várias contribuições aí. Vamos encerrar então, né? Já passamos cinco minutos tá passando muito.
+47:29 Rutinha: Deixa eu só falar uma coisa o lugar para o palestrante deixar o material.
+47:38 Marcos Vinícius Forecchi Accioly: um link ou um arquivo, né?
+47:40 Rutinha: Isso que ele achar, né? Porque sempre fiquei só depois eu disponibilizo.
+47:43 Elton Vinicius: Ele vai passar e nunca.
+47:48 Marcos Vinícius Forecchi Accioly: Isso aí até um motivo para usar o App, né? Todo o material da palestra e tal e aí lá a pessoa vai poder ver o material do palestrante o resumo de ar que vai aparecer após a palestra resumo de acho que isso já é legal mesmo, né?
+48:00 Rutinha: Se for transmitido vai estar libras, então também serve para sensibilidade.
+48:06 Marcos Vinícius Forecchi Accioly: legal
+48:09 Elton Vinicius: Tá bom, muito bom. Gente, vamos tirar nossa fotinha rapidinho.
+48:14 Marcos Vinícius Forecchi Accioly: boa
+48:15 Elton Vinicius: 2
+48:18 Marcos Vinícius Forecchi Accioly: Caraca, calma aí, cara, deixa as pessoas aparecerem.
+48:22 Elton Vinicius: 1 e meio
+48:26 Marcos Vinícius Forecchi Accioly: Mas alguém então somos nós mesmo, eu acho aí.
+48:32 Elton Vinicius: Vamos nós foi.
+48:38 Marcos Vinícius Forecchi Accioly: Mas pessoal. Ótimo restinho de quinta, você tirou a foto. Dessa vez o restinho para vocês. Um abraço e até
+48:48 Elton Vinicius: Tchau, tchau.
+48:51 Carlos T. Valadao: Abraço, pessoal!
+48:52 Rutinha: Tchau, gente.
+  
