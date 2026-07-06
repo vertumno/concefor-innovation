@@ -4,6 +4,59 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-06 — Backend do v1: SQLite local + SSE no próprio Next (Supabase sai por ora)
+
+**Decisão:** o v1 troca Supabase por **SQLite local** (arquivo no servidor, via
+`better-sqlite3`) com **API routes do próprio Next** para gravar/ler e **SSE**
+(Server-Sent Events) para o tempo real das reações/telão. A camada de dados fica atrás de
+uma interface única (`lib/db`), para que voltar ao Supabase (ou ir a outro Postgres) seja
+troca barata. O schema conceitual não muda (`sessions`, `speakers`, `timeline_events`).
+
+**Por quê:** a conta Supabase do Marquito está sem espaço para um projeto novo, e as
+reações não exigem mais que um servidor comum na rede — SSE resolve o pub/sub. Bônus real:
+zero custo, zero dependência externa e **funciona na rede local do Cefor mesmo se a
+internet cair** (o maior risco listado na spec §10). **Consequência:** o deploy deixa de
+poder ser Vercel serverless (SQLite precisa de disco persistente e SSE de processo
+sempre-ligado) — o caminho é o que já estava previsto como alternativa: **self-host no
+Cefor via Docker** (ou notebook na rede do evento, para piloto/fallback). Se mais tarde
+quisermos Vercel + Supabase de volta, basta liberar espaço (pausar projeto antigo ou nova
+org gratuita) e reimplementar a interface `lib/db`.
+
+---
+
+## 2026-07-06 — Rumo ao piloto: reações anônimas primeiro, login pelo crachá depois
+
+**Decisão:** o **piloto** (teste na **reunião da comissão do Concefor** — não no conselho
+de gestão, embora possa ser mostrado lá também; data a confirmar, ≈ semana de 13/07) sai
+com **reações 100% anônimas** (`client_id` no dispositivo), como a spec original. O
+**login pelo crachá** discutido em 02/07 (QR/nº do ingresso Even3 + segundo fator) **entra
+depois do piloto e antes do evento**, como barreira apenas para interagir — navegar segue
+aberto. **Perguntas com upvote** ficam como **stretch goal pós-piloto**: entram se houver
+tempo depois de reações + telão + dashboard estarem sólidos; não são compromisso do v1.
+
+**Por quê:** a conversa de 02/07 (ver `contexto/reunioes/sintese-2026-07-02.md`) puxou
+login e perguntas para o v1, mas empilhar identidade (Even3 + LGPD + consentimento) e
+moderação de perguntas *antes* do piloto arriscaria o piloto inteiro — e o segundo fator
+do login nem está confirmado no cadastro Even3 (ver `contexto/even3/README.md`). Sequência
+escolhida: provar o núcleo (reação → telão → dashboard) com o mínimo, e adicionar
+identidade com calma. Refina (não reverte) a decisão de 25/06: o v1 *no evento* deverá ter
+login para interagir, mas o anônimo continua sendo o piso de todo o sistema.
+
+---
+
+## 2026-07-06 — Convenção: `_inbox/` é a porta de entrada, e deve viver vazia
+
+**Decisão:** arquivos brutos (transcrições, fotos, PDFs) chegam em `_inbox/` e são
+**processados** para o lugar certo: reuniões → `contexto/reunioes/` (com síntese em
+`.md`), material de inscrição/Even3 → `contexto/even3/`, e as decisões extraídas → este
+arquivo. Processar = mover + sintetizar + registrar decisões. O inbox vazio é o estado bom.
+
+**Por quê:** a dor apareceu na própria reunião de 02/07 ("parece que eles precisam de uma
+inbox... é muito difícil"). Sem porta de entrada, os brutos param na raiz e o cérebro vira
+depósito.
+
+---
+
 ## 2026-06-26 — App: linha do tempo viva, timestamp visual e demo com a programação oficial
 
 **Decisão:** o app passou a ser, visualmente, uma **linha do tempo** (espinha + nós), não uma

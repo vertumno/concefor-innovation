@@ -30,18 +30,27 @@ concefor-innovation/
 ├── README.md                 (porta de entrada curta)
 ├── decisoes.md               (log datado de decisões)
 ├── links.md                  (onde está cada coisa: Drive, Kanboard, GitHub, site)
+├── _inbox/                   (porta de entrada de arquivos brutos — processar e esvaziar)
 ├── contexto/
 │   ├── evento.md             (o VIII Concefor: tema, datas, eixos, formato)
 │   ├── identidade-selo.md    (selo 20 anos, animações Remotion)
 │   ├── livro/                (Livro Cefor 20 anos — fonte de conteúdo)
-│   └── brainstorm/           (transcrição original + síntese curada das ideias)
+│   ├── brainstorm/           (transcrição original + síntese curada das ideias)
+│   ├── reunioes/             (transcrições de reuniões + sínteses datadas)
+│   └── even3/                (plataforma de inscrição: crachá, QR, cadastro, pendências)
 ├── design-system/            (identidade visual: Concefor base + selo 20 anos acento)
 │   ├── concefor/             (tokens.css/json, preview.html, README)
-│   └── selo-20-anos/         (idem + manual oficial em assets/)
+│   ├── selo-20-anos/         (idem + manual oficial em assets/)
+│   └── app/                  (tokens semânticos do app + roadmap visual)
 ├── spec/
-│   └── app-v1.md             (especificação do app)
-└── app/                      (código do PWA — Next.js + Supabase)
+│   ├── app-v1.md             (especificação do app)
+│   └── proximos-passos.md    (plano de execução — etapas acionáveis, uma por sessão)
+└── app/                      (código do PWA — Next.js + SQLite local)
 ```
+
+Convenção do `_inbox/`: tudo que chegar bruto (transcrição, foto, PDF) entra ali e é
+processado — movido pro lugar certo, sintetizado, e as decisões extraídas registradas em
+`decisoes.md`. Inbox vazio é o estado bom.
 
 ## Como navegar
 
@@ -49,8 +58,10 @@ concefor-innovation/
 |---|---|
 | Entender o evento | `contexto/evento.md` |
 | Ver o que vamos construir | `spec/app-v1.md` |
+| Saber o que fazer agora (plano por etapas) | `spec/proximos-passos.md` |
 | Ver cores, tipografia e tokens da identidade | `design-system/` |
 | Entender por que cortamos uma ideia | `contexto/brainstorm/sintese-ideias.md` |
+| Ver o que saiu das reuniões | `contexto/reunioes/` |
 | Saber onde está um arquivo/recurso | `links.md` |
 | Ver decisões e seus porquês | `decisoes.md` |
 | Usar conteúdo do livro 20 anos | `contexto/livro/livro-completo.md` |
