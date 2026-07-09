@@ -79,5 +79,9 @@ export function getDemoSessions(): Session[] {
     ...s,
     inicio: iso(d, ini),
     fim: iso(d, fim),
+    // Palestrantes já resolvidos, igual ao que a API real embute (ver lib/db.ts).
+    speakers: (s.speakerIds ?? [])
+      .map(getSpeakerById)
+      .filter((x): x is Speaker => Boolean(x)),
   }));
 }

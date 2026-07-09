@@ -1,4 +1,3 @@
-import { supabase } from "./supabaseClient";
 import { DEMO_MODE, getDemoSessions } from "./demoData";
 import { getNow } from "./clock";
 import type { Session } from "./types";
@@ -8,17 +7,16 @@ const UMA_HORA = 60 * 60 * 1000;
 export async function fetchSessions(): Promise<Session[]> {
   // Modo demonstração: dados fictícios, sem backend (ver demoData.ts).
   if (DEMO_MODE) return getDemoSessions();
-  if (!supabase) return [];
-  const { data, error } = await supabase
-    .from("sessions")
-    .select("*")
-    .order("inicio", { ascending: true });
-  if (error) {
+  // Dados reais: backend próprio (SQLite via /api/sessions — ver lib/db.ts).
+  try {
+    const res = await fetch("/api/sessions");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return (await res.json()) as Session[];
+  } catch (err) {
     // Não silenciamos: a tela mostra estado vazio, mas o erro fica visível no console.
-    console.error("Erro ao carregar sessões:", error.message);
+    console.error("Erro ao carregar sessões:", err);
     return [];
   }
-  return (data ?? []) as Session[];
 }
 
 function fimDe(s: Session): number {

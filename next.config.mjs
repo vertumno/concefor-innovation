@@ -2,6 +2,9 @@
 const nextConfig = {
   // Permite self-host no Cefor via Docker com imagem mínima
   output: "standalone",
+  // better-sqlite3 é binário nativo: não empacotar no bundle do servidor,
+  // manter como require de node_modules (necessário no standalone).
+  serverExternalPackages: ["better-sqlite3"],
 };
 
 // PWA: habilitar quando o app estiver sendo construído.

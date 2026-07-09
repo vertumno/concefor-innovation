@@ -10,3 +10,9 @@ build/
 *.log
 .DS_Store
 .vercel
+
+# Banco SQLite local (dados reais/seed) — não versionar
+/data/
+*.db
+*.db-shm
+*.db-wal
