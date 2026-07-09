@@ -21,7 +21,7 @@ const EMOJI = Object.fromEntries(REACTIONS.map((r) => [r.kind, r.emoji])) as Rec
 >;
 
 let flyId = 0;
-type Fly = { id: number; emoji: string; dx: number };
+type Fly = { id: number; emoji: string; dx: number; left: number; dur: number };
 
 export function Reactions({ sessionId, live }: { sessionId: string; live: boolean }) {
   const [counts, setCounts] = useState<ReactionCounts>(emptyCounts);
@@ -33,8 +33,15 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
     const novos: Fly[] = [];
     for (let i = 0; i < Math.min(n, 4); i++) {
       const id = ++flyId;
-      novos.push({ id, emoji, dx: Math.round((Math.random() - 0.5) * 44) });
-      setTimeout(() => setFlies((f) => f.filter((x) => x.id !== id)), 900);
+      const dur = 1.4 + Math.random() * 0.5;
+      novos.push({
+        id,
+        emoji,
+        dx: Math.round((Math.random() - 0.5) * 90), // deriva horizontal ao subir
+        left: 8 + Math.random() * 78, // parte de um ponto aleatório da largura
+        dur,
+      });
+      setTimeout(() => setFlies((f) => f.filter((x) => x.id !== id)), dur * 1000 + 120);
     }
     setFlies((f) => [...f, ...novos]);
   }
@@ -79,11 +86,12 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
     // Otimista: mantém o espelho em sincronia para o polling não "revoar" a minha.
     countsRef.current = { ...countsRef.current, [kind]: countsRef.current[kind] + 1 };
     setCounts((c) => ({ ...c, [kind]: c[kind] + 1 }));
+    const clientId = getClientId(); // fora do try: não mascarar erro na geração do id
     try {
       const res = await fetch("/api/reactions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId, reaction: kind, clientId: getClientId() }),
+        body: JSON.stringify({ sessionId, reaction: kind, clientId }),
       });
       if (res.ok) {
         // Reconcilia com o servidor sem revoar (o espelho já contém a minha).
@@ -108,7 +116,13 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
     <div className="reactions">
       <div className="reactions-flies" aria-hidden>
         {flies.map((f) => (
-          <span key={f.id} className="fly" style={{ "--dx": `${f.dx}px` } as CSSProperties}>
+          <span
+            key={f.id}
+            className="fly"
+            style={
+              { left: `${f.left}%`, animationDuration: `${f.dur}s`, "--dx": `${f.dx}px` } as CSSProperties
+            }
+          >
             {f.emoji}
           </span>
         ))}

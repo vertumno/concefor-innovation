@@ -46,10 +46,13 @@ export function Telao({ session }: { session: Session }) {
     if (!canvas || !ctx) return;
 
     const N = 260;
+    const STEP_MS = 55; // tempo por amostra: controla a velocidade da rolagem (maior = mais calmo)
     const buf = new Array(N).fill(0);
     let W = 0;
     let H = 0;
     let raf = 0;
+    let acc = 0;
+    let last = performance.now();
 
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -62,15 +65,27 @@ export function Telao({ session }: { session: Session }) {
     resize();
     window.addEventListener("resize", resize);
 
-    const draw = () => {
-      levelRef.current *= 0.9;
-      heatRef.current *= 0.96;
+    // Um "passo" da simulação: decai o batimento e empurra uma amostra.
+    const step = () => {
+      levelRef.current *= 0.8;
+      heatRef.current *= 0.9;
       buf.push(Math.min(1, levelRef.current + (Math.random() - 0.5) * 0.04 + 0.03));
       buf.shift();
+    };
+
+    const draw = (t: number) => {
+      acc += t - last;
+      last = t;
+      let n = 0;
+      while (acc >= STEP_MS && n < 6) {
+        step();
+        acc -= STEP_MS;
+        n++;
+      }
 
       ctx.clearRect(0, 0, W, H);
       const mid = H * 0.5;
-      const amp = H * 0.38;
+      const amp = H * 0.4;
       const col = mix(CYAN, RED, Math.min(1, heatRef.current));
       ctx.lineJoin = "round";
       ctx.lineWidth = 3;
