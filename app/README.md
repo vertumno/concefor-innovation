@@ -63,13 +63,14 @@ src/
 ├── app/                 App Router (telas)
 │   ├── page.tsx         Início — Agora / A seguir + banner "não perca"
 │   ├── timeline/        Programação completa (filtros, busca, "minha programação")
-│   ├── sessao/[id]/     Detalhe da sessão (+ favoritar; reações chegam na semana 3)
-│   └── telao/           Placeholder do modo telão (semana 3)
-├── components/          SessionCard
-└── lib/                 db (SQLite, interface única) · clientId (anônimo) · favorites · sessions · types
+│   ├── sessao/[id]/     Detalhe da sessão (+ favoritar + reações ao vivo)
+│   ├── telao/           Telão "batimento" — /telao (sessão no ar) ou /telao/[sessionId]
+│   └── api/             sessions · reactions (POST/GET) · live/[sessionId] (SSE)
+├── components/          SessionCard · Reactions · Telao · Speakers · TimeStamp
+└── lib/                 db (SQLite, interface única) · reactions (fonte única) · clientId (anônimo) · favorites · sessions · types
 
 db/                      schema.sql + seed.sql (programação oficial)
-scripts/                 seed.mjs (npm run seed)
+scripts/                 seed.mjs (npm run seed) + seed-live.mjs (npm run seed:live)
 ```
 
 ## Deploy
@@ -86,8 +87,8 @@ scripts/                 seed.mjs (npm run seed)
 - [x] Identidade visual (Concefor base + selo 20 anos acento) — ver `design-system/app/`
 - [x] Modo demonstração (`NEXT_PUBLIC_DEMO=1` / `npm run dev:demo`) — dados fictícios sem banco
 - [x] Backend próprio: SQLite local (`lib/db.ts`) + `GET /api/sessions` + `npm run seed` (E1)
-- [ ] Reações na sessão ao vivo → `timeline_events` (E2)
-- [ ] Tempo real (SSE) + modo telão "batimento cardíaco" (E3)
+- [x] Reações na sessão ao vivo → `timeline_events`, com throttle anti-flood (E2)
+- [x] Tempo real (SSE) + modo telão "batimento cardíaco" em `/telao` (E3)
 - [ ] Dashboard admin ao vivo (E4) + relatório exportável (E9)
 - [ ] Importar a programação oficial (planilha → `sessions`), substituindo o seed
 - [ ] Wiring do `next-pwa` (service worker + cache offline da programação)

@@ -1,12 +1,14 @@
-// Reações da sessão ao vivo (E2). Conjunto FECHADO — positivo e simples
-// (o brainstorm pediu joinha/coração). Fonte ÚNICA para a UI, a API e a
-// agregação: quem valida no servidor e quem desenha os botões olham para cá.
-// Módulo isomórfico (sem dependências de node) — importável no cliente e no servidor.
+// Reações da sessão ao vivo (E2/E3). Conjunto FECHADO — emoji + rótulo em texto
+// (o rótulo aparece na UI e no telão, para não depender de decodificar o emoji).
+// Fonte ÚNICA para a UI, a API e a agregação: quem valida no servidor e quem
+// desenha os botões olham para cá. Módulo isomórfico (sem dependências de node).
 
 export const REACTIONS = [
-  { kind: "heart", emoji: "❤️", label: "Amei" },
-  { kind: "clap", emoji: "👏", label: "Aplausos" },
-  { kind: "like", emoji: "👍", label: "Curti" },
+  { kind: "adorei", emoji: "❤️", label: "Adorei" },
+  { kind: "parabens", emoji: "👏", label: "Parabéns" },
+  { kind: "uau", emoji: "🤩", label: "Uau!" },
+  { kind: "nossa", emoji: "😮", label: "Nossa!" },
+  { kind: "triste", emoji: "😢", label: "Que triste" },
 ] as const;
 
 export type ReactionKind = (typeof REACTIONS)[number]["kind"];

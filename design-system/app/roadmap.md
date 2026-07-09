@@ -4,16 +4,21 @@ Ideias levantadas pelo Marquito (26/06/2026) para evoluir a linha do tempo e plu
 reações ao vivo. Quase tudo é **semana 3** (junto com a feature de reações). Anotado aqui
 pra não perder.
 
-## Reações na linha do tempo (semana 3)
+## Reações na linha do tempo (semana 3 / E3) — parcialmente feito
 
-Como as reações ao vivo aparecem na própria timeline — opções a explorar:
+**Feito:**
+- **Telão "batimento cardíaco"** (`/telao`): linha ECG em canvas que pulsa a cada reação
+  (cyan → vermelho nos picos), contadores por tipo e emojis subindo com a cor do avatar
+  anônimo de cada dispositivo. Alimentado por SSE (`/api/live/[sessionId]`).
+- **Na tela da sessão**: as reações (suas e as de outras pessoas, detectadas no polling)
+  fazem o emoji "voar" — a mesma energia do telão, na palma da mão.
+- Reações fecharam em **5**, com emoji **+ rótulo em texto**: Adorei ❤️, Parabéns 👏,
+  Uau! 🤩, Nossa! 😮, Que triste 😢 (fonte única em `app/src/lib/reactions.ts`).
 
-- **Bolinha que cresce** — o nó da sessão aumenta de tamanho conforme recebe reações.
-- **Anéis / camadas** — anéis concêntricos em volta do nó; mais reações, mais anéis.
-- **Onda lateral** — um gráfico de onda ao lado da linha do tempo, com a intensidade de
-  interações ao longo do tempo (picos nos momentos quentes).
-
-Decidir qual (ou combinação) quando a feature de reações (spec §4.2) entrar.
+**Ainda em aberto** (a decidir depois do piloto — liga com o "zoom-out" abaixo):
+- **Bolinha que cresce / anéis** no nó da sessão na *lista* da timeline (exige contagem
+  por sessão na lista — mais polling; adiar).
+- **Onda lateral** de intensidade ao longo do tempo (é a "onda de interações" da visão macro).
 
 ## Transição "fenda temporal"
 
