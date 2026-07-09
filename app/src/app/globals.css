@@ -700,6 +700,80 @@ h1.page-title {
   font-size: var(--text-sm);
 }
 
+/* =================== Reações ao vivo (E2) =================== */
+.reactions {
+  position: relative;
+  margin-top: 18px;
+}
+.reaction-btns {
+  display: flex;
+  gap: 10px;
+}
+.reaction-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 9px 16px;
+  cursor: pointer;
+  color: var(--ink);
+  font-family: var(--font-title);
+  font-size: var(--text-md);
+  transition: border-color var(--transition-fast), transform 0.08s ease;
+}
+.reaction-btn:hover {
+  border-color: rgba(214, 0, 75, 0.55);
+}
+.reaction-btn:active {
+  transform: scale(1.12);
+}
+.reaction-emoji {
+  font-size: 22px;
+  line-height: 1;
+}
+.reaction-n {
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-dim);
+  min-width: 1ch;
+}
+.reactions-hint {
+  margin: 10px 0 0;
+  font-size: var(--text-xs);
+  color: var(--ink-dim);
+}
+
+/* Emoji que "voa" a cada toque — sobe a partir dos botões e some. */
+.reactions-flies {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  height: 0;
+  pointer-events: none;
+}
+.fly {
+  position: absolute;
+  left: 26px;
+  bottom: 0;
+  font-size: 26px;
+  animation: flyUp 0.9s ease-out forwards;
+}
+@keyframes flyUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.6);
+  }
+  22% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx, 0), -92px) scale(1.25);
+  }
+}
+
 /* =================== Animações =================== */
 @keyframes fadeUp {
   from {

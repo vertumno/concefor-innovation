@@ -13,6 +13,7 @@ import {
 import { useEventClock } from "@/lib/clock";
 import { TimeStamp } from "@/components/TimeStamp";
 import { Speakers } from "@/components/Speakers";
+import { Reactions } from "@/components/Reactions";
 import type { Session } from "@/lib/types";
 
 function faseLabel(pct: number): string {
@@ -114,10 +115,8 @@ export default function SessaoPage({ params }: { params: Promise<{ id: string }>
 
       {session.descricao && <p className="sessao-desc">{session.descricao}</p>}
 
-      {/* Reações ao vivo (feature 4.2) chegam na semana 3 — ver spec/app-v1.md §4.2. */}
-      <div className="notice" style={{ marginTop: 18 }}>
-        <strong>Em breve:</strong> reações ao vivo nesta sessão (semana 3 do cronograma).
-      </div>
+      {/* Reações ao vivo (feature 4.2 / E2): botões só quando a sessão está no ar. */}
+      <Reactions sessionId={session.id} live={status === "live"} />
     </div>
   );
 }

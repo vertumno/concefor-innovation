@@ -24,7 +24,7 @@ export type Speaker = {
   foto: string | null; // URL da foto, quando houver
 };
 
-export type ReactionKind = "heart" | "clap" | "like" | "down";
+// ReactionKind e o conjunto de reações vivem em ./reactions (fonte única).
 
 // Todo registro da linha do tempo. No v1 só usamos tipo='reaction'.
 export type TimelineEvent = {
