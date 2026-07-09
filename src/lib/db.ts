@@ -10,8 +10,10 @@
 import Database from "better-sqlite3";
 import { readFileSync } from "node:fs";
 import { mkdirSync } from "node:fs";
+import { randomUUID } from "node:crypto";
 import { dirname, join } from "node:path";
 import type { Session, Speaker } from "./types";
+import { emptyCounts, type ReactionCounts, type ReactionKind } from "./reactions";
 
 const DEFAULT_PATH = "./data/concefor.db";
 
@@ -73,4 +75,40 @@ export function getSessions(): Session[] {
       speakers,
     };
   });
+}
+
+export function sessionExists(id: string): boolean {
+  return Boolean(getDb().prepare("select 1 from sessions where id = ?").get(id));
+}
+
+// ─────────────────────────── Reações (E2) ───────────────────────────
+// Toda reação é um registro na linha do tempo (tipo='reaction'). Anônimo:
+// client_id é o id de dispositivo (ver lib/clientId.ts), sem PII.
+
+export function insertReaction(
+  sessionId: string,
+  reaction: ReactionKind,
+  clientId: string | null,
+): void {
+  getDb()
+    .prepare(
+      `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+       values (?, 'reaction', ?, ?, ?, ?)`,
+    )
+    .run(randomUUID(), sessionId, new Date().toISOString(), JSON.stringify({ reaction }), clientId);
+}
+
+// Contagem agregada por tipo, para a própria tela da sessão.
+export function getReactionCounts(sessionId: string): ReactionCounts {
+  const rows = getDb()
+    .prepare(
+      `select json_extract(payload, '$.reaction') as k, count(*) as n
+         from timeline_events
+        where tipo = 'reaction' and session_id = ?
+        group by k`,
+    )
+    .all(sessionId) as { k: string; n: number }[];
+  const counts = emptyCounts();
+  for (const { k, n } of rows) if (k in counts) counts[k as ReactionKind] = n;
+  return counts;
 }
