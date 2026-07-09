@@ -706,21 +706,19 @@ h1.page-title {
   margin-top: 18px;
 }
 .reaction-btns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
 }
 .reaction-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3px;
-  flex: 1 1 80px;
-  min-width: 72px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  padding: 10px 6px;
+  padding: 10px 3px;
   cursor: pointer;
   color: var(--ink);
   font-family: var(--font-title);
@@ -733,11 +731,12 @@ h1.page-title {
   transform: scale(1.08);
 }
 .reaction-emoji {
-  font-size: 26px;
+  font-size: clamp(22px, 6vw, 28px);
   line-height: 1;
 }
 .reaction-label {
   font-size: var(--text-xs);
+  line-height: 1.1;
   text-transform: none;
   letter-spacing: 0;
   color: var(--ink);
@@ -754,7 +753,7 @@ h1.page-title {
   color: var(--ink-dim);
 }
 
-/* Emoji que "voa" a cada toque — sobe a partir dos botões e some. */
+/* Emoji que "voa" a cada toque — sobe pela tela a partir dos botões e some. */
 .reactions-flies {
   position: absolute;
   left: 0;
@@ -762,25 +761,28 @@ h1.page-title {
   bottom: 100%;
   height: 0;
   pointer-events: none;
+  z-index: 5;
 }
 .fly {
   position: absolute;
-  left: 26px;
   bottom: 0;
-  font-size: 26px;
-  animation: flyUp 0.9s ease-out forwards;
+  font-size: 32px;
+  animation-name: flyUp;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  will-change: transform, opacity;
 }
 @keyframes flyUp {
   0% {
     opacity: 0;
     transform: translate(0, 0) scale(0.6);
   }
-  22% {
+  15% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: translate(var(--dx, 0), -92px) scale(1.25);
+    transform: translate(var(--dx, 0), -46vh) scale(1.35);
   }
 }
 
