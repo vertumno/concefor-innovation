@@ -91,8 +91,8 @@ export default function TimelinePage() {
 
       {filtradas.length === 0 && (
         <div className="empty">
-          Nenhuma sessão para os filtros atuais. Rode <code>npm run dev:demo</code> para a
-          programação de demonstração, ou configure o Supabase.
+          Nenhuma sessão para os filtros atuais. Rode <code>npm run seed</code> +{" "}
+          <code>npm run dev</code>, ou <code>npm run dev:demo</code> para a demonstração.
         </div>
       )}
 
