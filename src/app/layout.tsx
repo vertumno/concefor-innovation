@@ -56,8 +56,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="topnav">
               <Link href="/timeline">Programação</Link>
               <Link href="/informacoes">Informações</Link>
-              {/* Telão sairá da nav (responde em outra URL) — mantido por ora. */}
-              <Link href="/telao">Telão</Link>
+              {/* O Telão responde em /telao (projetor), fora da navegação do app
+                  — decisão de 26/06 (ver design-system/app/roadmap.md). */}
             </nav>
           </header>
           <DemoBar />

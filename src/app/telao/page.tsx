@@ -1,21 +1,23 @@
-import Link from "next/link";
+"use client";
 
-// Placeholder do modo telão (feature 4.2). A animação "batimento cardíaco" das
-// reações em tempo real (canal Realtime do Supabase) entra na semana 3.
-// Ver spec/app-v1.md §4.2.
-export default function TelaoPage() {
-  return (
-    <>
-      <h1 className="page-title">Telão</h1>
-      <p className="page-sub">Tela grande projetada — reações ao vivo do público.</p>
-      <div className="notice">
-        <strong>Em construção (semana 3).</strong> Aqui vai rodar o “batimento cardíaco”: uma
-        linha que pulsa a cada reação, agregando o canal Realtime da sessão em andamento. Roda em
-        navegador num PC ligado ao projetor (palco / TVs laterais).
-        <br />
-        <br />
-        <Link href="/">Voltar ao início</Link>
-      </div>
-    </>
-  );
+// /telao — escolhe automaticamente a sessão que está no ar agora e projeta o
+// batimento. Para fixar uma sessão específica, use /telao/[sessionId].
+import { useEffect, useState } from "react";
+import { fetchSessions, sessionStatus } from "@/lib/sessions";
+import { useEventClock } from "@/lib/clock";
+import { Telao, TelaoEmpty } from "@/components/Telao";
+import type { Session } from "@/lib/types";
+
+export default function TelaoIndex() {
+  const [sessions, setSessions] = useState<Session[] | null>(null);
+  const now = useEventClock(5000);
+
+  useEffect(() => {
+    fetchSessions().then(setSessions);
+  }, []);
+
+  if (sessions === null) return <TelaoEmpty msg="Carregando…" />;
+  const live = sessions.find((s) => sessionStatus(s, now) === "live");
+  if (!live) return <TelaoEmpty msg="Nenhuma sessão no ar agora." />;
+  return <Telao session={live} />;
 }
