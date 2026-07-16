@@ -4,6 +4,27 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-16 — Cronograma do app fechado com a Márcia: validação 30/07, lançamento 07/08
+
+**Decisão:** primeira demo do app pra Márcia (Concefor), na reunião de divulgação com
+Elton. Compromisso fechado: **30/07 às 10h** roda uma simulação/validação com a comissão
+do Concefor (presencial ou remoto, convidados a definir); ajustes na semana seguinte;
+**lançamento alvo em 07/08** (sexta-feira) via e-mail aos inscritos. Escopo mínimo
+garantido pro lançamento: programação + telão com reações (já funciona). Login por nº de
+inscrição + data de nascimento, dados por pessoa e relatório individual pós-evento ficam
+como "se der, melhor" — não são compromisso do v1. Duas ideias novas ficaram registradas
+(não implementadas): resumo pessoal pós-evento cruzando reações+transcrição por pessoa
+(sugestão do Elton, também serviria de insumo pro relatório institucional na PRPPG), e
+gamificação por QR codes espalhados com badges contextuais ao conteúdo. Ver síntese
+completa em `contexto/reunioes/sintese-2026-07-16.md`.
+
+**Por quê:** era a primeira vez que a Márcia via o app rodando — precisava de um
+compromisso de data pra não virar promessa solta, e de deixar claro o que é garantido
+(v1 mínimo) vs. o que é aspiracional, para não sobrecarregar o v1 já perto do prazo do
+evento real.
+
+---
+
 ## 2026-07-06 — Backend do v1: SQLite local + SSE no próprio Next (Supabase sai por ora)
 
 **Decisão:** o v1 troca Supabase por **SQLite local** (arquivo no servidor, via
