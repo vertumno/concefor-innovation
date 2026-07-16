@@ -60,7 +60,7 @@ Acontecem na programação, **após a fala da Vanessa Battestin** (abertura), co
 - Nova **Base de Conhecimentos**
 - Nova **vitrine da Plataforma de MOOCs**
 - **Livro do NTE** (confirmado em 16/07 — detalhes com Andrômeda)
-- **"AI no Moodle do Ifes"** (confirmado em 16/07)
+- **"AI no Moodle do Ifes"** (confirmado em 16/07 — responsável: **Saymon Castro, CGTI**)
 
 > Relacionado: banners impressos desses mesmos produtos em
 > [producao/02-pre-evento/banners-institucionais/](../producao/02-pre-evento/banners-institucionais/brief.md)

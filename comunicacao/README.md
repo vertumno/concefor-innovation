@@ -52,6 +52,10 @@ comunicacao/
 | Calendário de posts | [planejamento/calendario-publicacao.md](planejamento/calendario-publicacao.md) |
 | Escalas (podcast, transmissão, fotografia) | [planejamento/distribuicao-equipe.md](planejamento/distribuicao-equipe.md) |
 | Começar uma peça nova | [templates/brief-peca.md](templates/brief-peca.md) |
+| **Pedidos da Márcia** (atualização do site + novas peças) | [Doc de solicitações (Google Docs)](https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true) |
+| Artes produzidas (Canva) | [Pasta no Canva](https://canva.link/wdnsx8ggf61x2hs) |
+| Matrizes do Illustrator | [Drive da CGTE](https://drive.google.com/drive/folders/1fuoepIyukqXTw035JtTj-MSbnpw7veJn?usp=drive_link) |
+| Editáveis públicos (compartilhar com a comissão) | [Drive](https://drive.google.com/drive/folders/1-CH92C467aI7C_dj6fE4O5XBI8A_qShv) |
 
 ---
 
