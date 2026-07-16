@@ -18,12 +18,18 @@
 ## Pré-evento
 | Peça | Responsável | Prazo | Status |
 |---|---|---|---|
-| Card palestrante — Tessarolo | ___ | ___ | ⬜ |
-| Card palestrante — Mariano Pimentel | ___ | ___ | ⬜ |
-| Card palestrante — Vanessa Battestin | ___ | ___ | ⬜ |
-| Card mesa "Tecnologia Delas" | ___ | ___ | ⬜ |
-| Cards eventos paralelos | ___ | após divulgação | ⬜ |
+| 🔴 **Card lembrete prazo envio final (03/08 · Even3)** | Elton | **16/07** | 🟡 |
+| Card palestrante — Vanessa Battestin | ___ | publicar 21/07 | ⬜ |
+| Card palestrante — Tessarolo | ___ | publicar 24/07 | ⬜ |
+| Card palestrante — Mariano Pimentel | ___ | publicar 28/07 | ⬜ |
+| Card mesa "Tecnologia Delas" | ___ | publicar 31/07 | ⬜ |
+| Card mesa "Desafios da EaD" | ___ | publicar 04/08 | ⬜ |
+| Mensagem aos palestrantes (pedido de vídeo) | ___ | enviar até 18/07 | ⬜ |
+| Vídeos-convite dos palestrantes (receber até 03/08) | ___ | reels 08–14/08 | ⬜ |
+| Cards eventos paralelos (5 confirmados, 20/08) | ___ | sugerido 01–06/08 | ⬜ |
 | Contagem regressiva (10 peças) | ___ | 07–17/08 | ⬜ |
+
+> Plano detalhado: [plano-divulgacao-palestrantes.md](../producao/02-pre-evento/palestrantes/plano-divulgacao-palestrantes.md)
 
 ## Durante o evento
 | Frente | Responsável | Status |

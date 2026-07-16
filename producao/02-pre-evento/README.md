@@ -4,23 +4,37 @@
 
 ## Frentes
 
-### A) Divulgação de palestrantes — cards e/ou reels
-Um card (e reel quando fizer sentido) por palestrante. Fonte: [contexto/03-palestrantes.md](../../contexto/03-palestrantes.md).
-Guardar fotos-fonte em `palestrantes/_refs/`.
+### ⭐ Prioridade imediata
+- 🔴 **[Card lembrete: prazo envio final 03/08 (Even3)](card-prazo-envio-final/brief.md)** — fazer 16/07
 
-| Palestrante | Card | Reel | Status |
+### A) Divulgação de palestrantes — 2 ondas
+**Onda 1:** cards individuais (a partir de 21/07). **Onda 2:** vídeos-convite gravados pelos
+próprios palestrantes (reels 08–14/08).
+- 📋 **Plano completo:** [palestrantes/plano-divulgacao-palestrantes.md](palestrantes/plano-divulgacao-palestrantes.md)
+- ✉️ **Mensagem de solicitação de vídeo:** [palestrantes/mensagem-solicitacao-video.md](palestrantes/mensagem-solicitacao-video.md)
+- Fonte de bios: [contexto/03-palestrantes.md](../../contexto/03-palestrantes.md) · Fotos em `palestrantes/_refs/`
+
+| Palestrante | Card (Onda 1) | Vídeo-convite (Onda 2) | Status |
 |---|---|---|---|
-| Felipe Tessarolo (internacional) | ⬜ | ⬜ | ⬜ |
-| Mariano Pimentel | ⬜ | ⬜ | ⬜ |
-| Vanessa Battestin (abertura) | ⬜ | ⬜ | ⬜ |
-| Mesa "Tecnologia Delas" (Márcia, Sanz, Mariella) | ⬜ | ⬜ | ⬜ |
+| Vanessa Battestin (abertura) | 21/07 ⬜ | reel 08/08 ⬜ | ⬜ |
+| Felipe Tessarolo (internacional) | 24/07 ⬜ | reel 10/08 ⬜ | ⬜ |
+| Mariano Pimentel | 28/07 ⬜ | reel 14/08 ⬜ | ⬜ |
+| Mesa "Tecnologia Delas" (Márcia, Sanz, Mariella) | 31/07 ⬜ | reel 12/08 ⬜ | ⬜ |
+| Mesa "Desafios da EaD" (confirmar convidados) | 04/08 ⬜ | — | ⬜ |
 
 ### B) Divulgação dos eventos paralelos — cards e/ou reels
-> ⚠️ Programação dos eventos paralelos ainda será divulgada pela organização. Acompanhar.
+> ✅ 5 eventos satélites confirmados para 20/08 (falta a Aula Inaugural do Educimat).
+> Dados completos: [contexto/07-eventos-paralelos.md](../../contexto/07-eventos-paralelos.md)
+> Fonte + imagens dos coordenadores: [eventos-paralelos/](eventos-paralelos/)
 
-| Evento paralelo | Card | Reel | Status |
-|---|---|---|---|
-| (a definir) | ⬜ | ⬜ | ⬜ |
+| Evento paralelo (20/08) | Card | Status |
+|---|---|---|
+| IA além do chat (Marcos Accioly e Elton Silva) | ⬜ | ⬜ |
+| "Ciência delas" — Rio Doce Escolar | ⬜ | ⬜ |
+| Escola de Inovação — 6 anos | ⬜ | ⬜ |
+| Entre Dois Mundos — IA com livros-jogo | ⬜ | ⬜ |
+| Workshop Pros@tec | ⬜ | ⬜ |
+| Aula Inaugural Educimat *(aguardando infos)* | ⬜ | ⏸️ |
 
 ### C) Contagem regressiva — 10 dias
 Sequência diária de 10 peças, iniciando em **07/08** e terminando na abertura (17/08).

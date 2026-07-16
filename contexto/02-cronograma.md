@@ -10,7 +10,7 @@
 | Período de submissões | 15/05 a 19/06/2026 |
 | Período de avaliação | 20/06 a 30/06/2026 |
 | Notificação de aceite | 13/07/2026 |
-| Prazo para envio final | 03/08/2026 |
+| Prazo para envio final | **03/08/2026** — na plataforma **Even3** |
 | **Evento** | **17 a 20/08/2026** |
 
 ## Lotes de inscrição (para peças de "últimos dias")

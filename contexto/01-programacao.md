@@ -42,7 +42,8 @@
 | 16h00 | **Premiação dos Melhores Trabalhos do VIII Concefor** |
 | 16h30 | Coffee-break e Momento Cultural |
 
-> ⚠️ *"Em breve, divulgaremos a programação dos eventos paralelos."* — acompanhar para produzir cards.
+> ✅ 5 eventos satélites confirmados (+ Aula Inaugural do Educimat pendente) —
+> detalhes em [07-eventos-paralelos.md](07-eventos-paralelos.md).
 
 ## Destaques para comunicação
 - **Abertura + bolo dos 20 anos** (17/08, noite): momento âncora, garantir cobertura e reel.
