@@ -3,7 +3,9 @@
 > Resumo para produção de cards e cobertura. Detalhes completos (descrições na íntegra,
 > programação, contatos): [fonte-eventos-satelites.md](../producao/02-pre-evento/eventos-paralelos/fonte-eventos-satelites.md)
 > Imagens de divulgação enviadas pelos coordenadores: `producao/02-pre-evento/eventos-paralelos/_refs/`
-> ⚠️ **Pendente:** Aula Inaugural do Educimat (aguardando informações).
+> ⚠️ **Pendente:** Aula Inaugural do Educimat (aguardando programação deles).
+> 📌 **Combinado com a Márcia (16/07):** a divulgação dos eventos paralelos sai **tudo junto**,
+> depois que o Educimat mandar as informações e a Márcia finalizar/liberar a especificação.
 
 Todos acontecem na **quinta-feira, 20/08/2026** (Momento I: 9h–12h · Momento II: 13h30–16h).
 
@@ -15,7 +17,7 @@ Todos acontecem na **quinta-feira, 20/08/2026** (Momento I: 9h–12h · Momento 
 | 3 | **Escola de Inovação: 6º ano de popularização de novas tecnologias digitais** (cultura maker, fabricação digital, robótica, RV) | Patrícia Piana de Andrade e Daniel Moreira dos Santos | CCEC-EI / SEME / PMV | 9h–12h e 13h30–16h | [Forms](https://docs.google.com/forms/d/e/1FAIpQLSeR3Qr9AMh79SbCtmvDA7UgsWRsvAQx2eevJlUtgm9sSVLYlg/viewform) |
 | 4 | **Entre Dois Mundos: uma aventura para aprender IA** (oficina — alfabetização em IA com livros-jogo Sofia Carter + STEAM) | Juliana Cristina dos Santos Waichert | Ifes | 13h30–16h | [Forms](https://docs.google.com/forms/d/e/1FAIpQLSdlGMQs3RPPoERWbk-N-MiiXO3gM8nrhoORqhlgObfSEHhb5g/viewform) |
 | 5 | **Workshop Pros@tec: Desafios da Educação em Computação e da Informática na Educação** | Márcia Gonçalves de Oliveira e Rosane Muñoz | Cefor | 9h–12h e 13h30–16h | [Forms](https://docs.google.com/forms/d/e/1FAIpQLScwY-ubXyCmx7hA1CpxwDdTSVthgfVHWvWeY2pmFgnSdyN_CA/viewform) |
-| 6 | Aula Inaugural do Educimat | *(pendente)* | Educimat | *(pendente)* | *(pendente)* |
+| 6 | **Aula Inaugural do Educimat** — celebra os **15 anos** do programa (evento interno) | *(pendente)* | Educimat | tarde de 20/08 (um único horário) | *(pendente)* |
 
 ## Frases-síntese para os cards (rascunho)
 1. **IA além do chat** — "Cansou de explicar tudo de novo à IA a cada conversa? Nesta oficina você monta um espaço de trabalho que guarda seu contexto e produz com você. Não é preciso saber programar."
@@ -32,6 +34,14 @@ Todos acontecem na **quinta-feira, 20/08/2026** (Momento I: 9h–12h · Momento 
 | 3 — Escola de Inovação | [Drive](https://drive.google.com/open?id=1KQeING9OFLUY2nMJhtgHE-UFgtBvdAyk) |
 | 4 — Entre Dois Mundos | capas Sofia Carter em `_refs/divulgacao-image1..3.png` |
 | 5 — Pros@tec | logo em `_refs/divulgacao-image4.png` |
+
+## Inscrições (Google Forms)
+- A Márcia vai dar **permissão de edição** nos formulários de inscrição às coordenações
+  (acesso aos e-mails dos inscritos).
+- Só a oficina 1 (IA além do chat) definiu **limite de vagas**; as demais ficam abertas —
+  a lista de participantes é confirmada depois (com pedido de confirmação de presença).
+- O topo dos formulários usa a arte já publicada (link no Drive) — ver
+  `contexto/_marca/referencias-publicadas/topo-formulario/`.
 
 ## Contatos dos coordenadores
 Ver tabelas completas na [fonte](../producao/02-pre-evento/eventos-paralelos/fonte-eventos-satelites.md)

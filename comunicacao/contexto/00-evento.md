@@ -46,6 +46,24 @@ para o **Educimat** (Mestrado e Doutorado Profissional em Educação em Ciência
 - Membro da comissão (e da CGTE): Me. Elton Vinicius Silva, Me. Marcos Vinicius Forecchi Accioly
 - Comissão completa e comitê científico: ver [site-concefor.md](../site-concefor.md)
 
+## Inscrições e capacidade
+- **Inscritos:** já passou de **100** (em 16/07/2026, via plataforma Eventos Ifes)
+- **Capacidade planejada:** **400 pessoas** (referência histórica do Concefor — nunca passou disso)
+- **Prazo de inscrição:** até 15/08
+- Implicação para a comunicação: **calibrar o volume de divulgação pela ocupação** — acompanhar
+  o número de inscritos antes de intensificar chamadas para inscrição (reunião de 16/07 com a Márcia)
+
+## Lançamentos durante o evento
+Acontecem na programação, **após a fala da Vanessa Battestin** (abertura), como um
+"evento dentro do evento" — e devem ser divulgados:
+- Livro do Cefor (20 anos)
+- Nova **Base de Conhecimentos**
+- Nova **vitrine da Plataforma de MOOCs**
+- Outros livros (ex.: livro do NTE — detalhes com Andrômeda; **lista exata a confirmar**)
+
+> Relacionado: banners impressos desses mesmos produtos em
+> [producao/02-pre-evento/banners-institucionais/](../producao/02-pre-evento/banners-institucionais/brief.md)
+
 ## Contato oficial
 - Submissões / dúvidas: **submissoes.concefor@ifes.edu.br**
 

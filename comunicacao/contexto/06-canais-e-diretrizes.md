@@ -34,6 +34,22 @@
 - **Consistência visual:** selo 20 anos + assinatura Cefor/Ifes nas peças principais.
   Padrão gráfico de referência: [05-identidade-visual.md](05-identidade-visual.md) e `contexto/_marca/`.
 
+## Divulgação institucional via ACS/Ifes (reunião 16/07)
+- A ACS **não costuma repostar/divulgar no Instagram** dela conteúdo de terceiros — não contar
+  com repost dos nossos cards.
+- O caminho é **escrever uma notícia** para o **site do Ifes / Notícias Ifes**. Quem escreve é
+  quem quer a notícia (o Cefor não tem jornalista); a CGTE ajuda a Márcia a redigir.
+- Marquito vai **checar com a ACS** se há formato de parceria/collab no Instagram
+  (marcação em stories durante o evento costuma acontecer; publicação em feed, confirmar).
+
+## Logos de apoiadores em materiais impressos (reunião 16/07)
+- **Educimat** é o (único) apoiador — a logo **deve entrar** nos impressos
+  (Márcia pedindo a logo ao Zé Geraldo).
+- **"Unac"** *(grafia da transcrição — confirmar o nome do órgão)*: proibiu o uso da própria
+  marca no **período eleitoral** — **não colocar** a logo nos materiais.
+- ⚠️ Regra geral: **pensar com cuidado quais logos entram** em cada material do evento.
+- Status dos impressos: **encaminhados com Denis e Vivian** (16/07).
+
 ## Fluxo de aprovação (definir)
 1. Produção (CGTE) → 2. Revisão interna → 3. Aprovação da coordenação → 4. Publicação.
 - Responsável por aprovar antes de publicar: `___`

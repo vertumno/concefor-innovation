@@ -58,8 +58,14 @@ comunicacao/
 ## Estado do momento (atualizar sempre)
 
 - **Hoje:** 16/07/2026 — faltam **32 dias** para a abertura (17/08).
-- **Marco recente:** Notificação de aceite dos trabalhos saiu em 13/07.
+- **Marco recente:** reunião com a Márcia em 16/07 (divulgação + demo do app) — prioridade
+  confirmada: **inscrições e palestrantes** (cards p/ WhatsApp e carrossel no Instagram).
+  Notificação de aceite dos trabalhos saiu em 13/07.
+- **Inscritos:** já passou de 100 (capacidade: 400) — calibrar divulgação pela ocupação.
 - **Próximos prazos externos:** envio final dos trabalhos até **03/08 (Even3)** · inscrições até 15/08.
+- **Aguardando da Márcia:** 🔴 checklist do que terá **transmissão/gravação** (urgente p/ equipe e
+  Libras) · infos da Aula Inaugural do Educimat (p/ divulgar os paralelos **tudo junto**) ·
+  logo do Educimat p/ impressos.
 - **Prioridades de comunicação agora:**
   1. 🔴 [Card lembrete do prazo de envio final 03/08](producao/02-pre-evento/card-prazo-envio-final/brief.md) — **fazer hoje**
   2. Iniciar cards de palestrantes ([plano](producao/02-pre-evento/palestrantes/plano-divulgacao-palestrantes.md)) — 1º card em 21/07
