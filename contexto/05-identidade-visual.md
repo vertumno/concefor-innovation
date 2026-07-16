@@ -12,17 +12,17 @@
 ## Paleta de cores
 | Cor | Hex | Uso |
 |---|---|---|
-| **Turquesa Concefor** | `#00DCC9` *(confirmada nos arquivos)* | Badge de data, faixa de URL, molduras, destaques, texto sobre fundo branco |
-| **Azul profundo** | ~`#1B3766` *(aproximada — confirmar no Canva)* | Base do gradiente de fundo |
+| **Turquesa Concefor** | `#00DCC9` | Badge de data, faixa de URL, molduras, destaques, texto sobre fundo branco; ponto inicial do gradiente |
+| **Azul Concefor** | `#1F4AA1` | Ponto final do gradiente de fundo |
 | **Branco** | `#FFFFFF` | Textos sobre o gradiente, versão branca dos logos |
 | Verde (ícone logo) | ~`#76B82A` | Só dentro do logo colorido |
 | Azul (ícone logo) | ~`#2196BD` | Só dentro do logo colorido |
 | Amarelo-lima (ícone logo) | ~`#D7DF23` | Só dentro do logo colorido |
 | Magenta (ícone logo) | ~`#D6194D` | Só dentro do logo colorido |
 
-**Fundo padrão:** gradiente diagonal de turquesa (topo-esquerda) para azul profundo
-(base-direita), com formas orgânicas sutis em transparência e **losangos em contorno fino
-azul-neon** concentrados no rodapé/lado direito.
+**Fundo padrão:** gradiente diagonal de `#00DCC9` (turquesa, topo-esquerda) para `#1F4AA1`
+(azul, base-direita), com formas orgânicas sutis em transparência e **losangos em contorno
+fino azul-neon** concentrados no rodapé/lado direito.
 
 ## Selo dos 20 anos
 - "20" em estilo low-poly com gradiente **rosa → roxo → azul** (~`#EC6BC9 → #8F7FD6 → #3FA0DA`),
@@ -40,10 +40,12 @@ azul-neon** concentrados no rodapé/lado direito.
 - Sobre o gradiente usar a **versão branca** (ícone mantém as cores).
 
 ## Tipografia
-- Wordmark e títulos: **sans condensada bold em caixa alta** (aparenta Oswald/Fjalla One —
-  ⚠️ confirmar o nome exato da fonte no Canva e registrar aqui).
-- Subtítulos e textos de apoio: mesma família em peso regular, caps.
-- Nos XMLs dos PPTX consta apenas Arial (irrelevante — as artes são imagens prontas).
+| Fonte | Uso |
+|---|---|
+| **Teko** | Wordmark "VIII Concefor" e títulos condensados em caixa alta (bold) |
+| **Montserrat** | Subtítulos, textos de apoio, URL e corpo (caps nos subtítulos) |
+
+Ambas gratuitas (Google Fonts) e disponíveis no Canva.
 
 ## Anatomia do card padrão (post/story Instagram)
 Referências prontas em [`_marca/referencias-publicadas/`](_marca/referencias-publicadas/):

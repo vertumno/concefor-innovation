@@ -28,9 +28,8 @@ _marca/
 | `Topo de formulário do Google.pptx` | `referencias-publicadas/topo-formulario/` (6 PNGs) | ✅ |
 
 > ✅ Processado em 16/07/2026: PNGs extraídos, originais movidos para junto deles, e o padrão
-> gráfico (cores, layout, anatomia dos cards) documentado em
-> [../05-identidade-visual.md](../05-identidade-visual.md).
-> Pendência única: **confirmar o nome da fonte** usada nos títulos (verificar no Canva).
+> gráfico completo (cores `#00DCC9 → #1F4AA1`, fontes Teko + Montserrat, layout, anatomia
+> dos cards) documentado em [../05-identidade-visual.md](../05-identidade-visual.md).
 
 ## Regra de uso
 - Estas peças finalizadas são o **padrão a seguir**: novos cards devem manter paleta,
