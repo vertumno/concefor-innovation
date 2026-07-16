@@ -29,7 +29,7 @@
 | Cards eventos paralelos (aguardando Educimat; **publicar tudo junto** após liberação da Márcia) | Elton *(a princípio)* | sugerido 01–06/08 | ⬜ |
 | Contagem regressiva (10 peças) | Elton *(a princípio)* | 07–17/08 | ⬜ |
 | Banners institucionais — livro, MOOCs, Base de Conhecimentos (pedido Vanessa 14/07) | Elton *(a princípio)* | arte até **01/08** → gráfica | ⬜ |
-| Notícia do Concefor para ACS (site/Notícias Ifes) — CGTE ajuda Márcia a redigir | Elton *(a princípio)* | antes de 15/08 | ⬜ |
+| Notícia do Concefor para ACS (site/Notícias Ifes) — CGTE ajuda Márcia a redigir; estilo em [contexto/08-referencia-noticias.md](../contexto/08-referencia-noticias.md) | Elton *(a princípio)* | antes de 15/08 | ⬜ |
 | Divulgação dos lançamentos (livro Cefor, Base de Conhecimentos, vitrine MOOCs, livro NTE, "AI no Moodle do Ifes") — pode ir em carrossel com chamada de inscrição | Elton *(a princípio)* | ___ | ⬜ |
 | Divulgação do lançamento do app (e-mail aos inscritos + QR codes no evento) | Marquito / Elton | lançamento **07/08** | ⬜ |
 
