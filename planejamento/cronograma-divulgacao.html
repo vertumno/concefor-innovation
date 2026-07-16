@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cronograma de Divulgação — VIII Concefor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#00DCC9; --blue:#1F4AA1;
+    --ink:#152238; --muted:#5c6b82; --line:#e5e9f0; --bg:#f4f6fa; --card:#ffffff;
+    --c-inst:#F59E0B; --c-pal:#00A6A6; --c-par:#8B5CF6; --c-reel:#EC4899;
+    --c-reg:#3B82F6; --c-dur:#15803D; --c-pos:#64748B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px 60px}
+
+  /* Header */
+  header{background:linear-gradient(120deg,var(--teal) 0%,var(--blue) 78%);color:#fff;
+    padding:38px 0 34px;margin-bottom:28px}
+  .head-inner{max-width:1180px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;
+    align-items:flex-end;justify-content:space-between;gap:20px}
+  h1{font-family:'Teko',sans-serif;font-weight:600;font-size:52px;line-height:.95;
+    letter-spacing:.5px;text-transform:uppercase}
+  .sub{font-weight:600;opacity:.95;margin-top:6px;font-size:15px}
+  .theme{opacity:.82;font-size:13px;margin-top:4px;max-width:640px}
+  .badge-date{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);
+    border-radius:12px;padding:12px 18px;text-align:center;backdrop-filter:blur(2px)}
+  .badge-date .m{font-family:'Teko',sans-serif;font-size:22px;letter-spacing:1px;line-height:1}
+  .badge-date .d{font-family:'Teko',sans-serif;font-size:40px;font-weight:700;line-height:1}
+  .badge-date small{display:block;font-family:'Montserrat';font-size:11px;opacity:.85;margin-top:3px;letter-spacing:.5px}
+
+  /* Summary tiles */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:30px}
+  .tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;
+    box-shadow:0 1px 2px rgba(20,40,80,.04)}
+  .tile .n{font-family:'Teko',sans-serif;font-size:40px;font-weight:700;line-height:1;color:var(--blue)}
+  .tile .l{font-size:12.5px;color:var(--muted);font-weight:600;margin-top:4px}
+
+  h2{font-family:'Teko',sans-serif;font-weight:600;font-size:30px;letter-spacing:.5px;
+    text-transform:uppercase;color:var(--ink);margin:34px 0 14px;display:flex;align-items:center;gap:10px}
+  h2::before{content:"";width:8px;height:26px;border-radius:3px;
+    background:linear-gradient(var(--teal),var(--blue))}
+
+  /* Legend */
+  .legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-bottom:20px}
+  .lg{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--muted)}
+  .dot{width:13px;height:13px;border-radius:4px;flex:none}
+
+  /* Calendar */
+  .months{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media(max-width:820px){.months{grid-template-columns:1fr}}
+  .month{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:0 1px 3px rgba(20,40,80,.05)}
+  .month h3{font-family:'Teko',sans-serif;font-weight:600;font-size:26px;letter-spacing:1px;
+    text-transform:uppercase;text-align:center;padding:14px;color:#fff;
+    background:linear-gradient(120deg,var(--teal),var(--blue))}
+  .grid{display:grid;grid-template-columns:repeat(7,1fr)}
+  .wd{font-size:11px;font-weight:700;color:var(--muted);text-align:center;padding:8px 0;
+    text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--line)}
+  .cell{min-height:78px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:5px 5px 6px;position:relative}
+  .cell:nth-child(7n){border-right:none}
+  .cell.empty{background:#fafbfd}
+  .cell .num{font-size:12px;font-weight:700;color:var(--muted)}
+  .cell.today{background:#fff7e8}
+  .cell.today .num{color:var(--c-inst)}
+  .cell.today::after{content:"HOJE";position:absolute;top:6px;right:6px;font-size:8px;
+    font-weight:800;color:var(--c-inst);letter-spacing:.5px}
+  .cell.event .num{color:var(--c-dur)}
+  .cell.weekend{background:#fbfcfe}
+  .chip{display:block;font-size:9.5px;font-weight:700;line-height:1.15;color:#fff;
+    border-radius:4px;padding:2px 4px;margin-top:3px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+
+  /* List */
+  .list{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:0 1px 3px rgba(20,40,80,.05)}
+  .grp{padding:10px 20px;background:#f0f3f9;font-family:'Teko',sans-serif;font-size:20px;
+    letter-spacing:.8px;text-transform:uppercase;color:var(--blue);border-top:1px solid var(--line)}
+  .grp:first-child{border-top:none}
+  .row{display:grid;grid-template-columns:74px 1fr;gap:14px;padding:12px 20px;
+    border-top:1px solid var(--line);align-items:start}
+  .row .date{font-family:'Teko',sans-serif;font-size:24px;font-weight:600;line-height:.9;color:var(--ink);
+    border-left:4px solid var(--rc,#ccc);padding-left:10px}
+  .row .date small{display:block;font-family:'Montserrat';font-size:10px;font-weight:600;
+    color:var(--muted);letter-spacing:.5px;margin-top:3px}
+  .row .body .t{font-weight:700;font-size:14px}
+  .row .body .d{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .tag{display:inline-block;font-size:10px;font-weight:700;color:#fff;border-radius:5px;
+    padding:2px 7px;margin-left:8px;vertical-align:middle;letter-spacing:.3px}
+  .type{display:inline-block;font-size:10px;font-weight:700;border:1px solid var(--line);
+    border-radius:5px;padding:1px 7px;color:var(--muted);margin-top:6px}
+
+  .note{background:#fff;border:1px solid var(--line);border-left:4px solid var(--c-inst);
+    border-radius:12px;padding:14px 18px;margin-top:20px;font-size:13px;color:var(--muted)}
+  .note b{color:var(--ink)}
+  footer{margin-top:30px;font-size:12px;color:var(--muted);text-align:center;line-height:1.7}
+  footer a{color:var(--blue);font-weight:600;text-decoration:none}
+
+  @media print{
+    body{background:#fff}
+    header{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .tile,.month,.list,.chip,.tag,.month h3,.row .date{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    h2{page-break-after:avoid}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <div>
+      <h1>Cronograma de Divulgação</h1>
+      <div class="sub">VIII Concefor · Coordenadoria Geral de Tecnologias Educacionais (CGTE)</div>
+      <div class="theme">Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais · Canal principal: Instagram do Cefor</div>
+    </div>
+    <div class="badge-date">
+      <div class="m">AGO</div>
+      <div class="d">17–20</div>
+      <small>2026 · CEFOR / IFES</small>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="tiles" id="tiles"></div>
+
+  <h2>Calendário</h2>
+  <div class="legend" id="legend"></div>
+  <div class="months" id="months"></div>
+
+  <h2>Linha do tempo detalhada</h2>
+  <div class="list" id="list"></div>
+
+  <div class="note">
+    <b>Pendências que dependem de confirmação:</b> card da Dra. Rutinelli Fávero (confirmar participação);
+    card da mesa "Desafios da EaD para os próximos 20 anos" (aguardando convidados locais);
+    Aula Inaugural do Educimat (evento paralelo, aguardando informações);
+    recebimento dos vídeos-convite dos palestrantes até <b>03/08</b>.
+  </div>
+
+  <footer>
+    Gerado em 16/07/2026 · Produção das artes no Canva:
+    <a href="https://www.canva.com/folder/FAHDrZ44PIM">pasta do Concefor</a><br>
+    Fonte de dados: planejamento/calendario-publicacao.md e plano de divulgação de palestrantes
+  </footer>
+</div>
+
+<script>
+const PHASES = {
+  inst:{label:'Prazos e inscrições', color:'#F59E0B'},
+  pal :{label:'Cards de palestrantes', color:'#00A6A6'},
+  par :{label:'Eventos paralelos', color:'#8B5CF6'},
+  reel:{label:'Reels vídeo-convite', color:'#EC4899'},
+  reg :{label:'Contagem regressiva', color:'#3B82F6'},
+  dur :{label:'Durante o evento', color:'#15803D'},
+  pos :{label:'Pós-evento', color:'#64748B'},
+};
+
+const EVENTS = [
+  // Julho
+  {d:'2026-07-16', p:'inst', type:'Feed',        t:'Card: prazo de envio final', desc:'Versão final dos trabalhos aprovados até 03/08 (plataforma Even3). Prioridade de hoje.'},
+  {d:'2026-07-21', p:'pal',  type:'Feed',        t:'Card: Vanessa Battestin',    desc:'Palestra de abertura "20 Anos de EaD e o Cefor" · 17/08'},
+  {d:'2026-07-24', p:'pal',  type:'Feed',        t:'Card: Felipe Tessarolo',     desc:'Palestra internacional — The Open University (UK) · 18/08'},
+  {d:'2026-07-28', p:'pal',  type:'Feed',        t:'Card: Mariano Pimentel',     desc:'"Desafios da EaD e as ondas de IA" · 19/08'},
+  {d:'2026-07-28', p:'inst', type:'Story',       t:'Reforço: última semana',     desc:'Lembrete do prazo de envio final (03/08)'},
+  {d:'2026-07-31', p:'pal',  type:'Feed',        t:'Card: Márcia Oliveira',      desc:'Mesa "Tecnologia Delas" · 18/08 · Coordenadora Geral'},
+  // Agosto — pré
+  {d:'2026-08-01', p:'inst', type:'Story',       t:'Reforço: últimos dias',      desc:'Prazo de envio final termina em 03/08'},
+  {d:'2026-08-03', p:'inst', type:'Marco',       t:'PRAZO: envio final (Even3)', desc:'Também é o prazo interno para receber os vídeos-convite dos palestrantes'},
+  {d:'2026-08-04', p:'pal',  type:'Feed',        t:'Card: Mariella Berger',      desc:'Mesa "Tecnologia Delas" · 18/08'},
+  {d:'2026-08-05', p:'par',  type:'Carrossel',   t:'Eventos paralelos (5)',      desc:'Série dos eventos satélites de 20/08 (IA além do chat, Ciência delas, Escola de Inovação, Entre Dois Mundos, Pros@tec)'},
+  {d:'2026-08-06', p:'pal',  type:'Feed',        t:'Card: Celia Jaqueline Sanz', desc:'Mesa "Tecnologia Delas" · 18/08'},
+  {d:'2026-08-07', p:'reg',  type:'Feed+Story',  t:'Regressiva: faltam 10 dias', desc:'Início da contagem regressiva até a abertura'},
+  {d:'2026-08-08', p:'reg',  type:'Story',       t:'Regressiva: 9 dias',         desc:''},
+  {d:'2026-08-08', p:'reel', type:'Reel',        t:'Vídeo-convite: Vanessa Battestin', desc:''},
+  {d:'2026-08-09', p:'reg',  type:'Story',       t:'Regressiva: 8 dias',         desc:''},
+  {d:'2026-08-10', p:'reg',  type:'Story',       t:'Regressiva: 7 dias',         desc:''},
+  {d:'2026-08-10', p:'reel', type:'Reel',        t:'Vídeo-convite: Felipe Tessarolo', desc:''},
+  {d:'2026-08-11', p:'reg',  type:'Story',       t:'Regressiva: 6 dias',         desc:''},
+  {d:'2026-08-12', p:'reg',  type:'Story',       t:'Regressiva: 5 dias',         desc:''},
+  {d:'2026-08-12', p:'reel', type:'Reel',        t:'Vídeo-convite: Tecnologia Delas', desc:'Uma ou mais participantes da mesa'},
+  {d:'2026-08-13', p:'reg',  type:'Story',       t:'Regressiva: 4 dias',         desc:''},
+  {d:'2026-08-14', p:'reg',  type:'Story',       t:'Regressiva: 3 dias',         desc:''},
+  {d:'2026-08-14', p:'reel', type:'Reel',        t:'Vídeo-convite: Mariano Pimentel', desc:''},
+  {d:'2026-08-15', p:'reg',  type:'Story',       t:'Regressiva: 2 dias',         desc:''},
+  {d:'2026-08-15', p:'inst', type:'Story',       t:'Último dia de inscrição',    desc:'Inscrições encerram em 15/08'},
+  {d:'2026-08-16', p:'reg',  type:'Feed',        t:'Regressiva: é amanhã!',      desc:'Falta 1 dia para a abertura'},
+  // Agosto — durante
+  {d:'2026-08-17', p:'dur',  type:'Ao vivo',     t:'Abertura + 20 anos do Cefor', desc:'Palestra Vanessa Battestin · celebração e bolo dos 20 anos · transmissão ao vivo + Libras · "é hoje!"'},
+  {d:'2026-08-18', p:'dur',  type:'Ao vivo',     t:'Mesa "Tecnologia Delas" + Tessarolo', desc:'Cobertura fotográfica · transmissão ao vivo + Libras · reels e stories'},
+  {d:'2026-08-19', p:'dur',  type:'Ao vivo',     t:'Mesa "Desafios da EaD" + Mariano', desc:'Cobertura fotográfica · transmissão ao vivo + Libras · reels e stories'},
+  {d:'2026-08-20', p:'dur',  type:'Ao vivo',     t:'Eventos paralelos + Premiação', desc:'Cobertura dos satélites · premiação dos melhores trabalhos · transmissão'},
+  // Pós
+  {d:'2026-08-21', p:'pos',  type:'Feed/Reel',   t:'Retrospectiva + premiados',  desc:'Agradecimentos, números do evento, trabalhos premiados e publicação das gravações/podcasts'},
+];
+
+const MONTHS_PT = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+const WD = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+const TODAY = '2026-07-16';
+
+function evByDay(y,m,d){
+  const key = `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+  return EVENTS.filter(e=>e.d===key);
+}
+
+// Tiles
+const tiles = [
+  {n:'16/07', l:'Início da divulgação (hoje)'},
+  {n:'6+1', l:'Cards de palestrantes (1 a confirmar)'},
+  {n:'4', l:'Reels vídeo-convite'},
+  {n:'5', l:'Eventos paralelos (20/08)'},
+  {n:'10', l:'Dias de contagem regressiva'},
+  {n:'17–20/08', l:'Evento ao vivo + Libras'},
+];
+document.getElementById('tiles').innerHTML = tiles.map(t=>
+  `<div class="tile"><div class="n">${t.n}</div><div class="l">${t.l}</div></div>`).join('');
+
+// Legend
+document.getElementById('legend').innerHTML = Object.values(PHASES).map(p=>
+  `<span class="lg"><span class="dot" style="background:${p.color}"></span>${p.label}</span>`).join('');
+
+// Calendar
+function renderMonth(y,m){
+  const first = new Date(y,m-1,1).getDay();
+  const days = new Date(y,m,0).getDate();
+  let cells = '';
+  for(let i=0;i<first;i++) cells += `<div class="cell empty"></div>`;
+  for(let d=1;d<=days;d++){
+    const evs = evByDay(y,m,d);
+    const wd = new Date(y,m-1,d).getDay();
+    const key = `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    let cls = 'cell';
+    if(wd===0||wd===6) cls += ' weekend';
+    if(key===TODAY) cls += ' today';
+    if(key>='2026-08-17'&&key<='2026-08-20') cls += ' event';
+    const chips = evs.map(e=>
+      `<span class="chip" style="background:${PHASES[e.p].color}" title="${e.t}${e.desc?' — '+e.desc:''}">${e.t.replace(/^Card: |^Vídeo-convite: /,'')}</span>`).join('');
+    cells += `<div class="${cls}"><span class="num">${d}</span>${chips}</div>`;
+  }
+  const head = WD.map(w=>`<div class="wd">${w}</div>`).join('');
+  return `<div class="month"><h3>${MONTHS_PT[m-1]} ${y}</h3><div class="grid">${head}${cells}</div></div>`;
+}
+document.getElementById('months').innerHTML = renderMonth(2026,7) + renderMonth(2026,8);
+
+// List
+const GROUPS = [
+  {label:'Julho — aquecimento', from:'2026-07-01', to:'2026-07-31'},
+  {label:'Agosto — reta final (pré-evento)', from:'2026-08-01', to:'2026-08-16'},
+  {label:'17 a 20 de agosto — durante o evento', from:'2026-08-17', to:'2026-08-20'},
+  {label:'Depois do evento', from:'2026-08-21', to:'2026-12-31'},
+];
+function fmtDate(k){const[,mm,dd]=k.split('-');return{dd,mm,wd:WD[new Date(+k.slice(0,4),+mm-1,+dd).getDay()]};}
+let listHtml='';
+for(const g of GROUPS){
+  const evs = EVENTS.filter(e=>e.d>=g.from&&e.d<=g.to);
+  if(!evs.length) continue;
+  listHtml += `<div class="grp">${g.label}</div>`;
+  for(const e of evs){
+    const f=fmtDate(e.d); const c=PHASES[e.p].color;
+    listHtml += `<div class="row">
+      <div class="date" style="--rc:${c}">${f.dd}<small>${f.mm==='07'?'JUL':'AGO'} · ${f.wd}</small></div>
+      <div class="body">
+        <span class="t">${e.t}</span><span class="tag" style="background:${c}">${PHASES[e.p].label}</span>
+        ${e.desc?`<div class="d">${e.desc}</div>`:''}
+        <span class="type">${e.type}</span>
+      </div></div>`;
+  }
+}
+document.getElementById('list').innerHTML = listHtml;
+</script>
+</body>
+</html>

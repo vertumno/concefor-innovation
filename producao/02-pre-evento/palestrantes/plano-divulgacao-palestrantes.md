@@ -16,18 +16,26 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 - **Solicitar aos palestrantes já** (mensagem pronta: [mensagem-solicitacao-video.md](mensagem-solicitacao-video.md))
 - **Prazo para recebermos os vídeos: 03/08** (dá margem para edição, legenda e agendamento)
 
-## Cronograma — Onda 1 (cards)
-| Ordem | Publicação | Palestrante / peça | Data sugerida | Status |
-|---|---|---|---|---|
-| 1 | Card | Dra. Vanessa Battestin — abertura "20 Anos de EaD e o Cefor" | 21/07 | ⬜ |
-| 2 | Card | Dr. Felipe Tessarolo — palestra internacional (The Open University) | 24/07 | ⬜ |
-| 3 | Card | Dr. Mariano Pimentel — "Desafios da EaD e as ondas de IA" | 28/07 | ⬜ |
-| 4 | Card | Mesa "Tecnologia Delas" — Márcia Oliveira, Jaqueline Sanz, Mariella Berger | 31/07 | ⬜ |
-| 5 | Card | Mesa "Desafios da EaD para os próximos 20 anos" (quando confirmar convidados) | 04/08 | ⬜ |
-| 6 | Card | Dra. Rutinelli Fávero *(confirmar participação antes)* | a definir | ⬜ |
+## Cronograma — Onda 1 (cards individuais, 1 por palestrante)
+> Temos foto oficial dos 7 — cada um ganha card individual (inclusive as 3 da mesa
+> "Tecnologia Delas"). Isso dá mais material para o feed e um momento para cada palestrante.
 
-> Ordem pensada: abre com a palestra de abertura (âncora dos 20 anos), depois o internacional
-> (maior peso), depois IA (tema quente), depois as mesas.
+| Ordem | Data | Palestrante | Contexto | Status |
+|---|---|---|---|---|
+| 1 | 21/07 | Dra. Vanessa Battestin | Palestra de abertura "20 Anos de EaD e o Cefor" (17/08) | ⬜ |
+| 2 | 24/07 | Dr. Felipe Tessarolo | Palestra internacional — The Open University (18/08) | ⬜ |
+| 3 | 28/07 | Dr. Mariano Pimentel | "Desafios da EaD e as ondas de IA" (19/08) | ⬜ |
+| 4 | 31/07 | Dra. Márcia Oliveira | Mesa "Tecnologia Delas" (18/08) + Coord. Geral | ⬜ |
+| 5 | 04/08 | Dra. Mariella Berger | Mesa "Tecnologia Delas" (18/08) | ⬜ |
+| 6 | 06/08 | Dra. Celia Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ⬜ |
+| 7 | a confirmar | Dra. Rutinelli da Penha Fávero | Confirmar participação/papel antes de publicar | ⬜ |
+
+> As 3 palestrantes da mesa "Tecnologia Delas" (Márcia, Mariella e Celia) recebem cards
+> individuais e, juntos, promovem a mesa. Opcional: um card-teaser reunindo as três.
+> A mesa "Desafios da EaD para os próximos 20 anos" terá card à parte quando os convidados
+> locais forem confirmados.
+> Ordem: abre com a palestra de abertura (âncora dos 20 anos), depois o internacional,
+> depois IA, e por fim a sequência da mesa "Tecnologia Delas".
 
 ## Cronograma — Onda 2 (vídeos-convite)
 | Ordem | Reel | Data sugerida | Status |
