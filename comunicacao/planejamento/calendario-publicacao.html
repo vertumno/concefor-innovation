@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cronograma visual de divulgação do VIII Concefor 2026.">
+  <title>Cronograma de Divulgação | VIII Concefor 2026</title>
+  <style>
+    :root {
+      --navy: #102b5f;
+      --blue: #1f4aa1;
+      --turquoise: #00a99a;
+      --turquoise-soft: #dff8f5;
+      --ink: #15233d;
+      --muted: #60708a;
+      --line: #dce3ed;
+      --surface: #ffffff;
+      --canvas: #f5f7fa;
+      --soft-blue: #eaf0fb;
+      --radius: 14px;
+      --shadow: 0 18px 50px rgba(31, 74, 161, .09);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: Montserrat, "Segoe UI", Arial, sans-serif;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button, a { font: inherit; }
+
+    .page-shell {
+      width: min(1500px, calc(100% - 40px));
+      margin: 20px auto 64px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 390px;
+      padding: 36px 44px 42px;
+      border-radius: var(--radius);
+      color: #f9ffff;
+      background:
+        radial-gradient(circle at 88% 12%, rgba(255,255,255,.16), transparent 25%),
+        linear-gradient(128deg, #00a99a 0%, #087d9f 42%, #1f4aa1 100%);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -145px;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(255,255,255,.17);
+      transform: rotate(45deg);
+      border-radius: 64px;
+    }
+
+    .hero-top,
+    .hero-content,
+    .hero-metrics { position: relative; z-index: 1; }
+
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .brand-lockup {
+      width: min(350px, 52vw);
+      height: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    .meeting-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .action {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 17px;
+      border: 1px solid rgba(255,255,255,.54);
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(16,43,95,.18);
+      cursor: pointer;
+      transition: background .2s ease, transform .2s ease;
+      white-space: nowrap;
+    }
+
+    .action:hover { background: rgba(16,43,95,.34); }
+    .action:active { transform: translateY(1px); }
+    .action:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+
+    .hero-content {
+      max-width: 860px;
+      margin-top: 54px;
+    }
+
+    .hero-kicker {
+      margin: 0 0 8px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(42px, 5vw, 76px);
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      margin: 20px 0 0;
+      color: rgba(255,255,255,.9);
+      font-size: 18px;
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(110px, 1fr));
+      gap: 1px;
+      max-width: 850px;
+      margin-top: 42px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.18);
+    }
+
+    .metric {
+      min-height: 90px;
+      padding: 15px 18px;
+      background: rgba(16,43,95,.22);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255,255,255,.78);
+      font-size: 12px;
+    }
+
+    .phase-nav {
+      position: sticky;
+      top: 12px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 18px 0 42px;
+      padding: 11px 12px 11px 20px;
+      border: 1px solid rgba(220,227,237,.9);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 10px 32px rgba(16,43,95,.07);
+      backdrop-filter: blur(14px);
+    }
+
+    .phase-nav strong { font-size: 14px; }
+
+    .nav-links { display: flex; gap: 6px; }
+
+    .nav-links a {
+      padding: 8px 13px;
+      border-radius: 999px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--navy);
+      background: var(--turquoise-soft);
+      outline: none;
+    }
+
+    .overview {
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 22px;
+      margin-bottom: 54px;
+    }
+
+    .panel {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .panel h2,
+    .section-heading h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(27px, 3vw, 40px);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+    }
+
+    .panel-intro,
+    .section-heading p {
+      max-width: 680px;
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .waves {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 25px;
+    }
+
+    .wave {
+      min-height: 168px;
+      padding: 21px;
+      border-radius: var(--radius);
+      background: var(--soft-blue);
+    }
+
+    .wave:nth-child(2) { background: var(--turquoise-soft); }
+
+    .wave-number {
+      display: inline-grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--blue);
+      font-weight: 800;
+    }
+
+    .wave h3 { margin: 18px 0 5px; font-size: 18px; }
+    .wave p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .milestones {
+      display: grid;
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .milestone {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .milestone-date {
+      padding: 9px 7px;
+      border-radius: 10px;
+      color: var(--navy);
+      background: var(--turquoise-soft);
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .milestone h3 { margin: 2px 0 3px; font-size: 16px; }
+    .milestone p { margin: 0; color: var(--muted); font-size: 13px; }
+
+    .calendar-section {
+      scroll-margin-top: 92px;
+      margin-top: 58px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 20px;
+    }
+
+    .section-heading .month-total {
+      flex: 0 0 auto;
+      color: var(--turquoise);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .calendar {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .weekdays,
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .weekdays {
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      background: #f9fafc;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .weekdays div { padding: 13px 14px; }
+
+    .day {
+      min-height: 150px;
+      padding: 12px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .day:nth-child(7n) { border-right: 0; }
+    .calendar-grid .day:nth-last-child(-n + 7) { border-bottom: 0; }
+    .day.outside { color: #aab4c4; background: #f9fafc; }
+    .day.event-days { background: linear-gradient(180deg, var(--turquoise-soft), #fff 55%); }
+
+    .day-number {
+      display: block;
+      margin-bottom: 9px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .entry {
+      display: block;
+      margin-top: 6px;
+      padding: 8px 9px;
+      border-left: 3px solid var(--turquoise);
+      border-radius: 7px;
+      color: var(--ink);
+      background: var(--turquoise-soft);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .entry.card { border-color: var(--blue); background: var(--soft-blue); }
+    .entry.story { border-style: dotted; }
+    .entry.video { color: #fff; border-color: var(--turquoise); background: var(--navy); }
+    .entry.live { color: #fff; border-color: var(--turquoise); background: var(--blue); }
+    .entry.post { background: #eef9f7; }
+
+    .entry small {
+      display: block;
+      margin-top: 3px;
+      color: inherit;
+      font-size: 9px;
+      font-weight: 500;
+      opacity: .72;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin: 18px 2px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .legend-item { display: inline-flex; align-items: center; gap: 7px; }
+
+    .legend-swatch {
+      width: 18px;
+      height: 10px;
+      border-left: 3px solid var(--turquoise);
+      border-radius: 3px;
+      background: var(--turquoise-soft);
+    }
+
+    .legend-swatch.card { border-color: var(--blue); background: var(--soft-blue); }
+    .legend-swatch.video { background: var(--navy); }
+    .legend-swatch.live { background: var(--blue); }
+
+    .event-plan {
+      scroll-margin-top: 92px;
+      margin-top: 68px;
+      padding: 36px;
+      border-radius: var(--radius);
+      color: #f9ffff;
+      background: var(--navy);
+    }
+
+    .event-plan h2 { margin: 0; font-size: clamp(29px, 3vw, 43px); letter-spacing: -.035em; }
+    .event-plan > p { max-width: 700px; margin: 10px 0 28px; color: #cbd8ee; }
+
+    .event-days-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.14);
+    }
+
+    .event-day {
+      min-height: 235px;
+      padding: 24px;
+      background: #15366f;
+    }
+
+    .event-day time { color: #72ece1; font-size: 14px; font-weight: 800; }
+    .event-day h3 { margin: 18px 0 9px; font-size: 20px; }
+    .event-day p { margin: 0; color: #cbd8ee; font-size: 13px; }
+    .event-day strong { display: block; margin-top: 22px; color: #fff; font-size: 12px; }
+
+    .post-event {
+      scroll-margin-top: 92px;
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 32px;
+      align-items: start;
+      margin-top: 28px;
+      padding: 36px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .post-event h2 { margin: 0; color: var(--navy); font-size: 32px; letter-spacing: -.03em; }
+    .post-event p { color: var(--muted); }
+
+    .deliverables {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .deliverable {
+      min-height: 112px;
+      padding: 18px;
+      border-radius: var(--radius);
+      background: var(--soft-blue);
+    }
+
+    .deliverable strong { display: block; margin-bottom: 6px; color: var(--navy); }
+    .deliverable span { color: var(--muted); font-size: 12px; }
+
+    .notes {
+      margin-top: 28px;
+      padding: 22px 26px;
+      border-left: 4px solid var(--turquoise);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      background: var(--turquoise-soft);
+    }
+
+    .notes strong { color: var(--navy); }
+    .notes p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 34px;
+      padding: 0 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 1050px) {
+      .overview { grid-template-columns: 1fr; }
+      .event-days-grid { grid-template-columns: 1fr 1fr; }
+      .day { min-height: 132px; padding: 9px; }
+      .entry { padding: 6px; font-size: 10px; }
+    }
+
+    @media (max-width: 760px) {
+      .page-shell { width: min(100% - 20px, 1500px); margin-top: 10px; }
+      .hero { min-height: auto; padding: 24px 22px 28px; }
+      .hero-top { align-items: center; }
+      .meeting-actions .action:first-child { display: none; }
+      .hero-content { margin-top: 42px; }
+      h1 { font-size: 42px; }
+      .hero-copy { font-size: 16px; }
+      .hero-metrics { grid-template-columns: 1fr 1fr; }
+      .metric { min-height: 76px; }
+      .phase-nav { position: static; align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; overflow-x: auto; padding-bottom: 2px; }
+      .overview { margin-bottom: 42px; }
+      .panel { padding: 22px; }
+      .waves { grid-template-columns: 1fr; }
+      .section-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
+      .calendar { overflow-x: auto; }
+      .weekdays, .calendar-grid { min-width: 930px; }
+      .event-plan { padding: 26px 20px; }
+      .event-days-grid { grid-template-columns: 1fr; }
+      .event-day { min-height: auto; }
+      .post-event { grid-template-columns: 1fr; padding: 25px; }
+      .deliverables { grid-template-columns: 1fr; }
+      footer { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+
+    @media print {
+      @page { size: A4 landscape; margin: 8mm; }
+      body { background: #fff; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .page-shell { width: 100%; margin: 0; }
+      .hero { min-height: 0; padding: 24px 30px; box-shadow: none; break-after: page; }
+      .hero-content { margin-top: 32px; }
+      h1 { font-size: 48px; }
+      .hero-copy { font-size: 15px; }
+      .hero-metrics { margin-top: 25px; }
+      .phase-nav, .meeting-actions { display: none; }
+      .overview { margin: 0; break-after: page; }
+      .panel { padding: 24px; }
+      .calendar-section { margin: 0; break-after: page; }
+      .section-heading { margin-bottom: 12px; }
+      .section-heading h2 { font-size: 30px; }
+      .calendar { box-shadow: none; }
+      .day { min-height: 102px; padding: 7px; }
+      .entry { margin-top: 4px; padding: 5px 6px; font-size: 8px; }
+      .entry small { font-size: 7px; }
+      .weekdays div { padding: 8px; }
+      .event-plan { margin: 0; padding: 26px; break-after: page; }
+      .event-day { min-height: 190px; padding: 18px; }
+      .post-event { margin: 0; }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero" id="topo">
+      <div class="hero-top">
+        <img class="brand-lockup" src="../contexto/_marca/logos/concefor/Arquivos%20em%20PNG%20-%20alta%20resolu%C3%A7%C3%A3o/VIII_Concefor_logo_horizontal_branco.png" alt="VIII Concefor">
+        <div class="meeting-actions">
+          <button class="action" type="button" onclick="document.documentElement.requestFullscreen?.()">Tela cheia</button>
+          <button class="action" type="button" onclick="window.print()">Imprimir ou salvar PDF</button>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-kicker">Plano de comunicação 2026</p>
+        <h1>Cronograma de divulgação</h1>
+        <p class="hero-copy">Uma cadência em duas ondas para apresentar pessoas, temas e momentos do VIII Concefor.</p>
+      </div>
+
+      <div class="hero-metrics" aria-label="Resumo do cronograma">
+        <div class="metric"><strong>16/07</strong><span>início da campanha</span></div>
+        <div class="metric"><strong>03/08</strong><span>envio final dos trabalhos</span></div>
+        <div class="metric"><strong>15/08</strong><span>fim das inscrições</span></div>
+        <div class="metric"><strong>17-20/08</strong><span>VIII Concefor</span></div>
+      </div>
+    </header>
+
+    <nav class="phase-nav" aria-label="Navegação do cronograma">
+      <strong>Visão da campanha</strong>
+      <div class="nav-links">
+        <a href="#julho">Julho</a>
+        <a href="#agosto">Agosto</a>
+        <a href="#durante">Durante o evento</a>
+        <a href="#pos-evento">Pós-evento</a>
+      </div>
+    </nav>
+
+    <section class="overview" aria-label="Estratégia e marcos">
+      <div class="panel">
+        <h2>Duas ondas, uma narrativa</h2>
+        <p class="panel-intro">Primeiro apresentamos quem estará no evento. Depois, os próprios convidados reforçam a chamada.</p>
+        <div class="waves">
+          <article class="wave">
+            <span class="wave-number">1</span>
+            <h3>Cards de apresentação</h3>
+            <p>Ritmo de uma publicação a cada 3 ou 4 dias, de 21/07 a 04/08.</p>
+          </article>
+          <article class="wave">
+            <span class="wave-number">2</span>
+            <h3>Vídeos-convite</h3>
+            <p>Reels intercalados com a contagem regressiva, de 08/08 a 14/08.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Marcos decisivos</h2>
+        <div class="milestones">
+          <article class="milestone">
+            <div class="milestone-date">03/08</div>
+            <div><h3>Prazo duplo</h3><p>Envio final dos trabalhos e recebimento dos vídeos dos palestrantes.</p></div>
+          </article>
+          <article class="milestone">
+            <div class="milestone-date">07/08</div>
+            <div><h3>Contagem regressiva</h3><p>Início da comunicação diária para a abertura do congresso.</p></div>
+          </article>
+          <article class="milestone">
+            <div class="milestone-date">15/08</div>
+            <div><h3>Último dia de inscrição</h3><p>Reforço final no Instagram e no site.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="calendar-section" id="julho">
+      <div class="section-heading">
+        <div>
+          <h2>Julho 2026</h2>
+          <p>Aquecimento, prazo para autores e apresentação dos principais nomes.</p>
+        </div>
+        <span class="month-total">7 ativações previstas</span>
+      </div>
+
+      <div class="calendar" aria-label="Calendário de julho de 2026">
+        <div class="weekdays" aria-hidden="true">
+          <div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div><div>Dom</div>
+        </div>
+        <div class="calendar-grid">
+          <div class="day outside"><span class="day-number">29</span></div>
+          <div class="day outside"><span class="day-number">30</span></div>
+          <div class="day"><span class="day-number">1</span></div>
+          <div class="day"><span class="day-number">2</span></div>
+          <div class="day"><span class="day-number">3</span></div>
+          <div class="day"><span class="day-number">4</span></div>
+          <div class="day"><span class="day-number">5</span></div>
+          <div class="day"><span class="day-number">6</span></div>
+          <div class="day"><span class="day-number">7</span></div>
+          <div class="day"><span class="day-number">8</span></div>
+          <div class="day"><span class="day-number">9</span></div>
+          <div class="day"><span class="day-number">10</span></div>
+          <div class="day"><span class="day-number">11</span></div>
+          <div class="day"><span class="day-number">12</span></div>
+          <div class="day"><span class="day-number">13</span></div>
+          <div class="day"><span class="day-number">14</span></div>
+          <div class="day"><span class="day-number">15</span></div>
+          <div class="day"><span class="day-number">16</span><span class="entry post">Envio final até 03/08<small>Feed do Instagram</small></span></div>
+          <div class="day"><span class="day-number">17</span><span class="entry story">Reforço do prazo<small>Story</small></span></div>
+          <div class="day"><span class="day-number">18</span></div>
+          <div class="day"><span class="day-number">19</span></div>
+          <div class="day"><span class="day-number">20</span></div>
+          <div class="day"><span class="day-number">21</span><span class="entry card">Vanessa Battestin<small>Card da abertura</small></span></div>
+          <div class="day"><span class="day-number">22</span></div>
+          <div class="day"><span class="day-number">23</span></div>
+          <div class="day"><span class="day-number">24</span><span class="entry card">Felipe Tessarolo<small>Card internacional</small></span></div>
+          <div class="day"><span class="day-number">25</span></div>
+          <div class="day"><span class="day-number">26</span></div>
+          <div class="day"><span class="day-number">27</span></div>
+          <div class="day"><span class="day-number">28</span><span class="entry card">Mariano Pimentel<small>Card sobre IA</small></span><span class="entry story">Última semana<small>Story sobre envio final</small></span></div>
+          <div class="day"><span class="day-number">29</span></div>
+          <div class="day"><span class="day-number">30</span></div>
+          <div class="day"><span class="day-number">31</span><span class="entry card">Tecnologia Delas<small>Card da mesa</small></span></div>
+          <div class="day outside"><span class="day-number">1</span></div>
+          <div class="day outside"><span class="day-number">2</span></div>
+        </div>
+      </div>
+      <div class="legend" aria-label="Legenda do calendário">
+        <span class="legend-item"><span class="legend-swatch card"></span> Card de palestrante ou mesa</span>
+        <span class="legend-item"><span class="legend-swatch"></span> Prazo, reforço ou story</span>
+      </div>
+    </section>
+
+    <section class="calendar-section" id="agosto">
+      <div class="section-heading">
+        <div>
+          <h2>Agosto 2026</h2>
+          <p>Reta final com reels, chamadas de inscrição e presença diária.</p>
+        </div>
+        <span class="month-total">Contagem diária de 07 a 16/08</span>
+      </div>
+
+      <div class="calendar" aria-label="Calendário de agosto de 2026">
+        <div class="weekdays" aria-hidden="true">
+          <div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div><div>Dom</div>
+        </div>
+        <div class="calendar-grid">
+          <div class="day outside"><span class="day-number">27</span></div>
+          <div class="day outside"><span class="day-number">28</span></div>
+          <div class="day outside"><span class="day-number">29</span></div>
+          <div class="day outside"><span class="day-number">30</span></div>
+          <div class="day outside"><span class="day-number">31</span></div>
+          <div class="day"><span class="day-number">1</span><span class="entry story">Últimos dias<small>Envio final de trabalhos</small></span></div>
+          <div class="day"><span class="day-number">2</span></div>
+          <div class="day"><span class="day-number">3</span><span class="entry post">Último dia<small>Envio final na Even3</small></span></div>
+          <div class="day"><span class="day-number">4</span><span class="entry card">Próximos 20 anos<small>Card da mesa</small></span></div>
+          <div class="day"><span class="day-number">5</span></div>
+          <div class="day"><span class="day-number">6</span></div>
+          <div class="day"><span class="day-number">7</span><span class="entry post">Faltam 10 dias<small>Início da contagem</small></span></div>
+          <div class="day"><span class="day-number">8</span><span class="entry video">Vanessa em vídeo<small>Reel + faltam 9 dias</small></span></div>
+          <div class="day"><span class="day-number">9</span><span class="entry post">Faltam 8 dias<small>Story</small></span></div>
+          <div class="day"><span class="day-number">10</span><span class="entry video">Felipe em vídeo<small>Reel + faltam 7 dias</small></span></div>
+          <div class="day"><span class="day-number">11</span><span class="entry post">Faltam 6 dias<small>Story</small></span></div>
+          <div class="day"><span class="day-number">12</span><span class="entry video">Tecnologia Delas<small>Reel + faltam 5 dias</small></span></div>
+          <div class="day"><span class="day-number">13</span><span class="entry post">Faltam 4 dias<small>Story</small></span></div>
+          <div class="day"><span class="day-number">14</span><span class="entry video">Mariano em vídeo<small>Reel + faltam 3 dias</small></span></div>
+          <div class="day"><span class="day-number">15</span><span class="entry post">Último dia<small>Inscrições + faltam 2 dias</small></span></div>
+          <div class="day"><span class="day-number">16</span><span class="entry post">É amanhã<small>Feed e story</small></span></div>
+          <div class="day event-days"><span class="day-number">17</span><span class="entry live">É hoje<small>Abertura + 20 anos</small></span></div>
+          <div class="day event-days"><span class="day-number">18</span><span class="entry live">Cobertura do dia<small>Tecnologia Delas + Felipe</small></span></div>
+          <div class="day event-days"><span class="day-number">19</span><span class="entry live">Cobertura do dia<small>Mesas + Mariano</small></span></div>
+          <div class="day event-days"><span class="day-number">20</span><span class="entry live">Cobertura do dia<small>Paralelos + premiação</small></span></div>
+          <div class="day"><span class="day-number">21</span><span class="entry post">Pós-evento<small>Início da retrospectiva</small></span></div>
+          <div class="day"><span class="day-number">22</span></div>
+          <div class="day"><span class="day-number">23</span></div>
+          <div class="day"><span class="day-number">24</span></div>
+          <div class="day"><span class="day-number">25</span></div>
+          <div class="day"><span class="day-number">26</span></div>
+          <div class="day"><span class="day-number">27</span></div>
+          <div class="day"><span class="day-number">28</span></div>
+          <div class="day"><span class="day-number">29</span></div>
+          <div class="day"><span class="day-number">30</span></div>
+          <div class="day"><span class="day-number">31</span></div>
+          <div class="day outside"><span class="day-number">1</span></div>
+          <div class="day outside"><span class="day-number">2</span></div>
+          <div class="day outside"><span class="day-number">3</span></div>
+          <div class="day outside"><span class="day-number">4</span></div>
+          <div class="day outside"><span class="day-number">5</span></div>
+          <div class="day outside"><span class="day-number">6</span></div>
+        </div>
+      </div>
+      <div class="legend" aria-label="Legenda do calendário">
+        <span class="legend-item"><span class="legend-swatch card"></span> Card</span>
+        <span class="legend-item"><span class="legend-swatch video"></span> Reel com convidado</span>
+        <span class="legend-item"><span class="legend-swatch"></span> Contagem ou chamada</span>
+        <span class="legend-item"><span class="legend-swatch live"></span> Cobertura ao vivo</span>
+      </div>
+    </section>
+
+    <section class="event-plan" id="durante">
+      <h2>Durante o evento</h2>
+      <p>Cobertura coordenada no Instagram e no YouTube, com stories da programação todos os dias.</p>
+      <div class="event-days-grid">
+        <article class="event-day">
+          <time datetime="2026-08-17">17 de agosto</time>
+          <h3>Abertura e celebração</h3>
+          <p>Chamada “É hoje”, palestra de Vanessa Battestin e bolo dos 20 anos.</p>
+          <strong>Instagram + YouTube com Libras</strong>
+        </article>
+        <article class="event-day">
+          <time datetime="2026-08-18">18 de agosto</time>
+          <h3>Tecnologia Delas</h3>
+          <p>Cobertura da mesa e da palestra internacional de Felipe Tessarolo.</p>
+          <strong>Instagram + YouTube</strong>
+        </article>
+        <article class="event-day">
+          <time datetime="2026-08-19">19 de agosto</time>
+          <h3>Educação e IA</h3>
+          <p>Registros das mesas e da palestra de Mariano Pimentel.</p>
+          <strong>Instagram + YouTube</strong>
+        </article>
+        <article class="event-day">
+          <time datetime="2026-08-20">20 de agosto</time>
+          <h3>Encerramento</h3>
+          <p>Eventos paralelos, premiação e fechamento da cobertura.</p>
+          <strong>Instagram + YouTube</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="post-event" id="pos-evento">
+      <div>
+        <h2>A conversa continua</h2>
+        <p>A partir de 21/08, a comunicação transforma os registros em memória e amplia o alcance do evento.</p>
+      </div>
+      <div class="deliverables">
+        <div class="deliverable"><strong>Retrospectiva</strong><span>Melhores momentos e principais registros.</span></div>
+        <div class="deliverable"><strong>Resultados</strong><span>Números, alcance e participação.</span></div>
+        <div class="deliverable"><strong>Premiados</strong><span>Trabalhos reconhecidos no VIII Concefor.</span></div>
+        <div class="deliverable"><strong>Conteúdo permanente</strong><span>Gravações e podcasts no YouTube.</span></div>
+      </div>
+    </section>
+
+    <aside class="notes" aria-label="Pendências do cronograma">
+      <strong>Pontos para confirmação</strong>
+      <p>Teaser dos 20 anos do Cefor, participação de Rutinelli Fávero, convidados da mesa de 04/08 e responsável pelo envio das solicitações de vídeo.</p>
+    </aside>
+
+    <footer>
+      <span>VIII Concefor 2026 | Centro de Referência em Formação e em Educação a Distância</span>
+      <span>Planejamento sujeito à confirmação dos participantes.</span>
+    </footer>
+  </main>
+</body>
+</html>
