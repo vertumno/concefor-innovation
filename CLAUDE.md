@@ -1,10 +1,17 @@
 # CONCEFOR Innovation
 
-Cérebro do projeto de inovação do **VIII CONCEFOR** (17–20 de agosto de 2026, Cefor/IFES,
-Vitória-ES). Tema: *"Tecnologia, Transformação e Educação a Distância: 20 anos construindo
+Cérebro único do **VIII CONCEFOR** (17–20 de agosto de 2026, Cefor/IFES, Vitória-ES).
+Tema: *"Tecnologia, Transformação e Educação a Distância: 20 anos construindo
 novos cenários educacionais"*.
 
-Este repo é a **fonte única de verdade** do projeto: contexto, decisões, spec e código do app.
+Este repo é a **fonte única de verdade** do projeto, em duas áreas:
+
+1. **Inovação / App** (raiz do repo): contexto, decisões, spec e código do app do evento.
+2. **Comunicação / CGTE** (`comunicacao/`): planejamento, produção e distribuição das peças
+   de divulgação. Era o repo `concefor2026`, incorporado aqui em 16/07/2026 com histórico
+   git preservado (`git subtree`). Tem README e mapa próprios — **ao trabalhar com
+   comunicação/divulgação, comece por `comunicacao/README.md`**.
+
 Surgiu de uma dor concreta do brainstorm de 13/05/2026 — *"tem que ter algum lugar que é o
 cérebro"*, porque as coisas estavam espalhadas em Kanboard, Drive e máquinas. Aqui é esse lugar.
 
@@ -45,7 +52,13 @@ concefor-innovation/
 ├── spec/
 │   ├── app-v1.md             (especificação do app)
 │   └── proximos-passos.md    (plano de execução — etapas acionáveis, uma por sessão)
-└── app/                      (código do PWA — Next.js + SQLite local)
+├── app/                      (código do PWA — Next.js + SQLite local)
+└── comunicacao/              (central de comunicação da CGTE — ex-repo concefor2026)
+    ├── README.md             (entrada da área: fluxo, atalhos, estado do momento)
+    ├── contexto/             (fatos canônicos: programação, palestrantes, cronograma, marca)
+    ├── producao/             (peças por fase: brindes, pré-evento, durante, ideias)
+    ├── planejamento/         (board de produção, calendário de publicação, equipe)
+    └── templates/            (modelos de brief e roteiro)
 ```
 
 Convenção do `_inbox/`: tudo que chegar bruto (transcrição, foto, PDF) entra ali e é
@@ -65,6 +78,9 @@ processado — movido pro lugar certo, sintetizado, e as decisões extraídas re
 | Saber onde está um arquivo/recurso | `links.md` |
 | Ver decisões e seus porquês | `decisoes.md` |
 | Usar conteúdo do livro 20 anos | `contexto/livro/livro-completo.md` |
+| Trabalhar em divulgação/peças de comunicação | `comunicacao/README.md` |
+| Ver programação oficial e palestrantes | `comunicacao/contexto/01-programacao.md` e `03-palestrantes.md` |
+| Ver estado das peças em produção | `comunicacao/planejamento/board-producao.md` |
 
 ## Princípios
 

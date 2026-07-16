@@ -6,6 +6,17 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 ## Repositório
 
 - **GitHub:** https://github.com/vertumno/concefor-innovation
+- **Ex-repo `concefor2026`** (central de comunicação): https://github.com/vertumno/concefor2026 — **incorporado aqui em `comunicacao/` (16/07/2026)**; arquivar no GitHub para não virar fonte concorrente
+
+## Comunicação (CGTE)
+
+- **📋 Doc de solicitações da Márcia (coordenadora do Concefor)** — onde ela pede atualizações
+  do site e novas peças; **consultar sempre**: https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true
+- **🎨 Artes do Concefor (pasta no Canva):** https://canva.link/wdnsx8ggf61x2hs
+  *(pasta registrada anteriormente: https://www.canva.com/folder/FAHDrZ44PIM — confirmar se é a mesma)*
+- **🖌️ Matrizes do Illustrator (Drive da CGTE):** https://drive.google.com/drive/folders/1fuoepIyukqXTw035JtTj-MSbnpw7veJn?usp=drive_link
+- **📤 Arquivos editáveis e públicos (compartilhar com a comissão):** https://drive.google.com/drive/folders/1-CH92C467aI7C_dj6fE4O5XBI8A_qShv
+- **Central de comunicação (neste repo):** `comunicacao/` — board, calendário, palestrantes, peças
 
 ## Evento
 
@@ -27,9 +38,20 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 - **Selo 20 anos (assets):** `<link>`
 - **Programação oficial (planilha/doc):** `<link>`
 
-## Kanboard
+## Kanboard (CGTE)
 
-- **Projeto Concefor no Kanboard:** `<link>`
+Cards relacionados ao Concefor no Kanboard da CGTE (registrados em 16/07/2026 — estão
+desorganizados por lá, mas podem ser necessários):
+
+| Card | Título | Link |
+|---|---|---|
+| #7809 | VIII Concefor (2026) — card geral | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7809 |
+| #7824 | Criar NotebookLM para o Concefor | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7824 |
+| #7829 | Artes para o Concefor | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7829 |
+| #7831 | Inovações para o VIII Concefor — definição de caminhos | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7831 |
+| #7848 | Oficina de IA no Concefor — Elton e Marquito | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7848 |
+
+Busca geral por "CONCEFOR" no Kanboard: https://board.cefor.ifes.edu.br/?controller=SearchController&action=index&search=CONCEFOR
 
 ## Tracks paralelos
 

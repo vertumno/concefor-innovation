@@ -4,6 +4,50 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-16 — Repo único: central de comunicação (concefor2026) incorporada em `comunicacao/`
+
+**Decisão:** o repo `concefor2026` (central de comunicação da CGTE — programação, palestrantes,
+board de produção de peças, calendário de publicação, marca) foi **incorporado a este repo** na
+pasta `comunicacao/`, via `git subtree add` — o histórico completo dos commits dele foi
+preservado no log deste repo. Este passa a ser o **repo único do Concefor**, com duas áreas:
+inovação/app (raiz) e comunicação (`comunicacao/`). A estrutura interna da área de comunicação
+(contexto numerado, produção por fase, planejamento, templates, `_inbox` próprio) foi mantida
+intacta; a entrada da área é `comunicacao/README.md`.
+
+**Por quê:** mesma dor que criou este repo — "tem que ter algum lugar que é o cérebro". Dois
+cérebros do mesmo evento em repos separados recriavam a dispersão que queríamos matar (fatos do
+evento, marca e prazos duplicados). O repo antigo em `github.com/vertumno/concefor2026` deve
+ser **arquivado** (leitura apenas) para não virar fonte concorrente de verdade.
+
+**Pendência consciente:** há sobreposições a consolidar aos poucos — `contexto/evento.md` vs
+`comunicacao/contexto/00-evento.md`, e os PNGs do selo 20 anos que existem em
+`design-system/selo-20-anos/assets/logo-png/` e em `comunicacao/contexto/_marca/logos/`.
+Regra até lá: **identidade/tokens → `design-system/`; fatos operacionais do evento e peças →
+`comunicacao/`**.
+
+---
+
+## 2026-07-16 — Cronograma do app fechado com a Márcia: validação 30/07, lançamento 07/08
+
+**Decisão:** primeira demo do app pra Márcia (Concefor), na reunião de divulgação com
+Elton. Compromisso fechado: **30/07 às 10h** roda uma simulação/validação com a comissão
+do Concefor (presencial ou remoto, convidados a definir); ajustes na semana seguinte;
+**lançamento alvo em 07/08** (sexta-feira) via e-mail aos inscritos. Escopo mínimo
+garantido pro lançamento: programação + telão com reações (já funciona). Login por nº de
+inscrição + data de nascimento, dados por pessoa e relatório individual pós-evento ficam
+como "se der, melhor" — não são compromisso do v1. Duas ideias novas ficaram registradas
+(não implementadas): resumo pessoal pós-evento cruzando reações+transcrição por pessoa
+(sugestão do Elton, também serviria de insumo pro relatório institucional na PRPPG), e
+gamificação por QR codes espalhados com badges contextuais ao conteúdo. Ver síntese
+completa em `contexto/reunioes/sintese-2026-07-16.md`.
+
+**Por quê:** era a primeira vez que a Márcia via o app rodando — precisava de um
+compromisso de data pra não virar promessa solta, e de deixar claro o que é garantido
+(v1 mínimo) vs. o que é aspiracional, para não sobrecarregar o v1 já perto do prazo do
+evento real.
+
+---
+
 ## 2026-07-06 — Backend do v1: SQLite local + SSE no próprio Next (Supabase sai por ora)
 
 **Decisão:** o v1 troca Supabase por **SQLite local** (arquivo no servidor, via

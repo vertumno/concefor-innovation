@@ -1,0 +1,1064 @@
+# 2026-07-16 - Reunião App Concefor — Márcia, Elton e Marquito
+
+  Meeting started: 16/07/2026
+  Participants: Márcia (Concefor), Elton Vinicius, Marcos Vinicius Forecchi Accioly (Marquito)
+
+  Nota de identificação de falantes: o PDF de origem rotula os falantes como "Speaker 1/2/3"
+  sem diarização nomeada. Pelo conteúdo (quem é chamado de "Marcinha"/"Márcia" e quem fala do
+  desenvolvimento do app na primeira pessoa), Speaker 1 = Marquito, Speaker 2 = Márcia,
+  Speaker 3 = Elton — mas os rótulos originais foram preservados abaixo por fidelidade à fonte.
+
+  ## Transcript
+
+[00:00:00] Speaker 1: E aí, Marcinha, vamos lá então, pra gente fazer nosso momento de estender as coisas do CONSEFOM.
+[00:00:05] Speaker 2: Aí o Elton tô, né?
+[00:00:07] Speaker 1: O Elton já fez as modificações que você tinha pedido, né?
+[00:00:11] Speaker 2: Não, ele me pediu pra fazer as modificações.
+[00:00:14] Speaker 1: Ele já acertou algumas coisas e aí te pediu.
+[00:00:16] Speaker 2: Ah, tá. Ah, beleza.
+[00:00:17] Speaker 1: E aí agora já pediu pra ela, né?
+[00:00:19] Speaker 2: Ah, então beleza, beleza.
+[00:00:21] Speaker 1: Aqui já tá publicado, entendeu? O que precisava.
+[00:00:24] Speaker 2: Deixa eu ver.
+[00:00:26] Speaker 1: É nos eventos paralelos, né, Elton?
+[00:00:27] Speaker 2: Isso.
+[00:00:28] Speaker 1: Isso, perfeito. Isso aqui já tá aqui, entendeu?
+[00:00:30] Speaker 2: Perfeito. Aham, perfeito.
+[00:00:31] Speaker 1: Tá bom?
+[00:00:32] Speaker 2: Show. Então, aí, é... hoje então seria pra mais pra confirmar lá a parte... porque assim, meio que agora a gente tá mais próximo.
+[00:00:42] Speaker 1: Uhum.
+[00:00:42] Speaker 2: Aí a ideia é a gente ter uma divulgação maior aí das inscrições e dos palestrantes, principalmente, porque as pessoas, é, tipo assim, elas querem ver os palestrantes.
+[00:00:50] Speaker 1: Tá.
+[00:00:51] Speaker 2: Aí a gente precisaria daqueles cards, né, como eu falei da outra vez, pra gente também divulgar nos grupos WhatsApp, e também pra...
+[00:00:59] Speaker 1: Seriam imagens, um pra cada palestrante.
+[00:01:01] Speaker 2: Isso, um pra cada palestrante, pra gente poder compartilhar.
+[00:01:03] Speaker 1: De todos que vão passar pelo palco principal.
+[00:01:05] Speaker 2: Isso. E aí no site vocês colocam do jeito que vocês quiserem. Acho que é interessante também colocar na... na... na página do Instagram do... aí em carrossel, né, no caso na página do Instagram.
+[00:01:16] Speaker 1: Você falou no site do outro lado, aí do Instagram, como assim? Porque o site já tá com os palestrantes.
+[00:01:19] Speaker 2: Não, o site já tá, mas a pág... a rede social ainda não tá divulgado, é, entendeu?
+[00:01:24] Speaker 1: Ah, no Instagram. Pera, deixa eu... eu vou mandar aí mais ou menos a programação de...
+[00:01:31] Speaker 2: Isso.
+[00:01:31] Speaker 1: Que a gente pensou.
+[00:01:32] Speaker 2: Uhum.
+[00:01:32] Speaker 1: Quer dizer, um planejamento de publicações aqui já.
+[00:01:37] Speaker 2: Perfeito.
+[00:01:39] Speaker 1: Tá, beleza.
+[00:01:40] Speaker 2: Tá bom? Então aí...
+[00:01:41] Speaker 1: Seria pra então cards de palestrantes, pra poder fazer a divulgação e chamando pras inscrições.
+[00:01:47] Speaker 2: Isso.
+[00:01:47] Speaker 1: Né?
+[00:01:47] Speaker 2: E a gente pede também pra divulgação na rede social e, é, encaminhar também pra... pra ACS, pra divulgar no IFES.
+[00:01:56] Speaker 1: É, eu acho que pra ACS a gente precisa escrever a notícia, Márcia.
+[00:01:59] Speaker 2: Notícia?
+[00:01:59] Speaker 1: É.
+[00:02:00] Speaker 2: Então quem é que escreve a notícia?
+[00:02:03] Speaker 1: Márcia, quem escreve a notícia é quem quer a notícia, mas a gente pode ajudar você a fazer, entendeu?
+[00:02:09] Speaker 2: Aham.
+[00:02:09] Speaker 1: Porque aqui a gente não tem ninguém que escreve notícias no CEFOR, né?
+[00:02:13] Speaker 2: Ah, tá.
+[00:02:14] Speaker 1: A gente não tem jornalista, não tem ninguém. Tem hoje a bolsista lá que atua na comunicação.
+[00:02:17] Speaker 2: Sim.
+[00:02:18] Speaker 1: Mas tá uma relação super complicada.
+[00:02:20] Speaker 2: É.
+[00:02:20] Speaker 1: Nós tamo num movimento, inclusive, de...
+[00:02:22] Speaker 2: Aham.
+[00:02:23] Speaker 1: De modificar e tal.
+[00:02:24] Speaker 2: Sim.
+[00:02:24] Speaker 1: Junto com a direção, porque...
+[00:02:26] Speaker 2: Uhum.
+[00:02:26] Speaker 1: Não tamo conseguindo trabalhar com ela, se for com a Yasmin.
+[00:02:29] Speaker 2: Sim, sim. É, eu posso tentar falar com aquele Simon, aquele que é jornalista. Então, assim, ele fazia a matéria.
+[00:02:38] Speaker 1: Não, acho que a gente consegue escrever, sim. Só precisa entender o que que seria essa notícia, porque quando manda pra eles, olha só, se a gente só mandar alguma coisa do Instagram, eles vão divulgar o quê?
+[00:02:48] Speaker 2: Mas então não pode ser, é, só marcar então quando vocês divulgarem nas redes?
+[00:02:54] Speaker 1: Só marcar seria o quê?
+[00:02:55] Speaker 2: É, o IFES.
+[00:02:57] Speaker 1: Eles não costumam fazer isso.
+[00:02:58] Speaker 2: Não faz isso, não faz, né?
+[00:03:00] Speaker 1: Não. A gente pode até consultar eles, mas eles não costumam fazer isso, não. Eles, muito provavelmente, não vão divulgar no Instagram deles, eu acho que não.
+[00:03:09] Speaker 2: Tá.
+[00:03:10] Speaker 1: Tá? O que eu acho que eles conseguem fazer é mandar no Notícias IFES, mandar... botar no site do IFES.
+[00:03:16] Speaker 2: Ah, tá, beleza, beleza.
+[00:03:16] Speaker 1: Acho que essa parte, sim, eu posso checar com eles, vou falar isso com eles então.
+[00:03:20] Speaker 2: Isso, isso.
+[00:03:20] Speaker 1: Pra saber em relação ao Instagram, se eles divulgam alguma coisa.
+[00:03:24] Speaker 2: Uhum.
+[00:03:24] Speaker 1: Tá?
+[00:03:24] Speaker 2: Tá bom.
+[00:03:25] Speaker 1: Mas acho assim, que não é...
+[00:03:27] Speaker 2: Uhum.
+[00:03:28] Speaker 1: Não costuma ser muito uma prática deles, não.
+[00:03:31] Speaker 2: Ah, é? Então, beleza.
+[00:03:32] Speaker 1: Eles fazem coisa em... como é que chama isso quando é... tipo em parceria, assim, né?
+[00:03:38] Speaker 2: Sim, sim.
+[00:03:39] Speaker 1: Marcar eles, mas tem que ver o quê exatamente.
+[00:03:42] Speaker 2: O quê?
+[00:03:42] Speaker 1: Eu sei que acontece durante eventos, sim.
+[00:03:45] Speaker 2: Uhum.
+[00:03:45] Speaker 1: Pra story, pra coisa assim, mas pra publicação eu não sei como é que é que eles fazem, tem que perguntar eles.
+[00:03:50] Speaker 2: Ah, beleza, beleza.
+[00:03:51] Speaker 1: Vou perguntar, tá bom?
+[00:03:52] Speaker 2: Então, assim, pra gente mais urgente então seria essa, é, divulgação nas redes sociais das inscrições, dos palestrantes, e depois que tiver tudo pronto aí dos eventos paralelos, os eventos paralelos também.
+[00:04:05] Speaker 1: Tá.
+[00:04:06] Speaker 2: Porque é o que vai chamar a atenção das pessoas, né, pra... pra ir pra... pro evento. Principalmente os palestrantes, né, e os paralelos, aí a gente... eu só vou finalizar ali a especificação que a gente fez.
+[00:04:17] Speaker 1: Tá.
+[00:04:17] Speaker 2: E aí... aí eu já libero pra vocês também fazerem a mesma divulgação que estão fazendo pros palestrantes, beleza? Porque o do Simat ainda não mandou, né, o evento dele. Aí eles tão fazendo lá e vão mandar. Então a gente deixa pra publicar tudo junto.
+[00:04:31] Speaker 1: E explica como é que vai ser esse... esse evento do Simat.
+[00:04:35] Speaker 2: Ah, sim. É, é aula inaugural, aí eles vão também tá celebrando 15 anos, vai ser na tarde do dia 20. Eles só vão ter um horário.
+[00:04:45] Speaker 1: Aí o que que a gente vai divulgar? O evento e os palestrantes dele também, não?
+[00:04:50] Speaker 2: É, eles vão dar uma programação. A gente vai divulgar conforme o que eles mandaram pra gente, igual os outros eventos.
+[00:04:55] Speaker 1: Os eventos paralelos, né?
+[00:04:57] Speaker 2: Isso, isso.
+[00:04:57] Speaker 1: Vai funcionar como um evento paralelo, né?
+[00:04:59] Speaker 2: Vai ser um evento interno.
+[00:05:00] Speaker 1: Isso, isso.
+[00:05:01] Speaker 2: Tá bom?
+[00:05:02] Speaker 1: Beleza.
+[00:05:02] Speaker 2: Os lançamentos também, eu acho que vai ser importante a gente divulgar.
+[00:05:06] Speaker 1: Isso, a divulgação.
+[00:05:06] Speaker 2: Que é tipo um evento paralelo também dentro do evento.
+[00:05:09] Speaker 1: Uhum.
+[00:05:09] Speaker 2: Porque vai lançar o livro CEFOR, vai lançar a Base de Conhecimento, vai lançar a vitrine MOOC nova e vai lançar alguns outros livros.
+[00:05:17] Speaker 1: Tem uns lá do NTE também que a Andrômeda falou.
+[00:05:19] Speaker 2: Ah, o livro do NTE.
+[00:05:20] Speaker 1: O livro do NTE. Então, tipo assim, eu não tô sabendo com clareza o que que vai lançar exatamente.
+[00:05:25] Speaker 2: Isso, isso, isso.
+[00:05:26] Speaker 1: Mas parece que vai ser depois da fala da Vanessa, não é isso?
+[00:05:29] Speaker 2: Isso, vai ser depois da fala da Vanessa.
+[00:05:30] Speaker 1: Dentro da programação vai ter depois.
+[00:05:32] Speaker 2: Vai ter já preparado a divulgação.
+[00:05:33] Speaker 1: É, a gente tem que divulgar algumas coisas, tipo também lançamentos, porque onde entrar um carrossel que tem as coisas, tipo chamando pra... chama pra se inscrever, ou fala alguma coisa sobre o CONSEFOR, pá, chama pra inscrever, no mesmo carrossel, né? E bota outras coisas que vão ter na programação que são interessantes também.
+[00:05:51] Speaker 2: Sim.
+[00:05:51] Speaker 1: Eu acho que isso...
+[00:05:52] Speaker 2: Uhum.
+[00:05:54] Speaker 1: Bom, algumas coisas que a gente ainda tá... quer falar mais? Pode falar mais, Márcia.
+[00:05:57] Speaker 2: Não, em relação ao topo que você falou, a gente não tem essa imagem. Se tiver, aí eu já colo.
+[00:06:02] Speaker 1: A gente manda um link.
+[00:06:03] Speaker 2: Ah, mandou? Ah, beleza. Então, beleza.
+[00:06:04] Speaker 1: Ele é um Google Drive, né? Um apresentações.
+[00:06:07] Speaker 2: Sim, sim.
+[00:06:08] Speaker 1: Só que a gente aí baixa... baixa o JPG.
+[00:06:11] Speaker 2: Sim, sim.
+[00:06:12] Speaker 1: Coloca lá.
+[00:06:12] Speaker 2: Ah, tá, perfeito. Beleza, aí eu coloco lá.
+[00:06:14] Speaker 1: Tá.
+[00:06:14] Speaker 2: Isso aí eu já agilizei lá.
+[00:06:15] Speaker 1: É no evento IFES pra colocar lá?
+[00:06:17] Speaker 2: Isso aí é pra inscrição.
+[00:06:19] Speaker 1: É pra inscrição Google Forms de eventos paralelos? Saquei. Eu vi aqui.
+[00:06:23] Speaker 2: Uhum.
+[00:06:24] Speaker 1: Essa escolha foi porque o evento IFES não tem essa questão de... de cadastrar em oficinas, por exemplo?
+[00:06:29] Speaker 2: Não, então.
+[00:06:29] Speaker 1: Dentro dele?
+[00:06:30] Speaker 2: Ele tava pronto até.
+[00:06:31] Speaker 1: Isso, isso, exato, isso. Porque assim, pra vocês com... pra vocês.
+[00:06:35] Speaker 2: Uhum.
+[00:06:36] Speaker 1: Se organizarem com quantidade de vagas aqui, dependendo do evento.
+[00:06:39] Speaker 2: Então.
+[00:06:39] Speaker 1: Igual na nossa oficina. Como é que vocês vão conferir quem vai poder ir ou não?
+[00:06:43] Speaker 2: Então, é, vai ter a lista de pre... é, a gente vai ter lista de presença, né, que ela vai vir com QR Code e quem quiser assinar à mão. A gente fez isso no outro CONSEFOR.
+[00:06:52] Speaker 1: Não, Márcia, eu tô dizendo na inscrição. Se 50 pessoas vierem aqui e colocarem o nome nesse formulário, você nem sabe que tem 50.
+[00:06:58] Speaker 2: Não, mas aí a lista depois...
+[00:06:59] Speaker 1: É.
+[00:06:59] Speaker 2: Então, eu queria saber se tem alguma configuração que, tipo assim, limita o número de participantes, porque só vocês que deram o número de participantes, os outros não deram.
+[00:07:07] Speaker 1: Então deixem aberto e a gente depois você publica a lista de quem tá... quem é que vai participar.
+[00:07:12] Speaker 2: Isso, exato.
+[00:07:13] Speaker 1: A gente bota aqui, por exemplo.
+[00:07:14] Speaker 2: Perfeito.
+[00:07:15] Speaker 1: Tipo assim, ó, participantes, confirme sua e tem que botar alguma coisa pra eles confirmarem a participação. Confirmo que eu vou participar, senão a gente passa a vaga pra alguém.
+[00:07:22] Speaker 2: É isso, isso aí.
+[00:07:23] Speaker 1: Porque senão.
+[00:07:24] Speaker 2: É porque você...
+[00:07:25] Speaker 1: Se só a gente tá com isso, vai ter que ter alguma coisa assim.
+[00:07:27] Speaker 2: Então, aqueles formulários que eu... que eu fiz, aí eu vou dar permissão de edição. Se vocês quiserem mudar alguma coisa, aí vocês podem mudar, beleza?
+[00:07:37] Speaker 1: Ah, tá.
+[00:07:37] Speaker 2: Que é o de inscrição, tá? Aí vocês vão ter acesso aos e-mails das pessoas.
+[00:07:42] Speaker 1: Você diz na nossa oficina.
+[00:07:44] Speaker 2: Isso, nas oficinas.
+[00:07:45] Speaker 1: Já não é nos... não é pra todos os formulários, né?
+[00:07:47] Speaker 2: Não, cada... cada...
+[00:07:48] Speaker 1: Enquanto você digita esse, tá falando nossa oficina, nós dois.
+[00:07:50] Speaker 2: Isso, exato. Mas todos os outros também têm formulário, só que vocês especificaram o número de vagas, entendeu?
+[00:07:56] Speaker 1: Tá. Nós vamos fazer duas eleições, né, de manhã e de tarde.
+[00:07:59] Speaker 2: É.
+[00:08:00] Speaker 1: Isso.
+[00:08:00] Speaker 2: Aí você viu também.
+[00:08:01] Speaker 1: Eu vi essa observação, aí eu vou corrigir.
+[00:08:03] Speaker 2: Tem aqui no site, tá.
+[00:08:04] Speaker 1: Perfeito.
+[00:08:05] Speaker 2: Tá bom?
+[00:08:06] Speaker 1: Sim, beleza. Você já sabe quantos inscritos tem?
+[00:08:09] Speaker 2: Então, tava... já tinha passado de 100.
+[00:08:12] Speaker 1: Não, isso eu também sei porque isso apareceu em algum lugar.
+[00:08:15] Speaker 2: É, até não perguntei o...
+[00:08:15] Speaker 1: Tipo assim, no evento IFES apareceu escrito: "Ah, que bom, o seu evento já tem mais de 100".
+[00:08:20] Speaker 2: Isso, isso aí já.
+[00:08:20] Speaker 1: Mas acho que é importante ir sabendo, acompanhando, né?
+[00:08:23] Speaker 2: Isso, isso, isso.
+[00:08:23] Speaker 1: Porque você tá falando: "Não, vamos divulgar". Quantas... quantas pessoas cabe?
+[00:08:27] Speaker 2: Então, cabe 400.
+[00:08:28] Speaker 1: Ah, cabe 400.
+[00:08:29] Speaker 2: A gente... é, 400. A gente tá... tudo é planejado pra 400. Isso desde o início do CONSEFOR, a gente não passa... não tem passado desse limite.
+[00:08:36] Speaker 1: Só pra saber o tanto que a gente vai divulgar, né? Pra quê que nós vamos... tipo assim, se tem 300, a gente não vai ficar divulgando como chamando gente pra se inscrever.
+[00:08:43] Speaker 2: É, o meu problema é a corte aqui com 500 pessoas.
+[00:08:46] Speaker 1: Pois é, entendeu? Tipo assim.
+[00:08:48] Speaker 2: É, é.
+[00:08:50] Speaker 1: É.
+[00:08:50] Speaker 2: Aqui, acho que é todas as cortes. Assim, a gente tá prevendo que deve ter uns 400, uns 500, mais ou menos, mas tem mais alunos do que isso. Mas, assim, é claro que não vai vir todos, né? Alguns vão.
+[00:09:02] Speaker 1: É, e também vai vir pra um momento específico, as pessoas vão ficar em pé, né, e tal.
+[00:09:06] Speaker 2: Isso, isso aí.
+[00:09:07] Speaker 1: Uma parte.
+[00:09:08] Speaker 2: É isso. Tá bom? Bom, então era isso, eu vou fazer os ajustes e acho que não faltou nada, não. Deixa eu ver aqui.
+[00:09:14] Speaker 1: Não, tenho certeza que faltou. Já vou te falar o que faltou.
+[00:09:17] Speaker 2: Tá bom.
+[00:09:18] Speaker 1: É, as coisas impressas a gente ainda não tá.
+[00:09:21] Speaker 2: Não tá.
+[00:09:21] Speaker 1: Já tá tudo encaminhado?
+[00:09:23] Speaker 2: Já tá encaminhado.
+[00:09:23] Speaker 1: Já tá?
+[00:09:24] Speaker 2: Ah, beleza, então.
+[00:09:25] Speaker 1: Beleza. Então já foi.
+[00:09:26] Speaker 2: Porque ficou com a... é, ficou com o Denis e Vivian.
+[00:09:28] Speaker 1: Eu não tava sabendo isso que a gente não falou. Eu falei: "Cara, os impressos tão com isso tá me pegando ainda". Tipo assim, vai rolar, não vai, vai pra onde, quem é que vai.
+[00:09:36] Speaker 2: Aham.
+[00:09:36] Speaker 1: Então já tá tudo encaminhado.
+[00:09:38] Speaker 2: Tá.
+[00:09:38] Speaker 1: Beleza.
+[00:09:39] Speaker 2: Então, mas eu acho que eles não deram a logo do Simat, né? Porque o do Simat é... é apoiador, o único apoiador.
+[00:09:45] Speaker 1: Tem que entrar nos... nos... nos materiais impressos?
+[00:09:49] Speaker 2: Nos impressos, sim, que é apoiador.
+[00:09:51] Speaker 1: Hum.
+[00:09:52] Speaker 2: Entendeu? Vou até falar aqui, pedir a eles.
+[00:09:54] Speaker 1: Tá vendo?
+[00:09:55] Speaker 2: Tá vendo?
+[00:09:56] Speaker 1: Depois eu vou te mandar.
+[00:09:58] Speaker 2: Tá. Então deixa eu até colocar aqui como observação.
+[00:10:03] Speaker 1: É, na camisa, né?
+[00:10:05] Speaker 2: Uhum.
+[00:10:06] Speaker 1: Não sei se eu perguntei pra Denis uma coisa.
+[00:10:08] Speaker 2: Eu tinha falado com ele, falei: "Não, então, o do Simat é apoiador, tem que entrar a logo". E a da UNAC também, que tá apoiando. Se bem que a UNAC acho que falou, mandou um e-mail pra todo mundo que no período eleitoral não pode aparecer as marcas.
+[00:10:22] Speaker 1: Mas então.
+[00:10:22] Speaker 2: Então acho que eu nem vou colocar a UNAC.
+[00:10:24] Speaker 1: Olha.
+[00:10:26] Speaker 2: Vou até falar com o Zé agora, acho que ele deve tá por aí. Logo, do Simat. Ele já vou agora resolver.
+[00:10:33] Speaker 1: Isso é uma coisa que a gente tem que pensar durante o evento, hein? Que logos que entram. Pensar direitinho.
+[00:10:40] Speaker 2: É, a UNAC já proibiu.
+[00:10:41] Speaker 1: Nada aqui. Só.
+[00:10:45] Speaker 2: Mas você vê que a UNAC proibiu de usar logo.
+[00:10:48] Speaker 1: É, acho que as meninas da corte não vão poder usar a camisa, vão... ou então vim com adesivo colado na marca da UNAC. Eu até insisti, falei: "Não, mas é uniforme". Não, não abriram não.
+[00:11:00] Speaker 2: Cara.
+[00:11:00] Speaker 1: Acho muito estranho, porque o que não pode é marca de governo.
+[00:11:06] Speaker 2: Mas eles são de governo, né?
+[00:11:07] Speaker 1: Não, não. Tipo assim, ó, governo... Prefeitura de Vitória, ó, faz uma logo de governo e usa aquela logo. A UNAC é essa logo. Só porque é um programa do governo, né? Não sei se faz sentido.
+[00:11:21] Speaker 2: Eu também acho que não deveria.
+[00:11:22] Speaker 1: É.
+[00:11:22] Speaker 2: Tá, eu vou confirmar agora com o Zé Geraldo, tá bom? Que aí, pelo... porque assim, se eles impediram lá da corte, com certeza vão impedir aí no material. Só que eles tinham feito a exigência pra gente, eles falaram que era um apoiador e tinha que ter a logo deles. Então eu vou conversar agora com ele.
+[00:11:37] Speaker 1: Quero... a gente quer mostrar um negócio pra você também.
+[00:11:39] Speaker 2: Ah, sim.
+[00:11:39] Speaker 1: A gente quer?
+[00:11:40] Speaker 2: Ótimo.
+[00:11:40] Speaker 1: Ué, o aplicativo quer.
+[00:11:42] Speaker 2: Ah, legal, vou mostrar.
+[00:11:43] Speaker 1: Ah, sim, o aplicativo.
+[00:11:44] Speaker 2: Eu acho que é legal ela também já ter essa visão.
+[00:11:46] Speaker 1: Legal, acho legal também.
+[00:11:47] Speaker 2: É.
+[00:11:47] Speaker 1: Uhum.
+[00:11:54] Speaker 2: Sai fora, cara.
+[00:11:59] Speaker 1: Porque assim, a gente tava pensando em alguma coisa que pudesse ser...
+[00:12:02] Speaker 2: Uhum.
+[00:12:03] Speaker 1: Com essas possibilidades que a gente tem de A, né?
+[00:12:06] Speaker 2: Uhum.
+[00:12:06] Speaker 1: O que que a gente poderia fazer de... de inovação e de realmente que pudesse criar experiências novas dentro do... durante o próprio CONSEFOR.
+[00:12:15] Speaker 2: Sim, sim.
+[00:12:15] Speaker 1: Aí a gente teve a ideia de... eu até comentei lá naquele... na última reunião, né, de... de a gente fazer um aplicativo.
+[00:12:22] Speaker 2: Sim, sim.
+[00:12:23] Speaker 1: Do CONSEFOR.
+[00:12:24] Speaker 2: Uhum.
+[00:12:24] Speaker 1: Onde, é, ali teria programação, assim, e teria também algumas outras tipos de interações que poderiam ocorrer durante o evento que poderia ser pelo aplicativo.
+[00:12:36] Speaker 2: Uhum.
+[00:12:36] Speaker 1: Aí a gente foi fazendo brainstorm, pensando coisas que seriam legais, assim, né? Aí o Marquito já começou... a gente já começou a desenvolver e criar uma proposta, assim, testando, vendo como é que funciona.
+[00:12:48] Speaker 2: Legal. Nossa, muito bacana.
+[00:12:49] Speaker 1: É. E a ideia é assim, a ideia é... é também promover mais engajamento, mais conexão com... com o próprio encontro.
+[00:12:57] Speaker 2: Aham.
+[00:12:57] Speaker 1: Então a gente pensou uma estrutura, assim, que tivesse conectada com linha do tempo, assim, né? Então o aplicativo, ele... ele mostraria sempre o que tá acontecendo na hora.
+[00:13:08] Speaker 2: Exatamente.
+[00:13:08] Speaker 1: E ele perceb... ele teria essa noção de... de tempo, né, pela linha do tempo.
+[00:13:13] Speaker 2: Aham.
+[00:13:14] Speaker 1: Então, ah, agora está acontecendo tal coisa. Aí ele, ó, ele já abre o aplicativo e já vê, assim, ó, tá acontecendo a palestra tal. Então ele vai lá pra palestra.
+[00:13:22] Speaker 2: Ah, legal, legal.
+[00:13:22] Speaker 1: Ou ele vai pra casa ou ele já tá na palestra e aparece.
+[00:13:24] Speaker 2: Sim, sim.
+[00:13:25] Speaker 1: E aí ele clica, ele tem a possibilidade de interagir com a palestra.
+[00:13:28] Speaker 2: Ah, legal.
+[00:13:29] Speaker 1: Que é essa ideia.
+[00:13:30] Speaker 2: Legal.
+[00:13:30] Speaker 1: Tipo assim, tá assistindo a palestra.
+[00:13:31] Speaker 2: Comentar, assim.
+[00:13:32] Speaker 1: É isso.
+[00:13:33] Speaker 3: Na verdade, são coisas pra acontecer na hora.
+[00:13:35] Speaker 2: Isso, isso.
+[00:13:36] Speaker 1: Comentar, acho que não.
+[00:13:37] Speaker 2: Mas o curtir, acho que fica legal, né?
+[00:13:39] Speaker 3: São... a gente programou primeiro só reações.
+[00:13:41] Speaker 2: Reações, isso.
+[00:13:43] Speaker 1: Que aí elas re... as pessoas reagem e tamo agora caminhando pras perguntas.
+[00:13:48] Speaker 2: Uhum.
+[00:13:48] Speaker 1: Não comentários soltos, mas perguntas. Tipo, perguntas pra palestra, né? As pessoas podem entrar no...
+[00:13:53] Speaker 2: Aham, na palestra.
+[00:13:54] Speaker 1: No app e botar as perguntas.
+[00:13:56] Speaker 2: Perfeito.
+[00:13:57] Speaker 1: E aí, por exemplo, pode ser que a gente ranqueie as perguntas e as pessoas podem votar nas perguntas, pra não ficar pergunta repetida.
+[00:14:05] Speaker 2: Sim.
+[00:14:05] Speaker 1: Essa coisa. Então as perguntas vão ficando ali. A gente não mexeu ainda nas perguntas, tá?
+[00:14:10] Speaker 2: Uhum.
+[00:14:11] Speaker 1: Mas mexemos na parte do app. Tô só recarregando os dados aqui, eu não tinha pensado em mostrar pra ela, mas porque tem que...
+[00:14:16] Speaker 2: Uhum.
+[00:14:17] Speaker 1: Trazer dados um pouco mais real, né?
+[00:14:19] Speaker 2: Sim.
+[00:14:19] Speaker 1: Aí o que acontece? O que que a gente pensou pro evento, antes de eu te mostrar aqui só, as pessoas tão com o app na mão. Primeiro que a gente não quer também que as pessoas fiquem no celular o tempo todo.
+[00:14:29] Speaker 2: Sim.
+[00:14:30] Speaker 1: A ideia não é essa.
+[00:14:31] Speaker 2: Assistir a palestra.
+[00:14:31] Speaker 1: O negócio é assistir as coisas e tal. Então tem as reações, tem uma interação ou outra, legal, mas é isso, né?
+[00:14:39] Speaker 2: Uhum.
+[00:14:40] Speaker 1: Mas também, durante as palestras, durante os eventos no palco principal, a gente pensou que a gente poderia ter uma TV extra ou projetar no próprio telão. A gente ainda tá tentando entender como vai ser, o que fazer, assim.
+[00:14:52] Speaker 2: Sim.
+[00:14:53] Speaker 1: Mas ter como se fosse um telão extra.
+[00:14:55] Speaker 2: Uhum.
+[00:14:56] Speaker 1: Onde as reações.
+[00:14:57] Speaker 2: Sim.
+[00:14:58] Speaker 1: Que tão sendo feitas pra palestra. E também coisas-chave da palestra que a gente quer jogar.
+[00:15:03] Speaker 2: Aham.
+[00:15:03] Speaker 1: Aparecem. É como se fosse um... já tem o palestrante, já tem os slides, e ele tá falando. A palestrante tá falando e tal.
+[00:15:15] Speaker 2: Ah, sim.
+[00:15:15] Speaker 1: Mas a gente jogar insights ou coisas interessantes, que é como se fosse, assim, uma curadoria.
+[00:15:21] Speaker 2: Sim, sim.
+[00:15:22] Speaker 1: Nossa, do CONSEFOR sobre o que tá acontecendo.
+[00:15:24] Speaker 2: Ah, legal.
+[00:15:25] Speaker 1: Entendeu?
+[00:15:26] Speaker 2: Gente.
+[00:15:27] Speaker 1: Então seria jogar, tipo assim.
+[00:15:28] Speaker 2: Uhum.
+[00:15:32] Speaker 1: Pera aí. Eu queria fazer de um jeito que você consegue entrar no seu também.
+[00:15:48] Speaker 2: Sim.
+[00:15:48] Speaker 1: Aí agora eu consigo entrar no meu, o... é o telão dele, a gente já simula.
+[00:15:52] Speaker 2: Uhum.
+[00:15:52] Speaker 1: Só pra gente simular, porque já tava funcionando isso. Então.
+[00:15:54] Speaker 2: Sim.
+[00:15:55] Speaker 1: Só preciso recarregar os dados aqui só.
+[00:15:57] Speaker 2: Tá no Play Store?
+[00:15:58] Speaker 1: Não, não.
+[00:16:00] Speaker 2: A Márcia, véi.
+[00:16:02] Speaker 1: É.
+[00:16:02] Speaker 2: Ambos ela, a cabeça dela funciona de um outro jeito. A pergunta dela: "Tá na Play Store?"
+[00:16:08] Speaker 1: Não, Márcia, pra botar um negócio na Play Store paga em dólares. A gente precisa de um tempo de aprovação. Esse aplicativo não vai pra Play Store, ele vai ficar como um aplicativo PWA.
+[00:16:18] Speaker 2: Ah, tá.
+[00:16:19] Speaker 1: Que as pessoas conseguem acessar um endereço e até instalar no celular, mas ele funciona como PWA.
+[00:16:24] Speaker 2: Ah, tá.
+[00:16:25] Speaker 1: É um aplicativo web.
+[00:16:26] Speaker 2: Uhum.
+[00:16:27] Speaker 1: Só que funciona como um app.
+[00:16:29] Speaker 2: Ah, tá.
+[00:16:29] Speaker 1: Ele tem banco de dados, tem tudo, mas não vai pra Play Store, não.
+[00:16:32] Speaker 2: Ah, tá. Não, você já...
+[00:16:33] Speaker 1: É porque você não...
+[00:16:34] Speaker 2: Aplicativo.
+[00:16:35] Speaker 1: Eu não sei se você já fez um aplicativo, né, desse assim. Isso dá um trabalho imenso pra provar esses aplicativos.
+[00:16:40] Speaker 2: Não, eu só orientei. Eu mesma, eu nunca fiz, não.
+[00:16:42] Speaker 1: É, Play Store é um negócio... é outro... outro lugar.
+[00:16:45] Speaker 3: Mas funciona também no... no... no iPhone, né?
+[00:16:48] Speaker 1: Isso.
+[00:16:48] Speaker 2: Ah, tá.
+[00:16:49] Speaker 1: A ideia é essa.
+[00:16:50] Speaker 3: Então você cria um aplicativo que funciona pra ambas as plataformas. Então pode acessar pelo site, um site normal, navegador normal, como também iPhone ou... ou...
+[00:17:00] Speaker 1: Isso.
+[00:17:00] Speaker 2: Android.
+[00:17:01] Speaker 1: E aí eu acho que a ideia principal é essa de que a gente poderia ter...
+[00:17:04] Speaker 2: Uhum.
+[00:17:05] Speaker 1: Fazendo uma... fazendo uma... pensando assim, né? A gente poderia ter em locais do CONSEFOR, vamos dizer, ó, tá acontecendo a palestra principal, mas tem uma TV aqui no corredor do terceiro andar.
+[00:17:19] Speaker 2: Sim.
+[00:17:20] Speaker 1: Essa TV poderia tá mostrando coisas.
+[00:17:22] Speaker 2: Uhum.
+[00:17:23] Speaker 1: Que tão acontecendo na palestra principal.
+[00:17:26] Speaker 2: Ah, tá.
+[00:17:26] Speaker 1: Então, tipo, as reações, poderia mostrar... tô falando que poderia tá em vários lugares, tá?
+[00:17:32] Speaker 2: Sim, sim.
+[00:17:33] Speaker 1: Poderia tá na lateral lá embaixo.
+[00:17:35] Speaker 2: Aham.
+[00:17:35] Speaker 1: Poderia tá dentro de uma sala ou num lugar onde as pessoas tão passando.
+[00:17:40] Speaker 2: Sim, sim.
+[00:17:41] Speaker 1: Mostrando...
+[00:17:42] Speaker 2: É tipo a...
+[00:17:43] Speaker 1: Nossa, curadoria, tipo assim, uma frase que o palestrante falou e aí, pum, isso aparece num telão e fica ali.
+[00:17:48] Speaker 2: Ah, legal, legal.
+[00:17:49] Speaker 1: É. Todo mundo gostou. Uma... uma reação em tempo real do que que aconteceu, entendeu?
+[00:17:55] Speaker 2: Aham. É tipo aquelas coisas que o streaming e o YouTube faz, né, do... de, tipo assim, mostrar as reações, mostrar, tipo.
+[00:18:01] Speaker 1: É, isso é puxa.
+[00:18:02] Speaker 2: É legal. Ainda mais assim, num telão ou na TV, vai ficar muito legal, né?
+[00:18:06] Speaker 1: Exatamente. Ainda tá uma coisa bem.
+[00:18:09] Speaker 3: É bem alfa, assim, né?
+[00:18:11] Speaker 1: É, bem alfa.
+[00:18:12] Speaker 3: Bem, assim, nem... a gente nem... nem fez teste, nem...
+[00:18:16] Speaker 1: É, testamos aqui, né?
+[00:18:17] Speaker 3: Teve um usuário.
+[00:18:20] Speaker 1: Deixa eu ver se ele carrega já aqui com as coisas acontecendo agora. Então, seria mais ou menos assim, tá vendo, ó?
+[00:18:25] Speaker 2: Aham.
+[00:18:26] Speaker 1: É porque você pode ver aí no seu... vamos ver se você consegue ver. Eu vou te mandar aqui o endereço, ver se ele abre no celular, tá? Da outra vez eu tinha testado e funcionava.
+[00:18:37] Speaker 2: Aham. Aqui no Zap.
+[00:18:39] Speaker 1: Isso. É, tem que pegar esse endereço com a porta, tá? Lógico que depois isso não vai ser assim.
+[00:18:48] Speaker 2: Uhum.
+[00:18:48] Speaker 1: Mas agora, como tá no meu computador aqui e tal.
+[00:18:51] Speaker 2: Tá bom.
+[00:18:52] Speaker 1: Pega esse endereço aí com a porta que eu te mandei.
+[00:18:54] Speaker 2: Sim.
+[00:18:55] Speaker 1: E tenta abrir. Ele não vai dar pra clicar porque precisa da porta, precisa copiar e jogar no...
+[00:19:00] Speaker 2: Então. Ah, tem que jogar no...
+[00:19:02] Speaker 1: E no navegador, isso.
+[00:19:03] Speaker 2: Ah, tá.
+[00:19:03] Speaker 1: Deixa eu dar uma olhadinha pra ver se funciona.
+[00:19:06] Speaker 2: Pera aí. Navegador.
+[00:19:11] Speaker 1: O meu tá tentando abrir aqui, vamos ver.
+[00:19:14] Speaker 2: Acho que foi certinho.
+[00:19:16] Speaker 1: Se não funcionar aí, a gente olha só aqui mesmo, tá?
+[00:19:19] Speaker 2: Tá.
+[00:19:20] Speaker 1: Mas... vamos tentar aí. Eu tinha testado aquele dia no... no celular, né, Elton? E funcionou, lembra?
+[00:19:28] Speaker 3: Funcionou.
+[00:19:29] Speaker 1: Eu consegui entrar.
+[00:19:30] Speaker 3: Mandei.
+[00:19:30] Speaker 1: Não mandei, não. Mandei só pra Márcia pra ver se a gente tava...
+[00:19:33] Speaker 2: É, aqui não consegue acessar, não. Deixa eu tentar no Firefox.
+[00:19:37] Speaker 1: Ele tava, mas ele deu erro? Ou ele só tá lento?
+[00:19:39] Speaker 2: Tá lento, tá lento.
+[00:19:40] Speaker 1: É, não. Tá lento porque tá no meu computador. Vamos ver se vai aqui.
+[00:19:43] Speaker 2: Tenta aqui no Firefox, talvez vá mesmo.
+[00:19:46] Speaker 1: No meu navegador, não. Acho que é...
+[00:19:48] Speaker 3: Vou te mandar, amigo.
+[00:19:49] Speaker 1: Ah, tá. Não acho.
+[00:19:50] Speaker 3: É porque eu não tenho certeza que esse negócio tá funcionando do jeito que a gente espera.
+[00:19:55] Speaker 1: 54.232. Será que é esse endereço mesmo?
+[00:20:00] Speaker 3: Nossa.
+[00:20:10] Speaker 1: Ah, não, desculpa, gente.
+[00:20:13] Speaker 3: Não satisfaz.
+[00:20:14] Speaker 1: No celulares é outro endereço. Pera, Márcia. Pera aí. Aqui, ó.
+[00:20:18] Speaker 3: 172.
+[00:20:19] Speaker 2: Ah, o endereço tá errado.
+[00:20:20] Speaker 1: 17217. É, tava errado.
+[00:20:23] Speaker 2: Tá.
+[00:20:24] Speaker 1: Assim, considere um teste muito alfa, né? Tipo assim, da gente aqui. Pronto, aqui agora tá aparecendo, ó.
+[00:20:31] Speaker 2: Beleza.
+[00:20:31] Speaker 1: Entra aí você também.
+[00:20:47] Speaker 3: Isso.
+[00:20:48] Speaker 2: Esse 3000 precisa colocar? Não, né?
+[00:20:50] Speaker 1: Precisa.
+[00:20:50] Speaker 2: Precisa.
+[00:20:51] Speaker 1: Precisa. Isso aí. Aí, tá vendo?
+[00:20:52] Speaker 2: Foi.
+[00:20:53] Speaker 1: Você abriria como se fosse assim, e ele também pede pra instalar.
+[00:20:56] Speaker 2: Uhum.
+[00:20:58] Speaker 1: 172174145164. 3000.
+[00:21:06] Speaker 3: Eu tô no... não tô no Wi-Fi?
+[00:21:08] Speaker 1: Você não tá no Wi-Fi. Você precisa tá no Wi-Fi. Senão ele não acha, né? Aí é o seguinte, aí tão as palestras como se fosse assim, acontecendo agora, mesa redonda, a tecnologia delas, com você, inclusive.
+[00:21:19] Speaker 2: Isso, ah, sim.
+[00:21:20] Speaker 1: Quando a gente entra, se você clica e entra no evento.
+[00:21:23] Speaker 2: Uhum.
+[00:21:24] Speaker 1: Você vai ver as informações do evento. Então, tipo, mesa redonda, tem fulano, cicrano, beltrano.
+[00:21:28] Speaker 2: Tá.
+[00:21:29] Speaker 1: E tem algumas reações aqui embaixo, tá vendo?
+[00:21:31] Speaker 2: Ah, legal, Marquito.
+[00:21:32] Speaker 1: Quando você reage, o que acontece? Imagina que isso aqui tá na TV lá, ó. A gente tem uma TV.
+[00:21:36] Speaker 2: Tá aparecendo, né?
+[00:21:37] Speaker 1: Isso. Algum... alguém bateu o "au", tá vendo?
+[00:21:39] Speaker 2: Aham.
+[00:21:39] Speaker 1: Bati um "au" também, bati um "adorei", tipo assim. Por que... por que isso aqui? Não é sobre a palestra inteira, na real.
+[00:21:46] Speaker 2: É o engajamento dela.
+[00:21:47] Speaker 1: E é sobre momentos. Tipo assim, a gente vai ter uma noção na linha do tempo.
+[00:21:51] Speaker 2: Aham.
+[00:21:51] Speaker 1: Que naquele momento da palestra, as pessoas...
+[00:21:54] Speaker 2: Isso.
+[00:21:54] Speaker 1: Tuc-tuc, adorei. Não, não, não.
+[00:21:57] Speaker 3: E a nossa ideia é o seguinte, também transcrever.
+[00:21:59] Speaker 2: Ó, bem essa ideia, show de bola.
+[00:22:01] Speaker 3: É, então a ideia é transcrevendo a palestra, então vai ter uma minutagem da palestra.
+[00:22:05] Speaker 1: Isso.
+[00:22:06] Speaker 2: Uhum.
+[00:22:06] Speaker 3: E a gente vai ter as reações no momento da minutagem. Então a gente vai conseguir também enxergar.
+[00:22:12] Speaker 2: Aham.
+[00:22:13] Speaker 3: Que momentos houveram mais reações.
+[00:22:16] Speaker 1: Das pessoas.
+[00:22:17] Speaker 3: Das pessoas.
+[00:22:17] Speaker 2: Vocês já vão gerar dados com isso aí, né?
+[00:22:19] Speaker 1: Isso, assim, pra você.
+[00:22:20] Speaker 3: Interessante.
+[00:22:20] Speaker 1: E aí depois é gerar.
+[00:22:21] Speaker 2: Beleza.
+[00:22:22] Speaker 1: Pode gerar depois um resumo a partir de, olha, a galera achou muito "au" quando.
+[00:22:26] Speaker 2: Tipo assim, momento quente.
+[00:22:28] Speaker 1: Isso.
+[00:22:28] Speaker 2: Momento quente.
+[00:22:29] Speaker 1: Aham.
+[00:22:30] Speaker 3: Isso. Então.
+[00:22:30] Speaker 2: Que de certa forma vai ser uma avaliação, né, do... do CONSEFOR.
+[00:22:34] Speaker 1: É um jeito de olhar pros dados.
+[00:22:35] Speaker 2: Isso, exatamente. Nossa, achei interessante.
+[00:22:37] Speaker 1: A gente quer ver se funciona. Então tem, assim, como se fosse o telão. Isso aqui é o que nós vamos abrir que fica lá.
+[00:22:42] Speaker 2: Ah, legal.
+[00:22:42] Speaker 1: Isso aqui é o que as pessoas vão abrir no celular delas.
+[00:22:45] Speaker 2: Isso, perfeito.
+[00:22:45] Speaker 1: Elas não abrem isso aqui. Isso aqui é só por baixo dos panos.
+[00:22:48] Speaker 2: Ah, legal.
+[00:22:49] Speaker 1: Então fica assim, ó.
+[00:22:49] Speaker 2: Ah, essa linha do tempo não passa também não lá?
+[00:22:52] Speaker 1: Passa. Isso aqui que tá aparecendo aqui vai aparecer lá.
+[00:22:54] Speaker 2: Quando tiver lá.
+[00:22:55] Speaker 1: Isso aqui é porque eu botei esse batimento cardíaco, mas pode ser uma outra coisa.
+[00:22:59] Speaker 2: É, eu gostei disso.
+[00:23:01] Speaker 1: Uma interface gráfica diferente. Nós vamos ainda trabalhar, era mais pra ver se...
+[00:23:04] Speaker 2: Aham.
+[00:23:04] Speaker 1: Se a tecnologia funcionava.
+[00:23:06] Speaker 2: Termômetro aí do CONSEFOR, mais legal.
+[00:23:08] Speaker 1: Isso. Então você vê que quando eu clico aqui, também tá atualizando pra você. Você vê que tem três "adorei".
+[00:23:13] Speaker 2: Isso.
+[00:23:13] Speaker 1: Três "uau". Vou bater mais um "uau". Quer ver, ó?
+[00:23:15] Speaker 2: Aham. Ah, legal.
+[00:23:16] Speaker 1: Ele vai atualizar pra todo mundo.
+[00:23:18] Speaker 2: Caramba.
+[00:23:18] Speaker 1: Ó, foi pra cinco aí, tá vendo?
+[00:23:20] Speaker 2: Sim, sim.
+[00:23:20] Speaker 1: Porque eu bati. Então, na verdade, quando a gente entra no evento.
+[00:23:23] Speaker 2: Aham.
+[00:23:23] Speaker 1: A gente consegue ver também um pouco do termômetro de como que tá.
+[00:23:27] Speaker 2: Isso.
+[00:23:28] Speaker 1: Aqui aparece em algum lugar.
+[00:23:30] Speaker 2: Aham.
+[00:23:30] Speaker 1: Que pode ser, por exemplo, vamos dizer que o segundo andar vai usar muito, primeiro andar.
+[00:23:34] Speaker 2: Sim, sim.
+[00:23:34] Speaker 1: A gente pode botar um monitor de computador ligado num computador.
+[00:23:37] Speaker 2: Aham.
+[00:23:38] Speaker 1: Uma TV ali.
+[00:23:39] Speaker 2: Uhum.
+[00:23:39] Speaker 1: Ou na sala de aula vai ligar.
+[00:23:41] Speaker 2: Sim.
+[00:23:41] Speaker 1: Deixa a TV ligada, aparecendo o que que tá acontecendo lá embaixo.
+[00:23:46] Speaker 2: Entendi o do CONSEFOR, certo?
+[00:23:47] Speaker 1: Entendeu? Tipo assim, então.
+[00:23:49] Speaker 2: Nossa, meia ideia.
+[00:23:50] Speaker 1: Isso pode tá em alguns lugares.
+[00:23:52] Speaker 2: Aham, sim.
+[00:23:52] Speaker 1: Uma coisa que a gente não começou a mexer ainda foi no cantinho instagramável.
+[00:23:57] Speaker 3: É.
+[00:23:57] Speaker 1: Que assim, se a gente não fizer nada, nada, vai ser um banner, umas plantas, uma cadeira.
+[00:24:02] Speaker 2: Isso, isso.
+[00:24:03] Speaker 1: Pra tirar foto.
+[00:24:04] Speaker 2: Uhum.
+[00:24:04] Speaker 1: Entende? Uma coisa simples.
+[00:24:05] Speaker 2: Sim, sim.
+[00:24:06] Speaker 1: Mas ainda tô esperando o que que é esse cantinho, entendeu? Não é só um lugar bonito. Será que tem alguma outra coisa, uma coisa que fica me vindo assim, entendeu?
+[00:24:17] Speaker 3: A gente pode interagir, né, aquele...
+[00:24:20] Speaker 1: O que que teria lá? É só um lugar bonitinho pra tirar foto? Entendeu?
+[00:24:25] Speaker 3: É, o instagramável em geral é isso, né? Tipo, é um lugar bonito.
+[00:24:27] Speaker 1: É, mas aí precisa ser um lugar bem bonitinho.
+[00:24:29] Speaker 3: Aham.
+[00:24:30] Speaker 1: Pra tirar foto.
+[00:24:31] Speaker 3: Mas às vezes nem é, às vezes é só, tipo, uma boa aplicação da marca do evento e da logo. Tipo, isso é um...
+[00:24:39] Speaker 1: Sim.
+[00:24:39] Speaker 3: É um... todo mundo quer tirar porque eu estou no evento e tal.
+[00:24:42] Speaker 1: É.
+[00:24:42] Speaker 3: Então, tipo assim, a logo talvez seja só isso, possa resolver, sacou?
+[00:24:47] Speaker 1: Tá. Beleza. E aí é isso. O aplicativo, a gente pensa que talvez nas palestras, né, pra pessoa poder entrar.
+[00:24:56] Speaker 2: Uhum.
+[00:24:56] Speaker 1: A gente espalhar alguns QR codes.
+[00:24:59] Speaker 2: Isso.
+[00:24:59] Speaker 1: Tipo assim, acesse o app.
+[00:25:00] Speaker 2: Aham.
+[00:25:01] Speaker 1: É, reage em tempo real.
+[00:25:03] Speaker 2: Isso.
+[00:25:04] Speaker 1: Tá gostando da palestra?
+[00:25:05] Speaker 2: Eu acho que isso aí tem que divulgar, porque eu gostei da palestra.
+[00:25:07] Speaker 1: Mostra que tá gostando. É, eu acho que sim.
+[00:25:09] Speaker 2: Vocês vão divulgar isso aí também pro pessoal?
+[00:25:10] Speaker 1: Sim. A gente tá tentando entender se isso funcionava. Já viu que o app funciona?
+[00:25:14] Speaker 3: É, tá muito.
+[00:25:15] Speaker 2: Ah, isso aqui vai bombar, né?
+[00:25:16] Speaker 1: Já tá funcionando.
+[00:25:17] Speaker 2: Já funciona.
+[00:25:18] Speaker 1: A ideia era conseguir no dia 10.
+[00:25:20] Speaker 2: Aham.
+[00:25:20] Speaker 1: No dia 7.
+[00:25:21] Speaker 3: Uma semana antes.
+[00:25:22] Speaker 1: Uma semana antes.
+[00:25:22] Speaker 3: Umas duas semanas antes, fazer uma.
+[00:25:24] Speaker 1: Soltar o app já. Tipo assim, no site, baixa o app.
+[00:25:28] Speaker 2: Isso.
+[00:25:28] Speaker 1: Que a pessoa consegue ver a programação ali, ela consegue salvar. Se você olhar.
+[00:25:31] Speaker 2: Uhum.
+[00:25:32] Speaker 1: Tem mais funcionalidade. Você consegue, tipo assim, ah, é porque o seu aparece um negócio aí em cima que é seu, né? Tá. Tem, tipo, como assim, ah, eu posso navegar antes, vim aqui, ah, eu quero salvar essa palestra na minha lista.
+[00:25:44] Speaker 2: Ah, sim.
+[00:25:44] Speaker 1: Então, quando eu entro na programação completa, eu posso ver, ah, só as minhas favoritas.
+[00:25:48] Speaker 2: Ah, você, tipo, você quer.
+[00:25:49] Speaker 1: Exatamente.
+[00:25:50] Speaker 2: Criar automaticamente a sua programação, né?
+[00:25:52] Speaker 1: Isso aí. Isso aí. Entendeu?
+[00:25:53] Speaker 2: Ah, legal, legal.
+[00:25:55] Speaker 1: Né? Então.
+[00:25:55] Speaker 2: É, isso aqui é muito útil, inclusive.
+[00:25:58] Speaker 1: É.
+[00:25:58] Speaker 3: Pra ir buscar.
+[00:25:58] Speaker 1: Pode buscar, né? Então, hoje só tem a linha do tempo da programação.
+[00:26:02] Speaker 2: Sim, sim.
+[00:26:03] Speaker 1: Mas a gente também pensa em colocar assim, as informações de, tipo, local e como chegar, então ela clica e já cai no mapa.
+[00:26:09] Speaker 2: Sim, sim.
+[00:26:09] Speaker 1: Porque é diferente de eu entrar no site ou entrar no app.
+[00:26:12] Speaker 2: Ah, não, com certeza.
+[00:26:14] Speaker 1: Então, hospedagem, alimentação, pode tá mais pra cima do tipo onde comer, né?
+[00:26:18] Speaker 2: Sim.
+[00:26:18] Speaker 1: Onde almoçar. Dica de hoje, então pra cada dia o app pode falar assim: "Hoje é quinta-feira, tem feijoada no restaurante tal". Se a gente cadastrar antes.
+[00:26:27] Speaker 2: Isso, isso aí.
+[00:26:28] Speaker 1: A gente já dá umas dicas, entendeu? Melhor do que pra onde vamos, gente.
+[00:26:31] Speaker 2: Isso.
+[00:26:32] Speaker 1: E é um estímulo pra pessoa usar o aplicativo.
+[00:26:34] Speaker 2: Aham. Beleza.
+[00:26:35] Speaker 1: Né?
+[00:26:35] Speaker 2: Esses dados vocês já têm? Isso aqui, local?
+[00:26:37] Speaker 1: O que você quiser passar pra gente que pode ir pra aí, vai ser ótimo.
+[00:26:40] Speaker 3: É, a gente foi pegando do site, né?
+[00:26:42] Speaker 1: Isso, pegando do site. Nem tá aí ainda.
+[00:26:44] Speaker 3: Ainda não, né?
+[00:26:45] Speaker 1: Não tá aí.
+[00:26:45] Speaker 3: Então, local, hospedagem e alimentação, que a gente ainda não... a gente só teve a sugestão de um hotel, mas aí a gente foi ver lá na lista, são poucos inscritos, assim, de outros estados.
+[00:26:55] Speaker 1: Hum.
+[00:26:56] Speaker 3: Aí não sei se faz sentido a gente ter a parceria, né? Só se fosse o número deles.
+[00:27:00] Speaker 1: É, aqui era mais pra gente indicar. O que a gente indica, né?
+[00:27:02] Speaker 3: Indicar, indicar.
+[00:27:03] Speaker 1: Ou temos desconto em tal lugar.
+[00:27:05] Speaker 2: Isso, isso.
+[00:27:05] Speaker 1: Se o hotel quiser fazer. Mas assim.
+[00:27:07] Speaker 2: Tá.
+[00:27:07] Speaker 1: Se não fizer sentido, a gente nem bota hospedagem.
+[00:27:10] Speaker 2: Sim.
+[00:27:10] Speaker 1: Tá? O que daria pra gente colocar é o que fazer aqui ao redor. Tipo assim.
+[00:27:14] Speaker 2: Isso.
+[00:27:14] Speaker 1: Vá no Solar Mom Jardim, vá visitar.
+[00:27:17] Speaker 2: Isso.
+[00:27:17] Speaker 1: Dê uma volta em Fradinhos.
+[00:27:19] Speaker 2: Isso, isso.
+[00:27:20] Speaker 1: É, o mar está a tantos metros de distância, então a pessoa pode caminhar daqui até o mar, ela nem sabe se tá ali o porto.
+[00:27:26] Speaker 2: Aham.
+[00:27:27] Speaker 1: Entende?
+[00:27:28] Speaker 2: Capixaba é mais útil do que aquele pra quem vem de fora, né?
+[00:27:30] Speaker 1: É, mas...
+[00:27:31] Speaker 2: Porque a gente já mora aqui, não conhece. Tem gente que nem sabe aqui desse sol.
+[00:27:34] Speaker 1: Sim.
+[00:27:35] Speaker 2: Já conhece.
+[00:27:35] Speaker 1: Então, o que que eu queria de você, assim.
+[00:27:37] Speaker 2: Aham.
+[00:27:37] Speaker 1: Você viu que a gente tá conseguindo, isso funciona, já tá na cara do CONSEFOR, já tem o selo dos 20 anos, né?
+[00:27:44] Speaker 2: Sim, sim.
+[00:27:45] Speaker 1: Já... e você vê que ele já funciona como um app, tá vendo? O seu aqui, ele já funcionou, tipo assim, tela cheia.
+[00:27:50] Speaker 2: Aham.
+[00:27:51] Speaker 1: Só que ele vai pedir pra instalar também. Ele vai falar: "Você quer instalar esse app do CONSEFOR?"
+[00:27:54] Speaker 2: Aham.
+[00:27:55] Speaker 1: E aí você instala, ele vira um ícone. Tipo isso aqui, ó. Esse aqui é um app que é igualzinho isso que você tá vendo.
+[00:28:01] Speaker 2: Aham.
+[00:28:02] Speaker 1: Ele abre como um app, tá vendo?
+[00:28:03] Speaker 2: Sim, sim.
+[00:28:04] Speaker 1: Ele tem ícone e tal.
+[00:28:05] Speaker 2: Aham.
+[00:28:05] Speaker 1: Isso a gente vai fazer ainda, porque eu não fiz ainda.
+[00:28:08] Speaker 2: Não conhecia não.
+[00:28:09] Speaker 1: Mas a ideia é essa. Então, assim, tudo que vier na sua cabeça, Marcinha.
+[00:28:13] Speaker 2: Uhum.
+[00:28:13] Speaker 1: De "pô, isso seria legal ter no app, será que a gente não pode fazer uma interação assim?"
+[00:28:17] Speaker 2: Sim.
+[00:28:17] Speaker 1: Pô, uma coisa que a gente já pensou, por exemplo, que possivelmente vai ter. Uma coisa que acontece muito em evento é as pessoas pegarem contato.
+[00:28:24] Speaker 2: Isso.
+[00:28:25] Speaker 1: Então, a gente pensou o seguinte: ter uma área no app de escanear QR code dentro do app.
+[00:28:29] Speaker 2: Aham.
+[00:28:30] Speaker 1: Não é um scanner qualquer.
+[00:28:31] Speaker 2: Uhum.
+[00:28:32] Speaker 1: A gente... é possível a gente pegar os dados dos participantes do Eventry, uma tabela, por exemplo?
+[00:28:38] Speaker 2: Sim, sim.
+[00:28:38] Speaker 1: Você exportar pra nós?
+[00:28:39] Speaker 2: Tem, tem sim.
+[00:28:40] Speaker 1: Beleza. Por quê? Porque a gente vai importar dentro do nosso app.
+[00:28:44] Speaker 2: Uhum.
+[00:28:44] Speaker 1: Os dados das pessoas não ficam disponíveis.
+[00:28:46] Speaker 2: Sim.
+[00:28:47] Speaker 1: Mas vamos dizer que eu quero me conectar com você e pegar seu contato.
+[00:28:49] Speaker 2: Ah, beleza.
+[00:28:50] Speaker 1: Posso pegar seu contato? Aí tem um leitor de QR code dentro do app.
+[00:28:53] Speaker 2: Uhum.
+[00:28:54] Speaker 1: Que eu aponto pro seu QR code do evento.
+[00:28:56] Speaker 2: Sim, sim.
+[00:28:56] Speaker 1: E ele salva você pra mim.
+[00:28:58] Speaker 3: É tipo, eu já... é tipo o meu aplicativo, o aplicativo gera o meu cartão de visita.
+[00:29:03] Speaker 1: Isso, por exemplo.
+[00:29:04] Speaker 3: Gera o meu cartão de visita.
+[00:29:05] Speaker 1: Você aponta no meu cartão de visita e pega meus dados.
+[00:29:07] Speaker 2: Ah, legal.
+[00:29:08] Speaker 1: Já pega telefone, e-mail, já salva.
+[00:29:09] Speaker 2: Eu só falei que eu ia passar pra vocês então essa lista.
+[00:29:12] Speaker 3: De repente a gente pode, eu acho que API, cara.
+[00:29:14] Speaker 1: Do quê? Do Eventry?
+[00:29:15] Speaker 3: É, aí não faz, não faz muito sentido.
+[00:29:17] Speaker 2: Não, acho que não. Acho que não. Melhor pegar.
+[00:29:19] Speaker 1: Muito trabalho nesse momento, assim. Eu acho que a gente pegar uma lista pode dar problema da lista ser estática? Pode, porque quem se inscreveu depois na hora.
+[00:29:27] Speaker 3: É, isso que eu tô pensando.
+[00:29:28] Speaker 1: É. Se a gente conseguisse conectar na API, melhor.
+[00:29:31] Speaker 2: Sim, sim.
+[00:29:32] Speaker 1: Né? A gente.
+[00:29:33] Speaker 3: Porque o que acontece também, a gente tinha pensado, é, ele tá dessa forma, mas a gente pensou também em ter a possibilidade dele, tipo, logar.
+[00:29:40] Speaker 2: Uhum.
+[00:29:40] Speaker 3: E aí.
+[00:29:42] Speaker 1: É, existe sim, cara.
+[00:29:43] Speaker 3: Tem de qualquer forma.
+[00:29:44] Speaker 1: A gente conecta na API.
+[00:29:45] Speaker 2: É, a lista de inscritos.
+[00:29:47] Speaker 3: Eu tinha visto que tinha.
+[00:29:48] Speaker 1: É, você falou, aham.
+[00:29:49] Speaker 2: Ah, beleza.
+[00:29:49] Speaker 1: Então, talvez a gente gere um token.
+[00:29:51] Speaker 2: Uhum.
+[00:29:52] Speaker 1: E acesse os inscritos em tempo real.
+[00:29:54] Speaker 2: Isso aí eu acho legal.
+[00:29:55] Speaker 3: Porque aí a pessoa, tipo, quero entrar, logar. Tipo, e ele fica logado no aplicativo, que aí é mais interessante ainda.
+[00:30:02] Speaker 1: Isso. A gente pensa, tinha pensado antes em fazer isso, que ela entra com, com o, tipo, o número de inscrição e a data de nascimento, por exemplo.
+[00:30:10] Speaker 2: Isso.
+[00:30:10] Speaker 1: Sem precisar ter uma senha.
+[00:30:12] Speaker 2: Aham.
+[00:30:12] Speaker 1: Mas um dado que seja só da pessoa, tipo assim, número de inscrição e a senha é o CPF dela, por exemplo.
+[00:30:19] Speaker 2: Sim.
+[00:30:19] Speaker 1: E ela loga no aplicativo.
+[00:30:20] Speaker 2: Uhum.
+[00:30:21] Speaker 1: Que aí a gente consegue ter mais info, a gente sabe quem tá reagindo.
+[00:30:26] Speaker 2: Sim, sim.
+[00:30:26] Speaker 1: Aí isso é mais legal ainda.
+[00:30:28] Speaker 2: Isso aí é top.
+[00:30:29] Speaker 1: Porque aí a gente poderia, ao final do evento, e aí é uma coisa que é grandiosa, mas poderia ser interessante. De acordo com as reações das pessoas e as transcrições, mandar pra ela um resumo dela do evento.
+[00:30:41] Speaker 3: Que cada pessoa fez.
+[00:30:42] Speaker 1: Individualizado, que é tipo uma personalização educacional.
+[00:30:45] Speaker 2: Sim, sim.
+[00:30:46] Speaker 3: Que que você fez no evento?
+[00:30:47] Speaker 1: Isso é uma, é uma porrada pra nós enquanto CEFOR, assim.
+[00:30:50] Speaker 2: Aham.
+[00:30:50] Speaker 1: Tipo assim, a gente manda um relatório pessoal.
+[00:30:53] Speaker 2: Aham.
+[00:30:54] Speaker 1: A Márcia recebe o dela, o Elton recebe o dele.
+[00:30:56] Speaker 3: Como foi a sua participação no CEFOR?
+[00:30:58] Speaker 2: Isso, isso, o resumo. Nossa, isso aí vai ser top.
+[00:31:00] Speaker 3: Pô, mas é, né?
+[00:31:00] Speaker 1: Esse é, é isso.
+[00:31:01] Speaker 3: Acho bom fazer isso.
+[00:31:02] Speaker 1: Eu acho que isso é foda pra 300 pessoas. Não é um negócio, tipo assim.
+[00:31:06] Speaker 3: E aí a gente pode brincar com aquilo também, né, de, de a gente ter, é, QR codes espalhados.
+[00:31:15] Speaker 1: É, a gente pensou fazer umas brincadeiras.
+[00:31:16] Speaker 3: Umas brincadeiras, tipo assim, onde ele escaneia e aí ele faz.
+[00:31:20] Speaker 1: Aqui ele dá uma badge ou um negócio pra ele.
+[00:31:22] Speaker 3: Ou ele faz o check-in, ó, faça o seu check-in aqui que você ganha pontos, sei lá.
+[00:31:26] Speaker 1: Aí dá uma gamificada.
+[00:31:28] Speaker 3: Você ganha ponto, aí tem outro badge que ele, um outro QR code que ele descobriu que tem lá no último andar que ganha, sei lá.
+[00:31:36] Speaker 2: Tipo o Pokémon Go.
+[00:31:38] Speaker 3: Ou Pokémon Go.
+[00:31:38] Speaker 1: Isso, tipo.
+[00:31:40] Speaker 3: Pode ser um, pode ser uma coisa mais.
+[00:31:41] Speaker 1: Os easter eggs, assim, umas coisas escondidas.
+[00:31:43] Speaker 3: Pode ser uma coisa mais contextual também, assim, né? Que esteja mais ligado ao conteúdo também, não só bobeira, assim, né, de ir lá e achar, mas pode ser, tipo, é, ele responde uma pergunta de uma palestra, tipo assim, ah, o que, ou, ou ele avalia a palestra.
+[00:31:59] Speaker 1: É, mas isso é legal, vir interações no app de coisas que tão acontecendo no evento.
+[00:32:03] Speaker 2: Isso, exato.
+[00:32:04] Speaker 1: Tipo, ó, o palestrante tal, fulano, né, a sua palestra, falou tal coisa, tal coisa. O que você acha disso? Aí ele, ah, acho que, isso se relaciona com a sua prática.
+[00:32:14] Speaker 2: Aham.
+[00:32:15] Speaker 1: Como isso reverbera? Porra, isso é bicho.
+[00:32:17] Speaker 2: Não, isso aí é top demais.
+[00:32:18] Speaker 1: Imagina, você tá num evento, você recebe uma pergunta personalizada pra você, porque a gente tem os dados da pessoa.
+[00:32:23] Speaker 2: É.
+[00:32:24] Speaker 1: Então, a gente sabe, quando ela nasceu, a gente tem pelo menos idade, sei lá, se vocês têm no cadastro isso. Mas o que tem no cadastro do Eventry, a gente consegue cruzar pra fazer perguntas, mas isso bicho.
+[00:32:33] Speaker 2: Ah, exato.
+[00:32:33] Speaker 1: É um, estoura a tampa de, de, de, de personalização de evento.
+[00:32:38] Speaker 2: De fora, eu vou até copiar a ideia de vocês.
+[00:32:40] Speaker 1: É, eu acho que esse é um tipo de sistema que se a gente faz um app desse.
+[00:32:44] Speaker 2: Aham.
+[00:32:44] Speaker 1: A gente pode disponibilizar em código livre.
+[00:32:46] Speaker 2: Isso, isso.
+[00:32:47] Speaker 1: Como uma disponibilidade, disponibilização do CEFOR.
+[00:32:50] Speaker 2: Isso, isso.
+[00:32:50] Speaker 1: A gente empacota ele como um software que a gente vai usar nos nossos eventos.
+[00:32:54] Speaker 2: Com certeza.
+[00:32:55] Speaker 1: Mas que o IFS pode usar, o Brasil pode usar.
+[00:32:57] Speaker 2: Isso.
+[00:32:57] Speaker 1: Entendeu? Eu acho que é uma coisa que.
+[00:32:59] Speaker 2: Aham.
+[00:32:59] Speaker 1: Dá uma marca nossa também de 20 anos. Tipo assim, olha as coisas que a gente faz.
+[00:33:03] Speaker 2: É, é isso aí.
+[00:33:04] Speaker 1: Entendeu?
+[00:33:04] Speaker 2: Isso aí.
+[00:33:05] Speaker 1: Então, como também vai começar antes, a pessoa podia entrar com o número de inscrição dela e um dado, e a gente entregar coisas pra ela. Tipo assim, vem uma caixinha e fala com ela: "Olha, o que que você acha que seria mais legal de você, de capturar pra você no evento?" Aí vem cinco opções, não sei o que lá, não sei o que lá. Então, a gente já sabe quando a pessoa tiver aqui.
+[00:33:26] Speaker 2: Aham.
+[00:33:27] Speaker 1: O que que a gente tem que entregar pra ela. Porque ela mesma disse o que que seria legal.
+[00:33:31] Speaker 3: E a gente pode separar também alguns brindes pra entregar, pra de presente no final também, que possa.
+[00:33:35] Speaker 2: É, pra ter mais pontos.
+[00:33:36] Speaker 1: Então, assim, vamos pensar, Márcia, que tudo que vier.
+[00:33:39] Speaker 2: Sim.
+[00:33:41] Speaker 1: Vai lembrando, manda pra nós.
+[00:33:43] Speaker 2: Tudo.
+[00:33:44] Speaker 1: Ah, seria legal ter no app, hein?
+[00:33:45] Speaker 2: Aham.
+[00:33:45] Speaker 1: Porque ele tava conversando com fulano, isso é legal.
+[00:33:48] Speaker 2: Sim, sim.
+[00:33:48] Speaker 1: Pode mandar áudio, pode mandar texto, o que você tiver, porque a gente vai tentando ver se a gente incorpora.
+[00:33:53] Speaker 2: Pode mandar assim na forma crua.
+[00:33:55] Speaker 1: Pode. O compromisso nosso, porque o app é uma coisa meio à parte, assim.
+[00:33:59] Speaker 3: É, o app a gente não.
+[00:34:00] Speaker 1: Que a gente ainda tá tentando ver se vai rolar.
+[00:34:01] Speaker 2: Tá.
+[00:34:02] Speaker 1: No mínimo a programação e um telão com as reações.
+[00:34:06] Speaker 2: Sim.
+[00:34:06] Speaker 1: Já rola, porque já tá rolando aqui.
+[00:34:08] Speaker 2: Isso.
+[00:34:08] Speaker 1: Então, já vai rolar. Se a gente conseguir fazer login da pessoa, ótimo. Se a gente conseguir falar com ela antes do evento e, tipo, tem sites dela, maneiro.
+[00:34:18] Speaker 2: Uhum.
+[00:34:18] Speaker 1: Por quê? Porque imagina que a gente consegue implementar isso. A gente pega os e-mails das pessoas e manda um e-mail só falando do app. Ó, durante o CONSEFOR estaremos rodando um aplicativo super legal que você pode se conectar com outras pessoas.
+[00:34:32] Speaker 2: Uhum.
+[00:34:33] Speaker 1: Vamos ter brindes especiais pra quem interagir mais.
+[00:34:37] Speaker 2: Não é maior do que isso aí mandar pelo, pelo, pelo e-mail das pessoas. É aquele sistema lá que o.
+[00:34:42] Speaker 3: O IFSETS, né?
+[00:34:44] Speaker 2: Isso.
+[00:34:44] Speaker 3: É verdade.
+[00:34:45] Speaker 1: Isso.
+[00:34:46] Speaker 2: Pega todo mundo.
+[00:34:47] Speaker 3: Já mandou.
+[00:34:48] Speaker 2: Todos os cursos, todos.
+[00:34:51] Speaker 1: Pode ser uma boa isso aí.
+[00:34:52] Speaker 2: É, mas o app é especificamente pra quem tá vindo, né?
+[00:34:55] Speaker 3: Tá inscrito.
+[00:34:56] Speaker 1: É, tá inscrito.
+[00:34:56] Speaker 2: Tá inscrito. Ah, é verdade.
+[00:34:59] Speaker 1: É, porque ele vai fazer o quê com o app, né?
+[00:35:01] Speaker 2: Aham.
+[00:35:02] Speaker 1: E aí eu acho que uma coisa, Márcia, é, vamos ficar no compromisso de até daqui uns, hoje é dia 16.
+[00:35:08] Speaker 2: Mas a gente ainda tem mais reuniões.
+[00:35:10] Speaker 1: Não, mas tô falando sobre o app especificamente.
+[00:35:13] Speaker 2: Sim, sim.
+[00:35:13] Speaker 1: Porque o app é uma coisa meio paralela que a gente tá tentando fazer.
+[00:35:17] Speaker 2: Aham.
+[00:35:18] Speaker 1: Pra gerar esse uau, entendeu?
+[00:35:20] Speaker 2: Isso, isso.
+[00:35:21] Speaker 1: O CONSEFOR já tem isso.
+[00:35:23] Speaker 2: Aham.
+[00:35:24] Speaker 1: Nós já tamo fazendo coisa muito foda em termos de ciência, técnicas e tal.
+[00:35:27] Speaker 2: Sim.
+[00:35:28] Speaker 1: Já vai ter corte, já vai ter 15 anos do Edu Simati, tem um monte de coisa já uau interessante.
+[00:35:32] Speaker 2: Sim.
+[00:35:33] Speaker 1: Mas ainda tem isso, tipo, talvez fazer uma camada que é a interação entre o físico e o digital.
+[00:35:38] Speaker 2: Sim, sim.
+[00:35:39] Speaker 1: Que é o app, né?
+[00:35:40] Speaker 2: Uhum.
+[00:35:40] Speaker 1: Pras pessoas interagirem, mandarem coisa. Enfim, que a gente possa rodar aqui, seria um modo também, talvez, nós tamo conversando com o Simon, vamos ver, o Simon tá meio resistente, mas vamos ver que a gente conseguiria usar a nossa IA local aqui, ao invés de usar um modelo de IA de fora.
+[00:35:56] Speaker 2: Sim.
+[00:35:56] Speaker 1: Então, a gente testaria, vamos dizer assim, esse app seria um jeito de testar várias premissas nossas.
+[00:36:02] Speaker 2: Sim.
+[00:36:03] Speaker 1: A nossa IA local, um app de evento, interação antes do evento, interação durante o evento.
+[00:36:07] Speaker 2: Uhum.
+[00:36:08] Speaker 1: Fazer relatórios personalizados.
+[00:36:10] Speaker 2: Sim.
+[00:36:10] Speaker 1: Por usuário.
+[00:36:11] Speaker 2: Isso.
+[00:36:11] Speaker 1: Por pessoa.
+[00:36:12] Speaker 2: Inclusive, esse relatório aí é muito importante, que a ferramenta vai gerar até pra gente dar o, é, fazer o relatório do projeto do CONSEFOR.
+[00:36:19] Speaker 1: Claro.
+[00:36:19] Speaker 2: Que a gente tem que registrar, né, na PRPPG.
+[00:36:22] Speaker 1: Não, alguma coisa de relatório.
+[00:36:24] Speaker 2: Não, é isso aí.
+[00:36:25] Speaker 1: A gente consegue te dar.
+[00:36:26] Speaker 2: É, isso aí que a gente quer agora, entendeu?
+[00:36:28] Speaker 1: Agora nós tamo tentando fazer uma coisa um passo além, tipo assim, que ninguém tá esperando.
+[00:36:33] Speaker 2: Aham.
+[00:36:33] Speaker 1: Que ninguém acha que é possível.
+[00:36:35] Speaker 2: É causar no CONSEFOR.
+[00:36:36] Speaker 1: Isso. Foi essa frase que eu falei.
+[00:36:38] Speaker 2: Isso aí, causar.
+[00:36:40] Speaker 1: Na hora que eu tava tentando bolar esse app, causar um pouco, com o mínimo de coisa, como a gente causa o maior impacto.
+[00:36:47] Speaker 2: Isso aí.
+[00:36:47] Speaker 1: Entendeu? No app. Então, o compromisso seria daqui uns 10 dias.
+[00:36:53] Speaker 2: Uhum.
+[00:36:53] Speaker 1: A gente conseguir sentar pra fazer uma simulação.
+[00:36:56] Speaker 2: Sim, sim.
+[00:36:57] Speaker 1: Nós três aqui, mais algumas pessoas, talvez, tipo assim.
+[00:37:01] Speaker 2: Aham, pra gente ver se tá tudo certinho pra poder lançar, né?
+[00:37:03] Speaker 1: Isso.
+[00:37:04] Speaker 2: Perfeito.
+[00:37:05] Speaker 1: Tá?
+[00:37:05] Speaker 2: Vamos marcar, então? Já quer deixar marcado?
+[00:37:07] Speaker 1: Acho que sim.
+[00:37:08] Speaker 2: Vamos lá.
+[00:37:08] Speaker 1: É, melhor agosto, que aí eu.
+[00:37:11] Speaker 3: Melhor do que daqui a 10 dias, você disse?
+[00:37:13] Speaker 1: É, eu só vou ter a semana que vem de férias, mas é tipo assim, eu vou tá online no carro do CONSEFOR.
+[00:37:18] Speaker 3: Se a gente quisesse lançar o app no dia 7, que é uma sexta-feira.
+[00:37:22] Speaker 2: Aham.
+[00:37:24] Speaker 3: A gente precisaria fazer na semana anterior, não dá pra ser agosto, agosto, não.
+[00:37:27] Speaker 2: Pode ser.
+[00:37:28] Speaker 3: É, a semana anterior eu vou tá de férias.
+[00:37:29] Speaker 1: Você tá de férias, não tem problema, tudo bem.
+[00:37:31] Speaker 3: Tudo bem, né?
+[00:37:32] Speaker 2: Uhum.
+[00:37:32] Speaker 1: Nosso compromisso é andar com isso até lá pra ter um negócio redondo.
+[00:37:35] Speaker 2: Perfeito.
+[00:37:36] Speaker 1: Poderia ser, Márcia, então, na semana entre 27 e 1o?
+[00:37:41] Speaker 2: Deixa eu botar aqui.
+[00:37:42] Speaker 1: Dá uma olhadinha. Isso, 27 e 31, desculpa.
+[00:37:53] Speaker 2: Dia 29 eu tô voltando, então pode ser no dia.
+[00:37:57] Speaker 1: Dia 29 você volta?
+[00:37:58] Speaker 2: Volto.
+[00:37:59] Speaker 3: Ah, então suas férias é na última semana só.
+[00:38:01] Speaker 2: É, não, é só a semana que vem. Aí na outra, dia 29 eu já tô ali.
+[00:38:04] Speaker 1: No dia 30 eu vou pra Brasília, no final do dia.
+[00:38:07] Speaker 3: A semana que vem, então, segunda-feira, 24, você já não tá, não?
+[00:38:11] Speaker 2: Não, eu vou tá de férias semana que vem. Eu vou tá aqui dia 22.
+[00:38:15] Speaker 1: Não, você tá no mês.
+[00:38:15] Speaker 2: Ah, eu tô no dia 22.
+[00:38:16] Speaker 1: É, você tô com 9 dias.
+[00:38:17] Speaker 3: Você tá olhando o dia errado.
+[00:38:19] Speaker 1: Tô olhando o dia errado.
+[00:38:20] Speaker 3: Sim, então pode ser dia 30 então, Márcia?
+[00:38:23] Speaker 2: É que dia 30, qual horário?
+[00:38:24] Speaker 3: Mesmo horário, de manhã?
+[00:38:25] Speaker 2: Pode ser, pode ser.
+[00:38:26] Speaker 3: Porque de noite eu viajo pra Brasília.
+[00:38:27] Speaker 2: Pode ser mais cedo, 10 e meia, isso que aí você vai viajar.
+[00:38:29] Speaker 1: Que horas? 10 horas?
+[00:38:30] Speaker 2: 10 horas pode ser.
+[00:38:31] Speaker 1: Tá, vou chamar aqui você então, pode ser?
+[00:38:33] Speaker 2: Pode. Marca aí que eu já tô assim direito.
+[00:38:36] Speaker 1: É, apresenta, é, isso aqui seria uma validação do app, beleza?
+[00:38:39] Speaker 2: Ok.
+[00:38:42] Speaker 1: Tipo assim, isso não tava nada colocado nas nossas atribuições, entendeu?
+[00:38:47] Speaker 2: Sim, isso mesmo.
+[00:38:47] Speaker 1: Mas a gente quis experimentar.
+[00:38:49] Speaker 2: Uhum. Ah, eu adoro essas inovações.
+[00:38:52] Speaker 1: É Clique Márcia que você quer que chama?
+[00:38:54] Speaker 2: Isso, isso.
+[00:38:55] Speaker 3: Eu boto também.
+[00:38:56] Speaker 1: Chega pra você aí, Márcia, essas coisas, como chama?
+[00:38:58] Speaker 2: Chega, quando chama, aí eu aceito e já fica ok.
+[00:39:02] Speaker 3: Mas quem que chamaria?
+[00:39:03] Speaker 1: Mas quem que a gente chamaria? Essa aqui é a pergunta. Pra gente fazer um pequeno teste. Bota aqui o monitor.
+[00:39:08] Speaker 2: Aham.
+[00:39:08] Speaker 1: Ali, tipo assim, me-me-me-meu que seja do lado de fora o notebook.
+[00:39:11] Speaker 2: Isso.
+[00:39:12] Speaker 1: Pra gente poder olhar.
+[00:39:13] Speaker 2: Aham.
+[00:39:13] Speaker 1: Aí a gente vai todo mundo entrar nos endereços.
+[00:39:15] Speaker 2: Aham.
+[00:39:16] Speaker 1: Tá rolando os CONSEFOR agora, tá rolando a palestra tal.
+[00:39:20] Speaker 2: Isso aqui é o pessoal da CGPE, a Luciana deve tá de férias ainda.
+[00:39:24] Speaker 1: Você chama então o pessoal da CGPE?
+[00:39:26] Speaker 2: Tá, chama só.
+[00:39:27] Speaker 3: Podia ser alguém que, é porque seria legal alguém que também.
+[00:39:32] Speaker 2: Da área aqui de vocês.
+[00:39:33] Speaker 3: É, ou alguém que talvez poderia participar desse processo de alguma forma, sei lá, chamar.
+[00:39:39] Speaker 1: Que tá fora?
+[00:39:40] Speaker 3: É, que tá fora e pode contribuir com outro expertise, tipo, sei lá, Simon talvez, o Rutinelli. Eu sei que o Rutinelli tá de, tá, não, não teria que vir presencialmente, né?
+[00:39:51] Speaker 2: Aham.
+[00:39:52] Speaker 3: Mas.
+[00:39:52] Speaker 1: É, a gente não precisa ser presencial não, pode tá todo mundo no app.
+[00:39:55] Speaker 2: Aham.
+[00:39:55] Speaker 1: Interagindo, fazendo as coisas.
+[00:39:57] Speaker 2: Ah, exato.
+[00:39:57] Speaker 1: É.
+[00:39:58] Speaker 2: Aham.
+[00:39:58] Speaker 1: Porque assim, nesse momento, o app já deveria tá online, não poderia tá na nossa rede aqui.
+[00:40:03] Speaker 2: Aham.
+[00:40:03] Speaker 1: Só. Então, é uma coisa que tem que ver com a TI, articular, entender onde colocar.
+[00:40:09] Speaker 2: Sim, sim.
+[00:40:09] Speaker 1: Entendeu?
+[00:40:12] Speaker 2: Beleza.
+[00:40:13] Speaker 1: Mas eu acho que fica aí marcado o nosso dia e vamos pensar direitinho quem a gente chama. Eu acho que se a gente conseguisse testar com todo mundo, pessoal, rodada de teste, manda pra todo mundo do CEFOR, pô, pudesse ter servidores.
+[00:40:24] Speaker 2: É, eu acho.
+[00:40:24] Speaker 1: Teste aí o aplicativo do CEFOR.
+[00:40:26] Speaker 3: Ou pelo menos a comissão, né, talvez do, do, do CONSEFOR, tipo, somente do.
+[00:40:31] Speaker 1: Isso, a gente gera uma, uma tabela com o número de inscrição pras pessoas e com, com uma data de nascimento fictícia. Ó, você é essa pessoa aqui, Márcia.
+[00:40:40] Speaker 2: Aham, sim.
+[00:40:41] Speaker 1: Tal coisa é sua da, da de nascimento, tal coisa, não sei o quê, tal coisa.
+[00:40:44] Speaker 2: Perfeito.
+[00:40:45] Speaker 1: A gente testa, testa.
+[00:40:46] Speaker 2: Uhum.
+[00:40:48] Speaker 1: Né?
+[00:40:49] Speaker 2: Perfeito.
+[00:40:49] Speaker 1: É. Beleza, Márcia?
+[00:40:50] Speaker 2: Vocês vão mandar então pra geral, beleza.
+[00:40:52] Speaker 1: Vamos mandar pros grupos que a gente acha que é, por e-mail, com as informações, como que entra no app.
+[00:40:57] Speaker 2: Isso.
+[00:40:57] Speaker 1: Isso vai um e-mail antes dessa data aqui.
+[00:41:00] Speaker 2: Ótimo, perfeito.
+[00:41:00] Speaker 1: Convida quem você quiser.
+[00:41:02] Speaker 2: Ótimo.
+[00:41:02] Speaker 1: A ideia é a gente fazer um teste do aplicativo no dia 30.
+[00:41:05] Speaker 2: Tá, beleza.
+[00:41:05] Speaker 1: É uma, uma rodada de validação.
+[00:41:07] Speaker 2: Sim, sim.
+[00:41:07] Speaker 1: Porque aí, com isso aqui, pra gente lançar na outra sexta, dia 7, a gente consegue acertar até segunda, terça, quarta.
+[00:41:14] Speaker 2: Isso, os detalhes.
+[00:41:15] Speaker 1: E botar no ar.
+[00:41:16] Speaker 2: Fechou, fechou.
+[00:41:17] Speaker 1: Senão ele vai do jeito que tá.
+[00:41:18] Speaker 2: Com certeza.
+[00:41:18] Speaker 1: Tipo assim, o mais simples possível.
+[00:41:20] Speaker 2: Não, mas eu.
+[00:41:20] Speaker 1: Se a gente conseguir ver uma versão dois, três melhor.
+[00:41:23] Speaker 2: Sim, sim.
+[00:41:23] Speaker 1: A gente bota no ar.
+[00:41:24] Speaker 2: Não, mas aí a ideia que você já mostrou aí.
+[00:41:27] Speaker 1: Fechou?
+[00:41:28] Speaker 2: Fechou.
+[00:41:28] Speaker 1: Eu queria te, eu queria te mostrar essa demo.
+[00:41:30] Speaker 2: Sim.
+[00:41:31] Speaker 1: Nesse momento, porque você vai ver que.
+[00:41:32] Speaker 2: Com certeza.
+[00:41:33] Speaker 1: Alguma coisa a gente já conseguiu, que é tipo, nem que seja linha do tempo, programação, entra na palestra e tem reação.
+[00:41:38] Speaker 2: Sim, sim.
+[00:41:39] Speaker 1: Só isso, simples.
+[00:41:39] Speaker 2: Ah, legal, legal.
+[00:41:40] Speaker 1: Acabou.
+[00:41:41] Speaker 2: Show de bola.
+[00:41:41] Speaker 1: Ah, beleza, se a gente consegue fazer login, se a gente consegue pegar dados da pessoa, montar relatório individual, não tamo prometendo nada.
+[00:41:46] Speaker 2: Não, tudo bem.
+[00:41:47] Speaker 1: Mas queremos entregar tudo.
+[00:41:48] Speaker 2: Isso aí.
+[00:41:49] Speaker 1: Tá bom?
+[00:41:49] Speaker 2: Tá bom, tá bom, querido. Então é.
+[00:41:51] Speaker 1: Beleza, Marcinha, aí a gente faz esse momento aí de alinhar no dia 10 de novo, dia 30 de novo.
+[00:41:56] Speaker 2: Uhum.
+[00:41:57] Speaker 1: Sobre o app especificamente, tá?
+[00:41:58] Speaker 2: Só especificamente.
+[00:41:59] Speaker 1: Tá bom.
+[00:42:00] Speaker 2: Então, é, mas aí se precisar de mais informação de alguma coisa, eu tô esperando.
+[00:42:04] Speaker 1: A gente vai se falando.
+[00:42:05] Speaker 2: Mas aí vocês vão po, podem mandar que eu vou mandar, tá bom?
+[00:42:07] Speaker 1: Tá bom.
+[00:42:07] Speaker 2: Eu vou agora corrigir as coisas que ele sugeriu e aí a gente.
+[00:42:10] Speaker 3: E aí, informações do que você quiser atualizar de hospedagem, você manda pro, pra gente, pra, pra atualizar no site.
+[00:42:16] Speaker 2: Ah, legal.
+[00:42:16] Speaker 3: Porque aí a gente usou o site como referência de conteúdo.
+[00:42:20] Speaker 2: Sim, ótimo.
+[00:42:20] Speaker 3: Entendeu?
+[00:42:21] Speaker 1: O que tá faltando também, eu acho que a gente não fez esse alinhamento, é o que que vai ter transmissão ao vivo.
+[00:42:26] Speaker 2: Ah, sim.
+[00:42:26] Speaker 1: E o que que tem gravação.
+[00:42:27] Speaker 2: Vai tá no nosso checklist.
+[00:42:29] Speaker 1: Isso, então, assim, a gente precisa disso urgente pra alinhar com a equipe.
+[00:42:32] Speaker 3: Pra poder também as traduções em Libras.
+[00:42:34] Speaker 1: Isso, pra tradução em Libras pra equipe.
+[00:42:37] Speaker 2: Essa parte.
+[00:42:37] Speaker 1: Quanto antes você conseguir mandar organizado.
+[00:42:40] Speaker 2: Sim, sim.
+[00:42:40] Speaker 1: Melhor. É, a Dulce tá atrás de mais intérpretes.
+[00:42:43] Speaker 2: Mais intérpretes, isso.
+[00:42:44] Speaker 1: Mas a gente já disponibilizou, as intérpretes já tá alinhado. O negócio é saber quais eventos vão precisar.
+[00:42:50] Speaker 2: É, vamos lá até falar agora com o Thiago e já vou fazer essa reserva, beleza?
+[00:42:54] Speaker 1: Isso. É, se você quiser falar com o Thiago direto, melhor ainda.
+[00:42:57] Speaker 2: Eu já vou lá, eu já deixo tudo reservado já com ele. Palestras, todas as palestras vão ser transmitidas.
+[00:43:02] Speaker 1: Tá, beleza, vai lá falar com ele então.
+[00:43:04] Speaker 2: Tá bom.
+[00:43:04] Speaker 1: Tá bom então, Marcinha, obrigado.
+[00:43:05] Speaker 2: Mais alguma informação que vocês precisam?
+[00:43:06] Speaker 1: Não, por enquanto é isso.
+[00:43:07] Speaker 2: Beleza, então.
