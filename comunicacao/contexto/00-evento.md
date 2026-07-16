@@ -59,7 +59,8 @@ Acontecem na programação, **após a fala da Vanessa Battestin** (abertura), co
 - Livro do Cefor (20 anos)
 - Nova **Base de Conhecimentos**
 - Nova **vitrine da Plataforma de MOOCs**
-- Outros livros (ex.: livro do NTE — detalhes com Andrômeda; **lista exata a confirmar**)
+- **Livro do NTE** (confirmado em 16/07 — detalhes com Andrômeda)
+- **"AI no Moodle do Ifes"** (confirmado em 16/07)
 
 > Relacionado: banners impressos desses mesmos produtos em
 > [producao/02-pre-evento/banners-institucionais/](../producao/02-pre-evento/banners-institucionais/brief.md)

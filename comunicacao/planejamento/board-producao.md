@@ -30,7 +30,7 @@
 | Contagem regressiva (10 peças) | ___ | 07–17/08 | ⬜ |
 | Banners institucionais — livro, MOOCs, Base de Conhecimentos (pedido Vanessa 14/07) | ___ | arte até **01/08** → gráfica | ⬜ |
 | Notícia do Concefor para ACS (site/Notícias Ifes) — CGTE ajuda Márcia a redigir | ___ | antes de 15/08 | ⬜ |
-| Divulgação dos lançamentos (livro Cefor, Base de Conhecimentos, vitrine MOOCs, livro NTE) — pode ir em carrossel com chamada de inscrição | ___ | ___ | ⬜ |
+| Divulgação dos lançamentos (livro Cefor, Base de Conhecimentos, vitrine MOOCs, livro NTE, "AI no Moodle do Ifes") — pode ir em carrossel com chamada de inscrição | ___ | ___ | ⬜ |
 | Divulgação do lançamento do app (e-mail aos inscritos + QR codes no evento) | Marquito / Elton | lançamento **07/08** | ⬜ |
 
 > Plano detalhado: [plano-divulgacao-palestrantes.md](../producao/02-pre-evento/palestrantes/plano-divulgacao-palestrantes.md)
