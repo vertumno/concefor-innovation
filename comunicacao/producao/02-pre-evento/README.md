@@ -54,3 +54,10 @@ Sequência diária de 10 peças, iniciando em **07/08** e terminando na abertura
 | Abertura | 17/08 | Card "É hoje!" | ⬜ |
 
 > Dica: cada dia pode destacar 1 atração (palestrante, mesa, momento cultural, bolo 20 anos).
+
+### D) Banners institucionais — livro, MOOCs, Base de Conhecimentos
+Pedido da Vanessa (e-mail 14/07): 3 banners impressos com imagem representativa + QR code,
+para o Concefor **e para ficar no Cefor depois** (arte atemporal). Arte pronta até **01/08**
+(ela volta de férias no início de agosto e manda pra gráfica).
+- 📋 **Brief:** [banners-institucionais/brief.md](banners-institucionais/brief.md)
+- Decisão em aberto: arte única variando tema × três artes distintas

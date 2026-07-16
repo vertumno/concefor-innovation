@@ -28,6 +28,7 @@
 | Vídeos-convite dos palestrantes (receber até 03/08) | ___ | reels 08–14/08 | ⬜ |
 | Cards eventos paralelos (5 confirmados, 20/08) | ___ | sugerido 01–06/08 | ⬜ |
 | Contagem regressiva (10 peças) | ___ | 07–17/08 | ⬜ |
+| Banners institucionais — livro, MOOCs, Base de Conhecimentos (pedido Vanessa 14/07) | ___ | arte até **01/08** → gráfica | ⬜ |
 
 > Plano detalhado: [plano-divulgacao-palestrantes.md](../producao/02-pre-evento/palestrantes/plano-divulgacao-palestrantes.md)
 

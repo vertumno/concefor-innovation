@@ -64,6 +64,7 @@ comunicacao/
   1. 🔴 [Card lembrete do prazo de envio final 03/08](producao/02-pre-evento/card-prazo-envio-final/brief.md) — **fazer hoje**
   2. Iniciar cards de palestrantes ([plano](producao/02-pre-evento/palestrantes/plano-divulgacao-palestrantes.md)) — 1º card em 21/07
   3. Enviar [mensagem aos palestrantes pedindo vídeo-convite](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md) — até 18/07
+  4. [Banners institucionais (livro, MOOCs, Base de Conhecimentos)](producao/02-pre-evento/banners-institucionais/brief.md) — pedido da Vanessa 14/07; arte até **01/08** (gráfica na volta dela)
 - **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
 
 > Mantenha este bloco e o [board de produção](planejamento/board-producao.md) atualizados —
