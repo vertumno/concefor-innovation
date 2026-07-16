@@ -10,7 +10,8 @@
     "build:demo": "cross-env NEXT_PUBLIC_DEMO=1 next build",
     "start": "next start",
     "seed": "node scripts/seed.mjs",
-    "seed:live": "node scripts/seed-live.mjs"
+    "seed:live": "node scripts/seed-live.mjs",
+    "seed:demo": "node scripts/seed-demo.mjs"
   },
   "dependencies": {
     "next": "^15.0.0",
