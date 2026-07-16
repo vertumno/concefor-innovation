@@ -16,26 +16,34 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 - **Solicitar aos palestrantes já** (mensagem pronta: [mensagem-solicitacao-video.md](mensagem-solicitacao-video.md))
 - **Prazo para recebermos os vídeos: 03/08** (dá margem para edição, legenda e agendamento)
 
-## Cronograma — Onda 1 (cards individuais, 1 por palestrante)
-> Temos foto oficial dos 7 — cada um ganha card individual (inclusive as 3 da mesa
-> "Tecnologia Delas"). Isso dá mais material para o feed e um momento para cada palestrante.
+## Cronograma — Onda 1 (cards individuais dos palestrantes)
+> Temos foto oficial dos 7. **Todos ganham card individual**, inclusive os que participam de
+> mesas. Cada palestrante tem seu momento e o feed fica ativo até a reta final.
 
 | Ordem | Data | Palestrante | Contexto | Status |
 |---|---|---|---|---|
 | 1 | 21/07 | Dra. Vanessa Battestin | Palestra de abertura "20 Anos de EaD e o Cefor" (17/08) | ⬜ |
 | 2 | 24/07 | Dr. Felipe Tessarolo | Palestra internacional — The Open University (18/08) | ⬜ |
 | 3 | 28/07 | Dr. Mariano Pimentel | "Desafios da EaD e as ondas de IA" (19/08) | ⬜ |
-| 4 | 31/07 | Dra. Márcia Oliveira | Mesa "Tecnologia Delas" (18/08) + Coord. Geral | ⬜ |
-| 5 | 04/08 | Dra. Mariella Berger | Mesa "Tecnologia Delas" (18/08) | ⬜ |
-| 6 | 06/08 | Dra. Celia Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ⬜ |
-| 7 | a confirmar | Dra. Rutinelli da Penha Fávero | Confirmar participação/papel antes de publicar | ⬜ |
+| 4 | 30/07 | Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD para os próximos 20 anos" (19/08, 9h30) | ⬜ |
+| 5 | 31/07 | Dra. Márcia Oliveira | Mesa "Tecnologia Delas" (18/08) + Coordenadora Geral | ⬜ |
+| 6 | 04/08 | Dra. Mariella Berger | Mesa "Tecnologia Delas" (18/08) | ⬜ |
+| 7 | 06/08 | Dra. Celia Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ⬜ |
 
-> As 3 palestrantes da mesa "Tecnologia Delas" (Márcia, Mariella e Celia) recebem cards
-> individuais e, juntos, promovem a mesa. Opcional: um card-teaser reunindo as três.
-> A mesa "Desafios da EaD para os próximos 20 anos" terá card à parte quando os convidados
-> locais forem confirmados.
-> Ordem: abre com a palestra de abertura (âncora dos 20 anos), depois o internacional,
-> depois IA, e por fim a sequência da mesa "Tecnologia Delas".
+## Cronograma — Cards das mesas (sessões)
+> Além dos cards individuais, cada **mesa-redonda** ganha seu card, promovendo a sessão como um todo.
+
+| Card | Data | Participantes | Status |
+|---|---|---|---|
+| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli Fávero + convidados locais (demais nomes a confirmar) | ⬜ |
+| Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia Oliveira, Mariella Berger, Celia Jaqueline Sanz | ⬜ |
+
+> As 3 palestrantes da mesa "Tecnologia Delas" já têm card individual (ordens 5–7); o card da
+> mesa reúne as três e reforça a sessão. A Rutinelli integra a mesa "Desafios da EaD" e tem
+> card individual (ordem 4); o card da mesa pode ser divulgado desde já e atualizado quando os
+> demais convidados forem confirmados.
+> Ordem geral: abre com a palestra de abertura (âncora dos 20 anos), depois o internacional,
+> depois IA, depois a Rutinelli e a sequência da mesa "Tecnologia Delas".
 
 ## Cronograma — Onda 2 (vídeos-convite)
 | Ordem | Reel | Data sugerida | Status |
@@ -61,6 +69,7 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 
 ## Pendências
 - [x] Coletar fotos oficiais em alta de todos os palestrantes → `_refs/fotos/` (7 fotos recebidas em 16/07)
-- [ ] Confirmar participação da Dra. Rutinelli e convidados da mesa de quarta
+- [x] Dra. Rutinelli confirmada na mesa "Desafios da EaD para os próximos 20 anos" (19/08, 9h30)
+- [ ] Confirmar os demais convidados da mesa "Desafios da EaD" (card agendado para 01/08 — atualizar depois)
 - [ ] Definir quem envia a mensagem de solicitação de vídeo (sugestão: coordenação geral,
       por dar peso institucional — com apoio da CGTE)

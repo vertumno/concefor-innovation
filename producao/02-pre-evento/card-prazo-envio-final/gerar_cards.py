@@ -213,88 +213,98 @@ def rounded(draw, box_, radius, fill, outline=None, width=1):
     draw.rounded_rectangle(box_, radius=radius, fill=fill, outline=outline, width=width)
 
 
-def render_a():
-    im = Image.new("RGBA", (W, H), P_NAVY + (255,)); d = ImageDraw.Draw(im)
-    d.rectangle((0, 0, W, 16), fill=P_CYAN)
-    d.rectangle((0, 16, px(2.45), H), fill=P_BLUE_2)
-    d.polygon([(0, 790), (px(2.45), 690), (px(2.45), 1120), (0, 1240)], fill=P_BLUE)
-    d.rectangle((px(2.45), 88, px(2.48), 1250), fill=P_CYAN)
-    fit_logo(im, LOGO_CONCEFOR, (px(.40), px(.40), px(2.35), px(1.06)))
-    draw_text(d, (1005, 84), "COMUNICADO AOS AUTORES", font(10, True), P_CYAN, "ra")
+def published_background():
+    """Fundo inspirado diretamente nas peças publicadas do VIII Concefor."""
+    im = Image.new("RGBA", (W, H))
+    pix = im.load()
+    c1 = (0, 205, 194)
+    c2 = (27, 57, 128)
+    for y in range(H):
+        for x in range(W):
+            t = min(1, max(0, (x / W) * .57 + (y / H) * .43))
+            pix[x, y] = tuple(round(c1[i] * (1-t) + c2[i] * t) for i in range(3)) + (255,)
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
+    d.ellipse((-300, 360, 720, 980), fill=(18, 119, 157, 42))
+    d.ellipse((-180, 940, 1220, 1550), fill=(14, 47, 124, 35))
+    d.polygon([(350, 0), (1080, 0), (1080, 610), (630, 430)], fill=(30, 71, 148, 35))
+    im = Image.alpha_composite(im, ov)
+    return im
 
-    draw_text(d, (px(2.92), px(1.55)), "VERSÃO FINAL", font(16, True), P_CYAN)
-    draw_text(d, (px(2.90), px(2.02)), "FALTA", font(34, True, True), P_WHITE)
-    draw_text(d, (px(2.90), px(2.64)), "UM PASSO.", font(34, True, True), P_WHITE)
-    draw_text(d, (px(2.94), px(3.88)), "Envie a versão final do seu\ntrabalho aprovado pela Even3.", font(14), P_WHITE, spacing=8)
 
-    draw_text(d, (px(.48), px(2.05)), "PRAZO", font(10, True), P_MUTED)
-    draw_text(d, (px(.42), px(2.28)), "03", font(53, True, True), P_WHITE)
-    d.rectangle((px(.48), px(3.55), px(2.08), px(3.58)), fill=P_CYAN)
-    draw_text(d, (px(.48), px(3.68)), "AGO", font(24, True, True), P_CYAN)
-    draw_text(d, (px(.48), px(4.17)), "2026", font(14, True), P_WHITE)
-
-    panel = (px(2.92), px(5.0), px(7.34), px(6.98))
-    rounded(d, panel, 22, P_BLUE, P_CYAN, 2)
-    items = [
-        "Use o template oficial do VIII Concefor",
-        "Faça o envio pela plataforma Even3",
-        "Confirme a inscrição de\npelo menos um autor",
+def diamonds(im, offset_x=0, offset_y=0):
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
+    shapes = [
+        [(785, 1120), (900, 1005), (1015, 1120), (900, 1235), (785, 1120)],
+        [(650, 1255), (745, 1160), (840, 1255), (745, 1350), (650, 1255)],
+        [(940, 920), (1010, 850), (1080, 920), (1010, 990), (940, 920)],
     ]
-    for i, label in enumerate(items):
-        cy = px(5.31 + i*.61)
-        d.ellipse((px(3.17), cy-22, px(3.17)+44, cy+22), fill=P_CYAN)
-        draw_text(d, (px(3.17)+22, cy), str(i+1), font(10, True), P_INK, "mm")
-        draw_text(d, (px(3.68), cy), label, font(10.8, True), P_WHITE, "lm", spacing=2)
+    for idx, pts in enumerate(shapes):
+        pts = [(x+offset_x, y+offset_y) for x, y in pts]
+        color = (39, 225, 255, 235) if idx == 0 else (39, 145, 255, 145)
+        d.line(pts, fill=color, width=3 if idx == 0 else 2, joint="curve")
+    im.alpha_composite(ov)
 
-    draw_text(d, (px(2.94), px(7.25)), "Para publicação nos Anais, todos os autores também\ndevem constar no cadastro do trabalho.", font(10.5), P_MUTED, spacing=5)
-    d.rectangle((px(2.94), px(8.05), px(7.35), px(8.07)), fill=P_CYAN)
-    draw_text(d, (px(2.94), px(8.30)), "17—20 AGO 2026  ·  VITÓRIA—ES", font(10.5, True), P_WHITE)
-    draw_text(d, (px(2.94), px(8.67)), "concefor.cefor.ifes.edu.br", font(13, True), P_CYAN)
-    fit_logo(im, ASSINATURA_BRANCA, (px(.42), px(9.00), px(7.10), px(.76)))
+
+def url_bar(im, y):
+    d = ImageDraw.Draw(im)
+    d.rectangle((76, y, 815, y+78), fill=P_CYAN)
+    d.ellipse((106, y+17, 150, y+61), outline=P_WHITE, width=3)
+    d.line((116, y+39, 140, y+39), fill=P_WHITE, width=2)
+    d.arc((117, y+22, 139, y+56), 75, 285, fill=P_WHITE, width=2)
+    d.arc((117, y+22, 139, y+56), 255, 105, fill=P_WHITE, width=2)
+    draw_text(d, (165, y+39), "concefor.cefor.ifes.edu.br", font(15, True), P_WHITE, "lm")
+
+
+def render_a():
+    im = published_background(); d = ImageDraw.Draw(im)
+    fit_logo(im, LOGO_CONCEFOR, (64, 54, 465, 195))
+    d.rectangle((805, 75, 1007, 286), fill=P_CYAN)
+    draw_text(d, (906, 116), "PRAZO FINAL", font(11), P_WHITE, "ma")
+    draw_text(d, (906, 165), "03 AGO", font(28, True, True), P_WHITE, "ma")
+    draw_text(d, (906, 230), "2026", font(13, True), P_WHITE, "ma")
+    d.rectangle((76, 328, 754, 331), fill=(54, 228, 219))
+
+    draw_text(d, (76, 378), "TRABALHO APROVADO?", font(29, True, True), P_WHITE)
+    draw_text(d, (76, 472), "FALTA UM PASSO.", font(20, True), P_WHITE)
+    d.rectangle((76, 540, 1007, 618), fill=P_CYAN)
+    draw_text(d, (108, 579), "ENVIE A VERSÃO FINAL ATÉ 03/08/2026", font(19, True, True), P_WHITE, "lm")
+
+    draw_text(d, (78, 670), "Pela plataforma Even3, usando o template oficial do VIII Concefor.", font(13, True), P_WHITE)
+    d.rectangle((78, 735, 1000, 738), fill=(49, 160, 213))
+    draw_text(d, (78, 785), "Para publicação nos Anais, pelo menos um autor deve estar inscrito no evento.", font(11.5), P_WHITE)
+    draw_text(d, (78, 837), "Todos os autores devem constar no cadastro do trabalho.", font(11.5), P_WHITE)
+
+    url_bar(im, 930)
+    draw_text(d, (78, 1052), "VIII CONCEFOR  ·  17—20 AGO 2026  ·  VITÓRIA—ES", font(10, True), P_WHITE)
+    fit_logo(im, ASSINATURA_BRANCA, (72, 1122, 590, 118))
+    diamonds(im, 0, 30)
     path = OUT / "2026-07-16_pre_card_prazo-envio-final_opcao-a.png"
     im.convert("RGB").save(path, quality=96)
     return path
 
 
 def render_b():
-    im = Image.new("RGBA", (W, H), P_BLUE + (255,)); d = ImageDraw.Draw(im)
-    d.rectangle((0, 0, W, 16), fill=P_CYAN)
-    d.rectangle((px(5.95), 16, W, px(8.37)), fill=P_NAVY)
-    d.rectangle((0, px(8.37), W, H), fill=P_WHITE)
-    d.polygon([(0, 780), (650, 620), (805, 1110), (0, 1170)], fill=(25, 83, 158))
-    d.rectangle((px(.52), px(.62), px(.61), px(1.67)), fill=P_CYAN)
-    fit_logo(im, LOGO_CONCEFOR, (px(.70), px(.38), px(2.70), px(1.22)))
+    im = published_background(); d = ImageDraw.Draw(im)
+    fit_logo(im, LOGO_CONCEFOR, (64, 54, 465, 195))
+    d.rectangle((805, 75, 1007, 286), fill=P_CYAN)
+    draw_text(d, (906, 112), "AGO", font(21), P_WHITE, "ma")
+    draw_text(d, (906, 166), "2026", font(21), P_WHITE, "ma")
+    draw_text(d, (906, 233), "17—20", font(18, True, True), P_WHITE, "ma")
+    d.rectangle((76, 328, 754, 331), fill=(54, 228, 219))
 
-    draw_text(d, (px(.52), px(2.02)), "TRABALHO", font(32, True, True), P_WHITE)
-    draw_text(d, (px(.52), px(2.60)), "APROVADO?", font(32, True, True), P_WHITE)
-    draw_text(d, (px(.55), px(3.66)), "GARANTA A PUBLICAÇÃO NOS ANAIS.", font(14, True), P_CYAN)
-    draw_text(d, (px(.55), px(4.46)), "O envio final deve ser feito pela Even3,\nusando o template oficial do evento.", font(13), P_WHITE, spacing=7)
+    draw_text(d, (76, 380), "FALTA UM PASSO!", font(31, True, True), P_WHITE)
+    draw_text(d, (76, 478), "ENVIO DA VERSÃO FINAL", font(16, True), P_CYAN)
+    draw_text(d, (76, 548), "Seu trabalho foi aprovado. Agora, envie a versão final\npela Even3 usando o template oficial do evento.", font(12.5), P_WHITE, spacing=8)
 
-    data = [
-        ("TEMPLATE", "formate a versão final"),
-        ("EVEN3", "envie o arquivo na plataforma"),
-        ("INSCRIÇÃO", "ao menos um autor inscrito"),
-    ]
-    for i, (ttl, body) in enumerate(data):
-        cy = px(5.70 + i*.78)
-        d.ellipse((px(.55), cy-24, px(.55)+48, cy+24), fill=P_CYAN)
-        draw_text(d, (px(.55)+24, cy), str(i+1), font(10, True), P_INK, "mm")
-        draw_text(d, (px(1.05), cy), ttl, font(11, True), P_CYAN, "lm")
-        draw_text(d, (px(2.30), cy), body, font(10.5), P_WHITE, "lm")
-        if i < 2: d.rectangle((px(1.05), cy+48, px(5.43), cy+50), fill=P_LINE)
+    d.rectangle((76, 680, 1007, 683), fill=(54, 228, 219))
+    draw_text(d, (76, 735), "ATÉ", font(14, True), P_CYAN)
+    draw_text(d, (185, 705), "03/08/2026", font(38, True, True), P_WHITE)
+    draw_text(d, (76, 825), "Para entrar nos Anais: pelo menos um autor inscrito e todos os autores no cadastro.", font(10.8, True), P_WHITE)
 
-    draw_text(d, (px(6.97), px(1.22)), "PRAZO FINAL", font(10, True), P_CYAN, "ma")
-    draw_text(d, (px(6.97), px(1.74)), "03", font(51, True, True), P_WHITE, "ma")
-    d.rectangle((px(6.28), px(2.95), px(7.66), px(2.98)), fill=P_CYAN)
-    draw_text(d, (px(6.97), px(3.16)), "08", font(44, True, True), P_WHITE, "ma")
-    draw_text(d, (px(6.97), px(4.26)), "2026", font(14, True), P_MUTED, "ma")
-    rounded(d, (px(6.23), px(5.10), px(7.72), px(5.70)), 16, P_CYAN)
-    draw_text(d, (px(6.975), px(5.40)), "PELA EVEN3", font(10.5, True), P_INK, "mm")
-    draw_text(d, (px(6.97), px(6.55)), "17—20\nAGOSTO\nVITÓRIA—ES", font(14, True, True), P_WHITE, "ma", spacing=5, align="center")
-
-    draw_text(d, (px(.55), px(8.65)), "concefor.cefor.ifes.edu.br", font(13.5, True), P_INK)
-    draw_text(d, (px(.55), px(9.10)), "Orientações e templates no site oficial", font(10.5), P_BLUE)
-    fit_logo(im, ASSINATURA_COLORIDA, (px(4.18), px(8.55), px(3.40), px(1.05)))
+    url_bar(im, 930)
+    draw_text(d, (78, 1052), "ORIENTAÇÕES E TEMPLATES NO SITE OFICIAL", font(10, True), P_WHITE)
+    fit_logo(im, ASSINATURA_BRANCA, (72, 1122, 590, 118))
+    diamonds(im, 0, 30)
     path = OUT / "2026-07-16_pre_card_prazo-envio-final_opcao-b.png"
     im.convert("RGB").save(path, quality=96)
     return path

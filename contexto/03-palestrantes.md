@@ -13,7 +13,7 @@
 | Dra. Celia Jaqueline Sanz Rodriguez | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
 | Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
 | Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ⬜ | ⬜ | ⬜ |
-| Dra. Rutinelli da Penha Fávero | Convidada (confirmar papel) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ⬜ | ⬜ | ⬜ |
 
 > ✅ Fotos oficiais dos 7 recebidas em 16/07/2026 →
 > `producao/02-pre-evento/palestrantes/_refs/fotos/` (PNG, nome = nome do palestrante).
@@ -61,4 +61,4 @@ Coordena o Educimat, o programa Corte de Lovelace e o grupo Pros@tec. Participa 
 ### Dra. Rutinelli da Penha Fávero
 Professora do Ifes, doutora em Educação em Ciências e Saúde (UFRJ), estágio doutoral em Coimbra.
 Coordenou a pós em Tecnologias Educacionais. Temas: tecnologia e educação, gamificação, EaD,
-formação docente. *(Confirmar participação/mesa antes de divulgar.)*
+formação docente. Participa da mesa **"Desafios da EaD para os próximos 20 anos"** (19/08, 9h30).
