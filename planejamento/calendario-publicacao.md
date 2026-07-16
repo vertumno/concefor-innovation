@@ -19,7 +19,7 @@
 ## Agosto — reta final (pré-evento)
 | Data | Publicação | Formato | Status |
 |---|---|---|---|
-| 01/08 | Card mesa — "Desafios da EaD para os próximos 20 anos" (Rutinelli, Tessarolo, Mariano + convidados a confirmar) | Feed | ⬜ |
+| 01/08 | Card mesa — "Desafios da EaD para os próximos 20 anos" (Rutinelli + convidados a confirmar) | Feed | ⬜ |
 | 01/08 | Reforço: últimos dias do prazo de envio | Story | ⬜ |
 | 03/08 | Marco: prazo de envio final (Even3) + prazo interno dos vídeos | — | ⬜ |
 | 04/08 | Card palestrante — Mariella Berger (mesa "Tecnologia Delas") | Feed | ⬜ |

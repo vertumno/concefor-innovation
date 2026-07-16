@@ -7,8 +7,8 @@
 ## Checklist por palestrante
 | Palestrante | Participação | Foto oficial | Card divulgação | Reel | Podcast |
 |---|---|---|---|---|---|
-| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08) + mesa "Desafios da EaD" (19/08) | ✅ | ⬜ | ⬜ | ⬜ |
-| Dr. Mariano Pimentel | Palestra IA (19/08) + mesa "Desafios da EaD" (19/08) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ⬜ | ⬜ | ⬜ |
 | Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ⬜ | ⬜ | ⬜ |
 | Dra. Celia Jaqueline Sanz Rodriguez | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
 | Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
@@ -29,14 +29,12 @@ personalização em larga escala. Senior Fellow da Higher Education Academy (SFH
 projetos de IA na educação (ex.: assistente AIDA), GenAI, adaptive learning e XR/VR. Também
 pesquisa comunicação e mídia (desinformação e redes) pela Universidade de Westminster.
 - **Palestra:** *"Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais"* (18/08, 14h30).
-- **Também na mesa** "Desafios da EaD para os próximos 20 anos" (19/08, 9h30).
 
 ### Dr. Mariano Pimentel — PALESTRANTE NACIONAL
 Doutor em Informática, professor na **UNIRIO**. Prêmio Jabuti 2012 (livro *Sistemas Colaborativos*).
 Livro recente *"IA Generativa e Educação"* (+10 mil downloads). Editor-chefe da revista SBC Horizontes.
 Pesquisa: Sistemas de Informação, Informática na Educação e Cibercultura.
 - **Palestra:** *"Desafios da EaD e as ondas de IA"* (19/08, 14h30).
-- **Também na mesa** "Desafios da EaD para os próximos 20 anos" (19/08, 9h30).
 - Gancho de conteúdo: livro gratuito *"IA generativa e educação: práticas e teorizações"* (SBC).
 
 ### Dra. Vanessa Battestin

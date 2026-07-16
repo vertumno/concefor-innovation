@@ -8,11 +8,9 @@
 > **Disponibilizar estes links sempre que for produzir arte para o Instagram** (ou qualquer peça).
 
 - **Pasta do Canva (Concefor):** https://www.canva.com/folder/FAHDrZ44PIM
-- **Modelo de arte 1 (Google Slides):** https://docs.google.com/presentation/d/1cV7E1rgwpWpkKq2BZGGS0feyHxMcaNRebc5USgRmV5c/edit?usp=sharing
-- **Modelo de arte 2 (Google Slides):** https://docs.google.com/presentation/d/1IaxJV1ZSvt5shCuRwfTFmFLQx0oWEbFiiSjbjm5Fk2w/edit?usp=sharing
+- **Modelo de post (Google Slides):** https://docs.google.com/presentation/d/1cV7E1rgwpWpkKq2BZGGS0feyHxMcaNRebc5USgRmV5c/edit?usp=sharing
+- **Modelo de story (Google Slides):** https://docs.google.com/presentation/d/1IaxJV1ZSvt5shCuRwfTFmFLQx0oWEbFiiSjbjm5Fk2w/edit?usp=sharing
 - **Topo de formulário (Google Slides):** https://docs.google.com/presentation/d/1kOz3owEzuHKWREMTY4T_l0YSaNLgBz4xofOJM9RPKuE/edit?usp=sharing
-
-> *(Descrever o que é cada "Modelo de arte 1/2" — provável: modelos de post e de story — conforme confirmar.)*
 
 ## Conceito da edição
 - **Marco central:** 20 anos do Cefor — selo comemorativo nas peças de brinde e principais peças de divulgação.

@@ -35,13 +35,13 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 
 | Card | Data | Participantes | Status |
 |---|---|---|---|
-| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli Fávero, Felipe Tessarolo e Mariano Pimentel + convidados locais (demais nomes a confirmar) | ⬜ |
+| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli Fávero + convidados locais (demais nomes a confirmar) | ⬜ |
 | Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia Oliveira, Mariella Berger, Celia Jaqueline Sanz | ⬜ |
 
 > As 3 palestrantes da mesa "Tecnologia Delas" já têm card individual (ordens 5–7); o card da
-> mesa reúne as três e reforça a sessão. A Rutinelli, o Felipe e o Mariano integram a mesa
-> "Desafios da EaD" (os três já têm card individual — ordens 4, 2 e 3); o card da mesa pode ser
-> divulgado desde já e atualizado quando os demais convidados forem confirmados.
+> mesa reúne as três e reforça a sessão. A Rutinelli integra a mesa "Desafios da EaD" e tem
+> card individual (ordem 4); o card da mesa pode ser divulgado desde já e atualizado quando os
+> demais convidados forem confirmados.
 > Ordem geral: abre com a palestra de abertura (âncora dos 20 anos), depois o internacional,
 > depois IA, depois a Rutinelli e a sequência da mesa "Tecnologia Delas".
 
