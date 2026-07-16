@@ -1,144 +1,191 @@
-# Próximos passos — plano de execução (revisado em 06/07/2026)
+# Próximos passos — plano de execução (revisado em 16/07/2026)
 
-Plano acionável do app v1. Cada etapa está escopada para ser **uma sessão de trabalho**
-(um prompt, um PR): tem objetivo, tarefas e critério de pronto. A ordem importa — E1→E4
-são o caminho crítico do **piloto na reunião da comissão do Concefor** (data a confirmar,
-≈ semana de 13/07).
+Plano acionável do app v1, reformulado após a reunião com a Márcia (16/07 — ver
+`../contexto/reunioes/sintese-2026-07-16.md`) e o benchmark do app EDEN
+(`../contexto/benchmark-app-eden/`). Cada etapa está escopada para ser **uma sessão de
+trabalho** (um prompt, um PR): objetivo, tarefas e critério de pronto.
 
-Estado de partida: semanas 1–2 entregues (scaffold, identidade, linha do tempo viva,
-favoritos, filtros, modo demo). Nada de backend real ainda: o app roda 100% em demo.
-Ver `app-v1.md` para a spec e `../decisoes.md` (2026-07-06) para os porquês.
+**Datas duras** (acordadas com a Márcia, não mudam):
+
+- **30/07, 10h** — validação com a comissão do Concefor
+- **07/08 (sexta)** — lançamento por e-mail aos inscritos
+- **17/08, 18h30** — abertura do evento
+
+Estado de partida (16/07): E1–E3 do plano anterior **entregues** — SQLite + API routes,
+reações com throttle, SSE, telão "batimento cardíaco". Não há dashboard admin nem barra
+de navegação nova. A API do Even3 está validada (chave em `app/.env.local`, achados em
+`../contexto/even3/api.md`).
 
 ---
 
-## Caminho crítico do piloto
+## Caminho crítico até a validação (30/07)
 
-### E1 — Camada de dados local (SQLite + API routes)
+### R1 — Reformulação da navegação: barra inferior + "Ao Vivo"
 
-**Objetivo:** o app deixa de depender de Supabase e passa a ter backend próprio,
-funcionando com dados reais persistidos.
+**Objetivo:** o app passa a navegar pela barra inferior de 5 itens com o botão central
+"Ao Vivo" (spec §4.0) — a cara nova que a comissão vai ver em 30/07.
 
-- Criar `lib/db.ts` como **interface única** de acesso a dados (o resto do app nunca
-  importa o driver direto — é o que mantém a volta ao Postgres barata).
-- Implementar com `better-sqlite3`; arquivo em `DATABASE_PATH` (default `./data/concefor.db`).
-- Adaptar `supabase/schema.sql` → `db/schema.sql` SQLite (`uuid`→`text` gerado no app,
-  `timestamptz`→`text` ISO-8601; mesmas tabelas: `sessions`, `speakers`,
-  `session_speakers`, `timeline_events`). Aplicar schema na inicialização (idempotente).
-- Portar `seed.sql` e criar `npm run seed`.
-- API routes: `GET /api/sessions` (e o que a UI já consome); trocar `lib/sessions.ts`
-  para buscar da API quando não estiver em `DEMO_MODE`.
-- Remover `@supabase/supabase-js` e `lib/supabaseClient.ts`; atualizar `.env.example`
-  (`DATABASE_PATH`, `ADMIN_TOKEN`, `LOCAL_AI_ENDPOINT` comentado).
-- Garantir que o `Dockerfile` monta volume para `./data`.
+- Componente `BottomNav` (fixo, 5 slots, item ativo = pílula preenchida com label;
+  tokens `--surface-2`/`--cyan`; central elevado em `--accent`).
+- Rotas: `/` (Início), `/agenda` (hoje `/timeline` — redirecionar), `/ao-vivo`,
+  `/pessoas`, `/mais` (absorve `/informacoes` — redirecionar).
+- `/ao-vivo`: com uma sessão `live` → cai direto nela (tela de sessão com reações);
+  várias simultâneas → seletor simples por sala; nenhuma → próxima sessão + contagem
+  regressiva. Pulso discreto no botão quando há sessão live (`prefers-reduced-motion` ok).
+- `/pessoas` v1: palestrantes (bio/foto do banco). Placeholder honesto até o R2 popular.
+- Remover o `topnav` do `layout.tsx`; topbar mantém selo + gradiente.
+- Ajustar `globals.css` (safe-area do iOS, padding inferior do conteúdo).
 
-**Pronto quando:** `npm run dev` (sem flag demo) mostra a programação vinda do SQLite;
-`npm run dev:demo` continua funcionando; build standalone ok.
+**Pronto quando:** no celular, todos os fluxos atuais são alcançáveis pela barra; um toque
+no "Ao Vivo" durante uma sessão live cai na tela de reagir.
 
-### E2 — Reações na sessão ao vivo
+### R2 — Sync Even3 (somente leitura): programação, palestrantes e evento reais
 
-**Objetivo:** participante reage numa sessão em andamento e a reação fica gravada na
-linha do tempo.
+**Objetivo:** o app mostra a programação oficial que já está no Even3 — a planilha manual
+morreu (achado de 16/07).
 
-- UI na tela da sessão (`/sessao/[id]`): botões de reação pré-definida (❤️ 👏 👍 — fechar
-  o conjunto ao implementar), **visíveis só enquanto a sessão está `live`**.
-- `POST /api/reactions` → insere `timeline_events(tipo='reaction', payload={reaction},
-  client_id)`. Anônimo (`client_id` já existe em `lib/clientId.ts`).
-- Anti-flood: throttle por `client_id` no servidor (ex.: máx 1/seg) + debounce na UI.
-- Feedback tátil/visual no toque (a reação "voa" — pode ser simples agora).
-- Contagem agregada discreta na própria tela da sessão.
+- `lib/even3.ts`: cliente server-side (`EVEN3_API_TOKEN` do env; header
+  `Authorization-Token`); nunca importado por código de cliente.
+- `npm run sync:even3`: `GET /session/getschedule` + `GET /speaker` → upsert em
+  `sessions`/`speakers` (**deduplicar por `id_session`** — a API retorna sessões repetidas;
+  guardar `even3_id` para re-sync idempotente). Sessões locais extras (ex.: fictícia de
+  teste) sobrevivem ao sync.
+- Mapear: `venue`→sala, datas+`start_time`/`end_time`→`inicio`/`fim` ISO, tags→eixo
+  (conferir o que vem), speakers→`session_speakers`.
+- Rodar o sync e conferir os 4 dias no app de verdade.
 
-**Pronto quando:** dois navegadores reagindo na mesma sessão e as reações aparecem em
-`timeline_events` com throttle funcionando.
+**Pronto quando:** `npm run sync:even3` duas vezes seguidas popula o banco com a
+programação real sem duplicar nada, e a agenda do app mostra os 4 dias.
 
-### E3 — Tempo real (SSE) + modo telão "batimento cardíaco"
+### R3 — Dashboard admin mínimo
 
-**Objetivo:** o telão projeta as reações ao vivo — o momento "uau" do piloto.
+**Objetivo:** a comissão vê números ao vivo na validação; é o embrião do relatório.
 
-- `GET /api/live/[sessionId]` como **SSE**: stream de reações novas da sessão (poll
-  interno no SQLite a ~1s ou notificação in-process; medir o mais simples que funciona).
-- `/telao/[sessionId]` (e `/telao` escolhe a sessão ao vivo): linha de batimento cardíaco
-  que pulsa a cada reação, agregado por tipo, identidade visual do evento (navy + cyan +
-  vermelho `#D6004B` para picos). Fullscreen, pensado para projetor.
-- Identidade anônima consistente: avatar/cor estável por `client_id` (hash → paleta).
-- Tirar o Telão da navegação do app (decisão de 26/06 — hoje ainda está no menu em
-  `layout.tsx`).
-- Explorar como a reação aparece na timeline do app (bolinha que cresce / anéis / onda —
-  ver `../design-system/app/roadmap.md`); implementar a opção mais barata.
-
-**Pronto quando:** celular reage → telão pulsa em <2s, com vários dispositivos ao mesmo
-tempo, rodando na rede local.
-
-### E4 — Dashboard admin mínimo
-
-**Objetivo:** a comissão vê números ao vivo durante o piloto; é o embrião do relatório.
-
-- `/admin` protegido por `ADMIN_TOKEN` simples (query/cookie; sem gestão de usuários).
+- `/admin` protegido por `ADMIN_TOKEN` (query/cookie; sem gestão de usuários; fora da nav).
 - Ao vivo: dispositivos ativos (client_ids únicos na última hora), reações por sessão,
-  reações por minuto (gráfico de linha simples — os picos de engajamento).
-- Sem BI: um punhado de números e 1–2 gráficos resolve o piloto.
+  reações por minuto (linha simples — os picos).
+- Botão "re-sincronizar Even3" (dispara o sync do R2 no servidor).
 
 **Pronto quando:** durante um teste com reações rolando, `/admin` mostra os números
-atualizando.
+atualizando e o re-sync funciona.
 
-### E5 — Piloto na reunião da comissão do Concefor
+### R4 — Perguntas com upvote
 
-**Objetivo:** validar o núcleo (reagir → telão → dashboard) com gente de verdade.
+**Objetivo:** segunda interação da tela Ao Vivo (a Márcia validou com entusiasmo em
+16/07). **Primeira coisa a cortar se o caminho crítico apertar.**
 
-- [ ] **Confirmar a data** da reunião da comissão (e se haverá demonstração no conselho
-  de gestão também).
-- Preparar: seed com uma "sessão" fictícia no horário da reunião; QR code na tela para
-  entrar no app; telão projetado; roteiro de 10 min (mostrar app → todo mundo reage →
-  telão pulsa → dashboard).
-- Coletar: fricção de entrada (quantos conseguiram sem ajuda?), reação ao telão, ideias.
-- Registrar aprendizados em `../decisoes.md` / `../contexto/reunioes/`.
+- `timeline_events` tipo `question` / `question_vote`; texto com limite (~140), autor
+  oculto no app, 1 voto por `client_id` por pergunta.
+- UI na tela da sessão ao vivo: lista ordenada por votos, compositor simples.
+- Janela abre/fecha pelo `/admin` + ocultar pergunta (moderação mínima).
 
-**Pronto quando:** piloto aconteceu e os aprendizados estão registrados no cérebro.
+**Pronto quando:** dois navegadores perguntam/votam e a ordem atualiza ao vivo; admin
+consegue fechar a janela e ocultar uma pergunta.
+
+### R5 — Deploy em endereço estável (articular com a TI)
+
+**Objetivo:** sair do notebook do Marquito. Para a validação de 30/07 (participantes
+remotos!) e obrigatório pro lançamento. **HTTPS é requisito**, não luxo: PWA instalável e
+a câmera do QR scanner (R7/networking) só funcionam em secure context.
+
+- Articular com a TI do Cefor: onde roda o Docker, DNS/URL amigável, HTTPS (proxy
+  reverso), persistência do volume `./data` + backup do arquivo SQLite.
+- Deploy do build standalone; smoke test de SSE atrás do proxy (buffering off).
+- Plano B documentado: notebook na rede local do evento (LAN sobrevive sem internet).
+
+**Pronto quando:** URL estável com HTTPS abre o app de fora da rede do Cefor, reações
+fluem pro telão em <2s e o arquivo do banco sobrevive a restart do container.
+
+### R6 — Validação com a comissão (30/07, 10h)
+
+**Objetivo:** validar o app reformulado com gente de verdade e decidir o corte final do
+lançamento.
+
+- Preparo: sessão fictícia no horário da reunião (extra local, sobrevive ao sync), QR de
+  acesso projetado, telão, roteiro de 10 min (entrar → navegar pela barra → Ao Vivo →
+  reagir → perguntar → telão pulsa → dashboard).
+- Coletar: fricção de entrada (quantos entraram sem ajuda?), reação ao telão e às
+  perguntas, ideias.
+- Registrar aprendizados em `../decisoes.md` / `../contexto/reunioes/` e recortar o
+  escopo do lançamento com base neles.
+
+**Pronto quando:** validação aconteceu e os aprendizados estão registrados no cérebro.
 
 ---
 
-## Pós-piloto (ordem sugerida, ajustar com os aprendizados)
+## Da validação ao lançamento (07/08)
 
-### E6 — Programação oficial + conteúdo real
+### R7 — Login pelo crachá + consentimento (LGPD)
 
-- Conseguir a planilha/doc da programação oficial (placeholder em `../links.md` — cobrar).
-- Script de importação planilha → SQLite (`npm run import`); repetível, porque a
-  programação vai mudar.
-- Preencher `speakers` (bio/foto) com o material que chegar. Sem inventar dados.
+**Objetivo:** interagir passa a ter identidade (navegar segue aberto). Destravado pela
+API: o QR do crachá codifica o `checkin_code` que já vem no sync de inscritos.
 
-### E7 — Perguntas com upvote (stretch goal — só se E1–E5 estiverem sólidos)
+- Estender o sync do R2: `GET /attendees/` → tabela `attendees` local (**288+ inscritos**;
+  PII fica só no servidor).
+- [ ] **Decidir o segundo fator com o Elton:** data de nascimento caiu (não existe no
+  cadastro); opções: CPF parcial (ex.: 4 primeiros dígitos) ou e-mail.
+- Login: nº do ingresso digitado (QR scanner entra depois se der — exige HTTPS do R5) +
+  segundo fator; associa `client_id` ao inscrito; sessão persistente no dispositivo.
+- Tela de consentimento clara na entrada (modelo de 02/07): quem não aceita segue na
+  parte pública, interagindo anonimamente onde permitido.
+- Avatar/inicial no topo direito quando logado (padrão EDEN).
 
-- `timeline_events(tipo='question')` + `tipo='question_vote'`; texto com limite de
-  caracteres; janela aberta/fechada pelo admin; lista ordenada por votos; autor oculto.
-- Moderação mínima: admin oculta pergunta no `/admin`.
+**Pronto quando:** um inscrito real loga com nº do ingresso + segundo fator, reage, e a
+reação sai associada a ele no banco; quem recusa o consentimento continua navegando.
 
-### E8 — Login pelo crachá + consentimento (LGPD)
+### R8 — Lançamento (07/08): PWA de verdade + e-mail aos inscritos
 
-- **Bloqueado por:** confirmar no Even3 os campos do cadastro e o export/API da lista de
-  inscritos (pendências em `../contexto/even3/README.md`).
-- Importar inscritos; login = nº do ingresso (digitado ou QR scanner no app) + segundo
-  fator; associa `client_id` ao inscrito.
-- Tela de consentimento clara na entrada (modelo discutido em 02/07: quem não aceita usa
-  a parte pública). Navegar nunca exige login.
-- Divulgar o app aos inscritos antes do evento (mensagem via Even3, a confirmar).
+**Objetivo:** o app público, instalável, divulgado para quem está inscrito.
 
-### E9 — Endurecimento para o evento
+- PWA: manifest ok, ícone do selo, cache offline da programação, teste de instalação
+  Android + iPhone.
+- Congelamento de features do lançamento (o que não entrou vai pra semana do evento ou
+  morre).
+- Texto do e-mail com a Márcia (ela manda pros grupos de inscritos) + QR code de acesso
+  para materiais impressos/telões.
+- Smoke test final na URL pública; seed real conferido.
 
-- Admin de horários (editar sessão: horário/sala) — absorver atrasos.
-- PWA de verdade: manifest ok, cache offline da programação, ícone do selo.
+**Pronto quando:** e-mail enviado em 07/08 com o app no ar, instalável, com a programação
+oficial.
+
+---
+
+## Semana pré-evento e evento (10–20/08)
+
+### R9 — Endurecimento para o evento
+
+- Admin de horários (editar sessão: horário/sala/ordem) — absorver atrasos de última hora.
 - Relatório pós-evento: ranking de sessões por engajamento, linha do tempo do evento,
-  destaques do público; exportável (print/PDF).
-- Deploy definitivo no Cefor (Docker + volume + backup do arquivo SQLite); ensaio de
-  telão na sala real; plaquinhas físicas de fallback impressas.
+  destaques do público; exportável (print/PDF) — insumo do relatório institucional (PRPPG).
+- Ensaio de telão na sala real; plaquinhas físicas de fallback impressas.
+
+### R10 — Candidatas da semana do evento (só se R1–R9 estiverem sólidos; nesta ordem)
+
+1. **Avisos da organização** no Início (mão única, sem chat).
+2. **Dica do dia** (alimentação, arredores) — precisa de conteúdo da Márcia.
+3. **Networking por QR do crachá**: scanner no app lê o crachá do outro → salva contato
+   (nome/e-mail do banco de inscritos). Sem chat interno (decisão do benchmark EDEN).
+4. **Gamificação leve**: QR codes espalhados → badges, contextuais ao conteúdo.
+
+**Fase 2 / pós-evento** (registrado, sem compromisso): relatório individual por
+participante (reações + transcrição → IA local; ideia do Elton em 16/07, insumo pro
+relatório PRPPG) · transcrição com minutagem → "momentos quentes" · demais itens do
+backlog em `app-v1.md` §8.
 
 ---
 
 ## Pendências que não são código (podem andar em paralelo)
 
-| Pendência | Onde está |
+| Pendência | Estado / onde está |
 |---|---|
-| Data da reunião da comissão (piloto) | — a confirmar com a comissão |
-| Planilha da programação oficial | `../links.md` (placeholder) |
-| Campos do cadastro / API Even3 | `../contexto/even3/README.md` |
-| Prints do app do evento EDEN (benchmark networking) | pedir à Rutinha |
-| Servidor do Cefor para deploy (ou notebook dedicado) | `../links.md` (placeholder) |
+| Servidor do Cefor + URL/HTTPS para deploy (R5) | **urgente** — articular com a TI; ver `../links.md` |
+| Segundo fator do login (CPF parcial × e-mail) | decidir com Elton — `../contexto/even3/README.md` |
+| Convidados da validação de 30/07 | Márcia convida (CGPE, Simon, Rutinelli aventados) |
+| Texto do e-mail de lançamento (07/08) | escrever com a Márcia na semana de 03/08 |
+| Conteúdo de "dica do dia" / alimentação / arredores | pedir à Márcia (ela topou mandar) |
+| Transmissão ao vivo × gravação por sessão | Márcia levou pro checklist dela (16/07) |
+| Envio de mensagem aos inscritos pelo Even3 | verificar; plano A é e-mail comum |
 | Assets vetoriais do selo | `../contexto/identidade-selo.md` |
+| ~~Planilha da programação oficial~~ | **morta** — programação vem da API Even3 (R2) |
+| ~~Prints do app EDEN~~ | **chegou 16/07** — `../contexto/benchmark-app-eden/` |
+| ~~Campos do cadastro / API Even3~~ | **resolvida 16/07** — `../contexto/even3/api.md` |

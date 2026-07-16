@@ -4,6 +4,51 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-16 — Interface reformulada: barra inferior com "Ao Vivo" no centro (benchmark EDEN)
+
+**Decisão:** o menu do app sai do topo e vira **barra inferior fixa de 5 itens** — Início ·
+Agenda · **● Ao Vivo** (slot central em destaque, gold) · Pessoas · Mais — inspirada nos
+prints do app do evento EDEN 2026 (`contexto/benchmark-app-eden/`), mantendo o design
+system. O botão central leva direto à sessão acontecendo agora (reações/perguntas); sem
+sessão ao vivo, mostra a próxima com contagem regressiva. Do EDEN levamos também: pílula
+preenchida no item ativo, avatar de login no topo direito, lista de participantes com
+busca, mapa dentro do app. **Não** levamos chat interno nem canais estilo Slack (custo de
+moderação — alerta do Léo em 02/07); nosso networking segue sendo troca de contato por QR
+do crachá. Spec §4.0 e plano (`spec/proximos-passos.md` R1) atualizados.
+
+**Por quê:** barra inferior é o padrão consolidado de app de evento (alcançável com o
+polegar, labels visíveis); e o slot central em destaque dá interface ao conceito-espinha
+do projeto — a linha do tempo/"o que está acontecendo agora" vira o botão mais visível do
+app. É a reformulação que a comissão verá na validação de 30/07.
+
+---
+
+## 2026-07-16 — Even3 conectado via API, somente leitura; chave fora do repo
+
+**Decisão:** obtida e validada a chave da API do Even3 do VIII Concefor. Ela vive em
+`app/.env.local` (**gitignored** — jamais commitá-la), placeholder documentado em
+`app/.env.example`, achados em `contexto/even3/api.md`. Uso **somente leitura** por ora:
+um sync server-side puxa programação/palestrantes/inscritos para o SQLite (o navegador
+nunca fala com o Even3). Credenciamento/check-in por API fica para decisão futura.
+
+**Achados que mudam o plano** (validados com chamadas reais em 16/07):
+
+- O QR do crachá codifica o campo **`checkin_code`** dos inscritos → login pelo crachá
+  casa direto com o sync, sem export manual.
+- **Não existe data de nascimento no cadastro** → o segundo fator de 02/07 caiu; restam
+  CPF parcial ou e-mail (decidir com o Elton).
+- A **programação oficial já está no Even3** (4 dias) → a pendência "planilha da
+  programação" morreu; importação vira `npm run sync:even3`.
+- **288 inscritos** já retornados pela API em 16/07 (lista viva, inscrições de última hora
+  entram sozinhas).
+- Cuidado: `getschedule` retorna sessões duplicadas — deduplicar por `id_session`.
+
+**Por quê:** a reunião de 16/07 já tinha descartado export estático em favor da API; com a
+chave validada, o caminho de login + dados reais destravou de vez. Leitura-apenas limita o
+raio de dano de um vazamento e mantém o Even3 como fonte da verdade das inscrições.
+
+---
+
 ## 2026-07-16 — Repo único: central de comunicação (concefor2026) incorporada em `comunicacao/`
 
 **Decisão:** o repo `concefor2026` (central de comunicação da CGTE — programação, palestrantes,

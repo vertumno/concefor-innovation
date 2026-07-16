@@ -15,14 +15,18 @@ Exemplo real em `cracha-exemplo.jpg` (crachá do Marquito, gerado pelo Even3):
 
 ## Cadastro (campos vistos na tela de inscrição em 02/07)
 
-Nome, e-mail (com confirmação), nacionalidade, documento (CPF). **Não confirmado** se data
-de nascimento é coletada — a reunião de 02/07 tendeu a usar data de nascimento como segundo
-fator do login, mas isso **depende de o campo existir no cadastro**. Pendências:
+Nome, e-mail (com confirmação), nacionalidade, documento (CPF). Pendências (estado em
+16/07/2026 — detalhes em [`api.md`](api.md)):
 
-- [ ] Confirmar campos exportáveis da lista de inscritos (API ou export manual do organizador)
-- [ ] Definir o segundo fator do login (data de nascimento, CPF parcial, ou e-mail)
-- [ ] Confirmar acesso/credenciais da API do Even3 (ver `../../links.md`)
-- [ ] Verificar se dá para enviar mensagem aos inscritos pelo Even3 (divulgar o app antes do evento)
+- [x] ~~Confirmar campos exportáveis da lista de inscritos~~ → **API validada em 16/07**:
+  nome, e-mail, CPF, gênero, foto, categoria, `checkin_code` (= nº do ingresso do crachá).
+  **Não há data de nascimento no cadastro.**
+- [x] ~~Confirmar acesso/credenciais da API~~ → chave obtida (Configurações → Integrações),
+  vive em `app/.env.local` (gitignored). Uso somente-leitura por ora.
+- [ ] Definir o segundo fator do login — data de nascimento **caiu** (campo não existe);
+  restam **CPF parcial** (ex.: 4 primeiros dígitos) ou e-mail. Decidir com Elton.
+- [ ] Verificar se dá para enviar mensagem aos inscritos pelo Even3 (divulgar o app antes
+  do evento — o plano de 16/07 é e-mail no lançamento de 07/08)
 
 ## Fricção conhecida
 
