@@ -38,9 +38,20 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 - **Selo 20 anos (assets):** `<link>`
 - **Programação oficial (planilha/doc):** `<link>`
 
-## Kanboard
+## Kanboard (CGTE)
 
-- **Projeto Concefor no Kanboard:** `<link>`
+Cards relacionados ao Concefor no Kanboard da CGTE (registrados em 16/07/2026 — estão
+desorganizados por lá, mas podem ser necessários):
+
+| Card | Título | Link |
+|---|---|---|
+| #7809 | VIII Concefor (2026) — card geral | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7809 |
+| #7824 | Criar NotebookLM para o Concefor | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7824 |
+| #7829 | Artes para o Concefor | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7829 |
+| #7831 | Inovações para o VIII Concefor — definição de caminhos | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7831 |
+| #7848 | Oficina de IA no Concefor — Elton e Marquito | https://board.cefor.ifes.edu.br/?controller=TaskViewController&action=show&task_id=7848 |
+
+Busca geral por "CONCEFOR" no Kanboard: https://board.cefor.ifes.edu.br/?controller=SearchController&action=index&search=CONCEFOR
 
 ## Tracks paralelos
 
