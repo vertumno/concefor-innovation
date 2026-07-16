@@ -7,15 +7,16 @@
 ## Checklist por palestrante
 | Palestrante | Participação | Foto oficial | Card divulgação | Reel | Podcast |
 |---|---|---|---|---|---|
-| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) | ⬜ | ⬜ | ⬜ | ⬜ |
-| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ⬜ | ⬜ | ⬜ | ⬜ |
-| Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ⬜ | ⬜ | ⬜ | ⬜ |
-| Dra. Celia Jaqueline Sanz Rodriguez | Mesa "Tecnologia Delas" (18/08) | ⬜ | ⬜ | ⬜ | ⬜ |
-| Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ⬜ | ⬜ | ⬜ | ⬜ |
-| Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ⬜ | ⬜ | ⬜ | ⬜ |
-| Dra. Rutinelli da Penha Fávero | Convidada (confirmar papel) | ⬜ | ⬜ | ⬜ | ⬜ |
+| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dra. Celia Jaqueline Sanz Rodriguez | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ⬜ | ⬜ | ⬜ |
+| Dra. Rutinelli da Penha Fávero | Convidada (confirmar papel) | ✅ | ⬜ | ⬜ | ⬜ |
 
-> Guardar as fotos oficiais em `producao/02-pre-evento/palestrantes/_refs/`.
+> ✅ Fotos oficiais dos 7 recebidas em 16/07/2026 →
+> `producao/02-pre-evento/palestrantes/_refs/fotos/` (PNG, nome = nome do palestrante).
 
 ---
 

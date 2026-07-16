@@ -52,7 +52,7 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 - Bios resumidas: [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md)
 
 ## Pendências
-- [ ] Coletar fotos oficiais em alta de todos os palestrantes → `_refs/`
+- [x] Coletar fotos oficiais em alta de todos os palestrantes → `_refs/fotos/` (7 fotos recebidas em 16/07)
 - [ ] Confirmar participação da Dra. Rutinelli e convidados da mesa de quarta
 - [ ] Definir quem envia a mensagem de solicitação de vídeo (sugestão: coordenação geral,
       por dar peso institucional — com apoio da CGTE)
