@@ -4,6 +4,29 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-16 — Repo único: central de comunicação (concefor2026) incorporada em `comunicacao/`
+
+**Decisão:** o repo `concefor2026` (central de comunicação da CGTE — programação, palestrantes,
+board de produção de peças, calendário de publicação, marca) foi **incorporado a este repo** na
+pasta `comunicacao/`, via `git subtree add` — o histórico completo dos commits dele foi
+preservado no log deste repo. Este passa a ser o **repo único do Concefor**, com duas áreas:
+inovação/app (raiz) e comunicação (`comunicacao/`). A estrutura interna da área de comunicação
+(contexto numerado, produção por fase, planejamento, templates, `_inbox` próprio) foi mantida
+intacta; a entrada da área é `comunicacao/README.md`.
+
+**Por quê:** mesma dor que criou este repo — "tem que ter algum lugar que é o cérebro". Dois
+cérebros do mesmo evento em repos separados recriavam a dispersão que queríamos matar (fatos do
+evento, marca e prazos duplicados). O repo antigo em `github.com/vertumno/concefor2026` deve
+ser **arquivado** (leitura apenas) para não virar fonte concorrente de verdade.
+
+**Pendência consciente:** há sobreposições a consolidar aos poucos — `contexto/evento.md` vs
+`comunicacao/contexto/00-evento.md`, e os PNGs do selo 20 anos que existem em
+`design-system/selo-20-anos/assets/logo-png/` e em `comunicacao/contexto/_marca/logos/`.
+Regra até lá: **identidade/tokens → `design-system/`; fatos operacionais do evento e peças →
+`comunicacao/`**.
+
+---
+
 ## 2026-06-26 — App: linha do tempo viva, timestamp visual e demo com a programação oficial
 
 **Decisão:** o app passou a ser, visualmente, uma **linha do tempo** (espinha + nós), não uma

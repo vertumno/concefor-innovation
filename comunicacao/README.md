@@ -1,7 +1,9 @@
 # VIII Concefor 2026 — Central de Comunicação da CGTE
 
-> **Cérebro de contexto** da Coordenadoria Geral de Tecnologias Educacionais (CGTE)
-> para planejar, produzir e distribuir as peças de comunicação do VIII Concefor.
+> **Área de comunicação** do repo único do Concefor (`concefor-innovation`), da Coordenadoria
+> Geral de Tecnologias Educacionais (CGTE): planejar, produzir e distribuir as peças de
+> comunicação do VIII Concefor. Era o repo `concefor2026`, incorporado aqui em 16/07/2026
+> com histórico git preservado.
 >
 > **Tema:** *"Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais"*
 > **Data do evento:** 17, 18, 19 e 20 de agosto de 2026 · Cefor / Ifes · Vitória (ES)
@@ -16,7 +18,7 @@ do que o time *faz* (produção) e de como o time *se organiza* (planejamento). 
 ou IA — que precise agir deve conseguir carregar o contexto e entender o estado de tudo.
 
 ```
-concefor2026/
+comunicacao/
 ├── _inbox/            ← Jogue aqui tudo que surgir. Depois processamos e distribuímos.
 ├── contexto/          ← O CÉREBRO. Fatos canônicos do evento (fonte de verdade).
 ├── producao/          ← As peças sendo produzidas, por fase (brindes, pré, durante, ideias).

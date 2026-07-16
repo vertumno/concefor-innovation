@@ -6,6 +6,12 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 ## Repositório
 
 - **GitHub:** https://github.com/vertumno/concefor-innovation
+- **Ex-repo `concefor2026`** (central de comunicação): https://github.com/vertumno/concefor2026 — **incorporado aqui em `comunicacao/` (16/07/2026)**; arquivar no GitHub para não virar fonte concorrente
+
+## Comunicação (CGTE)
+
+- **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
+- **Central de comunicação (neste repo):** `comunicacao/` — board, calendário, palestrantes, peças
 
 ## Evento
 
