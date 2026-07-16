@@ -16,12 +16,13 @@
 - Reels de destaques (abertura, palestras internacionais, premiação).
 
 ### C) Podcasts com palestrantes
-- Planejar pauta, agenda de gravação e distribuição da equipe.
-- Candidatos naturais: Tessarolo, Mariano Pimentel, Vanessa Battestin, mesa "Tecnologia Delas".
-- Planejamento em [distribuicao-equipe.md](../../planejamento/distribuicao-equipe.md).
+- 📋 **Plano completo:** [podcasts/plano-podcasts.md](podcasts/plano-podcasts.md) — 5 episódios,
+  janelas fora das transmissões, roteiro baseado em palestra + tema + transcrição.
+- Gravação sempre **após a fala** do convidado; **nunca** durante transmissão (Leo/Tiago/Nanda ocupados).
+- 🔴 Pendente: **hosts** (Coordenação do Concefor define) e **termo de autorização de imagem/voz**.
 
 ### D) Transmissão ao vivo (simultânea)
-- Palestras e mesas-redondas transmitidas ao vivo.
+- ✅ Decidido (16/07): **todas as palestras e mesas-redondas** transmitidas ao vivo.
 - Definir plataforma (YouTube?), equipamentos, operadores e sala de controle.
 - Responsáveis: Tiago, Leonardo + apoio.
 

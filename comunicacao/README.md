@@ -67,9 +67,10 @@ comunicacao/
   Notificação de aceite dos trabalhos saiu em 13/07.
 - **Inscritos:** já passou de 100 (capacidade: 400) — calibrar divulgação pela ocupação.
 - **Próximos prazos externos:** envio final dos trabalhos até **03/08 (Even3)** · inscrições até 15/08.
-- **Aguardando da Márcia:** 🔴 checklist do que terá **transmissão/gravação** (urgente p/ equipe e
-  Libras) · infos da Aula Inaugural do Educimat (p/ divulgar os paralelos **tudo junto**) ·
-  logo do Educimat p/ impressos.
+- **Transmissão + Libras:** ✅ definido — **todas as palestras e mesas-redondas** (16/07).
+- **Aguardando da Márcia/Coordenação:** 🔴 **hosts dos podcasts** (1 por episódio — ver
+  [plano](producao/03-durante-evento/podcasts/plano-podcasts.md)) · infos da Aula Inaugural do
+  Educimat (p/ divulgar os paralelos **tudo junto**) · logo do Educimat p/ impressos.
 - **Prioridades de comunicação agora:**
   1. 🔴 [Card lembrete do prazo de envio final 03/08](producao/02-pre-evento/card-prazo-envio-final/brief.md) — **fazer hoje**
   2. Iniciar cards de palestrantes ([plano](producao/02-pre-evento/palestrantes/plano-divulgacao-palestrantes.md)) — 1º card em 21/07
