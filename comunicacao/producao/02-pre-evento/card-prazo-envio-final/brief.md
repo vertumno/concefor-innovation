@@ -6,7 +6,8 @@
 - **Formato:** Card feed Instagram 1080×1350 px (+ versão story 1080×1920 px, opcional)
 - **Responsável:** Elton
 - **Prazo:** **HOJE — 16/07/2026** 🔴 prioridade
-- **Status:** 🟡 Em produção
+- **Status:** 🔵 Em aprovação — **arte pronta** (16/07), legendas prontas em [legendas.md](legendas.md)
+- **Arquivo final:** `2026-07-16_pre_card_prazo-envio-final_final.png`
 - **Canva:** produzir na pasta oficial → https://www.canva.com/folder/FAHDrZ44PIM
 
 ## Objetivo
@@ -54,9 +55,9 @@ de ao menos um autor), o trabalho não entra nos Anais.
 - Aprovado por: ___
 
 ## Checklist final
-- [ ] Selo 20 anos aplicado
-- [ ] Data 03/08/2026 conferida
-- [ ] "Even3" citada corretamente
-- [ ] Assinaturas corretas (Concefor/Cefor/Ifes)
-- [ ] Alt text na publicação
-- [ ] Registrado no board
+- [x] Selo 20 anos aplicado
+- [x] Data 03/08/2026 conferida
+- [x] "Even3" citada corretamente
+- [ ] Assinaturas corretas (Concefor/Cefor/Ifes) — *na arte há logo Concefor + selo 20 anos; conferir se Cefor/Ifes precisam constar*
+- [ ] Alt text na publicação — texto pronto em [legendas.md](legendas.md)
+- [x] Registrado no board

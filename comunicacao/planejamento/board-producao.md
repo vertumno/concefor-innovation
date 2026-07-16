@@ -18,7 +18,7 @@
 ## Pré-evento
 | Peça | Responsável | Prazo | Status |
 |---|---|---|---|
-| 🔴 **Card lembrete prazo envio final (03/08 · Even3)** | Elton | **16/07** | 🟡 |
+| 🔴 **Card lembrete prazo envio final (03/08 · Even3)** — arte + legendas prontas, falta publicar | Elton | **16/07** | 🔵 |
 | Card palestrante — Vanessa Battestin | ___ | publicar 21/07 | ⬜ |
 | Card palestrante — Tessarolo | ___ | publicar 24/07 | ⬜ |
 | Card palestrante — Mariano Pimentel | ___ | publicar 28/07 | ⬜ |
