@@ -1,4 +1,4 @@
-// Tipos do modelo de dados (ver spec/app-v1.md §3 e app/supabase/schema.sql).
+// Tipos do modelo de dados (ver spec/app-v1.md §3 e app/db/schema.sql).
 
 export type Session = {
   id: string;
@@ -6,9 +6,10 @@ export type Session = {
   descricao: string | null;
   sala: string | null;
   eixo: string | null;
-  palestrante: string | null; // resumo textual (fallback); detalhe vem de speakerIds
-  speakerIds?: string[]; // palestrantes estruturados (ver Speaker)
-  inicio: string; // ISO timestamptz
+  palestrante: string | null; // resumo textual (fallback); detalhe vem de speakers
+  speakerIds?: string[]; // ids dos palestrantes estruturados (ver Speaker)
+  speakers?: Speaker[]; // palestrantes já resolvidos (a API e o demo embutem)
+  inicio: string; // ISO-8601 com offset
   fim: string | null;
 };
 
@@ -23,7 +24,7 @@ export type Speaker = {
   foto: string | null; // URL da foto, quando houver
 };
 
-export type ReactionKind = "heart" | "clap" | "like" | "down";
+// ReactionKind e o conjunto de reações vivem em ./reactions (fonte única).
 
 // Todo registro da linha do tempo. No v1 só usamos tipo='reaction'.
 export type TimelineEvent = {

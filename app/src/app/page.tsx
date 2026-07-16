@@ -46,8 +46,8 @@ export default function Home() {
 
       {sessions.length === 0 && (
         <div className="empty">
-          Nenhuma sessão carregada ainda. Rode o app com <code>npm run dev:demo</code> para ver a
-          programação de demonstração, ou configure o Supabase (<code>.env.local</code>).
+          Nenhuma sessão carregada ainda. Rode <code>npm run seed</code> e <code>npm run dev</code>{" "}
+          para a programação real, ou <code>npm run dev:demo</code> para a de demonstração.
         </div>
       )}
 

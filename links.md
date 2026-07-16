@@ -17,7 +17,7 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 
 - **Site oficial:** https://concefor.cefor.ifes.edu.br/
 - **Cefor/IFES:** <link institucional>
-- **Plataforma de inscrição — Even3** (API p/ identidade na fase 2): `<link do evento no Even3>` — confirmar acesso/credenciais da API
+- **Plataforma de inscrição — Even3** (API p/ login pelo crachá, pós-piloto): `<link do evento no Even3>` — confirmar acesso/credenciais da API; o que já sabemos está em `contexto/even3/README.md`
 
 ## Identidade visual
 
@@ -45,5 +45,7 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 ## Infra
 
 - **IA local do Cefor (endpoint):** `<host:porta>` — a confirmar
-- **Supabase (projeto):** `<url>` — a criar
-- **Deploy (Vercel ou servidor Cefor):** `<url>` — a definir
+- **Banco de dados:** SQLite local (arquivo no servidor, dentro do deploy) — sem serviço externo.
+  Supabase saiu do v1 (ver `decisoes.md` 2026-07-06); se voltar, registrar a URL aqui.
+- **Deploy (servidor Cefor, Docker):** `<url>` — a definir (Vercel não serve mais: SQLite + SSE
+  pedem processo sempre-ligado)

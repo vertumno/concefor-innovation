@@ -8,15 +8,18 @@
     "dev:demo": "cross-env NEXT_PUBLIC_DEMO=1 next dev",
     "build": "next build",
     "build:demo": "cross-env NEXT_PUBLIC_DEMO=1 next build",
-    "start": "next start"
+    "start": "next start",
+    "seed": "node scripts/seed.mjs",
+    "seed:live": "node scripts/seed-live.mjs"
   },
   "dependencies": {
     "next": "^15.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@supabase/supabase-js": "^2.45.0"
+    "better-sqlite3": "^11.8.0"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "cross-env": "^7.0.3",

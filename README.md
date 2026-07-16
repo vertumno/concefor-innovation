@@ -24,7 +24,8 @@ Fonte única de verdade do projeto, em duas áreas:
 
 ## App (PWA)
 
-Código em [`app/`](app/) — Next.js + Supabase. Ver [`app/README.md`](app/README.md) para rodar.
+Código em [`app/`](app/) — Next.js + SQLite local (ver decisão de 2026-07-06 em
+[`decisoes.md`](decisoes.md)). Ver [`app/README.md`](app/README.md) para rodar.
 
 Escopo v1: programação viva (timeline) · reações ao vivo no telão · dashboard/relatório.
 

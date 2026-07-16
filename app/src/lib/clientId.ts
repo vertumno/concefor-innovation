@@ -17,10 +17,24 @@ export function getClientId(): string {
   if (typeof window === "undefined") return "";
   let id = localStorage.getItem(KEY);
   if (!id) {
-    id = crypto.randomUUID();
+    id = gerarId();
     localStorage.setItem(KEY, id);
   }
   return id;
+}
+
+// crypto.randomUUID() só existe em contexto seguro (HTTPS ou localhost). No celular
+// acessando o app por IP via HTTP na rede local, ele é undefined — sem este fallback,
+// getClientId() lançava e a reação nem chegava a ser enviada (bug do piloto de 09/07).
+function gerarId(): string {
+  try {
+    if (typeof globalThis.crypto?.randomUUID === "function") {
+      return globalThis.crypto.randomUUID();
+    }
+  } catch {
+    /* contexto inseguro: usa o fallback abaixo */
+  }
+  return `cid-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
 function hash(s: string): number {
