@@ -7,7 +7,7 @@
 ## Checklist por palestrante
 | Palestrante | Participação | Foto oficial | Card divulgação | Reel | Podcast |
 |---|---|---|---|---|---|
-| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ⬜ | ⬜ | ⬜ |
 | Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ⬜ | ⬜ | ⬜ |
 | Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ⬜ | ⬜ | ⬜ |
 | Dra. Celia Jaqueline Sanz Rodriguez | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
@@ -29,6 +29,7 @@ personalização em larga escala. Senior Fellow da Higher Education Academy (SFH
 projetos de IA na educação (ex.: assistente AIDA), GenAI, adaptive learning e XR/VR. Também
 pesquisa comunicação e mídia (desinformação e redes) pela Universidade de Westminster.
 - **Palestra:** *"Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais"* (18/08, 14h30).
+- Também participa da mesa **"Desafios da EaD para os próximos 20 anos"** (19/08, 9h30), com a Dra. Rutinelli da Penha Fávero.
 
 ### Dr. Mariano Pimentel — PALESTRANTE NACIONAL
 Doutor em Informática, professor na **UNIRIO**. Prêmio Jabuti 2012 (livro *Sistemas Colaborativos*).
@@ -61,4 +62,5 @@ Coordena o Educimat, o programa Corte de Lovelace e o grupo Pros@tec. Participa 
 ### Dra. Rutinelli da Penha Fávero
 Professora do Ifes, doutora em Educação em Ciências e Saúde (UFRJ), estágio doutoral em Coimbra.
 Coordenou a pós em Tecnologias Educacionais. Temas: tecnologia e educação, gamificação, EaD,
-formação docente. Participa da mesa **"Desafios da EaD para os próximos 20 anos"** (19/08, 9h30).
+formação docente. Participa da mesa **"Desafios da EaD para os próximos 20 anos"** (19/08, 9h30),
+com o Dr. Felipe Maciel Tessarolo.

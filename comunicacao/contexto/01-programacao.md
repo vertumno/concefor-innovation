@@ -28,7 +28,7 @@
 |---|---|
 | 8h00 | Sessões técnicas — artigos completos |
 | 9h00 | Momento Cultural |
-| 9h30 | Mesa-Redonda *"Desafios da EaD para os próximos 20 anos"* — Dra. Rutinelli da Penha Fávero + convidados locais |
+| 9h30 | Mesa-Redonda *"Desafios da EaD para os próximos 20 anos"* — Dra. Rutinelli da Penha Fávero, Dr. Felipe Maciel Tessarolo + convidados locais |
 | 13h30 | Sessões técnicas — artigos completos |
 | 14h30 | Palestra *"Desafios da EaD e as ondas de IA"* — Dr. Mariano Pimentel |
 | 16h00 | Coffee-break |

@@ -31,6 +31,7 @@
 - **Texto-base:** The Open University (Reino Unido). Atua em IA, aprendizagem online,
   acessibilidade e personalização em larga escala. Senior Fellow da Higher Education Academy.
 - **Gancho:** único palestrante internacional — vale reforçar isso na headline do card.
+- **Também participa** da mesa "Desafios da EaD" (19/08) — confirmado em 16/07.
 - **Status:** ⬜ a fazer
 
 ## 3 · Dr. Mariano Pimentel — publicar 28/07
@@ -48,8 +49,9 @@
 - **Card:** Mesa **"Desafios da EaD para os próximos 20 anos"** — 19/08, 9h30
 - **Texto-base:** Doutora em Educação em Ciências e Saúde (UFRJ), estágio doutoral em Coimbra.
   Temas: tecnologia e educação, gamificação, formação docente.
-- ⚠️ **Atenção:** demais integrantes da mesa ainda **não confirmados** — o card individual da
-  Rutinelli pode sair normalmente; o card **da mesa** (item separado, ver abaixo) espera confirmação.
+- ⚠️ **Atenção:** Felipe Tessarolo confirmado na mesa (16/07); demais convidados locais ainda
+  **não confirmados** — o card individual da Rutinelli pode sair normalmente; o card **da
+  mesa** (item separado, ver abaixo) já pode citar Rutinelli + Tessarolo.
 - **Status:** ⬜ a fazer
 
 ## 5 · Dra. Márcia Gonçalves de Oliveira — publicar 31/07
@@ -84,7 +86,7 @@
 
 | Card | Data | Quem entra | Trava |
 |---|---|---|---|
-| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli + convidados locais | ⏸️ aguardando confirmação dos demais nomes |
+| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli + Felipe Tessarolo + convidados locais | 🟡 pode produzir com os 2 confirmados; atualizar se mais nomes entrarem |
 | Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia, Mariella, Celia Jaqueline | ✅ pode produzir — todas confirmadas |
 
 ## Ordem de produção sugerida (para não perder o ritmo)
@@ -96,5 +98,5 @@
    (convenção de nome no topo deste documento).
 2. Marcar ✅ nesta lista **e** atualizar a linha correspondente no
    [board de produção](../../../planejamento/board-producao.md).
-3. Escrever a legenda (Instagram + WhatsApp) — usar o mesmo padrão do
-   [card do prazo final](../card-prazo-envio-final/legendas.md) como referência de tom.
+3. Legendas (Instagram + WhatsApp + alt text) **já prontas para os 9 cards** (7 individuais +
+   2 mesas) em [legendas.md](legendas.md) — só publicar.

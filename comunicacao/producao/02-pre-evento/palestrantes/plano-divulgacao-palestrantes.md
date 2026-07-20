@@ -35,7 +35,7 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 
 | Card | Data | Participantes | Status |
 |---|---|---|---|
-| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli Fávero + convidados locais (demais nomes a confirmar) | ⬜ |
+| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli Fávero + Felipe Tessarolo + convidados locais (demais nomes a confirmar) | ⬜ |
 | Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia Oliveira, Mariella Berger, Celia Jaqueline Sanz | ⬜ |
 
 > As 3 palestrantes da mesa "Tecnologia Delas" já têm card individual (ordens 5–7); o card da
@@ -70,6 +70,7 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 ## Pendências
 - [x] Coletar fotos oficiais em alta de todos os palestrantes → `_refs/fotos/` (7 fotos recebidas em 16/07)
 - [x] Dra. Rutinelli confirmada na mesa "Desafios da EaD para os próximos 20 anos" (19/08, 9h30)
-- [ ] Confirmar os demais convidados da mesa "Desafios da EaD" (card agendado para 01/08 — atualizar depois)
+- [x] Dr. Felipe Tessarolo confirmado na mesa "Desafios da EaD para os próximos 20 anos" (16/07)
+- [ ] Confirmar os demais convidados locais da mesa "Desafios da EaD" (card agendado para 01/08 — atualizar depois)
 - [ ] Definir quem envia a mensagem de solicitação de vídeo (sugestão: coordenação geral,
       por dar peso institucional — com apoio da CGTE)
