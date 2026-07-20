@@ -7,9 +7,10 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import QRCode from "qrcode";
 import { getClientId } from "@/lib/clientId";
 
-type Me = { logado: boolean; nome?: string };
+type Me = { logado: boolean; nome?: string; checkinCode?: string | null };
 
 export default function EntrarPage() {
   const router = useRouter();
@@ -19,6 +20,7 @@ export default function EntrarPage() {
   const [consent, setConsent] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
+  const [qr, setQr] = useState<string | null>(null);
 
   useEffect(() => {
     fetch(`/api/me?clientId=${encodeURIComponent(getClientId())}`)
@@ -26,6 +28,21 @@ export default function EntrarPage() {
       .then(setMe)
       .catch(() => setMe({ logado: false }));
   }, []);
+
+  // "Meu QR": o nº do ingresso como QR — quem escanear se conecta com você.
+  useEffect(() => {
+    if (me?.logado && me.checkinCode) {
+      QRCode.toDataURL(me.checkinCode, {
+        width: 220,
+        margin: 1,
+        color: { dark: "#102a5c", light: "#ffffff" },
+      })
+        .then(setQr)
+        .catch(() => {});
+    } else {
+      setQr(null);
+    }
+  }, [me]);
 
   async function entrar(e: React.FormEvent) {
     e.preventDefault();
@@ -70,9 +87,21 @@ export default function EntrarPage() {
       <>
         <h1 className="page-title">Você está conectado</h1>
         <p className="page-sub">
-          Olá, <strong>{me.nome}</strong>! Suas reações e perguntas contam para o relatório do
-          evento.
+          Olá, <strong>{me.nome}</strong>! Suas interações contam para o relatório do evento.
         </p>
+
+        {qr && (
+          <div className="myqr">
+            <div className="section-label">Meu QR</div>
+            {/* eslint-disable-next-line @next/next/no-img-element -- data URL gerada localmente */}
+            <img src={qr} alt={`QR do seu ingresso (${me.checkinCode})`} className="myqr-img" />
+            <p className="page-sub">
+              Nº do ingresso: <strong>{me.checkinCode}</strong>. Quem escanear este código em{" "}
+              Pessoas → Conectar vira uma conexão sua no evento.
+            </p>
+          </div>
+        )}
+
         <button type="button" className="admin-btn" onClick={sair}>
           Sair (desconectar este aparelho)
         </button>
@@ -131,8 +160,9 @@ export default function EntrarPage() {
           {sending ? "Entrando…" : "Entrar"}
         </button>
         <p className="login-skip">
-          Não quer se identificar? Sem problema — o app inteiro continua aberto, e você interage
-          de forma anônima.
+          Prefere não se identificar? Você continua usando a programação, os favoritos e as
+          informações do evento normalmente — mas as interações mais ricas, como se conectar
+          com outros participantes, dependem de identificação.
         </p>
       </form>
     </>

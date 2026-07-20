@@ -51,7 +51,7 @@ export default function Home() {
     <>
       <h1 className="page-title">{nome ? `Olá, ${nome}!` : "Agora no Concefor"}</h1>
       <p className="page-sub">
-        {nome ? "Bem-vindo de volta à linha do tempo do evento." : "A linha do tempo do evento, ao vivo."}
+        {nome ? "Que bom ter você na linha do tempo do evento." : "A linha do tempo do evento, ao vivo."}
       </p>
 
       {avisos.length > 0 && (

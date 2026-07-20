@@ -4,6 +4,32 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-20 — Mosaico de conexões (networking antecipado), tom no singular e R9 de código pronto
+
+**Decisão** (terceira rodada do dia, após Marquito testar o login):
+
+1. **Networking antecipado como "mosaico de conexões"** na tela Pessoas: os 290 inscritos
+   viram **quadradinhos de canto arredondado** (a malha do selo 20 anos) com as iniciais,
+   apagados; conectar — escaneando o QR do crachá do outro ou digitando o nº do ingresso —
+   acende o quadradinho. **Contato completo (nome + e-mail) só depois de conectar**; antes,
+   só o primeiro nome. Conexões mais recentes no topo. Exige login. "Meu QR" no perfil
+   (`/entrar`) substitui o QR físico onde o crachá não tiver. Scanner via BarcodeDetector
+   com fallback manual (câmera plena depende do HTTPS do R5). Sem autorização do outro
+   lado no v1 (só o escaneamento) — reevaluar se surgir incômodo.
+2. **Toda comunicação com o usuário no singular** (a pessoa lê sozinha no celular) e
+   neutra de gênero quando possível — regra registrada em `app/README.md`.
+3. **Texto do login ficou honesto:** quem não entra mantém programação/favoritos/infos,
+   mas perde as interações que dependem de identidade (ex.: conexões). Texto final do
+   termo ainda passa por validação da organização.
+4. **R9 de código entregue:** admin de horários (curativo local; Even3 continua mandando
+   nos horários no re-sync) e relatório imprimível em `/admin/relatorio`.
+
+**Por quê:** o mosaico transforma o networking em jogo visual alinhado à identidade (cada
+conexão acende um ponto da malha dos 20 anos) e dá sentido concreto ao login; o tom no
+singular é como o participante de fato lê o app.
+
+---
+
 ## 2026-07-20 — Início vira a "casa" (avisos da organização) e login entra como OPCIONAL
 
 **Decisão:** entregues no mesmo dia os dois ajustes pedidos após o feedback: (1) o

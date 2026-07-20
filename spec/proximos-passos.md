@@ -206,19 +206,27 @@ oficial.
 
 ## Semana pré-evento e evento (10–20/08)
 
-### R9 — Endurecimento para o evento
+### R9 — Endurecimento para o evento 🟡 (código entregue 20/07; falta o ensaio físico)
 
-- Admin de horários (editar sessão: horário/sala/ordem) — absorver atrasos de última hora.
-- Relatório pós-evento: ranking de sessões por engajamento, linha do tempo do evento,
-  destaques do público; exportável (print/PDF) — insumo do relatório institucional (PRPPG).
-- Ensaio de telão na sala real; plaquinhas físicas de fallback impressas.
+- [x] Admin de horários — seção "Programação" no `/admin`: editar início/fim/sala de
+  qualquer sessão (com aviso de que o re-sync do Even3 sobrescreve horários — corrigir lá
+  também). Entregue 20/07.
+- [x] Relatório pós-evento — `/admin/relatorio`: números gerais, reações por tipo, ranking
+  de sessões por engajamento (com barras), momentos mais quentes (picos/min); botão
+  Imprimir/PDF com `@media print` limpo. Insumo do relatório institucional (PRPPG).
+  Entregue 20/07.
+- [ ] Ensaio de telão na sala real; plaquinhas físicas de fallback impressas.
 
 ### R10 — Candidatas da semana do evento (só se R1–R9 estiverem sólidos; nesta ordem)
 
-1. **Avisos da organização** no Início (mão única, sem chat).
+1. ~~**Avisos da organização** no Início~~ — **antecipada, entregue 20/07** (admin publica).
 2. **Dica do dia** (alimentação, arredores) — precisa de conteúdo da Márcia.
-3. **Networking por QR do crachá**: scanner no app lê o crachá do outro → salva contato
-   (nome/e-mail do banco de inscritos). Sem chat interno (decisão do benchmark EDEN).
+3. ~~**Networking por QR do crachá**~~ — **antecipada, entregue 20/07** como **mosaico de
+   conexões** na tela Pessoas: quadradinhos (malha do selo) com as iniciais dos 290
+   inscritos, apagados; escanear o QR do crachá do outro (BarcodeDetector, com fallback
+   de digitar o nº — câmera plena exige o HTTPS do R5) acende o quadradinho; contato
+   completo (nome + e-mail) só depois de conectar; conexões mais recentes no topo;
+   "meu QR" no perfil substitui o QR físico. Sem chat interno (decisão do benchmark EDEN).
 4. **Gamificação leve**: QR codes espalhados → badges, contextuais ao conteúdo.
 
 **Fase 2 / pós-evento** (registrado, sem compromisso): relatório individual por
