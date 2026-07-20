@@ -16,11 +16,14 @@ títulos/descrições do próprio Even3). Sessões locais sem prefixo `even3-` s
 sync — é o **modo teste** (`npm run seed:live` continua funcionando por cima da
 programação real, mesmo depois do link com o Even3). O seed manual foi **aposentado**.
 
-**Por quê:** o Even3 recebe as mudanças de última hora (é onde a organização mexe), mas o
-cadastro pobre de lá não pode empobrecer o app — as duas fontes se compõem em vez de
-competir. **Achado no caminho:** a programação do Even3 diverge da que a comunicação vem
-divulgando (a mesa "Tecnologia Delas" não existe lá; "Desafios da EaD" aparece nos dias 18
-e 19) — verificar com a organização qual é a atual.
+**Por quê:** o Even3 é a fonte *operacional* do app (é de lá que o sync lê), mas o cadastro
+pobre de lá não pode empobrecer o app — as duas fontes se compõem em vez de competir.
+**Achado e desdobramento (20/07):** a programação do Even3 diverge do site oficial — e o
+Marquito confirmou que **a fonte da verdade editorial no momento é o site** (o Even3 está
+desatualizado: falta a mesa "Tecnologia Delas" de 18/08, credenciamento, coffees, momentos
+culturais e almoço). Encaminhada mensagem à Márcia pedindo para atualizarem o Even3 para
+espelhar o site e mantê-lo em dia — enquanto não corrigirem lá, o app exibe a versão
+desatualizada do Even3.
 
 ---
 
