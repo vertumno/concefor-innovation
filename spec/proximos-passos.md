@@ -88,9 +88,14 @@ morreu (achado de 16/07).
 **Pronto quando:** `npm run sync:even3` duas vezes seguidas popula o banco com a
 programação real sem duplicar nada, e a agenda do app mostra os 4 dias.
 
-### R3 — Dashboard admin mínimo
+### R3 — Dashboard admin mínimo ✅ (entregue 20/07)
 
 **Objetivo:** a comissão vê números ao vivo na validação; é o embrião do relatório.
+
+> **Entregue em 20/07.** `/admin` protegido por `ADMIN_TOKEN` (header/`?token=` →
+> localStorage; fora da nav): dispositivos ativos (1 h), reações totais/por sessão/por
+> minuto (barras), moderação de perguntas (R4) e botão de re-sync Even3 (reusa o
+> `runSync()` do script — fonte única). Atualiza a cada 5 s.
 
 - `/admin` protegido por `ADMIN_TOKEN` (query/cookie; sem gestão de usuários; fora da nav).
 - Ao vivo: dispositivos ativos (client_ids únicos na última hora), reações por sessão,
@@ -100,10 +105,16 @@ programação real sem duplicar nada, e a agenda do app mostra os 4 dias.
 **Pronto quando:** durante um teste com reações rolando, `/admin` mostra os números
 atualizando e o re-sync funciona.
 
-### R4 — Perguntas com upvote
+### R4 — Perguntas com upvote ✅ (entregue 20/07)
 
 **Objetivo:** segunda interação da tela Ao Vivo (a Márcia validou com entusiasmo em
-16/07). **Primeira coisa a cortar se o caminho crítico apertar.**
+16/07). ~~Primeira coisa a cortar se o caminho crítico apertar.~~
+
+> **Entregue em 20/07**, sem mudar o schema (spec §3): `tipo='question'` /
+> `question_vote` / `questions_window` em `timeline_events`. Texto ≤140, autor oculto,
+> 1 voto por dispositivo (toggle), throttle 15 s, janela abre/fecha e ocultar/reexibir
+> pelo `/admin`; lista atualiza por polling de 4 s. Testado: ordenação por votos,
+> toggle de voto, moderação e UTF-8 ponta a ponta.
 
 - `timeline_events` tipo `question` / `question_vote`; texto com limite (~140), autor
   oculto no app, 1 voto por `client_id` por pergunta.

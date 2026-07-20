@@ -80,6 +80,10 @@ function eixoDe(session, titulo) {
   return null;
 }
 
+/**
+ * Executa o sync completo (schedule → SQLite + enrich.sql).
+ * @param {{ dbPath?: string, token?: string, dumpRaw?: boolean }} [opts]
+ */
 export async function runSync({ dbPath, token, dumpRaw = true } = {}) {
   const root = process.cwd();
   if (!token) throw new Error("EVEN3_API_TOKEN ausente (esperado em app/.env.local).");
