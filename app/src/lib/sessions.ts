@@ -58,16 +58,21 @@ export function minutesUntilStart(s: Session, now = getNow()): number {
   return Math.round((new Date(s.inicio).getTime() - now.getTime()) / 60000);
 }
 
-// "agora", "em 5 min", "em 2 h 10", "há 12 min" — rótulo curto de tempo relativo.
+// "agora", "em 5 min", "em 2 h 10", "em 28 d 2 h" — rótulo curto de tempo relativo.
+// Acima de 24h mostra dias+horas ("674 h" não diz nada — feedback de 20/07).
 export function humanizeDelta(min: number): string {
   if (min === 0) return "agora";
   const abs = Math.abs(min);
   let label: string;
   if (abs < 60) label = `${abs} min`;
-  else {
+  else if (abs < 24 * 60) {
     const h = Math.floor(abs / 60);
     const m = abs % 60;
     label = m ? `${h} h ${m}` : `${h} h`;
+  } else {
+    const d = Math.floor(abs / (24 * 60));
+    const h = Math.floor((abs % (24 * 60)) / 60);
+    label = h ? `${d} d ${h} h` : `${d} d`;
   }
   return min > 0 ? `em ${label}` : `há ${label}`;
 }
