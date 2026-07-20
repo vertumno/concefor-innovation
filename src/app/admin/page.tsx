@@ -5,7 +5,8 @@
 // Números ao vivo + re-sync Even3 + moderação das perguntas (R4).
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { fetchSessions, splitNowNext, formatHora } from "@/lib/sessions";
+import Link from "next/link";
+import { fetchSessions, splitNowNext, formatHora, formatDiaCurto } from "@/lib/sessions";
 import { useEventClock } from "@/lib/clock";
 import type { AdminStats, Aviso, Question } from "@/lib/db";
 import type { Session } from "@/lib/types";
@@ -26,6 +27,10 @@ export default function AdminPage() {
   const [qBySession, setQBySession] = useState<Record<string, QState>>({});
   const [avisos, setAvisos] = useState<Aviso[]>([]);
   const [avisoTexto, setAvisoTexto] = useState("");
+  const [editando, setEditando] = useState<string | null>(null);
+  const [edIni, setEdIni] = useState("");
+  const [edFim, setEdFim] = useState("");
+  const [edSala, setEdSala] = useState("");
   const now = useEventClock(30000);
 
   // Token: ?token= na URL → localStorage → estado.
@@ -104,23 +109,69 @@ export default function AdminPage() {
     }
   }
 
+  // Erros de rede (ex.: servidor reiniciando) não podem estourar a tela.
+  const [opErro, setOpErro] = useState<string | null>(null);
+
   async function moderar(body: Record<string, string>) {
-    await fetch("/api/admin/questions", {
-      method: "POST",
-      headers: { ...headers, "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
+    try {
+      await fetch("/api/admin/questions", {
+        method: "POST",
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      setOpErro(null);
+    } catch {
+      setOpErro("Sem conexão com o servidor — tente de novo.");
+    }
     refreshQuestions();
   }
 
   async function avisar(body: Record<string, string>) {
-    await fetch("/api/admin/avisos", {
-      method: "POST",
-      headers: { ...headers, "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
-    setAvisoTexto("");
+    try {
+      const res = await fetch("/api/admin/avisos", {
+        method: "POST",
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      if (res.ok) setAvisoTexto("");
+      setOpErro(res.ok ? null : `Falhou: ${((await res.json()) as { error?: string }).error}`);
+    } catch {
+      setOpErro("Sem conexão com o servidor — tente de novo.");
+    }
     refresh();
+  }
+
+  // Troca só o HH:MM preservando data e fuso da string original (funciona
+  // tanto com "-03:00" quanto com "Z" — ajuste de última hora, R9).
+  function comHora(iso: string, hhmm: string): string {
+    return /^\d{2}:\d{2}$/.test(hhmm) ? iso.replace(/T\d{2}:\d{2}/, `T${hhmm}`) : iso;
+  }
+
+  function abrirEdicao(s: Session) {
+    setEditando(s.id);
+    setEdIni(s.inicio.slice(11, 16));
+    setEdFim(s.fim ? s.fim.slice(11, 16) : "");
+    setEdSala(s.sala ?? "");
+  }
+
+  async function salvarSessao(s: Session) {
+    try {
+      const res = await fetch("/api/admin/sessions", {
+        method: "POST",
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: s.id,
+          inicio: comHora(s.inicio, edIni),
+          fim: s.fim && edFim ? comHora(s.fim, edFim) : (edFim ? comHora(s.inicio, edFim) : ""),
+          sala: edSala,
+        }),
+      });
+      setOpErro(res.ok ? null : `Falhou: ${((await res.json()) as { error?: string }).error}`);
+    } catch {
+      setOpErro("Sem conexão com o servidor — tente de novo.");
+    }
+    setEditando(null);
+    fetchSessions().then(setSessions);
   }
 
   function salvarToken() {
@@ -158,6 +209,7 @@ export default function AdminPage() {
     <>
       <h1 className="page-title">Admin</h1>
       <p className="page-sub">Números ao vivo do VIII Concefor — atualiza a cada 5 s.</p>
+      {opErro && <p className="q-erro">{opErro}</p>}
 
       <div className="admin-tiles">
         <div className="admin-tile">
@@ -292,11 +344,58 @@ export default function AdminPage() {
         </ul>
       )}
 
+      <div className="section-label">Programação — ajuste de última hora</div>
+      <p className="page-sub">
+        Curativo rápido pra atraso ou troca de sala. Em sessões do Even3, o próximo re-sync
+        sobrescreve horários — corrija lá também.
+      </p>
+      <div className="admin-prog">
+        {sessions.map((s) => (
+          <div key={s.id} className="admin-prog-row">
+            <div className="admin-prog-info">
+              <span className="admin-session-meta">
+                {formatDiaCurto(s.inicio)} · {formatHora(s.inicio)}
+                {s.fim ? `–${formatHora(s.fim)}` : ""}
+                {s.sala ? ` · ${s.sala}` : ""}
+              </span>
+              <strong>{s.titulo}</strong>
+            </div>
+            {editando === s.id ? (
+              <div className="admin-prog-edit">
+                <input type="time" value={edIni} onChange={(e) => setEdIni(e.target.value)} aria-label="Início" />
+                <input type="time" value={edFim} onChange={(e) => setEdFim(e.target.value)} aria-label="Fim" />
+                <input
+                  placeholder="Sala"
+                  value={edSala}
+                  onChange={(e) => setEdSala(e.target.value)}
+                  aria-label="Sala"
+                />
+                <button type="button" className="admin-btn admin-btn-sm" onClick={() => salvarSessao(s)}>
+                  Salvar
+                </button>
+                <button type="button" className="admin-btn admin-btn-sm" onClick={() => setEditando(null)}>
+                  Cancelar
+                </button>
+              </div>
+            ) : (
+              <button type="button" className="admin-btn admin-btn-sm" onClick={() => abrirEdicao(s)}>
+                Editar
+              </button>
+            )}
+          </div>
+        ))}
+      </div>
+
       <div className="section-label">Even3</div>
       <button type="button" className="admin-btn" onClick={resync} disabled={syncing}>
         {syncing ? "Sincronizando…" : "Re-sincronizar programação do Even3"}
       </button>
       {syncMsg && <p className="page-sub" style={{ marginTop: 8 }}>{syncMsg}</p>}
+
+      <div className="section-label">Relatório</div>
+      <Link className="admin-btn" style={{ display: "inline-block", textDecoration: "none" }} href="/admin/relatorio">
+        Abrir relatório do evento →
+      </Link>
     </>
   );
 }

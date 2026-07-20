@@ -9,6 +9,12 @@ PWA do evento. Escopo v1: **programação viva (timeline)** · **reações ao vi
 > para ver tudo funcionando **sem configurar nada** via `npm run dev:demo` (modo demonstração).
 > Reações/telão/dashboard são os próximos marcos (ver TODOs).
 
+## Regras de conteúdo
+
+- **Toda comunicação com o participante é no singular** (a pessoa lê sozinha, no celular
+  dela): nunca "bem-vindos"/"vocês". Preferir neutro de gênero ("que bom ter você aqui").
+  Decisão de 20/07.
+
 ## Stack
 
 - Next.js (App Router) + `next-pwa` — mobile-first, instalável

@@ -123,6 +123,119 @@ export function getReactionCounts(sessionId: string): ReactionCounts {
   return counts;
 }
 
+// ─────────────────────── Admin da programação (R9) ───────────────────────
+// Ajustes de última hora (atraso, troca de sala). ATENÇÃO: em sessões vindas
+// do Even3, o próximo re-sync sobrescreve horários (Even3 é a espinha) — o
+// caminho bom é corrigir lá e re-sincronizar; isto é o curativo imediato.
+
+export function updateSessionAdmin(
+  id: string,
+  campos: { inicio?: string; fim?: string | null; sala?: string | null },
+): boolean {
+  const sets: string[] = [];
+  const vals: unknown[] = [];
+  if (campos.inicio !== undefined) {
+    sets.push("inicio = ?");
+    vals.push(campos.inicio);
+  }
+  if (campos.fim !== undefined) {
+    sets.push("fim = ?");
+    vals.push(campos.fim);
+  }
+  if (campos.sala !== undefined) {
+    sets.push("sala = ?");
+    vals.push(campos.sala);
+  }
+  if (!sets.length) return false;
+  const r = getDb()
+    .prepare(`update sessions set ${sets.join(", ")} where id = ?`)
+    .run(...vals, id);
+  return r.changes > 0;
+}
+
+// ─────────────────────── Relatório pós-evento (R9) ───────────────────────
+// Tudo derivado de timeline_events + sessions — "sem trabalho manual: é só
+// ler a tabela" (spec §5). A página /admin/relatorio imprime/exporta em PDF.
+
+export type Report = {
+  geradoEm: string;
+  totais: {
+    inscritos: number;
+    logados: number;
+    dispositivos: number;
+    reacoes: number;
+    perguntas: number;
+    votosEmPerguntas: number;
+    conexoes: number;
+  };
+  reacoesPorTipo: { kind: string; n: number }[];
+  ranking: {
+    titulo: string;
+    inicio: string;
+    sala: string | null;
+    reacoes: number;
+    perguntas: number;
+  }[];
+  picos: { ts: string; titulo: string; n: number }[]; // top momentos (reações/min)
+};
+
+export function getReport(): Report {
+  const db = getDb();
+  const n = (sql: string) => (db.prepare(sql).get() as { n: number }).n;
+
+  const reacoesPorTipo = db
+    .prepare(
+      `select json_extract(payload, '$.reaction') as kind, count(*) as n
+         from timeline_events where tipo = 'reaction' group by kind order by n desc`,
+    )
+    .all() as Report["reacoesPorTipo"];
+
+  const ranking = db
+    .prepare(
+      `select s.titulo, s.inicio, s.sala,
+              sum(case when e.tipo = 'reaction' then 1 else 0 end) as reacoes,
+              sum(case when e.tipo = 'question' then 1 else 0 end) as perguntas
+         from sessions s
+         join timeline_events e on e.session_id = s.id
+        group by s.id
+        order by reacoes desc, perguntas desc`,
+    )
+    .all() as Report["ranking"];
+
+  const picos = db
+    .prepare(
+      `select substr(e.ts, 1, 16) as ts, coalesce(s.titulo, '(sessão removida)') as titulo,
+              count(*) as n
+         from timeline_events e
+         left join sessions s on s.id = e.session_id
+        where e.tipo = 'reaction'
+        group by substr(e.ts, 1, 16), e.session_id
+        order by n desc
+        limit 5`,
+    )
+    .all() as Report["picos"];
+
+  return {
+    geradoEm: new Date().toISOString(),
+    totais: {
+      inscritos: n("select count(*) as n from attendees"),
+      logados: n("select count(*) as n from identities"),
+      dispositivos: n(
+        "select count(distinct client_id) as n from timeline_events where client_id is not null",
+      ),
+      reacoes: n("select count(*) as n from timeline_events where tipo = 'reaction'"),
+      perguntas: n("select count(*) as n from timeline_events where tipo = 'question'"),
+      votosEmPerguntas: n(
+        "select count(*) as n from timeline_events where tipo = 'question_vote'",
+      ),
+      conexoes: n("select count(*) as n from timeline_events where tipo = 'connection'"),
+    },
+    reacoesPorTipo,
+    ranking,
+    picos,
+  };
+}
+
 // ─────────────────────── Login / identidade (R7) ───────────────────────
 // Associação client_id ↔ inscrito, criada no login com consentimento (LGPD).
 // PII nunca sai do servidor: as rotas públicas só devolvem o primeiro nome.
@@ -138,7 +251,7 @@ export function findAttendeeByLogin(
         where checkin_code = ? and documento is not null and substr(documento, 1, 4) = ?`,
     )
     .get(checkinCode.trim(), cpf4.trim()) as { id: number; nome: string } | undefined;
-  return row ?? null;
+  return row ? { ...row, nome: nomeBonito(row.nome) } : null;
 }
 
 export function upsertIdentity(clientId: string, attendeeId: number, nome: string): void {
@@ -162,6 +275,114 @@ export function getIdentity(clientId: string): { nome: string } | null {
 
 export function deleteIdentity(clientId: string): void {
   getDb().prepare("delete from identities where client_id = ?").run(clientId);
+}
+
+// ─────────────────────── Conexões / networking (Pessoas) ───────────────────────
+// "Mapa de bolinhas" (ideia de 20/07): cada inscrito é uma bolinha; escanear o
+// QR (ou digitar o nº do ingresso) do outro cria a conexão e acende a bolinha.
+// Conexão = tipo='connection' na linha do tempo (client_id=meu, payload
+// {"attendeeId": n}). Contato completo só aparece DEPOIS de conectar.
+
+export type Participante = {
+  id: number;
+  iniciais: string;
+  nome: string; // primeiro nome (público no app — as bolinhas)
+  nomeCompleto?: string; // só para conexões
+  email?: string; // só para conexões
+  conectado: boolean;
+};
+
+function iniciaisDe(nome: string): string {
+  const p = nome.trim().split(/\s+/);
+  return ((p[0]?.[0] ?? "") + (p.length > 1 ? p[p.length - 1][0] : "")).toUpperCase();
+}
+
+// "ANTONIO DA SILVA" → "Antonio da Silva" (cadastros do Even3 vêm em caixa
+// alta). Só mexe quando o nome está TODO maiúsculo — não "corrige" quem
+// escreveu do próprio jeito.
+const MINUSCULAS = new Set(["da", "de", "do", "das", "dos", "e"]);
+export function nomeBonito(nome: string): string {
+  const t = nome.trim();
+  if (t !== t.toUpperCase()) return t;
+  return t
+    .toLowerCase()
+    .split(/\s+/)
+    .map((w, i) =>
+      i > 0 && MINUSCULAS.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1),
+    )
+    .join(" ");
+}
+
+export function attendeeByCheckin(code: string): { id: number; nome: string; email: string | null } | null {
+  const row = getDb()
+    .prepare("select id, nome, email from attendees where checkin_code = ?")
+    .get(code.trim()) as { id: number; nome: string; email: string | null } | undefined;
+  return row ? { ...row, nome: nomeBonito(row.nome) } : null;
+}
+
+// true se criou; false se já existia (idempotente).
+export function insertConnection(clientId: string, attendeeId: number): boolean {
+  const db = getDb();
+  const dup = db
+    .prepare(
+      `select 1 from timeline_events
+        where tipo = 'connection' and client_id = ?
+          and json_extract(payload, '$.attendeeId') = ?`,
+    )
+    .get(clientId, attendeeId);
+  if (dup) return false;
+  db.prepare(
+    `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+     values (?, 'connection', null, ?, ?, ?)`,
+  ).run(randomUUID(), new Date().toISOString(), JSON.stringify({ attendeeId }), clientId);
+  return true;
+}
+
+// Todos os inscritos como bolinhas: conexões primeiro (mais recentes no topo,
+// com contato completo), depois o resto em ordem alfabética (só 1º nome).
+export function getParticipantes(clientId: string | null): Participante[] {
+  const db = getDb();
+  const todos = db
+    .prepare("select id, nome, email from attendees order by nome asc")
+    .all() as { id: number; nome: string; email: string | null }[];
+
+  const ordem = new Map<number, number>(); // attendeeId → posição (0 = mais recente)
+  if (clientId) {
+    const rows = db
+      .prepare(
+        `select json_extract(payload, '$.attendeeId') as a from timeline_events
+          where tipo = 'connection' and client_id = ?
+          order by ts desc`,
+      )
+      .all(clientId) as { a: number }[];
+    rows.forEach((r, i) => ordem.set(r.a, i));
+  }
+
+  const mk = (t: { id: number; nome: string; email: string | null }): Participante => {
+    const conectado = ordem.has(t.id);
+    const nome = nomeBonito(t.nome);
+    return {
+      id: t.id,
+      iniciais: iniciaisDe(nome),
+      nome: nome.split(/\s+/)[0],
+      ...(conectado ? { nomeCompleto: nome, email: t.email ?? undefined } : {}),
+      conectado,
+    };
+  };
+
+  const conectados = todos
+    .filter((t) => ordem.has(t.id))
+    .sort((a, b) => ordem.get(a.id)! - ordem.get(b.id)!)
+    .map(mk);
+  const resto = todos.filter((t) => !ordem.has(t.id)).map(mk);
+  return [...conectados, ...resto];
+}
+
+export function getIdentityAttendeeId(clientId: string): number | null {
+  const row = getDb()
+    .prepare("select attendee_id from identities where client_id = ?")
+    .get(clientId) as { attendee_id: number } | undefined;
+  return row?.attendee_id ?? null;
 }
 
 // ─────────────────────── Avisos da organização (Início) ───────────────────────
