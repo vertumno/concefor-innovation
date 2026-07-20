@@ -33,10 +33,10 @@ de navegação nova. A API do Even3 está validada (chave em `app/.env.local`, a
 >
 > **Feedback de 20/07 (Elton viu rodando; aprovado — ver síntese da reunião):**
 > - [x] Contadores longos com **dias + horas** ("em 28 d 2 h") — feito em 20/07.
-> - [ ] **Diferenciar o Início** de Agenda/Ao Vivo (hoje repetem agora/a seguir): avisos da
->   organização, dica do dia e atalhos (ex.: leitor de QR) — encaixar antes de 30/07 se
->   couber, sem furar R2–R5.
-> - [ ] Perfil no topo direito: genérico "faça login" → avatar/inicial (entra com o R7).
+> - [x] **Diferenciar o Início** — feito em 20/07: avisos da organização (admin publica),
+>   "não perca", sessão no ar com CTA pro Ao Vivo, só 3 próximas + link pra Agenda,
+>   saudação pelo nome quando logado. (Atalho de leitor de QR fica pro networking/R10.)
+> - [x] Perfil no topo direito — feito em 20/07: "Entrar" → avatar/inicial (R7).
 
 - Componente `BottomNav` (fixo, 5 slots, item ativo = pílula preenchida com label;
   tokens `--surface-2`/`--cyan`; central elevado em `--accent`).
@@ -157,10 +157,20 @@ lançamento.
 
 ## Da validação ao lançamento (07/08)
 
-### R7 — Login pelo crachá + consentimento (LGPD)
+### R7 — Login pelo crachá + consentimento (LGPD) 🟡 (núcleo entregue 20/07; exigência p/ interagir fica pós-validação)
 
 **Objetivo:** interagir passa a ter identidade (navegar segue aberto). Destravado pela
 API: o QR do crachá codifica o `checkin_code` que já vem no sync de inscritos.
+
+> **20/07 — entregue o núcleo:** sync puxa os **288 inscritos** (tabela `attendees`, PII
+> só no servidor, CPF normalizado); `/entrar` com consentimento explícito + nº do
+> ingresso + 4 primeiros dígitos do CPF; anti força-bruta (5 tentativas/min); associação
+> `client_id`↔inscrito na tabela `identities` (sair = apagar); avatar/inicial na topbar;
+> saudação no Início; tiles de inscritos/logados no admin. **Login é OPCIONAL por ora** —
+> reagir/perguntar seguem anônimos (decisão de 06/07: anônimo é o piso até a validação);
+> a exigência de login para interagir liga depois de 30/07, se validada.
+> **Faltam:** QR scanner (exige HTTPS do R5) · validar o texto do termo LGPD com a
+> organização · decidir quando ligar a exigência.
 
 - Estender o sync do R2: `GET /attendees/` → tabela `attendees` local (**288+ inscritos**;
   PII fica só no servidor).

@@ -7,7 +7,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { fetchSessions, splitNowNext, formatHora } from "@/lib/sessions";
 import { useEventClock } from "@/lib/clock";
-import type { AdminStats, Question } from "@/lib/db";
+import type { AdminStats, Aviso, Question } from "@/lib/db";
 import type { Session } from "@/lib/types";
 
 const TOKEN_KEY = "concefor:admin_token";
@@ -24,6 +24,8 @@ export default function AdminPage() {
   const [syncMsg, setSyncMsg] = useState<string | null>(null);
   const [syncing, setSyncing] = useState(false);
   const [qBySession, setQBySession] = useState<Record<string, QState>>({});
+  const [avisos, setAvisos] = useState<Aviso[]>([]);
+  const [avisoTexto, setAvisoTexto] = useState("");
   const now = useEventClock(30000);
 
   // Token: ?token= na URL → localStorage → estado.
@@ -51,6 +53,8 @@ export default function AdminPage() {
       }
       setAuthFail(false);
       setStats((await res.json()) as AdminStats);
+      const av = await fetch("/api/admin/avisos", { headers });
+      if (av.ok) setAvisos((await av.json()) as Aviso[]);
     } catch {
       /* mantém o último estado */
     }
@@ -109,6 +113,16 @@ export default function AdminPage() {
     refreshQuestions();
   }
 
+  async function avisar(body: Record<string, string>) {
+    await fetch("/api/admin/avisos", {
+      method: "POST",
+      headers: { ...headers, "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    setAvisoTexto("");
+    refresh();
+  }
+
   function salvarToken() {
     localStorage.setItem(TOKEN_KEY, tokenInput.trim());
     setToken(tokenInput.trim());
@@ -157,6 +171,14 @@ export default function AdminPage() {
         <div className="admin-tile">
           <span className="admin-n">{stats?.totalPerguntas ?? "…"}</span>
           <span className="admin-l">perguntas no total</span>
+        </div>
+        <div className="admin-tile">
+          <span className="admin-n">{stats?.totalInscritos ?? "…"}</span>
+          <span className="admin-l">inscritos (Even3)</span>
+        </div>
+        <div className="admin-tile">
+          <span className="admin-n">{stats?.totalLogados ?? "…"}</span>
+          <span className="admin-l">logados no app</span>
         </div>
       </div>
 
@@ -232,6 +254,43 @@ export default function AdminPage() {
           </div>
         );
       })}
+
+      <div className="section-label">Avisos do Início</div>
+      <div className="q-composer">
+        <textarea
+          rows={2}
+          maxLength={280}
+          placeholder="Publicar aviso da organização (aparece no Início de todo mundo)…"
+          value={avisoTexto}
+          onChange={(e) => setAvisoTexto(e.target.value)}
+        />
+        <div className="q-composer-foot">
+          <span className="q-chars">{avisoTexto.length}/280</span>
+          <button
+            type="button"
+            disabled={!avisoTexto.trim()}
+            onClick={() => avisar({ texto: avisoTexto.trim() })}
+          >
+            Publicar
+          </button>
+        </div>
+      </div>
+      {avisos.length > 0 && (
+        <ul className="q-list">
+          {avisos.map((a) => (
+            <li key={a.id} className={`q-item ${a.hidden ? "q-hidden" : ""}`}>
+              <p className="q-texto">{a.texto}</p>
+              <button
+                type="button"
+                className="admin-btn admin-btn-sm"
+                onClick={() => avisar({ avisoId: a.id, action: a.hidden ? "unhide" : "hide" })}
+              >
+                {a.hidden ? "Reexibir" : "Ocultar"}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
 
       <div className="section-label">Even3</div>
       <button type="button" className="admin-btn" onClick={resync} disabled={syncing}>

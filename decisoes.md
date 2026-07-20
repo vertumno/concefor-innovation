@@ -4,6 +4,27 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-20 — Início vira a "casa" (avisos da organização) e login entra como OPCIONAL
+
+**Decisão:** entregues no mesmo dia os dois ajustes pedidos após o feedback: (1) o
+**Início** se diferenciou de Agenda/Ao Vivo — avisos da organização (publicados pelo
+`/admin`, mão única, tipo `aviso` na linha do tempo), "não perca", sessão no ar com CTA
+pro Ao Vivo e só 3 próximas + link pra Agenda; (2) o **login do R7** (nº do ingresso + 4
+primeiros dígitos do CPF + consentimento LGPD) entrou **antes do previsto, como
+opcional**: quem entra ganha avatar/inicial no topo e saudação pelo nome, e suas
+interações ficam associadas no banco; reagir/perguntar **continuam abertos e anônimos**
+— a exigência de login para interagir só liga depois da validação de 30/07, se validada
+(mantém a decisão de 06/07: anônimo é o piso). Os 288 inscritos são sincronizados do
+Even3 para o servidor (PII nunca vai ao cliente; rotas públicas devolvem só o primeiro
+nome). Texto do termo de consentimento é rascunho — **validar com a organização** antes
+do lançamento.
+
+**Por quê:** antecipar o login como opcional tira o risco técnico do caminho (30/07 já
+mostra o fluxo completo) sem quebrar o piloto anônimo; e o Início com avisos resolve a
+repetição apontada no feedback dando à organização um canal direto com o participante.
+
+---
+
 ## 2026-07-20 — Programação do app vem do Even3 (sync entregue); enriquecimento local sobrevive ao re-sync
 
 **Decisão:** o R2 foi entregue com a chave real: `npm run sync:even3` puxa a programação
