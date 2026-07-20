@@ -10,9 +10,9 @@
 ## 1 · Dra. Vanessa Battestin — publicar 21/07
 
 ### Instagram
-Quem abre o VIII Concefor é a Dra. Vanessa Battestin, com a palestra "20 Anos de EaD e o Cefor" — 17/08, às 19h.
+Como a educação a distância do Cefor chegou até aqui, em 20 anos? É essa história que abre o VIII Concefor, na palestra "20 Anos de EaD e o Cefor", com a Dra. Vanessa Battestin — 17/08, às 19h.
 
-Vanessa é doutora em Educação, professora titular do Cefor/Ifes, coordenadora da UAB, e foi diretora do Cefor entre 2014 e 2019. É especialista internacional da A3ES (Portugal) — uma das pessoas que mais viveu de perto os últimos 20 anos de educação a distância no Cefor.
+Vanessa foi diretora do Cefor entre 2014 e 2019 e viveu boa parte dessa trajetória por dentro. É doutora em Educação, professora titular do Cefor/Ifes, coordenadora da UAB e especialista internacional da A3ES (Portugal).
 
 Inscrições até 15/08 (link na bio).
 
@@ -31,9 +31,9 @@ Card do VIII Concefor com foto da Dra. Vanessa Battestin. Palestra de abertura: 
 ## 2 · Dr. Felipe Maciel Tessarolo — publicar 24/07
 
 ### Instagram
-O VIII Concefor recebe seu primeiro palestrante internacional: Dr. Felipe Maciel Tessarolo, do Institute of Educational Technology da The Open University (Reino Unido) — 18/08, às 14h30.
+O que a educação a distância do Reino Unido tem a ensinar pra gente? É essa a proposta da palestra do Dr. Felipe Maciel Tessarolo, do Institute of Educational Technology da The Open University — 18/08, às 14h30.
 
-Felipe atua com inteligência artificial, aprendizagem online, acessibilidade e personalização em larga escala, e é Senior Fellow da Higher Education Academy. Ele também participa da mesa-redonda "Desafios da EaD para os próximos 20 anos", no dia 19/08.
+Felipe traz pra palestra os mesmos temas em que atua na prática: inteligência artificial aplicada ao ensino, acessibilidade e personalização em larga escala. Ele também participa da mesa-redonda "Desafios da EaD para os próximos 20 anos", no dia 19/08.
 
 Inscrições até 15/08 (link na bio).
 
@@ -52,9 +52,9 @@ Card do VIII Concefor com foto do Dr. Felipe Maciel Tessarolo. Palestra internac
 ## 3 · Dr. Mariano Pimentel — publicar 28/07
 
 ### Instagram
-Dr. Mariano Pimentel traz "Desafios da EaD e as ondas de IA" para o VIII Concefor — 19/08, às 14h30.
+As ondas de IA já chegaram na educação a distância. Quais são os desafios? O Dr. Mariano Pimentel discute isso na palestra "Desafios da EaD e as ondas de IA" — 19/08, às 14h30.
 
-Doutor em Informática e professor na UNIRIO, Mariano é autor do livro "IA Generativa e Educação" (mais de 10 mil downloads) e ganhador do Prêmio Jabuti 2012. É editor-chefe da revista SBC Horizontes.
+É sobre exatamente esse assunto que ele escreveu o livro gratuito "IA Generativa e Educação" (mais de 10 mil downloads). Mariano é doutor em Informática, professor na UNIRIO e ganhador do Prêmio Jabuti 2012.
 
 Inscrições até 15/08 (link na bio).
 
@@ -73,9 +73,9 @@ Card do VIII Concefor com foto do Dr. Mariano Pimentel. Palestra: Desafios da Ea
 ## 4 · Dra. Rutinelli da Penha Fávero — publicar 30/07
 
 ### Instagram
-A mesa-redonda "Desafios da EaD para os próximos 20 anos" (19/08, 9h30) tem a Dra. Rutinelli da Penha Fávero entre os nomes confirmados.
+Quais serão os desafios da educação a distância para os próximos 20 anos? É esse o debate da mesa-redonda que reúne a Dra. Rutinelli da Penha Fávero — 19/08, às 9h30.
 
-Rutinelli é doutora em Educação em Ciências e Saúde (UFRJ), com estágio doutoral em Coimbra, e pesquisa tecnologia e educação, gamificação e formação docente.
+Rutinelli pesquisa tecnologia e educação, gamificação e formação docente — temas que ela leva direto para essa conversa sobre o futuro da EaD.
 
 Inscrições até 15/08 (link na bio).
 
@@ -94,9 +94,9 @@ Card do VIII Concefor com foto da Dra. Rutinelli da Penha Fávero. Mesa-redonda:
 ## 5 · Dra. Márcia Gonçalves de Oliveira — publicar 31/07
 
 ### Instagram
-Quem coordena o VIII Concefor também sobe ao palco: a Dra. Márcia Gonçalves de Oliveira participa da mesa-redonda "Tecnologia Delas", em 18/08.
+Mulheres que estão transformando a tecnologia na educação: essa é a proposta da mesa-redonda "Tecnologia Delas" (18/08), com a Dra. Márcia Gonçalves de Oliveira entre as participantes.
 
-Márcia é professora do Ifes/Cefor, doutora em Engenharia Elétrica, e coordena o Educimat, o programa Corte de Lovelace e o grupo de pesquisa Pros@tec. É também a Coordenadora Geral do VIII Concefor.
+Márcia é professora do Ifes/Cefor, doutora em Engenharia Elétrica, e coordena o Educimat, o Corte de Lovelace e o grupo de pesquisa Pros@tec. É também a Coordenadora Geral do VIII Concefor.
 
 Inscrições até 15/08 (link na bio).
 
@@ -115,7 +115,7 @@ Card do VIII Concefor com foto da Dra. Márcia Gonçalves de Oliveira. Mesa-redo
 ## 6 · Dra. Mariella Berger Andrade — publicar 04/08
 
 ### Instagram
-Na mesa-redonda "Tecnologia Delas" (18/08), a Dra. Mariella Berger Andrade traz sua experiência em inteligência artificial, EaD e robótica.
+Mulheres que estão transformando a tecnologia na educação: na mesa-redonda "Tecnologia Delas" (18/08), a Dra. Mariella Berger Andrade traz sua pesquisa em inteligência artificial, EaD e robótica.
 
 Mariella é professora do Ifes, doutora em Ciência da Computação (UFES), e já foi Diretora Executiva do Ifes e Diretora do Cefor (2019–2022).
 
@@ -136,9 +136,9 @@ Card do VIII Concefor com foto da Dra. Mariella Berger Andrade. Mesa-redonda Tec
 ## 7 · Dra. Celia Jaqueline Sanz Rodriguez — publicar 06/08
 
 ### Instagram
-Completa a mesa-redonda "Tecnologia Delas" (18/08) a Dra. Celia Jaqueline Sanz Rodriguez, servidora do Incaper e atuante na Secretaria Estadual das Mulheres (SESM).
+Tecnologia para mapear a vida das mulheres do Espírito Santo — é sobre isso que pesquisa a Dra. Celia Jaqueline Sanz Rodriguez, que completa a mesa-redonda "Tecnologia Delas" (18/08).
 
-Doutora em Desenvolvimento Rural (UFRGS), Celia coordena projetos como o Atlas das Mulheres do Espírito Santo.
+Celia é servidora do Incaper, atua na Secretaria Estadual das Mulheres (SESM) e coordena o Atlas das Mulheres do Espírito Santo — um exemplo prático do tema da própria mesa.
 
 Inscrições até 15/08 (link na bio).
 
@@ -160,9 +160,7 @@ Card do VIII Concefor com foto da Dra. Celia Jaqueline Sanz Rodriguez. Mesa-redo
 > ajustar a legenda antes de postar.
 
 ### Instagram
-A mesa-redonda "Desafios da EaD para os próximos 20 anos" reúne a Dra. Rutinelli da Penha Fávero e o Dr. Felipe Maciel Tessarolo (The Open University, Reino Unido) — 19/08, às 9h30.
-
-Juntos, eles vão discutir os caminhos da educação a distância para as próximas duas décadas, cruzando olhares nacional e internacional.
+Quais serão os desafios da educação a distância para os próximos 20 anos? Brasil e Reino Unido debatem juntos na mesa-redonda "Desafios da EaD para os próximos 20 anos", com a Dra. Rutinelli da Penha Fávero e o Dr. Felipe Maciel Tessarolo (The Open University) — 19/08, às 9h30.
 
 Inscrições até 15/08 (link na bio).
 
@@ -181,7 +179,7 @@ Card do VIII Concefor com fotos da Dra. Rutinelli da Penha Fávero e do Dr. Feli
 ## 9 · Mesa "Tecnologia Delas" — publicar 07/08
 
 ### Instagram
-A mesa-redonda "Tecnologia Delas" reúne três pesquisadoras — Dra. Márcia Gonçalves de Oliveira, Dra. Mariella Berger Andrade e Dra. Celia Jaqueline Sanz Rodriguez — para conversar sobre mulheres e tecnologia. 18/08, às 9h30.
+Mulheres que estão transformando a tecnologia na educação: três olhares, uma mesa. "Tecnologia Delas" reúne a Dra. Márcia Gonçalves de Oliveira, a Dra. Mariella Berger Andrade e a Dra. Celia Jaqueline Sanz Rodriguez — 18/08, às 9h30.
 
 Inscrições até 15/08 (link na bio).
 

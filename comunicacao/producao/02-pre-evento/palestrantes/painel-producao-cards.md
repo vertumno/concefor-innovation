@@ -15,15 +15,22 @@
 ## Como achar o gancho de cada card
 
 Bio ("doutora em X, professora em Y") não para o dedo no feed — é currículo, não chamada.
-O que faz alguém parar é **uma coisa só**, das quatro abaixo:
-1. **Um número concreto** (10 mil downloads, Prêmio Jabuti, 5 anos como diretora)
-2. **Uma pergunta ou nome curioso** que abre uma lacuna de curiosidade ("o que é o Corte de Lovelace?")
-3. **Algo tangível que a pessoa construiu**, não a área em que ela "atua" ("ajudou a criar uma
-   IA usada por universidades no Reino Unido" > "atua com inteligência artificial")
-4. **Um contraste inesperado** (a mesma pessoa estuda IA na educação *e* desinformação nas redes)
+Mas o gancho também **não pode ser uma curiosidade solta** sobre a pessoa: precisa estar
+**ligado ao que ela vai efetivamente falar/discutir no Concefor**. Regra: pergunte "isso é
+sobre a palestra/mesa, ou só sobre a pessoa?" — se for só sobre a pessoa, troque.
+
+Formas de conectar o gancho ao conteúdo da fala:
+1. **Transformar o tema da palestra em pergunta** ("Quais são os desafios que a IA traz para a EaD?")
+2. **Usar uma obra/projeto da pessoa que É sobre o mesmo assunto da fala** (o livro de Mariano
+   é sobre IA generativa — e é exatamente disso que ele vai falar)
+3. **Number/fato que prova autoridade no tema específico da fala** (não qualquer número — um
+   que se relacione ao assunto que ela vai apresentar)
+4. **O contraste/cruzamento de olhares que o próprio evento está armando** (Brasil × Reino
+   Unido na mesma mesa, por exemplo)
 
 Cada card abaixo tem uma **manchete sugerida** (o texto grande, chamativo, tipo o do card do
-prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio menor.
+prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — sempre apontando para o conteúdo da
+fala, não para um fato isolado do currículo. O texto-base (bio) vira o apoio menor.
 
 ---
 
@@ -34,11 +41,9 @@ prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio
 - **Texto-base para a arte (bio curtíssima):** Doutora em Educação, professora titular do
   Ifes/Cefor, Coordenadora da UAB. Foi diretora do Cefor (2014–2019). Especialista
   internacional da A3ES (Portugal).
-- **Gancho:** ela foi diretora do Cefor por 5 anos e hoje avalia cursos de EaD
-  internacionalmente (especialista da A3ES, Portugal) — é a pessoa certa para contar os
-  bastidores de 20 anos, não só abrir o evento.
-- **Manchete sugerida:** "20 ANOS DE EAD. ELA VIVEU CADA UM DELES." ou
-  "QUEM AJUDOU A CONSTRUIR OS ÚLTIMOS 20 ANOS DO CEFOR ABRE O CONCEFOR"
+- **Sobre o que ela vai falar:** a própria história dos 20 anos de EaD no Cefor — e ela foi
+  diretora do Cefor por 5 anos (2014–2019), ou seja, viveu por dentro boa parte do que vai contar.
+- **Manchete sugerida:** "COMO A EAD DO CEFOR CHEGOU ATÉ AQUI EM 20 ANOS? ELA VAI CONTAR."
 - **Status:** ⬜ a fazer
 
 ## 2 · Dr. Felipe Maciel Tessarolo — publicar 24/07
@@ -47,10 +52,11 @@ prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio
 - **Card:** Palestra **internacional** — 18/08, 14h30
 - **Texto-base:** The Open University (Reino Unido). Atua em IA, aprendizagem online,
   acessibilidade e personalização em larga escala. Senior Fellow da Higher Education Academy.
-- **Gancho:** ele ajuda a construir a **AIDA**, uma assistente de IA usada por universidades
-  no Reino Unido — e, ao mesmo tempo, pesquisa como a desinformação se espalha nas redes.
-  O contraste (IA que ajuda a ensinar × IA que ajuda a enganar) é mais forte que "atua com IA".
-- **Manchete sugerida:** "DA INGLATERRA PRO CONCEFOR: A IA QUE JÁ ESTÁ DENTRO DA SALA DE AULA"
+- **Sobre o que ele vai falar:** tecnologia, transformação e EaD com olhar internacional —
+  os mesmos temas em que atua na prática: IA aplicada ao ensino (projetos como a assistente
+  AIDA, usada em universidades britânicas), acessibilidade e personalização em larga escala.
+  Não é currículo solto — é prévia do que ele vai trazer pra palestra.
+- **Manchete sugerida:** "O QUE A EDUCAÇÃO A DISTÂNCIA DO REINO UNIDO TEM A ENSINAR PRA GENTE?"
 - **Também participa** da mesa "Desafios da EaD" (19/08) — confirmado em 16/07.
 - **Status:** ⬜ a fazer
 
@@ -60,10 +66,11 @@ prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio
 - **Card:** *"Desafios da EaD e as ondas de IA"* — 19/08, 14h30
 - **Texto-base:** Doutor em Informática, professor na UNIRIO. Prêmio Jabuti 2012. Autor de
   *"IA Generativa e Educação"* (+10 mil downloads).
-- **Gancho:** o **Prêmio Jabuti** é reconhecido fora da academia (a maior premiação literária
-  do Brasil), e o livro dele já passou de **10 mil downloads gratuitos** — dois números que
-  valem mais que "doutor em Informática".
-- **Manchete sugerida:** "O LIVRO GRATUITO SOBRE IA QUE JÁ PASSOU DE 10 MIL DOWNLOADS"
+- **Sobre o que ele vai falar:** os desafios que a IA traz para a EaD — e o livro gratuito
+  dele, *"IA Generativa e Educação"* (+10 mil downloads), é **sobre exatamente esse assunto**.
+  O número não é só "coisa interessante sobre o Mariano" — é prova de que muita gente já
+  quer entender esse tema, e ele vai falar sobre isso na palestra.
+- **Manchete sugerida:** "AS ONDAS DE IA JÁ CHEGARAM NA EAD. QUAIS SÃO OS DESAFIOS?"
 - **Status:** ⬜ a fazer
 
 ## 4 · Dra. Rutinelli da Penha Fávero — publicar 30/07
@@ -72,9 +79,10 @@ prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio
 - **Card:** Mesa **"Desafios da EaD para os próximos 20 anos"** — 19/08, 9h30
 - **Texto-base:** Doutora em Educação em Ciências e Saúde (UFRJ), estágio doutoral em Coimbra.
   Temas: tecnologia e educação, gamificação, formação docente.
-- **Gancho:** ela pesquisa **gamificação** — um tema relatable (jogos) que qualquer pessoa
-  entende, mesmo sem saber o que é "formação docente". Uma pergunta funciona melhor que a bio.
-- **Manchete sugerida:** "E SE A GAMIFICAÇÃO FOR A CHAVE PARA OS PRÓXIMOS 20 ANOS DA EAD?"
+- **Sobre o que a mesa vai discutir:** os desafios da EaD para os próximos 20 anos — e a
+  Rutinelli pesquisa justamente tecnologia, gamificação e formação docente, temas que ela
+  deve trazer para esse debate sobre o futuro.
+- **Manchete sugerida:** "QUAIS SÃO OS DESAFIOS DA EAD PARA OS PRÓXIMOS 20 ANOS?"
 - ⚠️ **Atenção:** Felipe Tessarolo confirmado na mesa (16/07); demais convidados locais ainda
   **não confirmados** — o card individual da Rutinelli pode sair normalmente; o card **da
   mesa** (item separado, ver abaixo) já pode citar Rutinelli + Tessarolo.
@@ -86,10 +94,14 @@ prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio
 - **Card:** Mesa **"Tecnologia Delas"** (18/08) + **Coordenadora Geral do VIII Concefor**
 - **Texto-base:** Professora do Ifes-Cefor, doutora em Engenharia Elétrica. Coordena o Educimat,
   o Corte de Lovelace e o grupo Pros@tec.
-- **Gancho:** o nome "**Corte de Lovelace**" (referência a Ada Lovelace) desperta curiosidade
-  por si só — quem vê quer saber o que é. Junte a isso o fato de ela **coordenar o próprio
-  evento e ainda subir ao palco** — reforça o peso institucional sem precisar dizer "importante".
-- **Manchete sugerida:** "A COORDENADORA GERAL DO CONCEFOR TAMBÉM SOBE AO PALCO"
+- **Sobre o que a mesa vai discutir:** mulheres e tecnologia na educação — e o "Corte de
+  Lovelace" que ela coordena leva o nome de Ada Lovelace, considerada a primeira programadora
+  da história; `[confirmar com a Márcia]` se o programa é voltado a meninas/mulheres na
+  tecnologia — se for, é o gancho perfeito e direto para o tema da mesa.
+- **Manchete sugerida (se confirmado):** "ELA COORDENA UM PROGRAMA COM O NOME DA PRIMEIRA
+  PROGRAMADORA DA HISTÓRIA — E VAI FALAR SOBRE MULHERES NA TECNOLOGIA"
+- **Manchete alternativa (sem depender de confirmação):** "TECNOLOGIA TAMBÉM SE COORDENA NO
+  FEMININO: ELA COMANDA O CONCEFOR E DEBATE O TEMA NA MESA"
 - **Cuidado editorial:** o card pode (e deve) trazer esse peso institucional, mas mantendo o
   mesmo formato dos demais (sem tratamento especial na arte).
 - **Status:** ⬜ a fazer
@@ -100,9 +112,10 @@ prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio
 - **Card:** Mesa **"Tecnologia Delas"** (18/08)
 - **Texto-base:** Professora do Ifes, doutora em Ciência da Computação (UFES). Foi Diretora
   Executiva do Ifes e Diretora do Cefor (2019–2022). Temas: IA, EaD, Robótica.
-- **Gancho:** ela já ocupou os dois cargos mais altos das duas instituições (Ifes e Cefor) —
-  um histórico de liderança raro, que dá autoridade ao tema sem precisar listar títulos.
-- **Manchete sugerida:** "JÁ DIRIGIU O IFES E O CEFOR. AGORA FALA SOBRE O FUTURO DA TECNOLOGIA NA EDUCAÇÃO."
+- **Sobre o que a mesa vai discutir:** mulheres e tecnologia na educação — e é justamente com
+  IA, EaD e robótica que a Mariella trabalha; ela leva pra mesa a visão de quem pesquisa e
+  também já liderou as duas instituições (Ifes e Cefor) por dentro.
+- **Manchete sugerida:** "ELA PESQUISA ROBÓTICA E IA NA EDUCAÇÃO — E JÁ DIRIGIU O IFES E O CEFOR"
 - **Status:** ⬜ a fazer
 
 ## 7 · Dra. Celia Jaqueline Sanz Rodriguez — publicar 06/08
@@ -111,9 +124,10 @@ prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio
 - **Card:** Mesa **"Tecnologia Delas"** (18/08)
 - **Texto-base:** Ciências Sociais (UFES), doutora em Desenvolvimento Rural (UFRGS). Servidora
   do Incaper, atua na Secretaria Estadual das Mulheres (SESM). Coordena o Atlas das Mulheres do ES.
-- **Gancho:** o nome do projeto "**Atlas das Mulheres do Espírito Santo**" é, por si só, uma
-  lacuna de curiosidade — poucas pessoas sabem que isso existe, e todo mundo quer saber o que é.
-- **Manchete sugerida:** "O QUE É O ATLAS DAS MULHERES DO ESPÍRITO SANTO?"
+- **Sobre o que a mesa vai discutir:** mulheres e tecnologia na educação — e o Atlas das
+  Mulheres do ES, que ela coordena, é um projeto que usa dados e tecnologia justamente para
+  mapear a realidade das mulheres capixabas. É um exemplo prático do tema da própria mesa.
+- **Manchete sugerida:** "TECNOLOGIA PARA MAPEAR A VIDA DAS MULHERES DO ES — É SOBRE ISSO QUE ELA PESQUISA"
 - **Status:** ⬜ a fazer
 
 ---
@@ -125,10 +139,12 @@ prazo final: "TRABALHO APROVADO? FALTA UM PASSO.") — o texto-base vira o apoio
 | Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli + Felipe Tessarolo + convidados locais | 🟡 pode produzir com os 2 confirmados; atualizar se mais nomes entrarem |
 | Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia, Mariella, Celia Jaqueline | ✅ pode produzir — todas confirmadas |
 
-**Manchetes sugeridas:**
-- Desafios da EaD: "BRASIL E REINO UNIDO NA MESMA MESA PARA PENSAR OS PRÓXIMOS 20 ANOS DA EAD"
-  *(o contraste nacional × internacional é o gancho)*
-- Tecnologia Delas: "TRÊS MULHERES, TRÊS OLHARES SOBRE TECNOLOGIA NA EDUCAÇÃO"
+**Manchetes sugeridas (ligadas ao que cada mesa vai discutir):**
+- Desafios da EaD: "QUAIS SERÃO OS DESAFIOS DA EAD NOS PRÓXIMOS 20 ANOS? BRASIL E REINO UNIDO
+  DEBATEM JUNTOS" *(o assunto da mesa é literalmente esse; Brasil × Reino Unido é o cruzamento
+  de olhares que o próprio evento armou)*
+- Tecnologia Delas: "MULHERES QUE ESTÃO TRANSFORMANDO A TECNOLOGIA NA EDUCAÇÃO — TRÊS OLHARES,
+  UMA MESA" *(nome da mesa + o que será discutido, sem depender de fato isolado sobre cada uma)*
 
 ## Ordem de produção sugerida (para não perder o ritmo)
 1. Vanessa (21/07) → 2. Tessarolo (24/07) → 3. Mariano (28/07) → 4. Rutinelli (30/07) →
