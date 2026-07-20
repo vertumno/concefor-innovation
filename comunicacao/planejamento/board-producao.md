@@ -45,7 +45,7 @@
 | Peça | Responsável | Prazo | Status |
 |---|---|---|---|
 | Card lembrete prazo envio final (03/08 · Even3) — **publicado em 16/07** | Elton | 16/07 | ✅ |
-| Card palestrante — Vanessa Battestin — arte **v2** liberada (v1 tinha o nome errado) | Elton *(a princípio)* | publicar 21/07 | 🔵 |
+| Card palestrante — Vanessa Battestin — arte **v3** liberada (v1 tinha o nome errado; v3 corrigiu grafia e tipografia) | Elton *(a princípio)* | publicar 21/07 | 🔵 |
 | Card palestrante — Tessarolo — arte liberada | Elton *(a princípio)* | publicar 24/07 | 🔵 |
 | Card palestrante — Mariano Pimentel — arte liberada | Elton *(a princípio)* | publicar 28/07 | 🔵 |
 | Card palestrante — Rutinelli Fávero — arte liberada | Elton *(a princípio)* | publicar 30/07 | 🔵 |
