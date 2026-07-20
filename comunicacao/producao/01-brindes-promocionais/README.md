@@ -13,6 +13,7 @@
 | 5 | Arte do **crachá** *(confirmar necessidade)* | ✅ | ___ | ___ | ⬜ |
 | 6 | Arte do **bolo** de comemoração | ✅ | ___ | ___ | ⬜ |
 | 7 | Arte da **sacola de algodão** | ✅ | ___ | ___ | ⬜ |
+| 8 | Arte das **placas de sinalização** (salas, credenciamento, auditório, QRs) | ✅ | ___ | ___ | ⬜ |
 
 Legenda status: ⬜ não iniciado · 🟡 em produção · 🔵 em aprovação · ✅ finalizado
 

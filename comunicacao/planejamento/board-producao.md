@@ -14,6 +14,7 @@
 | Arte crachá (confirmar) | ___ | ___ | ⬜ |
 | Arte bolo comemoração (20 anos do Cefor) | **Andreia** | ___ | ⬜ |
 | Arte sacola de algodão | ___ | ___ | ⬜ |
+| Placas de sinalização do evento (salas, credenciamento, auditório, QRs) | ___ | ___ | ⬜ |
 
 ## Pré-evento
 | Peça | Responsável | Prazo | Status |
