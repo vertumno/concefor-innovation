@@ -3,8 +3,8 @@
 > Tom de voz conforme [contexto/06-canais-e-diretrizes.md](../../../contexto/06-canais-e-diretrizes.md):
 > poucos emojis, linguagem natural, informação principal logo no início.
 > Sem travessão de nenhum tipo (nem o longo, nem o curto): usar ponto, vírgula, dois pontos ou parênteses.
-> CTA e hashtags padrão em todas: inscrições até 15/08 · link na bio · site
-> https://concefor.cefor.ifes.edu.br · #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
+> CTA de fechamento padrão (Instagram): "Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância."
+> Hashtags padrão: #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD · site: https://concefor.cefor.ifes.edu.br
 
 ---
 
@@ -15,7 +15,7 @@ Como a educação a distância do Cefor chegou até aqui, em 20 anos? É essa hi
 
 Vanessa foi diretora do Cefor entre 2014 e 2019 e viveu boa parte dessa trajetória por dentro. É doutora em Educação, professora titular do Cefor/Ifes, coordenadora da UAB e especialista internacional da A3ES (Portugal).
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
@@ -36,7 +36,7 @@ O que a educação a distância do Reino Unido tem a ensinar pra gente? É essa 
 
 Felipe traz os mesmos temas em que atua na prática: inteligência artificial aplicada ao ensino, acessibilidade e personalização em larga escala. Ele assina os artigos vencedores do prêmio de melhor pesquisa da EDEN (a rede europeia de educação a distância e digital) em dois anos seguidos, 2025 e 2026, os dois sobre IA no ensino superior. Também participa da mesa-redonda "Desafios da EaD para os próximos 20 anos", no dia 19/08.
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
@@ -57,7 +57,7 @@ As ondas de IA já chegaram na educação a distância. Quais são os desafios? 
 
 É exatamente sobre esse assunto que ele escreveu o livro gratuito "IA Generativa e Educação" (mais de 10 mil downloads). Mariano é doutor em Informática, professor na UNIRIO e ganhador do Prêmio Jabuti 2012.
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
@@ -78,7 +78,7 @@ Quais serão os desafios da educação a distância para os próximos 20 anos? �
 
 Rutinelli pesquisa tecnologia e educação, gamificação e formação docente. São temas que ela leva direto para essa conversa sobre o futuro da EaD.
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
@@ -99,7 +99,7 @@ Mulheres que estão transformando a tecnologia na educação: essa é a proposta
 
 Márcia é professora do Ifes/Cefor, doutora em Engenharia Elétrica, e coordena o Educimat, o Corte de Lovelace e o grupo de pesquisa Pros@tec. É também a Coordenadora Geral do VIII Concefor.
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
@@ -120,7 +120,7 @@ Mulheres que estão transformando a tecnologia na educação: na mesa-redonda "T
 
 Mariella é professora do Ifes, doutora em Ciência da Computação (UFES), e já foi Diretora Executiva do Ifes e Diretora do Cefor, entre 2019 e 2022.
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
@@ -141,7 +141,7 @@ Tecnologia para mapear a vida das mulheres do Espírito Santo. É sobre isso que
 
 Celia é servidora do Incaper, atua na Secretaria Estadual das Mulheres (SESM) e coordena o Atlas das Mulheres do Espírito Santo, um exemplo prático do tema da própria mesa.
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
@@ -163,7 +163,7 @@ Card do VIII Concefor com foto da Dra. Celia Jaqueline Sanz Rodriguez. Mesa-redo
 ### Instagram
 Quais serão os desafios da educação a distância para os próximos 20 anos? Brasil e Reino Unido debatem juntos na mesa-redonda "Desafios da EaD para os próximos 20 anos", com a Dra. Rutinelli da Penha Fávero e o Dr. Felipe Maciel Tessarolo (The Open University). Dia 19/08, às 9h30.
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
@@ -182,7 +182,7 @@ Card do VIII Concefor com fotos da Dra. Rutinelli da Penha Fávero e do Dr. Feli
 ### Instagram
 Mulheres que estão transformando a tecnologia na educação: três olhares, uma mesa. "Tecnologia Delas" reúne a Dra. Márcia Gonçalves de Oliveira, a Dra. Mariella Berger Andrade e a Dra. Celia Jaqueline Sanz Rodriguez. Dia 18/08, às 9h30.
 
-Inscrições até 15/08 (link na bio).
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 
