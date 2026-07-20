@@ -77,6 +77,16 @@ export function getSessions(): Session[] {
   });
 }
 
+// Todos os palestrantes (tela Pessoas). bio/foto podem vir nulos — a UI trata.
+export function getSpeakers(): Speaker[] {
+  return getDb()
+    .prepare(
+      `select id, nome, titulo, instituicao, bio, foto
+         from speakers order by nome asc`,
+    )
+    .all() as Speaker[];
+}
+
 export function sessionExists(id: string): boolean {
   return Boolean(getDb().prepare("select 1 from sessions where id = ?").get(id));
 }

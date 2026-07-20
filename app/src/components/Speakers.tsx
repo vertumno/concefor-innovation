@@ -6,12 +6,12 @@
 
 import type { Speaker } from "@/lib/types";
 
-function iniciais(nome: string): string {
+export function iniciais(nome: string): string {
   const p = nome.trim().split(/\s+/);
   return ((p[0]?.[0] ?? "") + (p.length > 1 ? p[p.length - 1][0] : "")).toUpperCase();
 }
 
-function corDe(nome: string): string {
+export function corDe(nome: string): string {
   let h = 0;
   for (let i = 0; i < nome.length; i++) h = (h * 31 + nome.charCodeAt(i)) | 0;
   const paleta = ["#1e5a8c", "#0e8fa8", "#2a6fb0", "#3c7e8c", "#4a6fa5", "#2c8c9c"];

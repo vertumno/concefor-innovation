@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Oswald, Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import { BottomNav } from "@/components/BottomNav";
 import { DemoBar } from "@/components/DemoBar";
 import "./tokens.css";
 import "./globals.css";
@@ -53,15 +54,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 VIII <strong>Concefor</strong>
               </span>
             </Link>
-            <nav className="topnav">
-              <Link href="/timeline">Programação</Link>
-              <Link href="/informacoes">Informações</Link>
-              {/* O Telão responde em /telao (projetor), fora da navegação do app
-                  — decisão de 26/06 (ver design-system/app/roadmap.md). */}
-            </nav>
+            {/* R1: a navegação desceu pra barra inferior (BottomNav, spec §4.0).
+                Quando o login existir (R7), o avatar do participante entra aqui. */}
           </header>
           <DemoBar />
           <main className="content">{children}</main>
+          {/* O Telão responde em /telao (projetor) e o /admin por token — ambos
+              fora da navegação (spec §4.0); o telão cobre a barra (z-index). */}
+          <BottomNav />
         </div>
       </body>
     </html>

@@ -1,5 +1,8 @@
 "use client";
 
+// Agenda — a programação completa (ex-/timeline, renomeada no R1; spec §4.0).
+// /timeline redireciona pra cá (next.config.mjs).
+
 import { useEffect, useMemo, useState } from "react";
 import { SessionCard } from "@/components/SessionCard";
 import { getFavorites, toggleFavorite } from "@/lib/favorites";
@@ -7,7 +10,7 @@ import { fetchSessions, formatDia } from "@/lib/sessions";
 import { useEventClock } from "@/lib/clock";
 import type { Session } from "@/lib/types";
 
-export default function TimelinePage() {
+export default function AgendaPage() {
   const [sessions, setSessions] = useState<Session[] | null>(null);
   const [favoritos, setFavoritos] = useState<Set<string>>(new Set());
   const [eixo, setEixo] = useState("");
@@ -61,7 +64,7 @@ export default function TimelinePage() {
 
   return (
     <>
-      <h1 className="page-title">Programação</h1>
+      <h1 className="page-title">Agenda</h1>
       <p className="page-sub">A linha do tempo do evento. Favorite pra montar a sua.</p>
 
       <div className="filter-row">

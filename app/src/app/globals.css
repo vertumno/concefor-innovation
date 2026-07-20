@@ -85,22 +85,94 @@ code {
   font-weight: var(--weight-bold);
 }
 
-.topnav {
-  display: flex;
-  gap: 18px;
+/* ============ Barra inferior de navegação (R1, spec §4.0) ============ */
+/* 5 slots, "Ao Vivo" elevado no centro. Fixa; o conteúdo compensa no
+   padding-bottom de .content. Safe-area do iOS no padding da própria barra. */
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: rgba(16, 42, 92, 0.92);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom);
 }
-.topnav a {
-  color: var(--ink-dim);
+.bn-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: end;
+  padding: 6px 6px 7px;
+}
+.bn-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
   text-decoration: none;
-  font-family: var(--font-title);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: var(--text-sm);
-  font-weight: var(--weight-medium);
+  color: var(--ink-dim);
   transition: color var(--transition-fast);
 }
-.topnav a:hover {
+.bn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 15px;
+  border-radius: var(--radius-pill);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.bn-label {
+  font-family: var(--font-title);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+}
+/* Item ativo = pílula preenchida com o label sempre visível (padrão EDEN). */
+.bn-active {
   color: var(--cyan-300);
+}
+.bn-active .bn-icon {
+  background: var(--surface-2);
+  color: var(--cyan-300);
+}
+
+/* Slot central "Ao Vivo": círculo elevado em gold — a torção da barra. */
+.bn-live-circle {
+  width: 54px;
+  height: 54px;
+  margin-top: -26px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: var(--accent-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--bg);
+  box-shadow: var(--shadow-gold);
+}
+.bn-live.bn-active .bn-live-circle {
+  outline: 2px solid var(--cyan-300);
+  outline-offset: 1px;
+}
+/* Pulso discreto quando há sessão no ar (a regra global de
+   prefers-reduced-motion já desliga esta animação). */
+.bn-live-on .bn-live-circle {
+  animation: bnLivePulse 2s ease-in-out infinite;
+}
+@keyframes bnLivePulse {
+  0%,
+  100% {
+    box-shadow: var(--shadow-gold), 0 0 0 0 rgba(245, 184, 46, 0.45);
+  }
+  50% {
+    box-shadow: var(--shadow-gold), 0 0 0 9px rgba(245, 184, 46, 0);
+  }
 }
 
 /* Faixa de demonstração + relógio do evento correndo (DemoBar). */
@@ -139,7 +211,8 @@ code {
 }
 
 .content {
-  padding: 18px;
+  /* Embaixo: espaço pra barra inferior fixa (círculo elevado incluso). */
+  padding: 18px 18px calc(92px + env(safe-area-inset-bottom));
 }
 
 h1.page-title {
@@ -1009,18 +1082,62 @@ h1.page-title {
   }
 }
 
-/* Mobile: 3 abas + selo. O wordmark recolhe (o selo já identifica a marca). */
-@media (max-width: 540px) {
-  .brand-word {
-    display: none;
-  }
-  .topnav {
-    gap: 13px;
-  }
-  .topnav a {
-    font-size: 12px;
-    letter-spacing: 0.03em;
-  }
+/* =================== Ao Vivo — contagem regressiva =================== */
+.countdown {
+  font-family: var(--font-title);
+  font-weight: var(--weight-bold);
+  font-size: clamp(44px, 13vw, 64px);
+  line-height: 1;
+  margin: 4px 0 2px;
+  color: var(--cyan-300);
+  font-variant-numeric: tabular-nums;
+}
+.countdown-when {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* =================== Pessoas — cards de palestrante =================== */
+.people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.person {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+.person .speaker-avatar {
+  margin-top: 2px;
+}
+.person-foto {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-pill);
+  object-fit: cover;
+}
+.person-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.person-bio {
+  margin: 6px 0 0;
+  font-size: var(--text-sm);
+  color: var(--ink-dim);
+  line-height: 1.5;
 }
 
 @media (prefers-reduced-motion: reduce) {

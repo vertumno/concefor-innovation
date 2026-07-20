@@ -88,7 +88,7 @@ export default function Home() {
       )}
 
       <p className="page-sub" style={{ marginTop: 24 }}>
-        <Link href="/timeline">Ver a programação completa →</Link>
+        <Link href="/agenda">Ver a programação completa →</Link>
       </p>
     </>
   );
