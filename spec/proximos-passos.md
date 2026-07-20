@@ -52,10 +52,28 @@ de navegação nova. A API do Even3 está validada (chave em `app/.env.local`, a
 **Pronto quando:** no celular, todos os fluxos atuais são alcançáveis pela barra; um toque
 no "Ao Vivo" durante uma sessão live cai na tela de reagir.
 
-### R2 — Sync Even3 (somente leitura): programação, palestrantes e evento reais
+### R2 — Sync Even3 (somente leitura): programação, palestrantes e evento reais ✅ (entregue 20/07)
 
 **Objetivo:** o app mostra a programação oficial que já está no Even3 — a planilha manual
 morreu (achado de 16/07).
+
+> **Entregue em 20/07** (`scripts/sync-even3.mjs` + `npm run sync:even3`): sync rodado 2×
+> com a chave real — 15 sessões nos 4 dias, 10 duplicatas ignoradas, idempotente. Como o
+> cadastro do Even3 veio **sem venue/tags/speakers**, o sync ganhou: título limpo (sai o
+> prefixo "Dia N -"), **eixo por heurística do título** (tags vencem quando existirem),
+> upsert com `coalesce` (Even3 vence quando fala; silêncio preserva o local) e
+> **`db/enrich.sql`** aplicado ao final (salas do Auditório + palestrantes estruturados
+> Vanessa/Tessarolo/Mariano, citados nos títulos/descrições do próprio Even3).
+> **Modo teste garantido:** sessões locais sem prefixo `even3-` sobrevivem ao sync —
+> `npm run seed:live` segue funcionando por cima da programação real (testado).
+> **Seed manual aposentado**: `npm run seed` não deve mais ser usado (recriaria a
+> programação antiga por cima); o caminho é `sync:even3`.
+>
+> ⚠️ **Divergência a verificar com a organização:** o Even3 não tem a mesa "Tecnologia
+> Delas" (18/08 9h30) — no lugar há "Desafios da EaD para os próximos 20 anos" em DOIS
+> dias (18 com "palestrantes confirmados: Felipe Tessarolo" e 19 com "pesquisadores
+> locais"). A comunicação vem produzindo cards com outra programação — alinhar qual está
+> certa (o app mostra o que está no Even3).
 
 - `lib/even3.ts`: cliente server-side (`EVEN3_API_TOKEN` do env; header
   `Authorization-Token`); nunca importado por código de cliente.
@@ -194,6 +212,9 @@ backlog em `app-v1.md` §8.
 | Pendência | Estado / onde está |
 |---|---|
 | Servidor do Cefor + URL/HTTPS para deploy (R5) | **urgente** — articular com a TI; ver `../links.md` |
+| ~~Chave `EVEN3_API_TOKEN` em `app/.env.local` desta máquina~~ | **resolvida 20/07** — Marquito enviou; gravada no `.env.local` (gitignored) |
+| Programação divergente: Even3 × cards da comunicação (mesa "Tecnologia Delas" sumiu do Even3) | **verificar com Márcia/organização** — achado do sync de 20/07 |
+| Cadastro do Even3 sem salas/tags/palestrantes | pedir à organização preencher lá (aí `db/enrich.sql` esvazia); enquanto isso o enriquecimento local cobre |
 | ~~Segundo fator do login (CPF parcial × e-mail)~~ | **decidido 20/07** — 4 primeiros dígitos do CPF |
 | Crachá: gráfica imprime lote personalizado (nome+QR+categoria)? | Elton verifica com a copiadora/gráfica; se sim, geramos a planilha a partir do sync Even3 (R2/R7) |
 | Impressora de etiquetas no campus (inscrições de última hora) | organização do evento verifica (20/07) |

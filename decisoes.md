@@ -4,6 +4,26 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-20 — Programação do app vem do Even3 (sync entregue); enriquecimento local sobrevive ao re-sync
+
+**Decisão:** o R2 foi entregue com a chave real: `npm run sync:even3` puxa a programação
+oficial do Even3 (15 sessões, 4 dias, idempotente, dedup das duplicatas da API). Como o
+cadastro de lá está **sem salas/tags/palestrantes**, o modelo é: **Even3 é a fonte da
+verdade da espinha** (dias, horários, títulos — mudou lá, muda no app); o que ele não
+preenche é coberto por **enriquecimento local** que sobrevive ao re-sync (`coalesce` no
+upsert + `db/enrich.sql`: salas do Auditório e palestrantes estruturados citados nos
+títulos/descrições do próprio Even3). Sessões locais sem prefixo `even3-` sobrevivem ao
+sync — é o **modo teste** (`npm run seed:live` continua funcionando por cima da
+programação real, mesmo depois do link com o Even3). O seed manual foi **aposentado**.
+
+**Por quê:** o Even3 recebe as mudanças de última hora (é onde a organização mexe), mas o
+cadastro pobre de lá não pode empobrecer o app — as duas fontes se compõem em vez de
+competir. **Achado no caminho:** a programação do Even3 diverge da que a comunicação vem
+divulgando (a mesa "Tecnologia Delas" não existe lá; "Desafios da EaD" aparece nos dias 18
+e 19) — verificar com a organização qual é a atual.
+
+---
+
 ## 2026-07-20 — Crachá impresso pela gráfica (QR não garantido) e segundo fator do login: 4 primeiros dígitos do CPF
 
 **Decisão** (Marquito + Elton, reunião de 20/07 — síntese em
