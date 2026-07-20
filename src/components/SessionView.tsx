@@ -18,6 +18,7 @@ import { useEventClock } from "@/lib/clock";
 import { TimeStamp } from "@/components/TimeStamp";
 import { Speakers } from "@/components/Speakers";
 import { Reactions } from "@/components/Reactions";
+import { Questions } from "@/components/Questions";
 import type { Session } from "@/lib/types";
 
 function faseLabel(pct: number): string {
@@ -124,6 +125,10 @@ export function SessionView({ id, showBack = true }: { id: string; showBack?: bo
 
       {/* Reações ao vivo (feature 4.2 / E2): botões só quando a sessão está no ar. */}
       <Reactions sessionId={session.id} live={status === "live"} />
+
+      {/* Perguntas com upvote (R4): aparece quando a janela está aberta no /admin
+          (ou quando já existem perguntas públicas). */}
+      <Questions sessionId={session.id} live={status === "live"} />
     </div>
   );
 }
