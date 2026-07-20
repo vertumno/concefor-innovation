@@ -90,6 +90,10 @@ export async function runSync({ dbPath, token, dumpRaw = true } = {}) {
 
   const schedule = await fetchJson("/session/getschedule", token);
   const days = schedule.data ?? [];
+  // Inscritos (R7 — login). Sem paginação na API; uma chamada traz todos.
+  // PII: NUNCA vai para dump em disco — só direto pro banco.
+  const attendeesResp = await fetchJson("/attendees/", token);
+  const attendees = attendeesResp.data ?? [];
 
   // Dump da resposta crua (data/ é gitignored) — depurar mapeamento sem re-chamar a API.
   if (dumpRaw) {
@@ -128,6 +132,18 @@ export async function runSync({ dbPath, token, dumpRaw = true } = {}) {
     "insert or ignore into session_speakers (session_id, speaker_id) values (?, ?)",
   );
   const clearLinks = db.prepare("delete from session_speakers where session_id = ?");
+  const upsertAttendee = db.prepare(`
+    insert into attendees (id, checkin_code, nome, badge_name, email, documento,
+                           categoria, foto, confirmado, updated_at)
+    values (@id, @checkin_code, @nome, @badge_name, @email, @documento,
+            @categoria, @foto, @confirmado, @updated_at)
+    on conflict(id) do update set
+      checkin_code = excluded.checkin_code, nome = excluded.nome,
+      badge_name = excluded.badge_name, email = excluded.email,
+      documento = excluded.documento, categoria = excluded.categoria,
+      foto = excluded.foto, confirmado = excluded.confirmado,
+      updated_at = excluded.updated_at
+  `);
 
   const sessionIds = new Set();
   const speakerIds = new Set();
@@ -178,6 +194,24 @@ export async function runSync({ dbPath, token, dumpRaw = true } = {}) {
       }
     }
 
+    // Inscritos: upsert por id do Even3 ("bagde_name" é typo real da API).
+    const agora = new Date().toISOString();
+    for (const a of attendees) {
+      if (!a.id_attendees || !a.checkin_code || !a.name) continue;
+      upsertAttendee.run({
+        id: a.id_attendees,
+        checkin_code: String(a.checkin_code),
+        nome: a.name,
+        badge_name: a.bagde_name || a.badge_name || null,
+        email: a.email || null,
+        documento: (a.document || "").replace(/\D/g, "") || null,
+        categoria: a.registration_category || null,
+        foto: a.photo || null,
+        confirmado: a.confirmed ? 1 : 0,
+        updated_at: agora,
+      });
+    }
+
     // Remove o que sumiu do Even3 (só linhas prefixadas — as locais sobrevivem).
     const staleSessions = db
       .prepare("select id from sessions where id like 'even3-%'")
@@ -205,6 +239,7 @@ export async function runSync({ dbPath, token, dumpRaw = true } = {}) {
     db.prepare("select substr(inicio, 1, 10) as d from sessions where id like 'even3-%'").all().map((r) => r.d),
   );
   const total = db.prepare("select count(*) as n from sessions").get().n;
+  const totalInscritos = db.prepare("select count(*) as n from attendees").get().n;
   db.close();
 
   return {
@@ -215,6 +250,8 @@ export async function runSync({ dbPath, token, dumpRaw = true } = {}) {
     removidasStale: staleSessions,
     palestrantesRemovidos: staleSpeakers,
     totalNoBanco: total,
+    inscritos: attendees.length,
+    totalInscritos,
   };
 }
 
@@ -225,7 +262,8 @@ if (process.argv[1] && import.meta.url.endsWith(process.argv[1].replaceAll("\\",
     .then((r) => {
       console.log(
         `Sync Even3 ok: ${r.sincronizadas} sessões (${r.duplicadasIgnoradas} duplicatas ignoradas), ` +
-          `${r.palestrantes} palestrantes, ${r.removidasStale} sessões stale removidas.`,
+          `${r.palestrantes} palestrantes, ${r.removidasStale} sessões stale removidas, ` +
+          `${r.inscritos} inscritos.`,
       );
       console.log(`Dias no banco: ${r.dias.join(", ")} · total de sessões (com locais): ${r.totalNoBanco}`);
     })

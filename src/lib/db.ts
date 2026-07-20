@@ -123,6 +123,90 @@ export function getReactionCounts(sessionId: string): ReactionCounts {
   return counts;
 }
 
+// ─────────────────────── Login / identidade (R7) ───────────────────────
+// Associação client_id ↔ inscrito, criada no login com consentimento (LGPD).
+// PII nunca sai do servidor: as rotas públicas só devolvem o primeiro nome.
+
+// nº do ingresso + 4 primeiros dígitos do CPF (decisão de 20/07).
+export function findAttendeeByLogin(
+  checkinCode: string,
+  cpf4: string,
+): { id: number; nome: string } | null {
+  const row = getDb()
+    .prepare(
+      `select id, nome from attendees
+        where checkin_code = ? and documento is not null and substr(documento, 1, 4) = ?`,
+    )
+    .get(checkinCode.trim(), cpf4.trim()) as { id: number; nome: string } | undefined;
+  return row ?? null;
+}
+
+export function upsertIdentity(clientId: string, attendeeId: number, nome: string): void {
+  getDb()
+    .prepare(
+      `insert into identities (client_id, attendee_id, nome, consent_ts)
+       values (?, ?, ?, ?)
+       on conflict(client_id) do update set
+         attendee_id = excluded.attendee_id, nome = excluded.nome,
+         consent_ts = excluded.consent_ts`,
+    )
+    .run(clientId, attendeeId, nome, new Date().toISOString());
+}
+
+export function getIdentity(clientId: string): { nome: string } | null {
+  const row = getDb()
+    .prepare("select nome from identities where client_id = ?")
+    .get(clientId) as { nome: string } | undefined;
+  return row ?? null;
+}
+
+export function deleteIdentity(clientId: string): void {
+  getDb().prepare("delete from identities where client_id = ?").run(clientId);
+}
+
+// ─────────────────────── Avisos da organização (Início) ───────────────────────
+// Mão única, sem chat (spec §8/R10 — antecipado em 20/07 para diferenciar o
+// Início). Como tudo: registro na linha do tempo (tipo='aviso').
+
+export type Aviso = { id: string; texto: string; ts: string; hidden: boolean };
+
+export function insertAviso(texto: string): string {
+  const id = randomUUID();
+  getDb()
+    .prepare(
+      `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+       values (?, 'aviso', null, ?, ?, null)`,
+    )
+    .run(id, new Date().toISOString(), JSON.stringify({ texto }));
+  return id;
+}
+
+export function getAvisos(includeHidden = false): Aviso[] {
+  const rows = getDb()
+    .prepare(
+      `select id, ts, json_extract(payload, '$.texto') as texto,
+              coalesce(json_extract(payload, '$.hidden'), 0) as hidden
+         from timeline_events
+        where tipo = 'aviso'
+        order by ts desc
+        limit 20`,
+    )
+    .all() as { id: string; ts: string; texto: string; hidden: number }[];
+  return rows
+    .filter((r) => includeHidden || !r.hidden)
+    .map((r) => ({ ...r, hidden: Boolean(r.hidden) }));
+}
+
+export function setAvisoHidden(avisoId: string, hidden: boolean): boolean {
+  const r = getDb()
+    .prepare(
+      `update timeline_events set payload = json_set(payload, '$.hidden', ?)
+        where id = ? and tipo = 'aviso'`,
+    )
+    .run(hidden ? 1 : 0, avisoId);
+  return r.changes > 0;
+}
+
 // ─────────────────────── Dashboard admin (R3) ───────────────────────
 // Tudo derivado de timeline_events — o dashboard é só uma leitura da linha
 // do tempo (mesmo modelo que alimenta app e telão; spec §5).
@@ -133,6 +217,8 @@ export type AdminStats = {
   reacoesPorSessao: { sessionId: string | null; titulo: string; n: number }[];
   reacoesPorMinuto: { minuto: string; n: number }[]; // últimos 60 min (UTC "HH:MM")
   totalPerguntas: number;
+  totalInscritos: number; // sincronizados do Even3 (R7)
+  totalLogados: number; // identities criadas no login
 };
 
 export function getAdminStats(): AdminStats {
@@ -178,12 +264,17 @@ export function getAdminStats(): AdminStats {
     .prepare("select count(*) as n from timeline_events where tipo = 'question'")
     .get() as { n: number };
 
+  const inscritos = db.prepare("select count(*) as n from attendees").get() as { n: number };
+  const logados = db.prepare("select count(*) as n from identities").get() as { n: number };
+
   return {
     ativosUltimaHora: ativos.n,
     totalReacoes: total.n,
     reacoesPorSessao: porSessao,
     reacoesPorMinuto: porMinuto,
     totalPerguntas: perguntas.n,
+    totalInscritos: inscritos.n,
+    totalLogados: logados.n,
   };
 }
 

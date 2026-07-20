@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BottomNav } from "@/components/BottomNav";
 import { DemoBar } from "@/components/DemoBar";
+import { UserBadge } from "@/components/UserBadge";
 import "./tokens.css";
 import "./globals.css";
 
@@ -55,7 +56,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </span>
             </Link>
             {/* R1: a navegação desceu pra barra inferior (BottomNav, spec §4.0).
-                Quando o login existir (R7), o avatar do participante entra aqui. */}
+                R7: avatar/inicial do participante (ou "Entrar") no canto direito. */}
+            <UserBadge />
           </header>
           <DemoBar />
           <main className="content">{children}</main>
