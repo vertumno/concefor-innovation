@@ -76,7 +76,7 @@ linha do tempo virando interface.
 | 2 | **Agenda** | Programação completa (timeline com zoom), filtros por dia/eixo/sala, busca, "minha agenda" (favoritos) |
 | 3 | **● Ao Vivo** | A sessão acontecendo agora: reações (e perguntas, quando existirem). Sem sessão ao vivo → próxima sessão com contagem regressiva |
 | 4 | **Pessoas** | v1: palestrantes (bio/foto). Com login: participantes com busca, **meu QR** (cartão de visita) e contatos salvos |
-| 5 | **Mais** | Informações (local + mapa, alimentação, o que fazer ao redor), sobre os 20 anos, certificados (link Even3), fale com a organização |
+| 5 | **Mais** | Informações (local + mapa, alimentação, o que fazer ao redor), sobre os 20 anos, certificados (link Even3). ("Fale com a organização" removido em 20/07) |
 
 Regras de interface (tokens do design system, nada de cor solta):
 
@@ -161,12 +161,15 @@ placeholder e trocar depois).
 **Pós-piloto, antes do evento** (decisões de 06/07, atualizadas em 16/07 — ver `decisoes.md`):
 
 - **Login pelo crachá para interagir:** navegar segue aberto; reagir/perguntar passa a exigir
-  identificação — QR do crachá Even3 ou digitação do nº do ingresso. **Confirmado pela API em
-  16/07:** o nº do ingresso é o campo `checkin_code` (8 dígitos) dos inscritos, então o login
-  casa direto com o sync do Even3, sem export manual. Segundo fator: **data de nascimento caiu**
-  (o cadastro não coleta) — restam **CPF parcial** ou e-mail (decidir; ver
-  `contexto/even3/README.md`). Exige tela de **consentimento LGPD** clara na entrada; quem não
-  aceita continua na parte pública. Associa o `client_id` ao inscrito.
+  identificação. **Caminho primário: digitar o nº do ingresso** — o QR impresso no crachá
+  **não é garantido** (crachá será impresso pela gráfica, personalização a confirmar — decisão
+  de 20/07); o scanner vira melhoria progressiva e o **"meu QR" no app** pode substituir o QR
+  físico. **Confirmado pela API em 16/07:** o nº do ingresso é o campo `checkin_code` (8
+  dígitos) dos inscritos, então o login casa direto com o sync do Even3, sem export manual.
+  Segundo fator **decidido em 20/07: 4 primeiros dígitos do CPF** (data de nascimento não
+  existe no cadastro; ideia registrada: redefinir para senha própria após o primeiro login).
+  Exige tela de **consentimento LGPD** clara na entrada; quem não aceita continua na parte
+  pública. Associa o `client_id` ao inscrito.
 - **Perguntas com upvote:** texto curto com limite de caracteres, janela de tempo controlada
   pelo admin (abre/fecha), visíveis a todos, mais votadas no topo, autor oculto no app. A Márcia
   validou a ideia com entusiasmo em 16/07 — sobe de stretch para **planejada**, mas continua
@@ -181,8 +184,13 @@ placeholder e trocar depois).
 real (mic da mesa de som → IA local) · **motor de vídeo-destaques** (casar transcrição com picos
 de reação → resumos/nuvem de palavras/melhores momentos; alimenta notícias pós-evento) ·
 networking por QR do crachá (benchmark: app do evento EDEN — contatos, envio de arquivos,
-disponível 1 ano; ver `contexto/reunioes/sintese-2026-07-02.md`) · **material do palestrante
-por sessão** (slides/links + resumo de IA) · fórum por palestra (exige moderação) · avatar
+disponível 1 ano; ver `contexto/reunioes/sintese-2026-07-02.md`) · **"bolinhas de conexões"**
+na tela Pessoas (cada participante é uma bolinha apagada que acende quando você conecta;
+clicar mostra o contato — casa com o mosaico do selo; ideia de 20/07) · **material do
+palestrante por sessão** (slides/links + resumo de IA; com badge **"atualizado"** quando o
+conteúdo mudou desde a última visita — exige rastrear acesso por usuário; detalhado em 20/07) ·
+**plano de gamificação** (Elton; pontos por participação — ex.: reagiu ao vivo = pontos —
+com conquistas no perfil, não na barra) · fórum por palestra (exige moderação) · avatar
 IA a partir de foto · gamificação (QR codes escondidos → figurinhas) · AR/Easter eggs ·
 espaço instagramável · animações Remotion em tempo real (tela lateral com frases + reações
 na identidade dos 20 anos) · mosaico/grafo nos quadradinhos do selo. Justificativas em
@@ -218,7 +226,12 @@ Ainda da conversa de 25/06 (Marquito + Elton):
 
 - **Rede do evento instável** → fallback físico das reações; PWA com cache offline da programação;
   com self-host na rede local do Cefor, o app sobrevive a queda de internet (só precisa da LAN).
-- **Fricção do login pelo crachá** (achar o nº do ingresso é difícil fora do crachá físico) →
-  QR scanner no app + liberar o app antes do evento; segundo fator a validar no Even3.
+- **Fricção do login pelo crachá** (achar o nº do ingresso é difícil fora do crachá físico;
+  e o QR impresso no crachá não é garantido — depende da gráfica, decisão de 20/07) → login
+  primário por digitação do nº; QR scanner como melhoria; liberar o app antes do evento;
+  se o crachá sair personalizado, garantir o nº impresso legível.
+- **Concorrência do SQLite** (100–200 reações simultâneas — preocupação de 20/07) → WAL já
+  ligado; **teste de carga antes do evento**; se apertar, a interface `lib/db` faz a troca de
+  banco ser barata (Postgres/Supabase).
 - **Programação muda em cima da hora** → `sessions` editável; importação simples (planilha → seed).
 - **Escopo inflar** → a régua: só entra no v1 o que está na seção 4–5. O resto é fase 2, por escrito.

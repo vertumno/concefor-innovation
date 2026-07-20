@@ -5,6 +5,12 @@ antes do evento; ver `decisoes.md` 2026-07-06).
 
 ## O crachá
 
+> **Atualização 20/07:** o crachá físico do evento **não** será o modelo nativo do Even3
+> descrito abaixo — será **impresso pela gráfica/copiadora** (personalização em lote a
+> confirmar; ver `decisoes.md` 2026-07-20). O QR impresso no crachá não é garantido; o
+> login do app tem a digitação do nº do ingresso como caminho primário. O modelo Even3
+> segue documentado aqui como fonte dos dados (o QR dele codifica o `checkin_code`).
+
 Exemplo real em `cracha-exemplo.jpg` (crachá do Marquito, gerado pelo Even3):
 
 - **QR code** codifica o **nº do ingresso** (8 dígitos — ex.: `73299366`), impresso logo
@@ -23,8 +29,8 @@ Nome, e-mail (com confirmação), nacionalidade, documento (CPF). Pendências (e
   **Não há data de nascimento no cadastro.**
 - [x] ~~Confirmar acesso/credenciais da API~~ → chave obtida (Configurações → Integrações),
   vive em `app/.env.local` (gitignored). Uso somente-leitura por ora.
-- [ ] Definir o segundo fator do login — data de nascimento **caiu** (campo não existe);
-  restam **CPF parcial** (ex.: 4 primeiros dígitos) ou e-mail. Decidir com Elton.
+- [x] ~~Definir o segundo fator do login~~ → **decidido 20/07 (com Elton): 4 primeiros
+  dígitos do CPF**. Ideia registrada: redefinir para senha própria após o primeiro login.
 - [ ] Verificar se dá para enviar mensagem aos inscritos pelo Even3 (divulgar o app antes
   do evento — o plano de 16/07 é e-mail no lançamento de 07/08)
 

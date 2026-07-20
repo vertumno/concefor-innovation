@@ -20,10 +20,23 @@ de navegação nova. A API do Even3 está validada (chave em `app/.env.local`, a
 
 ## Caminho crítico até a validação (30/07)
 
-### R1 — Reformulação da navegação: barra inferior + "Ao Vivo"
+### R1 — Reformulação da navegação: barra inferior + "Ao Vivo" ✅ (entregue 20/07)
 
 **Objetivo:** o app passa a navegar pela barra inferior de 5 itens com o botão central
 "Ao Vivo" (spec §4.0) — a cara nova que a comissão vai ver em 30/07.
+
+> **Entregue em 20/07.** BottomNav com pílula ativa e pulso no live; `/ao-vivo` cobre os
+> 3 estados (1 live → tela de reagir; várias → seletor; nenhuma → contagem regressiva);
+> `/timeline`→`/agenda` e `/informacoes`→`/mais` com redirect 308; `/pessoas` lê os
+> palestrantes do banco (`/api/speakers`). Nota de build: `better-sqlite3` subiu para
+> ^12 (o Node 25 não tem prebuild da v11 e a máquina não tem toolchain C++).
+>
+> **Feedback de 20/07 (Elton viu rodando; aprovado — ver síntese da reunião):**
+> - [x] Contadores longos com **dias + horas** ("em 28 d 2 h") — feito em 20/07.
+> - [ ] **Diferenciar o Início** de Agenda/Ao Vivo (hoje repetem agora/a seguir): avisos da
+>   organização, dica do dia e atalhos (ex.: leitor de QR) — encaixar antes de 30/07 se
+>   couber, sem furar R2–R5.
+> - [ ] Perfil no topo direito: genérico "faça login" → avatar/inicial (entra com o R7).
 
 - Componente `BottomNav` (fixo, 5 slots, item ativo = pílula preenchida com label;
   tokens `--surface-2`/`--cyan`; central elevado em `--accent`).
@@ -122,10 +135,12 @@ API: o QR do crachá codifica o `checkin_code` que já vem no sync de inscritos.
 
 - Estender o sync do R2: `GET /attendees/` → tabela `attendees` local (**288+ inscritos**;
   PII fica só no servidor).
-- [ ] **Decidir o segundo fator com o Elton:** data de nascimento caiu (não existe no
-  cadastro); opções: CPF parcial (ex.: 4 primeiros dígitos) ou e-mail.
-- Login: nº do ingresso digitado (QR scanner entra depois se der — exige HTTPS do R5) +
-  segundo fator; associa `client_id` ao inscrito; sessão persistente no dispositivo.
+- [x] ~~Decidir o segundo fator com o Elton~~ → **decidido 20/07: 4 primeiros dígitos do
+  CPF** (ideia registrada: redefinir para senha própria após o primeiro login).
+- Login: **nº do ingresso digitado é o caminho primário** — o QR impresso no crachá não é
+  garantido (crachá vai pra gráfica, decisão de 20/07); QR scanner entra depois se der
+  (exige HTTPS do R5) + segundo fator; associa `client_id` ao inscrito; sessão persistente
+  no dispositivo. "Meu QR" no app pode substituir o QR físico onde faltar.
 - Tela de consentimento clara na entrada (modelo de 02/07): quem não aceita segue na
   parte pública, interagindo anonimamente onde permitido.
 - Avatar/inicial no topo direito quando logado (padrão EDEN).
@@ -179,7 +194,10 @@ backlog em `app-v1.md` §8.
 | Pendência | Estado / onde está |
 |---|---|
 | Servidor do Cefor + URL/HTTPS para deploy (R5) | **urgente** — articular com a TI; ver `../links.md` |
-| Segundo fator do login (CPF parcial × e-mail) | decidir com Elton — `../contexto/even3/README.md` |
+| ~~Segundo fator do login (CPF parcial × e-mail)~~ | **decidido 20/07** — 4 primeiros dígitos do CPF |
+| Crachá: gráfica imprime lote personalizado (nome+QR+categoria)? | Elton verifica com a copiadora/gráfica; se sim, geramos a planilha a partir do sync Even3 (R2/R7) |
+| Impressora de etiquetas no campus (inscrições de última hora) | organização do evento verifica (20/07) |
+| Teste de carga das reações (SQLite, 100–200 simultâneos) | fazer no R9 (endurecimento), na URL real do R5 |
 | Convidados da validação de 30/07 | Márcia convida (CGPE, Simon, Rutinelli aventados) |
 | Texto do e-mail de lançamento (07/08) | escrever com a Márcia na semana de 03/08 |
 | Conteúdo de "dica do dia" / alimentação / arredores | pedir à Márcia (ela topou mandar) |

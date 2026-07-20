@@ -4,6 +4,50 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-20 — Crachá impresso pela gráfica (QR não garantido) e segundo fator do login: 4 primeiros dígitos do CPF
+
+**Decisão** (Marquito + Elton, reunião de 20/07 — síntese em
+`contexto/reunioes/sintese-2026-07-20.md`):
+
+1. **Crachá físico:** o modelo nativo do Even3 (A4 dobrado, layout fixo) e o crachá de
+   plástico caíram (o segundo não está no termo de referência). Caminho: **crachás
+   impressos pela gráfica/copiadora**. Se a gráfica aceitar lote personalizado, mandamos
+   planilha com nome + QR + categoria — dados que o sync Even3 já nos dá; senão, crachás
+   todos iguais com nome à mão. Última hora: à mão, sem QR (verificar impressora de
+   etiquetas no campus).
+2. **Consequência pro app:** o QR impresso no crachá **não é garantido** → o login pelo
+   crachá não pode depender do scanner. Caminho primário: **digitar o nº do ingresso**
+   (`checkin_code`); QR scanner vira melhoria progressiva; o **"meu QR" no app** pode
+   substituir o QR físico onde ele faltar.
+3. **Segundo fator do login: 4 primeiros dígitos do CPF** (fecha a pendência aberta em
+   16/07 — data de nascimento não existe no cadastro). Ideia registrada: permitir
+   redefinir para senha própria após o primeiro login.
+
+**Por quê:** o crachá de plástico não foi contemplado na contratação e o modelo Even3 não
+carrega a identidade dos 20 anos; imprimir na gráfica dá controle visual e cabe no que já
+está orçado. O CPF parcial é o único segundo fator que existe para todos os inscritos e
+não expõe o dado inteiro. O app absorve a incerteza do QR físico ficando independente dele.
+
+---
+
+## 2026-07-20 — Barra inferior validada com o Elton; ajustes: dias nos contadores e Início diferenciado
+
+**Decisão:** a navegação nova (R1, entregue 20/07) foi vista rodando e aprovada. Ajustes
+acordados: contadores longos passam a mostrar **dias + horas** ("em 28 d 2 h", não
+"em 674 h"); o **Início** precisa se diferenciar de Agenda/Ao Vivo (hoje os três repetem
+agora/a seguir) — vai concentrar avisos, dica do dia e atalhos; o topo direito ganhará o
+**perfil** ("faça login" genérico → avatar quando logado, futura casa da pontuação).
+Ideias novas registradas sem compromisso: "bolinhas de conexões" na tela Pessoas, plano
+de gamificação (Elton), badge "atualizado" no material do palestrante. Preocupação
+registrada: concorrência do SQLite sob 100–200 reações simultâneas → teste de carga antes
+do evento (mitigação: WAL + interface `lib/db` de troca barata).
+
+**Por quê:** feedback direto da primeira demo interna da interface nova; os ajustes são
+pequenos e o que é ideia nova fica catalogado (fase 2/candidatas) para não inflar o
+caminho crítico até 30/07.
+
+---
+
 ## 2026-07-16 — Interface reformulada: barra inferior com "Ao Vivo" no centro (benchmark EDEN)
 
 **Decisão:** o menu do app sai do topo e vira **barra inferior fixa de 5 itens** — Início ·
