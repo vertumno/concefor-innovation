@@ -7,16 +7,24 @@
 ## Checklist por palestrante
 | Palestrante | Participação | Foto oficial | Card divulgação | Reel | Podcast |
 |---|---|---|---|---|---|
-| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ⬜ | ⬜ | ⬜ |
-| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ⬜ | ⬜ | ⬜ |
-| Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ⬜ | ⬜ | ⬜ |
-| Dra. Celia Jaqueline Sanz Rodriguez | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
-| Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ⬜ | ⬜ | ⬜ |
-| Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ⬜ | ⬜ | ⬜ |
-| Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ⬜ | ⬜ | ⬜ |
+| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ✅ | ⬜ | ⬜ |
+| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ✅ | ⬜ | ⬜ |
+| Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ✅ | ⬜ | ⬜ |
+| Dra. Celia Jaqueline Sanz Rodriguez | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
+| Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
+| Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | ⬜ |
+| Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | ⬜ |
 
 > ✅ Fotos oficiais dos 7 recebidas em 16/07/2026 →
 > `producao/02-pre-evento/palestrantes/_refs/fotos/` (PNG, nome = nome do palestrante).
+>
+> 🎨 **Cards individuais dos 7 prontos e liberados em 20/07/2026** →
+> `producao/02-pre-evento/palestrantes/cards/` (1080×1350).
+> Editáveis no Canva: https://canva.link/dzws8wu8ckf4gtv
+> O card da Vanessa é **v3** (v1 tinha o nome grafado errado; v2/v3 corrigiram grafia e tipografia; anteriores apagadas).
+> 📌 Por decisão de 20/07, **nenhum card traz data e hora da fala** — só a legenda traz.
+> Histórico das decisões na seção "Conferência dos cards recebidos" do
+> [painel de produção](../producao/02-pre-evento/palestrantes/painel-producao-cards.md).
 
 ---
 
@@ -28,6 +36,13 @@ soluções educacionais inovadoras com foco em IA, aprendizagem online, acessibi
 personalização em larga escala. Senior Fellow da Higher Education Academy (SFHEA). Envolvido em
 projetos de IA na educação (ex.: assistente AIDA), GenAI, adaptive learning e XR/VR. Também
 pesquisa comunicação e mídia (desinformação e redes) pela Universidade de Westminster.
+- **EDEN Best Research Paper Award em dois anos seguidos** (rede europeia de educação a distância
+  e digital): 2025, em Bolonha, como **primeiro autor** de *"GenAI as an Educational Gatekeeper:
+  Balancing Personalisation and Standardisation in Higher Education"*; e 2026, em Porto, como
+  **coautor** de *"Before the First Prompt: Understanding Students' Pre-Use Perceptions of an AI
+  Digital Assistant in Higher Education"* (vencedor geral). Em 2024 não foi premiado — evitar
+  "três anos seguidos" em qualquer peça.
+  Fonte: https://eden-europe.eu/best-research-paper-awards/
 - **Palestra:** *"Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais"* (18/08, 14h30).
 - Também participa da mesa **"Desafios da EaD para os próximos 20 anos"** (19/08, 9h30), com a Dra. Rutinelli da Penha Fávero.
 

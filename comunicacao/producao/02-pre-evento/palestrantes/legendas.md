@@ -33,7 +33,7 @@ Card do VIII Concefor com foto da Dra. Vanessa Battestin. Palestra de abertura: 
 ### Instagram
 O que a educação a distância do Reino Unido tem a ensinar pra gente? É essa a proposta da palestra do Dr. Felipe Maciel Tessarolo, do Institute of Educational Technology da The Open University — 18/08, às 14h30.
 
-Felipe traz pra palestra os mesmos temas em que atua na prática: inteligência artificial aplicada ao ensino, acessibilidade e personalização em larga escala. Ele também participa da mesa-redonda "Desafios da EaD para os próximos 20 anos", no dia 19/08.
+Felipe traz pra palestra os mesmos temas em que atua na prática: inteligência artificial aplicada ao ensino, acessibilidade e personalização em larga escala. Ele assina os artigos vencedores do prêmio de melhor pesquisa da EDEN — a rede europeia de educação a distância e digital — em dois anos seguidos, 2025 e 2026, os dois sobre IA no ensino superior. Ele também participa da mesa-redonda "Desafios da EaD para os próximos 20 anos", no dia 19/08.
 
 Inscrições até 15/08 (link na bio).
 
@@ -41,7 +41,7 @@ Inscrições até 15/08 (link na bio).
 
 ### WhatsApp
 📢 VIII Concefor — Palestra internacional
-Dr. Felipe Maciel Tessarolo (The Open University, Reino Unido) fala sobre IA, aprendizagem online e acessibilidade — 18/08, 14h30.
+Dr. Felipe Maciel Tessarolo (The Open University, Reino Unido) fala sobre IA, aprendizagem online e acessibilidade — 18/08, 14h30. Vencedor do prêmio de melhor pesquisa da EDEN em 2025 e 2026.
 Inscrições até 15/08: https://concefor.cefor.ifes.edu.br
 
 ### Alt text

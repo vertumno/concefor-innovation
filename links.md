@@ -14,6 +14,8 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
   do site e novas peças; **consultar sempre**: https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true
 - **🎨 Artes do Concefor (pasta no Canva):** https://canva.link/wdnsx8ggf61x2hs
   *(pasta registrada anteriormente: https://www.canva.com/folder/FAHDrZ44PIM — confirmar se é a mesma)*
+- **🎨 Cards dos palestrantes (Canva — editáveis):** https://canva.link/dzws8wu8ckf4gtv
+  *(os 7 cards individuais; PNGs finais versionados em `comunicacao/producao/02-pre-evento/palestrantes/cards/`)*
 - **🖌️ Matrizes do Illustrator (Drive da CGTE):** https://drive.google.com/drive/folders/1fuoepIyukqXTw035JtTj-MSbnpw7veJn?usp=drive_link
 - **📤 Arquivos editáveis e públicos (compartilhar com a comissão):** https://drive.google.com/drive/folders/1-CH92C467aI7C_dj6fE4O5XBI8A_qShv
 - **Central de comunicação (neste repo):** `comunicacao/` — board, calendário, palestrantes, peças

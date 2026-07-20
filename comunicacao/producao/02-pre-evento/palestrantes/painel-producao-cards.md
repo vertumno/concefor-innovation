@@ -3,16 +3,21 @@
 > Visão única para produzir os 7 cards no Canva, sem precisar cruzar 3 arquivos.
 > Fontes: [plano-divulgacao-palestrantes.md](plano-divulgacao-palestrantes.md) ·
 > [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md) ·
-> pasta Canva → https://www.canva.com/folder/FAHDrZ44PIM
+> **Cards no Canva (editáveis) → https://canva.link/dzws8wu8ckf4gtv** ·
+> pasta geral de artes → https://www.canva.com/folder/FAHDrZ44PIM
+> PNGs finais versionados em [`cards/`](cards/).
 
 ## Especificação fixa do card (igual para os 7)
 - **Formato:** 1080×1350 (feed) — se der, versão story 1080×1920
 - **O que vai NA ARTE (pouco texto, direto):** foto oficial do palestrante · **nome oficial da
   palestra/mesa** (texto principal) · nome do palestrante + **uma linha breve** (cargo/instituição,
-  sem parágrafo de bio) · **data e hora** · selo 20 anos · assinatura Concefor/Cefor/Ifes · CTA
-  de inscrição ("até 15/08 · link na bio")
-- **O que vai SÓ NA LEGENDA** (não entra na arte): a explicação de por que a fala importa, o
-  gancho/curiosidade, a bio mais completa — tudo isso já está pronto em [legendas.md](legendas.md).
+  sem parágrafo de bio) · datas do evento (17–20 AGO 2026) · selo 20 anos · assinatura
+  Concefor/Cefor/Ifes · CTA de inscrição (site)
+- **O que vai SÓ NA LEGENDA** (não entra na arte): **a data e a hora da fala** · a explicação de
+  por que a fala importa, o gancho/curiosidade, a bio mais completa — tudo isso já está pronto em
+  [legendas.md](legendas.md).
+  > 📌 **Decisão 20/07/2026:** nenhum card traz data e hora da própria fala — só o intervalo do
+  > evento. Dia e horário aparecem exclusivamente na legenda. Vale para os cards de mesa também.
 - **Nome do arquivo final:** `AAAA-MM-DD_pre_card_palestrante-nome_v1.png` (convenção do repo)
 
 ## Como usar o gancho de cada entrada abaixo
@@ -34,7 +39,10 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   ela foi diretora do Cefor por 5 anos (2014–2019) — viveu por dentro boa parte da história
   que vai contar na palestra.
-- **Status:** ⬜ a fazer
+- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-vanessa-battestin_v3.png`
+- **Status:** ✅ liberado — v1 tinha o nome grafado "BATESTTIN"; v2 corrigiu a grafia mas deixou o
+  nome em caixa-alta; **v3 (20/07)** corrige a grafia **e** alinha a tipografia (caixa-alta e baixa,
+  igual aos outros 6). Versões anteriores apagadas.
 
 ## 2 · Dr. Felipe Maciel Tessarolo — publicar 24/07
 
@@ -50,7 +58,10 @@ Concefor — nunca uma curiosidade solta sobre ela.
   IA aplicada ao ensino, acessibilidade e personalização em larga escala — os mesmos temas em
   que atua na prática.
 - **Também participa** da mesa "Desafios da EaD" (19/08) — confirmado em 16/07.
-- **Status:** ⬜ a fazer
+- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-felipe-tessarolo_v1.png`
+- **Status:** ✅ liberado — a arte usa "TEMA: Tecnologia, Transformação e Educação a Distância"
+  (igual ao tema geral do evento). **Decidido em 20/07 manter assim**; a ⚠️ acima fica só como
+  registro histórico da dúvida.
 
 ## 3 · Dr. Mariano Pimentel — publicar 28/07
 
@@ -60,7 +71,8 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   o livro gratuito dele, *"IA Generativa e Educação"* (+10 mil downloads), é sobre exatamente
   o assunto da palestra.
-- **Status:** ⬜ a fazer
+- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-mariano-pimentel_v1.png`
+- **Status:** ✅ produzido 20/07 — arte bate com o previsto.
 
 ## 4 · Dra. Rutinelli da Penha Fávero — publicar 30/07
 
@@ -72,7 +84,9 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - ⚠️ **Atenção:** Felipe Tessarolo confirmado na mesa (16/07); demais convidados locais ainda
   **não confirmados** — o card individual da Rutinelli pode sair normalmente; o card **da
   mesa** (item separado, ver abaixo) já pode citar Rutinelli + Tessarolo.
-- **Status:** ⬜ a fazer
+- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-rutinelli-favero_v1.png`
+- **Status:** ✅ produzido 20/07 — arte traz "Professora do Ifes/Cefor" (previsto era
+  "Professora do Ifes"); ajuste correto, ela é do Cefor.
 
 ## 5 · Dra. Márcia Gonçalves de Oliveira — publicar 31/07
 
@@ -83,7 +97,10 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   coordena o Educimat, o Corte de Lovelace e o grupo Pros@tec; `[confirmar com a Márcia]` se o
   Corte de Lovelace é voltado a mulheres/meninas na tecnologia — reforçaria ainda mais o tema da mesa.
-- **Status:** ⬜ a fazer
+- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-marcia-oliveira_v1.png`
+- **Status:** ✅ liberado — a arte traz "Professora do Ifes/Cefor e coordenadora do Programa Corte
+  de Lovelace", sem citar que ela é Coordenadora Geral do VIII Concefor. **Decidido em 20/07
+  manter assim.** (De quebra, isso confirma o `[confirmar com a Márcia]` sobre o Corte de Lovelace.)
 
 ## 6 · Dra. Mariella Berger Andrade — publicar 04/08
 
@@ -92,7 +109,8 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **No card — info breve do palestrante:** Dra. Mariella Berger Andrade · Professora do Ifes
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   pesquisa IA, EaD e robótica, e já foi Diretora Executiva do Ifes e Diretora do Cefor.
-- **Status:** ⬜ a fazer
+- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png`
+- **Status:** ✅ produzido 20/07 — arte bate com o previsto.
 
 ## 7 · Dra. Celia Jaqueline Sanz Rodriguez — publicar 06/08
 
@@ -103,7 +121,9 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   coordena o Atlas das Mulheres do ES — tecnologia e dados a serviço das mulheres, exemplo
   prático do tema da mesa.
-- **Status:** ⬜ a fazer
+- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-celia-sanz_v1.png`
+- **Status:** ✅ produzido 20/07 — arte traz "Secretaria Estadual das Mulheres (SESM) e Incaper"
+  (ordem invertida em relação ao previsto; sem problema).
 
 ---
 
@@ -127,6 +147,34 @@ Concefor — nunca uma curiosidade solta sobre ela.
 ## Ordem de produção sugerida (para não perder o ritmo)
 1. Vanessa (21/07) → 2. Tessarolo (24/07) → 3. Mariano (28/07) → 4. Rutinelli (30/07) →
 5. Márcia (31/07) → 6. Mariella (04/08) → 7. Celia Jaqueline (06/08) → cards das mesas.
+
+## Conferência dos cards recebidos (20/07/2026)
+
+Os 7 cards individuais chegaram prontos (Canva → `palestrantes - Instagram Feed.zip`, processado
+do `_inbox`). Todos em **1080×1350**, conforme a spec. Arquivos em `cards/`.
+
+### ✅ Corrigido
+
+1. **Vanessa — nome grafado errado + tipografia.** A v1 dizia "BATESTTIN"; o correto é
+   **"Battestin"**. Corrigido em 20/07. A **v3** (final) traz a grafia certa **e** o nome em
+   caixa-alta e baixa, igual aos outros 6. Versões v1 e v2 apagadas.
+
+### ✅ Decidido em 20/07 — manter como está
+
+2. **Felipe — o "TEMA" do card é o tema geral do evento** ("Tecnologia, Transformação e Educação
+   a Distância"). Decidido manter. A ⚠️ que está na entrada dele fica só como registro da dúvida.
+3. **Márcia — a arte não cita que ela é Coordenadora Geral do VIII Concefor**, e sim "Professora
+   do Ifes/Cefor e coordenadora do Programa Corte de Lovelace". Decidido manter.
+4. **Nenhum card traz data e hora da própria fala** — só o intervalo do evento (17–20 AGO 2026).
+   **Decidido: é regra da série, não esquecimento.** Dia e horário vão exclusivamente na legenda.
+   Os cards de mesa devem seguir o mesmo padrão. A spec no topo deste painel já foi ajustada.
+5. **O CTA da arte é "inscreva-se em concefor.cefor.ifes.edu.br"**, não "inscrições até 15/08".
+   O prazo aparece só na legenda. Coerente entre os 7.
+
+### Ainda faltam
+
+Os **2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") não vieram no lote — seguem a
+fazer. Legendas dos dois já estão prontas em [legendas.md](legendas.md).
 
 ## Depois de cada card pronto
 1. Salvar o PNG final na pasta do palestrante ou direto aqui em `palestrantes/`
