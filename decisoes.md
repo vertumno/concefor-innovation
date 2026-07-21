@@ -4,6 +4,24 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-21 — Brindes: logo sem numeral confirmado e cronograma da gráfica antecipado
+
+**Decisão / fatos:**
+
+1. **Logo do Concefor sem o "VIII" está resolvido.** As artes foram produzidas sem o numeral,
+   como o TR 72/2026 exige para reaproveitamento institucional. Isso **encerra a pendência 🔴**
+   que travava todas as artes de brinde e que estava aberta no board e no README da fase.
+2. **O cronograma da gráfica é mais curto que o documentado.** O que valia era "entrega até
+   07/08"; o real é: **envio das artes em 22/07**, prova digital na sequência, e **avaliação das
+   amostras pela comissão em 28/07 (terça), às 11h**. O 07/08 é só o limite contratado.
+3. **Acompanhamento das amostras em 28/07:** **Marquito e/ou Andreia**.
+4. **Duas peças em aprovação com a Márcia** desde 21/07: **camisa** em duas opções (aguardando
+   ela escolher 1 ou 2) e **bloco** em opção única (aguardando se há ajustes).
+
+**Por quê:** o prazo real muda a leitura de urgência do board. Com envio em 22/07, a escolha da
+camisa deixa de ser confortável e vira bloqueio imediato: sem a opção definida, não há o que
+mandar para a gráfica.
+
 ## 2026-07-20 — Mosaico de conexões (networking antecipado), tom no singular e R9 de código pronto
 
 **Decisão** (terceira rodada do dia, após Marquito testar o login):

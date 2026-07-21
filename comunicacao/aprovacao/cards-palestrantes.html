@@ -80,6 +80,18 @@
     border:1px solid var(--ig-border);border-radius:8px;resize:vertical;min-height:38px;display:none}
   .approve.show-obs .obs{display:block}
 
+  /* ---- ferramentas de publicação por card ---- */
+  .pub{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:11px 14px;
+    border-top:1px solid #efefef;margin-top:10px}
+  .pub-label{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;
+    color:var(--ig-muted);margin-right:2px}
+  .pub-btn{font-family:inherit;font-size:12.5px;font-weight:600;border-radius:20px;padding:6px 12px;
+    border:1px solid var(--ig-border);background:#fff;color:var(--ig-link);cursor:pointer;
+    display:inline-flex;align-items:center;gap:5px;text-decoration:none;line-height:1.2;
+    transition:background .15s,border-color .15s,color .15s}
+  .pub-btn:hover{background:#eef5ff;border-color:var(--ig-blue)}
+  .pub-btn.done{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+
   footer{max-width:470px;margin:24px auto 40px;padding:0 16px;color:var(--ig-muted);font-size:12px;
     text-align:center}
   footer a{color:var(--ig-muted)}
@@ -109,8 +121,12 @@
 <div class="intro">
   <p>Cada card abaixo aparece <b>como ficará no feed do Instagram</b>, com a legenda real que vai junto
      na publicação. A ordem é a de publicação prevista.</p>
-  <p>Em cada card, marque <b>Aprovar</b> ou <b>Pedir ajuste</b> (pode escrever a observação). No fim,
-     toque em <b>Copiar parecer</b> e cole a resposta no WhatsApp ou e-mail. Volta tudo de uma vez.</p>
+  <p><b>Para aprovar:</b> em cada card, marque <b>Aprovar</b> ou <b>Pedir ajuste</b> (pode escrever a
+     observação). No fim, toque em <b>Copiar parecer</b> e cole a resposta no WhatsApp ou e-mail.
+     Volta tudo de uma vez.</p>
+  <p><b>Na hora de publicar:</b> use a linha <b>Publicar</b> de cada card. <b>Baixar arte</b> salva o
+     PNG no seu aparelho, <b>Copiar legenda</b> leva o texto já com as hashtags e <b>Copiar alt</b>
+     leva o texto alternativo, que entra em "Configurações avançadas" no Instagram.</p>
   <div class="note">O perfil de publicação é o <b>Instagram do Cefor · @ifescefor</b>.
      O avatar aqui é só ilustrativo. O que está em aprovação é a <b>arte</b> e a <b>legenda</b>.</div>
 </div>
@@ -251,6 +267,12 @@ function render(){
         <span class="more-link" data-cap="${p.id}">… mais</span>
       </div>
       <div class="timestamp">Publicação prevista · ${p.data}</div>
+      <div class="pub" data-id="${p.id}">
+        <span class="pub-label">Publicar:</span>
+        <a class="pub-btn" href="${p.img}" download="${p.img.split('/').pop()}">⬇ Baixar arte</a>
+        <button class="pub-btn" type="button" data-a="leg">📋 Copiar legenda</button>
+        <button class="pub-btn" type="button" data-a="alt">📋 Copiar alt</button>
+      </div>
       <div class="approve ${st.obsOpen || (st.status==='fix') ? 'show-obs':''}" data-id="${p.id}">
         <div class="approve-row">
           <span class="approve-label">Aprovação:</span>
@@ -265,10 +287,50 @@ function render(){
   updateCounter();
 }
 
+/* ---------- copiar texto (usado pelos botões de publicação e pelo parecer) ---------- */
+async function copyText(txt, okMsg){
+  try {
+    await navigator.clipboard.writeText(txt);
+    toast(okMsg);
+    return true;
+  } catch(e){
+    const ta = document.createElement('textarea');
+    ta.value = txt;
+    ta.style.position = 'fixed'; ta.style.top = '-1000px'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch(_){ ok = false; }
+    ta.remove();
+    toast(ok ? okMsg : 'Não foi possível copiar');
+    return ok;
+  }
+}
+
+/* Feedback visual: o botão fica verde por um instante depois de copiar. */
+function flash(btn, label){
+  const original = btn.textContent;
+  btn.classList.add('done');
+  btn.textContent = label;
+  clearTimeout(btn._h);
+  btn._h = setTimeout(() => { btn.classList.remove('done'); btn.textContent = original; }, 1600);
+}
+
 /* ---------- interações ---------- */
 function bind(){
   document.querySelectorAll('.more-link').forEach(m => {
     m.onclick = () => { document.getElementById('cap-'+m.dataset.cap).classList.remove('clamp'); };
+  });
+  document.querySelectorAll('.pub').forEach(box => {
+    const p = posts.find(x => x.id === box.dataset.id);
+    if (!p) return;
+    box.querySelectorAll('button[data-a]').forEach(btn => {
+      btn.onclick = async () => {
+        const isLeg = btn.dataset.a === 'leg';
+        const txt = isLeg ? (p.legenda + '\n\n' + HASHTAGS) : p.alt;
+        const msg = isLeg ? 'Legenda copiada (com as hashtags)' : 'Texto alternativo copiado';
+        if (await copyText(txt, msg)) flash(btn, isLeg ? '✓ Legenda copiada' : '✓ Alt copiado');
+      };
+    });
   });
   document.querySelectorAll('.approve').forEach(box => {
     const id = box.dataset.id;
@@ -323,14 +385,8 @@ function toast(msg){
   const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('on');
   clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove('on'), 2200);
 }
-document.getElementById('btnCopy').onclick = async () => {
-  const txt = buildParecer();
-  try { await navigator.clipboard.writeText(txt); toast('Parecer copiado: cole no WhatsApp ou e-mail'); }
-  catch(e){
-    const ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta);
-    ta.select(); try{document.execCommand('copy'); toast('Parecer copiado');}catch(_){ toast('Não foi possível copiar'); }
-    ta.remove();
-  }
+document.getElementById('btnCopy').onclick = () => {
+  copyText(buildParecer(), 'Parecer copiado: cole no WhatsApp ou e-mail');
 };
 document.getElementById('btnClear').onclick = () => {
   if(confirm('Apagar todas as marcações desta página?')){ state={}; save(); render(); toast('Marcações apagadas'); }

@@ -7,69 +7,80 @@
 
 :root {
   /* --- Gradiente oceano: a alma da marca (navy → teal → ciano) --- */
-  --cf-navy-900: #102a5c; /* mais profundo */
-  --cf-navy-800: #173b79; /* navy primário (títulos, base) */
-  --cf-blue-600: #1e5a8c; /* azul de transição */
+  --cf-navy-900: #102a5c;
+  /* mais profundo */
+  --cf-navy-800: #173b79;
+  /* navy primário (títulos, base) */
+  --cf-blue-600: #1e5a8c;
+  /* azul de transição */
   --cf-teal-500: #0e8fa8;
   --cf-cyan-400: #00c9c9;
-  --cf-cyan-300: #00ddca; /* ponta luminosa do gradiente */
+  --cf-cyan-300: #00ddca;
+  /* ponta luminosa do gradiente */
 
   /* Gradiente canônico: escuro → claro (bom para fundos/heros).
      No banner a diagonal corre teal→navy; aqui padronizamos navy→teal
      por legibilidade de texto branco. Para faixas, ver --cf-gradient-band. */
-  --cf-gradient: linear-gradient(
-    135deg,
-    var(--cf-navy-900) 0%,
-    var(--cf-navy-800) 28%,
-    var(--cf-blue-600) 52%,
-    var(--cf-teal-500) 78%,
-    var(--cf-cyan-400) 100%
-  );
-  --cf-gradient-band: linear-gradient(
-    100deg,
-    var(--cf-cyan-300) 0%,
-    var(--cf-teal-500) 40%,
-    var(--cf-navy-800) 100%
-  );
+  --cf-gradient: linear-gradient(135deg,
+      var(--cf-navy-900) 0%,
+      var(--cf-navy-800) 28%,
+      var(--cf-blue-600) 52%,
+      var(--cf-teal-500) 78%,
+      var(--cf-cyan-400) 100%);
+  --cf-gradient-band: linear-gradient(100deg,
+      var(--cf-cyan-300) 0%,
+      var(--cf-teal-500) 40%,
+      var(--cf-navy-800) 100%);
 
   /* --- Acento âmbar (destaque de data/CTA no banner) --- */
   --cf-gold: #f5b82e;
   --cf-gold-deep: #e09a10;
 
   /* --- Mosaico multicolor (cubos do logo) — uso festivo, pontual --- */
-  --cf-mosaic-lime:     #7ab51d;
-  --cf-mosaic-magenta:  #d6004b;
-  --cf-mosaic-cyan:     #0ab4c4;
-  --cf-mosaic-chartreuse:#c9d400;
+  --cf-mosaic-lime: #7ab51d;
+  --cf-mosaic-magenta: #d6004b;
+  --cf-mosaic-cyan: #0ab4c4;
+  --cf-mosaic-chartreuse: #c9d400;
 
   /* --- Neutros --- */
-  --cf-white:   #ffffff;
-  --cf-ink:     #0e2240; /* texto escuro sobre fundos claros */
+  --cf-white: #ffffff;
+  --cf-ink: #0e2240;
+  /* texto escuro sobre fundos claros */
   --cf-ink-dim: #5b7088;
-  --cf-paper:   #f4f7fb; /* superfície clara levemente azulada */
-  --cf-line:    rgba(255, 255, 255, 0.14); /* divisórias sobre fundo escuro */
-  --cf-line-ink: #d9e2ee; /* divisórias sobre fundo claro */
+  --cf-paper: #f4f7fb;
+  /* superfície clara levemente azulada */
+  --cf-line: rgba(255, 255, 255, 0.14);
+  /* divisórias sobre fundo escuro */
+  --cf-line-ink: #d9e2ee;
+  /* divisórias sobre fundo claro */
 
   /* --- Tipografia ---
      INFERÊNCIA: títulos do banner em sans bold UPPERCASE levemente
      condensada → Oswald (Google Fonts) como substituta web.
      Corpo neutro → Inter. Confirmar se o arquivo-fonte do banner aparecer. */
   --cf-font-display: "Oswald", "Archivo Narrow", "Arial Narrow", system-ui, sans-serif;
-  --cf-font-body:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --cf-font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
   --cf-weight-regular: 400;
-  --cf-weight-medium:  500;
-  --cf-weight-semibold:600;
-  --cf-weight-bold:    700;
+  --cf-weight-medium: 500;
+  --cf-weight-semibold: 600;
+  --cf-weight-bold: 700;
 
   /* Escala tipográfica (base 16px) */
-  --cf-text-xs:  0.75rem;   /* 12 */
-  --cf-text-sm:  0.875rem;  /* 14 */
-  --cf-text-md:  1rem;      /* 16 */
-  --cf-text-lg:  1.25rem;   /* 20 */
-  --cf-text-xl:  1.75rem;   /* 28 */
-  --cf-text-2xl: 2.5rem;    /* 40 */
-  --cf-text-3xl: 3.5rem;    /* 56 */
+  --cf-text-xs: 0.75rem;
+  /* 12 */
+  --cf-text-sm: 0.875rem;
+  /* 14 */
+  --cf-text-md: 1rem;
+  /* 16 */
+  --cf-text-lg: 1.25rem;
+  /* 20 */
+  --cf-text-xl: 1.75rem;
+  /* 28 */
+  --cf-text-2xl: 2.5rem;
+  /* 40 */
+  --cf-text-3xl: 3.5rem;
+  /* 56 */
   --cf-tracking-title: 0.01em;
   --cf-tracking-eyebrow: 0.16em;
 

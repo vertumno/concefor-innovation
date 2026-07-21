@@ -10,23 +10,47 @@
 > [`_especificacoes/especificacoes-materiais-impressos.md`](../producao/01-brindes-promocionais/_especificacoes/especificacoes-materiais-impressos.md)
 > — síntese do **TR 72/2026** + orçamento Brindes Expresso (R$ 19.442,50). Processado em 20/07.
 >
-> 🔴 **Regra que afeta TODAS as artes desta seção:** o TR exige logomarca do Concefor
-> **sem indicação da edição** ("VIII"), para reaproveitamento institucional. O logotipo com texto
-> que temos traz "VIII" — **falta uma versão sem o numeral**. Resolver antes de fechar arte.
+> ✅ **RESOLVIDO em 21/07:** o TR exige logomarca do Concefor **sem indicação da edição** ("VIII"),
+> para reaproveitamento institucional. **As artes foram feitas sem o numeral**, confirmado pela
+> equipe. A pendência que travava todas as artes desta seção está encerrada.
 >
-> ⏰ **Entrega da gráfica: até 07/08/2026** (10 dias antes do evento), e ainda há prova digital
-> para aprovar antes disso. Ou seja, **as artes precisam estar prontas bem antes de 07/08**.
+> ⏰ **Cronograma real (atualizado em 21/07, mais curto que o previsto):**
+> | Quando | O quê |
+> |---|---|
+> | **22/07 (quarta)** | **Envio das artes para a gráfica.** É amanhã. |
+> | Depois do envio | A gráfica devolve a **prova digital** para aprovação |
+> | **28/07 (terça), 11h** | **Amostras dos brindes avaliadas pela comissão.** Acompanhar: **Marquito e/ou Andreia** |
+> | 07/08 | Prazo-limite contratado de entrega da gráfica (10 dias antes do evento) |
+>
+> Ou seja, o gargalo **não é 07/08**: é o envio de amanhã e a avaliação das amostras em 28/07.
 
 ### Itens contratados no TR 72/2026
 | Peça | Espec. contratada | Responsável | Prazo arte | Status |
 |---|---|---|---|---|
-| Arte **camisas** (Concefor, Cefor, Educimat + apoiadores) | 100 un · sublimada frente e costas | ___ | antes de 07/08 | ⬜ |
-| Arte **blocos** (selo 20 anos) | 250 un · 148,5 × 210 mm · capa e contracapa | Andreia | antes de 07/08 | ⬜ |
+| Arte **camisas** (Concefor, Cefor, Educimat + apoiadores) | 100 un · sublimada frente e costas | ___ | antes de 07/08 | 🔵 **com a Márcia desde 21/07, aguardando escolha entre opção 1 e 2** |
+| Arte **blocos** (selo 20 anos) | 250 un · 148,5 × 210 mm · capa e contracapa | Andreia | antes de 07/08 | 🔵 **com a Márcia desde 21/07, opção única, aguardando ajustes** |
 | Arte **bolsa de algodão** | 400 un · 280 × 350 × 80 mm · estampa colorida | ___ | antes de 07/08 | ⬜ |
 | Arte **canetas** | 400 un · azul · logomarca colorida | ___ | antes de 07/08 | ⬜ |
 | Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | ___ | antes de 07/08 | ⬜ |
-| Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | ⬜ |
+| Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | 🔵 **finalizado 21/07, com a Márcia para aprovação** (4 variantes) |
 | Arte **banners** (10 un · 0,90 × 1,20 m) — **conteúdo a definir** | 10 un · 0,90 × 1,20 m | ___ | antes de 07/08 | ⬜ |
+
+> ❓ **Crachá: falta definir o rateio das 400 unidades.** A arte tem **4 variantes** em
+> [`cracha/3x/`](../producao/01-brindes-promocionais/cracha/3x/): **normal** (nome + nome completo),
+> **palestrante** (faixa escura "PALESTRANTE" + nome + instituição), **qrcode** (nome + QR abaixo)
+> e **inscrição**. O TR contratou 400 crachás no total, sem dizer quantos de cada tipo.
+> Definir antes de mandar para a gráfica.
+
+> 🔵 **Em aprovação com a Márcia desde 21/07:**
+> - **Camisa:** duas opções na mesma imagem, em
+>   [`camiseta/1x/camisa_aprovacao.png`](../producao/01-brindes-promocionais/camiseta/1x/camisa_aprovacao.png).
+>   **Opção 1:** selo 20 anos grande e sozinho na frente; costas com logo Concefor no topo,
+>   Realização e Apoio. **Opção 2:** logo Concefor no peito com o selo abaixo; costas só com
+>   Realização e Apoio. Aguardando ela dizer 1 ou 2.
+> - **Bloco:** opção única, em
+>   [`bloco/1x/bloco_aprovacao.png`](../producao/01-brindes-promocionais/bloco/1x/bloco_aprovacao.png).
+>   Capa com logo Concefor e faixa azul degradê (Ifes/Cefor + selo 20 anos); fundo com Apoio
+>   (Ifes Campus Vila Velha e Educimat) e os dados de contato do Cefor. Aguardando se há ajustes.
 
 > 🎯 **Os 10 banners contratados ainda serão distribuídos.** Definição de 20/07: entram nesses 10
 > (a **confirmar** o rateio) → **banner padrão do Concefor**, **banner de sinalização/programação**
