@@ -49,7 +49,7 @@ const PROGRAMA: Raw[] = [
   { id: "mesa-tecnologia-delas", d: 18, ini: "09:30", fim: "11:30", titulo: "Mesa-redonda: Tecnologia Delas", descricao: "Protagonismo feminino em tecnologia e educação.", sala: "Auditório", eixo: "Mesa-redonda", palestrante: "Dra. Márcia Oliveira · Dra. Jaqueline Sanz · Dra. Mariella Berger", speakerIds: ["marcia-oliveira", "jaqueline-sanz", "mariella-berger"] },
   { id: "mostra-2", d: 18, ini: "11:30", fim: "13:00", titulo: "Mostra de Produtos e Produções Técnicas", descricao: "Continuação da mostra.", sala: null, eixo: "Mostra", palestrante: null },
   { id: "sessoes-18t", d: 18, ini: "13:30", fim: "14:30", titulo: "Sessões técnicas — apresentação de artigos", descricao: "Comunicações orais de artigos completos.", sala: null, eixo: "Sessões técnicas", palestrante: null },
-  { id: "palestra-tessarolo", d: 18, ini: "14:30", fim: "16:00", titulo: "Palestra internacional: Tecnologia, Transformação e EaD — 20 anos", descricao: "Conferência internacional do evento.", sala: "Auditório", eixo: "Palestra", palestrante: "Prof. Dr. Felipe Maciel Tessarolo (The Open University – UK)", speakerIds: ["felipe-tessarolo"] },
+  { id: "palestra-tessarolo", d: 18, ini: "14:30", fim: "16:00", titulo: "Palestra internacional: Tecnologia, Transformação e EaD — 20 anos", descricao: "Conferência internacional do evento.", sala: "Auditório", eixo: "Palestra", palestrante: "Felipe Maciel Tessarolo (The Open University, UK)", speakerIds: ["felipe-tessarolo"] },
   { id: "coffee-18", d: 18, ini: "16:00", fim: "16:30", titulo: "Coffee-break", descricao: null, sala: null, eixo: "Intervalo", palestrante: null },
 
   // ───────── Quarta 19/08 ─────────

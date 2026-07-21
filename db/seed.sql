@@ -39,7 +39,7 @@ insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fi
    '2026-08-18T11:30:00-03:00', '2026-08-18T13:00:00-03:00'),
   ('sessoes-18t', 'Sessões técnicas — apresentação de artigos', 'Comunicações orais de artigos completos.', null, 'Sessões técnicas', null,
    '2026-08-18T13:30:00-03:00', '2026-08-18T14:30:00-03:00'),
-  ('palestra-tessarolo', 'Palestra internacional: Tecnologia, Transformação e EaD — 20 anos', 'Conferência internacional do evento.', 'Auditório', 'Palestra', 'Prof. Dr. Felipe Maciel Tessarolo (The Open University – UK)',
+  ('palestra-tessarolo', 'Palestra internacional: Tecnologia, Transformação e EaD — 20 anos', 'Conferência internacional do evento.', 'Auditório', 'Palestra', 'Felipe Maciel Tessarolo (The Open University, UK)',
    '2026-08-18T14:30:00-03:00', '2026-08-18T16:00:00-03:00'),
   ('coffee-18', 'Coffee-break', null, null, 'Intervalo', null,
    '2026-08-18T16:00:00-03:00', '2026-08-18T16:30:00-03:00'),

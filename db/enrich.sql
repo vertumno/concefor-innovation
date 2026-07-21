@@ -31,7 +31,7 @@ insert or ignore into session_speakers (session_id, speaker_id)
 -- Resumo textual do palestrante (fallback dos cards) onde o sync deixou nulo.
 update sessions set palestrante = 'Dra. Vanessa Battestin'
  where id like 'even3-1412335-%' and palestrante is null;
-update sessions set palestrante = 'Dr. Felipe Maciel Tessarolo (The Open University – UK)'
+update sessions set palestrante = 'Felipe Maciel Tessarolo (The Open University, UK)'
  where id like 'even3-1412345-%' and palestrante is null;
 update sessions set palestrante = 'Dr. Mariano Pimentel'
  where id like 'even3-1412354-%' and palestrante is null;
