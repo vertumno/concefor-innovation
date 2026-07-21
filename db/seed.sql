@@ -11,8 +11,10 @@ insert into speakers (id, nome, titulo, instituicao) values
   ('marcia-oliveira',   'Márcia Oliveira',          'Dra.',        null),
   ('jaqueline-sanz',    'Jaqueline Sanz',           'Dra.',        null),
   ('mariella-berger',   'Mariella Berger',          'Dra.',        null),
-  ('felipe-tessarolo',  'Felipe Maciel Tessarolo',  'Prof. Dr.',   'The Open University – UK'),
-  ('mariano-pimentel',  'Mariano Pimentel',         'Prof. Dr.',   null);
+  ('felipe-tessarolo',  'Felipe Maciel Tessarolo',  null,          'The Open University, UK'),
+  ('mariano-pimentel',  'Mariano Pimentel',         'Prof. Dr.',   null),
+  ('rutinelli-favero',  'Rutinelli da Penha Fávero','Dra.',        null),
+  ('mauro-oliveira',    'Mauro Oliveira',           'Dr.',         null);
 
 -- ───────── Programação ─────────
 insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fim) values
@@ -27,8 +29,10 @@ insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fi
    '2026-08-17T18:30:00-03:00', '2026-08-17T19:00:00-03:00'),
   ('palestra-vanessa', '20 anos de EaD e o Cefor', 'Palestra de abertura sobre as duas décadas do Cefor.', 'Auditório', 'Palestra', 'Profa. Dra. Vanessa Battestin',
    '2026-08-17T19:00:00-03:00', '2026-08-17T20:00:00-03:00'),
+  ('lancamentos', 'Lançamentos', 'E-book dos 20 anos do Cefor, e-book do NTE, nova plataforma de MOOCs e nova versão da Base de Conhecimento.', 'Auditório', 'Solenidade', null,
+   '2026-08-17T20:00:00-03:00', '2026-08-17T20:30:00-03:00'),
   ('celebracao', 'Celebração dos 20 anos do Cefor', 'Comemoração do aniversário de 20 anos.', 'Auditório', 'Solenidade', null,
-   '2026-08-17T20:00:00-03:00', '2026-08-17T21:00:00-03:00'),
+   '2026-08-17T20:30:00-03:00', '2026-08-17T21:30:00-03:00'),
 
   -- Terça 18/08
   ('mostra-1', 'Mostra de Produtos e Produções Técnicas', 'Exposição de produtos e produções técnicas.', null, 'Mostra', null,
@@ -49,7 +53,7 @@ insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fi
    '2026-08-19T08:00:00-03:00', '2026-08-19T09:00:00-03:00'),
   ('momento-cultural', 'Momento Cultural', null, 'Auditório', 'Cultural', null,
    '2026-08-19T09:00:00-03:00', '2026-08-19T09:30:00-03:00'),
-  ('mesa-desafios', 'Mesa-redonda: Desafios da EaD para os próximos 20 anos', 'Debate com convidados locais.', 'Auditório', 'Mesa-redonda', 'Convidados locais',
+  ('mesa-desafios', 'Mesa-redonda: Desafios da EaD para os próximos 20 anos', 'Debate Brasil e Reino Unido sobre o futuro da EaD.', 'Auditório', 'Mesa-redonda', 'Felipe Maciel Tessarolo · Dra. Rutinelli da Penha Fávero',
    '2026-08-19T09:30:00-03:00', '2026-08-19T11:30:00-03:00'),
   ('sessoes-19t', 'Sessões técnicas — apresentação de artigos', 'Comunicações orais de artigos completos.', null, 'Sessões técnicas', null,
    '2026-08-19T13:30:00-03:00', '2026-08-19T14:30:00-03:00'),
@@ -57,6 +61,8 @@ insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fi
    '2026-08-19T14:30:00-03:00', '2026-08-19T16:00:00-03:00'),
   ('coffee-19', 'Coffee-break', null, null, 'Intervalo', null,
    '2026-08-19T16:00:00-03:00', '2026-08-19T16:30:00-03:00'),
+  ('palestra-mauro', 'Inovações da IA para a Educação', 'Palestra sobre inovações de inteligência artificial aplicadas à educação.', 'Auditório', 'Palestra', 'Dr. Mauro Oliveira',
+   '2026-08-19T16:30:00-03:00', '2026-08-19T18:00:00-03:00'),
 
   -- Quinta 20/08
   ('paralelos-1', 'Momento I — Eventos paralelos', 'Programação dos eventos paralelos (a divulgar).', null, 'Evento paralelo', null,
@@ -77,4 +83,7 @@ insert into session_speakers (session_id, speaker_id) values
   ('mesa-tecnologia-delas',  'jaqueline-sanz'),
   ('mesa-tecnologia-delas',  'mariella-berger'),
   ('palestra-tessarolo',     'felipe-tessarolo'),
-  ('palestra-mariano',       'mariano-pimentel');
+  ('palestra-mariano',       'mariano-pimentel'),
+  ('mesa-desafios',          'felipe-tessarolo'),
+  ('mesa-desafios',          'rutinelli-favero'),
+  ('palestra-mauro',         'mauro-oliveira');

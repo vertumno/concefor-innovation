@@ -17,8 +17,10 @@ const SPEAKERS: Speaker[] = [
   { id: "marcia-oliveira", nome: "Márcia Oliveira", titulo: "Dra.", instituicao: null, bio: null, foto: null },
   { id: "jaqueline-sanz", nome: "Jaqueline Sanz", titulo: "Dra.", instituicao: null, bio: null, foto: null },
   { id: "mariella-berger", nome: "Mariella Berger", titulo: "Dra.", instituicao: null, bio: null, foto: null },
-  { id: "felipe-tessarolo", nome: "Felipe Maciel Tessarolo", titulo: "Prof. Dr.", instituicao: "The Open University – UK", bio: null, foto: null },
+  { id: "felipe-tessarolo", nome: "Felipe Maciel Tessarolo", titulo: null, instituicao: "The Open University, UK", bio: null, foto: null },
   { id: "mariano-pimentel", nome: "Mariano Pimentel", titulo: "Prof. Dr.", instituicao: null, bio: null, foto: null },
+  { id: "rutinelli-favero", nome: "Rutinelli da Penha Fávero", titulo: "Dra.", instituicao: null, bio: null, foto: null },
+  { id: "mauro-oliveira", nome: "Mauro Oliveira", titulo: "Dr.", instituicao: null, bio: null, foto: null },
 ];
 
 export function getDemoSpeakers(): Speaker[] {
@@ -42,7 +44,8 @@ const PROGRAMA: Raw[] = [
   { id: "momento-musical", d: 17, ini: "18:00", fim: "18:30", titulo: "Momento Musical", descricao: null, sala: "Auditório", eixo: "Cultural", palestrante: null },
   { id: "abertura", d: 17, ini: "18:30", fim: "19:00", titulo: "Abertura oficial", descricao: "Cerimônia de abertura do VIII Concefor.", sala: "Auditório", eixo: "Solenidade", palestrante: null },
   { id: "palestra-vanessa", d: 17, ini: "19:00", fim: "20:00", titulo: "20 anos de EaD e o Cefor", descricao: "Palestra de abertura sobre as duas décadas do Cefor.", sala: "Auditório", eixo: "Palestra", palestrante: "Profa. Dra. Vanessa Battestin", speakerIds: ["vanessa-battestin"] },
-  { id: "celebracao", d: 17, ini: "20:00", fim: "21:00", titulo: "Celebração dos 20 anos do Cefor", descricao: "Comemoração do aniversário de 20 anos.", sala: "Auditório", eixo: "Solenidade", palestrante: null },
+  { id: "lancamentos", d: 17, ini: "20:00", fim: "20:30", titulo: "Lançamentos", descricao: "E-book dos 20 anos do Cefor, e-book do NTE, nova plataforma de MOOCs e nova versão da Base de Conhecimento.", sala: "Auditório", eixo: "Solenidade", palestrante: null },
+  { id: "celebracao", d: 17, ini: "20:30", fim: "21:30", titulo: "Celebração dos 20 anos do Cefor", descricao: "Comemoração do aniversário de 20 anos.", sala: "Auditório", eixo: "Solenidade", palestrante: null },
 
   // ───────── Terça 18/08 ─────────
   { id: "mostra-1", d: 18, ini: "08:00", fim: "09:30", titulo: "Mostra de Produtos e Produções Técnicas", descricao: "Exposição de produtos e produções técnicas.", sala: null, eixo: "Mostra", palestrante: null },
@@ -55,10 +58,11 @@ const PROGRAMA: Raw[] = [
   // ───────── Quarta 19/08 ─────────
   { id: "sessoes-19m", d: 19, ini: "08:00", fim: "09:00", titulo: "Sessões técnicas — apresentação de artigos", descricao: "Comunicações orais de artigos completos.", sala: null, eixo: "Sessões técnicas", palestrante: null },
   { id: "momento-cultural", d: 19, ini: "09:00", fim: "09:30", titulo: "Momento Cultural", descricao: null, sala: "Auditório", eixo: "Cultural", palestrante: null },
-  { id: "mesa-desafios", d: 19, ini: "09:30", fim: "11:30", titulo: "Mesa-redonda: Desafios da EaD para os próximos 20 anos", descricao: "Debate com convidados locais.", sala: "Auditório", eixo: "Mesa-redonda", palestrante: "Convidados locais" },
+  { id: "mesa-desafios", d: 19, ini: "09:30", fim: "11:30", titulo: "Mesa-redonda: Desafios da EaD para os próximos 20 anos", descricao: "Debate Brasil e Reino Unido sobre o futuro da EaD.", sala: "Auditório", eixo: "Mesa-redonda", palestrante: "Felipe Maciel Tessarolo · Dra. Rutinelli da Penha Fávero", speakerIds: ["felipe-tessarolo", "rutinelli-favero"] },
   { id: "sessoes-19t", d: 19, ini: "13:30", fim: "14:30", titulo: "Sessões técnicas — apresentação de artigos", descricao: "Comunicações orais de artigos completos.", sala: null, eixo: "Sessões técnicas", palestrante: null },
   { id: "palestra-mariano", d: 19, ini: "14:30", fim: "16:00", titulo: "Desafios da EaD e as ondas de IA", descricao: "Palestra sobre inteligência artificial na educação a distância.", sala: "Auditório", eixo: "Palestra", palestrante: "Prof. Dr. Mariano Pimentel", speakerIds: ["mariano-pimentel"] },
   { id: "coffee-19", d: 19, ini: "16:00", fim: "16:30", titulo: "Coffee-break", descricao: null, sala: null, eixo: "Intervalo", palestrante: null },
+  { id: "palestra-mauro", d: 19, ini: "16:30", fim: "18:00", titulo: "Inovações da IA para a Educação", descricao: "Palestra sobre inovações de inteligência artificial aplicadas à educação.", sala: "Auditório", eixo: "Palestra", palestrante: "Dr. Mauro Oliveira", speakerIds: ["mauro-oliveira"] },
 
   // ───────── Quinta 20/08 ─────────
   { id: "paralelos-1", d: 20, ini: "09:00", fim: "12:00", titulo: "Momento I — Eventos paralelos", descricao: "Programação dos eventos paralelos (a divulgar).", sala: null, eixo: "Evento paralelo", palestrante: null },
