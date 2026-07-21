@@ -157,8 +157,8 @@ Card do VIII Concefor com foto da Dra. Jaqueline Sanz. Mesa-redonda Tecnologia D
 
 ## 8 · Mesa "Desafios da EaD para os próximos 20 anos" · publicar 01/08
 
-> ⚠️ No momento da publicação, confirmar se mais convidados locais entraram na mesa.
-> Ajustar a legenda antes de postar.
+> ✅ Composição fechada (site oficial, 21/07/2026): a mesa é só Felipe Maciel Tessarolo e
+> Dra. Rutinelli da Penha Fávero. Não há mais convidados locais a confirmar.
 
 ### Instagram
 Quais serão os desafios da educação a distância para os próximos 20 anos? Brasil e Reino Unido debatem juntos na mesa-redonda "Desafios da EaD para os próximos 20 anos", com a Dra. Rutinelli da Penha Fávero e Felipe Maciel Tessarolo (The Open University). Dia 19/08, às 9h30.

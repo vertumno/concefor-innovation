@@ -14,6 +14,7 @@
 | Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | ⬜ |
+| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ⬜ | ⬜ | ⬜ | ⬜ |
 
 > ✅ Fotos oficiais dos 7 recebidas em 16/07/2026 →
 > `producao/02-pre-evento/palestrantes/_refs/fotos/` (PNG, nome = nome do palestrante).
@@ -97,3 +98,18 @@ Coordenou a pós em Tecnologias Educacionais. Temas: tecnologia e educação, ga
 formação docente. Participa da mesa **"Desafios da EaD para os próximos 20 anos"** (19/08, 9h30),
 com Felipe Maciel Tessarolo.
 - **Instagram:** @rutinha_fav
+
+### Dr. Mauro Oliveira
+> 🆕 **Entrou na programação em 21/07/2026**, na atualização do site oficial. É o oitavo
+> palestrante e ainda **não temos nada dele** além do nome e do título da palestra.
+>
+> Pendências antes de produzir card e legenda:
+> - `[a confirmar]` instituição e minibio
+> - `[a confirmar]` foto oficial (as dos outros 7 estão em `producao/02-pre-evento/palestrantes/_refs/fotos/`)
+> - `[a confirmar]` Instagram
+>
+> Card agendado para **11/08**, último da série, para dar prazo até os dados chegarem.
+
+- **Palestra:** *"Inovações da IA para a Educação"* (19/08, 16h30), logo após o coffee-break.
+- O tema conversa direto com a palestra do Mariano Pimentel no mesmo dia, também sobre IA na
+  educação. Dá material para um card ou story ligando as duas.

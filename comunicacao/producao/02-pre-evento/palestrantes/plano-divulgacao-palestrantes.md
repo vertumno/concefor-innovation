@@ -29,19 +29,20 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 | 5 | 31/07 | Dra. Márcia Oliveira | Mesa "Tecnologia Delas" (18/08) + Coordenadora Geral | ⬜ |
 | 6 | 04/08 | Dra. Mariella Berger | Mesa "Tecnologia Delas" (18/08) | ⬜ |
 | 7 | 06/08 | Dra. Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ⬜ |
+| 8 | 11/08 | Dr. Mauro Oliveira | Palestra "Inovações da IA para a Educação" (19/08, 16h30) | 🆕 sem foto, sem minibio |
 
 ## Cronograma — Cards das mesas (sessões)
 > Além dos cards individuais, cada **mesa-redonda** ganha seu card, promovendo a sessão como um todo.
 
 | Card | Data | Participantes | Status |
 |---|---|---|---|
-| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli Fávero + Felipe Tessarolo + convidados locais (demais nomes a confirmar) | ⬜ |
+| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli Fávero + Felipe Tessarolo (composição fechada em 21/07) | ⬜ |
 | Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia Oliveira, Mariella Berger, Jaqueline Sanz | ⬜ |
 
-> As 3 palestrantes da mesa "Tecnologia Delas" já têm card individual (ordens 5–7); o card da
+> As 3 palestrantes da mesa "Tecnologia Delas" já têm card individual (ordens 5 a 7); o card da
 > mesa reúne as três e reforça a sessão. A Rutinelli integra a mesa "Desafios da EaD" e tem
-> card individual (ordem 4); o card da mesa pode ser divulgado desde já e atualizado quando os
-> demais convidados forem confirmados.
+> card individual (ordem 4). A composição da mesa "Desafios da EaD" fechou em 21/07 com
+> Rutinelli e Felipe Tessarolo, então o card pode sair sem ressalva.
 > Ordem geral: abre com a palestra de abertura (âncora dos 20 anos), depois o internacional,
 > depois IA, depois a Rutinelli e a sequência da mesa "Tecnologia Delas".
 
@@ -71,6 +72,8 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 - [x] Coletar fotos oficiais em alta de todos os palestrantes → `_refs/fotos/` (7 fotos recebidas em 16/07)
 - [x] Dra. Rutinelli confirmada na mesa "Desafios da EaD para os próximos 20 anos" (19/08, 9h30)
 - [x] Felipe Tessarolo confirmado na mesa "Desafios da EaD para os próximos 20 anos" (16/07)
-- [ ] Confirmar os demais convidados locais da mesa "Desafios da EaD" (card agendado para 01/08 — atualizar depois)
+- [x] Confirmar a composição da mesa "Desafios da EaD": fechada em 21/07 com Rutinelli e Felipe Tessarolo
+- [ ] Pedir foto oficial, minibio e Instagram do **Dr. Mauro Oliveira** (entrou na programação em 21/07)
+- [x] Definir a data de publicação do card do Mauro Oliveira: **11/08**, último da série (decidido em 21/07, para dar prazo aos dados dele chegarem)
 - [ ] Definir quem envia a mensagem de solicitação de vídeo (sugestão: coordenação geral,
       por dar peso institucional — com apoio da CGTE)

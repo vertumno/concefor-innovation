@@ -30,7 +30,7 @@ const speakers = [
   ["marcia-oliveira", "Márcia Oliveira", "Dra.", null],
   ["jaqueline-sanz", "Jaqueline Sanz", "Dra.", null],
   ["mariella-berger", "Mariella Berger", "Dra.", null],
-  ["felipe-tessarolo", "Felipe Maciel Tessarolo", "Prof. Dr.", "The Open University – UK"],
+  ["felipe-tessarolo", "Felipe Maciel Tessarolo", null, "The Open University, UK"],
   ["mariano-pimentel", "Mariano Pimentel", "Prof. Dr.", null],
 ];
 const insSpk = db.prepare("insert into speakers (id, nome, titulo, instituicao) values (?, ?, ?, ?)");

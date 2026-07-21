@@ -84,9 +84,8 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **No card — info breve do palestrante:** Dra. Rutinelli da Penha Fávero · Professora do Ifes
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   ela pesquisa tecnologia, gamificação e formação docente — temas do próprio debate da mesa.
-- ⚠️ **Atenção:** Felipe Tessarolo confirmado na mesa (16/07); demais convidados locais ainda
-  **não confirmados** — o card individual da Rutinelli pode sair normalmente; o card **da
-  mesa** (item separado, ver abaixo) já pode citar Rutinelli + Tessarolo.
+- ✅ **Mesa fechada** (site oficial, 21/07/2026): só Rutinelli e Felipe Tessarolo. A dúvida sobre
+  convidados locais, aberta desde 16/07, está resolvida.
 - **Arquivo:** `cards/2026-07-20_pre_card_palestrante-rutinelli-favero_v1.png`
 - **Status:** ✅ produzido 20/07 — arte traz "Professora do Ifes/Cefor" (previsto era
   "Professora do Ifes"); ajuste correto, ela é do Cefor.
@@ -137,13 +136,29 @@ Concefor — nunca uma curiosidade solta sobre ela.
   Arte atual: nome + "Coordenadora do Atlas das Mulheres do ES, Secretaria Estadual das Mulheres
   (SESM) e Incaper". V1 e v2 apagadas.
 
+## 8 · Dr. Mauro Oliveira · publicar 11/08
+
+> 🆕 **Entrou na programação em 21/07/2026**, na atualização do site oficial. É o oitavo
+> palestrante e **ainda não dá para produzir o card**: falta tudo.
+
+- **Foto:** `[a confirmar]` (pedir foto oficial, mesmo padrão dos outros 7)
+- **No card · nome da palestra:** *"Inovações da IA para a Educação"* · 19/08, 16h30
+- **No card · info breve do palestrante:** `[a confirmar]` instituição e cargo
+- **Gancho para abrir a legenda:** `[a escrever]` depois da minibio. O tema conversa direto com a
+  palestra do Mariano Pimentel no mesmo dia, o que dá um bom ângulo.
+- **Arquivo:** ainda não existe
+- **Status:** ⛔ **bloqueado.** Sem foto e sem minibio não há o que produzir. Ver as pendências em
+  [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md).
+- **Por que é o último da série:** ficou em 11/08 justamente para dar o maior prazo possível
+  até os dados dele chegarem. Ainda assim publica 4 dias antes do fim das inscrições (15/08).
+
 ---
 
 ## Cards das mesas (além dos individuais)
 
 | Card | Data | Quem entra | Trava |
 |---|---|---|---|
-| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli + Felipe Tessarolo + convidados locais | 🟡 pode produzir com os 2 confirmados; atualizar se mais nomes entrarem |
+| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli + Felipe Tessarolo | ✅ pode produzir, composição fechada em 21/07 |
 | Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia Oliveira, Mariella Berger, Jaqueline Sanz | ✅ pode produzir, todas confirmadas |
 
 **No card (arte) — nome da mesa + participantes, nada além disso:**
@@ -158,7 +173,8 @@ Concefor — nunca uma curiosidade solta sobre ela.
 
 ## Ordem de produção sugerida (para não perder o ritmo)
 1. Vanessa (21/07) → 2. Tessarolo (24/07) → 3. Mariano (28/07) → 4. Rutinelli (30/07) →
-5. Márcia Oliveira (31/07) → 6. Mariella (04/08) → 7. Jaqueline Sanz (06/08) → cards das mesas.
+5. Márcia Oliveira (31/07) → 6. Mariella (04/08) → 7. Jaqueline Sanz (06/08) → cards das mesas
+→ 8. Mauro Oliveira (11/08, fecha a série assim que os dados dele chegarem).
 
 ## Conferência dos cards recebidos (20/07/2026)
 
@@ -210,8 +226,9 @@ do `_inbox`). Todos em **1080×1350**, conforme a spec. Arquivos em `cards/`.
 
 ### Ainda faltam
 
-Os **2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") não vieram no lote — seguem a
-fazer. Legendas dos dois já estão prontas em [legendas.md](legendas.md).
+1. Os **2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") não vieram no lote. As legendas
+   dos dois já estão prontas em [legendas.md](legendas.md), então é só a arte.
+2. O **card do Dr. Mauro Oliveira** (item 8 acima), bloqueado até chegarem foto e minibio.
 
 ## Depois de cada card pronto
 1. Salvar o PNG final na pasta do palestrante ou direto aqui em `palestrantes/`

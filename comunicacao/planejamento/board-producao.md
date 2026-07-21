@@ -53,7 +53,8 @@
 | Card palestrante — Mariella Berger — arte liberada | Elton *(a princípio)* | publicar 04/08 | 🔵 |
 | Card palestrante — Jaqueline Sanz — arte liberada | Elton *(a princípio)* | publicar 06/08 | 🔵 |
 | Card mesa "Tecnologia Delas" — **arte ainda não produzida** (legenda pronta) | Elton *(a princípio)* | ⚠️ 31/07 aqui × **07/08** nas legendas — definir | ⬜ |
-| Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta) | Elton *(a princípio)* | ⚠️ 04/08 aqui × **01/08** nas legendas — definir | ⬜ |
+| Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton *(a princípio)* | ⚠️ 04/08 aqui × **01/08** nas legendas — definir | ⬜ |
+| 🆕 Card palestrante — Mauro Oliveira — **bloqueado**: sem foto e sem minibio (entrou na programação em 21/07) | Elton *(a princípio)* | publicar 11/08 (último da série) | ⛔ |
 | Mensagem aos palestrantes (pedido de vídeo) | Elton *(a princípio)* | enviar até 18/07 | ⬜ |
 | Vídeos-convite dos palestrantes (receber até 03/08) | Elton *(a princípio)* | reels 08–14/08 | ⬜ |
 | Cards eventos paralelos (aguardando Educimat; **publicar tudo junto** após liberação da Márcia) | Elton *(a princípio)* | sugerido 01–06/08 | ⬜ |
