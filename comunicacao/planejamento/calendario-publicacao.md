@@ -24,7 +24,7 @@
 | 03/08 | Marco: prazo de envio final (Even3) + prazo interno dos vídeos | — | ⬜ |
 | 04/08 | Card palestrante — Mariella Berger (mesa "Tecnologia Delas") | Feed | ⬜ |
 | 05/08 | Eventos paralelos — carrossel dos 5 satélites | Feed | ⬜ |
-| 06/08 | Card palestrante — Celia Jaqueline Sanz (mesa "Tecnologia Delas") | Feed | ⬜ |
+| 06/08 | Card palestrante — Jaqueline Sanz (mesa "Tecnologia Delas") | Feed | ⬜ |
 | 07/08 | Card mesa — "Tecnologia Delas" (as três juntas) | Feed | ⬜ |
 | 07/08 | Contagem regressiva: faltam 10 dias | Feed/Story | ⬜ |
 | 08/08 | Regressiva: 9 dias · Reel vídeo-convite Vanessa Battestin | Story/Reel | ⬜ |

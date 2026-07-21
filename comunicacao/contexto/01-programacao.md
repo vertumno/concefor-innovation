@@ -20,7 +20,7 @@
 | 9h30 | Mesa-Redonda *"Tecnologia Delas"* — Dra. Márcia Oliveira, Dra. Jaqueline Sanz, Dra. Mariella Berger |
 | 11h30 | Mostra de Produtos e Produções Técnicas — Painel |
 | 13h30 | Sessões técnicas — artigos completos |
-| 14h30 | Palestra internacional — Dr. Felipe Maciel Tessarolo (The Open University, UK) |
+| 14h30 | Palestra internacional · Felipe Maciel Tessarolo (The Open University, UK) |
 | 16h00 | Coffee-break |
 
 ## Quarta-feira — 19/08/2026
@@ -28,7 +28,7 @@
 |---|---|
 | 8h00 | Sessões técnicas — artigos completos |
 | 9h00 | Momento Cultural |
-| 9h30 | Mesa-Redonda *"Desafios da EaD para os próximos 20 anos"* — Dra. Rutinelli da Penha Fávero, Dr. Felipe Maciel Tessarolo + convidados locais |
+| 9h30 | Mesa-Redonda *"Desafios da EaD para os próximos 20 anos"* — Dra. Rutinelli da Penha Fávero, Felipe Maciel Tessarolo + convidados locais |
 | 13h30 | Sessões técnicas — artigos completos |
 | 14h30 | Palestra *"Desafios da EaD e as ondas de IA"* — Dr. Mariano Pimentel |
 | 16h00 | Coffee-break |

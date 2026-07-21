@@ -51,7 +51,7 @@
 | Card palestrante — Rutinelli Fávero — arte liberada | Elton *(a princípio)* | publicar 30/07 | 🔵 |
 | Card palestrante — Márcia Oliveira — arte liberada | Elton *(a princípio)* | publicar 31/07 | 🔵 |
 | Card palestrante — Mariella Berger — arte liberada | Elton *(a princípio)* | publicar 04/08 | 🔵 |
-| Card palestrante — Celia Jaqueline Sanz — arte liberada | Elton *(a princípio)* | publicar 06/08 | 🔵 |
+| Card palestrante — Jaqueline Sanz — arte liberada | Elton *(a princípio)* | publicar 06/08 | 🔵 |
 | Card mesa "Tecnologia Delas" — **arte ainda não produzida** (legenda pronta) | Elton *(a princípio)* | ⚠️ 31/07 aqui × **07/08** nas legendas — definir | ⬜ |
 | Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta) | Elton *(a princípio)* | ⚠️ 04/08 aqui × **01/08** nas legendas — definir | ⬜ |
 | Mensagem aos palestrantes (pedido de vídeo) | Elton *(a princípio)* | enviar até 18/07 | ⬜ |

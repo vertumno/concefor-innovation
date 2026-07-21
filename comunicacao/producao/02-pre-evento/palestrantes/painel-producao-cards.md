@@ -44,7 +44,9 @@ Concefor — nunca uma curiosidade solta sobre ela.
   nome em caixa-alta; **v3 (20/07)** corrige a grafia **e** alinha a tipografia (caixa-alta e baixa,
   igual aos outros 6). Versões anteriores apagadas.
 
-## 2 · Dr. Felipe Maciel Tessarolo — publicar 24/07
+## 2 · Felipe Maciel Tessarolo · publicar 24/07
+
+> ⚠️ **Sem "Dr." no nome** (definido em 21/07/2026): ele ainda não é doutor.
 
 - **Foto:** `_refs/fotos/Felipe_Maciel_Tessarolo.png`
 - **No card — nome da palestra:** ⚠️ o título documentado em `contexto/03-palestrantes.md` é
@@ -52,16 +54,17 @@ Concefor — nunca uma curiosidade solta sobre ela.
   construindo novos cenários educacionais") — **confirmar com o Felipe/coordenação se esse é
   mesmo o título da palestra dele** ou se falta um título específico. Até confirmar, usar
   "**Palestra internacional**" como chamada no card. 18/08, 14h30.
-- **No card — info breve do palestrante:** Dr. Felipe Maciel Tessarolo · The Open University
+- **No card — info breve do palestrante:** Felipe Maciel Tessarolo · The Open University
   (Reino Unido)
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   IA aplicada ao ensino, acessibilidade e personalização em larga escala — os mesmos temas em
   que atua na prática.
 - **Também participa** da mesa "Desafios da EaD" (19/08) — confirmado em 16/07.
-- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-felipe-tessarolo_v1.png`
-- **Status:** ✅ liberado — a arte usa "TEMA: Tecnologia, Transformação e Educação a Distância"
-  (igual ao tema geral do evento). **Decidido em 20/07 manter assim**; a ⚠️ acima fica só como
-  registro histórico da dúvida.
+- **Arquivo:** `cards/2026-07-21_pre_card_palestrante-felipe-tessarolo_v2.png`
+- **Status:** ✅ **liberado (v2, 21/07).** A v1 trazia "Dr. Felipe Tessarolo"; a **v2 traz
+  "Felipe Tessarolo"**, sem título acadêmico. V1 apagada.
+  O "TEMA: Tecnologia, Transformação e Educação a Distância" (igual ao tema geral do evento)
+  foi **decidido em 20/07 e permanece**.
 
 ## 3 · Dr. Mariano Pimentel — publicar 28/07
 
@@ -88,19 +91,23 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Status:** ✅ produzido 20/07 — arte traz "Professora do Ifes/Cefor" (previsto era
   "Professora do Ifes"); ajuste correto, ela é do Cefor.
 
-## 5 · Dra. Márcia Gonçalves de Oliveira — publicar 31/07
+## 5 · Dra. Márcia Oliveira · publicar 31/07
+
+> ⚠️ **Nome:** o completo, "Dra. Márcia Gonçalves de Oliveira", também está correto.
+> **Ao abreviar, usar "Márcia Oliveira", nunca "Márcia Gonçalves"** (definido em 21/07/2026).
 
 - **Foto:** `_refs/fotos/Marcia_Gonçalves_de_Oliveira.png`
 - **No card — nome da palestra:** Mesa · *"Tecnologia Delas"* · 18/08
-- **No card — info breve do palestrante:** Dra. Márcia Gonçalves de Oliveira · Coordenadora
+- **No card — info breve do palestrante:** Dra. Márcia Oliveira · Coordenadora
   Geral do VIII Concefor
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   coordena o Educimat, o Corte de Lovelace e o grupo Pros@tec; `[confirmar com a Márcia]` se o
   Corte de Lovelace é voltado a mulheres/meninas na tecnologia — reforçaria ainda mais o tema da mesa.
-- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-marcia-oliveira_v1.png`
-- **Status:** ✅ liberado — a arte traz "Professora do Ifes/Cefor e coordenadora do Programa Corte
-  de Lovelace", sem citar que ela é Coordenadora Geral do VIII Concefor. **Decidido em 20/07
-  manter assim.** (De quebra, isso confirma o `[confirmar com a Márcia]` sobre o Corte de Lovelace.)
+- **Arquivo:** `cards/2026-07-21_pre_card_palestrante-marcia-oliveira_v2.png`
+- **Status:** ✅ **liberado (v2, 21/07).** A v1 abreviava o nome como "Dra. Márcia Gonçalves";
+  a **v2 traz "Dra. Márcia Oliveira"**, a abreviação correta. V1 apagada.
+  A linha de cargo ("Professora do Ifes/Cefor e coordenadora do Programa Corte de Lovelace",
+  sem citar a Coordenação Geral do Concefor) foi **decidida em 20/07 e permanece**.
 
 ## 6 · Dra. Mariella Berger Andrade — publicar 04/08
 
@@ -112,18 +119,23 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Arquivo:** `cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png`
 - **Status:** ✅ produzido 20/07 — arte bate com o previsto.
 
-## 7 · Dra. Celia Jaqueline Sanz Rodriguez — publicar 06/08
+## 7 · Dra. Jaqueline Sanz · publicar 06/08
+
+> ⚠️ **Nome: usar "Jaqueline Sanz" em tudo** (definido em 21/07/2026), que é como ela é mais
+> conhecida. Não usar "Celia", "Celia Jaqueline" nem o registro completo nas peças.
 
 - **Foto:** `_refs/fotos/Celia_Jaqueline_Sanz_Rodriguez.png`
 - **No card — nome da palestra:** Mesa · *"Tecnologia Delas"* · 18/08
-- **No card — info breve do palestrante:** Dra. Celia Jaqueline Sanz Rodriguez · Incaper /
-  Secretaria Estadual das Mulheres (SESM)
+- **No card — info breve do palestrante:** Dra. Jaqueline Sanz · **Coordenadora
+  do Atlas das Mulheres do ES** (credencial principal; Incaper e SESM só se sobrar linha)
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   coordena o Atlas das Mulheres do ES — tecnologia e dados a serviço das mulheres, exemplo
   prático do tema da mesa.
-- **Arquivo:** `cards/2026-07-20_pre_card_palestrante-celia-sanz_v1.png`
-- **Status:** ✅ produzido 20/07 — arte traz "Secretaria Estadual das Mulheres (SESM) e Incaper"
-  (ordem invertida em relação ao previsto; sem problema).
+- **Arquivo:** `cards/2026-07-21_pre_card_palestrante-jaqueline-sanz_v3.png`
+- **Status:** ✅ **liberado (v3, 21/07).** A v1 trazia só "Secretaria Estadual das Mulheres (SESM)
+  e Incaper"; a v2 corrigiu a credencial; a **v3 troca o nome para "Dra. Jaqueline Sanz"**.
+  Arte atual: nome + "Coordenadora do Atlas das Mulheres do ES, Secretaria Estadual das Mulheres
+  (SESM) e Incaper". V1 e v2 apagadas.
 
 ---
 
@@ -132,13 +144,13 @@ Concefor — nunca uma curiosidade solta sobre ela.
 | Card | Data | Quem entra | Trava |
 |---|---|---|---|
 | Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli + Felipe Tessarolo + convidados locais | 🟡 pode produzir com os 2 confirmados; atualizar se mais nomes entrarem |
-| Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia, Mariella, Celia Jaqueline | ✅ pode produzir — todas confirmadas |
+| Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia Oliveira, Mariella Berger, Jaqueline Sanz | ✅ pode produzir, todas confirmadas |
 
 **No card (arte) — nome da mesa + participantes, nada além disso:**
 - Desafios da EaD: *"Desafios da EaD para os próximos 20 anos"* · Rutinelli da Penha Fávero e
   Felipe Maciel Tessarolo · 19/08, 9h30
-- Tecnologia Delas: *"Tecnologia Delas"* · Márcia Oliveira, Mariella Berger e Celia Jaqueline
-  Sanz · 18/08, 9h30
+- Tecnologia Delas: *"Tecnologia Delas"* · Márcia Oliveira, Mariella Berger e Jaqueline Sanz ·
+  18/08, 9h30
 
 **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
 - Desafios da EaD: o contraste Brasil × Reino Unido debatendo juntos os próximos 20 anos da EaD.
@@ -146,7 +158,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 
 ## Ordem de produção sugerida (para não perder o ritmo)
 1. Vanessa (21/07) → 2. Tessarolo (24/07) → 3. Mariano (28/07) → 4. Rutinelli (30/07) →
-5. Márcia (31/07) → 6. Mariella (04/08) → 7. Celia Jaqueline (06/08) → cards das mesas.
+5. Márcia Oliveira (31/07) → 6. Mariella (04/08) → 7. Jaqueline Sanz (06/08) → cards das mesas.
 
 ## Conferência dos cards recebidos (20/07/2026)
 
@@ -170,6 +182,31 @@ do `_inbox`). Todos em **1080×1350**, conforme a spec. Arquivos em `cards/`.
    Os cards de mesa devem seguir o mesmo padrão. A spec no topo deste painel já foi ajustada.
 5. **O CTA da arte é "inscreva-se em concefor.cefor.ifes.edu.br"**, não "inscrições até 15/08".
    O prazo aparece só na legenda. Coerente entre os 7.
+
+### ✅ Correções de 21/07 (resolvidas nas artes v2)
+
+6. **Márcia · abreviação do nome.** A v1 trazia "Dra. Márcia Gonçalves". A **v2 traz "Dra. Márcia
+   Oliveira"**. Regra: o nome completo (Márcia Gonçalves de Oliveira) está correto; ao abreviar,
+   é sempre "Márcia Oliveira".
+7. **Jaqueline Sanz · credencial na prioridade errada.** A v1 trazia só "Secretaria Estadual das
+   Mulheres (SESM) e Incaper". A **v2 abre por "Coordenadora do Atlas das Mulheres do ES"**, que é
+   o mais relevante dela para esta mesa. Regra: ao abreviar o nome dela, usar "Jaqueline Sanz".
+
+> Artes v2 recebidas em 21/07, versionadas em [`cards/`](cards/) e já apontadas na
+> [página de aprovação](../../../aprovacao/cards-palestrantes.html). Legendas atualizadas.
+> Versões v1 apagadas.
+
+### ✅ Segunda rodada de correções (21/07, tarde)
+
+8. **Felipe Tessarolo · título acadêmico indevido.** A v1 trazia "Dr. Felipe Tessarolo", mas ele
+   ainda não é doutor. A **v2 traz "Felipe Tessarolo"**, sem título. Regra: nada de "Dr." nem
+   "Prof." no nome dele.
+9. **Jaqueline Sanz · nome padronizado.** A v2 ainda trazia "Dra. Celia Jaqueline Sanz Rodriguez".
+   A **v3 traz "Dra. Jaqueline Sanz"**. Regra: usar "Jaqueline Sanz" em tudo, nunca "Celia" nem o
+   registro completo. O arquivo do card passou a usar o slug `jaqueline-sanz`.
+
+> Com isso, **os 7 cards individuais estão liberados**. Todas as versões antigas foram apagadas e
+> a [página de aprovação](../../../aprovacao/cards-palestrantes.html) aponta para as artes atuais.
 
 ### Ainda faltam
 

@@ -7,10 +7,10 @@
 ## Checklist por palestrante
 | Palestrante | Participação | Foto oficial | Card divulgação | Reel | Podcast |
 |---|---|---|---|---|---|
-| Dr. Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ✅ | ⬜ | ⬜ |
+| Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ✅ | ⬜ | ⬜ |
 | Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ✅ | ⬜ | ⬜ |
-| Dra. Celia Jaqueline Sanz Rodriguez | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
+| Dra. Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | ⬜ |
@@ -30,12 +30,15 @@
 
 ## Bios (resumos para arte — não copiar inteiro no card)
 
-### Dr. Felipe Maciel Tessarolo — PALESTRANTE INTERNACIONAL
+### Felipe Maciel Tessarolo · PALESTRANTE INTERNACIONAL
+> ⚠️ **Sem "Dr." no nome dele** (definido em 21/07/2026): ainda não é doutor. Usar
+> "Felipe Maciel Tessarolo", sem título acadêmico.
 Institute of Educational Technology (IET) da **The Open University (Reino Unido)**. Atua em
 soluções educacionais inovadoras com foco em IA, aprendizagem online, acessibilidade e
 personalização em larga escala. Senior Fellow da Higher Education Academy (SFHEA). Envolvido em
 projetos de IA na educação (ex.: assistente AIDA), GenAI, adaptive learning e XR/VR. Também
 pesquisa comunicação e mídia (desinformação e redes) pela Universidade de Westminster.
+- **Instagram:** `[a confirmar]` (não veio na lista de 21/07; legenda dele segue sem @)
 - **EDEN Best Research Paper Award em dois anos seguidos** (rede europeia de educação a distância
   e digital): 2025, em Bolonha, como **primeiro autor** de *"GenAI as an Educational Gatekeeper:
   Balancing Personalisation and Standardisation in Higher Education"*; e 2026, em Porto, como
@@ -52,30 +55,45 @@ Livro recente *"IA Generativa e Educação"* (+10 mil downloads). Editor-chefe d
 Pesquisa: Sistemas de Informação, Informática na Educação e Cibercultura.
 - **Palestra:** *"Desafios da EaD e as ondas de IA"* (19/08, 14h30).
 - Gancho de conteúdo: livro gratuito *"IA generativa e educação: práticas e teorizações"* (SBC).
+- **Instagram:** @pimentelmariano
 
 ### Dra. Vanessa Battestin
 Doutora em Educação, mestre em Informática, bacharel em Ciência da Computação. Professora titular
 do Ifes (Cefor), Coordenadora da UAB, docente do Educimat. Foi diretora do Cefor (2014–2019).
 Especialista internacional da A3ES (Portugal). Temas: EaD, MOOC, Tecnologias Educacionais.
+- **Instagram:** @vanessabattestin
 - **Palestra de abertura:** *"20 Anos de EaD e o Cefor"* (17/08, 19h) — âncora do tema dos 20 anos.
 
-### Dra. Celia Jaqueline Sanz Rodriguez
-Ciências Sociais (UFES), mestrado em Políticas Sociais (UENF), doutorado em Desenvolvimento Rural
-(UFRGS). Servidora do Incaper; atua na Secretaria Estadual das Mulheres (SESM). Coordena projetos
-como Atlas das Mulheres do ES. Participa da mesa **"Tecnologia Delas"**.
+### Dra. Jaqueline Sanz
+> ⚠️ **Nome (definido em 21/07/2026): usar "Jaqueline Sanz" em tudo**, que é como ela é mais
+> conhecida. Não usar "Celia", "Celia Jaqueline" nem o registro completo
+> (Celia Jaqueline Sanz Rodriguez) nas peças.
+> **Credencial principal: "Coordenadora do Atlas das Mulheres do ES"**; Incaper e SESM são
+> secundários.
+
+**Coordenadora do Atlas das Mulheres do ES.** Ciências Sociais (UFES), mestrado em Políticas
+Sociais (UENF), doutorado em Desenvolvimento Rural (UFRGS). Servidora do Incaper; atua na
+Secretaria Estadual das Mulheres (SESM). Participa da mesa **"Tecnologia Delas"**.
+- **Instagram:** @jaqueline_sanz_vix
 
 ### Dra. Mariella Berger Andrade
 Professora do Ifes, doutora em Ciência da Computação (UFES). Coordenadora de pós-graduações em
 Docência para EaD e EPT. Foi Diretora Executiva do Ifes e Diretora do Cefor (2019–2022). Temas:
 IA, EaD, Tecnologias Educacionais, Robótica. Participa da mesa **"Tecnologia Delas"**.
+- **Instagram:** @mariellaberger
 
 ### Dra. Márcia Gonçalves de Oliveira
+> ⚠️ **Nome (definido em 21/07/2026):** o completo, "Márcia Gonçalves de Oliveira", está correto.
+> **Ao abreviar, usar "Márcia Oliveira", nunca "Márcia Gonçalves".**
+
 Professora do Ifes-Cefor, doutora em Engenharia Elétrica. **Coordenadora Geral do VIII Concefor**.
 Coordena o Educimat, o programa Corte de Lovelace e o grupo Pros@tec. Participa da mesa
 **"Tecnologia Delas"**.
+- **Instagram:** `[a confirmar]` (não veio na lista de 21/07; legenda dela segue sem @)
 
 ### Dra. Rutinelli da Penha Fávero
 Professora do Ifes, doutora em Educação em Ciências e Saúde (UFRJ), estágio doutoral em Coimbra.
 Coordenou a pós em Tecnologias Educacionais. Temas: tecnologia e educação, gamificação, EaD,
 formação docente. Participa da mesa **"Desafios da EaD para os próximos 20 anos"** (19/08, 9h30),
-com o Dr. Felipe Maciel Tessarolo.
+com Felipe Maciel Tessarolo.
+- **Instagram:** @rutinha_fav

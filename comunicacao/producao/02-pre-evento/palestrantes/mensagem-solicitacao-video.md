@@ -72,7 +72,7 @@ VIII Concefor · 17 a 20/08/2026
 | Palestrante | Mensagem enviada | Vídeo recebido | Editado | Publicado |
 |---|---|---|---|---|
 | Dra. Vanessa Battestin | ⬜ | ⬜ | ⬜ | ⬜ (reel 08/08) |
-| Dr. Felipe Tessarolo | ⬜ | ⬜ | ⬜ | ⬜ (reel 10/08) |
+| Felipe Tessarolo | ⬜ | ⬜ | ⬜ | ⬜ (reel 10/08) |
 | Mesa "Tecnologia Delas" (Márcia / Sanz / Mariella) | ⬜ | ⬜ | ⬜ | ⬜ (reel 12/08) |
 | Dr. Mariano Pimentel | ⬜ | ⬜ | ⬜ | ⬜ (reel 14/08) |
 
