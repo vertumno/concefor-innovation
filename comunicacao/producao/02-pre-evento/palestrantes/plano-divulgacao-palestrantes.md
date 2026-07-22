@@ -24,7 +24,7 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 |---|---|---|---|---|
 | 1 | 21/07 | Dra. Vanessa Battestin | Palestra de abertura "20 Anos de EaD e o Cefor" (17/08) | ⬜ |
 | 2 | 24/07 | Felipe Tessarolo | Palestra internacional — The Open University (18/08) | ⬜ |
-| 3 | 28/07 | Dr. Mariano Pimentel | "Desafios da EaD e as ondas de IA" (19/08) | ⬜ |
+| 3 | 28/07 | Dr. Mariano Pimentel | "Autoria com IA generativa: desafios para a EaD" (19/08) | ⬜ |
 | 4 | 30/07 | Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD para os próximos 20 anos" (19/08, 9h30) | ⬜ |
 | 5 | 31/07 | Dra. Márcia Oliveira | Mesa "Tecnologia Delas" (18/08) + Coordenadora Geral | ⬜ |
 | 6 | 04/08 | Dra. Mariella Berger | Mesa "Tecnologia Delas" (18/08) | ⬜ |

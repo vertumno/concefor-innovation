@@ -69,7 +69,8 @@ Concefor — nunca uma curiosidade solta sobre ela.
 ## 3 · Dr. Mariano Pimentel — publicar 28/07
 
 - **Foto:** `_refs/fotos/Mariano_Pimentel.png`
-- **No card — nome da palestra:** *"Desafios da EaD e as ondas de IA"* · 19/08, 14h30
+- **No card — nome da palestra:** *"Autoria com IA generativa: desafios para a EaD"* · 19/08, 14h30
+  > ⚠️ Título trocado a pedido do Mariano em 22/07. O anterior era "Desafios da EaD e as ondas de IA".
 - **No card — info breve do palestrante:** Dr. Mariano Pimentel · Professor na UNIRIO
 - **Gancho para abrir a legenda** *(não vai no card — já escrito em [legendas.md](legendas.md))*:
   o livro gratuito dele, *"IA Generativa e Educação"* (+10 mil downloads), é sobre exatamente

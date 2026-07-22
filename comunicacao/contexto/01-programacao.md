@@ -38,7 +38,7 @@
 | 9h00 | Momento Cultural |
 | 9h30 | Mesa-Redonda *"Desafios da EaD para os próximos 20 anos"* · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero |
 | 13h30 | Sessões técnicas · artigos completos |
-| 14h30 | Palestra *"Desafios da EaD e as ondas de IA"* · Dr. Mariano Pimentel |
+| 14h30 | Palestra *"Autoria com IA generativa: desafios para a EaD"* · Dr. Mariano Pimentel |
 | 16h00 | Coffee-break |
 | 16h30 | Palestra *"Inovações da IA para a Educação"* · Dr. Mauro Oliveira |
 

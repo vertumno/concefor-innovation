@@ -28,7 +28,7 @@ inovadoras, inclusão e diversidades.
 
 Entre os destaques da programação estão a palestra de abertura "20 Anos de EaD e o Cefor", com
 a Dra. Vanessa Battestin, a palestra internacional de Felipe Maciel Tessarolo (The Open
-University, Reino Unido), e a palestra "Desafios da EaD e as ondas de IA", com o Dr. Mariano
+University, Reino Unido), e a palestra "Autoria com IA generativa: desafios para a EaD", com o Dr. Mariano
 Pimentel. O evento conta ainda com duas mesas-redondas — "Tecnologia Delas", sobre mulheres e
 tecnologia, e "Desafios da EaD para os próximos 20 anos" —, sessões técnicas de comunicação
 oral, mostras de produtos educacionais, premiação dos melhores trabalhos e, no dia 20, uma

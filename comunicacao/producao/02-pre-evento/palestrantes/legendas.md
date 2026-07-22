@@ -53,7 +53,7 @@ Card do VIII Concefor com foto de Felipe Maciel Tessarolo. Palestra internaciona
 ## 3 · Dr. Mariano Pimentel · publicar 28/07
 
 ### Instagram
-As ondas de IA já chegaram na educação a distância. Quais são os desafios? O Dr. Mariano Pimentel discute isso na palestra "Desafios da EaD e as ondas de IA", no dia 19/08, às 14h30.
+Quando um texto nasce junto com a IA generativa, de quem é a autoria? É essa questão que o Dr. Mariano Pimentel leva para a palestra "Autoria com IA generativa: desafios para a EaD", no dia 19/08, às 14h30.
 
 É exatamente sobre esse assunto que ele escreveu o livro gratuito "IA Generativa e Educação" (mais de 10 mil downloads). Mariano (@pimentelmariano) é doutor em Informática, professor na UNIRIO e ganhador do Prêmio Jabuti 2012.
 
@@ -63,11 +63,11 @@ Inscreva-se até 15/08 no link da bio e venha participar do principal congresso 
 
 ### WhatsApp
 📢 VIII Concefor · Palestra
-Dr. Mariano Pimentel (UNIRIO) fala sobre IA generativa e educação a distância. Dia 19/08, 14h30.
+Dr. Mariano Pimentel (UNIRIO) fala sobre autoria com IA generativa e os desafios para a EaD. Dia 19/08, 14h30.
 Inscrições até 15/08: https://concefor.cefor.ifes.edu.br
 
 ### Alt text
-Card do VIII Concefor com foto do Dr. Mariano Pimentel. Palestra: Desafios da EaD e as ondas de IA, 19/08 às 14h30. Selo comemorativo de 20 anos do Cefor.
+Card do VIII Concefor com foto do Dr. Mariano Pimentel, professor na UNIRIO. Palestra sobre autoria com IA generativa e desafios para a EaD, 19/08 às 14h30. Selo comemorativo de 20 anos do Cefor.
 
 ---
 

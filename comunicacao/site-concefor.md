@@ -121,7 +121,7 @@ Quarta-Feira (19/08/2026)
 
 13:30 Sessões técnicas de apresentação de artigos completos
 
-14h30min Palestra “Desafios da EaD e as ondas de IA” (Professor Dr. Mariano Pimentel)
+14h30min Palestra “Autoria com IA generativa: desafios para a EAD” (Professor Dr. Mariano Pimentel)
 
 16:00 Coffee-break
 

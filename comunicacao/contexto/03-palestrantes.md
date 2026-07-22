@@ -54,7 +54,9 @@ pesquisa comunicação e mídia (desinformação e redes) pela Universidade de W
 Doutor em Informática, professor na **UNIRIO**. Prêmio Jabuti 2012 (livro *Sistemas Colaborativos*).
 Livro recente *"IA Generativa e Educação"* (+10 mil downloads). Editor-chefe da revista SBC Horizontes.
 Pesquisa: Sistemas de Informação, Informática na Educação e Cibercultura.
-- **Palestra:** *"Desafios da EaD e as ondas de IA"* (19/08, 14h30).
+- **Palestra:** *"Autoria com IA generativa: desafios para a EaD"* (19/08, 14h30).
+  > ⚠️ Título alterado a pedido do próprio Mariano em 22/07/2026. O anterior era
+  > "Desafios da EaD e as ondas de IA". Card refeito (v2).
 - Gancho de conteúdo: livro gratuito *"IA generativa e educação: práticas e teorizações"* (SBC).
 - **Instagram:** @pimentelmariano
 
