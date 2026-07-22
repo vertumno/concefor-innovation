@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Painel de Produção — VIII Concefor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#00DCC9; --blue:#1F4AA1;
+    --ink:#152238; --muted:#5c6b82; --line:#e5e9f0; --bg:#f4f6fa; --card:#fff;
+    /* status */
+    --s-feito:#15803D; --s-aprov:#2563EB; --s-prod:#D97706; --s-todo:#94A3B8;
+    --s-bloq:#DC2626; --s-pausa:#8B5CF6;
+    /* fases */
+    --f-impressao:#F59E0B; --f-pre:#00A6A6; --f-durante:#15803D; --f-pos:#64748B; --f-ideias:#8B5CF6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Montserrat',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px 64px}
+  a{color:var(--blue)}
+
+  /* ---------- Header ---------- */
+  header{background:linear-gradient(120deg,var(--teal) 0%,var(--blue) 78%);color:#fff;
+    padding:34px 0 30px}
+  .head-inner{max-width:1180px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;
+    align-items:flex-end;justify-content:space-between;gap:20px}
+  .kicker{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;font-weight:700;opacity:.9}
+  h1{font-family:'Teko',sans-serif;font-weight:600;font-size:54px;line-height:.95;
+    letter-spacing:.5px;text-transform:uppercase;margin-top:2px}
+  .sub{font-weight:500;opacity:.94;font-size:14.5px;margin-top:4px;max-width:640px}
+  .countdown{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);
+    border-radius:14px;padding:12px 20px;text-align:center;min-width:150px}
+  .countdown .n{font-family:'Teko',sans-serif;font-size:46px;font-weight:700;line-height:1}
+  .countdown .l{font-size:11px;letter-spacing:.6px;opacity:.9;font-weight:600}
+  .countdown .d{font-size:11.5px;opacity:.8;margin-top:4px}
+
+  /* ---------- Progresso ---------- */
+  .board{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:20px 22px;margin-top:-22px;position:relative;z-index:2;
+    box-shadow:0 6px 24px rgba(20,40,80,.07)}
+  .bar{display:flex;height:14px;border-radius:8px;overflow:hidden;background:#eef1f6;margin-bottom:14px}
+  .bar span{display:block;transition:width .4s ease}
+  .bar-legend{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+  .pct{font-family:'Teko',sans-serif;font-size:34px;line-height:1;color:var(--blue)}
+  .pct small{font-family:'Montserrat';font-size:12.5px;color:var(--muted);font-weight:600;
+    margin-left:8px;letter-spacing:.2px}
+
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(122px,1fr));gap:10px;margin-top:16px}
+  .tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;
+    cursor:pointer;text-align:left;font:inherit;color:inherit;transition:.15s;position:relative}
+  .tile:hover{border-color:#c3ccdb;transform:translateY(-1px);box-shadow:0 3px 12px rgba(20,40,80,.07)}
+  .tile[aria-pressed="true"]{border-color:var(--blue);box-shadow:0 0 0 2px rgba(31,74,161,.14)}
+  .tile .n{font-family:'Teko',sans-serif;font-size:32px;line-height:1}
+  .tile .l{font-size:11.5px;color:var(--muted);font-weight:600;display:flex;align-items:center;gap:6px}
+  .dot{width:9px;height:9px;border-radius:50%;flex:none}
+
+  /* ---------- Seções ---------- */
+  h2{font-family:'Teko',sans-serif;font-weight:600;font-size:30px;letter-spacing:.5px;
+    text-transform:uppercase;margin:36px 0 14px;display:flex;align-items:center;gap:10px}
+  h2::before{content:"";width:8px;height:26px;border-radius:3px;
+    background:linear-gradient(var(--teal),var(--blue))}
+  h2 .count{font-family:'Montserrat';font-size:12px;color:var(--muted);font-weight:600;
+    background:#eaeef5;border-radius:20px;padding:3px 10px;letter-spacing:0;text-transform:none}
+
+  /* ---------- Foco / alertas ---------- */
+  .focus{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .alert{background:#fff;border:1px solid var(--line);border-left:4px solid var(--s-bloq);
+    border-radius:12px;padding:14px 16px}
+  .alert.warn{border-left-color:var(--s-prod)}
+  .alert.info{border-left-color:var(--s-aprov)}
+  .alert .tag{font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+    color:var(--s-bloq)}
+  .alert.warn .tag{color:var(--s-prod)} .alert.info .tag{color:var(--s-aprov)}
+  .alert h3{font-size:14.5px;margin:4px 0 2px;font-weight:600}
+  .alert p{font-size:12.5px;color:var(--muted)}
+
+  /* ---------- Marcos ---------- */
+  .marcos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+  .marco{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;
+    position:relative;overflow:hidden}
+  .marco::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--line)}
+  .marco.next::before{background:linear-gradient(var(--teal),var(--blue))}
+  .marco.done{opacity:.55}
+  .marco .dt{font-family:'Teko',sans-serif;font-size:26px;line-height:1;color:var(--blue)}
+  .marco.done .dt{color:var(--s-feito)}
+  .marco .tx{font-size:12.5px;font-weight:600;margin-top:3px}
+  .marco .sub2{font-size:11.5px;color:var(--muted);margin-top:2px}
+
+  /* ---------- Controles ---------- */
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0 18px;
+    position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{border:1px solid var(--line);background:#fff;border-radius:20px;padding:6px 13px;
+    font:600 12.5px 'Montserrat',sans-serif;color:var(--muted);cursor:pointer;transition:.15s}
+  .chip:hover{border-color:#c3ccdb;color:var(--ink)}
+  .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+  .search{flex:1;min-width:180px;border:1px solid var(--line);background:#fff;border-radius:20px;
+    padding:8px 15px;font:500 13px 'Montserrat',sans-serif;color:var(--ink)}
+  .search:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(31,74,161,.1)}
+  .toggle{display:flex;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}
+  .toggle button{border:0;background:none;padding:7px 14px;font:600 12.5px 'Montserrat',sans-serif;
+    color:var(--muted);cursor:pointer}
+  .toggle button[aria-pressed="true"]{background:var(--blue);color:#fff}
+
+  /* ---------- Grupos e peças ---------- */
+  .group{margin-bottom:26px}
+  .group-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .group-head .fase{font-family:'Teko',sans-serif;font-size:24px;letter-spacing:.5px;
+    text-transform:uppercase}
+  .group-head .rule{flex:1;height:1px;background:var(--line)}
+  .group-head .n{font-size:11.5px;color:var(--muted);font-weight:600}
+
+  .items{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px}
+  .item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 17px;
+    display:flex;flex-direction:column;gap:8px;transition:.15s;position:relative;overflow:hidden}
+  .item:hover{border-color:#c3ccdb;box-shadow:0 4px 16px rgba(20,40,80,.07)}
+  .item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--fase-color,var(--line))}
+  .item-top{display:flex;align-items:flex-start;gap:10px}
+  .item h3{font-size:14.5px;font-weight:600;line-height:1.35;flex:1}
+  .badge{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;
+    padding:4px 9px;border-radius:20px;white-space:nowrap;color:#fff;flex:none}
+  .item .nota{font-size:12.5px;color:var(--muted);line-height:1.45}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:11.5px;
+    color:var(--muted);font-weight:600;margin-top:auto;padding-top:4px}
+  .meta .prazo{display:inline-flex;align-items:center;gap:5px}
+  .meta .prazo.late{color:var(--s-bloq)}
+  .meta .prazo.soon{color:var(--s-prod)}
+  .links{display:flex;flex-wrap:wrap;gap:8px}
+  .links a{font-size:11.5px;font-weight:600;text-decoration:none;border:1px solid var(--line);
+    border-radius:8px;padding:4px 10px;color:var(--blue);transition:.15s}
+  .links a:hover{border-color:var(--blue);background:#f2f6fd}
+  .empty{background:#fff;border:1px dashed var(--line);border-radius:12px;padding:22px;
+    text-align:center;color:var(--muted);font-size:13px}
+
+  /* ---------- Aguardando ---------- */
+  .waiting{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .wait{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .wait .q{font-size:13.5px;font-weight:600}
+  .wait .who{font-size:11.5px;color:var(--muted);font-weight:600;margin-top:4px}
+
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);
+    font-size:12.5px;line-height:1.7}
+  footer b{color:var(--ink)}
+
+  @media(max-width:640px){
+    h1{font-size:42px} .countdown{padding:10px 16px;min-width:0}
+    .countdown .n{font-size:36px}
+    .board{padding:16px} .items{grid-template-columns:1fr}
+    .controls{position:static}
+  }
+  @media print{
+    header{background:var(--blue)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .controls,.tile{display:none} .item{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <div>
+      <div class="kicker">VIII Concefor · CGTE · 17 a 20 de agosto de 2026</div>
+      <h1>Painel de produção</h1>
+      <p class="sub">Situação de cada peça de comunicação, do brinde impresso ao post do
+        Instagram. Espelha o board de produção do repositório.</p>
+    </div>
+    <div class="countdown">
+      <div class="n" id="cd-dias">—</div>
+      <div class="l" id="cd-label">DIAS PARA A ABERTURA</div>
+      <div class="d">17/08/2026</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- Resumo -->
+  <section class="board">
+    <div class="bar" id="bar"></div>
+    <div class="bar-legend">
+      <div class="pct"><span id="pct">0</span>%<small>entregue · <span id="tot-feito">0</span> de
+        <span id="tot-geral">0</span> peças · <span id="tot-andamento">0</span> em andamento</small></div>
+      <div style="font-size:11.5px;color:var(--muted);font-weight:600">
+        Clique em um número para filtrar
+      </div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <!-- Foco -->
+  <h2>Foco agora <span class="count" id="foco-n"></span></h2>
+  <div class="focus" id="foco"></div>
+
+  <!-- Marcos -->
+  <h2>Próximos marcos</h2>
+  <div class="marcos" id="marcos"></div>
+
+  <!-- Peças -->
+  <h2>Todas as peças <span class="count" id="lista-n"></span></h2>
+  <div class="controls">
+    <div class="chips" id="chips-fase"></div>
+    <input class="search" id="busca" type="search" placeholder="Buscar peça, responsável, nota…">
+    <div class="toggle">
+      <button id="modo-fase" aria-pressed="true">Por fase</button>
+      <button id="modo-prazo" aria-pressed="false">Por prazo</button>
+    </div>
+  </div>
+  <div id="lista"></div>
+
+  <!-- Aguardando -->
+  <h2>Aguardando de terceiros</h2>
+  <div class="waiting" id="waiting"></div>
+
+  <footer>
+    <b>Como atualizar:</b> edite a lista <code>PECAS</code> no início do
+    <code>&lt;script&gt;</code> deste arquivo (<code>comunicacao/painel/index.html</code>) e faça
+    commit. O GitHub Pages republica em cerca de 1 minuto.<br>
+    <b>Fonte de verdade:</b>
+    <a href="https://github.com/vertumno/concefor-innovation/blob/main/comunicacao/planejamento/board-producao.md">board-producao.md</a>
+    ·
+    <a href="https://github.com/vertumno/concefor-innovation/blob/main/comunicacao/planejamento/calendario-publicacao.md">calendário de publicação</a>
+    · <a href="../aprovacao/">central de aprovações</a><br>
+    Dados atualizados em <b id="atualizado"></b> · página gerada pela CGTE.
+  </footer>
+</div>
+
+<script>
+/* =========================================================================
+   DADOS — edite daqui até "FIM DOS DADOS" para atualizar o painel.
+
+   status:  'feito' | 'aprovacao' | 'producao' | 'todo' | 'bloqueado' | 'pausado'
+   fase:    'impressao' | 'pre' | 'durante' | 'pos' | 'ideias'
+   prazo:   'AAAA-MM-DD' (para o cálculo de atraso) ou null
+   prazoTx: texto exibido quando o prazo é aproximado (ex.: 'antes de 07/08')
+   links:   [{t:'rótulo', u:'caminho'}]  — .md abre no GitHub, resto abre direto
+   ========================================================================= */
+
+const ATUALIZADO = '22/07/2026';
+const EVENTO     = '2026-08-17';
+const GITHUB     = 'https://github.com/vertumno/concefor-innovation/blob/main/comunicacao/';
+
+const PECAS = [
+  /* ---------------- IMPRESSÃO — TR 72/2026 ---------------- */
+  { nome:'Crachá credencial · 400 un', fase:'impressao', status:'feito', resp:'Elton',
+    prazo:'2026-07-22', prazoTx:'enviado 22/07',
+    nota:'Arte enviada à gráfica em 22/07 (PDF final). Chegam todos em branco: a impressão dos nomes é nossa, aqui no Cefor.',
+    links:[{t:'PDF final',u:'../producao/01-brindes-promocionais/cracha/cracha_FINAL_PARA_IMPRESSAO.pdf'},
+           {t:'Modelo Canva',u:'https://canva.link/vx6e7xpwox32wyy'}] },
+
+  { nome:'Crachá · definir rateio das 4 variantes', fase:'impressao', status:'todo', resp:'CGTE',
+    prazo:'2026-08-10', prazoTx:'antes do evento',
+    nota:'O TR contratou 400 no total sem dizer quantos de cada tipo: normal, palestrante, QR code e inscrição.' },
+
+  { nome:'Crachá · impressão dos nomes no Cefor', fase:'impressao', status:'todo', resp:'CGTE',
+    prazo:'2026-08-16', prazoTx:'até a véspera',
+    nota:'Testar se a impressora roda papel fotográfico fosco 240 g, adaptar o Canva para gerar só a camada dos nomes a partir da lista do Even3 e definir quem imprime as 400.' },
+
+  { nome:'Camisas · 100 un sublimadas', fase:'impressao', status:'aprovacao', resp:'Elton',
+    prazo:'2026-08-07', prazoTx:'antes de 07/08',
+    nota:'Com a Márcia desde 21/07: duas opções na mesma imagem, aguardando ela dizer 1 ou 2.',
+    links:[{t:'Arte para aprovação',u:'../producao/01-brindes-promocionais/camiseta/1x/camisa_aprovacao.png'}] },
+
+  { nome:'Blocos · 250 un · selo 20 anos', fase:'impressao', status:'aprovacao', resp:'Andreia',
+    prazo:'2026-08-07', prazoTx:'antes de 07/08',
+    nota:'Com a Márcia desde 21/07, opção única, aguardando dizer se há ajustes.',
+    links:[{t:'Arte para aprovação',u:'../producao/01-brindes-promocionais/bloco/1x/bloco_aprovacao.png'},
+           {t:'PDF gráfica',u:'../producao/01-brindes-promocionais/bloco/bloco_capas_Ifes-Concefor.pdf'}] },
+
+  { nome:'Bolsa de algodão · 400 un', fase:'impressao', status:'producao', resp:'Gráfica',
+    prazo:'2026-08-07', prazoTx:'antes de 07/08',
+    nota:'Logo enviada em 22/07. A gráfica monta a arte com a nossa marca e devolve a montagem para aprovação.' },
+
+  { nome:'Canetas · 400 un azuis', fase:'impressao', status:'producao', resp:'Gráfica',
+    prazo:'2026-08-07', prazoTx:'antes de 07/08',
+    nota:'Logo enviada em 22/07. Aguardando a montagem da gráfica para aprovar.' },
+
+  { nome:'Copo bucks ecológico · 400 un', fase:'impressao', status:'producao', resp:'Gráfica',
+    prazo:'2026-08-07', prazoTx:'antes de 07/08',
+    nota:'400 ml com tampa, fibra de arroz/coco/trigo. Logo enviada em 22/07, aguardando montagem.' },
+
+  { nome:'Banners · 10 un · 0,90 × 1,20 m', fase:'impressao', status:'todo', resp:'—',
+    prazo:'2026-08-07', prazoTx:'antes de 07/08',
+    nota:'Conteúdo a definir. Entram nesses 10: banner padrão do Concefor, sinalização/programação e placas. Falta fechar quantos de cada.',
+    links:[{t:'Brief placas',u:'producao/01-brindes-promocionais/placas-sinalizacao/brief.md'}] },
+
+  /* ---------------- IMPRESSÃO — fora do TR ---------------- */
+  { nome:'Banners de lançamentos · livro, MOOCs, Base de Conhecimentos', fase:'impressao',
+    status:'todo', resp:'Elton (arte) / UAB (custeio)', prazo:'2026-08-01',
+    nota:'Fora do TR e fora dos 10 banners: pagos pela UAB (Vanessa). Arte precisa ir para a gráfica até 01/08.',
+    links:[{t:'Brief',u:'producao/02-pre-evento/banners-institucionais/brief.md'}] },
+
+  { nome:'Fundo de palco', fase:'impressao', status:'bloqueado', resp:'—', prazo:null,
+    nota:'Citado na descrição do TR mas sem item contratado. Precisa confirmar se existe verba ou se sai de outro lugar.' },
+
+  { nome:'Squeezes', fase:'impressao', status:'bloqueado', resp:'—', prazo:null,
+    nota:'Não está no TR. O copo bucks parece ter substituído: confirmar antes de produzir arte.' },
+
+  { nome:'Arte do bolo · 20 anos do Cefor', fase:'impressao', status:'todo', resp:'Andreia', prazo:null,
+    nota:'Não é item de gráfica. Alinhar com quem fornece o bolo.' },
+
+  /* ---------------- PRÉ-EVENTO ---------------- */
+  { nome:'Card · prazo de envio final (03/08 · Even3)', fase:'pre', status:'feito', resp:'Elton',
+    prazo:'2026-07-16', prazoTx:'publicado 16/07',
+    nota:'Primeira peça no ar.',
+    links:[{t:'Arte',u:'../producao/02-pre-evento/card-prazo-envio-final/2026-07-20_pre_card_prazo-envio-final_reexport-canva.png'},
+           {t:'Legenda',u:'producao/02-pre-evento/card-prazo-envio-final/legendas.md'}] },
+
+  { nome:'Card palestrante · Vanessa Battestin', fase:'pre', status:'aprovacao', resp:'Elton',
+    prazo:'2026-07-21', nota:'Arte v3 liberada (v1 tinha o nome errado; v3 corrigiu grafia e tipografia). Abertura do evento.',
+    links:[{t:'Arte v3',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-vanessa-battestin_v3.png'},
+           {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
+
+  { nome:'Card palestrante · Felipe Tessarolo', fase:'pre', status:'aprovacao', resp:'Elton',
+    prazo:'2026-07-24', nota:'Arte v2 liberada. Palestra internacional.',
+    links:[{t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-felipe-tessarolo_v2.png'},
+           {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
+
+  { nome:'Card palestrante · Mariano Pimentel', fase:'pre', status:'aprovacao', resp:'Elton',
+    prazo:'2026-07-28', nota:'Arte v2 liberada, com o novo título da palestra.',
+    links:[{t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-22_pre_card_palestrante-mariano-pimentel_v2.png'},
+           {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
+
+  { nome:'Card palestrante · Rutinelli Fávero', fase:'pre', status:'aprovacao', resp:'Elton',
+    prazo:'2026-07-30', nota:'Arte v1 liberada. Mesa "Desafios da EaD".',
+    links:[{t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-rutinelli-favero_v1.png'},
+           {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
+
+  { nome:'Card palestrante · Márcia Oliveira', fase:'pre', status:'aprovacao', resp:'Elton',
+    prazo:'2026-07-31', nota:'Arte v2 liberada. Mesa "Tecnologia Delas".',
+    links:[{t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-marcia-oliveira_v2.png'},
+           {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
+
+  { nome:'Card palestrante · Mariella Berger', fase:'pre', status:'aprovacao', resp:'Elton',
+    prazo:'2026-08-04', nota:'Arte v1 liberada. Mesa "Tecnologia Delas".',
+    links:[{t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png'},
+           {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
+
+  { nome:'Card palestrante · Jaqueline Sanz', fase:'pre', status:'aprovacao', resp:'Elton',
+    prazo:'2026-08-06', nota:'Arte v3 liberada. Mesa "Tecnologia Delas".',
+    links:[{t:'Arte v3',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-jaqueline-sanz_v3.png'},
+           {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
+
+  { nome:'Card palestrante · Mauro Oliveira', fase:'pre', status:'bloqueado', resp:'Elton',
+    prazo:'2026-08-11', nota:'Sem foto e sem minibio. Entrou na programação em 21/07 e é o último card da série.' },
+
+  { nome:'Card mesa · "Tecnologia Delas"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-07-31',
+    nota:'Arte ainda não produzida, legenda pronta. Conflito de data: 31/07 no board × 07/08 nas legendas, definir.',
+    links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'}] },
+
+  { nome:'Card mesa · "Desafios da EaD"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-01',
+    nota:'Arte ainda não produzida, legenda pronta. Composição fechada em 21/07: Rutinelli + Tessarolo. Conflito de data: 04/08 no board × 01/08 nas legendas.',
+    links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'}] },
+
+  { nome:'Mensagem aos palestrantes · pedido de vídeo-convite', fase:'pre', status:'todo',
+    resp:'Elton', prazo:'2026-07-18',
+    nota:'Texto pronto, falta enviar. O prazo interno já passou e os vídeos precisam voltar até 03/08.',
+    links:[{t:'Mensagem',u:'producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md'}] },
+
+  { nome:'Vídeos-convite dos palestrantes', fase:'pre', status:'todo', resp:'Elton',
+    prazo:'2026-08-03', nota:'Receber até 03/08 para virar reels entre 08 e 14/08.' },
+
+  { nome:'Cards dos eventos paralelos', fase:'pre', status:'bloqueado', resp:'Elton', prazo:'2026-08-05',
+    nota:'Aguardando informações da Aula Inaugural do Educimat. Publicar os 5 satélites tudo junto, após liberação da Márcia.',
+    links:[{t:'Fonte',u:'producao/02-pre-evento/eventos-paralelos/fonte-eventos-satelites.md'}] },
+
+  { nome:'Contagem regressiva · 10 peças', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-07',
+    nota:'Série diária de 07/08 a 17/08, com reels de vídeo-convite intercalados.' },
+
+  { nome:'Notícia do Concefor para a ACS', fase:'pre', status:'producao', resp:'Elton',
+    prazo:'2026-08-15', nota:'Rascunho pronto, falta a revisão da Márcia.',
+    links:[{t:'Rascunho',u:'producao/02-pre-evento/noticia-acs/rascunho-noticia.md'}] },
+
+  { nome:'Divulgação dos lançamentos', fase:'pre', status:'todo', resp:'Elton', prazo:null,
+    nota:'Livro Cefor, Base de Conhecimentos, vitrine de MOOCs, livro do NTE e "IA no Moodle do Ifes". Pode ir em carrossel junto com chamada de inscrição.' },
+
+  { nome:'Divulgação do lançamento do app', fase:'pre', status:'todo', resp:'Marquito / Elton',
+    prazo:'2026-08-07', nota:'E-mail aos inscritos e QR codes no evento. Lançamento em 07/08.' },
+
+  /* ---------------- DURANTE O EVENTO ---------------- */
+  { nome:'Cobertura fotográfica', fase:'durante', status:'todo', resp:'Tiago / Leonardo / Nanda',
+    prazo:'2026-08-17', nota:'Definir escala por palestra e por dia.',
+    links:[{t:'Escalas',u:'planejamento/distribuicao-equipe.md'}] },
+
+  { nome:'Redes ao vivo · reels e stories', fase:'durante', status:'todo', resp:'—',
+    prazo:'2026-08-17', nota:'Sem responsável definido. Inclui stories da programação do dia.' },
+
+  { nome:'Podcasts com palestrantes · 5 episódios', fase:'durante', status:'producao',
+    resp:'Leo / Tiago / Nanda', prazo:'2026-08-17',
+    nota:'Plano pronto. Faltam os hosts (com a Coordenação) e o termo de autorização de imagem.',
+    links:[{t:'Plano',u:'producao/03-durante-evento/podcasts/plano-podcasts.md'}] },
+
+  { nome:'Transmissão ao vivo', fase:'durante', status:'todo', resp:'Tiago / Leonardo',
+    prazo:'2026-08-17', nota:'Escopo definido em 16/07: todas as palestras e mesas-redondas. Reserva de equipamento com o Thiago.' },
+
+  { nome:'Interpretação em Libras', fase:'durante', status:'todo', resp:'Carol / Eliana',
+    prazo:'2026-08-17', nota:'Em todas as palestras e mesas-redondas. Dulce está buscando mais intérpretes.' },
+
+  /* ---------------- PÓS-EVENTO ---------------- */
+  { nome:'Retrospectiva e agradecimento', fase:'pos', status:'todo', resp:'—', prazo:'2026-08-21',
+    nota:'Números do evento, melhores momentos e agradecimentos.' },
+
+  { nome:'Divulgação dos trabalhos premiados', fase:'pos', status:'todo', resp:'—', prazo:'2026-08-21',
+    nota:'A premiação acontece em 20/08.' },
+
+  { nome:'Publicação das gravações e podcasts', fase:'pos', status:'todo', resp:'—', prazo:null,
+    nota:'Canal do YouTube. Data a definir.' },
+
+  /* ---------------- IDEIAS E PROJETOS ---------------- */
+  { nome:'App do Concefor', fase:'ideias', status:'producao', resp:'Marquito / Elton',
+    prazo:'2026-08-07', nota:'Demo aprovada pela Márcia em 16/07. Validação em 30/07 e lançamento em 07/08.',
+    links:[{t:'Spec',u:'https://github.com/vertumno/concefor-innovation/blob/main/spec/app-v1.md'}] },
+
+  { nome:'Podcasts sobre a história do Cefor', fase:'ideias', status:'pausado', resp:'—', prazo:null,
+    nota:'Ideia guardada para depois do evento.' }
+];
+
+const MARCOS = [
+  { data:'2026-07-22', tx:'Envio das artes para a gráfica', sub:'crachá, bloco e camisa prontos' },
+  { data:'2026-07-28', tx:'Amostras dos brindes avaliadas', sub:'11h · comissão · Marquito e/ou Andreia' },
+  { data:'2026-07-30', tx:'Validação do app', sub:'com a coordenação' },
+  { data:'2026-08-01', tx:'Banners de lançamentos na gráfica', sub:'livro, MOOCs, Base' },
+  { data:'2026-08-03', tx:'Prazo de envio final dos trabalhos', sub:'Even3 · e vídeos-convite' },
+  { data:'2026-08-07', tx:'Lançamento do app + entrega da gráfica', sub:'prazo-limite contratado' },
+  { data:'2026-08-15', tx:'Fim das inscrições', sub:'capacidade: 400 pessoas' },
+  { data:'2026-08-17', tx:'Abertura do VIII Concefor', sub:'até 20/08 · Cefor/Ifes' }
+];
+
+const AGUARDANDO = [
+  { q:'Hosts dos podcasts (1 por episódio)', who:'Márcia / Coordenação' },
+  { q:'Informações da Aula Inaugural do Educimat', who:'Márcia / Educimat' },
+  { q:'Logo do Educimat para os impressos', who:'Educimat' },
+  { q:'Escolha entre as opções 1 e 2 da camisa', who:'Márcia · desde 21/07' },
+  { q:'Ajustes (ou aprovação) do bloco', who:'Márcia · desde 21/07' },
+  { q:'Revisão da notícia para a ACS', who:'Márcia' },
+  { q:'Foto e minibio do Mauro Oliveira', who:'Coordenação' },
+  { q:'Montagens de caneta, copo e bolsa', who:'Gráfica · desde 22/07' }
+];
+
+/* ======================== FIM DOS DADOS ======================== */
+
+const STATUS = {
+  feito:     { rot:'Entregue',     cor:'var(--s-feito)', ordem:5 },
+  aprovacao: { rot:'Em aprovação', cor:'var(--s-aprov)', ordem:2 },
+  producao:  { rot:'Em produção',  cor:'var(--s-prod)',  ordem:3 },
+  todo:      { rot:'A fazer',      cor:'var(--s-todo)',  ordem:4 },
+  bloqueado: { rot:'Bloqueado',    cor:'var(--s-bloq)',  ordem:1 },
+  pausado:   { rot:'Pausado',      cor:'var(--s-pausa)', ordem:6 }
+};
+
+const FASES = {
+  impressao:{ rot:'Impressão e brindes', cor:'var(--f-impressao)' },
+  pre:      { rot:'Pré-evento',          cor:'var(--f-pre)' },
+  durante:  { rot:'Durante o evento',    cor:'var(--f-durante)' },
+  pos:      { rot:'Pós-evento',          cor:'var(--f-pos)' },
+  ideias:   { rot:'Ideias e projetos',   cor:'var(--f-ideias)' }
+};
+
+const HOJE = (() => { const d = new Date(); d.setHours(0,0,0,0); return d; })();
+const dias = iso => Math.round((new Date(iso+'T00:00:00') - HOJE) / 86400000);
+const fmt  = iso => { const [a,m,d] = iso.split('-'); return d+'/'+m; };
+const plu  = (n,s,p) => n + ' ' + (Math.abs(n) === 1 ? s : p);
+const href = u => (u.startsWith('http') || u.startsWith('../')) ? u : GITHUB + u;
+const esc  = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- Contagem regressiva ---------- */
+(function(){
+  const d = dias(EVENTO);
+  const n = document.getElementById('cd-dias'), l = document.getElementById('cd-label');
+  if (d > 1)       { n.textContent = d;  l.textContent = 'DIAS PARA A ABERTURA'; }
+  else if (d === 1){ n.textContent = 1;  l.textContent = 'DIA PARA A ABERTURA'; }
+  else if (d === 0){ n.textContent = 'É HOJE'; n.style.fontSize = '30px'; l.textContent = 'ABERTURA'; }
+  else             { n.textContent = Math.abs(d); l.textContent = 'DIAS DESDE A ABERTURA'; }
+  document.getElementById('atualizado').textContent = ATUALIZADO;
+})();
+
+/* ---------- Estado dos filtros ---------- */
+const filtro = { status:null, fase:null, busca:'', modo:'fase' };
+
+const atrasada = p => p.prazo && p.status !== 'feito' && dias(p.prazo) < 0;
+const urgente  = p => p.prazo && p.status !== 'feito' && dias(p.prazo) >= 0 && dias(p.prazo) <= 7;
+
+/* ---------- Resumo e barra ---------- */
+function renderResumo(){
+  const total = PECAS.length;
+  const cont  = k => PECAS.filter(p => p.status === k).length;
+  const feito = cont('feito');
+  const pct   = Math.round(feito / total * 100);
+
+  document.getElementById('pct').textContent = pct;
+  document.getElementById('tot-feito').textContent = feito;
+  document.getElementById('tot-geral').textContent = total;
+  document.getElementById('tot-andamento').textContent = cont('aprovacao') + cont('producao');
+
+  document.getElementById('bar').innerHTML = Object.keys(STATUS)
+    .sort((a,b) => STATUS[b].ordem - STATUS[a].ordem)
+    .filter(k => cont(k) > 0)
+    .map(k => `<span title="${STATUS[k].rot}: ${cont(k)}" style="width:${cont(k)/total*100}%;background:${STATUS[k].cor}"></span>`)
+    .join('');
+
+  const cards = [
+    { k:null, rot:'Todas as peças', n:total, cor:'var(--ink)' },
+    ...Object.keys(STATUS).sort((a,b) => STATUS[a].ordem - STATUS[b].ordem)
+      .filter(k => cont(k) > 0)
+      .map(k => ({ k, rot:STATUS[k].rot, n:cont(k), cor:STATUS[k].cor }))
+  ];
+
+  document.getElementById('tiles').innerHTML = cards.map(c => `
+    <button class="tile" data-status="${c.k ?? ''}" aria-pressed="${filtro.status === c.k}">
+      <div class="n" style="color:${c.cor}">${c.n}</div>
+      <div class="l"><span class="dot" style="background:${c.cor}"></span>${c.rot}</div>
+    </button>`).join('');
+
+  document.querySelectorAll('.tile').forEach(b => b.onclick = () => {
+    const v = b.dataset.status || null;
+    filtro.status = (filtro.status === v) ? null : v;
+    renderResumo(); renderLista();
+  });
+}
+
+/* ---------- Foco agora ---------- */
+function renderFoco(){
+  const late = PECAS.filter(atrasada).sort((a,b) => a.prazo.localeCompare(b.prazo));
+  const bloq = PECAS.filter(p => p.status === 'bloqueado');
+  const soon = PECAS.filter(p => urgente(p) && p.status !== 'bloqueado')
+                    .sort((a,b) => a.prazo.localeCompare(b.prazo));
+
+  const cards = [
+    ...late.map(p => ({ cls:'', tag:'Atrasada', p, txt:`Prazo era ${fmt(p.prazo)} · ${plu(Math.abs(dias(p.prazo)),'dia','dias')} atrás` })),
+    ...bloq.map(p => ({ cls:'', tag:'Bloqueada', p, txt:p.nota })),
+    ...soon.map(p => ({ cls:'warn', tag:'Esta semana', p,
+      txt:`${dias(p.prazo) === 0 ? 'É hoje' : 'Faltam ' + plu(dias(p.prazo),'dia','dias')} · ${p.prazoTx || fmt(p.prazo)}` }))
+  ];
+
+  document.getElementById('foco-n').textContent = plu(cards.length,'item','itens');
+  document.getElementById('foco').innerHTML = cards.length ? cards.map(c => `
+    <div class="alert ${c.cls}">
+      <div class="tag">${c.tag}</div>
+      <h3>${esc(c.p.nome)}</h3>
+      <p>${esc(c.txt)}</p>
+    </div>`).join('')
+    : `<div class="empty">Nada atrasado nem bloqueado. Semana tranquila.</div>`;
+}
+
+/* ---------- Marcos ---------- */
+function renderMarcos(){
+  const prox = MARCOS.findIndex(m => dias(m.data) >= 0);
+  document.getElementById('marcos').innerHTML = MARCOS.map((m,i) => {
+    const d = dias(m.data);
+    const cls = d < 0 ? 'done' : (i === prox ? 'next' : '');
+    const quando = d < 0 ? 'passou' : d === 0 ? 'é hoje' : `faltam ${plu(d,'dia','dias')}`;
+    return `<div class="marco ${cls}">
+      <div class="dt">${fmt(m.data)}</div>
+      <div class="tx">${esc(m.tx)}</div>
+      <div class="sub2">${esc(m.sub)} · ${quando}</div>
+    </div>`;
+  }).join('');
+}
+
+/* ---------- Peça ---------- */
+function cardPeca(p){
+  const st = STATUS[p.status];
+  const late = atrasada(p), soon = urgente(p);
+  const prazoTx = p.prazo
+    ? (p.prazoTx || fmt(p.prazo)) + (late ? ` · atrasada ${Math.abs(dias(p.prazo))}d` : soon ? ` · faltam ${dias(p.prazo)}d` : '')
+    : 'sem prazo';
+  const links = (p.links || []).map(l => `<a href="${esc(href(l.u))}" target="_blank" rel="noopener">${esc(l.t)}</a>`).join('');
+
+  return `<article class="item" style="--fase-color:${FASES[p.fase].cor}">
+    <div class="item-top">
+      <h3>${esc(p.nome)}</h3>
+      <span class="badge" style="background:${st.cor}">${st.rot}</span>
+    </div>
+    ${p.nota ? `<p class="nota">${esc(p.nota)}</p>` : ''}
+    ${links ? `<div class="links">${links}</div>` : ''}
+    <div class="meta">
+      <span>👤 ${esc(p.resp || '—')}</span>
+      <span class="prazo ${late ? 'late' : soon ? 'soon' : ''}">📅 ${esc(prazoTx)}</span>
+    </div>
+  </article>`;
+}
+
+/* ---------- Lista ---------- */
+function renderLista(){
+  const q = filtro.busca.trim().toLowerCase();
+  const vis = PECAS.filter(p =>
+    (!filtro.status || p.status === filtro.status) &&
+    (!filtro.fase   || p.fase   === filtro.fase) &&
+    (!q || (p.nome + ' ' + (p.nota||'') + ' ' + (p.resp||'')).toLowerCase().includes(q))
+  );
+
+  document.getElementById('lista-n').textContent = vis.length + ' de ' + PECAS.length;
+  const alvo = document.getElementById('lista');
+
+  if (!vis.length){ alvo.innerHTML = `<div class="empty">Nenhuma peça com esses filtros.</div>`; return; }
+
+  if (filtro.modo === 'prazo'){
+    const ord = [...vis].sort((a,b) =>
+      (a.prazo ? 0 : 1) - (b.prazo ? 0 : 1) || (a.prazo||'').localeCompare(b.prazo||''));
+    alvo.innerHTML = `<div class="items">${ord.map(cardPeca).join('')}</div>`;
+    return;
+  }
+
+  alvo.innerHTML = Object.keys(FASES).map(f => {
+    const doGrupo = vis.filter(p => p.fase === f);
+    if (!doGrupo.length) return '';
+    const ord = [...doGrupo].sort((a,b) => STATUS[a.status].ordem - STATUS[b.status].ordem);
+    return `<section class="group">
+      <div class="group-head">
+        <span class="dot" style="background:${FASES[f].cor};width:11px;height:11px"></span>
+        <span class="fase">${FASES[f].rot}</span>
+        <span class="rule"></span>
+        <span class="n">${plu(doGrupo.length,'peça','peças')}</span>
+      </div>
+      <div class="items">${ord.map(cardPeca).join('')}</div>
+    </section>`;
+  }).join('');
+}
+
+/* ---------- Controles ---------- */
+function renderChips(){
+  const chips = [{ k:null, rot:'Todas as fases' },
+    ...Object.keys(FASES).map(k => ({ k, rot:FASES[k].rot }))];
+  document.getElementById('chips-fase').innerHTML = chips.map(c =>
+    `<button class="chip" data-fase="${c.k ?? ''}" aria-pressed="${filtro.fase === c.k}">${c.rot}</button>`).join('');
+  document.querySelectorAll('.chip').forEach(b => b.onclick = () => {
+    const v = b.dataset.fase || null;
+    filtro.fase = (filtro.fase === v) ? null : v;
+    renderChips(); renderLista();
+  });
+}
+
+document.getElementById('busca').oninput = e => { filtro.busca = e.target.value; renderLista(); };
+
+function setModo(m){
+  filtro.modo = m;
+  document.getElementById('modo-fase').setAttribute('aria-pressed', m === 'fase');
+  document.getElementById('modo-prazo').setAttribute('aria-pressed', m === 'prazo');
+  renderLista();
+}
+document.getElementById('modo-fase').onclick  = () => setModo('fase');
+document.getElementById('modo-prazo').onclick = () => setModo('prazo');
+
+/* ---------- Aguardando ---------- */
+document.getElementById('waiting').innerHTML = AGUARDANDO.map(a =>
+  `<div class="wait"><div class="q">${esc(a.q)}</div><div class="who">⏳ ${esc(a.who)}</div></div>`).join('');
+
+renderResumo(); renderFoco(); renderMarcos(); renderChips(); renderLista();
+</script>
+</body>
+</html>

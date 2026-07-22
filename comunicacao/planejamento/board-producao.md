@@ -2,6 +2,8 @@
 
 > **Fonte única de verdade sobre o estado de cada peça.** As pastas guardam arquivos; este board guarda o status.
 > Atualize sempre que uma peça mudar de fase.
+> 📊 **Versão visual para acompanhar e apresentar:** [painel de produção](https://vertumno.github.io/concefor-innovation/comunicacao/painel/)
+> ([fonte](../painel/index.html)) — ao mudar o status aqui, atualize a lista `PECAS` lá.
 > Status: ⬜ A fazer · 🟡 Em produção · 🔵 Em aprovação · ✅ Publicado/Entregue · ⏸️ Pausado
 
 ## Impressão — brindes, promocionais e sinalização
