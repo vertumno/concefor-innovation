@@ -32,8 +32,18 @@
 | Arte **bolsa de algodão** | 400 un · 280 × 350 × 80 mm · estampa colorida | ___ | antes de 07/08 | ⬜ |
 | Arte **canetas** | 400 un · azul · logomarca colorida | ___ | antes de 07/08 | ⬜ |
 | Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | ___ | antes de 07/08 | ⬜ |
-| Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | 🔵 **finalizado 21/07, com a Márcia para aprovação** (4 variantes) |
+| Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | ✅ **arte enviada à gráfica em 22/07** (PDF de exemplo); modelo de lote pronto no Canva |
 | Arte **banners** (10 un · 0,90 × 1,20 m) — **conteúdo a definir** | 10 un · 0,90 × 1,20 m | ___ | antes de 07/08 | ⬜ |
+
+> 📤 **Artes enviadas à gráfica em 22/07** (e-mail em
+> [`_especificacoes/email-grafica-envio-artes.md`](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)):
+> PDFs com as logos em curvas. Crachá, bloco e camisa vão prontos; caneta, copo e bolsa a gráfica
+> monta com a nossa marca e devolve a montagem para aprovação.
+> **Aguardando dela:** a **data-limite para receber o PDF final dos crachás com os nomes**. As
+> inscrições vão até 15/08 e queremos fechar a lista o mais tarde possível.
+> 🪪 **Geração em lote:** modelo do crachá montado no Canva em 22/07
+> ([link](https://canva.link/vx6e7xpwox32wyy)), para gerar um crachá por inscrito a partir da
+> lista do Even3.
 
 > ❓ **Crachá: falta definir o rateio das 400 unidades.** A arte tem **4 variantes** em
 > [`cracha/3x/`](../producao/01-brindes-promocionais/cracha/3x/): **normal** (nome + nome completo),

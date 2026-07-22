@@ -16,6 +16,9 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
   *(pasta registrada anteriormente: https://www.canva.com/folder/FAHDrZ44PIM — confirmar se é a mesma)*
 - **🎨 Cards dos palestrantes (Canva — editáveis):** https://canva.link/dzws8wu8ckf4gtv
   *(os 7 cards individuais; PNGs finais versionados em `comunicacao/producao/02-pre-evento/palestrantes/cards/`)*
+- **🪪 Modelo do crachá (Canva — para geração em lote):** https://canva.link/vx6e7xpwox32wyy
+  *(montado em 22/07 para gerar os crachás em lote com o nome de cada inscrito, a partir da
+  lista do Even3; o PDF final vai para a gráfica na data-limite que ela indicar)*
 - **🖌️ Matrizes do Illustrator (Drive da CGTE):** https://drive.google.com/drive/folders/1fuoepIyukqXTw035JtTj-MSbnpw7veJn?usp=drive_link
 - **📤 Arquivos editáveis e públicos (compartilhar com a comissão):** https://drive.google.com/drive/folders/1-CH92C467aI7C_dj6fE4O5XBI8A_qShv
 - **Central de comunicação (neste repo):** `comunicacao/` — board, calendário, palestrantes, peças
