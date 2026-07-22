@@ -174,6 +174,16 @@ placeholder e trocar depois).
   pelo admin (abre/fecha), visíveis a todos, mais votadas no topo, autor oculto no app. A Márcia
   validou a ideia com entusiasmo em 16/07 — sobe de stretch para **planejada**, mas continua
   sendo a primeira coisa a cortar se o caminho crítico apertar.
+- **Materiais dos palestrantes para download** (decidido em 22/07): cada palestrante pode
+  oferecer livro, artigo ou slides, e o app passa a ser onde o participante encontra isso.
+  Aparece na sessão e/ou no perfil do palestrante. **Custo técnico é baixo**: guardar uma lista
+  de `{titulo, url}` por palestrante (campo novo ou tabela `speaker_materials`) e renderizar como
+  link externo. **Não hospedar arquivo**, só apontar para a fonte oficial, o que evita questão de
+  direitos e peso no servidor. **O caminho crítico é conteúdo, não código:** depende de cada
+  palestrante enviar o material, pedido que já entrou na mensagem de solicitação de vídeo
+  (prazo 03/08) — ver `comunicacao/producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md`.
+  Primeiro item já confirmado: livro gratuito do Mariano Pimentel,
+  https://books-sol.sbc.org.br/index.php/sbc/catalog/book/182
 - **Candidatas para a semana do evento** (só com login + lançamento sólidos; nesta ordem):
   **avisos da organização** no Início (mão única, sem chat) · **dica do dia** (alimentação/
   arredores — conteúdo da Márcia) · **networking por QR do crachá** (aponta o scanner do app

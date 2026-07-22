@@ -1,7 +1,11 @@
-# Mensagem aos palestrantes — solicitação de vídeo-convite
+# Mensagem aos palestrantes · solicitação de vídeo-convite e material
 
 > Enviar por e-mail ou WhatsApp. Personalizar os campos entre [colchetes].
-> Prazo para recebermos os vídeos: **03/08/2026**.
+> Prazo para recebermos vídeo e material: **03/08/2026**.
+>
+> 📌 **São dois pedidos numa mensagem só** (decisão de 22/07): o vídeo-convite para a divulgação
+> e o material de leitura que a pessoa queira disponibilizar no app do evento. Juntar os dois
+> evita procurar o palestrante duas vezes.
 
 ---
 
@@ -39,8 +43,20 @@ que antecede o evento.
 > distância e tecnologias educacionais em todo o Brasil.
 > Te espero lá! Inscrições em **concefor.cefor.ifes.edu.br**."
 
-Nossa equipe cuidará da edição, legendas e identidade visual — você só precisa gravar e enviar.
-Se preferir, também podemos gravar com você presencialmente ou por chamada de vídeo — é só nos avisar.
+Nossa equipe cuidará da edição, legendas e identidade visual: você só precisa gravar e enviar.
+Se preferir, também podemos gravar com você presencialmente ou por chamada de vídeo, é só nos avisar.
+
+**Mais uma coisa: algum material para compartilhar com o público?**
+
+O VIII Concefor terá um **aplicativo próprio**, com a programação e conteúdo do evento. Nele,
+queremos oferecer aos participantes os **materiais que cada palestrante quiser disponibilizar**:
+um livro, um artigo, os slides da apresentação ou qualquer leitura que ajude quem for assistir.
+
+Se tiver algo assim, é só nos enviar o **link** (não precisa mandar arquivo). Um exemplo do que
+temos em mente: o professor Mariano Pimentel disponibiliza gratuitamente o livro *"IA generativa
+e educação: práticas e teorizações"*, e ele ficará acessível pelo app para quem for à palestra dele.
+
+Fica a seu critério, tanto o que enviar quanto não enviar nada.
 
 Desde já agradecemos e ficamos à disposição para qualquer dúvida.
 
@@ -64,17 +80,27 @@ VIII Concefor · 17 a 20/08/2026
 > 3. Por que vale a pena assistir (1 frase)
 > 4. Convite: "Te espero no VIII Concefor, de 17 a 20/08, em Vitória. Inscrições em concefor.cefor.ifes.edu.br"
 >
-> Pode enviar por aqui mesmo **até 03/08**? Nós cuidamos de toda a edição e legendas. Qualquer dúvida, estou à disposição.
+> Pode enviar por aqui mesmo **até 03/08**? Nós cuidamos de toda a edição e legendas.
+>
+> Mais uma coisa: o evento terá um **app próprio**, e queremos disponibilizar nele os materiais que cada palestrante quiser compartilhar (livro, artigo, slides, qualquer leitura útil). Se tiver algo, é só mandar o **link** por aqui. Fica a seu critério.
+>
+> Qualquer dúvida, estou à disposição.
 
 ---
 
 ## Controle de envio e recebimento
-| Palestrante | Mensagem enviada | Vídeo recebido | Editado | Publicado |
-|---|---|---|---|---|
-| Dra. Vanessa Battestin | ⬜ | ⬜ | ⬜ | ⬜ (reel 08/08) |
-| Felipe Tessarolo | ⬜ | ⬜ | ⬜ | ⬜ (reel 10/08) |
-| Mesa "Tecnologia Delas" (Márcia / Sanz / Mariella) | ⬜ | ⬜ | ⬜ | ⬜ (reel 12/08) |
-| Dr. Mariano Pimentel | ⬜ | ⬜ | ⬜ | ⬜ (reel 14/08) |
+| Palestrante | Mensagem enviada | Vídeo recebido | Editado | Publicado | Material p/ o app |
+|---|---|---|---|---|---|
+| Dra. Vanessa Battestin | ⬜ | ⬜ | ⬜ | ⬜ (reel 08/08) | ⬜ |
+| Felipe Tessarolo | ⬜ | ⬜ | ⬜ | ⬜ (reel 10/08) | ⬜ |
+| Mesa "Tecnologia Delas" (Márcia / Sanz / Mariella) | ⬜ | ⬜ | ⬜ | ⬜ (reel 12/08) | ⬜ |
+| Dr. Mariano Pimentel | ⬜ | ⬜ | ⬜ | ⬜ (reel 14/08) | ✅ livro *"IA generativa e educação"* ([link](https://books-sol.sbc.org.br/index.php/sbc/catalog/book/182)) |
+| Dra. Rutinelli da Penha Fávero | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| Dr. Mauro Oliveira | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+
+> **Materiais recebidos alimentam o app** (feature decidida em 22/07, ver
+> [`spec/app-v1.md`](../../../../spec/app-v1.md) seção 8). Guardar sempre o **link**, não o arquivo.
+> Os links confirmados ficam também em [`links.md`](../../../../links.md).
 
 ## Observações
 - **Tessarolo (UK):** considerar enviar a versão e-mail; se preferir, ele pode gravar em

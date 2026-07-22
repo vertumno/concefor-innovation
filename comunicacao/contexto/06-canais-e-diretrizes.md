@@ -18,6 +18,13 @@
   com um colega. Nada de texto rebuscado ou empolgação artificial.
 - **Sem travessão de nenhum tipo.** Nem o longo, nem o curto: é o tique mais óbvio de texto de IA.
   No lugar, usar ponto, vírgula, dois pontos ou parênteses. Regra dura, sem exceção.
+- **Grafia "EaD"**, com E e D maiúsculos e o "a" minúsculo. Nunca "EAD" nem "ead", mesmo quando a
+  fonte original escreve diferente (definido em 22/07/2026). Vale inclusive dentro de títulos de
+  palestra: o título do Mariano Pimentel aparece como "Autoria com IA generativa: desafios para a
+  EaD" nas nossas peças, embora o site escreva "EAD".
+- **Títulos acadêmicos: só quando confirmados.** Felipe Maciel Tessarolo vai **sem título nenhum**
+  (nem "Dr.", nem "Professor"), mesmo o site usando "Professor". Ver
+  [03-palestrantes.md](03-palestrantes.md) para o caso de cada palestrante.
 - **Emojis com muita moderação:** no máximo 1 ou 2 por legenda, e só quando acrescentam
   algo. Nunca um emoji por linha, nunca listas decoradas com emojis.
 - **Evitar clichês com cara de IA:** "imperdível", "não perca essa oportunidade única",

@@ -5,6 +5,14 @@ https://concefor.cefor.ifes.edu.br/
 > ainda traz "Dr. Felipe Maciel Tessarolo" e "Dra. Celia Jaqueline Sanz Rodriguez", nomes que já
 > foram corrigidos na programação. Recapturar quando o site atualizar essa parte.
 > Este arquivo registra o que está publicado lá fora, então mantém a formatação do site.
+>
+> **Divergências conhecidas entre o site e as nossas peças** (as nossas estão certas, não copiar daqui):
+> | O site escreve | Nas nossas peças |
+> |---|---|
+> | "Professor Felipe Maciel Tessarolo" | **Felipe Maciel Tessarolo**, sem título |
+> | "desafios para a EAD" | **"desafios para a EaD"** |
+>
+> Se der para pedir a correção no site, vale alinhar os dois pontos.
 
 O Concefor
 O Concefor é um evento bienal de abrangência nacional promovido pelo Centro de Referência em Formação e em Educação a Distância – Cefor do Instituto Federal de Educação do Espírito Santo – Ifes. Esse evento de pesquisa e extensão tem por finalidade reunir pesquisadores de estados da região Sudeste e de todo o Brasil com o propósito de gerar novos conhecimentos sobre Educação a Distância e híbrida a partir de discussões e reflexões sobre as temáticas de uso e construção de tecnologias educacionais, de formação de professores e de práticas docentes inovadoras nos contextos do ensino presencial e a distância.

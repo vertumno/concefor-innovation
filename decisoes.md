@@ -4,6 +4,29 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-22 — App vai distribuir materiais dos palestrantes
+
+**Decisão:** o app do evento passa a oferecer **os materiais que cada palestrante quiser
+compartilhar** (livro, artigo, slides), na sessão e/ou no perfil dele. Guardamos **link, não
+arquivo**: aponta para a fonte oficial, sem hospedar nada.
+
+**Primeiro material confirmado:** livro gratuito do Mariano Pimentel, *"IA generativa e educação:
+práticas e teorizações"* (SBC, +10 mil downloads),
+https://books-sol.sbc.org.br/index.php/sbc/catalog/book/182 — casa direto com a palestra dele.
+
+**Por quê:** dá utilidade real ao app além da programação, e o conteúdo já existe, é só apontar.
+Custa quase nada de código (uma lista de `{titulo, url}` por palestrante), e não hospedar evita
+discussão de direitos autorais e peso no servidor.
+
+**O caminho crítico é conteúdo, não código.** Depende de cada palestrante enviar o material, então
+o pedido **entrou na mensagem de solicitação de vídeo** que já ia ser enviada, com prazo 03/08.
+Um contato só, dois pedidos. A tabela de controle dessa mensagem ganhou coluna para o material.
+
+**Ficou em aberto:** onde exatamente isso aparece na navegação do app, e se entra antes ou depois
+do lançamento do piloto.
+
+---
+
 ## 2026-07-21 — Brindes: logo sem numeral confirmado e cronograma da gráfica antecipado
 
 **Decisão / fatos:**

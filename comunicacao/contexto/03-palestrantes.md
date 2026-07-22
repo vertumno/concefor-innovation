@@ -32,8 +32,11 @@
 ## Bios (resumos para arte — não copiar inteiro no card)
 
 ### Felipe Maciel Tessarolo · PALESTRANTE INTERNACIONAL
-> ⚠️ **Sem "Dr." no nome dele** (definido em 21/07/2026): ainda não é doutor. Usar
-> "Felipe Maciel Tessarolo", sem título acadêmico.
+> ⚠️ **Nome sem título nenhum** (definido em 21/07 e reforçado em 22/07/2026):
+> usar **"Felipe Maciel Tessarolo"**, sem "Dr." (ele ainda não é doutor) e **sem "Professor"**.
+> A arte do card dele também está assim.
+> 📌 O **site oficial escreve "Professor Felipe Maciel Tessarolo"**. Divergência conhecida e
+> aceita: a nossa grafia é a sem título. Não copiar a do site.
 Institute of Educational Technology (IET) da **The Open University (Reino Unido)**. Atua em
 soluções educacionais inovadoras com foco em IA, aprendizagem online, acessibilidade e
 personalização em larga escala. Senior Fellow da Higher Education Academy (SFHEA). Envolvido em
@@ -58,6 +61,7 @@ Pesquisa: Sistemas de Informação, Informática na Educação e Cibercultura.
   > ⚠️ Título alterado a pedido do próprio Mariano em 22/07/2026. O anterior era
   > "Desafios da EaD e as ondas de IA". Card refeito (v2).
 - Gancho de conteúdo: livro gratuito *"IA generativa e educação: práticas e teorizações"* (SBC).
+  **Download:** https://books-sol.sbc.org.br/index.php/sbc/catalog/book/182
 - **Instagram:** @pimentelmariano
 
 ### Dra. Vanessa Battestin

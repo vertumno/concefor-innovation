@@ -26,6 +26,15 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 - **Cefor/IFES:** <link institucional>
 - **Plataforma de inscrição — Even3** (API p/ login pelo crachá, pós-piloto): `<link do evento no Even3>` — confirmar acesso/credenciais da API; o que já sabemos está em `contexto/even3/README.md`
 
+## Conteúdo dos palestrantes
+
+- **📘 Livro do Mariano Pimentel, "IA generativa e educação: práticas e teorizações"** (SBC,
+  gratuito, +10 mil downloads): https://books-sol.sbc.org.br/index.php/sbc/catalog/book/182
+  — é o gancho da legenda do card dele e conversa direto com a palestra
+  *"Autoria com IA generativa: desafios para a EaD"* (19/08, 14h30).
+  💡 **Possibilidade registrada:** disponibilizar o download pelo app do evento
+  (ver `contexto/brainstorm/sintese-ideias.md`, fase 2).
+
 ## Identidade visual
 
 - **Design system (neste repo):** `design-system/` — Concefor (base) + selo 20 anos (acento)
