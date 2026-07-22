@@ -4,6 +4,34 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-22 — Crachás vêm todos em branco; nomes impressos no Cefor
+
+**Fato novo (ligação com José Fernando Antonio, Brindes Expresso, (27) 99803-1617):** os crachás
+são produzidos em **impressão gráfica**, não digital. Não existe personalização com o nome de cada
+participante. **Os 400 vêm em branco**, sem nome.
+
+**Decisão decorrente:** a impressão dos nomes passa a ser **nossa, no Cefor**, sobre os crachás já
+impressos. Cai o plano de enviar à gráfica um PDF final com os nomes, e cai também a necessidade
+de segurar a lista de inscritos até a última data possível: sem lote nomeado na gráfica, não há
+data-limite dela para cumprir.
+
+**Por quê:** limitação técnica do processo do fornecedor, não escolha nossa.
+
+**O que isso destrava:** o prazo dos crachás volta a ser o do restante do material (entrega até
+07/08). Podemos imprimir nomes até a véspera, inclusive para quem se inscrever depois de 15/08.
+
+**O que isso cria (riscos a resolver antes de 17/08):**
+1. **Papel.** Crachá é papel fotográfico fosco 240 g. Falta confirmar se a impressora do Cefor
+   roda essa gramatura, e fazer teste com uma amostra antes da entrega dos 400.
+2. **Arte.** A área do nome precisa ficar limpa no crachá impresso, e o nome entra por cima, no
+   registro certo. Alinhamento e margem viram problema de impressão, não de design.
+3. **Modelo do Canva** (https://canva.link/vx6e7xpwox32wyy) muda de função: em vez de gerar o
+   crachá inteiro com nome, agora gera **só a camada dos nomes** posicionada para sobreimpressão.
+4. **Volume.** 400 passagens de papel fotográfico numa impressora de escritório, mais recorte de
+   erro. Definir quem faz e quando.
+
+---
+
 ## 2026-07-22 — App vai distribuir materiais dos palestrantes
 
 **Decisão:** o app do evento passa a oferecer **os materiais que cada palestrante quiser

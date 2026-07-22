@@ -43,18 +43,21 @@ Fico no aguardo. Obrigado!
 ---
 
 ## Respostas da gráfica
-*(preencher quando responderem, e refletir no doc de especificações)*
 
-- **Data-limite para o PDF final dos crachás com os nomes:** ___
+**Por telefone, em 22/07, com José Fernando Antonio (Brindes Expresso), (27) 99803-1617:**
+
+- **Crachás com nome: não é possível.** A produção é em **impressão gráfica**, não digital, então
+  não há personalização unitária. **Os 400 vêm em branco**, sem nome.
+  → A **impressão dos nomes fica com o Cefor**, sobre os crachás prontos.
+  → Some a pergunta da data-limite do PDF com os nomes: não existe lote nomeado na gráfica.
 - **Data das montagens (caneta, copo, bolsa) para aprovação:** ___
 
-## Pontos que ficaram fora deste e-mail
+## Em aberto depois dessa resposta
 
-Saíram na revisão do texto. Seguem em aberto e podem virar follow-up conforme a resposta dele:
-
-- **Crachás em remessa separada**, entregue mais perto do evento (o restante do material tem
-  entrega contratada até 07/08). Depende da data-limite que ele responder.
-- **Crachás sem nome**, para imprimirmos só o nome aqui no Cefor: quantidade, e se o papel
-  fotográfico fosco 240 g roda em impressora laser ou jato de tinta comum. Se não rodar, o plano
-  de imprimir os nomes no Cefor não se sustenta.
-- **Rateio das 400 unidades** entre as variantes do crachá (normal, palestrante, QR, inscrição).
+- **Papel na nossa impressora.** Papel fotográfico fosco 240 g em impressora de escritório:
+  confirmar antes da entrega e testar com amostra. É o risco que derruba o plano inteiro.
+- **Área do nome na arte** do crachá impresso: precisa ficar limpa e no registro certo para o
+  nome entrar por cima.
+- **Camada de nomes para sobreimpressão:** adaptar o modelo do Canva
+  (https://canva.link/vx6e7xpwox32wyy), que hoje gera o crachá inteiro.
+- **Rateio das 400 unidades** entre as variantes (normal, palestrante, QR, inscrição).

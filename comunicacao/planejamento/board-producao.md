@@ -39,11 +39,17 @@
 > [`_especificacoes/email-grafica-envio-artes.md`](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)):
 > PDFs com as logos em curvas. Crachá, bloco e camisa vão prontos; caneta, copo e bolsa a gráfica
 > monta com a nossa marca e devolve a montagem para aprovação.
-> **Aguardando dela:** a **data-limite para receber o PDF final dos crachás com os nomes**. As
-> inscrições vão até 15/08 e queremos fechar a lista o mais tarde possível.
-> 🪪 **Geração em lote:** modelo do crachá montado no Canva em 22/07
-> ([link](https://canva.link/vx6e7xpwox32wyy)), para gerar um crachá por inscrito a partir da
-> lista do Even3.
+> **Aguardando dela:** as montagens de caneta, copo e bolsa para aprovação.
+
+> 🪪 **Crachás: todos vêm em branco (definido 22/07, por telefone com a gráfica).** A produção é em
+> impressão gráfica, não digital, então **não existe personalização com o nome**. Os 400 chegam sem
+> nome e **a impressão dos nomes é nossa, aqui no Cefor**, sobre o crachá pronto.
+> **Antes de 17/08:** (1) confirmar e **testar** se a impressora do Cefor roda papel fotográfico
+> fosco 240 g; (2) garantir área limpa para o nome na arte; (3) adaptar o modelo do Canva
+> ([link](https://canva.link/vx6e7xpwox32wyy)) para gerar **só a camada dos nomes** a partir da
+> lista do Even3, em vez do crachá inteiro; (4) definir quem imprime as 400 e quando.
+> ✅ **Efeito bom:** sem lote nomeado na gráfica, some a corrida contra a data-limite dela.
+> Podemos imprimir nome até a véspera, inclusive de quem se inscrever depois de 15/08.
 
 > ❓ **Crachá: falta definir o rateio das 400 unidades.** A arte tem **4 variantes** em
 > [`cracha/3x/`](../producao/01-brindes-promocionais/cracha/3x/): **normal** (nome + nome completo),

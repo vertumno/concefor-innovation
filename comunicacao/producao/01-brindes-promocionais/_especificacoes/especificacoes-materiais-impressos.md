@@ -60,8 +60,8 @@ em todos os quantitativos.**
 **Total geral: R$ 19.442,50** (frete R$ 0,00).
 Prazo de envio: 15 dias · Condição de pagamento: 30 dias.
 Quantidades podem variar ±5%, faturadas conforme entrega.
-Contato do fornecedor: José Fernando Antonio — (27) 3201-8565 / (27) 99953-9224 ·
-www.brindesexpresso.com.br
+Contato do fornecedor: José Fernando Antonio — (27) 3201-8565 / (27) 99953-9224 /
+**(27) 99803-1617** (celular usado nas ligações de 22/07) · www.brindesexpresso.com.br
 
 ---
 
@@ -103,6 +103,11 @@ Registrado porque afeta o planejamento de produção; nada disso está contratad
 - ✅ **Crachá:** a dúvida "confirmar necessidade" do README da fase 1 está **resolvida** —
   são **400 unidades, 10 × 14 cm, papel fotográfico fosco 240 g, com cordão**. A CGTE faz a arte.
   Amarra com a integração Even3/QR (ver `contexto/even3/`).
+  🪪 **22/07, por telefone com a gráfica:** a produção é em **impressão gráfica, não digital**, então
+  **não há personalização com o nome do participante**. Os 400 vêm **em branco** e a **impressão dos
+  nomes fica com o Cefor**. Ver [`email-grafica-envio-artes.md`](email-grafica-envio-artes.md) e o
+  [board](../../../planejamento/board-producao.md) para os pontos que isso abre (papel na nossa
+  impressora, área do nome na arte, camada de nomes para sobreimpressão).
 - ✅ **Bolsa, bloco, caneta, camisa:** dimensões e quantidades agora estão fechadas — usar as
   medidas desta tabela nos briefs, não estimativas.
 - 🆕 **Copo bucks ecológico** (400 un.) não estava no board nem no README da fase 1.
