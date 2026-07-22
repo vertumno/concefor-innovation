@@ -57,7 +57,7 @@ insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fi
    '2026-08-19T09:30:00-03:00', '2026-08-19T11:30:00-03:00'),
   ('sessoes-19t', 'Sessões técnicas — apresentação de artigos', 'Comunicações orais de artigos completos.', null, 'Sessões técnicas', null,
    '2026-08-19T13:30:00-03:00', '2026-08-19T14:30:00-03:00'),
-  ('palestra-mariano', 'Desafios da EaD e as ondas de IA', 'Palestra sobre inteligência artificial na educação a distância.', 'Auditório', 'Palestra', 'Prof. Dr. Mariano Pimentel',
+  ('palestra-mariano', 'Autoria com IA generativa: desafios para a EaD', 'Palestra sobre autoria e IA generativa na educação a distância.', 'Auditório', 'Palestra', 'Prof. Dr. Mariano Pimentel',
    '2026-08-19T14:30:00-03:00', '2026-08-19T16:00:00-03:00'),
   ('coffee-19', 'Coffee-break', null, null, 'Intervalo', null,
    '2026-08-19T16:00:00-03:00', '2026-08-19T16:30:00-03:00'),
