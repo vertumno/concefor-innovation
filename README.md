@@ -1,60 +1,90 @@
-# App — VIII Concefor (PWA)
+# App — VIII CONCEFOR (PWA)
 
-PWA do evento. Escopo v1: **programação viva (timeline)** · **reações ao vivo no telão** ·
-**dashboard/relatório**. Spec completo em [`../spec/app-v1.md`](../spec/app-v1.md).
+PWA do evento **VIII CONCEFOR** (17–20/08/2026, Cefor/IFES, Vitória-ES). Escopo v1:
+**programação viva (timeline)** · **reações ao vivo no telão** · **dashboard/relatório**.
+Mobile-first, instalável.
 
-> **Status:** app rodável com **backend próprio** (SQLite local + API routes) e a **identidade
-> visual** Concefor (ver [`../design-system/app/`](../design-system/app/)). Telas de programação
-> (Agora / A seguir / timeline) e "minha programação" (favoritos) leem da tabela `sessions`. Dá
-> para ver tudo funcionando **sem configurar nada** via `npm run dev:demo` (modo demonstração).
-> Reações/telão/dashboard são os próximos marcos (ver TODOs).
+> Espelho do código do app. O desenvolvimento e o contexto do projeto ficam no repositório
+> interno da equipe — abra *issues* aqui, mas alinhe mudanças com o time antes de contribuir.
 
 ## Stack
 
-- Next.js (App Router) + `next-pwa` — mobile-first, instalável
-- Backend próprio: SQLite local (`better-sqlite3`) atrás de `lib/db.ts` (interface única) + API routes
-- Deploy: self-host no Cefor via Docker (`output: standalone`, volume para o arquivo SQLite)
+- **Next.js 15** (App Router, `output: standalone`) + React 19 + TypeScript
+- **SQLite local** (`better-sqlite3`, binário nativo) atrás de `src/lib/db.ts` (interface única de dados) + **API routes** + **SSE** (Server-Sent Events) para o tempo real das reações/telão
+- `next-pwa` (service worker + cache offline — em wiring)
 
-## Rodar localmente
+> ⚠️ **Restrição de arquitetura:** por usar **SQLite em disco + SSE**, o app precisa de um
+> **processo sempre-ligado com disco persistente**. **Não roda em serverless** (Vercel/Functions).
+> O alvo é container Docker (ou Node de longa duração numa VM/servidor).
+
+## Rodar localmente (dev)
 
 ```bash
 cd app
 npm install
-npm run seed         # cria ./data/concefor.db e carrega a programação oficial
-npm run dev          # app com DADOS REAIS vindos do SQLite (relógio real)
+npm run seed        # cria ./data/concefor.db e carrega a programação oficial
+npm run dev         # app com dados reais do SQLite (relógio real) — http://localhost:3000
 # ou:
-npm run dev:demo     # DADOS DE DEMONSTRAÇÃO + relógio simulado — nada a configurar
+npm run dev:demo    # dados de demonstração + relógio simulado — nada a configurar
 ```
 
-### Modo demonstração (flag `NEXT_PUBLIC_DEMO`)
+Requisitos: **Node.js 22+**. O `better-sqlite3` é binário nativo — em Linux/Alpine pode exigir
+`python3`, `make` e `g++` para compilar no `npm install` (o Dockerfile já cuida disso).
 
-Para ver o app **funcionando na hora**, sem banco. Liga com a flag `NEXT_PUBLIC_DEMO=1` (opt-in).
-Carrega a **programação oficial** do VIII Concefor (17–20/08/2026). Como o evento é futuro, usa um
-**relógio de demonstração**: o "agora" é simulado dentro do evento (ancorado em 18/08 09:30, correndo
-em tempo real), então há sessão "Acontecendo agora", contagens, barra de progresso e a linha do tempo
-viva. Uma faixa no topo mostra o relógio simulado e deixa claro que é uma demonstração.
+## Deploy (produção) — Docker
 
-- Vale em **dev e em produção** (a flag é embutida no build): `npm run dev:demo`, `npm run build:demo`.
-- Em deploy (Vercel): defina `NEXT_PUBLIC_DEMO=1` no projeto/preview para uma demo pública.
-- Programação em [`src/lib/demoData.ts`](src/lib/demoData.ts); relógio em [`src/lib/clock.ts`](src/lib/clock.ts).
-
-### Dados reais (SQLite local)
-
-O app tem backend próprio: um arquivo SQLite (default `./data/concefor.db`, configurável por
-`DATABASE_PATH`) acessado **só** por [`src/lib/db.ts`](src/lib/db.ts) — a interface única de
-dados. A UI nunca fala com o banco direto: consome a API route `GET /api/sessions`. Manter esse
-único ponto de acesso é o que deixa barata uma futura volta ao Postgres.
+O `Dockerfile` já produz a imagem standalone. Na pasta `app/`:
 
 ```bash
-cp .env.example .env.local   # opcional; defaults já servem para dev
-npm run seed                 # aplica db/schema.sql + db/seed.sql em ./data/concefor.db
-npm run dev                  # lê do SQLite via /api/sessions
+# 1. build da imagem
+docker build -t concefor-app .
+
+# 2. subir (volume p/ o SQLite + variáveis em .env.local)
+docker run -d --name concefor-app -p 3000:3000 \
+  -v concefor-data:/app/data \
+  --env-file .env.local \
+  concefor-app
+
+# 3. semear a base UMA vez (programação oficial)
+docker run --rm -v concefor-data:/app/data concefor-app node scripts/seed.mjs
 ```
 
-O schema (`db/schema.sql`) é aplicado de forma idempotente no boot do `db.ts` e no seed. O
-`db/seed.sql` traz a programação oficial (repetível: `npm run seed` limpa e recarrega; as
-reações em `timeline_events` são preservadas). Sem seed e sem a flag demo, o app sobe e mostra
-estado vazio em vez de quebrar.
+O volume `/app/data` guarda o arquivo SQLite entre reinícios e atualizações.
+
+### Dependências de infraestrutura
+
+| Item | Detalhe |
+|---|---|
+| **Host** | Linux com Docker (recomendado). Sem Docker: Node.js 22 + `python3`/`make`/`g++`. |
+| **Disco** | Volume persistente para o arquivo SQLite (o dado do evento vive nele). |
+| **Rede** | Porta **3000** (interna do container). |
+| **HTTPS** | **Obrigatório.** Endereço estável atrás de reverse proxy com TLS — o PWA instalável e a câmera do QR scanner só funcionam em *secure context* (HTTPS). |
+| **No evento (17–20/08)** | Idealmente rodando na **LAN do Cefor**, para o app sobreviver a quedas de internet (usa só a rede local). |
+
+## Variáveis de ambiente (`.env.local`)
+
+Baseie-se em `.env.example`. Segredos **não** estão no repositório (`.env.local` é gitignored).
+
+| Variável | Uso |
+|---|---|
+| `DATABASE_PATH` | Caminho do arquivo SQLite. No Docker: `/app/data/concefor.db`. Default local: `./data/concefor.db`. |
+| `ADMIN_TOKEN` | Segredo do painel admin (`/admin`). |
+| `EVEN3_API_TOKEN` | Token de **leitura** da API do Even3 (programação/inscritos). |
+| `NEXT_PUBLIC_DEMO` | `0` em produção (`1` = modo demonstração com dados fictícios). Embutido no build. |
+
+## Operação
+
+- **Backup:** copiar o arquivo `concefor.db` do volume `/app/data` — o backup é o próprio arquivo.
+- **Atualizar:** `git pull` → `docker build` → recriar o container. Os dados persistem no volume, sem re-seed.
+- **Logs:** `docker logs -f concefor-app`.
+- **Re-seed:** `npm run seed` (ou o comando docker acima) limpa e recarrega a programação; as reações em `timeline_events` são preservadas.
+
+## Modo demonstração (`NEXT_PUBLIC_DEMO=1`)
+
+Para ver o app funcionando **sem banco**. Carrega a programação oficial e usa um **relógio
+simulado** (ancorado dentro do evento), então há sessão "acontecendo agora", contagens e a
+linha do tempo viva. Uma faixa no topo deixa claro que é demonstração. Atalhos:
+`npm run dev:demo` / `npm run build:demo`.
 
 ## Estrutura
 
@@ -67,28 +97,23 @@ src/
 │   ├── telao/           Telão "batimento" — /telao (sessão no ar) ou /telao/[sessionId]
 │   └── api/             sessions · reactions (POST/GET) · live/[sessionId] (SSE)
 ├── components/          SessionCard · Reactions · Telao · Speakers · TimeStamp
-└── lib/                 db (SQLite, interface única) · reactions (fonte única) · clientId (anônimo) · favorites · sessions · types
+└── lib/                 db (SQLite, interface única) · reactions · clientId (anônimo) · favorites · sessions · types
 
 db/                      schema.sql + seed.sql (programação oficial)
 scripts/                 seed.mjs (npm run seed) + seed-live.mjs (npm run seed:live)
 ```
 
-## Deploy
+O schema (`db/schema.sql`) é aplicado de forma idempotente no boot do `db.ts` e no seed. A UI
+nunca fala com o banco direto — consome as API routes; `src/lib/db.ts` é o único ponto de acesso
+a dados, o que mantém barata uma futura volta ao Postgres.
 
-- **Self-host (Cefor):** `docker build -t concefor-app .`, depois
-  `docker run -p 3000:3000 -v concefor-data:/app/data --env-file .env.local concefor-app`.
-  O volume `/app/data` guarda o SQLite entre reinícios. Semeie uma vez com
-  `docker run --rm -v concefor-data:/app/data concefor-app node scripts/seed.mjs`.
+## Status (v1)
 
-## TODO
-
-- [x] Projeto Next.js + TypeScript de pé (build passando)
-- [x] Telas Agora / A seguir / timeline + "minha programação" (favoritos) — feature 4.1
-- [x] Identidade visual (Concefor base + selo 20 anos acento) — ver `design-system/app/`
-- [x] Modo demonstração (`NEXT_PUBLIC_DEMO=1` / `npm run dev:demo`) — dados fictícios sem banco
-- [x] Backend próprio: SQLite local (`lib/db.ts`) + `GET /api/sessions` + `npm run seed` (E1)
-- [x] Reações na sessão ao vivo → `timeline_events`, com throttle anti-flood (E2)
-- [x] Tempo real (SSE) + modo telão "batimento cardíaco" em `/telao` (E3)
-- [ ] Dashboard admin ao vivo (E4) + relatório exportável (E9)
-- [ ] Importar a programação oficial (planilha → `sessions`), substituindo o seed
+- [x] Telas Agora / A seguir / timeline + "minha programação" (favoritos)
+- [x] Identidade visual (Concefor base + selo 20 anos acento)
+- [x] Backend próprio: SQLite local (`lib/db.ts`) + `GET /api/sessions` + `npm run seed`
+- [x] Reações na sessão ao vivo → `timeline_events`, com throttle anti-flood
+- [x] Tempo real (SSE) + modo telão "batimento cardíaco" em `/telao`
+- [ ] Dashboard admin ao vivo + relatório exportável
+- [ ] Sync da programação oficial via API do Even3 (substitui o seed)
 - [ ] Wiring do `next-pwa` (service worker + cache offline da programação)
