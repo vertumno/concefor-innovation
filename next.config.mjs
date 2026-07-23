@@ -5,6 +5,13 @@ const nextConfig = {
   // better-sqlite3 é binário nativo: não empacotar no bundle do servidor,
   // manter como require de node_modules (necessário no standalone).
   serverExternalPackages: ["better-sqlite3"],
+  // Rotas renomeadas no R1 (barra inferior): links antigos continuam valendo.
+  async redirects() {
+    return [
+      { source: "/timeline", destination: "/agenda", permanent: true },
+      { source: "/informacoes", destination: "/mais", permanent: true },
+    ];
+  },
 };
 
 // PWA: habilitar quando o app estiver sendo construído.

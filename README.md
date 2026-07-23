@@ -7,6 +7,12 @@ Mobile-first, instalável.
 > Espelho do código do app. O desenvolvimento e o contexto do projeto ficam no repositório
 > interno da equipe — abra *issues* aqui, mas alinhe mudanças com o time antes de contribuir.
 
+## Regras de conteúdo
+
+- **Toda comunicação com o participante é no singular** (a pessoa lê sozinha, no celular
+  dela): nunca "bem-vindos"/"vocês". Preferir neutro de gênero ("que bom ter você aqui").
+  Decisão de 20/07.
+
 ## Stack
 
 - **Next.js 15** (App Router, `output: standalone`) + React 19 + TypeScript

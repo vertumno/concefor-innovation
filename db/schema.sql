@@ -45,6 +45,37 @@ create table if not exists session_speakers (
 );
 
 -- =========================================================
+-- attendees: inscritos sincronizados do Even3 (R7 — login).
+-- PII (nome, e-mail, CPF) fica SÓ no servidor; nenhuma rota pública expõe.
+-- documento é normalizado para dígitos no sync (CPF vem "000.000.000-00").
+-- =========================================================
+create table if not exists attendees (
+  id           integer primary key,   -- id_attendees do Even3
+  checkin_code text not null,         -- nº do ingresso (QR do crachá Even3)
+  nome         text not null,
+  badge_name   text,
+  email        text,
+  documento    text,                  -- CPF, só dígitos
+  categoria    text,
+  foto         text,
+  confirmado   integer,
+  updated_at   text
+);
+
+create index if not exists idx_attendees_checkin on attendees (checkin_code);
+
+-- =========================================================
+-- identities: associação client_id (dispositivo) ↔ inscrito, criada no login
+-- com consentimento (LGPD). Apagar a linha = "sair".
+-- =========================================================
+create table if not exists identities (
+  client_id   text primary key,
+  attendee_id integer not null references attendees(id) on delete cascade,
+  nome        text not null,          -- desnormalizado p/ exibir sem join
+  consent_ts  text not null           -- quando aceitou o termo
+);
+
+-- =========================================================
 -- timeline_events: todo evento da linha do tempo
 -- v1 usa tipo='reaction'; fase 2 estende (pergunta, foto, anotacao, checkin...)
 -- sem PII no v1 (client_id é id anônimo de dispositivo)
