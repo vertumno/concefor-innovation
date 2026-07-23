@@ -1,5 +1,19 @@
 https://concefor.cefor.ifes.edu.br/
 
+> Transcrição do site oficial. **Seção "Programação" atualizada em 21/07/2026.**
+> A seção "Palestrantes" abaixo ainda é a captura anterior: continua sem o Dr. Mauro Oliveira e
+> ainda traz "Dr. Felipe Maciel Tessarolo" e "Dra. Celia Jaqueline Sanz Rodriguez", nomes que já
+> foram corrigidos na programação. Recapturar quando o site atualizar essa parte.
+> Este arquivo registra o que está publicado lá fora, então mantém a formatação do site.
+>
+> **Divergências conhecidas entre o site e as nossas peças** (as nossas estão certas, não copiar daqui):
+> | O site escreve | Nas nossas peças |
+> |---|---|
+> | "Professor Felipe Maciel Tessarolo" | **Felipe Maciel Tessarolo**, sem título |
+> | "desafios para a EAD" | **"desafios para a EaD"** |
+>
+> Se der para pedir a correção no site, vale alinhar os dois pontos.
+
 O Concefor
 O Concefor é um evento bienal de abrangência nacional promovido pelo Centro de Referência em Formação e em Educação a Distância – Cefor do Instituto Federal de Educação do Espírito Santo – Ifes. Esse evento de pesquisa e extensão tem por finalidade reunir pesquisadores de estados da região Sudeste e de todo o Brasil com o propósito de gerar novos conhecimentos sobre Educação a Distância e híbrida a partir de discussões e reflexões sobre as temáticas de uso e construção de tecnologias educacionais, de formação de professores e de práticas docentes inovadoras nos contextos do ensino presencial e a distância.
 
@@ -83,9 +97,15 @@ Segunda-Feira (17/08/2026)
 
 18h30min – Abertura
 
-19h às 20h – Palestra “20 Anos de EaD e o Cefor” – Professora Dra. Vanessa Battestin
+19h às 20h – Palestra “20 Anos de EaD e o Cefor” (Professora Dra. Vanessa Battestin)
 
-20h – Celebração do aniversário de 20 anos do Cefor
+20h às 20h30min – Lançamentos:
+
+E-book de Comemoração dos 20 anos de Cefor
+E-book do NTE, com o título de “Chegando agora no NTE? Núcleo de Tecnologias Educacionais: práticas, processos e orientações”.
+Nova plataforma de cursos Moocs
+Nova versão da Base de Conhecimento do Cefor
+20h30min – Celebração do aniversário de 20 anos do Cefor
 
 Terça-Feira (18/08/2026)
 8h – Mostra de Produtos e Produções Técnicas – Painel
@@ -96,7 +116,7 @@ Terça-Feira (18/08/2026)
 
 13:30 Sessões técnicas de apresentação de artigos completos
 
-14h30min Palestra internacional “Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais” (Professor Dr. Felipe Maciel Tessarolo, da The Open University – UK)
+14h30min Palestra internacional “Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais” (Felipe Maciel Tessarolo, da The Open University – UK)
 
 16:00 Coffee-break
 
@@ -105,13 +125,15 @@ Quarta-Feira (19/08/2026)
 
 09:00 Momento Cultural
 
-09:30 Mesa-Redonda “Desafios da EaD para os próximos 20 anos” (Com convidados locais sobre temática de EaD)
+09:30 Mesa-Redonda “Desafios da EaD para os próximos 20 anos” (Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero)
 
 13:30 Sessões técnicas de apresentação de artigos completos
 
-14h30min Palestra “Desafios da EaD e as ondas de IA” (Professor Dr. Mariano Pimentel)
+14h30min Palestra “Autoria com IA generativa: desafios para a EAD” (Professor Dr. Mariano Pimentel)
 
 16:00 Coffee-break
+
+16h30min – Palestra “Inovações da IA para a Educação” (Dr. Mauro Oliveira)
 
 Quinta-feira (20/08/2026)
 09:00 Momento I – Eventos paralelos

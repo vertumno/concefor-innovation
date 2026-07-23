@@ -37,6 +37,189 @@ o GitLab é derivado, não concorrente. Ver `links.md` (Repositório).
 
 ---
 
+## 2026-07-22 — Crachás vêm todos em branco; nomes impressos no Cefor
+
+**Fato novo (ligação com José Fernando Antonio, Brindes Expresso, (27) 99803-1617):** os crachás
+são produzidos em **impressão gráfica**, não digital. Não existe personalização com o nome de cada
+participante. **Os 400 vêm em branco**, sem nome.
+
+**Decisão decorrente:** a impressão dos nomes passa a ser **nossa, no Cefor**, sobre os crachás já
+impressos. Cai o plano de enviar à gráfica um PDF final com os nomes, e cai também a necessidade
+de segurar a lista de inscritos até a última data possível: sem lote nomeado na gráfica, não há
+data-limite dela para cumprir.
+
+**Por quê:** limitação técnica do processo do fornecedor, não escolha nossa.
+
+**O que isso destrava:** o prazo dos crachás volta a ser o do restante do material (entrega até
+07/08). Podemos imprimir nomes até a véspera, inclusive para quem se inscrever depois de 15/08.
+
+**O que isso cria (riscos a resolver antes de 17/08):**
+1. **Papel.** Crachá é papel fotográfico fosco 240 g. Falta confirmar se a impressora do Cefor
+   roda essa gramatura, e fazer teste com uma amostra antes da entrega dos 400.
+2. **Arte.** A área do nome precisa ficar limpa no crachá impresso, e o nome entra por cima, no
+   registro certo. Alinhamento e margem viram problema de impressão, não de design.
+3. **Modelo do Canva** (https://canva.link/vx6e7xpwox32wyy) muda de função: em vez de gerar o
+   crachá inteiro com nome, agora gera **só a camada dos nomes** posicionada para sobreimpressão.
+4. **Volume.** 400 passagens de papel fotográfico numa impressora de escritório, mais recorte de
+   erro. Definir quem faz e quando.
+
+---
+
+## 2026-07-22 — App vai distribuir materiais dos palestrantes
+
+**Decisão:** o app do evento passa a oferecer **os materiais que cada palestrante quiser
+compartilhar** (livro, artigo, slides), na sessão e/ou no perfil dele. Guardamos **link, não
+arquivo**: aponta para a fonte oficial, sem hospedar nada.
+
+**Primeiro material confirmado:** livro gratuito do Mariano Pimentel, *"IA generativa e educação:
+práticas e teorizações"* (SBC, +10 mil downloads),
+https://books-sol.sbc.org.br/index.php/sbc/catalog/book/182 — casa direto com a palestra dele.
+
+**Por quê:** dá utilidade real ao app além da programação, e o conteúdo já existe, é só apontar.
+Custa quase nada de código (uma lista de `{titulo, url}` por palestrante), e não hospedar evita
+discussão de direitos autorais e peso no servidor.
+
+**O caminho crítico é conteúdo, não código.** Depende de cada palestrante enviar o material, então
+o pedido **entrou na mensagem de solicitação de vídeo** que já ia ser enviada, com prazo 03/08.
+Um contato só, dois pedidos. A tabela de controle dessa mensagem ganhou coluna para o material.
+
+**Ficou em aberto:** onde exatamente isso aparece na navegação do app, e se entra antes ou depois
+do lançamento do piloto.
+
+---
+
+## 2026-07-21 — Brindes: logo sem numeral confirmado e cronograma da gráfica antecipado
+
+**Decisão / fatos:**
+
+1. **Logo do Concefor sem o "VIII" está resolvido.** As artes foram produzidas sem o numeral,
+   como o TR 72/2026 exige para reaproveitamento institucional. Isso **encerra a pendência 🔴**
+   que travava todas as artes de brinde e que estava aberta no board e no README da fase.
+2. **O cronograma da gráfica é mais curto que o documentado.** O que valia era "entrega até
+   07/08"; o real é: **envio das artes em 22/07**, prova digital na sequência, e **avaliação das
+   amostras pela comissão em 28/07 (terça), às 11h**. O 07/08 é só o limite contratado.
+3. **Acompanhamento das amostras em 28/07:** **Marquito e/ou Andreia**.
+4. **Duas peças em aprovação com a Márcia** desde 21/07: **camisa** em duas opções (aguardando
+   ela escolher 1 ou 2) e **bloco** em opção única (aguardando se há ajustes).
+
+**Por quê:** o prazo real muda a leitura de urgência do board. Com envio em 22/07, a escolha da
+camisa deixa de ser confortável e vira bloqueio imediato: sem a opção definida, não há o que
+mandar para a gráfica.
+
+## 2026-07-20 — Mosaico de conexões (networking antecipado), tom no singular e R9 de código pronto
+
+**Decisão** (terceira rodada do dia, após Marquito testar o login):
+
+1. **Networking antecipado como "mosaico de conexões"** na tela Pessoas: os 290 inscritos
+   viram **quadradinhos de canto arredondado** (a malha do selo 20 anos) com as iniciais,
+   apagados; conectar — escaneando o QR do crachá do outro ou digitando o nº do ingresso —
+   acende o quadradinho. **Contato completo (nome + e-mail) só depois de conectar**; antes,
+   só o primeiro nome. Conexões mais recentes no topo. Exige login. "Meu QR" no perfil
+   (`/entrar`) substitui o QR físico onde o crachá não tiver. Scanner via BarcodeDetector
+   com fallback manual (câmera plena depende do HTTPS do R5). Sem autorização do outro
+   lado no v1 (só o escaneamento) — reevaluar se surgir incômodo.
+2. **Toda comunicação com o usuário no singular** (a pessoa lê sozinha no celular) e
+   neutra de gênero quando possível — regra registrada em `app/README.md`.
+3. **Texto do login ficou honesto:** quem não entra mantém programação/favoritos/infos,
+   mas perde as interações que dependem de identidade (ex.: conexões). Texto final do
+   termo ainda passa por validação da organização.
+4. **R9 de código entregue:** admin de horários (curativo local; Even3 continua mandando
+   nos horários no re-sync) e relatório imprimível em `/admin/relatorio`.
+
+**Por quê:** o mosaico transforma o networking em jogo visual alinhado à identidade (cada
+conexão acende um ponto da malha dos 20 anos) e dá sentido concreto ao login; o tom no
+singular é como o participante de fato lê o app.
+
+---
+
+## 2026-07-20 — Início vira a "casa" (avisos da organização) e login entra como OPCIONAL
+
+**Decisão:** entregues no mesmo dia os dois ajustes pedidos após o feedback: (1) o
+**Início** se diferenciou de Agenda/Ao Vivo — avisos da organização (publicados pelo
+`/admin`, mão única, tipo `aviso` na linha do tempo), "não perca", sessão no ar com CTA
+pro Ao Vivo e só 3 próximas + link pra Agenda; (2) o **login do R7** (nº do ingresso + 4
+primeiros dígitos do CPF + consentimento LGPD) entrou **antes do previsto, como
+opcional**: quem entra ganha avatar/inicial no topo e saudação pelo nome, e suas
+interações ficam associadas no banco; reagir/perguntar **continuam abertos e anônimos**
+— a exigência de login para interagir só liga depois da validação de 30/07, se validada
+(mantém a decisão de 06/07: anônimo é o piso). Os 288 inscritos são sincronizados do
+Even3 para o servidor (PII nunca vai ao cliente; rotas públicas devolvem só o primeiro
+nome). Texto do termo de consentimento é rascunho — **validar com a organização** antes
+do lançamento.
+
+**Por quê:** antecipar o login como opcional tira o risco técnico do caminho (30/07 já
+mostra o fluxo completo) sem quebrar o piloto anônimo; e o Início com avisos resolve a
+repetição apontada no feedback dando à organização um canal direto com o participante.
+
+---
+
+## 2026-07-20 — Programação do app vem do Even3 (sync entregue); enriquecimento local sobrevive ao re-sync
+
+**Decisão:** o R2 foi entregue com a chave real: `npm run sync:even3` puxa a programação
+oficial do Even3 (15 sessões, 4 dias, idempotente, dedup das duplicatas da API). Como o
+cadastro de lá está **sem salas/tags/palestrantes**, o modelo é: **Even3 é a fonte da
+verdade da espinha** (dias, horários, títulos — mudou lá, muda no app); o que ele não
+preenche é coberto por **enriquecimento local** que sobrevive ao re-sync (`coalesce` no
+upsert + `db/enrich.sql`: salas do Auditório e palestrantes estruturados citados nos
+títulos/descrições do próprio Even3). Sessões locais sem prefixo `even3-` sobrevivem ao
+sync — é o **modo teste** (`npm run seed:live` continua funcionando por cima da
+programação real, mesmo depois do link com o Even3). O seed manual foi **aposentado**.
+
+**Por quê:** o Even3 é a fonte *operacional* do app (é de lá que o sync lê), mas o cadastro
+pobre de lá não pode empobrecer o app — as duas fontes se compõem em vez de competir.
+**Achado e desdobramento (20/07):** a programação do Even3 diverge do site oficial — e o
+Marquito confirmou que **a fonte da verdade editorial no momento é o site** (o Even3 está
+desatualizado: falta a mesa "Tecnologia Delas" de 18/08, credenciamento, coffees, momentos
+culturais e almoço). Encaminhada mensagem à Márcia pedindo para atualizarem o Even3 para
+espelhar o site e mantê-lo em dia — enquanto não corrigirem lá, o app exibe a versão
+desatualizada do Even3.
+
+---
+
+## 2026-07-20 — Crachá impresso pela gráfica (QR não garantido) e segundo fator do login: 4 primeiros dígitos do CPF
+
+**Decisão** (Marquito + Elton, reunião de 20/07 — síntese em
+`contexto/reunioes/sintese-2026-07-20.md`):
+
+1. **Crachá físico:** o modelo nativo do Even3 (A4 dobrado, layout fixo) e o crachá de
+   plástico caíram (o segundo não está no termo de referência). Caminho: **crachás
+   impressos pela gráfica/copiadora**. Se a gráfica aceitar lote personalizado, mandamos
+   planilha com nome + QR + categoria — dados que o sync Even3 já nos dá; senão, crachás
+   todos iguais com nome à mão. Última hora: à mão, sem QR (verificar impressora de
+   etiquetas no campus).
+2. **Consequência pro app:** o QR impresso no crachá **não é garantido** → o login pelo
+   crachá não pode depender do scanner. Caminho primário: **digitar o nº do ingresso**
+   (`checkin_code`); QR scanner vira melhoria progressiva; o **"meu QR" no app** pode
+   substituir o QR físico onde ele faltar.
+3. **Segundo fator do login: 4 primeiros dígitos do CPF** (fecha a pendência aberta em
+   16/07 — data de nascimento não existe no cadastro). Ideia registrada: permitir
+   redefinir para senha própria após o primeiro login.
+
+**Por quê:** o crachá de plástico não foi contemplado na contratação e o modelo Even3 não
+carrega a identidade dos 20 anos; imprimir na gráfica dá controle visual e cabe no que já
+está orçado. O CPF parcial é o único segundo fator que existe para todos os inscritos e
+não expõe o dado inteiro. O app absorve a incerteza do QR físico ficando independente dele.
+
+---
+
+## 2026-07-20 — Barra inferior validada com o Elton; ajustes: dias nos contadores e Início diferenciado
+
+**Decisão:** a navegação nova (R1, entregue 20/07) foi vista rodando e aprovada. Ajustes
+acordados: contadores longos passam a mostrar **dias + horas** ("em 28 d 2 h", não
+"em 674 h"); o **Início** precisa se diferenciar de Agenda/Ao Vivo (hoje os três repetem
+agora/a seguir) — vai concentrar avisos, dica do dia e atalhos; o topo direito ganhará o
+**perfil** ("faça login" genérico → avatar quando logado, futura casa da pontuação).
+Ideias novas registradas sem compromisso: "bolinhas de conexões" na tela Pessoas, plano
+de gamificação (Elton), badge "atualizado" no material do palestrante. Preocupação
+registrada: concorrência do SQLite sob 100–200 reações simultâneas → teste de carga antes
+do evento (mitigação: WAL + interface `lib/db` de troca barata).
+
+**Por quê:** feedback direto da primeira demo interna da interface nova; os ajustes são
+pequenos e o que é ideia nova fica catalogado (fase 2/candidatas) para não inflar o
+caminho crítico até 30/07.
+
+---
+
 ## 2026-07-16 — Interface reformulada: barra inferior com "Ao Vivo" no centro (benchmark EDEN)
 
 **Decisão:** o menu do app sai do topo e vira **barra inferior fixa de 5 itens** — Início ·

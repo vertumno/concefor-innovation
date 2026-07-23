@@ -20,10 +20,23 @@ de navegação nova. A API do Even3 está validada (chave em `app/.env.local`, a
 
 ## Caminho crítico até a validação (30/07)
 
-### R1 — Reformulação da navegação: barra inferior + "Ao Vivo"
+### R1 — Reformulação da navegação: barra inferior + "Ao Vivo" ✅ (entregue 20/07)
 
 **Objetivo:** o app passa a navegar pela barra inferior de 5 itens com o botão central
 "Ao Vivo" (spec §4.0) — a cara nova que a comissão vai ver em 30/07.
+
+> **Entregue em 20/07.** BottomNav com pílula ativa e pulso no live; `/ao-vivo` cobre os
+> 3 estados (1 live → tela de reagir; várias → seletor; nenhuma → contagem regressiva);
+> `/timeline`→`/agenda` e `/informacoes`→`/mais` com redirect 308; `/pessoas` lê os
+> palestrantes do banco (`/api/speakers`). Nota de build: `better-sqlite3` subiu para
+> ^12 (o Node 25 não tem prebuild da v11 e a máquina não tem toolchain C++).
+>
+> **Feedback de 20/07 (Elton viu rodando; aprovado — ver síntese da reunião):**
+> - [x] Contadores longos com **dias + horas** ("em 28 d 2 h") — feito em 20/07.
+> - [x] **Diferenciar o Início** — feito em 20/07: avisos da organização (admin publica),
+>   "não perca", sessão no ar com CTA pro Ao Vivo, só 3 próximas + link pra Agenda,
+>   saudação pelo nome quando logado. (Atalho de leitor de QR fica pro networking/R10.)
+> - [x] Perfil no topo direito — feito em 20/07: "Entrar" → avatar/inicial (R7).
 
 - Componente `BottomNav` (fixo, 5 slots, item ativo = pílula preenchida com label;
   tokens `--surface-2`/`--cyan`; central elevado em `--accent`).
@@ -39,10 +52,28 @@ de navegação nova. A API do Even3 está validada (chave em `app/.env.local`, a
 **Pronto quando:** no celular, todos os fluxos atuais são alcançáveis pela barra; um toque
 no "Ao Vivo" durante uma sessão live cai na tela de reagir.
 
-### R2 — Sync Even3 (somente leitura): programação, palestrantes e evento reais
+### R2 — Sync Even3 (somente leitura): programação, palestrantes e evento reais ✅ (entregue 20/07)
 
 **Objetivo:** o app mostra a programação oficial que já está no Even3 — a planilha manual
 morreu (achado de 16/07).
+
+> **Entregue em 20/07** (`scripts/sync-even3.mjs` + `npm run sync:even3`): sync rodado 2×
+> com a chave real — 15 sessões nos 4 dias, 10 duplicatas ignoradas, idempotente. Como o
+> cadastro do Even3 veio **sem venue/tags/speakers**, o sync ganhou: título limpo (sai o
+> prefixo "Dia N -"), **eixo por heurística do título** (tags vencem quando existirem),
+> upsert com `coalesce` (Even3 vence quando fala; silêncio preserva o local) e
+> **`db/enrich.sql`** aplicado ao final (salas do Auditório + palestrantes estruturados
+> Vanessa/Tessarolo/Mariano, citados nos títulos/descrições do próprio Even3).
+> **Modo teste garantido:** sessões locais sem prefixo `even3-` sobrevivem ao sync —
+> `npm run seed:live` segue funcionando por cima da programação real (testado).
+> **Seed manual aposentado**: `npm run seed` não deve mais ser usado (recriaria a
+> programação antiga por cima); o caminho é `sync:even3`.
+>
+> ⚠️ **Divergência a verificar com a organização:** o Even3 não tem a mesa "Tecnologia
+> Delas" (18/08 9h30) — no lugar há "Desafios da EaD para os próximos 20 anos" em DOIS
+> dias (18 com "palestrantes confirmados: Felipe Tessarolo" e 19 com "pesquisadores
+> locais"). A comunicação vem produzindo cards com outra programação — alinhar qual está
+> certa (o app mostra o que está no Even3).
 
 - `lib/even3.ts`: cliente server-side (`EVEN3_API_TOKEN` do env; header
   `Authorization-Token`); nunca importado por código de cliente.
@@ -57,9 +88,14 @@ morreu (achado de 16/07).
 **Pronto quando:** `npm run sync:even3` duas vezes seguidas popula o banco com a
 programação real sem duplicar nada, e a agenda do app mostra os 4 dias.
 
-### R3 — Dashboard admin mínimo
+### R3 — Dashboard admin mínimo ✅ (entregue 20/07)
 
 **Objetivo:** a comissão vê números ao vivo na validação; é o embrião do relatório.
+
+> **Entregue em 20/07.** `/admin` protegido por `ADMIN_TOKEN` (header/`?token=` →
+> localStorage; fora da nav): dispositivos ativos (1 h), reações totais/por sessão/por
+> minuto (barras), moderação de perguntas (R4) e botão de re-sync Even3 (reusa o
+> `runSync()` do script — fonte única). Atualiza a cada 5 s.
 
 - `/admin` protegido por `ADMIN_TOKEN` (query/cookie; sem gestão de usuários; fora da nav).
 - Ao vivo: dispositivos ativos (client_ids únicos na última hora), reações por sessão,
@@ -69,10 +105,16 @@ programação real sem duplicar nada, e a agenda do app mostra os 4 dias.
 **Pronto quando:** durante um teste com reações rolando, `/admin` mostra os números
 atualizando e o re-sync funciona.
 
-### R4 — Perguntas com upvote
+### R4 — Perguntas com upvote ✅ (entregue 20/07)
 
 **Objetivo:** segunda interação da tela Ao Vivo (a Márcia validou com entusiasmo em
-16/07). **Primeira coisa a cortar se o caminho crítico apertar.**
+16/07). ~~Primeira coisa a cortar se o caminho crítico apertar.~~
+
+> **Entregue em 20/07**, sem mudar o schema (spec §3): `tipo='question'` /
+> `question_vote` / `questions_window` em `timeline_events`. Texto ≤140, autor oculto,
+> 1 voto por dispositivo (toggle), throttle 15 s, janela abre/fecha e ocultar/reexibir
+> pelo `/admin`; lista atualiza por polling de 4 s. Testado: ordenação por votos,
+> toggle de voto, moderação e UTF-8 ponta a ponta.
 
 - `timeline_events` tipo `question` / `question_vote`; texto com limite (~140), autor
   oculto no app, 1 voto por `client_id` por pergunta.
@@ -115,17 +157,29 @@ lançamento.
 
 ## Da validação ao lançamento (07/08)
 
-### R7 — Login pelo crachá + consentimento (LGPD)
+### R7 — Login pelo crachá + consentimento (LGPD) 🟡 (núcleo entregue 20/07; exigência p/ interagir fica pós-validação)
 
 **Objetivo:** interagir passa a ter identidade (navegar segue aberto). Destravado pela
 API: o QR do crachá codifica o `checkin_code` que já vem no sync de inscritos.
 
+> **20/07 — entregue o núcleo:** sync puxa os **288 inscritos** (tabela `attendees`, PII
+> só no servidor, CPF normalizado); `/entrar` com consentimento explícito + nº do
+> ingresso + 4 primeiros dígitos do CPF; anti força-bruta (5 tentativas/min); associação
+> `client_id`↔inscrito na tabela `identities` (sair = apagar); avatar/inicial na topbar;
+> saudação no Início; tiles de inscritos/logados no admin. **Login é OPCIONAL por ora** —
+> reagir/perguntar seguem anônimos (decisão de 06/07: anônimo é o piso até a validação);
+> a exigência de login para interagir liga depois de 30/07, se validada.
+> **Faltam:** QR scanner (exige HTTPS do R5) · validar o texto do termo LGPD com a
+> organização · decidir quando ligar a exigência.
+
 - Estender o sync do R2: `GET /attendees/` → tabela `attendees` local (**288+ inscritos**;
   PII fica só no servidor).
-- [ ] **Decidir o segundo fator com o Elton:** data de nascimento caiu (não existe no
-  cadastro); opções: CPF parcial (ex.: 4 primeiros dígitos) ou e-mail.
-- Login: nº do ingresso digitado (QR scanner entra depois se der — exige HTTPS do R5) +
-  segundo fator; associa `client_id` ao inscrito; sessão persistente no dispositivo.
+- [x] ~~Decidir o segundo fator com o Elton~~ → **decidido 20/07: 4 primeiros dígitos do
+  CPF** (ideia registrada: redefinir para senha própria após o primeiro login).
+- Login: **nº do ingresso digitado é o caminho primário** — o QR impresso no crachá não é
+  garantido (crachá vai pra gráfica, decisão de 20/07); QR scanner entra depois se der
+  (exige HTTPS do R5) + segundo fator; associa `client_id` ao inscrito; sessão persistente
+  no dispositivo. "Meu QR" no app pode substituir o QR físico onde faltar.
 - Tela de consentimento clara na entrada (modelo de 02/07): quem não aceita segue na
   parte pública, interagindo anonimamente onde permitido.
 - Avatar/inicial no topo direito quando logado (padrão EDEN).
@@ -152,19 +206,27 @@ oficial.
 
 ## Semana pré-evento e evento (10–20/08)
 
-### R9 — Endurecimento para o evento
+### R9 — Endurecimento para o evento 🟡 (código entregue 20/07; falta o ensaio físico)
 
-- Admin de horários (editar sessão: horário/sala/ordem) — absorver atrasos de última hora.
-- Relatório pós-evento: ranking de sessões por engajamento, linha do tempo do evento,
-  destaques do público; exportável (print/PDF) — insumo do relatório institucional (PRPPG).
-- Ensaio de telão na sala real; plaquinhas físicas de fallback impressas.
+- [x] Admin de horários — seção "Programação" no `/admin`: editar início/fim/sala de
+  qualquer sessão (com aviso de que o re-sync do Even3 sobrescreve horários — corrigir lá
+  também). Entregue 20/07.
+- [x] Relatório pós-evento — `/admin/relatorio`: números gerais, reações por tipo, ranking
+  de sessões por engajamento (com barras), momentos mais quentes (picos/min); botão
+  Imprimir/PDF com `@media print` limpo. Insumo do relatório institucional (PRPPG).
+  Entregue 20/07.
+- [ ] Ensaio de telão na sala real; plaquinhas físicas de fallback impressas.
 
 ### R10 — Candidatas da semana do evento (só se R1–R9 estiverem sólidos; nesta ordem)
 
-1. **Avisos da organização** no Início (mão única, sem chat).
+1. ~~**Avisos da organização** no Início~~ — **antecipada, entregue 20/07** (admin publica).
 2. **Dica do dia** (alimentação, arredores) — precisa de conteúdo da Márcia.
-3. **Networking por QR do crachá**: scanner no app lê o crachá do outro → salva contato
-   (nome/e-mail do banco de inscritos). Sem chat interno (decisão do benchmark EDEN).
+3. ~~**Networking por QR do crachá**~~ — **antecipada, entregue 20/07** como **mosaico de
+   conexões** na tela Pessoas: quadradinhos (malha do selo) com as iniciais dos 290
+   inscritos, apagados; escanear o QR do crachá do outro (BarcodeDetector, com fallback
+   de digitar o nº — câmera plena exige o HTTPS do R5) acende o quadradinho; contato
+   completo (nome + e-mail) só depois de conectar; conexões mais recentes no topo;
+   "meu QR" no perfil substitui o QR físico. Sem chat interno (decisão do benchmark EDEN).
 4. **Gamificação leve**: QR codes espalhados → badges, contextuais ao conteúdo.
 
 **Fase 2 / pós-evento** (registrado, sem compromisso): relatório individual por
@@ -178,8 +240,14 @@ backlog em `app-v1.md` §8.
 
 | Pendência | Estado / onde está |
 |---|---|
-| Servidor do Cefor + URL/HTTPS para deploy (R5) | **urgente** — articular com a TI; ver `../links.md` |
-| Segundo fator do login (CPF parcial × e-mail) | decidir com Elton — `../contexto/even3/README.md` |
+| Servidor do Cefor + URL/HTTPS para deploy (R5) | **em andamento com a CGTI (Saymon)** — hardware passado; especificação de software enviada 20/07 (`deploy-vm.md`) |
+| ~~Chave `EVEN3_API_TOKEN` em `app/.env.local` desta máquina~~ | **resolvida 20/07** — Marquito enviou; gravada no `.env.local` (gitignored) |
+| Even3 desatualizado em relação ao site (fonte da verdade editorial) | **mensagem à Márcia preparada em 20/07**: atualizar o Even3 pra espelhar o site (mesa "Tecnologia Delas" 18/08, intervalos, momentos culturais) e mantê-lo em dia — o app espelha o Even3; até corrigirem lá, o app mostra a versão desatualizada |
+| Cadastro do Even3 sem salas/tags/palestrantes | pedir à organização preencher lá (aí `db/enrich.sql` esvazia); enquanto isso o enriquecimento local cobre |
+| ~~Segundo fator do login (CPF parcial × e-mail)~~ | **decidido 20/07** — 4 primeiros dígitos do CPF |
+| Crachá: gráfica imprime lote personalizado (nome+QR+categoria)? | Elton verifica com a copiadora/gráfica; se sim, geramos a planilha a partir do sync Even3 (R2/R7) |
+| Impressora de etiquetas no campus (inscrições de última hora) | organização do evento verifica (20/07) |
+| Teste de carga das reações (SQLite, 100–200 simultâneos) | fazer no R9 (endurecimento), na URL real do R5 |
 | Convidados da validação de 30/07 | Márcia convida (CGPE, Simon, Rutinelli aventados) |
 | Texto do e-mail de lançamento (07/08) | escrever com a Márcia na semana de 03/08 |
 | Conteúdo de "dica do dia" / alimentação / arredores | pedir à Márcia (ela topou mandar) |

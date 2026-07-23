@@ -19,6 +19,7 @@ do mesmo lugar. É também o que o participante leva pra casa (a linha do tempo 
 | **Programação viva + "agora/depois"** | Resolve a dor universal de evento (que horas são, onde estou, o que vem). Baixo esforço, alto valor. É a própria espinha da timeline. |
 | **Reações ao vivo no telão** (joinha/coração) | O momento "festa". As pessoas se veem participando (estilo MIT/Instagram/estádio). Simples via Realtime; cada reação é um ponto na linha do tempo. |
 | **Dashboard / relatório final** | Requisito fixo do projeto. Cai de graça do modelo de dados: engajamento por sessão, picos, presença. Vira o entregável que justifica o app para a comissão. |
+| **Materiais dos palestrantes para download** 🆕 | **Decidido em 22/07/2026.** Cada palestrante pode oferecer livro, artigo ou slides, e o app vira o lugar onde isso fica. O primeiro já existe: o livro gratuito do Mariano Pimentel, [*"IA generativa e educação"*](https://books-sol.sbc.org.br/index.php/sbc/catalog/book/182) (SBC, +10 mil downloads), que casa com a palestra dele. Tecnicamente é quase nada (guardar link e mostrar na sessão/palestrante); o trabalho real é **coletar o material com cada um**, e isso já pegou carona no pedido de vídeo que vai até 03/08. |
 
 ## Fase 2 — boas ideias, depois (várias destravadas pela IA local do Cefor)
 

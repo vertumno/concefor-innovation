@@ -1,4 +1,4 @@
-# Contexto — Canais e diretrizes de publicação
+# Contexto · Canais e diretrizes de publicação
 
 > Onde publicamos, como falamos e o que é obrigatório em cada peça.
 
@@ -16,18 +16,30 @@
 
 - **Escreva como uma pessoa, não como IA.** Frases diretas, do jeito que a equipe falaria
   com um colega. Nada de texto rebuscado ou empolgação artificial.
+- **Sem travessão de nenhum tipo.** Nem o longo, nem o curto: é o tique mais óbvio de texto de IA.
+  No lugar, usar ponto, vírgula, dois pontos ou parênteses. Regra dura, sem exceção.
+- **Grafia "EaD"**, com E e D maiúsculos e o "a" minúsculo. Nunca "EAD" nem "ead", mesmo quando a
+  fonte original escreve diferente (definido em 22/07/2026). Vale inclusive dentro de títulos de
+  palestra: o título do Mariano Pimentel aparece como "Autoria com IA generativa: desafios para a
+  EaD" nas nossas peças, embora o site escreva "EAD".
+- **Títulos acadêmicos: só quando confirmados.** Felipe Maciel Tessarolo vai **sem título nenhum**
+  (nem "Dr.", nem "Professor"), mesmo o site usando "Professor". Ver
+  [03-palestrantes.md](03-palestrantes.md) para o caso de cada palestrante.
 - **Emojis com muita moderação:** no máximo 1 ou 2 por legenda, e só quando acrescentam
   algo. Nunca um emoji por linha, nunca listas decoradas com emojis.
 - **Evitar clichês com cara de IA:** "imperdível", "não perca essa oportunidade única",
   "estamos muito animados", "venha fazer parte dessa jornada", excesso de exclamações,
   perguntas retóricas em sequência.
 - **Ir direto ao ponto:** a informação principal (o quê, quando, onde) nas primeiras linhas.
-- **Tom:** próximo e institucional ao mesmo tempo — como o Cefor falando com sua comunidade,
+- **Tom:** próximo e institucional ao mesmo tempo, como o Cefor falando com sua comunidade,
   que é formada por professores e pesquisadores.
+- **Passar a régua do humanizer antes de publicar.** Checklist completo de tiques de IA em
+  [checklist-humanizer.md](../templates/checklist-humanizer.md). Vale para toda copy do repo:
+  legendas, stories, WhatsApp, e-mail, notícias e textos de página.
 
 ## Diretrizes de conteúdo
 - **Hashtags:** #Concefor · #VIIIConcefor · #Cefor20Anos · #Cefor · #Ifes *(confirmar/ajustar)*
-- **Sempre citar:** que é presencial, no Cefor/Vitória-ES, 17–20/08/2026.
+- **Sempre citar:** que é presencial, no Cefor/Vitória-ES, 17 a 20/08/2026.
 - **CTA padrão:** direcionar para inscrições (até 15/08) e para o site.
 - **Acessibilidade:** vídeos com legenda; transmissões ao vivo com **interpretação em Libras**;
   usar texto alternativo em imagens quando a plataforma permitir.
@@ -35,7 +47,7 @@
   Padrão gráfico de referência: [05-identidade-visual.md](05-identidade-visual.md) e `contexto/_marca/`.
 
 ## Divulgação institucional via ACS/Ifes (reunião 16/07)
-- A ACS **não costuma repostar/divulgar no Instagram** dela conteúdo de terceiros — não contar
+- A ACS **não costuma repostar/divulgar no Instagram** dela conteúdo de terceiros. Não contar
   com repost dos nossos cards.
 - O caminho é **escrever uma notícia** para o **site do Ifes / Notícias Ifes**. Quem escreve é
   quem quer a notícia (o Cefor não tem jornalista); a CGTE ajuda a Márcia a redigir.
@@ -43,10 +55,10 @@
   (marcação em stories durante o evento costuma acontecer; publicação em feed, confirmar).
 
 ## Logos de apoiadores em materiais impressos (reunião 16/07)
-- **Educimat** é o (único) apoiador — a logo **deve entrar** nos impressos
+- **Educimat** é o (único) apoiador: a logo **deve entrar** nos impressos
   (Márcia pedindo a logo ao Zé Geraldo).
-- **"Unac"** *(grafia da transcrição — confirmar o nome do órgão)*: proibiu o uso da própria
-  marca no **período eleitoral** — **não colocar** a logo nos materiais.
+- **"Unac"** *(grafia da transcrição, confirmar o nome do órgão)*: proibiu o uso da própria
+  marca no **período eleitoral**, então **não colocar** a logo nos materiais.
 - ⚠️ Regra geral: **pensar com cuidado quais logos entram** em cada material do evento.
 - Status dos impressos: **encaminhados com Denis e Vivian** (16/07).
 

@@ -19,17 +19,18 @@
 ## Agosto — reta final (pré-evento)
 | Data | Publicação | Formato | Status |
 |---|---|---|---|
-| 01/08 | Card mesa — "Desafios da EaD para os próximos 20 anos" (Rutinelli + convidados a confirmar) | Feed | ⬜ |
+| 01/08 | Card mesa — "Desafios da EaD para os próximos 20 anos" (Rutinelli + Felipe Tessarolo) | Feed | ⬜ |
 | 01/08 | Reforço: últimos dias do prazo de envio | Story | ⬜ |
 | 03/08 | Marco: prazo de envio final (Even3) + prazo interno dos vídeos | — | ⬜ |
 | 04/08 | Card palestrante — Mariella Berger (mesa "Tecnologia Delas") | Feed | ⬜ |
 | 05/08 | Eventos paralelos — carrossel dos 5 satélites | Feed | ⬜ |
-| 06/08 | Card palestrante — Celia Jaqueline Sanz (mesa "Tecnologia Delas") | Feed | ⬜ |
+| 06/08 | Card palestrante — Jaqueline Sanz (mesa "Tecnologia Delas") | Feed | ⬜ |
 | 07/08 | Card mesa — "Tecnologia Delas" (as três juntas) | Feed | ⬜ |
 | 07/08 | Contagem regressiva: faltam 10 dias | Feed/Story | ⬜ |
 | 08/08 | Regressiva: 9 dias · Reel vídeo-convite Vanessa Battestin | Story/Reel | ⬜ |
 | 09/08 | Regressiva: 8 dias | Story | ⬜ |
 | 10/08 | Regressiva: 7 dias · Reel vídeo-convite Felipe Tessarolo | Story/Reel | ⬜ |
+| 11/08 | 🆕 Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | ⛔ sem foto/minibio |
 | 11/08 | Regressiva: 6 dias | Story | ⬜ |
 | 12/08 | Regressiva: 5 dias · Reel vídeo-convite Tecnologia Delas | Story/Reel | ⬜ |
 | 13/08 | Regressiva: 4 dias | Story | ⬜ |

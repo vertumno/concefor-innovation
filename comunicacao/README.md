@@ -50,6 +50,7 @@ comunicacao/
 | Eventos paralelos (5 confirmados) | [contexto/07-eventos-paralelos.md](contexto/07-eventos-paralelos.md) |
 | Escrever notícia para o site (estilo + exemplos) | [contexto/08-referencia-noticias.md](contexto/08-referencia-noticias.md) |
 | **Estado de TODAS as peças** | [planejamento/board-producao.md](planejamento/board-producao.md) |
+| **Painel visual do status** (abrir no celular / mostrar em reunião) | [painel/](painel/) · [no ar](https://vertumno.github.io/concefor-innovation/comunicacao/painel/) |
 | Calendário de posts | [planejamento/calendario-publicacao.md](planejamento/calendario-publicacao.md) |
 | Escalas (podcast, transmissão, fotografia) | [planejamento/distribuicao-equipe.md](planejamento/distribuicao-equipe.md) |
 | Começar uma peça nova | [templates/brief-peca.md](templates/brief-peca.md) |

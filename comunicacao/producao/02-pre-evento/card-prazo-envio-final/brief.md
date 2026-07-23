@@ -54,6 +54,13 @@ de ao menos um autor), o trabalho não entra nos Anais.
 - Sugestão: repostar/reforçar em **28/07** ("última semana") e **01/08** ("últimos dias")
 - Aprovado por: ___
 
+## Versões da arte
+- `2026-07-16_pre_card_prazo-envio-final_final.png` — versão gerada por `gerar_cards.py` (canônica até aqui).
+- `2026-07-20_pre_card_prazo-envio-final_reexport-canva.png` — veio junto com o lote de cards de
+  palestrantes em 20/07. **Mesmo conteúdo, mesmas dimensões (1080×1350)**, arquivo diferente
+  (reexport, ~44 KB menor). Nenhuma mudança de texto ou layout detectada.
+  ⚠️ **Definir qual das duas é a oficial** e apagar a outra, para não publicar a errada.
+
 ## Checklist final
 - [x] Selo 20 anos aplicado
 - [x] Data 03/08/2026 conferida

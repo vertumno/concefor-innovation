@@ -30,7 +30,7 @@ const speakers = [
   ["marcia-oliveira", "Márcia Oliveira", "Dra.", null],
   ["jaqueline-sanz", "Jaqueline Sanz", "Dra.", null],
   ["mariella-berger", "Mariella Berger", "Dra.", null],
-  ["felipe-tessarolo", "Felipe Maciel Tessarolo", "Prof. Dr.", "The Open University – UK"],
+  ["felipe-tessarolo", "Felipe Maciel Tessarolo", null, "The Open University, UK"],
   ["mariano-pimentel", "Mariano Pimentel", "Prof. Dr.", null],
 ];
 const insSpk = db.prepare("insert into speakers (id, nome, titulo, instituicao) values (?, ?, ?, ?)");
@@ -40,8 +40,8 @@ for (const s of speakers) insSpk.run(...s);
 const sessions = [
   ["palestra-vanessa", "20 anos de EaD e o Cefor", "Palestra de abertura sobre as duas décadas do Cefor.", "Auditório", "Palestra", "Profa. Dra. Vanessa Battestin", -90, -25],
   ["mesa-tecnologia-delas", "Mesa-redonda: Tecnologia Delas", "Protagonismo feminino em tecnologia e educação.", "Auditório", "Mesa-redonda", "Dra. Márcia Oliveira · Dra. Jaqueline Sanz · Dra. Mariella Berger", -15, 90],
-  ["palestra-tessarolo", "Palestra internacional: Tecnologia, Transformação e EaD — 20 anos", "Conferência internacional do evento.", "Auditório", "Palestra", "Prof. Dr. Felipe Maciel Tessarolo (The Open University – UK)", 90, 180],
-  ["palestra-mariano", "Desafios da EaD e as ondas de IA", "Palestra sobre inteligência artificial na educação a distância.", "Auditório", "Palestra", "Prof. Dr. Mariano Pimentel", 190, 280],
+  ["palestra-tessarolo", "Palestra internacional: Tecnologia, Transformação e EaD — 20 anos", "Conferência internacional do evento.", "Auditório", "Palestra", "Felipe Maciel Tessarolo (The Open University, UK)", 90, 180],
+  ["palestra-mariano", "Autoria com IA generativa: desafios para a EaD", "Palestra sobre autoria e IA generativa na educação a distância.", "Auditório", "Palestra", "Prof. Dr. Mariano Pimentel", 190, 280],
   ["encerramento", "Coffee-break e Momento Cultural", "Encerramento do evento.", "Auditório", "Cultural", null, 280, 340],
 ];
 const insSes = db.prepare(

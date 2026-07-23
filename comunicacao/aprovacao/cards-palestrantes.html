@@ -1,0 +1,396 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Aprovação · Cards de palestrantes · VIII Concefor</title>
+<style>
+  :root{
+    --ig-border:#dbdbdb; --ig-bg:#fafafa; --ig-text:#262626; --ig-muted:#8e8e8e;
+    --ig-link:#00376b; --ig-blue:#0095f6; --ok:#1a7f37; --ok-bg:#e6f4ea;
+    --warn:#9a6700; --warn-bg:#fff4d6;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ig-bg);color:var(--ig-text);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;line-height:1.4}
+
+  /* ---- barra fixa de aprovação ---- */
+  .topbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--ig-border)}
+  .topbar-inner{max-width:640px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;
+    gap:12px;flex-wrap:wrap}
+  .topbar h1{font-size:15px;margin:0;font-weight:700;flex:1 1 auto;min-width:180px}
+  .topbar h1 small{display:block;font-weight:400;color:var(--ig-muted);font-size:12px;margin-top:2px}
+  .counter{font-size:12px;color:var(--ig-muted);white-space:nowrap}
+  .counter b{color:var(--ok)}
+  .counter i{color:var(--warn);font-style:normal}
+  .btn{font-family:inherit;font-size:13px;font-weight:600;border-radius:8px;padding:8px 14px;
+    border:1px solid var(--ig-border);background:#fff;color:var(--ig-text);cursor:pointer}
+  .btn:hover{background:#f5f5f5}
+  .btn-primary{background:var(--ig-blue);border-color:var(--ig-blue);color:#fff}
+  .btn-primary:hover{background:#1877cc}
+
+  /* ---- intro ---- */
+  .intro{max-width:470px;margin:22px auto 8px;padding:0 12px;color:#555;font-size:13.5px}
+  .intro p{margin:0 0 8px}
+  .intro .note{background:#fff;border:1px solid var(--ig-border);border-radius:10px;padding:12px 14px;
+    color:#555;font-size:12.5px}
+  .intro .note b{color:var(--ig-text)}
+
+  /* ---- feed ---- */
+  .feed{max-width:470px;margin:0 auto;padding:8px 0 60px}
+  .post{background:#fff;border:1px solid var(--ig-border);border-radius:10px;margin:0 8px 22px;
+    overflow:hidden}
+  .post-head{display:flex;align-items:center;gap:10px;padding:12px 14px}
+  .avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;flex:0 0 auto;
+    background:#fff;border:1px solid var(--ig-border);padding:2px}
+  .avatar-fallback{width:34px;height:34px;border-radius:50%;flex:0 0 auto;display:flex;
+    align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;
+    background:linear-gradient(135deg,#0a4bce,#1a8fff)}
+  .uname{font-size:14px;font-weight:600;display:flex;align-items:center;gap:4px;line-height:1.1}
+  .uname .sub{display:block;font-weight:400;color:var(--ig-muted);font-size:11.5px;margin-top:1px}
+  .verified{color:var(--ig-blue);flex:0 0 auto}
+  .more-dots{margin-left:auto;color:var(--ig-text);flex:0 0 auto}
+  .post-img{display:block;width:100%;height:auto;background:#efefef;aspect-ratio:4/5;object-fit:cover}
+  .actions{display:flex;align-items:center;gap:14px;padding:8px 14px 2px}
+  .actions svg{display:block}
+  .actions .save{margin-left:auto}
+  .icon-btn{background:none;border:0;padding:0;cursor:default;color:var(--ig-text);line-height:0}
+  .caption{padding:2px 14px 0;font-size:14px;color:var(--ig-text);white-space:pre-wrap;
+    word-wrap:break-word}
+  .caption .u{font-weight:600;margin-right:6px}
+  .caption .tags{color:var(--ig-link)}
+  .caption.clamp .cap-body{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+    overflow:hidden}
+  .more-link{color:var(--ig-muted);cursor:pointer;font-size:14px;display:inline-block;margin-top:2px}
+  .caption:not(.clamp) .more-link{display:none}
+  .timestamp{padding:8px 14px 2px;font-size:10px;letter-spacing:.2px;text-transform:uppercase;
+    color:var(--ig-muted)}
+
+  /* ---- rodapé de aprovação por card ---- */
+  .approve{border-top:1px solid #efefef;margin-top:10px;padding:12px 14px;background:#fbfbfb}
+  .approve-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .approve-label{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;
+    color:var(--ig-muted);margin-right:2px}
+  .choice{font-family:inherit;font-size:13px;font-weight:600;border-radius:20px;padding:7px 14px;
+    border:1px solid var(--ig-border);background:#fff;color:#555;cursor:pointer;display:inline-flex;
+    align-items:center;gap:6px}
+  .choice:hover{background:#f2f2f2}
+  .choice[aria-pressed="true"][data-v="ok"]{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+  .choice[aria-pressed="true"][data-v="fix"]{background:var(--warn-bg);border-color:var(--warn);color:var(--warn)}
+  .obs{width:100%;margin-top:10px;font-family:inherit;font-size:13px;padding:9px 11px;
+    border:1px solid var(--ig-border);border-radius:8px;resize:vertical;min-height:38px;display:none}
+  .approve.show-obs .obs{display:block}
+
+  /* ---- ferramentas de publicação por card ---- */
+  .pub{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:11px 14px;
+    border-top:1px solid #efefef;margin-top:10px}
+  .pub-label{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;
+    color:var(--ig-muted);margin-right:2px}
+  .pub-btn{font-family:inherit;font-size:12.5px;font-weight:600;border-radius:20px;padding:6px 12px;
+    border:1px solid var(--ig-border);background:#fff;color:var(--ig-link);cursor:pointer;
+    display:inline-flex;align-items:center;gap:5px;text-decoration:none;line-height:1.2;
+    transition:background .15s,border-color .15s,color .15s}
+  .pub-btn:hover{background:#eef5ff;border-color:var(--ig-blue)}
+  .pub-btn.done{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+
+  footer{max-width:470px;margin:24px auto 40px;padding:0 16px;color:var(--ig-muted);font-size:12px;
+    text-align:center}
+  footer a{color:var(--ig-muted)}
+
+  /* toast */
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);
+    background:#262626;color:#fff;padding:11px 18px;border-radius:8px;font-size:13px;opacity:0;
+    pointer-events:none;transition:.25s;z-index:50}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  @media (max-width:520px){
+    .topbar h1{font-size:14px}
+    .btn{padding:7px 11px;font-size:12px}
+  }
+</style>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <h1>Cards de palestrantes · VIII Concefor
+      <small>Onda 1 · pré-evento · prévia para aprovação</small></h1>
+    <span class="counter" id="counter">0 de 7 avaliados</span>
+    <button class="btn" id="btnClear" type="button">Limpar</button>
+    <button class="btn btn-primary" id="btnCopy" type="button">Copiar parecer</button>
+  </div>
+</div>
+
+<div class="intro">
+  <p>Cada card abaixo aparece <b>como ficará no feed do Instagram</b>, com a legenda real que vai junto
+     na publicação. A ordem é a de publicação prevista.</p>
+  <p><b>Para aprovar:</b> em cada card, marque <b>Aprovar</b> ou <b>Pedir ajuste</b> (pode escrever a
+     observação). No fim, toque em <b>Copiar parecer</b> e cole a resposta no WhatsApp ou e-mail.
+     Volta tudo de uma vez.</p>
+  <p><b>Na hora de publicar:</b> use a linha <b>Publicar</b> de cada card. <b>Baixar arte</b> salva o
+     PNG no seu aparelho, <b>Copiar legenda</b> leva o texto já com as hashtags e <b>Copiar alt</b>
+     leva o texto alternativo, que entra em "Configurações avançadas" no Instagram.</p>
+  <div class="note">O perfil de publicação é o <b>Instagram do Cefor · @ifescefor</b>.
+     O avatar aqui é só ilustrativo. O que está em aprovação é a <b>arte</b> e a <b>legenda</b>.</div>
+</div>
+
+<div class="feed" id="feed"></div>
+
+<footer>
+  Página interna de aprovação · VIII CONCEFOR · Cefor/Ifes · 17 a 20 de agosto de 2026.<br>
+  As marcações que você faz ficam salvas só neste navegador.
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------- dados dos cards (ordem = publicação prevista) ---------- */
+const IMG = "../producao/02-pre-evento/palestrantes/cards/";
+const posts = [
+  {
+    id:"vanessa", nome:"Dra. Vanessa Battestin", data:"21 de julho",
+    img:IMG+"2026-07-20_pre_card_palestrante-vanessa-battestin_v3.png",
+    alt:"Card do VIII Concefor com foto da Dra. Vanessa Battestin. Palestra de abertura: 20 Anos de EaD e o Cefor, 17/08 às 19h. Selo comemorativo de 20 anos do Cefor.",
+    legenda:`Como a educação a distância do Cefor chegou até aqui, em 20 anos? É essa história que abre o VIII Concefor. Na palestra "20 Anos de EaD e o Cefor", a Dra. Vanessa Battestin conta como foi, no dia 17/08, às 19h.
+
+Vanessa (@vanessabattestin) foi diretora do Cefor entre 2014 e 2019 e viveu boa parte dessa trajetória por dentro. É doutora em Educação, professora titular do Cefor/Ifes, coordenadora da UAB e especialista internacional da A3ES (Portugal).
+
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+  },
+  {
+    id:"felipe", nome:"Felipe Maciel Tessarolo", data:"24 de julho",
+    img:IMG+"2026-07-21_pre_card_palestrante-felipe-tessarolo_v2.png",
+    alt:"Card do VIII Concefor com foto de Felipe Maciel Tessarolo. Palestra internacional, 18/08 às 14h30, The Open University (Reino Unido). Selo comemorativo de 20 anos do Cefor.",
+    legenda:`O que a educação a distância do Reino Unido tem a ensinar pra gente? É essa a proposta da palestra de Felipe Maciel Tessarolo, do Institute of Educational Technology da The Open University. Dia 18/08, às 14h30.
+
+Felipe traz os mesmos temas em que atua na prática: inteligência artificial aplicada ao ensino, acessibilidade e personalização em larga escala. Ele assina os artigos vencedores do prêmio de melhor pesquisa da EDEN (a rede europeia de educação a distância e digital) em dois anos seguidos, 2025 e 2026, os dois sobre IA no ensino superior. Também participa da mesa-redonda "Desafios da EaD para os próximos 20 anos", no dia 19/08.
+
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+  },
+  {
+    id:"mariano", nome:"Dr. Mariano Pimentel", data:"28 de julho",
+    img:IMG+"2026-07-22_pre_card_palestrante-mariano-pimentel_v2.png",
+    alt:"Card do VIII Concefor com foto do Dr. Mariano Pimentel, professor na UNIRIO. Palestra sobre autoria com IA generativa e desafios para a EaD, 19/08 às 14h30. Selo comemorativo de 20 anos do Cefor.",
+    legenda:`Quando um texto nasce junto com a IA generativa, de quem é a autoria? É essa questão que o Dr. Mariano Pimentel leva para a palestra "Autoria com IA generativa: desafios para a EaD", no dia 19/08, às 14h30.
+
+É exatamente sobre esse assunto que ele escreveu o livro gratuito "IA Generativa e Educação" (mais de 10 mil downloads). Mariano (@pimentelmariano) é doutor em Informática, professor na UNIRIO e ganhador do Prêmio Jabuti 2012.
+
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+  },
+  {
+    id:"rutinelli", nome:"Dra. Rutinelli da Penha Fávero", data:"30 de julho",
+    img:IMG+"2026-07-20_pre_card_palestrante-rutinelli-favero_v1.png",
+    alt:"Card do VIII Concefor com foto da Dra. Rutinelli da Penha Fávero. Mesa-redonda: Desafios da EaD para os próximos 20 anos, 19/08 às 9h30. Selo comemorativo de 20 anos do Cefor.",
+    legenda:`Quais serão os desafios da educação a distância para os próximos 20 anos? É esse o debate da mesa-redonda que reúne a Dra. Rutinelli da Penha Fávero, no dia 19/08, às 9h30.
+
+Rutinelli (@rutinha_fav) pesquisa tecnologia e educação, gamificação e formação docente. São temas que ela leva direto para essa conversa sobre o futuro da EaD.
+
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+  },
+  {
+    id:"marcia", nome:"Dra. Márcia Oliveira", data:"31 de julho",
+    img:IMG+"2026-07-21_pre_card_palestrante-marcia-oliveira_v2.png",
+    alt:"Card do VIII Concefor com foto da Dra. Márcia Oliveira. Mesa-redonda Tecnologia Delas, 18/08. Selo comemorativo de 20 anos do Cefor.",
+    legenda:`Mulheres que estão transformando a tecnologia na educação: essa é a proposta da mesa-redonda "Tecnologia Delas" (18/08), com a Dra. Márcia Oliveira entre as participantes.
+
+Márcia é professora do Ifes/Cefor, doutora em Engenharia Elétrica, e coordena o Educimat, o Corte de Lovelace e o grupo de pesquisa Pros@tec. É também a Coordenadora Geral do VIII Concefor.
+
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+  },
+  {
+    id:"mariella", nome:"Dra. Mariella Berger Andrade", data:"4 de agosto",
+    img:IMG+"2026-07-20_pre_card_palestrante-mariella-berger_v1.png",
+    alt:"Card do VIII Concefor com foto da Dra. Mariella Berger Andrade. Mesa-redonda Tecnologia Delas, 18/08. Selo comemorativo de 20 anos do Cefor.",
+    legenda:`Mulheres que estão transformando a tecnologia na educação: na mesa-redonda "Tecnologia Delas" (18/08), a Dra. Mariella Berger Andrade traz sua pesquisa em inteligência artificial, EaD e robótica.
+
+Mariella (@mariellaberger) é professora do Ifes, doutora em Ciência da Computação (UFES), e já foi Diretora Executiva do Ifes e Diretora do Cefor, entre 2019 e 2022.
+
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+  },
+  {
+    id:"celia", nome:"Dra. Jaqueline Sanz", data:"6 de agosto",
+    img:IMG+"2026-07-21_pre_card_palestrante-jaqueline-sanz_v3.png",
+    alt:"Card do VIII Concefor com foto da Dra. Jaqueline Sanz. Mesa-redonda Tecnologia Delas, 18/08. Selo comemorativo de 20 anos do Cefor.",
+    legenda:`Tecnologia para mapear a vida das mulheres do Espírito Santo. É sobre isso que pesquisa a Dra. Jaqueline Sanz, que completa a mesa-redonda "Tecnologia Delas" (18/08).
+
+Jaqueline Sanz (@jaqueline_sanz_vix) coordena o Atlas das Mulheres do Espírito Santo, um exemplo prático do tema da própria mesa. É também servidora do Incaper e atua na Secretaria Estadual das Mulheres (SESM).
+
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+  }
+];
+
+const HASHTAGS = "#Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD";
+const AVATAR = "../contexto/_marca/logos/concefor/VIII_Concefor_logo_icon_concefor_azul.png";
+const STORE = "concefor-aprovacao-cards-palestrantes";
+
+/* ---------- ícones ---------- */
+const ic = {
+  heart:'<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+  comment:'<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4-.8L3 21l1.9-4.5A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>',
+  share:'<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>',
+  save:'<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>',
+  dots:'<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>',
+  verified:'<svg class="verified" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.6 2.1 3.3-.4 1.2 3.1 3 1.5-1 3.2 1 3.2-3 1.5-1.2 3.1-3.3-.4L12 23l-2.6-2.1-3.3.4-1.2-3.1-3-1.5 1-3.2-1-3.2 3-1.5L6.1 2.7l3.3.4z"/><path d="M10.3 15.2l-2.8-2.8 1.3-1.3 1.5 1.5 3.9-3.9 1.3 1.3z" fill="#fff"/></svg>'
+};
+
+/* ---------- estado ---------- */
+let state = {};
+try { state = JSON.parse(localStorage.getItem(STORE)) || {}; } catch(e){ state = {}; }
+function save(){ try{ localStorage.setItem(STORE, JSON.stringify(state)); }catch(e){} }
+
+/* ---------- escape ---------- */
+function esc(s){ return s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+/* ---------- render de um post ---------- */
+function render(){
+  const feed = document.getElementById('feed');
+  feed.innerHTML = '';
+  posts.forEach(p => {
+    const st = state[p.id] || {};
+    const el = document.createElement('article');
+    el.className = 'post';
+    const legendaHtml = esc(p.legenda) + '\n\n<span class="tags">' + esc(HASHTAGS) + '</span>';
+    el.innerHTML = `
+      <div class="post-head">
+        <img class="avatar" src="${AVATAR}" alt=""
+             onerror="this.outerHTML='<div class=\\'avatar-fallback\\'>C</div>'">
+        <div class="uname">ifescefor ${ic.verified}
+          <span class="sub">VIII Concefor · Cefor/Ifes</span></div>
+        <span class="more-dots">${ic.dots}</span>
+      </div>
+      <img class="post-img" src="${p.img}" alt="${esc(p.alt)}" loading="lazy">
+      <div class="actions">
+        <span class="icon-btn">${ic.heart}</span>
+        <span class="icon-btn">${ic.comment}</span>
+        <span class="icon-btn">${ic.share}</span>
+        <span class="icon-btn save">${ic.save}</span>
+      </div>
+      <div class="caption clamp" id="cap-${p.id}">
+        <div class="cap-body"><span class="u">ifescefor</span><span>${legendaHtml}</span></div>
+        <span class="more-link" data-cap="${p.id}">… mais</span>
+      </div>
+      <div class="timestamp">Publicação prevista · ${p.data}</div>
+      <div class="pub" data-id="${p.id}">
+        <span class="pub-label">Publicar:</span>
+        <a class="pub-btn" href="${p.img}" download="${p.img.split('/').pop()}">⬇ Baixar arte</a>
+        <button class="pub-btn" type="button" data-a="leg">📋 Copiar legenda</button>
+        <button class="pub-btn" type="button" data-a="alt">📋 Copiar alt</button>
+      </div>
+      <div class="approve ${st.obsOpen || (st.status==='fix') ? 'show-obs':''}" data-id="${p.id}">
+        <div class="approve-row">
+          <span class="approve-label">Aprovação:</span>
+          <button class="choice" data-v="ok"  aria-pressed="${st.status==='ok'}">✓ Aprovar</button>
+          <button class="choice" data-v="fix" aria-pressed="${st.status==='fix'}">✎ Pedir ajuste</button>
+        </div>
+        <textarea class="obs" placeholder="Observação (opcional): o que ajustar na arte ou na legenda">${esc(st.obs||'')}</textarea>
+      </div>`;
+    feed.appendChild(el);
+  });
+  bind();
+  updateCounter();
+}
+
+/* ---------- copiar texto (usado pelos botões de publicação e pelo parecer) ---------- */
+async function copyText(txt, okMsg){
+  try {
+    await navigator.clipboard.writeText(txt);
+    toast(okMsg);
+    return true;
+  } catch(e){
+    const ta = document.createElement('textarea');
+    ta.value = txt;
+    ta.style.position = 'fixed'; ta.style.top = '-1000px'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch(_){ ok = false; }
+    ta.remove();
+    toast(ok ? okMsg : 'Não foi possível copiar');
+    return ok;
+  }
+}
+
+/* Feedback visual: o botão fica verde por um instante depois de copiar. */
+function flash(btn, label){
+  const original = btn.textContent;
+  btn.classList.add('done');
+  btn.textContent = label;
+  clearTimeout(btn._h);
+  btn._h = setTimeout(() => { btn.classList.remove('done'); btn.textContent = original; }, 1600);
+}
+
+/* ---------- interações ---------- */
+function bind(){
+  document.querySelectorAll('.more-link').forEach(m => {
+    m.onclick = () => { document.getElementById('cap-'+m.dataset.cap).classList.remove('clamp'); };
+  });
+  document.querySelectorAll('.pub').forEach(box => {
+    const p = posts.find(x => x.id === box.dataset.id);
+    if (!p) return;
+    box.querySelectorAll('button[data-a]').forEach(btn => {
+      btn.onclick = async () => {
+        const isLeg = btn.dataset.a === 'leg';
+        const txt = isLeg ? (p.legenda + '\n\n' + HASHTAGS) : p.alt;
+        const msg = isLeg ? 'Legenda copiada (com as hashtags)' : 'Texto alternativo copiado';
+        if (await copyText(txt, msg)) flash(btn, isLeg ? '✓ Legenda copiada' : '✓ Alt copiado');
+      };
+    });
+  });
+  document.querySelectorAll('.approve').forEach(box => {
+    const id = box.dataset.id;
+    box.querySelectorAll('.choice').forEach(btn => {
+      btn.onclick = () => {
+        const v = btn.dataset.v;
+        const cur = state[id] || {};
+        cur.status = (cur.status === v) ? null : v;      // clicar de novo desmarca
+        if (v === 'fix' && cur.status === 'fix') cur.obsOpen = true;
+        state[id] = cur; save();
+        box.querySelectorAll('.choice').forEach(b =>
+          b.setAttribute('aria-pressed', String(state[id].status === b.dataset.v)));
+        box.classList.toggle('show-obs', cur.obsOpen || cur.status === 'fix');
+        updateCounter();
+      };
+    });
+    const ta = box.querySelector('.obs');
+    ta.oninput = () => { const c = state[id] || {}; c.obs = ta.value; state[id] = c; save(); };
+  });
+}
+
+function updateCounter(){
+  let ok=0, fix=0;
+  posts.forEach(p => { const s=(state[p.id]||{}).status; if(s==='ok')ok++; else if(s==='fix')fix++; });
+  const done = ok+fix;
+  let txt = `${done} de ${posts.length} avaliados`;
+  if(ok||fix){ txt += ' · '; const parts=[]; if(ok)parts.push(`<b>${ok} aprovado${ok>1?'s':''}</b>`);
+    if(fix)parts.push(`<i>${fix} ajuste${fix>1?'s':''}</i>`); txt += parts.join(' · '); }
+  document.getElementById('counter').innerHTML = txt;
+}
+
+/* ---------- copiar parecer ---------- */
+function buildParecer(){
+  const now = new Date();
+  const dt = now.toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  let out = 'Parecer · Cards de palestrantes (VIII Concefor)\nGerado em '+dt+'\n\n';
+  let any = false;
+  posts.forEach((p,i) => {
+    const s = state[p.id] || {};
+    let mark = '⬜ (não avaliado)';
+    if(s.status==='ok') mark = '✅ Aprovado';
+    else if(s.status==='fix') mark = '✏️ Pedir ajuste';
+    if(s.status) any = true;
+    out += `${i+1}. ${p.nome} · ${p.data}: ${mark}`;
+    if(s.status==='fix' && s.obs && s.obs.trim()) out += `\n   → ${s.obs.trim()}`;
+    out += '\n';
+  });
+  if(!any) out += '\n(nenhum card avaliado ainda)\n';
+  return out;
+}
+function toast(msg){
+  const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('on');
+  clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove('on'), 2200);
+}
+document.getElementById('btnCopy').onclick = () => {
+  copyText(buildParecer(), 'Parecer copiado: cole no WhatsApp ou e-mail');
+};
+document.getElementById('btnClear').onclick = () => {
+  if(confirm('Apagar todas as marcações desta página?')){ state={}; save(); render(); toast('Marcações apagadas'); }
+};
+
+render();
+</script>

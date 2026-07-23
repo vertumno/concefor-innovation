@@ -15,6 +15,11 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
   do site e novas peças; **consultar sempre**: https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true
 - **🎨 Artes do Concefor (pasta no Canva):** https://canva.link/wdnsx8ggf61x2hs
   *(pasta registrada anteriormente: https://www.canva.com/folder/FAHDrZ44PIM — confirmar se é a mesma)*
+- **🎨 Cards dos palestrantes (Canva — editáveis):** https://canva.link/dzws8wu8ckf4gtv
+  *(os 7 cards individuais; PNGs finais versionados em `comunicacao/producao/02-pre-evento/palestrantes/cards/`)*
+- **🪪 Modelo do crachá (Canva — para geração em lote):** https://canva.link/vx6e7xpwox32wyy
+  *(montado em 22/07 para gerar os crachás em lote com o nome de cada inscrito, a partir da
+  lista do Even3; o PDF final vai para a gráfica na data-limite que ela indicar)*
 - **🖌️ Matrizes do Illustrator (Drive da CGTE):** https://drive.google.com/drive/folders/1fuoepIyukqXTw035JtTj-MSbnpw7veJn?usp=drive_link
 - **📤 Arquivos editáveis e públicos (compartilhar com a comissão):** https://drive.google.com/drive/folders/1-CH92C467aI7C_dj6fE4O5XBI8A_qShv
 - **Central de comunicação (neste repo):** `comunicacao/` — board, calendário, palestrantes, peças
@@ -24,6 +29,15 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 - **Site oficial:** https://concefor.cefor.ifes.edu.br/
 - **Cefor/IFES:** <link institucional>
 - **Plataforma de inscrição — Even3** (API p/ login pelo crachá, pós-piloto): `<link do evento no Even3>` — confirmar acesso/credenciais da API; o que já sabemos está em `contexto/even3/README.md`
+
+## Conteúdo dos palestrantes
+
+- **📘 Livro do Mariano Pimentel, "IA generativa e educação: práticas e teorizações"** (SBC,
+  gratuito, +10 mil downloads): https://books-sol.sbc.org.br/index.php/sbc/catalog/book/182
+  — é o gancho da legenda do card dele e conversa direto com a palestra
+  *"Autoria com IA generativa: desafios para a EaD"* (19/08, 14h30).
+  💡 **Possibilidade registrada:** disponibilizar o download pelo app do evento
+  (ver `contexto/brainstorm/sintese-ideias.md`, fase 2).
 
 ## Identidade visual
 

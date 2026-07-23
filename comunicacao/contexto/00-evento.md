@@ -40,7 +40,7 @@ para o **Educimat** (Mestrado e Doutorado Profissional em Educação em Ciência
 - Edição especial da Revista **Sala de Aula em Foco** (Qualis B2 em Ensino)
 
 ## Organização geral (comissão)
-- **Coordenadora Geral:** Dra. Márcia Gonçalves de Oliveira
+- **Coordenadora Geral:** Dra. Márcia Gonçalves de Oliveira *(ao abreviar nas peças, usar "Márcia Oliveira")*
 - **Coordenadora Adjunta:** Ma. Viviane Bessa Lopes Alvarenga
 - **Presidente do Comitê Científico:** Dra. Dulcileia Marchesi Costa
 - Membro da comissão (e da CGTE): Me. Elton Vinicius Silva, Me. Marcos Vinicius Forecchi Accioly
