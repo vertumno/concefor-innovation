@@ -4,6 +4,39 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-23 — App espelhado para o GitLab do IFES (só `app/`); monorepo segue como fonte
+
+**Decisão:** o código do app passa a ter um **espelho no GitLab do IFES**
+(https://gitlab.ifes.edu.br/cefor/concefor-app), contendo **apenas a pasta `app/`** extraída
+com histórico via `git subtree split --prefix=app`. O **monorepo (GitHub) continua sendo a
+fonte de verdade** e o "cérebro"; o GitLab é o repositório que a CGTI/Sérgio usam para revisar e
+**deployar** — resolve o pedido do Saymon (gestor da CGTI, 23/07) de dar acesso ao Sérgio sem
+expor na infra institucional o material interno (comunicação, reuniões, brainstorm, decisões).
+O `README.md` do app foi reescrito para ser as **instruções de instalação/deploy** (Docker,
+HTTPS obrigatório, variáveis, backup) e é o README do repo no GitLab.
+
+**Atualizar o espelho** (após mudanças em `app/`): o `main` do GitLab é **branch protegida**
+(sem force push), e o remoto carrega o commit inicial do GitLab mesclado. Rotina que faz
+fast-forward:
+
+```bash
+git subtree split --prefix=app -b gitlab-split      # re-split determinístico do app/
+git checkout gitlab-app                             # branch de espelho (mantém o merge history)
+git merge -X theirs --no-edit gitlab-split          # traz as novas mudanças
+git push gitlab gitlab-app:main                     # fast-forward, aceito pela branch protegida
+git checkout main && git branch -D gitlab-split
+```
+
+Remote: `git remote add gitlab https://gitlab.ifes.edu.br/cefor/concefor-app.git`. Segredos
+(`.env.local`, `/data/`, `*.db`) são gitignored — não vão no espelho.
+
+**Por quê:** o Sérgio é do IFES e acessa o GitLab institucional nativamente (sem entrar na
+conta pessoal `vertumno`); e o app oficial do evento fica sob governança institucional, com
+CI/CD do GitLab disponível para build/deploy. Mantém-se **uma** fonte de verdade (monorepo) —
+o GitLab é derivado, não concorrente. Ver `links.md` (Repositório).
+
+---
+
 ## 2026-07-16 — Interface reformulada: barra inferior com "Ao Vivo" no centro (benchmark EDEN)
 
 **Decisão:** o menu do app sai do topo e vira **barra inferior fixa de 5 itens** — Início ·
