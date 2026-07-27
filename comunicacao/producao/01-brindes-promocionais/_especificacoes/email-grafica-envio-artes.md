@@ -52,12 +52,43 @@ Fico no aguardo. Obrigado!
   → Some a pergunta da data-limite do PDF com os nomes: não existe lote nomeado na gráfica.
 - **Data das montagens (caneta, copo, bolsa) para aprovação:** ___
 
+---
+
+## Terceiro e-mail — 22/07/2026, 16h07 (fecha o assunto do crachá)
+
+> Enviado logo depois da ligação, para deixar registrado por escrito o que foi combinado por
+> telefone e substituir o anexo: sai o PDF que pressupunha nomes, entra o **PDF do crachá em
+> branco, com marcas de corte e sangria**.
+
+**Assunto:** [IFES/Concefor] Envio das artes e combinação dos crachás
+
+Olá José, boa tarde!
+
+Conforme voce informou por telefone, não será possivel a impressão dos CRACHÁS com os nomes.
+Sendo assim encaminho em anexo o PDF do cracha sem nome, já com marcas de corte e sangria.
+
+Peço que reponda sempre com cópia para cgte.cefor@ifes.edu.br para que meu coordenador Marquito
+também possa acompanhar o andamento do trabalho, pois estarei de férias de 27 a 31 de julho.
+
+Att..
+
+### O que este e-mail estabelece
+
+| Ponto | Efeito |
+|---|---|
+| PDF do crachá **sem nome**, com corte e sangria | É a arte final que a gráfica vai rodar. Encerra o assunto do lado dela. |
+| Cópia obrigatória para **cgte.cefor@ifes.edu.br** | O Marquito acompanha; a gráfica não pode responder só para uma caixa. |
+| Quem conduz o contato está **de férias de 27 a 31/07** | ⚠️ Cobre a semana da avaliação das amostras (**28/07, 11h**). O acompanhamento nessa janela é do **Marquito**. `[confirmar quem assume a interlocução com a gráfica]` |
+
 ## Em aberto depois dessa resposta
 
-- **Papel na nossa impressora.** Papel fotográfico fosco 240 g em impressora de escritório:
-  confirmar antes da entrega e testar com amostra. É o risco que derruba o plano inteiro.
-- **Área do nome na arte** do crachá impresso: precisa ficar limpa e no registro certo para o
-  nome entrar por cima.
-- **Camada de nomes para sobreimpressão:** adaptar o modelo do Canva
-  (https://canva.link/vx6e7xpwox32wyy), que hoje gera o crachá inteiro.
+- ~~**Papel na nossa impressora.**~~ → **resolvido em 27/07:** os nomes passam a ser impressos em
+  **etiquetas adesivas** coladas no crachá, não direto no papel fotográfico 240 g. Ver a nova
+  frente em [`../cracha/`](../cracha/) e no
+  [board](../../../../planejamento/board-producao.md).
+- **Área do nome na arte** do crachá impresso: precisa ficar limpa e no registro certo para a
+  **etiqueta** entrar por cima (o tamanho da etiqueta define a área).
+- ~~**Camada de nomes para sobreimpressão**~~ → vira **arquivo de impressão de etiquetas**
+  (gabarito da folha comprada), gerado a partir da lista do Even3.
 - **Rateio das 400 unidades** entre as variantes (normal, palestrante, QR, inscrição).
+- **Data das montagens** (caneta, copo, bolsa) para aprovação — ainda sem resposta da gráfica.

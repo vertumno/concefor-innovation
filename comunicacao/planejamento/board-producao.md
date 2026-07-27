@@ -46,12 +46,19 @@
 > 🪪 **Crachás: todos vêm em branco (definido 22/07, por telefone com a gráfica).** A produção é em
 > impressão gráfica, não digital, então **não existe personalização com o nome**. Os 400 chegam sem
 > nome e **a impressão dos nomes é nossa, aqui no Cefor**, sobre o crachá pronto.
-> **Antes de 17/08:** (1) confirmar e **testar** se a impressora do Cefor roda papel fotográfico
-> fosco 240 g; (2) garantir área limpa para o nome na arte; (3) adaptar o modelo do Canva
-> ([link](https://canva.link/vx6e7xpwox32wyy)) para gerar **só a camada dos nomes** a partir da
-> lista do Even3, em vez do crachá inteiro; (4) definir quem imprime as 400 e quando.
+> 📧 Fechado por escrito no e-mail de **22/07, 16h07** (PDF do crachá sem nome, com corte e
+> sangria; respostas da gráfica sempre com cópia para cgte.cefor@ifes.edu.br) — registro em
+> [`email-grafica-envio-artes.md`](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md).
+> ⚠️ **Quem conduz o contato com a gráfica está de férias de 27 a 31/07** — inclui a avaliação
+> das amostras de 28/07. Acompanhamento pelo **Marquito**.
+>
+> 🏷️ **Decisão de 27/07: o nome vai em ETIQUETA ADESIVA colada no crachá**, não impresso direto
+> no papel fotográfico. Isso mata o risco da gramatura de 240 g na impressora de escritório.
+> Frente nova, com as três tarefas em aberto (comprar · achar o formato · gerar os arquivos):
+> [`cracha/etiquetas-nomes.md`](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md).
 > ✅ **Efeito bom:** sem lote nomeado na gráfica, some a corrida contra a data-limite dela.
-> Podemos imprimir nome até a véspera, inclusive de quem se inscrever depois de 15/08.
+> Podemos imprimir nome até a véspera, inclusive de quem se inscrever depois de 15/08 — e errar
+> um nome custa uma etiqueta, não um crachá.
 
 > ❓ **Crachá: falta definir o rateio das 400 unidades.** A arte tem **4 variantes** em
 > [`cracha/3x/`](../producao/01-brindes-promocionais/cracha/3x/): **normal** (nome + nome completo),
@@ -78,6 +85,7 @@
 ### Fora do TR
 | Peça | Situação | Responsável | Prazo | Status |
 |---|---|---|---|---|
+| 🏷️ **Etiquetas com os nomes** (crachá) 🆕 | aberta em 27/07 — os crachás vêm em branco, o nome vira etiqueta adesiva. **3 tarefas:** comprar · achar o formato · gerar os arquivos. [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) | ___ | testar antes da entrega dos 400; imprimir até a véspera de 17/08 | ⬜ |
 | **Banners de lançamentos** — livro Cefor, MOOCs, Base de Conhecimentos | ✅ definido 20/07: **à parte, pagos pela UAB (Vanessa)** — não saem do TR nem dos 10 banners | Elton *(arte)* / UAB *(custeio)* | arte até **01/08** → gráfica | ⬜ |
 | **Fundo de palco** | 🔴 citado na descrição do TR mas **sem item contratado** — confirmar | ___ | ___ | ⬜ |
 | Arte **squeezes** | 🟡 não está no TR — o copo bucks parece ter substituído; confirmar | ___ | ___ | ⬜ |
@@ -86,21 +94,25 @@
 ## Pré-evento
 | Peça | Responsável | Prazo | Status |
 |---|---|---|---|
+> 📌 **Cadência definida em 27/07: um card por dia, em sequência, e só cards.** Os stories que
+> estavam programados foram retirados do [calendário](calendario-publicacao.md). Publicado o card
+> do dia, o próximo da fila vai no dia seguinte.
+
 | Card lembrete prazo envio final (03/08 · Even3) — **publicado em 16/07** | Elton | 16/07 | ✅ |
-| Card palestrante — Vanessa Battestin — arte **v3** liberada (v1 tinha o nome errado; v3 corrigiu grafia e tipografia) | Elton *(a princípio)* | publicar 21/07 | 🔵 |
-| Card palestrante — Tessarolo — arte liberada | Elton *(a princípio)* | publicar 24/07 | 🔵 |
-| Card palestrante — Mariano Pimentel — arte liberada | Elton *(a princípio)* | publicar 28/07 | 🔵 |
-| Card palestrante — Rutinelli Fávero — arte liberada | Elton *(a princípio)* | publicar 30/07 | 🔵 |
-| Card palestrante — Márcia Oliveira — arte liberada | Elton *(a princípio)* | publicar 31/07 | 🔵 |
-| Card palestrante — Mariella Berger — arte liberada | Elton *(a princípio)* | publicar 04/08 | 🔵 |
-| Card palestrante — Jaqueline Sanz — arte liberada | Elton *(a princípio)* | publicar 06/08 | 🔵 |
-| Card mesa "Tecnologia Delas" — **arte ainda não produzida** (legenda pronta) | Elton *(a princípio)* | ⚠️ 31/07 aqui × **07/08** nas legendas — definir | ⬜ |
-| Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton *(a princípio)* | ⚠️ 04/08 aqui × **01/08** nas legendas — definir | ⬜ |
-| 🆕 Card palestrante — Mauro Oliveira — **bloqueado**: sem foto e sem minibio (entrou na programação em 21/07) | Elton *(a princípio)* | publicar 11/08 (último da série) | ⛔ |
-| Mensagem aos palestrantes (pedido de vídeo) | Elton *(a princípio)* | enviar até 18/07 | ⬜ |
+| Card palestrante — Vanessa Battestin | Elton | 21/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbF30gOOToU/) |
+| Card palestrante — Felipe Tessarolo | Elton | 24/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbF4cUPh-TT/) |
+| Card palestrante — Mariano Pimentel — arte liberada | Elton | **publicar hoje, 27/07** | 🟡 |
+| Card palestrante — Rutinelli Fávero — arte liberada | Elton | publicar 28/07 | 🔵 |
+| Card palestrante — Márcia Oliveira — arte liberada | Elton | publicar 29/07 | 🔵 |
+| Card palestrante — Mariella Berger — arte liberada | Elton | publicar 30/07 | 🔵 |
+| Card palestrante — Jaqueline Sanz — arte liberada | Elton | publicar 31/07 | 🔵 |
+| Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton | publicar **01/08** (sáb) | ⬜ **próxima arte a fazer** |
+| Card mesa "Tecnologia Delas" — **arte ainda não produzida** (legenda pronta) | Elton | publicar **02/08** (dom) | ⬜ |
+| 🆕 Card palestrante — Mauro Oliveira — **bloqueado**: sem foto e sem minibio (entrou na programação em 21/07) | Elton | publicar 11/08 (último da série) | ⛔ |
+| Mensagem aos palestrantes (pedido de vídeo **+ material para o app**) | Elton | ⚠️ prazo era **18/07** — sem registro de envio; retorno esperado 03/08 | 🔴 |
 | Vídeos-convite dos palestrantes (receber até 03/08) | Elton *(a princípio)* | reels 08–14/08 | ⬜ |
-| Cards eventos paralelos (aguardando Educimat; **publicar tudo junto** após liberação da Márcia) | Elton *(a princípio)* | sugerido 01–06/08 | ⬜ |
-| Contagem regressiva (10 peças) | Elton *(a princípio)* | 07–17/08 | ⬜ |
+| Cards eventos paralelos (aguardando Educimat; **publicar tudo junto** após liberação da Márcia) | Elton *(a princípio)* | sugerido 04/08 | ⬜ |
+| Contagem regressiva (10 peças) — ⏸️ **em revisão**: a regra "só cards" derruba 9 das 10 (são stories) | Elton *(a princípio)* | 07–16/08 | ⏸️ decidir |
 | ~~Banners institucionais — livro, MOOCs, Base de Conhecimentos~~ → **movido para a seção de Impressão** (é peça para gráfica) | — | — | ↗️ |
 | Notícia do Concefor para ACS — [rascunho pronto](../producao/02-pre-evento/noticia-acs/rascunho-noticia.md), falta revisão da Márcia | Elton *(a princípio)* | antes de 15/08 | 🟡 |
 | Divulgação dos lançamentos (livro Cefor, Base de Conhecimentos, vitrine MOOCs, livro NTE, "AI no Moodle do Ifes") — pode ir em carrossel com chamada de inscrição | Elton *(a princípio)* | ___ | ⬜ |

@@ -6,6 +6,12 @@
 > **Cards no Canva (editáveis) → https://canva.link/dzws8wu8ckf4gtv** ·
 > pasta geral de artes → https://www.canva.com/folder/FAHDrZ44PIM
 > PNGs finais versionados em [`cards/`](cards/).
+>
+> 📅 **Cadência definida em 27/07/2026: um card por dia, em sequência, sem pular data — e só
+> cards** (os stories programados foram retirados). As datas abaixo já refletem a nova ordem.
+>
+> ✅ **Publicados até agora:** Vanessa Battestin (21/07, [post](https://www.instagram.com/p/DbF30gOOToU/))
+> e Felipe Tessarolo (24/07, [post](https://www.instagram.com/p/DbF4cUPh-TT/)).
 
 ## Especificação fixa do card (igual para os 7)
 - **Formato:** 1080×1350 (feed) — se der, versão story 1080×1920
@@ -30,7 +36,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 
 ---
 
-## 1 · Dra. Vanessa Battestin — publicar 21/07
+## 1 · Dra. Vanessa Battestin — ✅ PUBLICADO 21/07
 
 - **Foto:** `_refs/fotos/Vanessa_Battestin.png`
 - **No card — nome da palestra:** Palestra de abertura · *"20 Anos de EaD e o Cefor"* · 17/08, 19h
@@ -44,7 +50,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
   nome em caixa-alta; **v3 (20/07)** corrige a grafia **e** alinha a tipografia (caixa-alta e baixa,
   igual aos outros 6). Versões anteriores apagadas.
 
-## 2 · Felipe Maciel Tessarolo · publicar 24/07
+## 2 · Felipe Maciel Tessarolo · ✅ PUBLICADO 24/07
 
 > ⚠️ **Sem "Dr." no nome** (definido em 21/07/2026): ele ainda não é doutor.
 
@@ -66,7 +72,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
   O "TEMA: Tecnologia, Transformação e Educação a Distância" (igual ao tema geral do evento)
   foi **decidido em 20/07 e permanece**.
 
-## 3 · Dr. Mariano Pimentel — publicar 28/07
+## 3 · Dr. Mariano Pimentel — publicar 27/07
 
 - **Foto:** `_refs/fotos/Mariano_Pimentel.png`
 - **No card — nome da palestra:** *"Autoria com IA generativa: desafios para a EaD"* · 19/08, 14h30
@@ -78,7 +84,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Arquivo:** `cards/2026-07-20_pre_card_palestrante-mariano-pimentel_v1.png`
 - **Status:** ✅ produzido 20/07 — arte bate com o previsto.
 
-## 4 · Dra. Rutinelli da Penha Fávero — publicar 30/07
+## 4 · Dra. Rutinelli da Penha Fávero — publicar 28/07
 
 - **Foto:** `_refs/fotos/Rutinelli_da_Penha_Fávero.png`
 - **No card — nome da palestra:** Mesa · *"Desafios da EaD para os próximos 20 anos"* · 19/08, 9h30
@@ -91,7 +97,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Status:** ✅ produzido 20/07 — arte traz "Professora do Ifes/Cefor" (previsto era
   "Professora do Ifes"); ajuste correto, ela é do Cefor.
 
-## 5 · Dra. Márcia Oliveira · publicar 31/07
+## 5 · Dra. Márcia Oliveira · publicar 29/07
 
 > ⚠️ **Nome:** o completo, "Dra. Márcia Gonçalves de Oliveira", também está correto.
 > **Ao abreviar, usar "Márcia Oliveira", nunca "Márcia Gonçalves"** (definido em 21/07/2026).
@@ -109,7 +115,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
   A linha de cargo ("Professora do Ifes/Cefor e coordenadora do Programa Corte de Lovelace",
   sem citar a Coordenação Geral do Concefor) foi **decidida em 20/07 e permanece**.
 
-## 6 · Dra. Mariella Berger Andrade — publicar 04/08
+## 6 · Dra. Mariella Berger Andrade — publicar 30/07
 
 - **Foto:** `_refs/fotos/Mariella_Berger_Andrade.png`
 - **No card — nome da palestra:** Mesa · *"Tecnologia Delas"* · 18/08
@@ -119,7 +125,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Arquivo:** `cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png`
 - **Status:** ✅ produzido 20/07 — arte bate com o previsto.
 
-## 7 · Dra. Jaqueline Sanz · publicar 06/08
+## 7 · Dra. Jaqueline Sanz · publicar 31/07
 
 > ⚠️ **Nome: usar "Jaqueline Sanz" em tudo** (definido em 21/07/2026), que é como ela é mais
 > conhecida. Não usar "Celia", "Celia Jaqueline" nem o registro completo nas peças.
@@ -159,8 +165,13 @@ Concefor — nunca uma curiosidade solta sobre ela.
 
 | Card | Data | Quem entra | Trava |
 |---|---|---|---|
-| Mesa "Desafios da EaD para os próximos 20 anos" | 01/08 | Rutinelli + Felipe Tessarolo | ✅ pode produzir, composição fechada em 21/07 |
-| Mesa "Tecnologia Delas" (as três juntas) | 07/08 | Márcia Oliveira, Mariella Berger, Jaqueline Sanz | ✅ pode produzir, todas confirmadas |
+| Mesa "Desafios da EaD para os próximos 20 anos" | **01/08** (sáb) | Rutinelli + Felipe Tessarolo | ✅ pode produzir, composição fechada em 21/07 |
+| Mesa "Tecnologia Delas" (as três juntas) | **02/08** (dom) | Márcia Oliveira, Mariella Berger, Jaqueline Sanz | ✅ pode produzir, todas confirmadas |
+
+> ⚠️ **Com a cadência diária, estas duas artes viraram o gargalo.** Os 7 cards individuais se
+> esgotam em 31/07 e nenhuma das duas existe ainda. As legendas já estão prontas em
+> [legendas.md](legendas.md) — falta só a arte. **01 e 02/08 caem no fim de semana**; se a
+> preferência for só dia útil, empurrar para 03 e 04/08.
 
 **No card (arte) — nome da mesa + participantes, nada além disso:**
 - Desafios da EaD: *"Desafios da EaD para os próximos 20 anos"* · Rutinelli da Penha Fávero e

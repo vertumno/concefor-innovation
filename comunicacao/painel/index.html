@@ -240,7 +240,7 @@
    links:   [{t:'rótulo', u:'caminho'}]  — .md abre no GitHub, resto abre direto
    ========================================================================= */
 
-const ATUALIZADO = '22/07/2026';
+const ATUALIZADO = '27/07/2026';
 const EVENTO     = '2026-08-17';
 const GITHUB     = 'https://github.com/vertumno/concefor-innovation/blob/main/comunicacao/';
 
@@ -248,17 +248,18 @@ const PECAS = [
   /* ---------------- IMPRESSÃO — TR 72/2026 ---------------- */
   { nome:'Crachá credencial · 400 un', fase:'impressao', status:'feito', resp:'Elton',
     prazo:'2026-07-22', prazoTx:'enviado 22/07',
-    nota:'Arte enviada à gráfica em 22/07 (PDF final). Chegam todos em branco: a impressão dos nomes é nossa, aqui no Cefor.',
+    nota:'Arte enviada à gráfica em 22/07, fechada por e-mail às 16h07 (PDF sem nome, com corte e sangria). Chegam todos em branco: os nomes são nossos, aqui no Cefor.',
     links:[{t:'PDF final',u:'../producao/01-brindes-promocionais/cracha/cracha_FINAL_PARA_IMPRESSAO.pdf'},
-           {t:'Modelo Canva',u:'https://canva.link/vx6e7xpwox32wyy'}] },
+           {t:'E-mail à gráfica',u:'../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md'}] },
 
   { nome:'Crachá · definir rateio das 4 variantes', fase:'impressao', status:'todo', resp:'CGTE',
     prazo:'2026-08-10', prazoTx:'antes do evento',
     nota:'O TR contratou 400 no total sem dizer quantos de cada tipo: normal, palestrante, QR code e inscrição.' },
 
-  { nome:'Crachá · impressão dos nomes no Cefor', fase:'impressao', status:'todo', resp:'CGTE',
+  { nome:'Etiquetas com os nomes · comprar, formatar e gerar', fase:'impressao', status:'todo', resp:'CGTE',
     prazo:'2026-08-16', prazoTx:'até a véspera',
-    nota:'Testar se a impressora roda papel fotográfico fosco 240 g, adaptar o Canva para gerar só a camada dos nomes a partir da lista do Even3 e definir quem imprime as 400.' },
+    nota:'Decisão de 27/07: o nome vai em etiqueta adesiva colada no crachá, não impresso no papel fotográfico. Três tarefas: comprar as etiquetas, achar o formato que casa com a área livre do crachá e gerar os arquivos a partir da lista do Even3. Testar numa amostra antes das 400.',
+    links:[{t:'Brief',u:'../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md'}] },
 
   { nome:'Camisas · 100 un sublimadas', fase:'impressao', status:'aprovacao', resp:'Elton',
     prazo:'2026-08-07', prazoTx:'antes de 07/08',
@@ -316,46 +317,47 @@ const PECAS = [
     links:[{t:'Ver no Instagram',u:'https://www.instagram.com/p/DbF30gOOToU/'},
            {t:'Arte v3',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-vanessa-battestin_v3.png'}] },
 
-  { nome:'Card palestrante · Felipe Tessarolo', fase:'pre', status:'agendado', resp:'Elton',
-    prazo:'2026-07-24', prazoTx:'agendado para 24/07',
-    nota:'Arte v2 liberada e publicação já agendada. Palestra internacional.',
-    links:[{t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-felipe-tessarolo_v2.png'},
-           {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
+  { nome:'Card palestrante · Felipe Tessarolo', fase:'pre', status:'feito', resp:'Elton',
+    prazo:'2026-07-24', prazoTx:'publicado 24/07',
+    nota:'No ar no Instagram. Palestra internacional. Arte v2 (sem o "Dr.").',
+    links:[{t:'Ver no Instagram',u:'https://www.instagram.com/p/DbF4cUPh-TT/'},
+           {t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-felipe-tessarolo_v2.png'}] },
 
-  { nome:'Card palestrante · Mariano Pimentel', fase:'pre', status:'aprovacao', resp:'Elton',
-    prazo:'2026-07-28', nota:'Arte v2 liberada, com o novo título da palestra.',
+  { nome:'Card palestrante · Mariano Pimentel', fase:'pre', status:'agendado', resp:'Elton',
+    prazo:'2026-07-27', prazoTx:'publicar hoje, 27/07',
+    nota:'Arte v2 liberada, com o novo título da palestra. Primeiro card da nova cadência diária.',
     links:[{t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-22_pre_card_palestrante-mariano-pimentel_v2.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
   { nome:'Card palestrante · Rutinelli Fávero', fase:'pre', status:'aprovacao', resp:'Elton',
-    prazo:'2026-07-30', nota:'Arte v1 liberada. Mesa "Desafios da EaD".',
+    prazo:'2026-07-28', nota:'Arte v1 liberada. Mesa "Desafios da EaD".',
     links:[{t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-rutinelli-favero_v1.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
   { nome:'Card palestrante · Márcia Oliveira', fase:'pre', status:'aprovacao', resp:'Elton',
-    prazo:'2026-07-31', nota:'Arte v2 liberada. Mesa "Tecnologia Delas".',
+    prazo:'2026-07-29', nota:'Arte v2 liberada. Mesa "Tecnologia Delas".',
     links:[{t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-marcia-oliveira_v2.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
   { nome:'Card palestrante · Mariella Berger', fase:'pre', status:'aprovacao', resp:'Elton',
-    prazo:'2026-08-04', nota:'Arte v1 liberada. Mesa "Tecnologia Delas".',
+    prazo:'2026-07-30', nota:'Arte v1 liberada. Mesa "Tecnologia Delas".',
     links:[{t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
   { nome:'Card palestrante · Jaqueline Sanz', fase:'pre', status:'aprovacao', resp:'Elton',
-    prazo:'2026-08-06', nota:'Arte v3 liberada. Mesa "Tecnologia Delas".',
+    prazo:'2026-07-31', nota:'Arte v3 liberada. Mesa "Tecnologia Delas". Último dos 7 individuais.',
     links:[{t:'Arte v3',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-jaqueline-sanz_v3.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
   { nome:'Card palestrante · Mauro Oliveira', fase:'pre', status:'bloqueado', resp:'Elton',
     prazo:'2026-08-11', nota:'Sem foto e sem minibio. Entrou na programação em 21/07 e é o último card da série.' },
 
-  { nome:'Card mesa · "Tecnologia Delas"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-07-31',
-    nota:'Arte ainda não produzida, legenda pronta. Conflito de data: 31/07 no board × 07/08 nas legendas, definir.',
+  { nome:'Card mesa · "Desafios da EaD"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-01',
+    nota:'GARGALO: os 7 cards individuais acabam em 31/07 e esta arte ainda não existe. Legenda pronta, composição fechada (Rutinelli + Tessarolo). 01/08 é sábado.',
     links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'}] },
 
-  { nome:'Card mesa · "Desafios da EaD"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-01',
-    nota:'Arte ainda não produzida, legenda pronta. Composição fechada em 21/07: Rutinelli + Tessarolo. Conflito de data: 04/08 no board × 01/08 nas legendas.',
+  { nome:'Card mesa · "Tecnologia Delas"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-02',
+    nota:'Arte ainda não produzida, legenda pronta. Fecha a série antes do Mauro. 02/08 é domingo.',
     links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'}] },
 
   { nome:'Mensagem aos palestrantes · pedido de vídeo-convite', fase:'pre', status:'todo',

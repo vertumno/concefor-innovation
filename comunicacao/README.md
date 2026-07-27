@@ -63,21 +63,32 @@ comunicacao/
 
 ## Estado do momento (atualizar sempre)
 
-- **Hoje:** 16/07/2026 — faltam **32 dias** para a abertura (17/08).
-- **Marco recente:** reunião com a Márcia em 16/07 (divulgação + demo do app) — prioridade
-  confirmada: **inscrições e palestrantes** (cards p/ WhatsApp e carrossel no Instagram).
-  Notificação de aceite dos trabalhos saiu em 13/07.
-- **Inscritos:** já passou de 100 (capacidade: 400) — calibrar divulgação pela ocupação.
+- **Hoje:** 27/07/2026 — faltam **21 dias** para a abertura (17/08).
+- **Cadência de publicação (definida em 27/07):** **um card por dia, em sequência, e só cards.**
+  Os stories programados foram retirados do [calendário](planejamento/calendario-publicacao.md).
+- **Já no ar:** card do prazo de envio (16/07) · [Vanessa Battestin](https://www.instagram.com/p/DbF30gOOToU/) (21/07) ·
+  [Felipe Tessarolo](https://www.instagram.com/p/DbF4cUPh-TT/) (24/07). **Hoje sai o Mariano Pimentel.**
+- **Inscritos:** **288** pela API do Even3 (16/07) — capacidade 400.
 - **Próximos prazos externos:** envio final dos trabalhos até **03/08 (Even3)** · inscrições até 15/08.
+- **Gráfica:** artes enviadas em 22/07; **amostras avaliadas pela comissão em 28/07, 11h**.
+  ⚠️ Quem conduz o contato com a gráfica está **de férias de 27 a 31/07** — nessa janela o
+  acompanhamento é do **Marquito** (respostas com cópia para cgte.cefor@ifes.edu.br).
+- **Crachás vêm todos em branco** → os nomes viram **etiquetas adesivas**
+  ([frente nova](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md), aberta em 27/07).
 - **Transmissão + Libras:** ✅ definido — **todas as palestras e mesas-redondas** (16/07).
-- **Aguardando da Márcia/Coordenação:** 🔴 **hosts dos podcasts** (1 por episódio — ver
-  [plano](producao/03-durante-evento/podcasts/plano-podcasts.md)) · infos da Aula Inaugural do
-  Educimat (p/ divulgar os paralelos **tudo junto**) · logo do Educimat p/ impressos.
+- **Aguardando da Márcia/Coordenação:** 🔴 escolha da **camisa (opção 1 ou 2)** e ajustes do
+  **bloco** (com ela desde 21/07) · 🔴 **hosts dos podcasts** ·
+  infos da Aula Inaugural do Educimat · logo do Educimat p/ impressos · revisão da
+  [notícia para a ACS](producao/02-pre-evento/noticia-acs/rascunho-noticia.md) ·
+  atualização do **Even3** para espelhar o site (o app do evento lê de lá).
 - **Prioridades de comunicação agora:**
-  1. 🔴 [Card lembrete do prazo de envio final 03/08](producao/02-pre-evento/card-prazo-envio-final/brief.md) — **fazer hoje**
-  2. Iniciar cards de palestrantes ([plano](producao/02-pre-evento/palestrantes/plano-divulgacao-palestrantes.md)) — 1º card em 21/07
-  3. Enviar [mensagem aos palestrantes pedindo vídeo-convite](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md) — até 18/07
-  4. [Banners institucionais (livro, MOOCs, Base de Conhecimentos)](producao/02-pre-evento/banners-institucionais/brief.md) — pedido da Vanessa 14/07; arte até **01/08** (gráfica na volta dela)
+  1. 🔴 **Artes dos 2 cards de mesa** — os 7 individuais acabam em 31/07 e a primeira mesa
+     publica em **01/08**. Legendas prontas, falta só a arte.
+  2. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
+     (vídeo-convite **+ material para o app**) — prazo interno era 18/07 e o retorno é 03/08.
+  3. Resolver as **etiquetas dos nomes** (comprar · formato · arquivos) e testar numa amostra.
+  4. [Banners institucionais (livro, MOOCs, Base de Conhecimentos)](producao/02-pre-evento/banners-institucionais/brief.md) — arte até **01/08**.
+  5. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
 - **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
 
 > Mantenha este bloco e o [board de produção](planejamento/board-producao.md) atualizados —

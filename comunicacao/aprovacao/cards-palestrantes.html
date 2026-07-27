@@ -91,6 +91,15 @@
     transition:background .15s,border-color .15s,color .15s}
   .pub-btn:hover{background:#eef5ff;border-color:var(--ig-blue)}
   .pub-btn.done{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+  /* botão do WhatsApp: verde da marca, para não confundir com o texto do Instagram */
+  .pub-btn.wa{color:#0f7a4a;border-color:#bfe3d0}
+  .pub-btn.wa:hover{background:#e8f7ef;border-color:#25d366}
+
+  /* ---- selo de publicado ---- */
+  .published{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;
+    background:var(--ok-bg);border-top:1px solid #d3ead9;font-size:12.5px;color:var(--ok);
+    font-weight:600}
+  .published a{color:var(--ok)}
 
   footer{max-width:470px;margin:24px auto 40px;padding:0 16px;color:var(--ig-muted);font-size:12px;
     text-align:center}
@@ -125,10 +134,13 @@
      observação). No fim, toque em <b>Copiar parecer</b> e cole a resposta no WhatsApp ou e-mail.
      Volta tudo de uma vez.</p>
   <p><b>Na hora de publicar:</b> use a linha <b>Publicar</b> de cada card. <b>Baixar arte</b> salva o
-     PNG no seu aparelho, <b>Copiar legenda</b> leva o texto já com as hashtags e <b>Copiar alt</b>
-     leva o texto alternativo, que entra em "Configurações avançadas" no Instagram.</p>
+     PNG no seu aparelho; <b>Copiar Instagram</b> leva a legenda longa já com as hashtags;
+     <b>Copiar WhatsApp</b> leva a versão curta, <b>já com o link direto de inscrição</b>, pronta
+     para colar num grupo; e <b>Copiar alt</b> leva o texto alternativo, que entra em
+     "Configurações avançadas" no Instagram.</p>
   <div class="note">O perfil de publicação é o <b>Instagram do Cefor · @ifescefor</b>.
-     O avatar aqui é só ilustrativo. O que está em aprovação é a <b>arte</b> e a <b>legenda</b>.</div>
+     O avatar aqui é só ilustrativo. O que está em aprovação é a <b>arte</b> e a <b>legenda</b>.<br>
+     <b>Cadência (27/07):</b> um card por dia, em sequência, e só cards.</div>
 </div>
 
 <div class="feed" id="feed"></div>
@@ -146,77 +158,97 @@ const IMG = "../producao/02-pre-evento/palestrantes/cards/";
 const posts = [
   {
     id:"vanessa", nome:"Dra. Vanessa Battestin", data:"21 de julho",
+    publicado:"https://www.instagram.com/p/DbF30gOOToU/",
     img:IMG+"2026-07-20_pre_card_palestrante-vanessa-battestin_v3.png",
     alt:"Card do VIII Concefor com foto da Dra. Vanessa Battestin. Palestra de abertura: 20 Anos de EaD e o Cefor, 17/08 às 19h. Selo comemorativo de 20 anos do Cefor.",
     legenda:`Como a educação a distância do Cefor chegou até aqui, em 20 anos? É essa história que abre o VIII Concefor. Na palestra "20 Anos de EaD e o Cefor", a Dra. Vanessa Battestin conta como foi, no dia 17/08, às 19h.
 
 Vanessa (@vanessabattestin) foi diretora do Cefor entre 2014 e 2019 e viveu boa parte dessa trajetória por dentro. É doutora em Educação, professora titular do Cefor/Ifes, coordenadora da UAB e especialista internacional da A3ES (Portugal).
 
-Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`,
+    whats:`📢 VIII Concefor · Palestra de abertura
+Dra. Vanessa Battestin abre o Concefor com "20 Anos de EaD e o Cefor". Dia 17/08, 19h.`
   },
   {
     id:"felipe", nome:"Felipe Maciel Tessarolo", data:"24 de julho",
+    publicado:"https://www.instagram.com/p/DbF4cUPh-TT/",
     img:IMG+"2026-07-21_pre_card_palestrante-felipe-tessarolo_v2.png",
     alt:"Card do VIII Concefor com foto de Felipe Maciel Tessarolo. Palestra internacional, 18/08 às 14h30, The Open University (Reino Unido). Selo comemorativo de 20 anos do Cefor.",
     legenda:`O que a educação a distância do Reino Unido tem a ensinar pra gente? É essa a proposta da palestra de Felipe Maciel Tessarolo, do Institute of Educational Technology da The Open University. Dia 18/08, às 14h30.
 
 Felipe traz os mesmos temas em que atua na prática: inteligência artificial aplicada ao ensino, acessibilidade e personalização em larga escala. Ele assina os artigos vencedores do prêmio de melhor pesquisa da EDEN (a rede europeia de educação a distância e digital) em dois anos seguidos, 2025 e 2026, os dois sobre IA no ensino superior. Também participa da mesa-redonda "Desafios da EaD para os próximos 20 anos", no dia 19/08.
 
-Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`,
+    whats:`📢 VIII Concefor · Palestra internacional
+Felipe Maciel Tessarolo (The Open University, Reino Unido) fala sobre IA, aprendizagem online e acessibilidade. Dia 18/08, 14h30. Vencedor do prêmio de melhor pesquisa da EDEN em 2025 e 2026.`
   },
   {
-    id:"mariano", nome:"Dr. Mariano Pimentel", data:"28 de julho",
+    id:"mariano", nome:"Dr. Mariano Pimentel", data:"27 de julho",
     img:IMG+"2026-07-22_pre_card_palestrante-mariano-pimentel_v2.png",
     alt:"Card do VIII Concefor com foto do Dr. Mariano Pimentel, professor na UNIRIO. Palestra sobre autoria com IA generativa e desafios para a EaD, 19/08 às 14h30. Selo comemorativo de 20 anos do Cefor.",
     legenda:`Quando um texto nasce junto com a IA generativa, de quem é a autoria? É essa questão que o Dr. Mariano Pimentel leva para a palestra "Autoria com IA generativa: desafios para a EaD", no dia 19/08, às 14h30.
 
 É exatamente sobre esse assunto que ele escreveu o livro gratuito "IA Generativa e Educação" (mais de 10 mil downloads). Mariano (@pimentelmariano) é doutor em Informática, professor na UNIRIO e ganhador do Prêmio Jabuti 2012.
 
-Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`,
+    whats:`📢 VIII Concefor · Palestra
+Dr. Mariano Pimentel (UNIRIO) fala sobre autoria com IA generativa e os desafios para a EaD. Dia 19/08, 14h30.`
   },
   {
-    id:"rutinelli", nome:"Dra. Rutinelli da Penha Fávero", data:"30 de julho",
+    id:"rutinelli", nome:"Dra. Rutinelli da Penha Fávero", data:"28 de julho",
     img:IMG+"2026-07-20_pre_card_palestrante-rutinelli-favero_v1.png",
     alt:"Card do VIII Concefor com foto da Dra. Rutinelli da Penha Fávero. Mesa-redonda: Desafios da EaD para os próximos 20 anos, 19/08 às 9h30. Selo comemorativo de 20 anos do Cefor.",
     legenda:`Quais serão os desafios da educação a distância para os próximos 20 anos? É esse o debate da mesa-redonda que reúne a Dra. Rutinelli da Penha Fávero, no dia 19/08, às 9h30.
 
 Rutinelli (@rutinha_fav) pesquisa tecnologia e educação, gamificação e formação docente. São temas que ela leva direto para essa conversa sobre o futuro da EaD.
 
-Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`,
+    whats:`📢 VIII Concefor · Mesa-redonda
+Dra. Rutinelli da Penha Fávero é uma das confirmadas na mesa "Desafios da EaD para os próximos 20 anos". Dia 19/08, 9h30.`
   },
   {
-    id:"marcia", nome:"Dra. Márcia Oliveira", data:"31 de julho",
+    id:"marcia", nome:"Dra. Márcia Oliveira", data:"29 de julho",
     img:IMG+"2026-07-21_pre_card_palestrante-marcia-oliveira_v2.png",
     alt:"Card do VIII Concefor com foto da Dra. Márcia Oliveira. Mesa-redonda Tecnologia Delas, 18/08. Selo comemorativo de 20 anos do Cefor.",
     legenda:`Mulheres que estão transformando a tecnologia na educação: essa é a proposta da mesa-redonda "Tecnologia Delas" (18/08), com a Dra. Márcia Oliveira entre as participantes.
 
 Márcia é professora do Ifes/Cefor, doutora em Engenharia Elétrica, e coordena o Educimat, o Corte de Lovelace e o grupo de pesquisa Pros@tec. É também a Coordenadora Geral do VIII Concefor.
 
-Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`,
+    whats:`📢 VIII Concefor · Mesa-redonda
+Dra. Márcia Oliveira, Coordenadora Geral do Concefor, participa da mesa "Tecnologia Delas", no dia 18/08.`
   },
   {
-    id:"mariella", nome:"Dra. Mariella Berger Andrade", data:"4 de agosto",
+    id:"mariella", nome:"Dra. Mariella Berger Andrade", data:"30 de julho",
     img:IMG+"2026-07-20_pre_card_palestrante-mariella-berger_v1.png",
     alt:"Card do VIII Concefor com foto da Dra. Mariella Berger Andrade. Mesa-redonda Tecnologia Delas, 18/08. Selo comemorativo de 20 anos do Cefor.",
     legenda:`Mulheres que estão transformando a tecnologia na educação: na mesa-redonda "Tecnologia Delas" (18/08), a Dra. Mariella Berger Andrade traz sua pesquisa em inteligência artificial, EaD e robótica.
 
 Mariella (@mariellaberger) é professora do Ifes, doutora em Ciência da Computação (UFES), e já foi Diretora Executiva do Ifes e Diretora do Cefor, entre 2019 e 2022.
 
-Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`,
+    whats:`📢 VIII Concefor · Mesa-redonda
+Dra. Mariella Berger Andrade (Ifes) participa da mesa "Tecnologia Delas", no dia 18/08.`
   },
   {
-    id:"celia", nome:"Dra. Jaqueline Sanz", data:"6 de agosto",
+    id:"celia", nome:"Dra. Jaqueline Sanz", data:"31 de julho",
     img:IMG+"2026-07-21_pre_card_palestrante-jaqueline-sanz_v3.png",
     alt:"Card do VIII Concefor com foto da Dra. Jaqueline Sanz. Mesa-redonda Tecnologia Delas, 18/08. Selo comemorativo de 20 anos do Cefor.",
     legenda:`Tecnologia para mapear a vida das mulheres do Espírito Santo. É sobre isso que pesquisa a Dra. Jaqueline Sanz, que completa a mesa-redonda "Tecnologia Delas" (18/08).
 
 Jaqueline Sanz (@jaqueline_sanz_vix) coordena o Atlas das Mulheres do Espírito Santo, um exemplo prático do tema da própria mesa. É também servidora do Incaper e atua na Secretaria Estadual das Mulheres (SESM).
 
-Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.`,
+    whats:`📢 VIII Concefor · Mesa-redonda
+Dra. Jaqueline Sanz, coordenadora do Atlas das Mulheres do ES, participa da mesa "Tecnologia Delas", no dia 18/08.`
   }
 ];
 
 const HASHTAGS = "#Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD";
+/* CTA do WhatsApp: fecha toda mensagem com o link direto da página de inscrição.
+   No WhatsApp não existe "link da bio", então o link precisa estar no próprio texto. */
+const INSCRICAO = "https://concefor.cefor.ifes.edu.br/inscricoes/";
+const CTA_WHATS = "Inscrições até 15/08: " + INSCRICAO;
 const AVATAR = "../contexto/_marca/logos/concefor/VIII_Concefor_logo_icon_concefor_azul.png";
 const STORE = "concefor-aprovacao-cards-palestrantes";
 
@@ -266,11 +298,14 @@ function render(){
         <div class="cap-body"><span class="u">ifescefor</span><span>${legendaHtml}</span></div>
         <span class="more-link" data-cap="${p.id}">… mais</span>
       </div>
-      <div class="timestamp">Publicação prevista · ${p.data}</div>
+      <div class="timestamp">${p.publicado ? 'Publicado' : 'Publicação prevista'} · ${p.data}</div>
+      ${p.publicado ? `<div class="published">✅ Já publicado no Instagram
+        <a href="${p.publicado}" target="_blank" rel="noopener">ver o post ↗</a></div>` : ''}
       <div class="pub" data-id="${p.id}">
         <span class="pub-label">Publicar:</span>
         <a class="pub-btn" href="${p.img}" download="${p.img.split('/').pop()}">⬇ Baixar arte</a>
-        <button class="pub-btn" type="button" data-a="leg">📋 Copiar legenda</button>
+        <button class="pub-btn" type="button" data-a="leg">📋 Copiar Instagram</button>
+        <button class="pub-btn wa" type="button" data-a="wa">💬 Copiar WhatsApp</button>
         <button class="pub-btn" type="button" data-a="alt">📋 Copiar alt</button>
       </div>
       <div class="approve ${st.obsOpen || (st.status==='fix') ? 'show-obs':''}" data-id="${p.id}">
@@ -325,10 +360,22 @@ function bind(){
     if (!p) return;
     box.querySelectorAll('button[data-a]').forEach(btn => {
       btn.onclick = async () => {
-        const isLeg = btn.dataset.a === 'leg';
-        const txt = isLeg ? (p.legenda + '\n\n' + HASHTAGS) : p.alt;
-        const msg = isLeg ? 'Legenda copiada (com as hashtags)' : 'Texto alternativo copiado';
-        if (await copyText(txt, msg)) flash(btn, isLeg ? '✓ Legenda copiada' : '✓ Alt copiado');
+        /* Cada botão leva um texto pronto para o seu destino:
+           leg = Instagram (com hashtags) · wa = WhatsApp (com o link de inscrição) · alt = alt text */
+        const variantes = {
+          leg: { txt: p.legenda + '\n\n' + HASHTAGS,
+                 msg: 'Legenda do Instagram copiada (com as hashtags)',
+                 ok:  '✓ Instagram copiado' },
+          wa:  { txt: p.whats + '\n' + CTA_WHATS,
+                 msg: 'Mensagem de WhatsApp copiada (com o link de inscrição)',
+                 ok:  '✓ WhatsApp copiado' },
+          alt: { txt: p.alt,
+                 msg: 'Texto alternativo copiado',
+                 ok:  '✓ Alt copiado' }
+        };
+        const v = variantes[btn.dataset.a];
+        if (!v) return;
+        if (await copyText(v.txt, v.msg)) flash(btn, v.ok);
       };
     });
   });
@@ -371,7 +418,8 @@ function buildParecer(){
   posts.forEach((p,i) => {
     const s = state[p.id] || {};
     let mark = '⬜ (não avaliado)';
-    if(s.status==='ok') mark = '✅ Aprovado';
+    if(p.publicado) mark = '📤 Já publicado';
+    else if(s.status==='ok') mark = '✅ Aprovado';
     else if(s.status==='fix') mark = '✏️ Pedir ajuste';
     if(s.status) any = true;
     out += `${i+1}. ${p.nome} · ${p.data}: ${mark}`;

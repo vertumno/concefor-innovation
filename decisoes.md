@@ -4,6 +4,53 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-27 — Nomes dos crachás vão em etiqueta; cadência de um card por dia; legenda de WhatsApp com link de inscrição
+
+**1. Etiquetas adesivas para os nomes dos crachás.** Como os 400 crachás chegam **em branco**
+(confirmado com a gráfica em 22/07), a impressão dos nomes é nossa. A decisão de hoje é **não
+imprimir o nome direto no crachá**: o nome vai em **etiqueta adesiva colada por cima**. Abre três
+tarefas: **comprar as etiquetas**, **encontrar o formato correto** (medida da etiqueta × área
+livre do crachá × gabarito de folha que exista à venda) e **gerar os arquivos de impressão** a
+partir da lista de inscritos do Even3. Brief em
+`comunicacao/producao/01-brindes-promocionais/cracha/etiquetas-nomes.md`.
+
+**Por quê:** mata o maior risco do plano anterior — a dúvida se a impressora do Cefor aguenta 400
+passagens de papel fotográfico fosco 240 g. Com etiqueta, o suporte da impressão é uma folha A4
+comum, errar um nome custa uma etiqueta em vez de um crachá, e a reimpressão de última hora fica
+trivial. **Sequência obrigatória:** medir a área livre → achar o gabarito comercial → comprar →
+gerar o arquivo → **testar numa amostra antes de rodar as 400**.
+
+**2. Registro do e-mail que fechou o assunto do crachá com a gráfica** (22/07, 16h07): encaminhado
+o PDF do crachá **sem nome**, com marcas de corte e sangria, e pedido de que as respostas venham
+sempre com cópia para **cgte.cefor@ifes.edu.br**, porque quem conduz o contato está **de férias de
+27 a 31/07** — janela que inclui a avaliação das amostras de **28/07, 11h**. Nessa semana o
+acompanhamento é do **Marquito**.
+
+**3. Cadência de publicação: um card por dia, em sequência, e só cards.** Nada de pular data e
+nada de story. Publicados: **Vanessa Battestin** em 21/07
+(https://www.instagram.com/p/DbF30gOOToU/) e **Felipe Tessarolo** em 24/07
+(https://www.instagram.com/p/DbF4cUPh-TT/). A fila passa a ser: Mariano 27/07 · Rutinelli 28/07 ·
+Márcia Oliveira 29/07 · Mariella 30/07 · Jaqueline Sanz 31/07 · mesa "Desafios da EaD" 01/08 ·
+mesa "Tecnologia Delas" 02/08.
+
+**Consequência imediata:** os 7 cards individuais **se esgotam em 31/07** e as **duas artes de
+mesa ainda não existem** — viraram o gargalo da série (as legendas já estão prontas). Ficaram
+dois pontos em aberto, registrados sem apagar nada: 01 e 02/08 caem em **sábado e domingo**; e a
+**contagem regressiva** de 07–16/08 tem 9 das 10 peças em story, ou seja, a regra nova a derruba
+quase inteira — decisão pendente entre converter para card, abrir exceção ou cortar.
+
+**4. Legenda de WhatsApp com link direto de inscrição.** A página de aprovação
+(`comunicacao/aprovacao/cards-palestrantes.html`, publicada no GitHub Pages) ganhou o botão
+**"Copiar WhatsApp"** ao lado do de Instagram, e o link do CTA passou de
+`https://concefor.cefor.ifes.edu.br` para **`https://concefor.cefor.ifes.edu.br/inscricoes/`**
+nas 9 legendas de WhatsApp.
+
+**Por quê:** no WhatsApp não existe "link da bio" — o link precisa estar no texto e levar direto
+para onde a pessoa age. E divulgar em grupo era, até agora, um trabalho manual de recortar a
+legenda do Instagram; agora é um toque.
+
+---
+
 ## 2026-07-23 — App espelhado para o GitLab do IFES (só `app/`); monorepo segue como fonte
 
 **Decisão:** o código do app passa a ter um **espelho no GitLab do IFES**
