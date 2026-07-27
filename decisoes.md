@@ -39,15 +39,19 @@ dois pontos em aberto, registrados sem apagar nada: 01 e 02/08 caem em **sábado
 **contagem regressiva** de 07–16/08 tem 9 das 10 peças em story, ou seja, a regra nova a derruba
 quase inteira — decisão pendente entre converter para card, abrir exceção ou cortar.
 
-**4. Legenda de WhatsApp com link direto de inscrição.** A página de aprovação
-(`comunicacao/aprovacao/cards-palestrantes.html`, publicada no GitHub Pages) ganhou o botão
-**"Copiar WhatsApp"** ao lado do de Instagram, e o link do CTA passou de
-`https://concefor.cefor.ifes.edu.br` para **`https://concefor.cefor.ifes.edu.br/inscricoes/`**
-nas 9 legendas de WhatsApp.
+**4. Legenda de WhatsApp: mesmo conteúdo do Instagram, com link direto de inscrição.** A página de
+aprovação (`comunicacao/aprovacao/cards-palestrantes.html`, publicada no GitHub Pages) ganhou o
+botão **"Copiar WhatsApp"** ao lado do de Instagram. As 9 legendas de WhatsApp foram **reescritas
+por extenso**: eram um resumo de 3 linhas e passaram a acompanhar o Instagram parágrafo a
+parágrafo (gancho + credencial da pessoa + CTA), com quatro adaptações de canal — título em
+negrito na primeira linha (`*VIII Concefor · ...*`), sem `@handle`, sem hashtags, e o link
+`https://concefor.cefor.ifes.edu.br/inscricoes/` no próprio texto.
 
-**Por quê:** no WhatsApp não existe "link da bio" — o link precisa estar no texto e levar direto
-para onde a pessoa age. E divulgar em grupo era, até agora, um trabalho manual de recortar a
-legenda do Instagram; agora é um toque.
+**Por quê:** o resumo jogava fora justamente o que convence alguém a se inscrever — o gancho e a
+credencial. Não há motivo de canal para cortar: WhatsApp não tem limite prático de caracteres, e
+as duas versões ficaram equivalentes em tamanho (±600 caracteres). O que muda de verdade é a
+forma: em grupo a mensagem precisa se identificar na primeira linha, arroba não vira link e não
+existe "link da bio" — o link tem que levar direto ao lugar onde a pessoa age.
 
 ---
 
