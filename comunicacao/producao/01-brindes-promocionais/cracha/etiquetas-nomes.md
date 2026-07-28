@@ -9,13 +9,32 @@
 > sobre o papel fotográfico fosco 240 g. Isso mata o maior risco do plano anterior — a dúvida
 > se a impressora do Cefor aguenta 400 passagens dessa gramatura.
 
+## 🔴 Decisão pendente (reaberta em 28/07)
+
+**Duas perguntas ainda sem resposta, e uma depende da outra:**
+
+1. **Quais etiquetas comprar?** → depende de medir a área livre do crachá e achar um gabarito A4
+   que exista à venda.
+2. **Como será a impressão dos nomes?** → em que impressora, quem opera, quando roda, e se o
+   arquivo sai do Canva ou de um gerador que lê o banco do Even3.
+
+**Por que não pode esperar:** os 400 crachás chegam **até 07/08** e o evento abre em **17/08**.
+Entre uma coisa e outra é preciso comprar (prazo de entrega da papelaria), imprimir uma folha de
+teste, colar numa amostra e só então rodar as 400 — e ainda sobra a reimpressão de quem se
+inscrever depois de 15/08. **Sugestão de data-limite para decidir: 04/08**, para o teste caber na
+semana da entrega. `[confirmar a data com o Marquito/Andreia]`
+
 ## As três tarefas
 
-| # | Tarefa | Estado |
-|---|---|---|
-| 1 | **Comprar as etiquetas** | ⬜ |
-| 2 | **Encontrar o formato correto** (medida da etiqueta × área livre do crachá × gabarito da folha) | ⬜ |
-| 3 | **Gerar os arquivos de impressão** a partir da lista de inscritos do Even3 | ⬜ |
+| # | Tarefa | Depende de | Estado |
+|---|---|---|---|
+| 1 | **Medir a área livre do nome** no crachá impresso (é o dado que define tudo) | — | ⬜ |
+| 2 | **Encontrar o formato/gabarito** que casa com essa área e existe à venda | tarefa 1 | ⬜ |
+| 3 | **Comprar as etiquetas** (≥ 500, tipo certo para a impressora do Cefor) | tarefa 2 | ⬜ |
+| 4 | **Gerar os arquivos de impressão** a partir da lista de inscritos do Even3 | tarefa 3 | ⬜ |
+| 5 | **Testar numa amostra** antes de rodar as 400 | tarefas 3 e 4 | ⬜ |
+
+> A ordem importa: comprar antes de medir é o jeito mais fácil de comprar a etiqueta errada.
 
 ## 1 · Compra
 

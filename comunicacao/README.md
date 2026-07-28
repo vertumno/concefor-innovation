@@ -84,21 +84,31 @@ comunicacao/
   ⚠️ A gráfica está mandando as artes **por WhatsApp**; pedimos em 28/07 que envie **também por
   e-mail**, senão a definição não fica rastreável.
 - **Crachás vêm todos em branco** → os nomes viram **etiquetas adesivas**
-  ([frente nova](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md), aberta em 27/07).
+  ([frente aberta em 27/07](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md)).
+  🔴 **Falta decidir quais etiquetas comprar e como imprimir os nomes** — nada foi comprado ainda.
 - **Transmissão + Libras:** ✅ definido — **todas as palestras e mesas-redondas** (16/07).
 - **Aguardando da Márcia/Coordenação:** ✅ camisa (**opção 2**) e bloco **aprovados em 28/07** ·
   🔴 **hosts dos podcasts** ·
   infos da Aula Inaugural do Educimat · logo do Educimat p/ impressos · revisão da
   [notícia para a ACS](producao/02-pre-evento/noticia-acs/rascunho-noticia.md) ·
   atualização do **Even3** para espelhar o site (o app do evento lê de lá).
-- **Prioridades de comunicação agora:**
+- **Prioridades agora (por prazo):**
   1. 🔴 **Artes dos 2 cards de mesa** — os 7 individuais acabam em 31/07 e a primeira mesa
      publica em **01/08**. Legendas prontas, falta só a arte.
-  2. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
+  2. 🔴 **3 banners de lançamentos da Vanessa** (livro, MOOCs, Base de Conhecimentos) —
+     **arte até 01/08**, para ela levar à gráfica na volta das férias. Ainda não começaram; travam
+     na decisão arte única × três artes e nos links de MOOCs e Base (viram QR code).
+     [Brief](producao/02-pre-evento/banners-institucionais/brief.md)
+  3. 🔴 **Arte dos 10 banners do TR** — **último item contratado sem arte**, e nem o rateio dos 10
+     está fechado (banner padrão × sinalização/programação × placas). Entrega contratada **07/08**.
+     [Brief](producao/01-brindes-promocionais/banners/brief.md)
+  4. 🔴 **Etiquetas dos nomes do crachá** — decidir **quais comprar** e **como será a impressão**.
+     Ordem: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo →
+     testar numa amostra. Sugerido decidir até **04/08**.
+     [Brief](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md)
+  5. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
      (vídeo-convite **+ material para o app**) — prazo interno era 18/07 e o retorno é 03/08.
-  3. Resolver as **etiquetas dos nomes** (comprar · formato · arquivos) e testar numa amostra.
-  4. [Banners institucionais (livro, MOOCs, Base de Conhecimentos)](producao/02-pre-evento/banners-institucionais/brief.md) — arte até **01/08**.
-  5. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
+  6. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
 - **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
 
 > Mantenha este bloco e o [board de produção](planejamento/board-producao.md) atualizados —

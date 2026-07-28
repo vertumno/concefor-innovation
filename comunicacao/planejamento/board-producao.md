@@ -35,7 +35,7 @@
 | Arte **canetas** | 400 un · **branca** (~~azul~~ — ✅ aval da comissão em 28/07) · logo só "Concefor" | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — logo simplificada. Aguardando nova montagem |
 | Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — selo 20 anos no lado oposto ao Concefor e um pouco maior. Aguardando nova montagem |
 | Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** (arte enviada em 22/07); modelo de lote pronto no Canva |
-| Arte **banners** (10 un · 0,90 × 1,20 m) — **conteúdo a definir** | 10 un · 0,90 × 1,20 m | ___ | antes de 07/08 | ⬜ referência de 2024 guardada em [`banners/_refs/`](../producao/01-brindes-promocionais/banners/) |
+| Arte **banners** (10 un · 0,90 × 1,20 m) — **conteúdo a definir** | 10 un · 0,90 × 1,20 m | ___ | **com folga sobre 07/08** | 🔴 **ÚLTIMO ITEM DO TR SEM ARTE** — nem o rateio dos 10 está decidido. [Brief](../producao/01-brindes-promocionais/banners/brief.md) · [referência de 2024](../producao/01-brindes-promocionais/banners/_refs/banner-entrada-concefor-2024.pdf) |
 
 > 📤 **Artes enviadas à gráfica em 22/07** (e-mail em
 > [`_especificacoes/email-grafica-envio-artes.md`](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)):
@@ -97,16 +97,21 @@
 >   Capa com logo Concefor e faixa azul degradê (Ifes/Cefor + selo 20 anos); fundo com Apoio
 >   (Ifes Campus Vila Velha e Educimat) e os dados de contato do Cefor. Aguardando se há ajustes.
 
-> 🎯 **Os 10 banners contratados ainda serão distribuídos.** Definição de 20/07: entram nesses 10
-> (a **confirmar** o rateio) → **banner padrão do Concefor**, **banner de sinalização/programação**
-> e **placas de sinalização**. Ou seja, não são peças "fora do TR" — são o conteúdo dos 10.
-> Falta fechar quantos de cada.
+> 🔴 **Os 10 banners são a pendência aberta do TR (reforçada em 28/07).** Definição de 20/07:
+> entram nesses 10 (a **confirmar** o rateio) → **banner padrão do Concefor**, **banner de
+> sinalização/programação** e **placas de sinalização**. Ou seja, não são peças "fora do TR" — são
+> o conteúdo dos 10. **Falta fechar quantos de cada, e só depois disso há o que desenhar.**
+> Brief com as decisões pendentes: [`banners/brief.md`](../producao/01-brindes-promocionais/banners/brief.md).
+> Referência de estrutura: o [banner de entrada de 2024](../producao/01-brindes-promocionais/banners/_refs/banner-entrada-concefor-2024.pdf),
+> arquivado em 28/07.
+> ⏰ **A conta do prazo:** entrega contratada em 07/08, evento em 17/08. As outras peças foram
+> para a gráfica em 22/07 e mesmo assim voltaram para ajuste — estas ainda não começaram.
 
 ### Fora do TR
 | Peça | Situação | Responsável | Prazo | Status |
 |---|---|---|---|---|
-| 🏷️ **Etiquetas com os nomes** (crachá) 🆕 | aberta em 27/07 — os crachás vêm em branco, o nome vira etiqueta adesiva. **3 tarefas:** comprar · achar o formato · gerar os arquivos. [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) | ___ | testar antes da entrega dos 400; imprimir até a véspera de 17/08 | ⬜ |
-| **Banners de lançamentos** — livro Cefor, MOOCs, Base de Conhecimentos | ✅ definido 20/07: **à parte, pagos pela UAB (Vanessa)** — não saem do TR nem dos 10 banners | Elton *(arte)* / UAB *(custeio)* | arte até **01/08** → gráfica | ⬜ |
+| 🏷️ **Etiquetas com os nomes** (crachá) | 🔴 **duas decisões em aberto (reforçado em 28/07): quais etiquetas comprar e como será a impressão dos nomes.** Sequência obrigatória: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo → testar numa amostra. [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) | ___ | **decidir até 04/08** *(sugerido)*; testar antes da entrega dos 400; imprimir até a véspera de 17/08 | 🔴 |
+| **Banners de lançamentos** — livro Cefor, MOOCs, Base de Conhecimentos | 🔴 **os 3 banners da Vanessa ainda não foram feitos** (pedido de 14/07). Definido 20/07: à parte, **pagos pela UAB** — não saem do TR nem dos 10 banners. Travas: decidir arte única × três artes e conseguir os links de MOOCs e Base de Conhecimentos (viram QR code). [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | Elton *(arte)* / UAB *(custeio)* | **arte até 01/08** → Vanessa leva à gráfica na volta das férias | 🔴 |
 | **Fundo de palco** | 🔴 citado na descrição do TR mas **sem item contratado** — confirmar | ___ | ___ | ⬜ |
 | Arte **squeezes** | 🟡 não está no TR — o copo bucks parece ter substituído; confirmar | ___ | ___ | ⬜ |
 | Arte **bolo** comemoração (20 anos do Cefor) | não é item de gráfica; alinhar com quem fornece o bolo | **Andreia** | ___ | ⬜ |

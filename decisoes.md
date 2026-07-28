@@ -39,6 +39,17 @@ reaprovadas com folga sobre **07/08**, a entrega contratada. Camisa, bloco e cra
 Oliveira (29/07), Mariella Berger (30/07) e Jaqueline Sanz (31/07) — e aí a série se esgota, com
 as **duas artes de mesa** (01 e 02/08) ainda por produzir. Segue sendo o gargalo da divulgação.
 
+**O que fica pendente de impressão depois desta rodada** (anotado em 28/07 para não sumir):
+1. **Arte dos 10 banners do TR** — é o **último item contratado sem arte**, e nem o rateio dos 10
+   está fechado (banner padrão do Concefor × sinalização/programação × placas). Brief novo em
+   `comunicacao/producao/01-brindes-promocionais/banners/brief.md`.
+2. **Etiquetas dos nomes do crachá** — faltam as duas decisões que sustentam tudo: **quais
+   etiquetas comprar** e **como será a impressão dos nomes**. A ordem é medir a área livre do
+   crachá → achar um gabarito à venda → comprar → gerar o arquivo → testar numa amostra.
+3. **3 banners de lançamentos da Vanessa** (livro do Cefor, MOOCs, Base de Conhecimentos) —
+   pedidos em 14/07, **arte até 01/08**, ainda não começados. São peça à parte: fora do TR, fora
+   dos 10 banners, custeados pela UAB.
+
 **Inbox processado:** os PDFs que a gráfica mandou por WhatsApp foram para
 `comunicacao/producao/01-brindes-promocionais/_artes-enviadas-pela-grafica/` (guardados como
 chegaram, sem processar), e o **banner de entrada de 2024** virou referência do banner deste ano em
