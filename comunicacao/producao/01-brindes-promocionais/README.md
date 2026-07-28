@@ -18,13 +18,17 @@ Quantidades e medidas fechadas — ver o doc de especificações.
 
 | # | Peça | Qtd. | Status |
 |---|---|---|---|
-| 1 | Arte das **camisas** (sublimada, com Concefor/Cefor/Educimat + apoiadores) | 100 | 🔵 2 opções com a Márcia (21/07) |
-| 2 | Arte dos **blocos** (148,5 × 210 mm, capa e contracapa) | 250 | 🔵 opção única com a Márcia (21/07) |
-| 3 | Arte da **bolsa de algodão** (280 × 350 × 80 mm) | 400 | ⬜ |
-| 4 | Arte das **canetas** (azul, logomarca colorida) | 400 | ⬜ |
-| 5 | Arte do **copo bucks ecológico** (c/ tampa, fibra vegetal, 400 ml) | 400 | ⬜ |
-| 6 | Arte do **crachá** credencial (10 × 14 cm, fosco 240 g, cordão) ✅ *necessidade confirmada* | 400 | 🔵 4 variantes com a Márcia (21/07) |
+| 1 | Arte das **camisas** (sublimada, com Concefor/Cefor/Educimat + apoiadores) | 100 | ✅ **aprovada em 28/07 — opção 2** (Concefor + selo 20 anos na frente) · grade: 25 P · 30 M · 30 G · 15 GG |
+| 2 | Arte dos **blocos** (148,5 × 210 mm, capa e contracapa) | 250 | ✅ **aprovada em 28/07** |
+| 3 | Arte da **bolsa de algodão** (280 × 350 × 80 mm) | 400 | 🔵 ajuste pedido em 28/07 (alinhamento/tamanho das logos) — aguardando nova montagem |
+| 4 | Arte das **canetas** (~~azul~~ **branca** ✅ avalizada pela comissão, logo só "Concefor") | 400 | 🔵 ajuste pedido em 28/07 — aguardando nova montagem |
+| 5 | Arte do **copo bucks ecológico** (c/ tampa, fibra vegetal, 400 ml) | 400 | 🔵 ajuste pedido em 28/07 (selo 20 anos no lado oposto e maior) — aguardando nova montagem |
+| 6 | Arte do **crachá** credencial (10 × 14 cm, fosco 240 g, cordão) ✅ *necessidade confirmada* | 400 | ✅ **aprovada em 28/07** (vem em branco; nomes em etiqueta, feitos aqui) |
 | 7 | Arte dos **banners de sinalização** (0,90 × 1,20 m) | 10 | ⬜ |
+
+> 📧 **28/07 — retorno das montagens enviado à gráfica:** camisa, bloco e crachá **aprovados**;
+> caneta, copo e bolsa **com ajuste pedido**. Texto integral e o que cada ponto estabelece em
+> [`_especificacoes/email-grafica-envio-artes.md`](_especificacoes/email-grafica-envio-artes.md).
 
 ## Fora do TR — a definir
 - **Squeezes:** não estão no TR (o copo bucks parece ter substituído) — confirmar.

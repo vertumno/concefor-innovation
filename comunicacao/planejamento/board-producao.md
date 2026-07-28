@@ -29,19 +29,37 @@
 ### Itens contratados no TR 72/2026
 | Peça | Espec. contratada | Responsável | Prazo arte | Status |
 |---|---|---|---|---|
-| Arte **camisas** (Concefor, Cefor, Educimat + apoiadores) | 100 un · sublimada frente e costas | ___ | antes de 07/08 | 🔵 **com a Márcia desde 21/07, aguardando escolha entre opção 1 e 2** |
-| Arte **blocos** (selo 20 anos) | 250 un · 148,5 × 210 mm · capa e contracapa | Andreia | antes de 07/08 | 🔵 **com a Márcia desde 21/07, opção única, aguardando ajustes** |
-| Arte **bolsa de algodão** | 400 un · 280 × 350 × 80 mm · estampa colorida | ___ | antes de 07/08 | ⬜ |
-| Arte **canetas** | 400 un · azul · logomarca colorida | ___ | antes de 07/08 | ⬜ |
-| Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | ___ | antes de 07/08 | ⬜ |
-| Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | ✅ **arte enviada à gráfica em 22/07** (PDF de exemplo); modelo de lote pronto no Canva |
-| Arte **banners** (10 un · 0,90 × 1,20 m) — **conteúdo a definir** | 10 un · 0,90 × 1,20 m | ___ | antes de 07/08 | ⬜ |
+| Arte **camisas** (Concefor, Cefor, Educimat + apoiadores) | 100 un · sublimada frente e costas · **grade: 25 P · 30 M · 30 G · 15 GG** | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** — **opção 2** (Concefor + selo 20 anos na frente) |
+| Arte **blocos** (selo 20 anos) | 250 un · 148,5 × 210 mm · capa e contracapa | Andreia | antes de 07/08 | ✅ **APROVADA em 28/07** |
+| Arte **bolsa de algodão** | 400 un · 280 × 350 × 80 mm · estampa colorida | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — alinhamento e tamanho das logos; enviado arquivo de referência. Aguardando nova montagem |
+| Arte **canetas** | 400 un · **branca** (~~azul~~ — ✅ aval da comissão em 28/07) · logo só "Concefor" | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — logo simplificada. Aguardando nova montagem |
+| Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — selo 20 anos no lado oposto ao Concefor e um pouco maior. Aguardando nova montagem |
+| Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** (arte enviada em 22/07); modelo de lote pronto no Canva |
+| Arte **banners** (10 un · 0,90 × 1,20 m) — **conteúdo a definir** | 10 un · 0,90 × 1,20 m | ___ | antes de 07/08 | ⬜ referência de 2024 guardada em [`banners/_refs/`](../producao/01-brindes-promocionais/banners/) |
 
 > 📤 **Artes enviadas à gráfica em 22/07** (e-mail em
 > [`_especificacoes/email-grafica-envio-artes.md`](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)):
 > PDFs com as logos em curvas. Crachá, bloco e camisa vão prontos; caneta, copo e bolsa a gráfica
 > monta com a nossa marca e devolve a montagem para aprovação.
-> **Aguardando dela:** as montagens de caneta, copo e bolsa para aprovação.
+
+> ✅ **28/07 — RODADA DE APROVAÇÃO FECHADA DO NOSSO LADO** (e-mail no
+> [mesmo arquivo](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md#quarto-e-mail--28072026-retorno-das-montagens)).
+> A gráfica mandou as montagens **pelo WhatsApp** (PDFs guardados em
+> [`_artes-enviadas-pela-grafica/`](../producao/01-brindes-promocionais/_artes-enviadas-pela-grafica/));
+> respondemos por e-mail:
+> | Peça | Resposta |
+> |---|---|
+> | Camisa · Bloco · Crachá | ✅ **aprovadas** |
+> | Caneta | 🔵 será **branca**, com a logo simplificada — só "Concefor", sem "Congresso Regional de Formação e Educação a Distância" |
+> | Bolsa | 🔵 alinhamento e tamanho das logos ajustados por nós; **arquivo de referência foi anexado** |
+> | Copo | 🔵 selo 20 anos no **lado oposto** ao Concefor (vieram lado a lado) e **um pouco maior** |
+>
+> Informada também a **grade das camisas: 25 P · 30 M · 30 G · 15 GG** (= as 100 contratadas).
+> ⚠️ **Reforçado o pedido de responder por e-mail, não só por WhatsApp** — arte aprovada por
+> WhatsApp não deixa rastro e a coordenação não acompanha.
+> ✅ **Caneta branca: a comissão deu o aval** (28/07). O TR contratou caneta azul; a troca está
+> chancelada, não é divergência em aberto.
+> **Aguardando da gráfica:** as três montagens refeitas, com folga sobre 07/08.
 
 > 🪪 **Crachás: todos vêm em branco (definido 22/07, por telefone com a gráfica).** A produção é em
 > impressão gráfica, não digital, então **não existe personalização com o nome**. Os 400 chegam sem
@@ -66,7 +84,9 @@
 > e **inscrição**. O TR contratou 400 crachás no total, sem dizer quantos de cada tipo.
 > Definir antes de mandar para a gráfica.
 
-> 🔵 **Em aprovação com a Márcia desde 21/07:**
+> ✅ **Fechado em 28/07** — a aprovação enviada à gráfica encerra a fila de camisa e bloco.
+> 👕 **Camisa: ficou a OPÇÃO 2** — **logo do Concefor e selo dos 20 anos do Cefor na frente**;
+> costas só com Realização e Apoio. Histórico do que estava em jogo desde 21/07:
 > - **Camisa:** duas opções na mesma imagem, em
 >   [`camiseta/1x/camisa_aprovacao.png`](../producao/01-brindes-promocionais/camiseta/1x/camisa_aprovacao.png).
 >   **Opção 1:** selo 20 anos grande e sozinho na frente; costas com logo Concefor no topo,
@@ -101,9 +121,9 @@
 | Card lembrete prazo envio final (03/08 · Even3) — **publicado em 16/07** | Elton | 16/07 | ✅ |
 | Card palestrante — Vanessa Battestin | Elton | 21/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbF30gOOToU/) |
 | Card palestrante — Felipe Tessarolo | Elton | 24/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbF4cUPh-TT/) |
-| Card palestrante — Mariano Pimentel — arte liberada | Elton | **publicar hoje, 27/07** | 🟡 |
-| Card palestrante — Rutinelli Fávero — arte liberada | Elton | publicar 28/07 | 🔵 |
-| Card palestrante — Márcia Oliveira — arte liberada | Elton | publicar 29/07 | 🔵 |
+| Card palestrante — Mariano Pimentel | Elton | 27/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbT3A9apgf0/) |
+| Card palestrante — Rutinelli Fávero | Elton | 28/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbT4FRUJKh1/) |
+| Card palestrante — Márcia Oliveira — arte liberada | Elton | **publicar 29/07 (próximo)** | 🔵 |
 | Card palestrante — Mariella Berger — arte liberada | Elton | publicar 30/07 | 🔵 |
 | Card palestrante — Jaqueline Sanz — arte liberada | Elton | publicar 31/07 | 🔵 |
 | Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton | publicar **01/08** (sáb) | ⬜ **próxima arte a fazer** |

@@ -57,6 +57,14 @@ em todos os quantitativos.**
 | 6 | **Copo bucks ecológico** | Com tampa, fibra de arroz/coco/trigo, mínimo 400 ml | 400 | R$ 12,00 | R$ 4.800,00 |
 | 7 | **Crachá credencial** | Papel fotográfico **fosco 240 g**, **10 × 14 cm**, acompanha **cordão de poliéster** | 400 | R$ 2,00 | R$ 800,00 |
 
+👕 **Grade das camisas (fechada em 28/07, informada à gráfica por e-mail):**
+**25 P · 30 M · 30 G · 15 GG = 100 unidades** — fecha exatamente o contratado.
+
+🖊️ **Caneta: a cor mudou, com aval.** O TR diz "azul personalizada"; a definição de **28/07** é
+**caneta branca**, com a logo simplificada (só "Concefor", sem o nome do congresso por extenso).
+✅ **A comissão deu o aval** — a divergência com o TR está chancelada. Ver
+[`email-grafica-envio-artes.md`](email-grafica-envio-artes.md).
+
 **Total geral: R$ 19.442,50** (frete R$ 0,00).
 Prazo de envio: 15 dias · Condição de pagamento: 30 dias.
 Quantidades podem variar ±5%, faturadas conforme entrega.

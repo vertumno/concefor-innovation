@@ -63,21 +63,31 @@ comunicacao/
 
 ## Estado do momento (atualizar sempre)
 
-- **Hoje:** 27/07/2026 — faltam **21 dias** para a abertura (17/08).
+- **Hoje:** 28/07/2026 — faltam **20 dias** para a abertura (17/08).
 - **Cadência de publicação (definida em 27/07):** **um card por dia, em sequência, e só cards.**
   Os stories programados foram retirados do [calendário](planejamento/calendario-publicacao.md).
 - **Já no ar:** card do prazo de envio (16/07) · [Vanessa Battestin](https://www.instagram.com/p/DbF30gOOToU/) (21/07) ·
-  [Felipe Tessarolo](https://www.instagram.com/p/DbF4cUPh-TT/) (24/07). **Hoje sai o Mariano Pimentel.**
+  [Felipe Tessarolo](https://www.instagram.com/p/DbF4cUPh-TT/) (24/07) ·
+  [Mariano Pimentel](https://www.instagram.com/p/DbT3A9apgf0/) (27/07) ·
+  [Rutinelli Fávero](https://www.instagram.com/p/DbT4FRUJKh1/) (28/07).
+  **Próximo:** Márcia Oliveira, em 29/07. Restam 3 dos 7 individuais (Márcia · Mariella · Jaqueline).
 - **Inscritos:** **288** pela API do Even3 (16/07) — capacidade 400.
 - **Próximos prazos externos:** envio final dos trabalhos até **03/08 (Even3)** · inscrições até 15/08.
 - **Gráfica:** artes enviadas em 22/07; **amostras avaliadas pela comissão em 28/07, 11h**.
+  ✅ **28/07 — retorno das montagens enviado:** **camisa, bloco e crachá aprovados**; **caneta**
+  (branca, logo só "Concefor"), **copo** (selo 20 anos no lado oposto e maior) e **bolsa**
+  (alinhamento das logos) voltam para nova montagem. Grade das camisas informada:
+  **25 P · 30 M · 30 G · 15 GG**.
+  [E-mail](producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)
   ⚠️ Quem conduz o contato com a gráfica está **de férias de 27 a 31/07** — nessa janela o
   acompanhamento é do **Marquito** (respostas com cópia para cgte.cefor@ifes.edu.br).
+  ⚠️ A gráfica está mandando as artes **por WhatsApp**; pedimos em 28/07 que envie **também por
+  e-mail**, senão a definição não fica rastreável.
 - **Crachás vêm todos em branco** → os nomes viram **etiquetas adesivas**
   ([frente nova](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md), aberta em 27/07).
 - **Transmissão + Libras:** ✅ definido — **todas as palestras e mesas-redondas** (16/07).
-- **Aguardando da Márcia/Coordenação:** 🔴 escolha da **camisa (opção 1 ou 2)** e ajustes do
-  **bloco** (com ela desde 21/07) · 🔴 **hosts dos podcasts** ·
+- **Aguardando da Márcia/Coordenação:** ✅ camisa (**opção 2**) e bloco **aprovados em 28/07** ·
+  🔴 **hosts dos podcasts** ·
   infos da Aula Inaugural do Educimat · logo do Educimat p/ impressos · revisão da
   [notícia para a ACS](producao/02-pre-evento/noticia-acs/rascunho-noticia.md) ·
   atualização do **Even3** para espelhar o site (o app do evento lê de lá).

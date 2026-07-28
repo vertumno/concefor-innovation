@@ -4,6 +4,48 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-28 — Brindes: camisa, bloco e crachá aprovados; caneta branca; três ajustes na gráfica
+
+**Decisão (e-mail enviado à Brindes Expresso em 28/07, registrado em
+`comunicacao/producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md`):**
+respondemos ao documento de montagens que a gráfica mandou **por WhatsApp**.
+
+1. **Aprovadas: camisa, bloco e crachá.** Encerram a fila de aprovação do nosso lado — inclusive
+   a pendência que estava com a Márcia desde 21/07. Na camisa **ficou a opção 2: logo do Concefor
+   e selo dos 20 anos do Cefor na frente**; costas só com Realização e Apoio.
+2. **Grade das camisas fechada: 25 P · 30 M · 30 G · 15 GG** — soma exatamente as 100 unidades
+   contratadas no TR 72/2026.
+3. **Caneta será branca, com a logo simplificada:** só "Concefor", **sem** "Congresso Regional de
+   Formação e Educação a Distância". O TR especifica caneta **azul**, e **a comissão deu o aval
+   para a troca** — a divergência com o contrato está chancelada.
+4. **Copo:** o selo dos 20 anos vai no **lado oposto** à logo do Concefor (a montagem trazia as
+   duas lado a lado) e **um pouco maior**.
+5. **Bolsa:** alinhamento e tamanho das logos ajustados por nós; seguiu **arquivo de referência em
+   anexo** para a gráfica remontar.
+6. **Pedido de que a gráfica responda também por e-mail**, não só por WhatsApp.
+
+**Por quê (item 6, que é o que vale para além destas peças):** as artes começaram a chegar por
+WhatsApp, num canal pessoal. Aprovação de material contratado que só existe em conversa de celular
+não é rastreável, não passa pela coordenação e some quando alguém entra de férias — exatamente o
+caso desta semana, em que **quem conduz o contato está fora de 27 a 31/07** e o acompanhamento é
+do **Marquito** (por isso a cópia obrigatória para cgte.cefor@ifes.edu.br, combinada em 22/07).
+
+**Impacto no prazo:** as três montagens (caneta, copo, bolsa) voltam para refação e precisam ser
+reaprovadas com folga sobre **07/08**, a entrega contratada. Camisa, bloco e crachá já podem rodar.
+
+**Também em 28/07 — a cadência diária de cards está de pé.** Publicados **Mariano Pimentel** em
+27/07 (https://www.instagram.com/p/DbT3A9apgf0/) e **Rutinelli Fávero** em 28/07
+(https://www.instagram.com/p/DbT4FRUJKh1/). São 4 dos 7 cards individuais no ar; restam Márcia
+Oliveira (29/07), Mariella Berger (30/07) e Jaqueline Sanz (31/07) — e aí a série se esgota, com
+as **duas artes de mesa** (01 e 02/08) ainda por produzir. Segue sendo o gargalo da divulgação.
+
+**Inbox processado:** os PDFs que a gráfica mandou por WhatsApp foram para
+`comunicacao/producao/01-brindes-promocionais/_artes-enviadas-pela-grafica/` (guardados como
+chegaram, sem processar), e o **banner de entrada de 2024** virou referência do banner deste ano em
+`comunicacao/producao/01-brindes-promocionais/banners/_refs/`.
+
+---
+
 ## 2026-07-27 — Nomes dos crachás vão em etiqueta; cadência de um card por dia; legenda de WhatsApp com link de inscrição
 
 **1. Etiquetas adesivas para os nomes dos crachás.** Como os 400 crachás chegam **em branco**

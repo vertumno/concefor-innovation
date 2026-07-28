@@ -15,9 +15,9 @@
 | 16/07 | 🔴 Card: prazo de envio final (03/08 · Even3) | Feed | ✅ |
 | 21/07 | Card palestrante — Vanessa Battestin (abertura) | Feed | ✅ [publicado](https://www.instagram.com/p/DbF30gOOToU/) |
 | 24/07 | Card palestrante — Felipe Tessarolo (internacional) | Feed | ✅ [publicado](https://www.instagram.com/p/DbF4cUPh-TT/) |
-| **27/07** | Card palestrante — Mariano Pimentel (IA) | Feed | 🟡 **publicar hoje** |
-| 28/07 | Card palestrante — Rutinelli da Penha Fávero (mesa "Desafios da EaD") | Feed | ⬜ |
-| 29/07 | Card palestrante — Márcia Oliveira (mesa "Tecnologia Delas") | Feed | ⬜ |
+| 27/07 | Card palestrante — Mariano Pimentel (IA) | Feed | ✅ [publicado](https://www.instagram.com/p/DbT3A9apgf0/) |
+| 28/07 | Card palestrante — Rutinelli da Penha Fávero (mesa "Desafios da EaD") | Feed | ✅ [publicado](https://www.instagram.com/p/DbT4FRUJKh1/) |
+| **29/07** | Card palestrante — Márcia Oliveira (mesa "Tecnologia Delas") | Feed | ⬜ **próximo da fila** |
 | 30/07 | Card palestrante — Mariella Berger (mesa "Tecnologia Delas") | Feed | ⬜ |
 | 31/07 | Card palestrante — Jaqueline Sanz (mesa "Tecnologia Delas") | Feed | ⬜ |
 | ~~28/07~~ | ~~Reforço: última semana do prazo de envio~~ | ~~Story~~ | ❌ retirado em 27/07 (só cards) |

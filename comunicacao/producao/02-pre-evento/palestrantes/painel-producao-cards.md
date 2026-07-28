@@ -10,8 +10,12 @@
 > 📅 **Cadência definida em 27/07/2026: um card por dia, em sequência, sem pular data — e só
 > cards** (os stories programados foram retirados). As datas abaixo já refletem a nova ordem.
 >
-> ✅ **Publicados até agora:** Vanessa Battestin (21/07, [post](https://www.instagram.com/p/DbF30gOOToU/))
-> e Felipe Tessarolo (24/07, [post](https://www.instagram.com/p/DbF4cUPh-TT/)).
+> ✅ **Publicados até agora (4 dos 7):** Vanessa Battestin (21/07,
+> [post](https://www.instagram.com/p/DbF30gOOToU/)) · Felipe Tessarolo (24/07,
+> [post](https://www.instagram.com/p/DbF4cUPh-TT/)) · Mariano Pimentel (27/07,
+> [post](https://www.instagram.com/p/DbT3A9apgf0/)) · Rutinelli Fávero (28/07,
+> [post](https://www.instagram.com/p/DbT4FRUJKh1/)).
+> **Próximo da fila:** Márcia Oliveira, em 29/07.
 
 ## Especificação fixa do card (igual para os 7)
 - **Formato:** 1080×1350 (feed) — se der, versão story 1080×1920
@@ -72,7 +76,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
   O "TEMA: Tecnologia, Transformação e Educação a Distância" (igual ao tema geral do evento)
   foi **decidido em 20/07 e permanece**.
 
-## 3 · Dr. Mariano Pimentel — publicar 27/07
+## 3 · Dr. Mariano Pimentel — ✅ PUBLICADO 27/07 ([post](https://www.instagram.com/p/DbT3A9apgf0/))
 
 - **Foto:** `_refs/fotos/Mariano_Pimentel.png`
 - **No card — nome da palestra:** *"Autoria com IA generativa: desafios para a EaD"* · 19/08, 14h30
@@ -84,7 +88,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Arquivo:** `cards/2026-07-20_pre_card_palestrante-mariano-pimentel_v1.png`
 - **Status:** ✅ produzido 20/07 — arte bate com o previsto.
 
-## 4 · Dra. Rutinelli da Penha Fávero — publicar 28/07
+## 4 · Dra. Rutinelli da Penha Fávero — ✅ PUBLICADO 28/07 ([post](https://www.instagram.com/p/DbT4FRUJKh1/))
 
 - **Foto:** `_refs/fotos/Rutinelli_da_Penha_Fávero.png`
 - **No card — nome da palestra:** Mesa · *"Desafios da EaD para os próximos 20 anos"* · 19/08, 9h30
