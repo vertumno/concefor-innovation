@@ -76,6 +76,18 @@ create table if not exists identities (
 );
 
 -- =========================================================
+-- attendee_profile: contato que o PRÓPRIO participante preenche no app
+-- (telefone/WhatsApp, Instagram) — mostrado apenas às conexões dele.
+-- Tabela separada de attendees para o sync do Even3 nunca sobrescrever.
+-- =========================================================
+create table if not exists attendee_profile (
+  attendee_id integer primary key references attendees(id) on delete cascade,
+  telefone    text,                   -- só dígitos (com DDD; DDI opcional)
+  instagram   text,                   -- handle sem @
+  updated_at  text not null
+);
+
+-- =========================================================
 -- timeline_events: todo evento da linha do tempo
 -- v1 usa tipo='reaction'; fase 2 estende (pergunta, foto, anotacao, checkin...)
 -- sem PII no v1 (client_id é id anônimo de dispositivo)

@@ -96,23 +96,53 @@ export default function PessoasPage() {
 
           {selecionado && (
             <div className="person-pop">
-              <span
-                className="speaker-avatar"
-                style={{ background: selecionado.conectado ? corDe(selecionado.nomeCompleto ?? selecionado.nome) : "var(--surface-2)" }}
-                aria-hidden
-              >
-                {selecionado.iniciais}
-              </span>
+              {selecionado.conectado && selecionado.foto ? (
+                // eslint-disable-next-line @next/next/no-img-element -- foto externa (Even3)
+                <img className="person-foto-sm" src={selecionado.foto} alt="" />
+              ) : (
+                <span
+                  className="speaker-avatar"
+                  style={{ background: selecionado.conectado ? corDe(selecionado.nomeCompleto ?? selecionado.nome) : "var(--surface-2)" }}
+                  aria-hidden
+                >
+                  {selecionado.iniciais}
+                </span>
+              )}
               <div className="person-text">
                 <span className="speaker-name">
                   {selecionado.conectado ? selecionado.nomeCompleto : selecionado.nome}
                 </span>
                 {selecionado.conectado ? (
-                  selecionado.email && (
-                    <a className="speaker-inst" href={`mailto:${selecionado.email}`}>
-                      {selecionado.email}
-                    </a>
-                  )
+                  <>
+                    {selecionado.categoria && (
+                      <span className="person-chip">{selecionado.categoria}</span>
+                    )}
+                    {selecionado.email && (
+                      <a className="speaker-inst" href={`mailto:${selecionado.email}`}>
+                        {selecionado.email}
+                      </a>
+                    )}
+                    {selecionado.telefone && (
+                      <a
+                        className="speaker-inst"
+                        href={`https://wa.me/${selecionado.telefone.length <= 11 ? `55${selecionado.telefone}` : selecionado.telefone}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        WhatsApp: {selecionado.telefone}
+                      </a>
+                    )}
+                    {selecionado.instagram && (
+                      <a
+                        className="speaker-inst"
+                        href={`https://instagram.com/${selecionado.instagram}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        @{selecionado.instagram}
+                      </a>
+                    )}
+                  </>
                 ) : (
                   <span className="speaker-inst">
                     Conecte-se com essa pessoa para ver o contato.
@@ -143,7 +173,12 @@ export default function PessoasPage() {
                   setSelecionado(p);
                 }}
               >
-                {p.iniciais}
+                {p.conectado && p.foto ? (
+                  // eslint-disable-next-line @next/next/no-img-element -- foto externa (Even3)
+                  <img className="dot-foto" src={p.foto} alt="" />
+                ) : (
+                  p.iniciais
+                )}
               </button>
             ))}
           </div>

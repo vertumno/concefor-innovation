@@ -289,8 +289,47 @@ export type Participante = {
   nome: string; // primeiro nome (público no app — as bolinhas)
   nomeCompleto?: string; // só para conexões
   email?: string; // só para conexões
+  foto?: string; // só para conexões (foto da inscrição Even3)
+  categoria?: string; // só para conexões (etiqueta curta)
+  telefone?: string; // só para conexões (preenchido pela própria pessoa)
+  instagram?: string; // idem
   conectado: boolean;
 };
+
+// As categorias oficiais do Even3 são frases longas — no app viram etiqueta.
+export function categoriaCurta(categoria: string | null): string | null {
+  if (!categoria) return null;
+  const c = categoria.trim();
+  if (/^servidores do cefor/i.test(c)) return "Equipe Cefor/NTEs";
+  if (/^estudantes?$/i.test(c)) return "Estudante";
+  if (/^profissionais da educa/i.test(c)) return "Profissional da Educação";
+  if (/^coordenadores de polo/i.test(c)) return "Coordenação UAB/UnAC";
+  if (/^público em geral$/i.test(c)) return "Público em geral";
+  return c.split(/[,:]/)[0].slice(0, 40);
+}
+
+// ─── Perfil preenchido pelo próprio participante (contato para conexões) ───
+
+export type Perfil = { telefone: string | null; instagram: string | null };
+
+export function getPerfil(attendeeId: number): Perfil {
+  const row = getDb()
+    .prepare("select telefone, instagram from attendee_profile where attendee_id = ?")
+    .get(attendeeId) as Perfil | undefined;
+  return row ?? { telefone: null, instagram: null };
+}
+
+export function setPerfil(attendeeId: number, p: Perfil): void {
+  getDb()
+    .prepare(
+      `insert into attendee_profile (attendee_id, telefone, instagram, updated_at)
+       values (?, ?, ?, ?)
+       on conflict(attendee_id) do update set
+         telefone = excluded.telefone, instagram = excluded.instagram,
+         updated_at = excluded.updated_at`,
+    )
+    .run(attendeeId, p.telefone, p.instagram, new Date().toISOString());
+}
 
 function iniciaisDe(nome: string): string {
   const p = nome.trim().split(/\s+/);
@@ -343,8 +382,22 @@ export function insertConnection(clientId: string, attendeeId: number): boolean 
 export function getParticipantes(clientId: string | null): Participante[] {
   const db = getDb();
   const todos = db
-    .prepare("select id, nome, email from attendees order by nome asc")
-    .all() as { id: number; nome: string; email: string | null }[];
+    .prepare(
+      `select a.id, a.nome, a.email, a.foto, a.categoria,
+              p.telefone, p.instagram
+         from attendees a
+         left join attendee_profile p on p.attendee_id = a.id
+        order by a.nome asc`,
+    )
+    .all() as {
+    id: number;
+    nome: string;
+    email: string | null;
+    foto: string | null;
+    categoria: string | null;
+    telefone: string | null;
+    instagram: string | null;
+  }[];
 
   const ordem = new Map<number, number>(); // attendeeId → posição (0 = mais recente)
   if (clientId) {
@@ -358,14 +411,23 @@ export function getParticipantes(clientId: string | null): Participante[] {
     rows.forEach((r, i) => ordem.set(r.a, i));
   }
 
-  const mk = (t: { id: number; nome: string; email: string | null }): Participante => {
+  const mk = (t: (typeof todos)[number]): Participante => {
     const conectado = ordem.has(t.id);
     const nome = nomeBonito(t.nome);
     return {
       id: t.id,
       iniciais: iniciaisDe(nome),
       nome: nome.split(/\s+/)[0],
-      ...(conectado ? { nomeCompleto: nome, email: t.email ?? undefined } : {}),
+      ...(conectado
+        ? {
+            nomeCompleto: nome,
+            email: t.email ?? undefined,
+            foto: t.foto ?? undefined,
+            categoria: categoriaCurta(t.categoria) ?? undefined,
+            telefone: t.telefone ?? undefined,
+            instagram: t.instagram ?? undefined,
+          }
+        : {}),
       conectado,
     };
   };
