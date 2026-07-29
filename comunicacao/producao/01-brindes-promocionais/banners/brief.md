@@ -35,10 +35,7 @@
 | 04 | **Dia 19/08** | Programação do dia: **data · horário · local** | idem #02 |
 | 05 | **Dia 20/08** `[confirmar]` | ⚠️ A lista da Viviane traz "18/08" **duas vezes**. Como o dia 20 é o único sem banner próprio, assume-se que este seja o **20/08** (que tem premiação às 16h e momento cultural). **Confirmar antes de desenhar** | idem #02 |
 | 06 | **Eventos paralelos** | Todos os do **dia 20/08**, com local e horário de cada. 📌 **Último a imprimir**, esperando o Educimat | idem #02 |
-| 07 | **Térreo — Pátio** | Sinalização de andar | — |
-| 08 | **1º Piso — Salas 1 e 2** | idem | — |
-| 09 | **2º Piso — Salas 3 e 4** | idem | — |
-| 10 | **4º Piso — Auditório e Laboratório** | idem | — |
+| 07–10 | **Locais do Cefor** — 🔁 **uma arte só, 4 impressões** | Os quatro são **iguais**: lista Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório. Uma cópia por andar | — |
 
 **Conferência:** 1 (geral) + 4 (dias) + 1 (paralelos) + 4 (andares) = **10**. Bate com o contratado.
 
@@ -46,9 +43,12 @@
 > [`conteudo-banners-programacao.md`](conteudo-banners-programacao.md). Restam **5 lacunas de
 > local**, todas marcadas.
 
-### Sobre os 4 banners de andar (07–10) — ✅ definido em 28/07
+### Sobre os banners de andar (07–10) — ✅ definido em 28/07
 
-- **Mesma arte-base**, mudando só o texto do andar — família visual única, produção rápida.
+- 🔁 **É UMA ARTE SÓ, impressa 4 vezes.** Os quatro são **exatamente iguais**: o banner lista os
+  locais do prédio (Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório)
+  e uma cópia é pendurada em cada andar. **Não é um banner por andar** — os números #07 a #10 são
+  só a contagem de unidades para a gráfica, e **não entram na peça**.
 - ✅ **Sem a logo do Concefor.** Ponto encerrado: a orientação da coordenação é que **não há
   problema em ficar sem a logo quando for necessário**. A divergência com o item 4.1 do TR
   72/2026 está coberta por essa orientação — não é pendência.

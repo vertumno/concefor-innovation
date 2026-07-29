@@ -108,7 +108,7 @@
 > | 04 | **Dia 19/08** — idem | |
 > | 05 | **Dia `[confirmar]`** | a lista traz "18/08" duas vezes; provavelmente é **20/08** |
 > | 06 | **Eventos paralelos** (todos do dia 20/08) | 📌 **imprimir por último**, esperando a Aula Inaugural do Educimat |
-> | 07–10 | **4 banners de andar do Cefor** — Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório | **sem a logo do Concefor e sem selo**, para ficarem no prédio depois do evento |
+> | 07–10 | **Locais do Cefor** — 🔁 **uma arte só, 4 impressões** (os quatro são iguais: Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório) | **sem a logo do Concefor e sem selo**, para ficarem no prédio depois do evento |
 > | 11–13 | **Institucionais** — livro dos 20 anos · Base de Conhecimentos · MOOCs | fora do TR, pagos pela UAB · **arte única para os três** · prazo 01/08 |
 >
 > 🔢 **Numeração de 29/07:** é a **ordem de produção** (calendário), adotada também no
@@ -128,7 +128,7 @@
 > - **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos** — são
 >   permanentes no prédio, e o selo os deixaria datados. A divergência com o item 4.1 do TR está
 >   coberta pela orientação da coordenação: não há problema em ficar sem a logo quando necessário.
->   👉 **Estes 4 + o Concefor Geral (5 dos 13) não dependem de mais ninguém: dá para produzir já.**
+>   👉 **Não dependem de ninguém: #01, os de andar (uma arte) e o #11 — 6 banners em 3 artes.**
 >
 > 🟡 **O que ainda trava os outros 5 — tudo já perguntado à Viviane, aguardando resposta.**
 > Sobraram **5 blocos de programação, em 2 perguntas + 1 confirmação:**

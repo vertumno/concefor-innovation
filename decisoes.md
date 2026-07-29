@@ -100,7 +100,7 @@ derivada: se divergir do brief, o brief vale (está escrito lá).
 **✅ Rateio dos 10 banners definido (28/07, pela Viviane — Coordenação Geral).** Encerra a
 pendência aberta em 20/07: **1** Concefor Geral · **1** de eventos paralelos (todos do dia 20/08) ·
 **4** de programação por dia (17, 18, 19 e um quarto — a lista repete "18/08", provavelmente é
-20/08, `[confirmar]`) · **4** de andar do Cefor (Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 ·
+20/08, `[confirmar]`) · **4** de andar do Cefor — 🔁 **uma arte só, impressa 4 vezes** (Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 ·
 4º/Auditório e Laboratório). Detalhamento e referências visuais de 2024 em
 `comunicacao/producao/01-brindes-promocionais/banners/brief.md`.
 

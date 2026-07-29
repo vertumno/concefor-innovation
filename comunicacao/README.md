@@ -112,7 +112,8 @@ comunicacao/
      ⏰ **Prazos: 31/07** os do evento · **01/08** livro e Base · **03/08** MOOCs.
      ✍️ **Assinaturas desta edição:** Realização **Cefor** · Apoio **Ifes Campus Vila Velha e
      Educimat** — só essas logos.
-     👉 **6 dos 13 podem ser produzidos já:** #01, #07–#10 e #11 (a capa do livro está pronta).
+     👉 **6 dos 13 podem ser produzidos já — em apenas 3 artes:** #01 · #07–#10 (**uma arte só**,
+     impressa 4 vezes) · #11 (a capa do livro já está pronta).
      Os banners de dia esperam os **locais** que faltam.
      [Brief dos 10](producao/01-brindes-promocionais/banners/brief.md) ·
      [Brief dos institucionais](producao/02-pre-evento/banners-institucionais/brief.md)
