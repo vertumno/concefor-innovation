@@ -5,6 +5,27 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 ---
 
 
+## 2026-07-29 — Banners de programação sem local; NTE vira "Encontro dos NTEs dos Ifes"
+
+**Decisão:** os **banners de programação por dia (#02 a #05) não levam mais o local das
+atividades** — só **horário e atividade**. O **#06 (eventos paralelos) mantém o local**, porque
+ali ele é a informação principal: são seis eventos simultâneos em espaços diferentes.
+
+**Por que importa mais do que parece:** era a coluna de local que segurava três banners. As
+perguntas em aberto com a Coordenação — onde ficam as **sessões técnicas**, onde fica a **Mostra
+de Produtos**, e a confirmação de **UAB/UnAC no Pátio e NTE no Auditório** — deixaram de ser
+requisito das peças. Com isso, **11 dos 13 banners passam a poder ser produzidos**, em 8 artes;
+sobram apenas o **#05** (confirmar se é mesmo do dia 20/08) e o **#13** (falta o endereço da
+vitrine de MOOCs).
+
+As definições de local continuam registradas em `comunicacao/contexto/01-programacao.md` — elas
+seguem valendo para o app, o site e a sinalização, só não são mais insumo destes banners.
+
+**Correção de nome:** no dia 17/08, o que estava como "Evento NTE" passa a ser
+**"Encontro dos NTEs dos Ifes"**.
+
+---
+
 ## 2026-07-29 — Eventos paralelos fechados: 6 eventos, todos com local
 
 **Fato novo:** o documento vivo da Coordenação

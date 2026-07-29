@@ -146,6 +146,7 @@
     font-size:20px;letter-spacing:.6px;padding:2px 12px;border-radius:6px;margin-bottom:10px}
   .cl{display:grid;grid-template-columns:112px 132px 1fr;gap:10px;padding:7px 0;
     border-bottom:1px dashed var(--line);font-size:13.5px}
+  .box-body.sl .cl{grid-template-columns:120px 1fr}
   .cl:last-child{border-bottom:none}
   .cl .t{font-weight:700;font-variant-numeric:tabular-nums}
   .cl .l{font-weight:600}
@@ -233,12 +234,19 @@
 
     <div class="callout go">
       <span class="tag">Comece por aqui</span>
-      <b>8 dos 13 podem ser produzidos hoje</b> — e dão só <b>5 artes</b>:
-      <b>#01</b> (Concefor Geral) · <b>#06</b> (eventos paralelos, destravado em 29/07) ·
-      <b>#07 a #10</b> (os quatro são <b>iguais</b>, uma arte impressa 4 vezes) ·
-      <b>#11</b> (livro dos 20 anos, cuja capa já está pronta) · <b>#12</b> (Base de Conhecimentos,
-      plataforma já no ar). Os banners de dia já têm todo o conteúdo escrito: falta só o local de
-      alguns itens.
+      <b>Praticamente tudo está liberado: 11 dos 13 podem ser produzidos hoje</b>, em <b>8 artes</b>
+      — <b>#01</b> · <b>#02 a #04</b> (programação dos dias 17, 18 e 19) · <b>#06</b> (eventos
+      paralelos) · <b>#07 a #10</b> (os quatro são <b>iguais</b>, uma arte impressa 4 vezes) ·
+      <b>#11</b> e <b>#12</b>. Sobram apenas o <b>#05</b>, que espera a confirmação de qual dia é,
+      e o <b>#13</b>, que espera o endereço da vitrine de MOOCs.
+    </div>
+
+    <div class="callout">
+      <span class="tag">Mudou em 29/07</span>
+      <b>Os banners de programação (#02 a #05) não levam mais o local das atividades</b> — só
+      horário e atividade. Com isso deixaram de depender das definições de sala que ainda estavam
+      sendo levantadas. O <b>#06</b> continua com local, porque ali o local é a informação
+      principal: são eventos simultâneos em espaços diferentes.
     </div>
 
     <div class="tw">
@@ -246,10 +254,10 @@
         <thead><tr><th>Situação</th><th>Quais</th><th>Quantos</th></tr></thead>
         <tbody>
           <tr><td><b>Pode produzir já</b></td>
-              <td>#01 · #06 · #07 a #10 <i>(uma arte só)</i> · #11 · #12</td>
-              <td><span class="pill go">8 banners · 5 artes</span></td></tr>
-          <tr><td><b>Conteúdo pronto, falta o local</b></td><td>#02 · #03 · #04 · #05</td>
-              <td><span class="pill wait">4 · 5 lacunas</span></td></tr>
+              <td>#01 · #02 · #03 · #04 · #06 · #07 a #10 <i>(uma arte só)</i> · #11 · #12</td>
+              <td><span class="pill go">11 banners · 8 artes</span></td></tr>
+          <tr><td><b>Conteúdo pronto, falta confirmar o dia</b></td><td>#05</td>
+              <td><span class="pill wait">1</span></td></tr>
           <tr><td><b>Aguardando informação</b></td><td>#13 (vitrine de MOOCs — falta o link)</td>
               <td><span class="pill stop">1</span></td></tr>
         </tbody>
@@ -369,25 +377,25 @@
 
           <tr><td class="id">#02</td>
             <td><span class="bname">Dia 17/08 — segunda · Abertura</span>
-              <span class="bwhat">Programação do dia · 8 linhas</span></td>
-            <td><span class="pill wait">1 confirmação</span></td>
+              <span class="bwhat">Programação do dia · 8 linhas · sem local</span></td>
+            <td><span class="pill go">pode produzir</span></td>
             <td><button class="see" data-go="b02">Ver conteúdo →</button></td></tr>
 
           <tr><td class="id">#03</td>
             <td><span class="bname">Dia 18/08 — terça</span>
-              <span class="bwhat">Programação do dia · 6 linhas</span></td>
-            <td><span class="pill wait">3 lacunas</span></td>
+              <span class="bwhat">Programação do dia · 6 linhas · sem local</span></td>
+            <td><span class="pill go">pode produzir</span></td>
             <td><button class="see" data-go="b03">Ver conteúdo →</button></td></tr>
 
           <tr><td class="id">#04</td>
             <td><span class="bname">Dia 19/08 — quarta</span>
-              <span class="bwhat">Programação do dia · 7 linhas</span></td>
-            <td><span class="pill wait">2 lacunas</span></td>
+              <span class="bwhat">Programação do dia · 7 linhas · sem local</span></td>
+            <td><span class="pill go">pode produzir</span></td>
             <td><button class="see" data-go="b04">Ver conteúdo →</button></td></tr>
 
           <tr><td class="id">#05</td>
             <td><span class="bname">Dia 20/08 — quinta · Encerramento</span>
-              <span class="bwhat">Programação do dia · 5 linhas</span></td>
+              <span class="bwhat">Programação do dia · 5 linhas · sem local</span></td>
             <td><span class="pill wait">confirmar o dia</span></td>
             <td><button class="see" data-go="b05">Ver conteúdo →</button></td></tr>
 
@@ -473,33 +481,32 @@ Apoio: Ifes Campus Vila Velha e Educimat">Copiar</button></div>
   <!-- 02 -->
   <div class="bc" id="b02">
     <div class="bc-head"><span class="id">#02</span><span class="n">Dia 17/08 — segunda-feira · Abertura</span>
-      <span class="pill wait">1 confirmação</span></div>
-    <p class="bc-note">Layout dos banners de dia: <b>etiqueta de data no topo</b>, horário e local à
-      esquerda, atividade à direita — como no banner de eventos paralelos de 2024.
-      ⚠️ O item oficial "Eventos UAB / UnAC / NTE" <b>vira duas linhas</b>, porque os locais são
-      diferentes. Confirmar antes de fechar.</p>
+      <span class="pill go">pode produzir</span></div>
+    <p class="bc-note">Layout dos banners de dia: <b>etiqueta de data no topo</b>, horário à
+      esquerda, atividade à direita — como no banner de programação de 2024, mas
+      <b>sem a coluna de local</b>.</p>
     <div class="box">
       <div class="box-top"><b>Conteúdo do banner</b>
         <button class="copy" data-copy="17 AGO · segunda-feira
 
 13h30 — Credenciamento
-14h30 às 17h30 · Pátio (a confirmar) — Eventos UAB e UnAC
-14h30 às 17h30 · Auditório (a confirmar) — Evento NTE
-18h00 · Pátio — Momento Musical
-18h30 · Pátio — Abertura
-19h00 às 20h00 · Pátio — Palestra 20 Anos de EaD e o Cefor · Dra. Vanessa Battestin
-20h00 às 20h30 · Pátio — Lançamentos: e-book dos 20 anos do Cefor, e-book do NTE, nova plataforma de MOOCs e nova Base de Conhecimentos
-20h30 · Pátio — Celebração dos 20 anos do Cefor">Copiar</button></div>
-      <div class="box-body">
+14h30 às 17h30 — Eventos UAB e UnAC
+14h30 às 17h30 — Encontro dos NTEs dos Ifes
+18h00 — Momento Musical
+18h30 — Abertura
+19h00 às 20h00 — Palestra 20 Anos de EaD e o Cefor · Dra. Vanessa Battestin
+20h00 às 20h30 — Lançamentos: e-book dos 20 anos do Cefor, e-book do NTE, nova plataforma de MOOCs e nova Base de Conhecimentos
+20h30 — Celebração dos 20 anos do Cefor">Copiar</button></div>
+      <div class="box-body sl">
         <div class="dtag">17 AGO · segunda-feira</div>
-        <div class="cl"><span class="t">13h30</span><span class="l none">—</span><span>Credenciamento</span></div>
-        <div class="cl"><span class="t">14h30–17h30</span><span class="l maybe">Pátio*</span><span>Eventos UAB e UnAC</span></div>
-        <div class="cl"><span class="t">14h30–17h30</span><span class="l maybe">Auditório*</span><span>Evento NTE</span></div>
-        <div class="cl"><span class="t">18h00</span><span class="l patio">Pátio</span><span>Momento Musical</span></div>
-        <div class="cl"><span class="t">18h30</span><span class="l patio">Pátio</span><span>Abertura</span></div>
-        <div class="cl"><span class="t">19h–20h</span><span class="l patio">Pátio</span><span><b>Palestra "20 Anos de EaD e o Cefor"</b> · Dra. Vanessa Battestin</span></div>
-        <div class="cl"><span class="t">20h–20h30</span><span class="l patio">Pátio</span><span><b>Lançamentos</b> · e-book dos 20 anos · e-book do NTE · nova plataforma de MOOCs · nova Base de Conhecimentos</span></div>
-        <div class="cl"><span class="t">20h30</span><span class="l patio">Pátio</span><span><b>Celebração dos 20 anos do Cefor</b></span></div>
+        <div class="cl"><span class="t">13h30</span><span>Credenciamento</span></div>
+        <div class="cl"><span class="t">14h30–17h30</span><span>Eventos UAB e UnAC</span></div>
+        <div class="cl"><span class="t">14h30–17h30</span><span>Encontro dos NTEs dos Ifes</span></div>
+        <div class="cl"><span class="t">18h00</span><span>Momento Musical</span></div>
+        <div class="cl"><span class="t">18h30</span><span>Abertura</span></div>
+        <div class="cl"><span class="t">19h–20h</span><span><b>Palestra "20 Anos de EaD e o Cefor"</b> · Dra. Vanessa Battestin</span></div>
+        <div class="cl"><span class="t">20h–20h30</span><span><b>Lançamentos</b> · e-book dos 20 anos · e-book do NTE · nova plataforma de MOOCs · nova Base de Conhecimentos</span></div>
+        <div class="cl"><span class="t">20h30</span><span><b>Celebração dos 20 anos do Cefor</b></span></div>
       </div>
     </div>
   </div>
@@ -507,27 +514,27 @@ Apoio: Ifes Campus Vila Velha e Educimat">Copiar</button></div>
   <!-- 03 -->
   <div class="bc" id="b03">
     <div class="bc-head"><span class="id">#03</span><span class="n">Dia 18/08 — terça-feira</span>
-      <span class="pill wait">3 lacunas</span></div>
+      <span class="pill go">pode produzir</span></div>
     <p class="bc-note">💡 Se faltar espaço, as duas Mostras podem virar <b>uma linha só</b>
-      ("8h e 11h30"), já que compartilham o local.</p>
+      ("8h e 11h30").</p>
     <div class="box">
       <div class="box-top"><b>Conteúdo do banner</b>
         <button class="copy" data-copy="18 AGO · terça-feira
 
-8h00 · (local a definir) — Mostra de Produtos e Produções Técnicas · Painel
-9h30 · Pátio — Mesa-redonda Tecnologia Delas · Dra. Márcia Oliveira, Dra. Jaqueline Sanz e Dra. Mariella Berger
-11h30 · (local a definir) — Mostra de Produtos e Produções Técnicas · Painel
-13h30 · (local a definir) — Sessões técnicas · artigos completos
-14h30 · Pátio — Palestra internacional · Felipe Maciel Tessarolo (The Open University, Reino Unido)
-16h00 · Pátio — Coffee-break">Copiar</button></div>
-      <div class="box-body">
+8h00 — Mostra de Produtos e Produções Técnicas · Painel
+9h30 — Mesa-redonda Tecnologia Delas · Dra. Márcia Oliveira, Dra. Jaqueline Sanz e Dra. Mariella Berger
+11h30 — Mostra de Produtos e Produções Técnicas · Painel
+13h30 — Sessões técnicas · artigos completos
+14h30 — Palestra internacional · Felipe Maciel Tessarolo (The Open University, Reino Unido)
+16h00 — Coffee-break">Copiar</button></div>
+      <div class="box-body sl">
         <div class="dtag">18 AGO · terça-feira</div>
-        <div class="cl"><span class="t">8h00</span><span class="l gapl">a definir</span><span>Mostra de Produtos e Produções Técnicas · Painel</span></div>
-        <div class="cl"><span class="t">9h30</span><span class="l patio">Pátio</span><span><b>Mesa-redonda "Tecnologia Delas"</b> · Dra. Márcia Oliveira, Dra. Jaqueline Sanz e Dra. Mariella Berger</span></div>
-        <div class="cl"><span class="t">11h30</span><span class="l gapl">a definir</span><span>Mostra de Produtos e Produções Técnicas · Painel</span></div>
-        <div class="cl"><span class="t">13h30</span><span class="l gapl">a definir</span><span>Sessões técnicas · artigos completos</span></div>
-        <div class="cl"><span class="t">14h30</span><span class="l patio">Pátio</span><span><b>Palestra internacional</b> · Felipe Maciel Tessarolo (The Open University, Reino Unido)</span></div>
-        <div class="cl"><span class="t">16h00</span><span class="l patio">Pátio</span><span>Coffee-break</span></div>
+        <div class="cl"><span class="t">8h00</span><span>Mostra de Produtos e Produções Técnicas · Painel</span></div>
+        <div class="cl"><span class="t">9h30</span><span><b>Mesa-redonda "Tecnologia Delas"</b> · Dra. Márcia Oliveira, Dra. Jaqueline Sanz e Dra. Mariella Berger</span></div>
+        <div class="cl"><span class="t">11h30</span><span>Mostra de Produtos e Produções Técnicas · Painel</span></div>
+        <div class="cl"><span class="t">13h30</span><span>Sessões técnicas · artigos completos</span></div>
+        <div class="cl"><span class="t">14h30</span><span><b>Palestra internacional</b> · Felipe Maciel Tessarolo (The Open University, Reino Unido)</span></div>
+        <div class="cl"><span class="t">16h00</span><span>Coffee-break</span></div>
       </div>
     </div>
   </div>
@@ -535,29 +542,28 @@ Apoio: Ifes Campus Vila Velha e Educimat">Copiar</button></div>
   <!-- 04 -->
   <div class="bc" id="b04">
     <div class="bc-head"><span class="id">#04</span><span class="n">Dia 19/08 — quarta-feira</span>
-      <span class="pill wait">2 lacunas</span></div>
-    <p class="bc-note">O dia mais cheio — <b>7 linhas</b>. As duas lacunas são do mesmo item
-      (sessões técnicas): uma resposta fecha o banner inteiro.</p>
+      <span class="pill go">pode produzir</span></div>
+    <p class="bc-note">O dia mais cheio — <b>7 linhas</b>.</p>
     <div class="box">
       <div class="box-top"><b>Conteúdo do banner</b>
         <button class="copy" data-copy="19 AGO · quarta-feira
 
-8h00 · (local a definir) — Sessões técnicas · artigos completos
-9h00 · Pátio — Momento Cultural
-9h30 · Pátio — Mesa-redonda Desafios da EaD para os próximos 20 anos · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero
-13h30 · (local a definir) — Sessões técnicas · artigos completos
-14h30 · Pátio — Palestra Autoria com IA generativa: desafios para a EaD · Dr. Mariano Pimentel
-16h00 · Pátio — Coffee-break
-16h30 · Pátio — Palestra Inovações da IA para a Educação · Dr. Mauro Oliveira">Copiar</button></div>
-      <div class="box-body">
+8h00 — Sessões técnicas · artigos completos
+9h00 — Momento Cultural
+9h30 — Mesa-redonda Desafios da EaD para os próximos 20 anos · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero
+13h30 — Sessões técnicas · artigos completos
+14h30 — Palestra Autoria com IA generativa: desafios para a EaD · Dr. Mariano Pimentel
+16h00 — Coffee-break
+16h30 — Palestra Inovações da IA para a Educação · Dr. Mauro Oliveira">Copiar</button></div>
+      <div class="box-body sl">
         <div class="dtag">19 AGO · quarta-feira</div>
-        <div class="cl"><span class="t">8h00</span><span class="l gapl">a definir</span><span>Sessões técnicas · artigos completos</span></div>
-        <div class="cl"><span class="t">9h00</span><span class="l patio">Pátio</span><span>Momento Cultural</span></div>
-        <div class="cl"><span class="t">9h30</span><span class="l patio">Pátio</span><span><b>Mesa-redonda "Desafios da EaD para os próximos 20 anos"</b> · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero</span></div>
-        <div class="cl"><span class="t">13h30</span><span class="l gapl">a definir</span><span>Sessões técnicas · artigos completos</span></div>
-        <div class="cl"><span class="t">14h30</span><span class="l patio">Pátio</span><span><b>Palestra "Autoria com IA generativa: desafios para a EaD"</b> · Dr. Mariano Pimentel</span></div>
-        <div class="cl"><span class="t">16h00</span><span class="l patio">Pátio</span><span>Coffee-break</span></div>
-        <div class="cl"><span class="t">16h30</span><span class="l patio">Pátio</span><span><b>Palestra "Inovações da IA para a Educação"</b> · Dr. Mauro Oliveira</span></div>
+        <div class="cl"><span class="t">8h00</span><span>Sessões técnicas · artigos completos</span></div>
+        <div class="cl"><span class="t">9h00</span><span>Momento Cultural</span></div>
+        <div class="cl"><span class="t">9h30</span><span><b>Mesa-redonda "Desafios da EaD para os próximos 20 anos"</b> · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero</span></div>
+        <div class="cl"><span class="t">13h30</span><span>Sessões técnicas · artigos completos</span></div>
+        <div class="cl"><span class="t">14h30</span><span><b>Palestra "Autoria com IA generativa: desafios para a EaD"</b> · Dr. Mariano Pimentel</span></div>
+        <div class="cl"><span class="t">16h00</span><span>Coffee-break</span></div>
+        <div class="cl"><span class="t">16h30</span><span><b>Palestra "Inovações da IA para a Educação"</b> · Dr. Mauro Oliveira</span></div>
       </div>
     </div>
   </div>
@@ -574,21 +580,21 @@ Apoio: Ifes Campus Vila Velha e Educimat">Copiar</button></div>
       <div class="box-top"><b>Conteúdo do banner</b>
         <button class="copy" data-copy="20 AGO · quinta-feira
 
-9h00 às 12h00 — Momento I · Eventos paralelos (cada evento no seu espaço)
+9h00 às 12h00 — Momento I · Eventos paralelos
 12h00 — Almoço
-13h30 às 16h00 — Momento II · Eventos paralelos (cada evento no seu espaço)
-16h00 · Pátio — Premiação dos Melhores Trabalhos do VIII Concefor
-16h30 · Pátio — Coffee-break e Momento Cultural
+13h30 às 16h00 — Momento II · Eventos paralelos
+16h00 — Premiação dos Melhores Trabalhos do VIII Concefor
+16h30 — Coffee-break e Momento Cultural
 
 Veja a programação completa no banner de Eventos Paralelos">Copiar</button></div>
-      <div class="box-body">
+      <div class="box-body sl">
         <div class="dtag">20 AGO · quinta-feira</div>
-        <div class="cl"><span class="t">9h–12h</span><span class="l none">por evento</span><span><b>Momento I</b> · Eventos paralelos</span></div>
-        <div class="cl"><span class="t">12h00</span><span class="l none">—</span><span>Almoço</span></div>
-        <div class="cl"><span class="t">13h30–16h</span><span class="l none">por evento</span><span><b>Momento II</b> · Eventos paralelos</span></div>
-        <div class="cl"><span class="t">16h00</span><span class="l patio">Pátio</span><span><b>Premiação dos Melhores Trabalhos do VIII Concefor</b></span></div>
-        <div class="cl"><span class="t">16h30</span><span class="l patio">Pátio</span><span>Coffee-break e Momento Cultural</span></div>
-        <div class="cl"><span class="t"></span><span class="l none"></span><span><i>Veja a programação completa no banner de Eventos Paralelos</i></span></div>
+        <div class="cl"><span class="t">9h–12h</span><span><b>Momento I</b> · Eventos paralelos</span></div>
+        <div class="cl"><span class="t">12h00</span><span>Almoço</span></div>
+        <div class="cl"><span class="t">13h30–16h</span><span><b>Momento II</b> · Eventos paralelos</span></div>
+        <div class="cl"><span class="t">16h00</span><span><b>Premiação dos Melhores Trabalhos do VIII Concefor</b></span></div>
+        <div class="cl"><span class="t">16h30</span><span>Coffee-break e Momento Cultural</span></div>
+        <div class="cl"><span class="t"></span><span><i>Veja a programação completa no banner de Eventos Paralelos</i></span></div>
       </div>
     </div>
   </div>
@@ -844,10 +850,7 @@ Sem datas e sem menção ao Concefor (peça permanente)">Copiar</button></div>
       <table>
         <thead><tr><th>O que falta</th><th>Com quem</th><th>Destrava</th></tr></thead>
         <tbody>
-          <tr><td><b>Local das sessões técnicas</b> (18/08 tarde, 19/08 manhã e tarde)</td><td>Viviane — Coordenação Geral</td><td><b>#04</b> inteiro e metade do <b>#03</b></td></tr>
-          <tr><td><b>Local da Mostra de Produtos e Produções Técnicas</b> (18/08)</td><td>Viviane</td><td><b>#03</b>, junto com o de cima</td></tr>
-          <tr><td><b>Confirmar</b> UAB/UnAC no Pátio e NTE no Auditório</td><td>Viviane</td><td><b>#02</b></td></tr>
-          <tr><td><b>Confirmar se o #05 é do dia 20/08</b> (a lista repete 18/08)</td><td>Viviane</td><td><b>#05</b></td></tr>
+          <tr><td><b>Confirmar se o #05 é do dia 20/08</b> (a lista repete 18/08)</td><td>Viviane — Coordenação Geral</td><td><b>#05</b></td></tr>
           <tr><td><b>Link definitivo do livro</b></td><td>Vanessa Battestin</td><td>QR code do <b>#11</b></td></tr>
           <tr><td><b>Endereço da nova vitrine de MOOCs</b></td><td>Vanessa Battestin</td><td><b>#13</b> inteiro</td></tr>
         </tbody>
@@ -855,8 +858,8 @@ Sem datas e sem menção ao Concefor (peça permanente)">Copiar</button></div>
     </div>
     <div class="callout go">
       <span class="tag">Resumindo</span>
-      <b>Duas respostas fecham dois banners inteiros.</b> Onde ficam as <b>sessões técnicas</b> e a
-      <b>Mostra de Produtos</b> — só isso — libera o <b>#03</b> e o <b>#04</b>. O resto é confirmação.
+      <b>Só duas coisas seguram alguma peça:</b> confirmar se o <b>#05</b> é mesmo do dia 20/08 e
+      o endereço da <b>vitrine de MOOCs</b>, para o <b>#13</b>. Todo o resto está liberado.
     </div>
   </div>
 </section>

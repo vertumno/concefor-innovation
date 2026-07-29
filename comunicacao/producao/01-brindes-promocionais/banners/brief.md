@@ -30,9 +30,9 @@
 | # | Banner | Conteúdo | Referência |
 |---|---|---|---|
 | 01 | **Concefor Geral** | Identidade do evento: marca, tema e selo 20 anos | [2024](_refs/banner-geral-concefor-2024.png) |
-| 02 | **Dia 17/08** | Programação do dia: **data · horário · local** | [2024](_refs/banner-eventos-paralelos-concefor-2024.jpeg) |
-| 03 | **Dia 18/08** | Programação do dia: **data · horário · local** | idem #02 |
-| 04 | **Dia 19/08** | Programação do dia: **data · horário · local** | idem #02 |
+| 02 | **Dia 17/08** | Programação do dia: **data · horário · atividade** *(sem local)* | [2024](_refs/banner-eventos-paralelos-concefor-2024.jpeg) |
+| 03 | **Dia 18/08** | idem | idem #02 |
+| 04 | **Dia 19/08** | idem | idem #02 |
 | 05 | **Dia 20/08** `[confirmar]` | ⚠️ A lista da Viviane traz "18/08" **duas vezes**. Como o dia 20 é o único sem banner próprio, assume-se que este seja o **20/08** (que tem premiação às 16h e momento cultural). **Confirmar antes de desenhar** | idem #02 |
 | 06 | **Eventos paralelos** | Os **6 eventos do dia 20/08**, com local e horário. ✅ **Destravado em 29/07:** todos os locais definidos e o evento do Educimat completo | idem #02 |
 | 07–10 | **Locais do Cefor** — 🔁 **uma arte só, 4 impressões** | Os quatro são **iguais**: lista Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório. Uma cópia por andar | — |
@@ -65,35 +65,29 @@
   edição *(definido em 29/07; o rodapé de 2024 trazia mais marcas, não repetir)*
 - Tipografia de **alta legibilidade à distância** — é sinalização, não card de feed
 
-## Locais — o que já fecha
+## Locais
 
-✅ **Definido em 28/07 — quase tudo é Pátio:**
-1. **Palestras e mesas-redondas:** Pátio.
-2. **Bloco da noite de 17/08** (momento musical, abertura, palestra da Vanessa, lançamentos e
-   celebração dos 20 anos): Pátio.
-3. **Momentos culturais, coffee-breaks e premiação:** Pátio.
-4. ➖ **Credenciamento e almoço não levam local no banner** — decisão editorial da peça.
+✅ **Decisão de 29/07: os banners de programação (02 a 05) NÃO levam o local das atividades** —
+só horário e atividade. Isso encerra as lacunas que dependiam da definição de salas.
 
-5. 🟡 **Eventos UAB/UnAC/NTE (17/08):** **UAB e UnAC provavelmente no Pátio**, **NTE provavelmente
-   no Auditório** — `[a confirmar]`.
+O **06 (eventos paralelos) continua com local**, porque ali o local é a informação principal:
+são seis eventos simultâneos em espaços diferentes, e todos já estão definidos.
 
-**15 atividades com local + 2 sem local por decisão + 1 provável.** Restam **5 blocos**, que se
-resumem a **2 perguntas**.
-
-**Cobertura por banner:** #02 (17/08) **6 de 7 + 1 provável** · #03 (18/08) **3 de 6** ·
-#04 (19/08) **5 de 7** · #05 (20/08) **3 de 5**. Mapa completo em
-[`contexto/01-programacao.md`](../../../contexto/01-programacao.md#locais--o-que-fecha-e-o-que-falta-2807).
+> As definições de local da programação seguem registradas em
+> [`contexto/01-programacao.md`](../../../contexto/01-programacao.md) — úteis para o app, o site e
+> a sinalização, mas **não são mais requisito destes banners**.
 
 ## O que ainda falta para poder desenhar
 
 | # | Falta | Onde resolver | Estado |
 |---|---|---|---|
-| 1 | **Dois locais e uma confirmação:** (a) **sessões técnicas** — 18/08 tarde, 19/08 manhã e tarde *(fecha o #04)*; (b) **Mostra de Produtos e Produções Técnicas** — 18/08, 2 blocos *(fecha o #03, junto com "a")*; (c) **confirmar** UAB/UnAC no Pátio e NTE no Auditório *(fecha o #02)* | Viviane (Coordenação Geral) | 🟡 **perguntado, aguardando resposta** |
-| 3 | **Confirmar o banner #05** (18/08 repetido × 20/08) | Viviane | 🟡 **perguntado, aguardando resposta** |
+| 1 | **Confirmar o banner #05** (18/08 repetido × 20/08) | Viviane | 🟡 **perguntado, aguardando resposta** |
+| ~~2~~ | ~~**Locais das atividades**~~ → ✅ **resolvido em 29/07:** os banners de dia não levam local | — | ✅ |
+| ~~3~~ | ~~**Locais dos eventos paralelos**~~ → ✅ **resolvido em 29/07:** todos definidos | — | ✅ |
 | ~~4~~ | ~~**Educimat**~~ → ✅ **resolvido em 29/07:** o evento entrou completo — *EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas*, 13h30–16h, **Pátio**, com Edmar Reis Thiengo e Ana Raquel Santos de Medeiros Garcia. **O #06 deixou de ser o último a imprimir** | — | ✅ |
 
-> ✅ **Nada trava #01, #06 e #07–#10.** São 6 dos 10 (em 3 artes) — dá para produzir agora,
-> enquanto os locais dos banners de dia não chegam.
+> ✅ **Nada trava #01, #02, #03, #04, #06 e #07–#10.** São **9 dos 10**, em 6 artes.
+> Só o **#05** espera a confirmação de qual dia ele é.
 
 ## Onde a produção acontece (Drive)
 

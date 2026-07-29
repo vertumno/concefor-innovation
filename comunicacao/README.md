@@ -112,10 +112,10 @@ comunicacao/
      ⏰ **Prazos: 31/07** os do evento · **01/08** livro e Base · **03/08** MOOCs.
      ✍️ **Assinaturas desta edição:** Realização **Cefor** · Apoio **Ifes Campus Vila Velha e
      Educimat** — só essas logos.
-     👉 **8 dos 13 podem ser produzidos já — em 5 artes:** #01 · **#06** (eventos paralelos,
-     destravado em 29/07) · #07–#10 (**uma arte só**, impressa 4 vezes) · #11 (capa do livro
-     pronta) · #12 (Base de Conhecimentos, plataforma no ar).
-     Os banners de dia esperam os **locais** que faltam.
+     👉 **11 dos 13 podem ser produzidos já — em 8 artes.** Em 29/07 os banners de dia
+     **deixaram de levar o local das atividades** (só horário e atividade) e os eventos paralelos
+     fecharam. Só o **#05** (confirmar se é o dia 20) e o **#13** (falta o link dos MOOCs) seguem
+     parados.
      [Brief dos 10](producao/01-brindes-promocionais/banners/brief.md) ·
      [Brief dos institucionais](producao/02-pre-evento/banners-institucionais/brief.md)
   4. 🔴 **Etiquetas dos nomes do crachá** — decidir **quais comprar** e **como será a impressão**.

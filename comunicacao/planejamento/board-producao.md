@@ -103,7 +103,7 @@
 > | # | Banner | Observação |
 > |---|---|---|
 > | 01 | **Concefor Geral** | identidade do evento |
-> | 02 | **Dia 17/08** — programação com data, horário e local | |
+> | 02 | **Dia 17/08** — programação com data, horário e atividade *(sem local)* | |
 > | 03 | **Dia 18/08** — idem | |
 > | 04 | **Dia 19/08** — idem | |
 > | 05 | **Dia `[confirmar]`** | a lista traz "18/08" duas vezes; provavelmente é **20/08** |
@@ -128,17 +128,13 @@
 > - **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos** — são
 >   permanentes no prédio, e o selo os deixaria datados. A divergência com o item 4.1 do TR está
 >   coberta pela orientação da coordenação: não há problema em ficar sem a logo quando necessário.
->   👉 **Não dependem de ninguém: #01, os de andar (uma arte) e o #11 — 6 banners em 3 artes.**
+>   👉 **Não dependem de ninguém: #01, #02, #03, #04, #06, os de andar (uma arte), #11 e #12 — 11 banners em 8 artes.**
 >
-> 🟡 **O que ainda trava os outros 5 — tudo já perguntado à Viviane, aguardando resposta.**
-> Sobraram **5 blocos de programação, em 2 perguntas + 1 confirmação:**
+> ✅ **29/07 — quase nada trava mais.** Os banners de programação (02 a 05) **deixaram de levar o
+> local das atividades**, o que encerrou as lacunas de sala; e os eventos paralelos fecharam.
 >
 > | O que falta | Fecha qual banner |
 > |---|---|
-> | Local das **sessões técnicas** (18/08 tarde, 19/08 manhã e tarde) | **04**, e metade do 03 |
-> | Local da **Mostra de Produtos e Produções Técnicas** (18/08, 2 blocos) | **03**, junto com a de cima |
-> | **Confirmar** UAB/UnAC no Pátio e NTE no Auditório | **02** |
-> | Locais dos **eventos paralelos** (3 a definir + escolha no "Ciência delas") | **05** e **06** |
 > | **Confirmar o banner 05** (a lista traz 18/08 duas vezes) | **05** |
 >
 > 🔴 Só o **06** depende de terceiro fora da Coordenação: a programação da **Aula Inaugural do
