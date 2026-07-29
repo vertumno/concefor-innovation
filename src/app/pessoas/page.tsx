@@ -40,6 +40,13 @@ export default function PessoasPage() {
     refreshMapa();
   }, [refreshMapa]);
 
+  // O aviso é uma folha fixa sobre o conteúdo — se dispensa sozinho.
+  useEffect(() => {
+    if (!aviso) return;
+    const t = setTimeout(() => setAviso(null), 5000);
+    return () => clearTimeout(t);
+  }, [aviso]);
+
   if (speakers === null) return <p className="page-sub">Carregando…</p>;
 
   return (
@@ -74,6 +81,7 @@ export default function PessoasPage() {
               onClose={() => setConectando(false)}
               onDone={(r) => {
                 setConectando(false);
+                setSelecionado(null);
                 setAviso(
                   r.nova
                     ? `Você se conectou com ${r.pessoa.nome}!`
@@ -130,7 +138,10 @@ export default function PessoasPage() {
                 className={`dot ${p.conectado ? "dot-on" : ""}`}
                 style={p.conectado ? { background: corDe(p.nomeCompleto ?? p.nome) } : undefined}
                 aria-label={p.conectado ? `${p.nomeCompleto} (conexão)` : p.nome}
-                onClick={() => setSelecionado(p)}
+                onClick={() => {
+                  setAviso(null);
+                  setSelecionado(p);
+                }}
               >
                 {p.iniciais}
               </button>
