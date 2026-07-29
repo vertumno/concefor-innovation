@@ -27,6 +27,10 @@
 
 **Conferência:** 1 + 1 + 4 (dias) + 4 (andares) = **10**. Bate com o contratado.
 
+> 📝 **O conteúdo dos banners #3 a #6 já está escrito, linha a linha, pronto para diagramar:**
+> [`conteudo-banners-programacao.md`](conteudo-banners-programacao.md). Restam **5 lacunas de
+> local**, todas marcadas.
+
 ### Sobre os 4 banners de andar (7–10) — ✅ definido em 28/07
 
 - **Mesma arte-base**, mudando só o texto do andar — família visual única, produção rápida.

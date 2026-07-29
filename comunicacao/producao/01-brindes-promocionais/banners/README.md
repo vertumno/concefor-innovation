@@ -7,7 +7,7 @@
 |---|---|
 | 1 | Concefor Geral |
 | 2 | Eventos paralelos (dia 20/08) — *imprimir por último, esperando o Educimat* |
-| 3–6 | Programação por dia (17, 18, 19 e `[confirmar]` o quarto) — data · horário · local |
+| 3–6 | Programação por dia (17, 18, 19 e `[confirmar]` o quarto) — data · horário · local. **Conteúdo pronto:** [`conteudo-banners-programacao.md`](conteudo-banners-programacao.md) |
 | 7–10 | Locais do Cefor, um por andar — **sem a logo do Concefor**, para ficarem no prédio depois |
 
 Brief das placas de sinalização (peça relacionada): [`../placas-sinalizacao/`](../placas-sinalizacao/).
