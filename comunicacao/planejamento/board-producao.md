@@ -113,14 +113,21 @@
 > **Detalhamento, conteúdo e referências visuais de 2024:**
 > [`banners/brief.md`](../producao/01-brindes-promocionais/banners/brief.md).
 >
-> 🔴 **Três travas antes de desenhar:**
-> 1. **A programação não tem LOCAL** das atividades dos dias 17, 18 e 19 — e os banners 3 a 5
->    pedem local. Pedir à Coordenação.
+> ✅ **Resolvido em 28/07 (rodada da noite):**
+> - **Todas as palestras e mesas-redondas são no PÁTIO** → fecha 6 atividades. Mapa completo do
+>   que fecha e do que falta em
+>   [`contexto/01-programacao.md`](../contexto/01-programacao.md#locais--o-que-fecha-e-o-que-falta-2807).
+> - **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos** — são
+>   permanentes no prédio, e o selo os deixaria datados. A divergência com o item 4.1 do TR está
+>   coberta pela orientação da coordenação: não há problema em ficar sem a logo quando necessário.
+>   👉 **Estes 4 + o Concefor Geral (5 dos 10) não dependem de mais ninguém: dá para produzir já.**
+>
+> 🔴 **O que ainda trava os outros 5:**
+> 1. **Locais do que não é palestra nem mesa** (credenciamento, UAB/UnAC/NTE, mostras, sessões
+>    técnicas, momentos culturais, coffees, almoço, premiação, bloco de abertura do dia 17)
+>    → 🟡 **pedido à Viviane em 28/07**, aguardando.
 > 2. **Três eventos paralelos ainda sem local** e um entre "Auditório ou Pátio" — trava o #2.
-> 3. ⚠️ **Os 4 banners de andar sem a logo do Concefor conflitam com o TR 72/2026, item 4.1**
->    ("todos os itens deverão conter a logomarca do Concefor"). A intenção é a mesma do TR
->    (reaproveitamento institucional), mas a letra pede a marca — **validar com a fiscalização**,
->    como se fez com a caneta branca.
+> 3. **Confirmar o banner #6** (a lista traz 18/08 duas vezes).
 >
 > ⏰ **A conta do prazo:** entrega contratada em 07/08, evento em 17/08. As outras peças foram
 > para a gráfica em 22/07 e mesmo assim voltaram para ajuste — estas ainda não começaram.

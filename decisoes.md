@@ -61,16 +61,21 @@ pendência aberta em 20/07: **1** Concefor Geral · **1** de eventos paralelos (
 4º/Auditório e Laboratório). Detalhamento e referências visuais de 2024 em
 `comunicacao/producao/01-brindes-promocionais/banners/brief.md`.
 
-**Duas coisas dessa definição merecem atenção:**
-- Os **4 banners de andar vão sem a logo do Concefor**, para permanecerem no prédio depois do
-  evento. ⚠️ Isso **conflita com o item 4.1 do TR 72/2026** ("todos os itens deverão conter a
-  logomarca do Concefor, sem indicação da edição"). A intenção é a mesma do contrato —
-  reaproveitamento institucional —, mas a letra pede a marca: **validar com a fiscalização**,
-  como se fez com a caneta branca.
-- **Falta o LOCAL das atividades dos dias 17, 18 e 19.** O site publica hora e atividade, não a
-  sala; e os banners de programação pedem local. Some-se a isso que **3 dos 5 eventos paralelos
-  ainda estão "a definir"** e o "Ciência delas" oscila entre Auditório e Pátio. Sem esses dados
-  não há como fechar as artes 2 a 6.
+**Fechado na mesma noite:**
+- 📍 **Todas as palestras e mesas-redondas acontecem no PÁTIO.** Fecha 6 atividades (4 palestras
+  + 2 mesas). O que **não** é palestra nem mesa — credenciamento, eventos UAB/UnAC/NTE, mostras,
+  sessões técnicas, momentos culturais, coffees, almoço, premiação e o bloco de
+  abertura/lançamentos/celebração do dia 17 — **continua sem local** e foi pedido à Viviane.
+  Mapa por dia e por banner em `comunicacao/contexto/01-programacao.md`.
+- 🚫 **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos.** A orientação
+  da coordenação é que **não há problema em ficar sem a logo quando for necessário** — o que
+  encerra a divergência com o item 4.1 do TR 72/2026. E o **selo fica de fora de propósito**:
+  essas peças são permanentes no prédio, e o selo comemorativo as deixaria datadas.
+  **Consequência prática:** esses 4 mais o Concefor Geral — **5 dos 10** — não dependem de mais
+  ninguém e podem ser produzidos imediatamente.
+
+**Ainda aberto:** 3 dos 5 eventos paralelos estão "a definir" e o "Ciência delas" oscila entre
+Auditório e Pátio, o que segura o banner #2 junto com a programação do Educimat.
 
 📌 **Decisão junto:** o **banner de eventos paralelos fica por último para imprimir**, esperando a
 programação da **Aula Inaugural do Educimat** (já sabemos quando e onde: 20/08, 13h30–16h, Pátio).
