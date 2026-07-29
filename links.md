@@ -23,6 +23,10 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
   tudo que ela precisa tem que estar nessa pasta.
 - **🖼️ Banners do Concefor 2024 (Drive — PASTA PRINCIPAL DE REFERÊNCIA):**
   https://drive.google.com/drive/folders/1ZzI49nOTudvH9JwZ4AHHO8xQjuJWw4xQ?usp=sharing
+- **✅ Artes finalizadas de 2026 — padrão de aplicação da logo e dos elementos gráficos:**
+  **crachá** https://drive.google.com/drive/folders/1PTyCE19QF9BdUKiIaQHkrL3R57xAjaDX?usp=drive_link ·
+  **bloco** https://drive.google.com/drive/folders/1vZHprRIfRyIpi33J-f876UQjPJtl89yD?usp=drive_link
+  — as duas peças já aprovadas desta edição; qualquer arte nova deve conversar com elas.
 - **📊 Painel de produção (GitHub Pages):**
   https://vertumno.github.io/concefor-innovation/comunicacao/painel/
 - **🛰️ Eventos Satélites do VIII Concefor (Google Docs — documento vivo da Coordenação):**

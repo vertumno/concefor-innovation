@@ -104,6 +104,12 @@ resumem a **2 perguntas**.
   precisa tem que estar lá.
 - 🖼️ **Pasta principal de referência — banners do Concefor 2024:**
   https://drive.google.com/drive/folders/1ZzI49nOTudvH9JwZ4AHHO8xQjuJWw4xQ?usp=sharing
+- ✅ **Padrão desta edição — peças já finalizadas e aprovadas**, referência de **aplicação da logo
+  e dos elementos gráficos** (proporção, cor, distância entre marca e grafismo, tratamento do selo):
+  - **Arte do crachá:** https://drive.google.com/drive/folders/1PTyCE19QF9BdUKiIaQHkrL3R57xAjaDX?usp=drive_link
+  - **Arte do bloco:** https://drive.google.com/drive/folders/1vZHprRIfRyIpi33J-f876UQjPJtl89yD?usp=drive_link
+  > Os banners devem conversar com elas — é o material de 2026 já aprovado, mais atual que as
+  > referências de 2024.
 
 ## Referências visuais (edição 2024, em `_refs/`)
 - [`banner-geral-concefor-2024.png`](_refs/banner-geral-concefor-2024.png) — **modelo do #01**: fundo
