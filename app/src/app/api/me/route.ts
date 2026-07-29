@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { deleteIdentity, getDb, getIdentity } from "@/lib/db";
+import { deleteIdentity, getDb, getIdentity, getIdentityAttendeeId, getPerfil } from "@/lib/db";
 
 // Identidade do dispositivo (R7). GET devolve o primeiro nome + o próprio
 // checkin_code (para o "meu QR" — é o dado da própria pessoa, no aparelho
@@ -19,10 +19,14 @@ export function GET(req: Request) {
         where i.client_id = ?`,
     )
     .get(clientId) as { code: string } | undefined;
+  const attendeeId = getIdentityAttendeeId(clientId);
+  const perfil = attendeeId ? getPerfil(attendeeId) : { telefone: null, instagram: null };
   return NextResponse.json({
     logado: true,
     nome: id.nome.split(/\s+/)[0],
     checkinCode: row?.code ?? null,
+    telefone: perfil.telefone,
+    instagram: perfil.instagram,
   });
 }
 

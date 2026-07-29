@@ -58,6 +58,32 @@ na lista de links — é lá que qualquer mudança aparece primeiro.
 ---
 
 
+## 2026-07-29 — Conexões ganham contato preenchido pelo participante (telefone/Instagram) + foto e categoria do Even3
+
+**Decisão (Marquito, testando o networking em 29/07):** o cartão de conexão mostrava só
+nome + e-mail — e o Even3 não tem mais nada aproveitável (payload completo verificado:
+sem instituição, bio, telefone ou redes; só `photo`, com 24% de cobertura entre
+confirmados, e `registration_category`, 100%). Em vez de esperar dado que não existe:
+
+1. **O próprio participante preenche o contato** que quer compartilhar — telefone/WhatsApp
+   e Instagram — na tela do avatar (`/entrar`, logado), com aviso de que aparece **só para
+   as conexões dele**; campo vazio = não mostrar. Tabela nova `attendee_profile`,
+   separada de `attendees` para o re-sync do Even3 nunca sobrescrever.
+2. **Cartão de conexão enriquecido:** foto da inscrição (quando houver), etiqueta curta da
+   categoria (as 5 frases oficiais viram "Equipe Cefor/NTEs", "Estudante", …), e-mail,
+   WhatsApp (link `wa.me`) e Instagram.
+3. **Foto no quadradinho aceso** do mosaico (conexões); iniciais seguem como fallback e
+   para os não conectados — foto de quem a pessoa **não** conectou não aparece, mantendo a
+   mecânica "acender = conectar" e o piso de privacidade (PII só após conexão).
+
+**Por quê:** networking é troca de contato (decisão do benchmark EDEN — sem chat); e-mail
+sozinho é fraco pra isso no Brasil — WhatsApp/Instagram é como as pessoas de fato se
+falam. Fornecimento voluntário e com propósito explícito na UI (LGPD). Fluxo de deploy
+combinado em 29/07: **a equipe implementa sem sincronizar com a CGTI**; o Sérgio traz pro
+servidor quando possível (espelho GitLab sempre atualizado é a única obrigação nossa).
+
+---
+
 ## 2026-07-29 — App no ar no servidor da CGTI; espelho GitLab estava sem R1–R9 (corrigido); preparação da validação de 30/07
 
 **Fato novo (WhatsApp com o Sérgio/CGTI, manhã de 29/07):** o app está no ar em

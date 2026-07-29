@@ -10,7 +10,13 @@ import { useRouter } from "next/navigation";
 import QRCode from "qrcode";
 import { getClientId } from "@/lib/clientId";
 
-type Me = { logado: boolean; nome?: string; checkinCode?: string | null };
+type Me = {
+  logado: boolean;
+  nome?: string;
+  checkinCode?: string | null;
+  telefone?: string | null;
+  instagram?: string | null;
+};
 
 export default function EntrarPage() {
   const router = useRouter();
@@ -21,13 +27,52 @@ export default function EntrarPage() {
   const [erro, setErro] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
   const [qr, setQr] = useState<string | null>(null);
+  // Contato para conexões (preenchido pela própria pessoa, opcional).
+  const [telefone, setTelefone] = useState("");
+  const [instagram, setInstagram] = useState("");
+  const [salvandoPerfil, setSalvandoPerfil] = useState(false);
+  const [perfilMsg, setPerfilMsg] = useState<string | null>(null);
 
   useEffect(() => {
     fetch(`/api/me?clientId=${encodeURIComponent(getClientId())}`)
       .then((r) => r.json())
-      .then(setMe)
+      .then((m: Me) => {
+        setMe(m);
+        setTelefone(m.telefone ?? "");
+        setInstagram(m.instagram ?? "");
+      })
       .catch(() => setMe({ logado: false }));
   }, []);
+
+  async function salvarPerfil(e: React.FormEvent) {
+    e.preventDefault();
+    if (salvandoPerfil) return;
+    setSalvandoPerfil(true);
+    setPerfilMsg(null);
+    try {
+      const res = await fetch("/api/profile", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ clientId: getClientId(), telefone, instagram }),
+      });
+      const data = (await res.json()) as {
+        telefone?: string | null;
+        instagram?: string | null;
+        error?: string;
+      };
+      if (!res.ok) {
+        setPerfilMsg(data.error ?? "não foi possível salvar");
+      } else {
+        setTelefone(data.telefone ?? "");
+        setInstagram(data.instagram ?? "");
+        setPerfilMsg("Contato salvo — suas conexões já conseguem ver.");
+      }
+    } catch {
+      setPerfilMsg("sem conexão — tente de novo");
+    } finally {
+      setSalvandoPerfil(false);
+    }
+  }
 
   // "Meu QR": o nº do ingresso como QR — quem escanear se conecta com você.
   useEffect(() => {
@@ -101,6 +146,37 @@ export default function EntrarPage() {
             </p>
           </div>
         )}
+
+        <div className="section-label">Meu contato para conexões</div>
+        <form onSubmit={salvarPerfil} className="login-form">
+          <p className="page-sub" style={{ marginBottom: 4 }}>
+            Opcional: aparece <strong>apenas para quem se conectar com você</strong> em
+            Pessoas. Deixe em branco (e salve) para não mostrar.
+          </p>
+          <label className="login-label">
+            Telefone / WhatsApp
+            <input
+              inputMode="tel"
+              autoComplete="tel"
+              placeholder="Ex.: 27 99999-9999"
+              value={telefone}
+              onChange={(e) => setTelefone(e.target.value)}
+            />
+          </label>
+          <label className="login-label">
+            Instagram
+            <input
+              autoComplete="off"
+              placeholder="@seu.usuario"
+              value={instagram}
+              onChange={(e) => setInstagram(e.target.value)}
+            />
+          </label>
+          {perfilMsg && <p className="page-sub">{perfilMsg}</p>}
+          <button type="submit" className="login-btn" disabled={salvandoPerfil}>
+            {salvandoPerfil ? "Salvando…" : "Salvar contato"}
+          </button>
+        </form>
 
         <button type="button" className="admin-btn" onClick={sair}>
           Sair (desconectar este aparelho)
