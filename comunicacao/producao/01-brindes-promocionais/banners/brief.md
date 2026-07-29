@@ -34,7 +34,7 @@
 | 03 | **Dia 18/08** | Programação do dia: **data · horário · local** | idem #02 |
 | 04 | **Dia 19/08** | Programação do dia: **data · horário · local** | idem #02 |
 | 05 | **Dia 20/08** `[confirmar]` | ⚠️ A lista da Viviane traz "18/08" **duas vezes**. Como o dia 20 é o único sem banner próprio, assume-se que este seja o **20/08** (que tem premiação às 16h e momento cultural). **Confirmar antes de desenhar** | idem #02 |
-| 06 | **Eventos paralelos** | Todos os do **dia 20/08**, com local e horário de cada. 📌 **Último a imprimir**, esperando o Educimat | idem #02 |
+| 06 | **Eventos paralelos** | Os **6 eventos do dia 20/08**, com local e horário. ✅ **Destravado em 29/07:** todos os locais definidos e o evento do Educimat completo | idem #02 |
 | 07–10 | **Locais do Cefor** — 🔁 **uma arte só, 4 impressões** | Os quatro são **iguais**: lista Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório. Uma cópia por andar | — |
 
 **Conferência:** 1 (geral) + 4 (dias) + 1 (paralelos) + 4 (andares) = **10**. Bate com o contratado.
@@ -89,12 +89,11 @@ resumem a **2 perguntas**.
 | # | Falta | Onde resolver | Estado |
 |---|---|---|---|
 | 1 | **Dois locais e uma confirmação:** (a) **sessões técnicas** — 18/08 tarde, 19/08 manhã e tarde *(fecha o #04)*; (b) **Mostra de Produtos e Produções Técnicas** — 18/08, 2 blocos *(fecha o #03, junto com "a")*; (c) **confirmar** UAB/UnAC no Pátio e NTE no Auditório *(fecha o #02)* | Viviane (Coordenação Geral) | 🟡 **perguntado, aguardando resposta** |
-| 2 | **Locais de 3 dos eventos paralelos** ("A Definir") e a escolha entre **Auditório ou Pátio** no "Ciência delas" | Coordenação / coordenadores | 🟡 **perguntado, aguardando resposta** |
 | 3 | **Confirmar o banner #05** (18/08 repetido × 20/08) | Viviane | 🟡 **perguntado, aguardando resposta** |
-| 4 | **Aula Inaugural do Educimat** — 20/08, 13h30–16h, **Pátio**; falta a programação. 📌 **Decisão de 28/07: este banner (#06) fica por último para imprimir**, esperando o Educimat | Educimat | 🔴 |
+| ~~4~~ | ~~**Educimat**~~ → ✅ **resolvido em 29/07:** o evento entrou completo — *EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas*, 13h30–16h, **Pátio**, com Edmar Reis Thiengo e Ana Raquel Santos de Medeiros Garcia. **O #06 deixou de ser o último a imprimir** | — | ✅ |
 
-> ✅ **Nada trava os banners #01 (Concefor Geral) e #07–#10 (andares).** São 5 dos 10 — dá para
-> produzir agora, enquanto os locais não chegam.
+> ✅ **Nada trava #01, #06 e #07–#10.** São 6 dos 10 (em 3 artes) — dá para produzir agora,
+> enquanto os locais dos banners de dia não chegam.
 
 ## Onde a produção acontece (Drive)
 

@@ -47,7 +47,7 @@ comunicacao/
 | Quem faz o quê na CGTE | [contexto/04-equipe-cgte.md](contexto/04-equipe-cgte.md) |
 | Identidade visual, selo 20 anos, Canva | [contexto/05-identidade-visual.md](contexto/05-identidade-visual.md) |
 | Canais, tom de voz e diretrizes | [contexto/06-canais-e-diretrizes.md](contexto/06-canais-e-diretrizes.md) |
-| Eventos paralelos (5 confirmados) | [contexto/07-eventos-paralelos.md](contexto/07-eventos-paralelos.md) |
+| Eventos paralelos (**6 confirmados, todos com local**) | [contexto/07-eventos-paralelos.md](contexto/07-eventos-paralelos.md) |
 | Escrever notícia para o site (estilo + exemplos) | [contexto/08-referencia-noticias.md](contexto/08-referencia-noticias.md) |
 | **Estado de TODAS as peças** | [planejamento/board-producao.md](planejamento/board-producao.md) |
 | **Painel visual do status** (abrir no celular / mostrar em reunião) | [painel/](painel/) · [no ar](https://vertumno.github.io/concefor-innovation/comunicacao/painel/) |
@@ -63,7 +63,7 @@ comunicacao/
 
 ## Estado do momento (atualizar sempre)
 
-- **Hoje:** 28/07/2026 — faltam **20 dias** para a abertura (17/08).
+- **Hoje:** 29/07/2026 — faltam **19 dias** para a abertura (17/08).
 - **Cadência de publicação (definida em 27/07):** **um card por dia, em sequência, e só cards.**
   Os stories programados foram retirados do [calendário](planejamento/calendario-publicacao.md).
 - **Já no ar:** card do prazo de envio (16/07) · [Vanessa Battestin](https://www.instagram.com/p/DbF30gOOToU/) (21/07) ·
@@ -98,7 +98,7 @@ comunicacao/
 - **Transmissão + Libras:** ✅ definido — **todas as palestras e mesas-redondas** (16/07).
 - **Aguardando da Márcia/Coordenação:** ✅ camisa (**opção 2**) e bloco **aprovados em 28/07** ·
   🔴 **hosts dos podcasts** ·
-  infos da Aula Inaugural do Educimat · logo do Educimat p/ impressos · revisão da
+  ✅ eventos paralelos completos (29/07) · logo do Educimat p/ impressos · revisão da
   [notícia para a ACS](producao/02-pre-evento/noticia-acs/rascunho-noticia.md) ·
   atualização do **Even3** para espelhar o site (o app do evento lê de lá).
 - **Prioridades agora (por prazo):**
@@ -112,8 +112,9 @@ comunicacao/
      ⏰ **Prazos: 31/07** os do evento · **01/08** livro e Base · **03/08** MOOCs.
      ✍️ **Assinaturas desta edição:** Realização **Cefor** · Apoio **Ifes Campus Vila Velha e
      Educimat** — só essas logos.
-     👉 **6 dos 13 podem ser produzidos já — em apenas 3 artes:** #01 · #07–#10 (**uma arte só**,
-     impressa 4 vezes) · #11 (a capa do livro já está pronta).
+     👉 **8 dos 13 podem ser produzidos já — em 5 artes:** #01 · **#06** (eventos paralelos,
+     destravado em 29/07) · #07–#10 (**uma arte só**, impressa 4 vezes) · #11 (capa do livro
+     pronta) · #12 (Base de Conhecimentos, plataforma no ar).
      Os banners de dia esperam os **locais** que faltam.
      [Brief dos 10](producao/01-brindes-promocionais/banners/brief.md) ·
      [Brief dos institucionais](producao/02-pre-evento/banners-institucionais/brief.md)

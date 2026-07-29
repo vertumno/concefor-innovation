@@ -4,6 +4,39 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+
+## 2026-07-29 — Eventos paralelos fechados: 6 eventos, todos com local
+
+**Fato novo:** o documento vivo da Coordenação
+([Eventos Satélites do VIII Concefor](https://docs.google.com/document/d/1XpyWM2oB7L_ORyRBg62Jozkvgw3dFUAQvkDyyrmr4gw/edit))
+foi atualizado e **fechou todos os locais** do dia 20/08:
+
+| Evento | Local |
+|---|---|
+| IA além do chat (Cefor) | Laboratório de Informática |
+| "Ciência delas" · Rio Doce Escolar | **Auditório** *(era "Auditório ou Pátio")* |
+| Escola de Inovação (CCEC-EI/SEME/PMV) | **Sala 2** *(era a definir)* |
+| Entre Dois Mundos (Ifes) | **Sala 4** *(era a definir)* |
+| Workshop Pros@tec (Cefor) | **Sala 1** *(era a definir)* |
+| **EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas** | **Pátio** |
+
+**O evento do Educimat deixou de ser incógnita.** O que estava registrado como "Aula Inaugural do
+Educimat", sem coordenação e sem programação, agora tem **nome oficial** e coordenação —
+**Edmar Reis Thiengo e Ana Raquel Santos de Medeiros Garcia** (coordenacao.educimat@ifes.edu.br ·
+27 99968-2027), 13h30–16h, no Pátio. Só a programação interna dele segue sem divulgação, o que
+**não impede o banner** — ele leva nome, horário e local.
+
+**Consequência direta: o banner #06 (eventos paralelos) foi destravado.** Ele era "o último a
+imprimir" justamente porque esperava o Educimat; agora pode ir à gráfica junto com os outros.
+Com isso, **8 dos 13 banners podem ser produzidos já** — em 5 artes: #01, #06, a dos andares
+(que serve para #07–#10), #11 e #12.
+
+**O documento do Google Docs virou referência oficial na página da Andreia**, no bloco do #06 e
+na lista de links — é lá que qualquer mudança aparece primeiro.
+
+---
+
+
 ## 2026-07-29 — App no ar no servidor da CGTI; espelho GitLab estava sem R1–R9 (corrigido); preparação da validação de 30/07
 
 **Fato novo (WhatsApp com o Sérgio/CGTI, manhã de 29/07):** o app está no ar em
