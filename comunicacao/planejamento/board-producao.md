@@ -103,11 +103,11 @@
 > | # | Banner | Observação |
 > |---|---|---|
 > | 01 | **Concefor Geral** | identidade do evento |
-> | 02 | **Dia 17/08** — programação com data, horário e local | |
+> | 02 | **Dia 17/08** — programação com data, horário e atividade *(sem local)* | |
 > | 03 | **Dia 18/08** — idem | |
 > | 04 | **Dia 19/08** — idem | |
 > | 05 | **Dia `[confirmar]`** | a lista traz "18/08" duas vezes; provavelmente é **20/08** |
-> | 06 | **Eventos paralelos** (todos do dia 20/08) | 📌 **imprimir por último**, esperando a Aula Inaugural do Educimat |
+> | 06 | **Eventos paralelos** (os 6 do dia 20/08) | ✅ **destravado em 29/07** — todos os locais definidos e o evento do Educimat completo |
 > | 07–10 | **Locais do Cefor** — 🔁 **uma arte só, 4 impressões** (os quatro são iguais: Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório) | **sem a logo do Concefor e sem selo**, para ficarem no prédio depois do evento |
 > | 11–13 | **Institucionais** — livro dos 20 anos · Base de Conhecimentos · MOOCs | fora do TR, pagos pela UAB · **arte única para os três** · prazo 01/08 |
 >
@@ -128,17 +128,13 @@
 > - **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos** — são
 >   permanentes no prédio, e o selo os deixaria datados. A divergência com o item 4.1 do TR está
 >   coberta pela orientação da coordenação: não há problema em ficar sem a logo quando necessário.
->   👉 **Não dependem de ninguém: #01, os de andar (uma arte) e o #11 — 6 banners em 3 artes.**
+>   👉 **Não dependem de ninguém: #01, #02, #03, #04, #06, os de andar (uma arte), #11 e #12 — 11 banners em 8 artes.**
 >
-> 🟡 **O que ainda trava os outros 5 — tudo já perguntado à Viviane, aguardando resposta.**
-> Sobraram **5 blocos de programação, em 2 perguntas + 1 confirmação:**
+> ✅ **29/07 — quase nada trava mais.** Os banners de programação (02 a 05) **deixaram de levar o
+> local das atividades**, o que encerrou as lacunas de sala; e os eventos paralelos fecharam.
 >
 > | O que falta | Fecha qual banner |
 > |---|---|
-> | Local das **sessões técnicas** (18/08 tarde, 19/08 manhã e tarde) | **04**, e metade do 03 |
-> | Local da **Mostra de Produtos e Produções Técnicas** (18/08, 2 blocos) | **03**, junto com a de cima |
-> | **Confirmar** UAB/UnAC no Pátio e NTE no Auditório | **02** |
-> | Locais dos **eventos paralelos** (3 a definir + escolha no "Ciência delas") | **05** e **06** |
 > | **Confirmar o banner 05** (a lista traz 18/08 duas vezes) | **05** |
 >
 > 🔴 Só o **06** depende de terceiro fora da Coordenação: a programação da **Aula Inaugural do
@@ -176,7 +172,7 @@
 | Card palestrante — Mauro Oliveira — ✅ **desbloqueado em 28/07**: chegaram foto oficial e minibio. Falta produzir a arte e escrever a legenda. [Infos para o card](../producao/02-pre-evento/palestrantes/painel-producao-cards.md) | Elton | publicar 11/08 (último da série) | ⬜ |
 | Mensagem aos palestrantes (pedido de vídeo **+ material para o app**) | Elton | ⚠️ prazo era **18/07** — sem registro de envio; retorno esperado 03/08 | 🔴 |
 | Vídeos-convite dos palestrantes (receber até 03/08) | Elton *(a princípio)* | reels 08–14/08 | ⬜ |
-| Cards eventos paralelos (aguardando Educimat; **publicar tudo junto** após liberação da Márcia) | Elton *(a princípio)* | sugerido 04/08 | ⬜ |
+| Cards eventos paralelos — ✅ **6 eventos completos em 29/07** (todos com local; Educimat entrou com nome oficial). **Publicar tudo junto** após liberação da Márcia | Elton *(a princípio)* | sugerido 04/08 | ⬜ |
 | Contagem regressiva (10 peças) — ⏸️ **em revisão**: a regra "só cards" derruba 9 das 10 (são stories) | Elton *(a princípio)* | 07–16/08 | ⏸️ decidir |
 | ~~Banners institucionais — livro, MOOCs, Base de Conhecimentos~~ → **movido para a seção de Impressão** (é peça para gráfica) | — | — | ↗️ |
 | Notícia do Concefor para ACS — [rascunho pronto](../producao/02-pre-evento/noticia-acs/rascunho-noticia.md), falta revisão da Márcia | Elton *(a princípio)* | antes de 15/08 | 🟡 |

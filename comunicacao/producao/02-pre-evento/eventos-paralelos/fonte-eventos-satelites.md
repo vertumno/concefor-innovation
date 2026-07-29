@@ -2,16 +2,21 @@
 
 *Congresso Regional de Formação e Educação a Distância — material organizado para a equipe de comunicação, com as informações na íntegra de cada evento satélite inscrito, conforme fornecidas pelos coordenadores no formulário.*
 
-> 📍 **Atualização de 28/07/2026 — locais.** O documento vivo da Coordenação
-> ([Eventos Satélites do VIII Concefor](https://docs.google.com/document/d/1XpyWM2oB7L_ORyRBg62Jozkvgw3dFUAQvkDyyrmr4gw/edit))
-> passou a trazer o **local** de cada evento, que não existe nesta cópia:
+> ⚠️ **Esta cópia está DESATUALIZADA.** A fonte viva é o documento da Coordenação
+> ([Eventos Satélites do VIII Concefor](https://docs.google.com/document/d/1XpyWM2oB7L_ORyRBg62Jozkvgw3dFUAQvkDyyrmr4gw/edit)),
+> e a versão consolidada e conferida está em
+> [`contexto/07-eventos-paralelos.md`](../../../contexto/07-eventos-paralelos.md).
+>
+> ✅ **Atualização de 29/07/2026 — todos os locais definidos:**
 > **1 · IA além do chat →** Laboratório de Informática ·
-> **2 · Ciência delas →** Auditório **ou** Pátio (escolher) ·
-> **3 · Escola de Inovação →** a definir ·
-> **4 · Entre Dois Mundos →** a definir ·
-> **5 · Pros@tec →** a definir ·
-> **Aula Inaugural do Educimat →** Pátio, 13h30–16h (programação ainda pendente).
-> Tabela consolidada em [`contexto/07-eventos-paralelos.md`](../../../contexto/07-eventos-paralelos.md).
+> **2 · Ciência delas →** **Auditório** ·
+> **3 · Escola de Inovação →** **Sala 2** ·
+> **4 · Entre Dois Mundos →** **Sala 4** ·
+> **5 · Pros@tec →** **Sala 1** ·
+> **6 · EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas →** Pátio,
+> 13h30–16h, com **Edmar Reis Thiengo e Ana Raquel Santos de Medeiros Garcia**
+> (coordenacao.educimat@ifes.edu.br · 27 99968-2027) — programação interna ainda sem divulgação.
+> Este evento aparecia aqui como "Aula Inaugural do Educimat", nome que **não é mais o oficial**.
 
 ## **Evento 1: IA além do chat: da célula ao organismo baseado em IA**
 
