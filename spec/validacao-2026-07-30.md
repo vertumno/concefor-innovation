@@ -33,8 +33,8 @@ scripts de teste novos.
 - [x] Atualizar o espelho GitLab com tudo (R1–R9 + preparação da validação)
 - [ ] Mandar ao Sérgio a mensagem de atualização (abaixo) + `EVEN3_API_TOKEN` por
   canal seguro (não deixar o token no histórico do chat, se possível)
-- [ ] Depois do deploy: smoke test no IP — `/agenda` (4 dias reais do Even3),
-  `/ao-vivo`, `/pessoas`, `/projecao`, `/telao`, `/admin?token=…`
+- [x] Depois do deploy: smoke test no IP — feito 29/07 à tarde (`/agenda`,
+  `/projecao`, `/api/speakers` 200; composição do banco conferida)
 - [ ] Testar **do celular no Wi-Fi do IFES** (o IP é interno — se o Wi-Fi dos
   visitantes não alcançar a VLAN do servidor, a demo com a plateia não funciona;
   plano B abaixo)
@@ -43,13 +43,15 @@ scripts de teste novos.
 - [ ] Levar notebook com o repo atualizado (plano B) + carregador; testar
   `npm run dev` + `seed:validacao` local antes de sair
 
-**Sérgio (no servidor):**
-- [ ] Atualizar o repo do GitLab + rebuild + recriar container
-- [ ] `.env.local`: `ADMIN_TOKEN` (definir um segredo), `EVEN3_API_TOKEN`
-  (Marquito envia), `NEXT_PUBLIC_DEMO=0`, `DATABASE_PATH=/app/data/concefor.db`
-- [ ] **Apagar o `concefor.db` do volume** (base antiga do seed aposentado) e rodar
-  o sync do Even3 (README, seção Deploy, passo 3)
-- [ ] Rodar `scripts/seed-validacao.mjs` (grade de teste de amanhã)
+**Sérgio (no servidor):** ✅ **tudo feito na tarde de 29/07** — conferido remotamente:
+rotas novas no ar (`/agenda`, `/projecao`), banco com **15 sessões Even3 + 7 da
+validação e zero sobras** do seed antigo (logo o sync rodou → `EVEN3_API_TOKEN` está
+lá). Falta só **confirmar com ele o `ADMIN_TOKEN`** para o Marquito abrir o `/admin`
+na demo.
+- [x] Atualizar o repo do GitLab + rebuild + recriar container
+- [x] `EVEN3_API_TOKEN` configurado (sync rodou); ⚠️ confirmar `ADMIN_TOKEN` com o Marquito
+- [x] Base antiga zerada + sync do Even3 (15 sessões, 4 dias)
+- [x] `scripts/seed-validacao.mjs` rodado (7 sessões de 30/07)
 
 **Plano B (se o servidor falhar amanhã):** notebook do Marquito na mesma rede,
 `npm run build && npm run start` + `sync:even3` + `seed:validacao`; projetar
@@ -86,6 +88,46 @@ programação espelha o Even3 — que a organização ainda precisa terminar de 
 **Coletar (objetivo do R6):** quantos entraram sem ajuda? Reação ao telão e às
 perguntas? Ideias novas? → registrar em `../decisoes.md` + síntese em
 `../contexto/reunioes/`, e recortar o escopo do lançamento de 07/08.
+
+## Perguntas para a comissão (levar impresso/aberto na reunião)
+
+### Decisões que precisamos sair da reunião com resposta
+
+1. **Interagir vai exigir login?** Hoje reagir/perguntar são anônimos (decisão de 06/07:
+   anônimo é o piso até a validação). Liga a exigência pro evento ou mantém aberto?
+2. **Inscritos "não confirmados": o que são?** Dos 298 registros da API, **151 não estão
+   confirmados — e todos os 151 estão sem categoria** (parecem inscrições incompletas).
+   O número oficial de inscritos do evento é ~147 ou ~298? O app deve considerar **só
+   confirmados** no login, no mosaico de conexões e nos números do dashboard?
+   *(Checar no painel do Even3 com a Márcia como esses 151 aparecem lá.)*
+3. **Segundo fator do login:** a premissa de 20/07 ("CPF existe para todos") quebrou —
+   67/298 sem CPF utilizável. Ok aceitar o **e-mail da inscrição** como confirmação
+   alternativa no mesmo campo? *(confirmar com o Elton)*
+4. **Programação divergente:** o Even3 ainda não espelha o site (mesa "Tecnologia Delas"
+   de 18/08 etc.) — **quem** corrige o Even3 e **até quando**? O app mostra o que está lá.
+5. **Lançamento 07/08:** quem fecha o texto do e-mail com a Márcia na semana de 03/08?
+   Envio pelo Even3 ou e-mail comum?
+6. **DNS + HTTPS:** chamado na DRTI a caminho (Sérgio). Sem HTTPS não há app instalável
+   nem câmera de QR no lançamento — alguém da comissão pode ajudar a priorizar?
+
+### Logística do evento (rápidas)
+
+7. **Telão:** haverá projetor/tela dedicados ao telão nas palestras do Auditório? Podemos
+   ensaiar na sala real antes de 17/08 (R9)?
+8. **Operação durante o evento:** quem além do Marquito terá o token do `/admin`
+   (moderar perguntas, ajustar horários, abrir/fechar janelas)?
+9. **Transmissão × gravação por sessão** (checklist da Márcia desde 16/07) — como ficou?
+   Impacta os "momentos quentes" e o relatório final.
+10. **"Dica do dia"** (alimentação/arredores): a Márcia ainda topa mandar o conteúdo?
+    Até quando?
+
+### Para observar durante a demo (não perguntar — anotar)
+
+- Quantos entraram **sem ajuda** só com o QR do telão? Onde travou quem travou?
+- Alguém achou sozinho o "o que está acontecendo agora"? E o botão Ao Vivo?
+- O telão pulsando mudou o clima da sala? Alguém sugeriu que **distrairia** o palestrante?
+- As perguntas com upvote geraram uso real ou só curiosidade?
+- O que pediram que **não** existe (anotar pra fase 2 — não prometer na hora)?
 
 ## Mensagem pronta pro Sérgio (WhatsApp)
 

@@ -255,10 +255,12 @@ backlog em `app-v1.md` §8.
 | ~~Chave `EVEN3_API_TOKEN` em `app/.env.local` desta máquina~~ | **resolvida 20/07** — Marquito enviou; gravada no `.env.local` (gitignored) |
 | Even3 desatualizado em relação ao site (fonte da verdade editorial) | **mensagem à Márcia preparada em 20/07**: atualizar o Even3 pra espelhar o site (mesa "Tecnologia Delas" 18/08, intervalos, momentos culturais) e mantê-lo em dia — o app espelha o Even3; até corrigirem lá, o app mostra a versão desatualizada |
 | Cadastro do Even3 sem salas/tags/palestrantes | pedir à organização preencher lá (aí `db/enrich.sql` esvazia); enquanto isso o enriquecimento local cobre |
-| ~~Segundo fator do login (CPF parcial × e-mail)~~ | **decidido 20/07** — 4 primeiros dígitos do CPF |
+| ~~Segundo fator do login (CPF parcial × e-mail)~~ | **decidido 20/07** — 4 primeiros dígitos do CPF. ⚠️ **29/07: a premissa "CPF existe para todos" quebrou** — 67/298 inscritos sem CPF utilizável (66 deles sem categoria/não confirmados). Proposta mínima: aceitar o e-mail (o vice de 16/07) como confirmação alternativa no mesmo campo; confirmar com o Elton ou na validação |
 | Crachá: gráfica imprime lote personalizado (nome+QR+categoria)? | Elton verifica com a copiadora/gráfica; se sim, geramos a planilha a partir do sync Even3 (R2/R7) |
 | Impressora de etiquetas no campus (inscrições de última hora) | organização do evento verifica (20/07) |
 | Teste de carga das reações (SQLite, 100–200 simultâneos) | fazer no R9 (endurecimento), na URL real do R5 |
+| Inscritos não confirmados no Even3 (151/298, **todos** sem categoria — parecem inscrições incompletas) | apurado 29/07; decidir se o app filtra `confirmado=1` em login/mosaico/números — pergunta nº 2 da validação (`validacao-2026-07-30.md`) |
+| Limpar dados de teste do servidor antes do lançamento (07/08) | reações/perguntas/conexões criadas nos testes de 29–30/07 ficam em `timeline_events`/`connections`; sessões `demo-validacao-*` saem com `seed-validacao --limpar`; fazer a faxina no congelamento do R8 |
 | Convidados da validação de 30/07 | Márcia convida (CGPE, Simon, Rutinelli aventados) |
 | Texto do e-mail de lançamento (07/08) | escrever com a Márcia na semana de 03/08 |
 | Conteúdo de "dica do dia" / alimentação / arredores | pedir à Márcia (ela topou mandar) |
