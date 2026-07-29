@@ -147,19 +147,32 @@ Concefor — nunca uma curiosidade solta sobre ela.
   Arte atual: nome + "Coordenadora do Atlas das Mulheres do ES, Secretaria Estadual das Mulheres
   (SESM) e Incaper". V1 e v2 apagadas.
 
-## 8 · Dr. Mauro Oliveira · publicar 11/08
+## 8 · Dr. Mauro Oliveira · publicar 11/08 — ✅ DESBLOQUEADO 28/07
 
-> 🆕 **Entrou na programação em 21/07/2026**, na atualização do site oficial. É o oitavo
-> palestrante e **ainda não dá para produzir o card**: falta tudo.
+> ✅ **Foto e minibio chegaram em 28/07.** Dados completos e fontes em
+> [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md#dr-mauro-oliveira).
+> **Dá para produzir o card agora.**
 
-- **Foto:** `[a confirmar]` (pedir foto oficial, mesmo padrão dos outros 7)
+- **Foto:** [`_refs/fotos/Mauro_Oliveira.png`](_refs/fotos/Mauro_Oliveira.png)
+  ⚠️ é foto **de palco** (ele falando ao púlpito), não retrato de estúdio como as outras 7.
+  Está quadrada e em boa resolução, mas ele aparece **deslocado à direita** — **precisa de
+  recorte** para centralizar o rosto no padrão da série.
 - **No card · nome da palestra:** *"Inovações da IA para a Educação"* · 19/08, 16h30
-- **No card · info breve do palestrante:** `[a confirmar]` instituição e cargo
-- **Gancho para abrir a legenda:** `[a escrever]` depois da minibio. O tema conversa direto com a
-  palestra do Mariano Pimentel no mesmo dia, o que dá um bom ângulo.
-- **Arquivo:** ainda não existe
-- **Status:** ⛔ **bloqueado.** Sem foto e sem minibio não há o que produzir. Ver as pendências em
-  [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md).
+- **No card · info breve do palestrante:** **Dr. Mauro Oliveira · Professor do IFCE e do
+  doutorado da Fiocruz**
+  > Alternativa, se couber uma linha maior e a intenção for peso internacional:
+  > "Doutor pela Sorbonne · Professor do IFCE e do doutorado da Fiocruz".
+  > Segue a regra da série: **uma linha breve**, cargo/instituição, sem parágrafo de bio.
+- **Gancho para abrir a legenda** *(não vai no card)*: para ele, a IA generativa é **ruptura, não
+  evolução** — e a engenharia de prompt já é uma profissão que deveria entrar na universidade.
+  É disso que trata a palestra. Ângulo extra: a fala dele é no **mesmo dia** da do Mariano
+  Pimentel, também sobre IA — dá para amarrar as duas.
+- **Credenciais mais fortes para a legenda:** doutorado em Informática na **Sorbonne**,
+  pós-doutorados no **King's College London** e na **Ottawa University**, e passagem como
+  **Secretário de Telecomunicações do Ministério das Comunicações**.
+- **Arquivo:** ainda não existe → `2026-XX-XX_pre_card_palestrante-mauro-oliveira_v1.png`
+- **Status:** ⬜ **a produzir** — arte e legenda. É o único dos 8 sem legenda escrita
+  ([legendas.md](legendas.md) cobre os outros 7 + as 2 mesas).
 - **Por que é o último da série:** ficou em 11/08 justamente para dar o maior prazo possível
   até os dados dele chegarem. Ainda assim publica 4 dias antes do fim das inscrições (15/08).
 
@@ -244,7 +257,8 @@ do `_inbox`). Todos em **1080×1350**, conforme a spec. Arquivos em `cards/`.
 
 1. Os **2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") não vieram no lote. As legendas
    dos dois já estão prontas em [legendas.md](legendas.md), então é só a arte.
-2. O **card do Dr. Mauro Oliveira** (item 8 acima), bloqueado até chegarem foto e minibio.
+2. O **card do Dr. Mauro Oliveira** (item 8 acima) — ✅ **desbloqueado em 28/07**, com foto e
+   minibio em mãos. Falta a arte (com recorte da foto) e a legenda.
 
 ## Depois de cada card pronto
 1. Salvar o PNG final na pasta do palestrante ou direto aqui em `palestrantes/`

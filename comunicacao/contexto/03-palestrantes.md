@@ -14,7 +14,7 @@
 | Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | ⬜ |
-| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ⬜ | ⬜ | ⬜ | ⬜ |
+| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ✅ *(28/07, precisa recorte)* | ⬜ **produzir** | ⬜ | ⬜ |
 
 > ✅ Fotos oficiais dos 7 recebidas em 16/07/2026 →
 > `producao/02-pre-evento/palestrantes/_refs/fotos/` (PNG, nome = nome do palestrante).
@@ -106,16 +106,51 @@ com Felipe Maciel Tessarolo.
 - **Instagram:** @rutinha_fav
 
 ### Dr. Mauro Oliveira
-> 🆕 **Entrou na programação em 21/07/2026**, na atualização do site oficial. É o oitavo
-> palestrante e ainda **não temos nada dele** além do nome e do título da palestra.
->
-> Pendências antes de produzir card e legenda:
-> - `[a confirmar]` instituição e minibio
-> - `[a confirmar]` foto oficial (as dos outros 7 estão em `producao/02-pre-evento/palestrantes/_refs/fotos/`)
-> - `[a confirmar]` Instagram
->
-> Card agendado para **11/08**, último da série, para dar prazo até os dados chegarem.
+> 🆕 Entrou na programação em 21/07/2026. ✅ **Dados recebidos em 28/07** — foto oficial e
+> trajetória completa. **Fonte:** matéria de revista + lista de formação enviadas pela coordenação,
+> arquivadas em [`palestrantes/_refs/`](../producao/02-pre-evento/palestrantes/_refs/)
+> (`2026-07-28_mauro-oliveira-materia-1.png` e `-2.png`).
+> **Use esta seção como fonte única para tudo do Mauro** (card, legenda, app, notícia).
 
 - **Palestra:** *"Inovações da IA para a Educação"* (19/08, 16h30), logo após o coffee-break.
+- **Cargo atual (para o card):** **Professor do IFCE e do doutorado da Fiocruz.**
+- **Foto oficial:** [`_refs/fotos/Mauro_Oliveira.png`](../producao/02-pre-evento/palestrantes/_refs/fotos/Mauro_Oliveira.png)
+  — foto de palco, ele falando ao púlpito, quadrada e em boa resolução. ⚠️ **Precisa de recorte**
+  para o padrão dos outros 7 (rosto centralizado); ele aparece deslocado à direita no original.
+- **Instagram:** `[a confirmar]` — não veio junto.
+
+**Formação**
+- Eletrotécnico (IFCE) · Engenheiro Eletricista (UFC-Fortaleza)
+- Mestrado em Engenharia Elétrica (PUC-Rio)
+- MBA em Inovação (Steinbeis University, Alemanha)
+- **Doutorado em Informática (Sorbonne, Paris)**
+- Pós-doutorados em Telecomunicações: **King's College London** (Reino Unido) e
+  **Ottawa University** (Canadá)
+
+**Trajetória**
+- Diretor do CEFET Ceará (2000)
+- **Secretário de Telecomunicações do Ministério das Comunicações (2003)**
+- Secretário de Governo de CT&I do Ceará (2007)
+- Coordenador do Grupo de Transição em CT&I do Ceará (2022)
+- Professor do IFCE e do doutorado da Fiocruz
+- `[confirmar]` a legenda da foto na matéria também o descreve como **CEO de uma empresa digital e
+  coordenador de um programa de inovação** — o texto do print está pequeno e não dá para ler os
+  nomes com segurança. Confirmar antes de usar em qualquer peça.
+
+**O que ele defende** (da matéria, útil para gancho de legenda)
+- A IA generativa é **ruptura, não evolução**: enquanto a IA preditiva reconhecia padrões, a
+  generativa cria conteúdo a partir do conhecimento humano vetorizado — e já substitui
+  profissionais em tarefas convencionais.
+- Frase dele: *"Temos novas profissões aparecendo, só que a preocupação é que essa taxa não é tão
+  rápida quanto a taxa de desemprego das profissões que vão desaparecer, porque o crescimento da
+  IA é exponencial."*
+- **Engenharia de prompt como nova profissão**, que deveria ser incorporada ao ensino universitário.
+- Destaque da matéria: *"A inteligência artificial exige uma mudança radical."*
+
+**Lado pessoal** (registrado por vir na fonte; não usar em peça institucional sem checar)
+- Pai de 4 filhas Carolinas `[confirmar — o texto original diz "Pai de 4 Carolinas"]`;
+  avô de Laís, Luísa, Lucas, Lia e Pedrinho.
+- Toca pandeiro, nada no mar e gosta de malbec.
+
 - O tema conversa direto com a palestra do Mariano Pimentel no mesmo dia, também sobre IA na
   educação. Dá material para um card ou story ligando as duas.

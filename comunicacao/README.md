@@ -70,10 +70,19 @@ comunicacao/
   [Felipe Tessarolo](https://www.instagram.com/p/DbF4cUPh-TT/) (24/07) ·
   [Mariano Pimentel](https://www.instagram.com/p/DbT3A9apgf0/) (27/07) ·
   [Rutinelli Fávero](https://www.instagram.com/p/DbT4FRUJKh1/) (28/07).
-  **Próximo:** Márcia Oliveira, em 29/07. Restam 3 dos 7 individuais (Márcia · Mariella · Jaqueline).
+  **Agendados:** Márcia Oliveira (29/07) · Mariella Berger (30/07) · Jaqueline Sanz (31/07) —
+  artes liberadas, publicação programada. Com eles a série dos 7 individuais se fecha.
+- 🆕 **Card do Mauro Oliveira desbloqueado (28/07):** chegaram foto oficial e trajetória completa
+  ([dados](contexto/03-palestrantes.md#dr-mauro-oliveira) ·
+  [infos para o card](producao/02-pre-evento/palestrantes/painel-producao-cards.md)).
+  Falta produzir arte (a foto precisa de recorte) e escrever a legenda. Publica 11/08.
 - **Inscritos:** **288** pela API do Even3 (16/07) — capacidade 400.
 - **Próximos prazos externos:** envio final dos trabalhos até **03/08 (Even3)** · inscrições até 15/08.
-- **Gráfica:** artes enviadas em 22/07; **amostras avaliadas pela comissão em 28/07, 11h**.
+- **Gráfica:** artes enviadas em 22/07. ✅ **Amostras dos brindes avaliadas e finalizadas em 28/07**
+  — conduzido por **Viviane e Dennis**.
+  🔴 **Chegou uma 3ª leva de artes da gráfica na noite de 28/07** (ainda por WhatsApp), guardada em
+  [`_artes-enviadas-pela-grafica/`](producao/01-brindes-promocionais/_artes-enviadas-pela-grafica/)
+  — **falta conferir se os três ajustes pedidos foram atendidos**.
   ✅ **28/07 — retorno das montagens enviado:** **camisa, bloco e crachá aprovados**; **caneta**
   (branca, logo só "Concefor"), **copo** (selo 20 anos no lado oposto e maior) e **bolsa**
   (alinhamento das logos) voltam para nova montagem. Grade das camisas informada:
@@ -108,7 +117,9 @@ comunicacao/
      [Brief](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md)
   5. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
      (vídeo-convite **+ material para o app**) — prazo interno era 18/07 e o retorno é 03/08.
-  6. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
+  6. Conferir a **3ª leva de artes da gráfica** e responder (por e-mail).
+  7. **Card do Mauro Oliveira** — dados em mãos desde 28/07, publica 11/08.
+  8. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
 - **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
 
 > Mantenha este bloco e o [board de produção](planejamento/board-producao.md) atualizados —

@@ -14,7 +14,7 @@
     --ink:#152238; --muted:#5c6b82; --line:#e5e9f0; --bg:#f4f6fa; --card:#fff;
     /* status */
     --s-feito:#15803D; --s-aprov:#2563EB; --s-prod:#D97706; --s-todo:#94A3B8;
-    --s-bloq:#DC2626; --s-pausa:#8B5CF6;
+    --s-bloq:#DC2626; --s-pausa:#8B5CF6; --s-agend:#0891B2;
     /* fases */
     --f-impressao:#F59E0B; --f-pre:#00A6A6; --f-durante:#15803D; --f-pos:#64748B; --f-ideias:#8B5CF6;
   }
@@ -303,9 +303,6 @@ const PECAS = [
   { nome:'Fundo de palco', fase:'impressao', status:'bloqueado', resp:'—', prazo:null,
     nota:'Citado na descrição do TR mas sem item contratado. Precisa confirmar se existe verba ou se sai de outro lugar.' },
 
-  { nome:'Squeezes', fase:'impressao', status:'bloqueado', resp:'—', prazo:null,
-    nota:'Não está no TR. O copo bucks parece ter substituído: confirmar antes de produzir arte.' },
-
   { nome:'Arte do bolo · 20 anos do Cefor', fase:'impressao', status:'todo', resp:'Andreia', prazo:null,
     nota:'Não é item de gráfica. Alinhar com quem fornece o bolo.' },
 
@@ -340,23 +337,29 @@ const PECAS = [
     links:[{t:'Ver no Instagram',u:'https://www.instagram.com/p/DbT4FRUJKh1/'},
            {t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-rutinelli-favero_v1.png'}] },
 
-  { nome:'Card palestrante · Márcia Oliveira', fase:'pre', status:'aprovacao', resp:'Elton',
-    prazo:'2026-07-29', nota:'Arte v2 liberada. Mesa "Tecnologia Delas".',
+  { nome:'Card palestrante · Márcia Oliveira', fase:'pre', status:'agendado', resp:'Elton',
+    prazo:'2026-07-29', prazoTx:'agendado 29/07',
+    nota:'Arte v2 liberada e publicação agendada. Mesa "Tecnologia Delas".',
     links:[{t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-marcia-oliveira_v2.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
-  { nome:'Card palestrante · Mariella Berger', fase:'pre', status:'aprovacao', resp:'Elton',
-    prazo:'2026-07-30', nota:'Arte v1 liberada. Mesa "Tecnologia Delas".',
+  { nome:'Card palestrante · Mariella Berger', fase:'pre', status:'agendado', resp:'Elton',
+    prazo:'2026-07-30', prazoTx:'agendado 30/07',
+    nota:'Arte v1 liberada e publicação agendada. Mesa "Tecnologia Delas".',
     links:[{t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
-  { nome:'Card palestrante · Jaqueline Sanz', fase:'pre', status:'aprovacao', resp:'Elton',
-    prazo:'2026-07-31', nota:'Arte v3 liberada. Mesa "Tecnologia Delas". Último dos 7 individuais.',
+  { nome:'Card palestrante · Jaqueline Sanz', fase:'pre', status:'agendado', resp:'Elton',
+    prazo:'2026-07-31', prazoTx:'agendado 31/07',
+    nota:'Arte v3 liberada e publicação agendada. Mesa "Tecnologia Delas". Último dos 7 individuais.',
     links:[{t:'Arte v3',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-jaqueline-sanz_v3.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
-  { nome:'Card palestrante · Mauro Oliveira', fase:'pre', status:'bloqueado', resp:'Elton',
-    prazo:'2026-08-11', nota:'Sem foto e sem minibio. Entrou na programação em 21/07 e é o último card da série.' },
+  { nome:'Card palestrante · Mauro Oliveira', fase:'pre', status:'todo', resp:'Elton',
+    prazo:'2026-08-11',
+    nota:'DESBLOQUEADO em 28/07: chegaram a foto oficial e a minibio completa. Falta produzir a arte e escrever a legenda. Último card da série.',
+    links:[{t:'Infos para o card',u:'producao/02-pre-evento/palestrantes/painel-producao-cards.md'},
+           {t:'Foto',u:'../producao/02-pre-evento/palestrantes/_refs/fotos/Mauro_Oliveira.png'}] },
 
   { nome:'Card mesa · "Desafios da EaD"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-01',
     nota:'GARGALO: os 7 cards individuais acabam em 31/07 e esta arte ainda não existe. Legenda pronta, composição fechada (Rutinelli + Tessarolo). 01/08 é sábado.',
@@ -431,7 +434,7 @@ const PECAS = [
 
 const MARCOS = [
   { data:'2026-07-22', tx:'Envio das artes para a gráfica', sub:'crachá, bloco e camisa prontos' },
-  { data:'2026-07-28', tx:'Amostras dos brindes avaliadas', sub:'11h · comissão · Marquito e/ou Andreia' },
+  { data:'2026-07-28', tx:'Amostras dos brindes avaliadas', sub:'FINALIZADO · realizado por Viviane e Dennis' },
   { data:'2026-07-28', tx:'Retorno das montagens à gráfica', sub:'camisa, bloco e crachá aprovados; caneta, copo e bolsa com ajuste' },
   { data:'2026-07-30', tx:'Validação do app', sub:'com a coordenação' },
   { data:'2026-08-01', tx:'Banners de lançamentos na gráfica', sub:'livro, MOOCs, Base' },
@@ -446,19 +449,19 @@ const AGUARDANDO = [
   { q:'Informações da Aula Inaugural do Educimat', who:'Márcia / Educimat' },
   { q:'Logo do Educimat para os impressos', who:'Educimat' },
   { q:'Revisão da notícia para a ACS', who:'Márcia' },
-  { q:'Foto e minibio do Mauro Oliveira', who:'Coordenação' },
   { q:'Montagens refeitas de caneta, copo e bolsa', who:'Gráfica · ajustes pedidos em 28/07' }
 ];
 
 /* ======================== FIM DOS DADOS ======================== */
 
 const STATUS = {
-  feito:     { rot:'Entregue',     cor:'var(--s-feito)', ordem:5 },
+  feito:     { rot:'Entregue',     cor:'var(--s-feito)', ordem:6 },
   aprovacao: { rot:'Em aprovação', cor:'var(--s-aprov)', ordem:2 },
   producao:  { rot:'Em produção',  cor:'var(--s-prod)',  ordem:3 },
   todo:      { rot:'A fazer',      cor:'var(--s-todo)',  ordem:4 },
+  agendado:  { rot:'Agendado',     cor:'var(--s-agend)', ordem:5 },
   bloqueado: { rot:'Bloqueado',    cor:'var(--s-bloq)',  ordem:1 },
-  pausado:   { rot:'Pausado',      cor:'var(--s-pausa)', ordem:6 }
+  pausado:   { rot:'Pausado',      cor:'var(--s-pausa)', ordem:7 }
 };
 
 const FASES = {

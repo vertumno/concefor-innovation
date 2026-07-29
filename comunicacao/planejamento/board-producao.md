@@ -21,7 +21,7 @@
 > |---|---|
 > | **22/07 (quarta)** | **Envio das artes para a gráfica.** É amanhã. |
 > | Depois do envio | A gráfica devolve a **prova digital** para aprovação |
-> | **28/07 (terça), 11h** | **Amostras dos brindes avaliadas pela comissão.** Acompanhar: **Marquito e/ou Andreia** |
+> | ~~28/07 (terça), 11h~~ | ✅ **Amostras dos brindes avaliadas e FINALIZADAS** — quem conduziu foi **Viviane e Dennis** (não Marquito/Andreia, como estava previsto) |
 > | 07/08 | Prazo-limite contratado de entrega da gráfica (10 dias antes do evento) |
 >
 > Ou seja, o gargalo **não é 07/08**: é o envio de amanhã e a avaliação das amostras em 28/07.
@@ -113,7 +113,7 @@
 | 🏷️ **Etiquetas com os nomes** (crachá) | 🔴 **duas decisões em aberto (reforçado em 28/07): quais etiquetas comprar e como será a impressão dos nomes.** Sequência obrigatória: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo → testar numa amostra. [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) | ___ | **decidir até 04/08** *(sugerido)*; testar antes da entrega dos 400; imprimir até a véspera de 17/08 | 🔴 |
 | **Banners de lançamentos** — livro Cefor, MOOCs, Base de Conhecimentos | 🔴 **os 3 banners da Vanessa ainda não foram feitos** (pedido de 14/07). Definido 20/07: à parte, **pagos pela UAB** — não saem do TR nem dos 10 banners. Travas: decidir arte única × três artes e conseguir os links de MOOCs e Base de Conhecimentos (viram QR code). [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | Elton *(arte)* / UAB *(custeio)* | **arte até 01/08** → Vanessa leva à gráfica na volta das férias | 🔴 |
 | **Fundo de palco** | 🔴 citado na descrição do TR mas **sem item contratado** — confirmar | ___ | ___ | ⬜ |
-| Arte **squeezes** | 🟡 não está no TR — o copo bucks parece ter substituído; confirmar | ___ | ___ | ⬜ |
+| ~~Arte **squeezes**~~ | ❌ **CANCELADO (28/07): não será produzido.** O **copo bucks** ocupou o lugar — é ele que vai no kit. Encerra a dúvida aberta desde 20/07 | — | — | ❌ |
 | Arte **bolo** comemoração (20 anos do Cefor) | não é item de gráfica; alinhar com quem fornece o bolo | **Andreia** | ___ | ⬜ |
 
 ## Pré-evento
@@ -133,7 +133,7 @@
 | Card palestrante — Jaqueline Sanz — arte liberada | Elton | publicar 31/07 | 🔵 |
 | Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton | publicar **01/08** (sáb) | ⬜ **próxima arte a fazer** |
 | Card mesa "Tecnologia Delas" — **arte ainda não produzida** (legenda pronta) | Elton | publicar **02/08** (dom) | ⬜ |
-| 🆕 Card palestrante — Mauro Oliveira — **bloqueado**: sem foto e sem minibio (entrou na programação em 21/07) | Elton | publicar 11/08 (último da série) | ⛔ |
+| Card palestrante — Mauro Oliveira — ✅ **desbloqueado em 28/07**: chegaram foto oficial e minibio. Falta produzir a arte e escrever a legenda. [Infos para o card](../producao/02-pre-evento/palestrantes/painel-producao-cards.md) | Elton | publicar 11/08 (último da série) | ⬜ |
 | Mensagem aos palestrantes (pedido de vídeo **+ material para o app**) | Elton | ⚠️ prazo era **18/07** — sem registro de envio; retorno esperado 03/08 | 🔴 |
 | Vídeos-convite dos palestrantes (receber até 03/08) | Elton *(a princípio)* | reels 08–14/08 | ⬜ |
 | Cards eventos paralelos (aguardando Educimat; **publicar tudo junto** após liberação da Márcia) | Elton *(a princípio)* | sugerido 04/08 | ⬜ |

@@ -101,8 +101,9 @@ Registrado porque afeta o planejamento de produção; nada disso está contratad
 3. **Banners de lançamentos** (livro Cefor, MOOCs, Base de Conhecimentos — pedido da Vanessa em
    14/07): decisão de 20/07 — **à parte, custeados pela UAB (Vanessa)**. Não saem do TR nem dos 10
    banners de sinalização. Arte sob responsabilidade da CGTE.
-4. **Squeezes** e **bolo dos 20 anos**, listados no [README da fase 1](../README.md),
-   **não estão no TR**. O copo bucks parece ter ocupado o lugar da squeeze — confirmar.
+4. **Squeezes:** ❌ **decidido em 28/07 — não serão produzidas.** O **copo bucks** ocupou o lugar
+   delas e é ele que vai no kit. Encerra a dúvida aberta em 20/07.
+   O **bolo dos 20 anos** continua fora do TR (não é item de gráfica).
 
 ---
 

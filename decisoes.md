@@ -39,6 +39,21 @@ reaprovadas com folga sobre **07/08**, a entrega contratada. Camisa, bloco e cra
 Oliveira (29/07), Mariella Berger (30/07) e Jaqueline Sanz (31/07) — e aí a série se esgota, com
 as **duas artes de mesa** (01 e 02/08) ainda por produzir. Segue sendo o gargalo da divulgação.
 
+**Mais três fatos de 28/07, à noite:**
+
+- ❌ **Squeezes canceladas: não serão produzidas.** O **copo bucks** ocupou o lugar delas no kit —
+  encerra a dúvida que estava aberta desde 20/07 (a squeeze nunca esteve no TR 72/2026).
+- ✅ **Amostras dos brindes avaliadas e finalizadas**, conduzidas por **Viviane e Dennis** (a
+  previsão era Marquito e/ou Andreia).
+- ✅ **Card do Mauro Oliveira desbloqueado.** Chegaram a **foto oficial** e a **trajetória
+  completa** dele (matéria de revista + lista de formação), arquivadas em
+  `comunicacao/producao/02-pre-evento/palestrantes/_refs/`. O registro canônico — e fonte única
+  para card, legenda, app e notícia — é a seção dele em
+  `comunicacao/contexto/03-palestrantes.md`. Credencial de card: **Professor do IFCE e do
+  doutorado da Fiocruz**; doutorado na Sorbonne e pós-doutorados no King's College London e na
+  Ottawa University sustentam a legenda. ⚠️ A foto é **de palco** e precisa de recorte para o
+  padrão da série.
+
 **O que fica pendente de impressão depois desta rodada** (anotado em 28/07 para não sumir):
 1. **Arte dos 10 banners do TR** — é o **último item contratado sem arte**, e nem o rateio dos 10
    está fechado (banner padrão do Concefor × sinalização/programação × placas). Brief novo em

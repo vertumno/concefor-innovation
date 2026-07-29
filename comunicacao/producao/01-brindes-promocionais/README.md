@@ -31,7 +31,7 @@ Quantidades e medidas fechadas — ver o doc de especificações.
 > [`_especificacoes/email-grafica-envio-artes.md`](_especificacoes/email-grafica-envio-artes.md).
 
 ## Fora do TR — a definir
-- **Squeezes:** não estão no TR (o copo bucks parece ter substituído) — confirmar.
+- ~~**Squeezes**~~ ❌ **cancelado em 28/07: não será produzido.** Quem vai no kit é o **copo bucks**.
 - **Bolo** dos 20 anos: não é item de gráfica; alinhar com quem fornece (17/08, 20h). Resp.: Andreia.
 - **Placas de sinalização** (credenciamento, auditório, QRs), **fundo de palco**, **banners
   institucionais** e **banner padrão do Concefor**: ver a seção de Impressão do
