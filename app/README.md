@@ -28,11 +28,15 @@ Mobile-first, instalável.
 ```bash
 cd app
 npm install
-npm run seed        # cria ./data/concefor.db e carrega a programação oficial
+npm run sync:even3  # cria ./data/concefor.db com a programação oficial do Even3 (exige EVEN3_API_TOKEN)
 npm run dev         # app com dados reais do SQLite (relógio real) — http://localhost:3000
 # ou:
 npm run dev:demo    # dados de demonstração + relógio simulado — nada a configurar
 ```
+
+> ⚠️ O antigo `npm run seed` está **aposentado**: recriaria a programação manual
+> desatualizada por cima. A fonte da programação é a **API do Even3** (`sync:even3`),
+> que é idempotente e preserva sessões locais de teste (ids sem prefixo `even3-`).
 
 Requisitos: **Node.js 22+**. O `better-sqlite3` é binário nativo — em Linux/Alpine pode exigir
 `python3`, `make` e `g++` para compilar no `npm install` (o Dockerfile já cuida disso).
@@ -51,11 +55,31 @@ docker run -d --name concefor-app -p 3000:3000 \
   --env-file .env.local \
   concefor-app
 
-# 3. semear a base UMA vez (programação oficial)
-docker run --rm -v concefor-data:/app/data concefor-app node scripts/seed.mjs
+# 3. carregar a programação oficial do Even3 (idempotente — pode rodar sempre)
+docker run --rm -v concefor-data:/app/data --env-file .env.local \
+  concefor-app node scripts/sync-even3.mjs
 ```
 
 O volume `/app/data` guarda o arquivo SQLite entre reinícios e atualizações.
+
+> ⚠️ **Se a base foi criada com o antigo `scripts/seed.mjs`** (programação manual,
+> hoje desatualizada): apague o arquivo `concefor.db` do volume e rode o passo 3 de
+> novo — o banco renasce só com a programação oficial do Even3. Depois do primeiro
+> sync, o re-sync também pode ser disparado pelo painel `/admin` (botão
+> "re-sincronizar Even3"), sem acesso ao servidor.
+
+### Sessões de teste (período de validação)
+
+Enquanto o app não é público, `scripts/seed-validacao.mjs` cria uma grade de sessões
+fictícias para demonstrar o "Ao Vivo"/telão em dia de teste (elas sobrevivem ao
+re-sync; horários ajustáveis pelo `/admin`):
+
+```bash
+docker run --rm -v concefor-data:/app/data --env-file .env.local \
+  concefor-app node scripts/seed-validacao.mjs            # grade de 30/07/2026
+#   ... node scripts/seed-validacao.mjs --data=AAAA-MM-DD # outro dia
+#   ... node scripts/seed-validacao.mjs --limpar          # remover tudo depois
+```
 
 ### Dependências de infraestrutura
 
@@ -83,7 +107,8 @@ Baseie-se em `.env.example`. Segredos **não** estão no repositório (`.env.loc
 - **Backup:** copiar o arquivo `concefor.db` do volume `/app/data` — o backup é o próprio arquivo.
 - **Atualizar:** `git pull` → `docker build` → recriar o container. Os dados persistem no volume, sem re-seed.
 - **Logs:** `docker logs -f concefor-app`.
-- **Re-seed:** `npm run seed` (ou o comando docker acima) limpa e recarrega a programação; as reações em `timeline_events` são preservadas.
+- **Atualizar a programação:** botão "re-sincronizar Even3" no `/admin`, ou o comando
+  docker do passo 3; reações e demais registros em `timeline_events` são preservados.
 
 ## Modo demonstração (`NEXT_PUBLIC_DEMO=1`)
 
@@ -105,8 +130,9 @@ src/
 ├── components/          SessionCard · Reactions · Telao · Speakers · TimeStamp
 └── lib/                 db (SQLite, interface única) · reactions · clientId (anônimo) · favorites · sessions · types
 
-db/                      schema.sql + seed.sql (programação oficial)
-scripts/                 seed.mjs (npm run seed) + seed-live.mjs (npm run seed:live)
+db/                      schema.sql + enrich.sql (enriquecimento local pós-sync)
+scripts/                 sync-even3.mjs (fonte da programação) + seed-live.mjs +
+                         seed-validacao.mjs (grade de teste) + seed.mjs (aposentado)
 ```
 
 O schema (`db/schema.sql`) é aplicado de forma idempotente no boot do `db.ts` e no seed. A UI
@@ -120,6 +146,7 @@ a dados, o que mantém barata uma futura volta ao Postgres.
 - [x] Backend próprio: SQLite local (`lib/db.ts`) + `GET /api/sessions` + `npm run seed`
 - [x] Reações na sessão ao vivo → `timeline_events`, com throttle anti-flood
 - [x] Tempo real (SSE) + modo telão "batimento cardíaco" em `/telao`
-- [ ] Dashboard admin ao vivo + relatório exportável
-- [ ] Sync da programação oficial via API do Even3 (substitui o seed)
+- [x] Dashboard admin ao vivo (`/admin`) + relatório (`/admin/relatorio`)
+- [x] Sync da programação oficial via API do Even3 (substituiu o seed)
+- [x] Perguntas com upvote · login opcional pelo crachá · mosaico de conexões
 - [ ] Wiring do `next-pwa` (service worker + cache offline da programação)

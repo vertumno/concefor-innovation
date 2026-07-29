@@ -4,6 +4,42 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-07-29 — App no ar no servidor da CGTI; espelho GitLab estava sem R1–R9 (corrigido); preparação da validação de 30/07
+
+**Fato novo (WhatsApp com o Sérgio/CGTI, manhã de 29/07):** o app está no ar em
+**http://172.17.159.15:3000** (servidor da CGTI). Deploy é **manual** — o Sérgio puxa o
+espelho do GitLab no servidor e rebuilda; ele vai estudar integração automática (com o
+Eduardo) e vai abrir chamado na DRTI para o DNS (`app.concefor.cefor.ifes.edu.br` foi a
+forma aventada). **A validação com a comissão é 30/07, das 9h às 10h** (antes constava 10h).
+
+**Diagnóstico:** a versão no ar estava **sem tudo de 20/07** (rotas `/agenda`, `/ao-vivo`,
+`/pessoas` → 404) e com o banco semeado pela **programação manual aposentada** (23 sessões).
+Causa raiz dupla: (1) o **espelho GitLab de 23/07 foi gerado de uma linha do histórico que
+ainda não continha R1–R9** — esses commits só entraram no `main` pelo merge `0a08bb0`,
+feito *depois* do push do espelho; (2) o README de deploy ainda mandava rodar o
+`seed.mjs` aposentado, e o Sérgio seguiu o README (corretamente).
+
+**Decisões/ações de 29/07:**
+
+1. **Espelho GitLab atualizado** pela rotina documentada em 23/07 (re-split + merge no
+   `gitlab-app` + push), agora contendo R1–R9 e a preparação da validação. Lição: **após
+   qualquer merge no `main` que toque `app/`, rodar a rotina do espelho** — o push de 23/07
+   foi feito antes do merge e ninguém percebeu.
+2. **README do app reescrito no que importa ao deploy**: a fonte da programação é o
+   `sync:even3` (o `npm run seed` está aposentado e o README agora avisa); passo de
+   migração para base criada com o seed antigo (apagar `concefor.db` do volume e re-sincronizar).
+3. **`npm run seed:validacao`** (novo `scripts/seed-validacao.mjs`): grade de **7 sessões
+   fictícias em 30/07, 9h–17h30** — a validação às 9h e blocos de teste o dia todo (pedido
+   do Marquito: o teste pode se estender). Ids `demo-validacao-*` sobrevivem ao re-sync,
+   horários ajustáveis pelo `/admin`, `--limpar` remove tudo, `--data=` replica noutro dia.
+4. **Página `/projecao`**: QR de acesso + endereço, tela cheia para o telão. O QR aponta
+   pro endereço em que a página foi aberta — vale pro IP hoje e pro DNS depois, sem configurar.
+5. **Roteiro da validação e checklists** (Marquito e Sérgio) em `spec/validacao-2026-07-30.md`,
+   incluindo a mensagem pronta pro Sérgio e os riscos: IP interno (só rede IFES), sem HTTPS
+   (sem PWA instalável nem câmera de QR), participantes remotos só por tela compartilhada.
+
+---
+
 ## 2026-07-28 — Brindes: camisa, bloco e crachá aprovados; caneta branca; três ajustes na gráfica
 
 **Decisão (e-mail enviado à Brindes Expresso em 28/07, registrado em

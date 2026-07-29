@@ -12,6 +12,7 @@
     "seed": "node scripts/seed.mjs",
     "sync:even3": "node scripts/sync-even3.mjs",
     "seed:live": "node scripts/seed-live.mjs",
+    "seed:validacao": "node scripts/seed-validacao.mjs",
     "seed:demo": "node scripts/seed-demo.mjs"
   },
   "dependencies": {

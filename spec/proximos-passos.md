@@ -124,11 +124,18 @@ atualizando e o re-sync funciona.
 **Pronto quando:** dois navegadores perguntam/votam e a ordem atualiza ao vivo; admin
 consegue fechar a janela e ocultar uma pergunta.
 
-### R5 — Deploy em endereço estável (articular com a TI)
+### R5 — Deploy em endereço estável (articular com a TI) 🟡 (no ar por IP desde 29/07)
 
 **Objetivo:** sair do notebook do Marquito. Para a validação de 30/07 (participantes
 remotos!) e obrigatório pro lançamento. **HTTPS é requisito**, não luxo: PWA instalável e
 a câmera do QR scanner (R7/networking) só funcionam em secure context.
+
+> **29/07:** app no ar em **http://172.17.159.15:3000** (servidor CGTI, Sérgio). Deploy
+> **manual** (Sérgio puxa o espelho GitLab no servidor); integração automática em estudo.
+> DNS: Sérgio testa via hosts e abre chamado na DRTI (`app.concefor.cefor.ifes.edu.br`).
+> **Faltam:** DNS, HTTPS/proxy e rotina de backup do volume. A primeira versão no ar
+> estava desatualizada (espelho sem R1–R9) e com a base do seed antigo — corrigido em
+> 29/07, ver `validacao-2026-07-30.md` e `../decisoes.md`.
 
 - Articular com a TI do Cefor: onde roda o Docker, DNS/URL amigável, HTTPS (proxy
   reverso), persistência do volume `./data` + backup do arquivo SQLite.
@@ -138,10 +145,14 @@ a câmera do QR scanner (R7/networking) só funcionam em secure context.
 **Pronto quando:** URL estável com HTTPS abre o app de fora da rede do Cefor, reações
 fluem pro telão em <2s e o arquivo do banco sobrevive a restart do container.
 
-### R6 — Validação com a comissão (30/07, 10h)
+### R6 — Validação com a comissão (30/07, **9h às 10h**)
 
 **Objetivo:** validar o app reformulado com gente de verdade e decidir o corte final do
 lançamento.
+
+> **Preparação pronta em 29/07** — roteiro, checklists (Marquito + Sérgio) e riscos em
+> **`validacao-2026-07-30.md`**. Sessões fictícias do dia inteiro: `npm run seed:validacao`;
+> QR de acesso projetável: página `/projecao`.
 
 - Preparo: sessão fictícia no horário da reunião (extra local, sobrevive ao sync), QR de
   acesso projetado, telão, roteiro de 10 min (entrar → navegar pela barra → Ao Vivo →
@@ -240,7 +251,7 @@ backlog em `app-v1.md` §8.
 
 | Pendência | Estado / onde está |
 |---|---|
-| Servidor do Cefor + URL/HTTPS para deploy (R5) | **em andamento com a CGTI (Saymon)** — hardware passado; especificação de software enviada 20/07 (`deploy-vm.md`) |
+| Servidor do Cefor + URL/HTTPS para deploy (R5) | **no ar por IP desde 29/07** (http://172.17.159.15:3000, Sérgio/CGTI); DNS com a DRTI e HTTPS pendentes; deploy manual via espelho GitLab |
 | ~~Chave `EVEN3_API_TOKEN` em `app/.env.local` desta máquina~~ | **resolvida 20/07** — Marquito enviou; gravada no `.env.local` (gitignored) |
 | Even3 desatualizado em relação ao site (fonte da verdade editorial) | **mensagem à Márcia preparada em 20/07**: atualizar o Even3 pra espelhar o site (mesa "Tecnologia Delas" 18/08, intervalos, momentos culturais) e mantê-lo em dia — o app espelha o Even3; até corrigirem lá, o app mostra a versão desatualizada |
 | Cadastro do Even3 sem salas/tags/palestrantes | pedir à organização preencher lá (aí `db/enrich.sql` esvazia); enquanto isso o enriquecimento local cobre |
