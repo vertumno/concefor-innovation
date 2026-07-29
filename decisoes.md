@@ -62,11 +62,14 @@ pendência aberta em 20/07: **1** Concefor Geral · **1** de eventos paralelos (
 `comunicacao/producao/01-brindes-promocionais/banners/brief.md`.
 
 **Fechado na mesma noite:**
-- 📍 **Todas as palestras e mesas-redondas acontecem no PÁTIO.** Fecha 6 atividades (4 palestras
-  + 2 mesas). O que **não** é palestra nem mesa — credenciamento, eventos UAB/UnAC/NTE, mostras,
-  sessões técnicas, momentos culturais, coffees, almoço, premiação e o bloco de
-  abertura/lançamentos/celebração do dia 17 — **continua sem local** e foi pedido à Viviane.
-  Mapa por dia e por banner em `comunicacao/contexto/01-programacao.md`.
+- 📍 **Todas as palestras e mesas-redondas acontecem no PÁTIO** — e **o bloco da noite de 17/08
+  também**: momento musical, abertura, palestra da Vanessa, lançamentos e celebração dos 20 anos
+  acontecem em sequência, no mesmo espaço. Juntas, as duas regras fecham **10 atividades**.
+  O que **não** é palestra nem mesa — credenciamento, eventos UAB/UnAC/NTE, mostras, sessões
+  técnicas, momentos culturais, coffees, almoço e premiação — **continua sem local** e já foi
+  perguntado à Viviane (aguardando). Mapa por dia e por banner em
+  `comunicacao/contexto/01-programacao.md`. Detalhe útil: **sessões técnicas** aparecem em 3 dos
+  4 dias, então uma resposta só fecha 3 dos 15 blocos que faltam.
 - 🚫 **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos.** A orientação
   da coordenação é que **não há problema em ficar sem a logo quando for necessário** — o que
   encerra a divergência com o item 4.1 do TR 72/2026. E o **selo fica de fora de propósito**:

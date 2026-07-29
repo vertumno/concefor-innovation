@@ -16,11 +16,14 @@
 |---|---|---|
 | 13h30 | Credenciamento | 🔴 falta |
 | 14h30 às 17h30 | Eventos UAB / UnAC / NTE | 🔴 falta |
-| 18h00 | Momento Musical | 🔴 falta *(provável Pátio — mesmo bloco da abertura)* |
-| 18h30 | **Abertura** | 🔴 falta *(idem)* |
+| 18h00 | Momento Musical | ✅ **Pátio** |
+| 18h30 | **Abertura** | ✅ **Pátio** |
 | 19h00 às 20h00 | Palestra *"20 Anos de EaD e o Cefor"* · Dra. Vanessa Battestin | ✅ **Pátio** |
-| 20h00 às 20h30 | **Lançamentos** (4 itens, lista abaixo) | 🔴 falta *(idem)* |
-| 20h30 | **Celebração do aniversário de 20 anos do Cefor** | 🔴 falta *(idem)* |
+| 20h00 às 20h30 | **Lançamentos** (4 itens, lista abaixo) | ✅ **Pátio** |
+| 20h30 | **Celebração do aniversário de 20 anos do Cefor** | ✅ **Pátio** |
+
+> 🌙 **Confirmado em 28/07:** o **bloco da noite inteiro é no Pátio** — momento musical, abertura,
+> palestra da Vanessa, lançamentos e celebração dos 20 anos acontecem no mesmo espaço, em sequência.
 
 **Os 4 lançamentos (17/08, 20h às 20h30):**
 1. E-book de comemoração dos 20 anos do Cefor
@@ -60,20 +63,27 @@
 
 ## Locais — o que fecha e o que falta (28/07)
 
-**Regra em vigor:** *todas as palestras e mesas-redondas acontecem no **Pátio***.
+**Duas regras em vigor:**
+1. *Todas as **palestras e mesas-redondas** acontecem no **Pátio**.*
+2. *O **bloco da noite de 17/08** — momento musical, abertura, palestra, lançamentos e celebração
+   dos 20 anos — é **todo no Pátio***.
 
 | | Itens |
 |---|---|
-| ✅ **Fechado (6)** | Palestra de abertura · Vanessa Battestin (17/08) · Mesa "Tecnologia Delas" (18/08) · Palestra internacional · Tessarolo (18/08) · Mesa "Desafios da EaD" (19/08) · Palestra Mariano Pimentel (19/08) · Palestra Mauro Oliveira (19/08) |
-| 🔴 **Falta (19 blocos)** | **17/08:** credenciamento · eventos UAB/UnAC/NTE · momento musical · abertura · lançamentos · celebração dos 20 anos · **18/08:** 2 mostras/painéis · sessões técnicas · coffee · **19/08:** 2 blocos de sessões técnicas · momento cultural · coffee · **20/08:** almoço · premiação · coffee + momento cultural |
+| ✅ **Fechado (10)** | **17/08:** momento musical · abertura · palestra da Vanessa · lançamentos · celebração dos 20 anos · **18/08:** mesa "Tecnologia Delas" · palestra internacional (Tessarolo) · **19/08:** mesa "Desafios da EaD" · palestra Mariano Pimentel · palestra Mauro Oliveira |
+| 🔴 **Falta (15 blocos)** | **17/08:** credenciamento · eventos UAB/UnAC/NTE · **18/08:** 2 mostras/painéis · sessões técnicas · coffee · **19/08:** 2 blocos de sessões técnicas · momento cultural · coffee · **20/08:** almoço · premiação · coffee + momento cultural |
 | 🟡 **Parcial** | Eventos paralelos (20/08): 1 definido, 1 entre duas opções, 3 a definir |
 
-**Por banner** (dos 10 do TR): #3 (17/08) tem **1 de 7** itens com local · #4 (18/08) **2 de 6** ·
+**Por banner** (dos 10 do TR): #3 (17/08) tem **5 de 7** itens com local · #4 (18/08) **2 de 6** ·
 #5 (19/08) **4 de 7** · #6 (20/08, se confirmado) **0 de 5**.
-👉 Ou seja: **nenhum dos banners de programação fecha ainda**. O #5 é o mais próximo.
+👉 O **#3 está a 2 itens de fechar** (credenciamento e eventos UAB/UnAC/NTE) e virou o mais
+próximo. Nenhum fecha ainda.
 
-> 📌 **Pedido feito à Viviane em 28/07** — assim que a lista de locais chegar, preencher esta
-> tabela e liberar as artes.
+> 🟡 **Aguardando a Viviane** (pedido feito em 28/07): a lista dos locais restantes. Assim que
+> chegar, preencher esta tabela e liberar as artes.
+
+> 🔎 **O item que mais rende:** **sessões técnicas** aparecem em 3 dos 4 dias (18/08 tarde,
+> 19/08 manhã e tarde). Uma única resposta sobre onde elas acontecem fecha 3 dos 15 blocos.
 
 > ✅ 5 eventos satélites confirmados (+ Aula Inaugural do Educimat pendente).
 > Detalhes em [07-eventos-paralelos.md](07-eventos-paralelos.md).

@@ -114,20 +114,25 @@
 > [`banners/brief.md`](../producao/01-brindes-promocionais/banners/brief.md).
 >
 > ✅ **Resolvido em 28/07 (rodada da noite):**
-> - **Todas as palestras e mesas-redondas são no PÁTIO** → fecha 6 atividades. Mapa completo do
->   que fecha e do que falta em
+> - **Todas as palestras e mesas-redondas são no PÁTIO**, e **o bloco da noite de 17/08 também**
+>   (momento musical, abertura, palestra, lançamentos e celebração) → **10 atividades com local**.
+>   Mapa completo do que fecha e do que falta em
 >   [`contexto/01-programacao.md`](../contexto/01-programacao.md#locais--o-que-fecha-e-o-que-falta-2807).
+>   O banner **#3 (17/08) está a 2 itens de fechar**: credenciamento e eventos UAB/UnAC/NTE.
 > - **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos** — são
 >   permanentes no prédio, e o selo os deixaria datados. A divergência com o item 4.1 do TR está
 >   coberta pela orientação da coordenação: não há problema em ficar sem a logo quando necessário.
 >   👉 **Estes 4 + o Concefor Geral (5 dos 10) não dependem de mais ninguém: dá para produzir já.**
 >
-> 🔴 **O que ainda trava os outros 5:**
+> 🟡 **O que ainda trava os outros 5 — tudo já perguntado à Viviane, aguardando resposta:**
 > 1. **Locais do que não é palestra nem mesa** (credenciamento, UAB/UnAC/NTE, mostras, sessões
->    técnicas, momentos culturais, coffees, almoço, premiação, bloco de abertura do dia 17)
->    → 🟡 **pedido à Viviane em 28/07**, aguardando.
+>    técnicas, momentos culturais, coffees, almoço, premiação).
+>    🔎 *As **sessões técnicas** aparecem em 3 dos 4 dias — uma resposta só fecha 3 blocos.*
 > 2. **Três eventos paralelos ainda sem local** e um entre "Auditório ou Pátio" — trava o #2.
 > 3. **Confirmar o banner #6** (a lista traz 18/08 duas vezes).
+>
+> 🔴 Só o **#2** depende de terceiro fora da Coordenação: a programação da **Aula Inaugural do
+> Educimat** — e por isso ele já está definido como o **último a imprimir**.
 >
 > ⏰ **A conta do prazo:** entrega contratada em 07/08, evento em 17/08. As outras peças foram
 > para a gráfica em 22/07 e mesmo assim voltaram para ajuste — estas ainda não começaram.

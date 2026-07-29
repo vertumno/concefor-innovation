@@ -47,22 +47,26 @@
 
 ## Locais — o que já fecha
 
-✅ **Definido em 28/07: todas as palestras e mesas-redondas são no PÁTIO.** Fecha 6 atividades:
-palestra de abertura (Vanessa) · mesa "Tecnologia Delas" · palestra internacional (Tessarolo) ·
-mesa "Desafios da EaD" · palestra do Mariano Pimentel · palestra do Mauro Oliveira.
+✅ **Definido em 28/07 (duas regras):**
+1. **Todas as palestras e mesas-redondas são no PÁTIO.**
+2. **O bloco da noite de 17/08 é todo no Pátio** — momento musical, abertura, palestra da Vanessa,
+   lançamentos e celebração dos 20 anos, em sequência no mesmo espaço.
 
-**Cobertura por banner:** #3 (17/08) **1 de 7** · #4 (18/08) **2 de 6** · #5 (19/08) **4 de 7** ·
-#6 (20/08) **0 de 5**. Nenhum fecha ainda — mapa completo em
+Com as duas, **10 atividades já têm local**.
+
+**Cobertura por banner:** #3 (17/08) **5 de 7** · #4 (18/08) **2 de 6** · #5 (19/08) **4 de 7** ·
+#6 (20/08) **0 de 5**. Nenhum fecha ainda, mas o **#3 está a 2 itens** (credenciamento e eventos
+UAB/UnAC/NTE). Mapa completo em
 [`contexto/01-programacao.md`](../../../contexto/01-programacao.md#locais--o-que-fecha-e-o-que-falta-2807).
 
 ## O que ainda falta para poder desenhar
 
 | # | Falta | Onde resolver | Estado |
 |---|---|---|---|
-| 1 | **Locais do que não é palestra nem mesa** — credenciamento, eventos UAB/UnAC/NTE, mostras/painéis, sessões técnicas, momentos culturais, coffees, almoço, premiação, e o bloco de abertura/lançamentos/celebração do dia 17 | Viviane (Coordenação Geral) | 🟡 **pedido em 28/07**, aguardando |
-| 2 | **Locais de 3 dos eventos paralelos** ("A Definir") e a escolha entre **Auditório ou Pátio** no "Ciência delas" | Coordenação / coordenadores | 🔴 |
-| 3 | **Aula Inaugural do Educimat** — 20/08, 13h30–16h, **Pátio**; falta a programação. 📌 **Decisão de 28/07: este banner (#2) fica por último para imprimir**, esperando o Educimat | Educimat | 🔴 |
-| 4 | **Confirmar o banner #6** (18/08 repetido × 20/08) | Viviane | 🔴 |
+| 1 | **Locais do que não é palestra nem mesa** — credenciamento, eventos UAB/UnAC/NTE, mostras/painéis, sessões técnicas, momentos culturais, coffees, almoço e premiação. 🔎 *Sessões técnicas aparecem em 3 dias: uma resposta fecha 3 blocos* | Viviane (Coordenação Geral) | 🟡 **perguntado, aguardando resposta** |
+| 2 | **Locais de 3 dos eventos paralelos** ("A Definir") e a escolha entre **Auditório ou Pátio** no "Ciência delas" | Coordenação / coordenadores | 🟡 **perguntado, aguardando resposta** |
+| 3 | **Confirmar o banner #6** (18/08 repetido × 20/08) | Viviane | 🟡 **perguntado, aguardando resposta** |
+| 4 | **Aula Inaugural do Educimat** — 20/08, 13h30–16h, **Pátio**; falta a programação. 📌 **Decisão de 28/07: este banner (#2) fica por último para imprimir**, esperando o Educimat | Educimat | 🔴 |
 
 > ✅ **Nada trava os banners #1 (Concefor Geral) e #7–#10 (andares).** São 5 dos 10 — dá para
 > produzir agora, enquanto os locais não chegam.
