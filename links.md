@@ -15,8 +15,14 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
   do site e novas peças; **consultar sempre**: https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true
 - **🖼️ Briefing dos banners (GitHub Pages — entregue à Andreia em 28/07):**
   https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/
-  — os 10 banners do TR + o do livro dos 20 anos: conteúdo linha a linha, regras de marca,
-  referências de 2024, paleta, arquivos e pendências. Fonte: `comunicacao/briefing-banners/index.html`.
+  — os **13 banners** (10 do TR + 3 institucionais): conteúdo linha a linha, regras de marca,
+  referências, paleta e pendências. Fonte: `comunicacao/briefing-banners/index.html`.
+- **📂 Artes Concefor 2026 (Drive — PASTA DE TRABALHO da produção):**
+  https://drive.google.com/drive/folders/1Qtm4qtGLQsV4svTGmPeBNx1SwfTCkdak?usp=sharing
+  — é onde a Andreia trabalha e salva editáveis e finais dos banners. **Ela não acessa este repo:**
+  tudo que ela precisa tem que estar nessa pasta.
+- **🖼️ Banners do Concefor 2024 (Drive — PASTA PRINCIPAL DE REFERÊNCIA):**
+  https://drive.google.com/drive/folders/1ZzI49nOTudvH9JwZ4AHHO8xQjuJWw4xQ?usp=sharing
 - **📊 Painel de produção (GitHub Pages):**
   https://vertumno.github.io/concefor-innovation/comunicacao/painel/
 - **🛰️ Eventos Satélites do VIII Concefor (Google Docs — documento vivo da Coordenação):**
@@ -34,6 +40,16 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 - **🖌️ Matrizes do Illustrator (Drive da CGTE):** https://drive.google.com/drive/folders/1fuoepIyukqXTw035JtTj-MSbnpw7veJn?usp=drive_link
 - **📤 Arquivos editáveis e públicos (compartilhar com a comissão):** https://drive.google.com/drive/folders/1-CH92C467aI7C_dj6fE4O5XBI8A_qShv
 - **Central de comunicação (neste repo):** `comunicacao/` — board, calendário, palestrantes, peças
+
+## Produtos do Cefor (viram QR code nos banners institucionais)
+
+- **📚 Base de Conhecimentos (nova versão):** https://conhecimento.cefor.ifes.edu.br/
+  — *"Aprenda. Consulte. Ensine melhor."* · 130 artigos em trilhas sobre Moodle, acessibilidade e
+  IA na educação. Link confirmado em 29/07 e já usável no QR code do banner.
+- **📘 Livro dos 20 anos do Cefor:** link **provisório** no Drive
+  (https://drive.google.com/file/d/1qqyn-bmjGM8ZAoFlJXHJxqzVNCogR9ko/view) — **pegar o definitivo
+  com a Vanessa antes de imprimir**.
+- **🎓 Plataforma de MOOCs (nova vitrine):** `<link a confirmar>` — trava o banner 13.
 
 ## Evento
 

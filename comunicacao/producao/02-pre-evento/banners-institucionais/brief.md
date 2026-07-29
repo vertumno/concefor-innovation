@@ -1,12 +1,13 @@
 # Brief — Banners institucionais (livro · MOOCs · Base de Conhecimentos)
 
-> 👷 **28/07 — o banner do LIVRO foi passado para a Andreia**, junto com os 10 do TR. O briefing
-> dela é a página
-> [briefing-banners](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#livro).
-> Os de **MOOCs** e **Base de Conhecimentos** continuam **sem responsável definido** — a sugestão
-> registrada é desenhar o do livro **como família**, para que os outros dois saiam do mesmo template.
+> 👷 **29/07 — os TRÊS banners foram passados para a Andreia**, junto com os 10 do TR (13 no
+> total). O briefing dela é a página
+> [briefing-banners](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#institucionais),
+> onde eles aparecem como **11 (livro) · 12 (Base de Conhecimentos) · 13 (MOOCs)**.
+> ✅ **Decisão registrada: fazer como família** — um template, três conteúdos. Responde à pergunta
+> que a Vanessa deixou em aberto (arte única × três artes).
 >
-> 🔴 **Lembrete de 28/07: os 3 banners ainda não foram feitos e o prazo é 01/08.** Foram pedidos
+> 🔴 **Lembrete: os 3 banners ainda não foram feitos e o prazo é 01/08.** Foram pedidos
 > pela **Vanessa Battestin** (e-mail de 14/07) e ela leva para a gráfica na volta das férias, no
 > início de agosto — se a arte não estiver pronta, a janela dela fecha.
 > **A primeira coisa a destravar é a decisão de design (arte única × três artes) e os dois links
@@ -18,7 +19,9 @@
 - **Peça:** 3 banners impressos — (1) Livro do Cefor, (2) Plataforma de MOOCs (nova vitrine), (3) nova versão da Base de Conhecimentos
 - **Fase:** pré-evento (exposição durante o Concefor; **permanecem no Cefor depois**)
 - **Formato:** banner impresso (dimensões a confirmar com a gráfica)
-- **Responsável:** ___ (solicitante: Vanessa Battestin — e-mail de 14/07, ver `_refs/`)
+- **Responsável:** **Andreia** *(desde 29/07)* · solicitante: Vanessa Battestin — e-mail de 14/07, ver `_refs/`
+- **Onde produzir:** pasta **Artes Concefor 2026** no Drive —
+  https://drive.google.com/drive/folders/1Qtm4qtGLQsV4svTGmPeBNx1SwfTCkdak?usp=sharing
 - **Prazo:** arte pronta até **01/08** — Vanessa volta de férias no início de agosto e envia para a gráfica
 - **Status:** ⬜ A fazer
 
@@ -27,17 +30,21 @@
   material permanente do Cefor após o evento.
 - CTA: acessar cada produto pelo **QR code** impresso no banner.
 
-## Decisão de design em aberto (Vanessa deixou a critério do time)
-- **Opção A:** uma arte única, mudando só o tema/conteúdo (família visual coesa, produção mais rápida).
-- **Opção B:** uma arte diferente para cada banner.
-- Registrar aqui a escolha e o porquê: ___
+## Decisão de design — ✅ resolvida em 29/07
+**Opção A: uma arte única, mudando só o tema/conteúdo.** Um template, três banners.
+**Por quê:** produz mais rápido no prazo apertado (01/08), fica coerente quando os três ficarem
+lado a lado na parede do Cefor, e permite incluir um quarto produto no futuro sem redesenhar nada.
+*(A opção B — uma arte diferente para cada — foi descartada.)*
 
 ## Conteúdo obrigatório (por banner)
 - **Imagem representativa** do produto
 - **Espaço para QR code** com o link de acesso:
   - Livro do Cefor: link provisório https://drive.google.com/file/d/1qqyn-bmjGM8ZAoFlJXHJxqzVNCogR9ko/view?usp=sharing — **trocar pelo definitivo antes de imprimir**
-  - Plataforma de MOOCs (nova vitrine): `<link a confirmar>`
-  - Base de Conhecimentos (nova versão): `<link a confirmar>`
+  - **Base de Conhecimentos: ✅ https://conhecimento.cefor.ifes.edu.br/** *(confirmado em 29/07 — está no ar)*
+    Assinatura da plataforma: *"Aprenda. Consulte. Ensine melhor."* · 130 artigos em trilhas sobre
+    Moodle, acessibilidade e IA na educação · site em preto e branco, logo prata/branco.
+    A imagem representativa pode sair de um print da home.
+  - Plataforma de MOOCs (nova vitrine): 🔴 `<link a confirmar>` — **é a única trava dos três**
 - Assinaturas: Cefor / Ifes · selo 20 anos
 - ⚠️ Como os banners ficam no Cefor pós-evento, **evitar datas/menções exclusivas do Concefor**
   na arte (atemporal; selo 20 anos ok)
@@ -57,8 +64,8 @@
 - Aprovado por: Vanessa Battestin
 
 ## Checklist final
-- [ ] Decisão arte única × três artes registrada
-- [ ] Links definitivos confirmados (livro, MOOCs, Base de Conhecimentos)
+- [x] **Decisão arte única × três artes registrada** — arte única, 29/07
+- [ ] Links definitivos confirmados (livro e MOOCs; **Base de Conhecimentos ✅**)
 - [ ] QR codes testados apontando para os links definitivos
 - [ ] Selo 20 anos aplicado
 - [ ] Ortografia conferida

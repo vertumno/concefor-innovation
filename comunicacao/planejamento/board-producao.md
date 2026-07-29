@@ -35,7 +35,7 @@
 | Arte **canetas** | 400 un · **branca** (~~azul~~ — ✅ aval da comissão em 28/07) · logo só "Concefor" | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — logo simplificada. Aguardando nova montagem |
 | Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — selo 20 anos no lado oposto ao Concefor e um pouco maior. Aguardando nova montagem |
 | Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** (arte enviada em 22/07); modelo de lote pronto no Canva |
-| Arte **banners** (10 un · 0,90 × 1,20 m) | 10 un · 0,90 × 1,20 m · **rateio definido em 28/07** | **Andreia** *(desde 28/07)* | **com folga sobre 07/08** | 🟡 **passado para a Andreia** — [briefing visual](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/) · [brief com os 10](../producao/01-brindes-promocionais/banners/brief.md) |
+| Arte **banners** (10 un · 0,90 × 1,20 m) | 10 un · 0,90 × 1,20 m · **rateio definido em 28/07** | **Andreia** *(desde 28/07)* | **com folga sobre 07/08** | 🟡 **em produção com a Andreia** — [briefing visual](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/) (13 banners: estes 10 + os 3 institucionais) · [brief](../producao/01-brindes-promocionais/banners/brief.md) · trabalho no Drive, pasta **Artes Concefor 2026** |
 
 > 📤 **Artes enviadas à gráfica em 22/07** (e-mail em
 > [`_especificacoes/email-grafica-envio-artes.md`](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)):
@@ -102,13 +102,18 @@
 >
 > | # | Banner | Observação |
 > |---|---|---|
-> | 1 | **Concefor Geral** | identidade do evento |
-> | 2 | **Eventos paralelos** (todos do dia 20/08) | 📌 **imprimir por último**, esperando a Aula Inaugural do Educimat |
-> | 3 | **Dia 17/08** — programação com data, horário e local | |
-> | 4 | **Dia 18/08** — idem | |
-> | 5 | **Dia 19/08** — idem | |
-> | 6 | **Dia `[confirmar]`** | a lista traz "18/08" duas vezes; provavelmente é **20/08** |
-> | 7–10 | **4 banners de andar do Cefor** — Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório | **sem a logo do Concefor**, para ficarem no prédio depois do evento |
+> | 01 | **Concefor Geral** | identidade do evento |
+> | 02 | **Dia 17/08** — programação com data, horário e local | |
+> | 03 | **Dia 18/08** — idem | |
+> | 04 | **Dia 19/08** — idem | |
+> | 05 | **Dia `[confirmar]`** | a lista traz "18/08" duas vezes; provavelmente é **20/08** |
+> | 06 | **Eventos paralelos** (todos do dia 20/08) | 📌 **imprimir por último**, esperando a Aula Inaugural do Educimat |
+> | 07–10 | **4 banners de andar do Cefor** — Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório | **sem a logo do Concefor e sem selo**, para ficarem no prédio depois do evento |
+> | 11–13 | **Institucionais** — livro dos 20 anos · Base de Conhecimentos · MOOCs | fora do TR, pagos pela UAB · **arte única para os três** · prazo 01/08 |
+>
+> 🔢 **Numeração de 29/07:** é a **ordem de produção** (calendário), adotada também no
+> [briefing da Andreia](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/).
+> Reorganiza o rateio original, que listava os eventos paralelos em segundo lugar.
 >
 > **Detalhamento, conteúdo e referências visuais de 2024:**
 > [`banners/brief.md`](../producao/01-brindes-promocionais/banners/brief.md).
@@ -123,20 +128,20 @@
 > - **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos** — são
 >   permanentes no prédio, e o selo os deixaria datados. A divergência com o item 4.1 do TR está
 >   coberta pela orientação da coordenação: não há problema em ficar sem a logo quando necessário.
->   👉 **Estes 4 + o Concefor Geral (5 dos 10) não dependem de mais ninguém: dá para produzir já.**
+>   👉 **Estes 4 + o Concefor Geral (5 dos 13) não dependem de mais ninguém: dá para produzir já.**
 >
 > 🟡 **O que ainda trava os outros 5 — tudo já perguntado à Viviane, aguardando resposta.**
 > Sobraram **5 blocos de programação, em 2 perguntas + 1 confirmação:**
 >
 > | O que falta | Fecha qual banner |
 > |---|---|
-> | Local das **sessões técnicas** (18/08 tarde, 19/08 manhã e tarde) | **#5**, e metade do #4 |
-> | Local da **Mostra de Produtos e Produções Técnicas** (18/08, 2 blocos) | **#4**, junto com a de cima |
-> | **Confirmar** UAB/UnAC no Pátio e NTE no Auditório | **#3** |
-> | Locais dos **eventos paralelos** (3 a definir + escolha no "Ciência delas") | **#2** e **#6** |
-> | **Confirmar o banner #6** (a lista traz 18/08 duas vezes) | **#6** |
+> | Local das **sessões técnicas** (18/08 tarde, 19/08 manhã e tarde) | **04**, e metade do 03 |
+> | Local da **Mostra de Produtos e Produções Técnicas** (18/08, 2 blocos) | **03**, junto com a de cima |
+> | **Confirmar** UAB/UnAC no Pátio e NTE no Auditório | **02** |
+> | Locais dos **eventos paralelos** (3 a definir + escolha no "Ciência delas") | **05** e **06** |
+> | **Confirmar o banner 05** (a lista traz 18/08 duas vezes) | **05** |
 >
-> 🔴 Só o **#2** depende de terceiro fora da Coordenação: a programação da **Aula Inaugural do
+> 🔴 Só o **06** depende de terceiro fora da Coordenação: a programação da **Aula Inaugural do
 > Educimat** — e por isso ele já está definido como o **último a imprimir**.
 >
 > ⏰ **A conta do prazo:** entrega contratada em 07/08, evento em 17/08. As outras peças foram
@@ -146,7 +151,7 @@
 | Peça | Situação | Responsável | Prazo | Status |
 |---|---|---|---|---|
 | 🏷️ **Etiquetas com os nomes** (crachá) | 🔴 **duas decisões em aberto (reforçado em 28/07): quais etiquetas comprar e como será a impressão dos nomes.** Sequência obrigatória: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo → testar numa amostra. [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) | ___ | **decidir até 04/08** *(sugerido)*; testar antes da entrega dos 400; imprimir até a véspera de 17/08 | 🔴 |
-| **Banners de lançamentos** — livro Cefor, MOOCs, Base de Conhecimentos | 🔴 **os 3 banners da Vanessa ainda não foram feitos** (pedido de 14/07). Definido 20/07: à parte, **pagos pela UAB** — não saem do TR nem dos 10 banners. 👷 **28/07: o do LIVRO foi para a Andreia**, junto com os 10 ([briefing](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#livro)); os de **MOOCs e Base** seguem sem responsável e travados nos links que viram QR code. [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | **Andreia** *(livro)* · ___ *(MOOCs e Base)* / UAB *(custeio)* | **arte até 01/08** → Vanessa leva à gráfica na volta das férias | 🟡 |
+| **Banners institucionais** — livro dos 20 anos, Base de Conhecimentos, MOOCs | 👷 **29/07: os TRÊS foram para a Andreia**, junto com os 10 do TR — 13 no total ([briefing](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#institucionais), banners 11 a 13). ✅ **Decidido: arte única, um template para os três.** À parte, **pagos pela UAB**. Links: Base ✅ `conhecimento.cefor.ifes.edu.br` · livro provisório · **MOOCs 🔴 sem link — única trava**. [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | **Andreia** / UAB *(custeio)* | **arte até 01/08** → Vanessa leva à gráfica na volta das férias | 🟡 |
 | **Fundo de palco** | 🔴 citado na descrição do TR mas **sem item contratado** — confirmar | ___ | ___ | ⬜ |
 | ~~Arte **squeezes**~~ | ❌ **CANCELADO (28/07): não será produzido.** O **copo bucks** ocupou o lugar — é ele que vai no kit. Encerra a dúvida aberta desde 20/07 | — | — | ❌ |
 | Arte **bolo** comemoração (20 anos do Cefor) | não é item de gráfica; alinhar com quem fornece o bolo | **Andreia** | ___ | ⬜ |

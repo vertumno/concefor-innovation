@@ -39,14 +39,33 @@ reaprovadas com folga sobre **07/08**, a entrega contratada. Camisa, bloco e cra
 Oliveira (29/07), Mariella Berger (30/07) e Jaqueline Sanz (31/07) — e aí a série se esgota, com
 as **duas artes de mesa** (01 e 02/08) ainda por produzir. Segue sendo o gargalo da divulgação.
 
-**👷 Produção dos banners passada para a Andreia (28/07).** Os **10 do TR + o banner do livro dos
-20 anos** (peça da Vanessa, custeada pela UAB) saem com ela. O briefing é uma **página no GitHub
-Pages** — https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/ , fonte em
+**👷 Produção dos banners passada para a Andreia (28–29/07).** São **13 banners**: os **10 do TR**
+mais os **3 institucionais** da Vanessa (livro dos 20 anos, Base de Conhecimentos e MOOCs,
+custeados pela UAB). O briefing é uma **página no GitHub Pages** —
+https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/ , fonte em
 `comunicacao/briefing-banners/index.html` — reunindo o que estava espalhado em cinco arquivos:
-os 11 banners agrupados por *o que já dá para produzir*, o conteúdo linha a linha dos banners de
-dia, as regras de marca (com o alerta do "VIII"), especificação técnica, referências visuais de
-2024, paleta, onde estão os arquivos, fluxo de entrega e a lista de pendências com **quem responde
-o quê**.
+os 13 banners **numerados um a um na ordem de produção**, o conteúdo linha a linha dos banners de
+dia, as regras de marca (com o alerta do "VIII"), especificação técnica, referências visuais,
+paleta, fluxo de entrega e as pendências com **quem responde o quê**.
+
+**Duas decisões que vieram junto (29/07):**
+- 🔢 **Nova numeração, na ordem do calendário:** 01 Geral · 02–05 dias (17, 18, 19 e um quarto a
+  confirmar) · 06 eventos paralelos · 07–10 andares · 11–13 institucionais. Substitui o rateio
+  original, que listava os paralelos em segundo lugar. Vale no brief, no board e na página.
+- 🎨 **Os 3 institucionais saem em ARTE ÚNICA** — um template, três conteúdos. Responde à pergunta
+  que a Vanessa deixou em aberto em 14/07. **Por quê:** produz mais rápido no prazo de 01/08, fica
+  coerente com os três lado a lado na parede, e permite um quarto produto depois sem redesenhar.
+
+**A Andreia trabalha pelo Google Drive, não por este repositório** — a página foi reescrita sem
+nenhum caminho interno. Pasta de trabalho: **Artes Concefor 2026**
+(`drive.google.com/drive/folders/1Qtm4qtGLQsV4svTGmPeBNx1SwfTCkdak`). Pasta principal de
+referência, com os banners de 2024: `.../folders/1ZzI49nOTudvH9JwZ4AHHO8xQjuJWw4xQ`. Ambas em
+`links.md`.
+
+**Link confirmado:** a **Base de Conhecimentos** está no ar em https://conhecimento.cefor.ifes.edu.br/
+— *"Aprenda. Consulte. Ensine melhor."*, 130 artigos em trilhas sobre Moodle, acessibilidade e IA
+na educação. Já serve para o QR code. Faltam o **link definitivo do livro** e o **endereço da nova
+vitrine de MOOCs**, que é a única trava dos três institucionais.
 
 **Por que uma página, e não um documento:** quem produz precisa **ver** as referências e a paleta
 enquanto trabalha, e precisa de um link que não desatualize numa cópia de WhatsApp. A página é

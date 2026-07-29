@@ -1,4 +1,4 @@
-# Conteúdo dos banners #3 a #6 — programação por dia
+# Conteúdo dos banners 02 a 05 — programação por dia
 
 > **Esqueleto pronto para diagramar.** Cada bloco abaixo é a lista de linhas que vai na peça, na
 > ordem, já com os locais definidos em 28/07. Onde falta informação está marcado com `▮▮▮` —
@@ -15,7 +15,7 @@
 
 ---
 
-## Banner #3 · **17 AGO** — segunda-feira · Abertura
+## Banner 02 · **17 AGO** — segunda-feira · Abertura
 
 | Horário | Local | Atividade |
 |---|---|---|
@@ -34,7 +34,7 @@ locais são diferentes — confirmar com a Viviane antes de fechar a arte.
 
 ---
 
-## Banner #4 · **18 AGO** — terça-feira
+## Banner 03 · **18 AGO** — terça-feira
 
 | Horário | Local | Atividade |
 |---|---|---|
@@ -51,7 +51,7 @@ locais são diferentes — confirmar com a Viviane antes de fechar a arte.
 
 ---
 
-## Banner #5 · **19 AGO** — quarta-feira
+## Banner 04 · **19 AGO** — quarta-feira
 
 | Horário | Local | Atividade |
 |---|---|---|
@@ -68,7 +68,7 @@ banner que fecha com **uma única resposta**.
 
 ---
 
-## Banner #6 · **20 AGO** — quinta-feira · Encerramento
+## Banner 05 · **20 AGO** — quinta-feira · Encerramento
 > ⚠️ `[confirmar]` — a lista da Viviane repete "18/08" no item 6. Este esqueleto assume **20/08**,
 > que é o único dia sem banner próprio. Se a resposta for outra, refazer este bloco.
 
@@ -81,7 +81,7 @@ banner que fecha com **uma única resposta**.
 | 16h30 | Pátio | **Coffee-break e Momento Cultural** |
 
 **5 linhas.**
-📌 **Não repetir aqui a lista dos eventos paralelos** — ela é o conteúdo do **banner #2**, que traz
+📌 **Não repetir aqui a lista dos eventos paralelos** — ela é o conteúdo do **banner 06**, que traz
 cada evento com seu local e horário. Neste, uma chamada basta: *"veja a programação completa no
 banner de Eventos Paralelos"*.
 
@@ -91,9 +91,9 @@ banner de Eventos Paralelos"*.
 
 | Lacuna | Onde | Fecha |
 |---|---|---|
-| Local das **sessões técnicas** | #4 (13h30) e #5 (8h e 13h30) | **#5** inteiro |
-| Local da **Mostra de Produtos e Produções Técnicas** | #4 (8h e 11h30) | **#4** inteiro, com a de cima |
-| **Confirmação** UAB/UnAC no Pátio e NTE no Auditório | #3 | **#3** inteiro |
+| Local das **sessões técnicas** | 03 (13h30) e 04 (8h e 13h30) | **04** inteiro |
+| Local da **Mostra de Produtos e Produções Técnicas** | 03 (8h e 11h30) | **03** inteiro, com a de cima |
+| **Confirmação** UAB/UnAC no Pátio e NTE no Auditório | 02 | **02** inteiro |
 
 🟡 As três já foram perguntadas à Viviane em 28/07.
 
