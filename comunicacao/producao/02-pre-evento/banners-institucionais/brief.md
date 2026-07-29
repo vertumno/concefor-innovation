@@ -1,5 +1,11 @@
 # Brief — Banners institucionais (livro · MOOCs · Base de Conhecimentos)
 
+> 👷 **28/07 — o banner do LIVRO foi passado para a Andreia**, junto com os 10 do TR. O briefing
+> dela é a página
+> [briefing-banners](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#livro).
+> Os de **MOOCs** e **Base de Conhecimentos** continuam **sem responsável definido** — a sugestão
+> registrada é desenhar o do livro **como família**, para que os outros dois saiam do mesmo template.
+>
 > 🔴 **Lembrete de 28/07: os 3 banners ainda não foram feitos e o prazo é 01/08.** Foram pedidos
 > pela **Vanessa Battestin** (e-mail de 14/07) e ela leva para a gráfica na volta das férias, no
 > início de agosto — se a arte não estiver pronta, a janela dela fecha.

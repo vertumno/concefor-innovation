@@ -39,6 +39,20 @@ reaprovadas com folga sobre **07/08**, a entrega contratada. Camisa, bloco e cra
 Oliveira (29/07), Mariella Berger (30/07) e Jaqueline Sanz (31/07) — e aí a série se esgota, com
 as **duas artes de mesa** (01 e 02/08) ainda por produzir. Segue sendo o gargalo da divulgação.
 
+**👷 Produção dos banners passada para a Andreia (28/07).** Os **10 do TR + o banner do livro dos
+20 anos** (peça da Vanessa, custeada pela UAB) saem com ela. O briefing é uma **página no GitHub
+Pages** — https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/ , fonte em
+`comunicacao/briefing-banners/index.html` — reunindo o que estava espalhado em cinco arquivos:
+os 11 banners agrupados por *o que já dá para produzir*, o conteúdo linha a linha dos banners de
+dia, as regras de marca (com o alerta do "VIII"), especificação técnica, referências visuais de
+2024, paleta, onde estão os arquivos, fluxo de entrega e a lista de pendências com **quem responde
+o quê**.
+
+**Por que uma página, e não um documento:** quem produz precisa **ver** as referências e a paleta
+enquanto trabalha, e precisa de um link que não desatualize numa cópia de WhatsApp. A página é
+gerada do mesmo repositório que guarda as decisões — **mudou a definição, muda a página**. Ela é
+derivada: se divergir do brief, o brief vale (está escrito lá).
+
 **Mais três fatos de 28/07, à noite:**
 
 - ❌ **Squeezes canceladas: não serão produzidas.** O **copo bucks** ocupou o lugar delas no kit —

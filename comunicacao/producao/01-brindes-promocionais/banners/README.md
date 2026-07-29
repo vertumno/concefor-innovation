@@ -1,5 +1,10 @@
 # Banners — 10 unidades · 0,90 × 1,20 m (TR 72/2026)
 
+> 📄 **Briefing visual para quem vai produzir (Andreia):**
+> https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/
+> — reúne os 10 + o banner do livro dos 20 anos, com conteúdo linha a linha, regras de marca,
+> referências, arquivos e pendências. Fonte: [`../../../briefing-banners/index.html`](../../../briefing-banners/index.html).
+
 > ✅ **Rateio definido em 28/07 pela Viviane (Coordenação Geral)** · 🔴 **artes ainda não
 > produzidas** — é o último item do TR sem arte. **Tudo em [`brief.md`](brief.md).**
 

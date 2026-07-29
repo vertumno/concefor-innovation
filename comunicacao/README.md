@@ -104,11 +104,14 @@ comunicacao/
 - **Prioridades agora (por prazo):**
   1. 🔴 **Artes dos 2 cards de mesa** — os 7 individuais acabam em 31/07 e a primeira mesa
      publica em **01/08**. Legendas prontas, falta só a arte.
-  2. 🔴 **3 banners de lançamentos da Vanessa** (livro, MOOCs, Base de Conhecimentos) —
-     **arte até 01/08**, para ela levar à gráfica na volta das férias. Ainda não começaram; travam
-     na decisão arte única × três artes e nos links de MOOCs e Base (viram QR code).
-     [Brief](producao/02-pre-evento/banners-institucionais/brief.md)
-  3. 🔴 **Arte dos 10 banners do TR** — **último item contratado sem arte**, entrega **07/08**.
+  2. 🟡 **3 banners de lançamentos da Vanessa** (livro, MOOCs, Base de Conhecimentos) —
+     **arte até 01/08**, para ela levar à gráfica na volta das férias. O **do livro foi para a
+     Andreia** em 28/07; **MOOCs e Base seguem sem responsável** e travados nos links que viram
+     QR code. [Brief](producao/02-pre-evento/banners-institucionais/brief.md)
+  3. 👷 **Banners — produção com a Andreia desde 28/07.** Briefing entregue:
+     [página de briefing](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/)
+     ([fonte](briefing-banners/index.html)) — os 10 do TR **+ o banner do livro dos 20 anos**,
+     com conteúdo linha a linha, regras de marca, referências e pendências. Entrega **07/08**.
      ✅ Rateio definido em 28/07: 1 geral · 1 de eventos paralelos · 4 de programação por dia ·
      4 de andar do Cefor (**sem logo do Concefor e sem selo**, para não datar — ficam no prédio).
      👉 **5 dos 10 podem ser produzidos já** (o geral + os 4 de andar). Os outros 5 esperam os

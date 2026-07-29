@@ -3,6 +3,11 @@
 > ✅ **Rateio definido em 28/07/2026 pela Viviane (Coordenação Geral).** A pendência que travava
 > esta peça desde 20/07 está resolvida: sabemos o que é cada um dos 10.
 > Falta produzir as artes — é o **último item do TR sem arte**.
+>
+> 👷 **Produção com a Andreia (28/07).** O briefing entregue a ela é a página
+> https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/
+> ([fonte](../../../briefing-banners/index.html)), que soma aos 10 deste brief o **banner do livro
+> dos 20 anos**. **Ao mudar qualquer definição aqui, atualize a página também.**
 
 ## Identificação
 - **Peça:** 10 banners do VIII Concefor

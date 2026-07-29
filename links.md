@@ -13,6 +13,12 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 
 - **📋 Doc de solicitações da Márcia (coordenadora do Concefor)** — onde ela pede atualizações
   do site e novas peças; **consultar sempre**: https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true
+- **🖼️ Briefing dos banners (GitHub Pages — entregue à Andreia em 28/07):**
+  https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/
+  — os 10 banners do TR + o do livro dos 20 anos: conteúdo linha a linha, regras de marca,
+  referências de 2024, paleta, arquivos e pendências. Fonte: `comunicacao/briefing-banners/index.html`.
+- **📊 Painel de produção (GitHub Pages):**
+  https://vertumno.github.io/concefor-innovation/comunicacao/painel/
 - **🛰️ Eventos Satélites do VIII Concefor (Google Docs — documento vivo da Coordenação):**
   https://docs.google.com/document/d/1XpyWM2oB7L_ORyRBg62Jozkvgw3dFUAQvkDyyrmr4gw/edit
   — descrição, programação, **local**, horários e formulários dos 5 eventos paralelos do dia
