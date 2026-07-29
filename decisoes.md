@@ -54,10 +54,30 @@ as **duas artes de mesa** (01 e 02/08) ainda por produzir. Segue sendo o gargalo
   Ottawa University sustentam a legenda. ⚠️ A foto é **de palco** e precisa de recorte para o
   padrão da série.
 
+**✅ Rateio dos 10 banners definido (28/07, pela Viviane — Coordenação Geral).** Encerra a
+pendência aberta em 20/07: **1** Concefor Geral · **1** de eventos paralelos (todos do dia 20/08) ·
+**4** de programação por dia (17, 18, 19 e um quarto — a lista repete "18/08", provavelmente é
+20/08, `[confirmar]`) · **4** de andar do Cefor (Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 ·
+4º/Auditório e Laboratório). Detalhamento e referências visuais de 2024 em
+`comunicacao/producao/01-brindes-promocionais/banners/brief.md`.
+
+**Duas coisas dessa definição merecem atenção:**
+- Os **4 banners de andar vão sem a logo do Concefor**, para permanecerem no prédio depois do
+  evento. ⚠️ Isso **conflita com o item 4.1 do TR 72/2026** ("todos os itens deverão conter a
+  logomarca do Concefor, sem indicação da edição"). A intenção é a mesma do contrato —
+  reaproveitamento institucional —, mas a letra pede a marca: **validar com a fiscalização**,
+  como se fez com a caneta branca.
+- **Falta o LOCAL das atividades dos dias 17, 18 e 19.** O site publica hora e atividade, não a
+  sala; e os banners de programação pedem local. Some-se a isso que **3 dos 5 eventos paralelos
+  ainda estão "a definir"** e o "Ciência delas" oscila entre Auditório e Pátio. Sem esses dados
+  não há como fechar as artes 2 a 6.
+
+📌 **Decisão junto:** o **banner de eventos paralelos fica por último para imprimir**, esperando a
+programação da **Aula Inaugural do Educimat** (já sabemos quando e onde: 20/08, 13h30–16h, Pátio).
+
 **O que fica pendente de impressão depois desta rodada** (anotado em 28/07 para não sumir):
-1. **Arte dos 10 banners do TR** — é o **último item contratado sem arte**, e nem o rateio dos 10
-   está fechado (banner padrão do Concefor × sinalização/programação × placas). Brief novo em
-   `comunicacao/producao/01-brindes-promocionais/banners/brief.md`.
+1. **Arte dos 10 banners do TR** — é o **último item contratado sem arte**. O rateio saiu; as
+   artes, não. Brief em `comunicacao/producao/01-brindes-promocionais/banners/brief.md`.
 2. **Etiquetas dos nomes do crachá** — faltam as duas decisões que sustentam tudo: **quais
    etiquetas comprar** e **como será a impressão dos nomes**. A ordem é medir a área livre do
    crachá → achar um gabarito à venda → comprar → gerar o arquivo → testar numa amostra.

@@ -2,6 +2,17 @@
 
 *Congresso Regional de Formação e Educação a Distância — material organizado para a equipe de comunicação, com as informações na íntegra de cada evento satélite inscrito, conforme fornecidas pelos coordenadores no formulário.*
 
+> 📍 **Atualização de 28/07/2026 — locais.** O documento vivo da Coordenação
+> ([Eventos Satélites do VIII Concefor](https://docs.google.com/document/d/1XpyWM2oB7L_ORyRBg62Jozkvgw3dFUAQvkDyyrmr4gw/edit))
+> passou a trazer o **local** de cada evento, que não existe nesta cópia:
+> **1 · IA além do chat →** Laboratório de Informática ·
+> **2 · Ciência delas →** Auditório **ou** Pátio (escolher) ·
+> **3 · Escola de Inovação →** a definir ·
+> **4 · Entre Dois Mundos →** a definir ·
+> **5 · Pros@tec →** a definir ·
+> **Aula Inaugural do Educimat →** Pátio, 13h30–16h (programação ainda pendente).
+> Tabela consolidada em [`contexto/07-eventos-paralelos.md`](../../../contexto/07-eventos-paralelos.md).
+
 ## **Evento 1: IA além do chat: da célula ao organismo baseado em IA**
 
 | Nome do evento | IA além do chat: da célula ao organismo baseado em IA |

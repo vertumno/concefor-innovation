@@ -3,6 +3,11 @@
 > Base para cards de programação, stories diários e roteiro da cobertura ao vivo.
 > **Atualizado em 21/07/2026** a partir da programação publicada no site oficial.
 > Eventos paralelos de quinta ainda serão divulgados.
+>
+> 🔴 **Falta o LOCAL de cada atividade** (28/07). O site publica hora e atividade, mas não a sala
+> ou o espaço. Os **banners de programação por dia** (#3 a #6 dos 10 do TR) precisam imprimir
+> **data · horário · local** — sem isso não dá para fechar as artes. Pedir à Coordenação Geral.
+> Ver [`banners/brief.md`](../producao/01-brindes-promocionais/banners/brief.md).
 
 ## Segunda-feira · 17/08/2026 (Abertura)
 | Hora | Atividade |

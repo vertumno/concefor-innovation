@@ -35,7 +35,7 @@
 | Arte **canetas** | 400 un · **branca** (~~azul~~ — ✅ aval da comissão em 28/07) · logo só "Concefor" | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — logo simplificada. Aguardando nova montagem |
 | Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — selo 20 anos no lado oposto ao Concefor e um pouco maior. Aguardando nova montagem |
 | Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** (arte enviada em 22/07); modelo de lote pronto no Canva |
-| Arte **banners** (10 un · 0,90 × 1,20 m) — **conteúdo a definir** | 10 un · 0,90 × 1,20 m | ___ | **com folga sobre 07/08** | 🔴 **ÚLTIMO ITEM DO TR SEM ARTE** — nem o rateio dos 10 está decidido. [Brief](../producao/01-brindes-promocionais/banners/brief.md) · [referência de 2024](../producao/01-brindes-promocionais/banners/_refs/banner-entrada-concefor-2024.pdf) |
+| Arte **banners** (10 un · 0,90 × 1,20 m) | 10 un · 0,90 × 1,20 m · **rateio definido em 28/07** | ___ | **com folga sobre 07/08** | 🔴 **ÚLTIMO ITEM DO TR SEM ARTE** — o rateio saiu, as artes não. [Brief com os 10](../producao/01-brindes-promocionais/banners/brief.md) · [referências de 2024](../producao/01-brindes-promocionais/banners/) |
 
 > 📤 **Artes enviadas à gráfica em 22/07** (e-mail em
 > [`_especificacoes/email-grafica-envio-artes.md`](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)):
@@ -97,13 +97,31 @@
 >   Capa com logo Concefor e faixa azul degradê (Ifes/Cefor + selo 20 anos); fundo com Apoio
 >   (Ifes Campus Vila Velha e Educimat) e os dados de contato do Cefor. Aguardando se há ajustes.
 
-> 🔴 **Os 10 banners são a pendência aberta do TR (reforçada em 28/07).** Definição de 20/07:
-> entram nesses 10 (a **confirmar** o rateio) → **banner padrão do Concefor**, **banner de
-> sinalização/programação** e **placas de sinalização**. Ou seja, não são peças "fora do TR" — são
-> o conteúdo dos 10. **Falta fechar quantos de cada, e só depois disso há o que desenhar.**
-> Brief com as decisões pendentes: [`banners/brief.md`](../producao/01-brindes-promocionais/banners/brief.md).
-> Referência de estrutura: o [banner de entrada de 2024](../producao/01-brindes-promocionais/banners/_refs/banner-entrada-concefor-2024.pdf),
-> arquivado em 28/07.
+> ✅ **RATEIO DOS 10 BANNERS DEFINIDO EM 28/07 pela Viviane (Coordenação Geral)** — a pendência
+> aberta desde 20/07 está resolvida:
+>
+> | # | Banner | Observação |
+> |---|---|---|
+> | 1 | **Concefor Geral** | identidade do evento |
+> | 2 | **Eventos paralelos** (todos do dia 20/08) | 📌 **imprimir por último**, esperando a Aula Inaugural do Educimat |
+> | 3 | **Dia 17/08** — programação com data, horário e local | |
+> | 4 | **Dia 18/08** — idem | |
+> | 5 | **Dia 19/08** — idem | |
+> | 6 | **Dia `[confirmar]`** | a lista traz "18/08" duas vezes; provavelmente é **20/08** |
+> | 7–10 | **4 banners de andar do Cefor** — Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório | **sem a logo do Concefor**, para ficarem no prédio depois do evento |
+>
+> **Detalhamento, conteúdo e referências visuais de 2024:**
+> [`banners/brief.md`](../producao/01-brindes-promocionais/banners/brief.md).
+>
+> 🔴 **Três travas antes de desenhar:**
+> 1. **A programação não tem LOCAL** das atividades dos dias 17, 18 e 19 — e os banners 3 a 5
+>    pedem local. Pedir à Coordenação.
+> 2. **Três eventos paralelos ainda sem local** e um entre "Auditório ou Pátio" — trava o #2.
+> 3. ⚠️ **Os 4 banners de andar sem a logo do Concefor conflitam com o TR 72/2026, item 4.1**
+>    ("todos os itens deverão conter a logomarca do Concefor"). A intenção é a mesma do TR
+>    (reaproveitamento institucional), mas a letra pede a marca — **validar com a fiscalização**,
+>    como se fez com a caneta branca.
+>
 > ⏰ **A conta do prazo:** entrega contratada em 07/08, evento em 17/08. As outras peças foram
 > para a gráfica em 22/07 e mesmo assim voltaram para ajuste — estas ainda não começaram.
 

@@ -108,9 +108,11 @@ comunicacao/
      **arte até 01/08**, para ela levar à gráfica na volta das férias. Ainda não começaram; travam
      na decisão arte única × três artes e nos links de MOOCs e Base (viram QR code).
      [Brief](producao/02-pre-evento/banners-institucionais/brief.md)
-  3. 🔴 **Arte dos 10 banners do TR** — **último item contratado sem arte**, e nem o rateio dos 10
-     está fechado (banner padrão × sinalização/programação × placas). Entrega contratada **07/08**.
-     [Brief](producao/01-brindes-promocionais/banners/brief.md)
+  3. 🔴 **Arte dos 10 banners do TR** — **último item contratado sem arte**. ✅ Rateio definido em
+     28/07 pela Viviane: 1 geral · 1 de eventos paralelos · 4 de programação por dia · 4 de andar
+     do Cefor (sem logo do Concefor, para ficarem no prédio). Entrega contratada **07/08**.
+     🔴 Travas: falta o **local** das atividades dos dias 17–19 e de 3 eventos paralelos.
+     [Brief com os 10](producao/01-brindes-promocionais/banners/brief.md)
   4. 🔴 **Etiquetas dos nomes do crachá** — decidir **quais comprar** e **como será a impressão**.
      Ordem: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo →
      testar numa amostra. Sugerido decidir até **04/08**.

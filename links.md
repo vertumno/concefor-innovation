@@ -13,6 +13,11 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 
 - **📋 Doc de solicitações da Márcia (coordenadora do Concefor)** — onde ela pede atualizações
   do site e novas peças; **consultar sempre**: https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true
+- **🛰️ Eventos Satélites do VIII Concefor (Google Docs — documento vivo da Coordenação):**
+  https://docs.google.com/document/d/1XpyWM2oB7L_ORyRBg62Jozkvgw3dFUAQvkDyyrmr4gw/edit
+  — descrição, programação, **local**, horários e formulários dos 5 eventos paralelos do dia
+  20/08 (+ Aula Inaugural do Educimat, pendente). **É a fonte do banner de eventos paralelos.**
+  Cópia sintetizada em `comunicacao/contexto/07-eventos-paralelos.md`.
 - **🎨 Artes do Concefor (pasta no Canva):** https://canva.link/wdnsx8ggf61x2hs
   *(pasta registrada anteriormente: https://www.canva.com/folder/FAHDrZ44PIM — confirmar se é a mesma)*
 - **🎨 Cards dos palestrantes (Canva — editáveis):** https://canva.link/dzws8wu8ckf4gtv
