@@ -14,8 +14,8 @@
 ## Segunda-feira · 17/08/2026 (Abertura)
 | Hora | Atividade | Local |
 |---|---|---|
-| 13h30 | Credenciamento | 🔴 falta |
-| 14h30 às 17h30 | Eventos UAB / UnAC / NTE | 🔴 falta |
+| 13h30 | Credenciamento | ➖ **sem local no banner** |
+| 14h30 às 17h30 | Eventos UAB / UnAC / NTE | 🟡 **UAB e UnAC: provável Pátio** · **NTE: provável Auditório** — `[a confirmar]` |
 | 18h00 | Momento Musical | ✅ **Pátio** |
 | 18h30 | **Abertura** | ✅ **Pátio** |
 | 19h00 às 20h00 | Palestra *"20 Anos de EaD e o Cefor"* · Dra. Vanessa Battestin | ✅ **Pátio** |
@@ -39,51 +39,60 @@
 | 11h30 | Mostra de Produtos e Produções Técnicas · Painel | 🔴 falta |
 | 13h30 | Sessões técnicas · artigos completos | 🔴 falta *(salas 1 a 4?)* |
 | 14h30 | Palestra internacional · Felipe Maciel Tessarolo (The Open University, UK) | ✅ **Pátio** |
-| 16h00 | Coffee-break | 🔴 falta |
+| 16h00 | Coffee-break | ✅ **Pátio** |
 
 ## Quarta-feira · 19/08/2026
 | Hora | Atividade | Local |
 |---|---|---|
 | 8h00 | Sessões técnicas · artigos completos | 🔴 falta *(salas 1 a 4?)* |
-| 9h00 | Momento Cultural | 🔴 falta |
+| 9h00 | Momento Cultural | ✅ **Pátio** |
 | 9h30 | Mesa-Redonda *"Desafios da EaD para os próximos 20 anos"* · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero | ✅ **Pátio** |
 | 13h30 | Sessões técnicas · artigos completos | 🔴 falta *(salas 1 a 4?)* |
 | 14h30 | Palestra *"Autoria com IA generativa: desafios para a EaD"* · Dr. Mariano Pimentel | ✅ **Pátio** |
-| 16h00 | Coffee-break | 🔴 falta |
+| 16h00 | Coffee-break | ✅ **Pátio** |
 | 16h30 | Palestra *"Inovações da IA para a Educação"* · Dr. Mauro Oliveira | ✅ **Pátio** |
 
 ## Quinta-feira · 20/08/2026 (Encerramento)
 | Hora | Atividade | Local |
 |---|---|---|
 | 9h00 | Momento I · Eventos paralelos | 🟡 **um local por evento** — 3 ainda "a definir" ([tabela](07-eventos-paralelos.md)) |
-| 12h00 | Almoço | 🔴 falta |
+| 12h00 | Almoço | ➖ **sem local no banner** |
 | 13h30 | Momento II · Eventos paralelos | 🟡 idem |
-| 16h00 | **Premiação dos Melhores Trabalhos do VIII Concefor** | 🔴 falta |
-| 16h30 | Coffee-break e Momento Cultural | 🔴 falta |
+| 16h00 | **Premiação dos Melhores Trabalhos do VIII Concefor** | ✅ **Pátio** |
+| 16h30 | Coffee-break e Momento Cultural | ✅ **Pátio** |
 
 ## Locais — o que fecha e o que falta (28/07)
 
-**Duas regras em vigor:**
+**Regras em vigor:**
 1. *Todas as **palestras e mesas-redondas** acontecem no **Pátio**.*
 2. *O **bloco da noite de 17/08** — momento musical, abertura, palestra, lançamentos e celebração
    dos 20 anos — é **todo no Pátio***.
+3. *Todos os **momentos culturais**, os **coffee-breaks** e a **premiação** também são no **Pátio***.
+4. *O **credenciamento** e o **almoço** **não levam local no banner*** — é decisão editorial da
+   peça, não falta de informação.
 
 | | Itens |
 |---|---|
-| ✅ **Fechado (10)** | **17/08:** momento musical · abertura · palestra da Vanessa · lançamentos · celebração dos 20 anos · **18/08:** mesa "Tecnologia Delas" · palestra internacional (Tessarolo) · **19/08:** mesa "Desafios da EaD" · palestra Mariano Pimentel · palestra Mauro Oliveira |
-| 🔴 **Falta (15 blocos)** | **17/08:** credenciamento · eventos UAB/UnAC/NTE · **18/08:** 2 mostras/painéis · sessões técnicas · coffee · **19/08:** 2 blocos de sessões técnicas · momento cultural · coffee · **20/08:** almoço · premiação · coffee + momento cultural |
+| ✅ **Com local (15)** | **17/08:** momento musical · abertura · palestra da Vanessa · lançamentos · celebração dos 20 anos · **18/08:** mesa "Tecnologia Delas" · palestra internacional · coffee · **19/08:** momento cultural · mesa "Desafios da EaD" · palestra Mariano · coffee · palestra Mauro · **20/08:** premiação · coffee + momento cultural — **todos no Pátio** |
+| ➖ **Sem local no banner (2)** | credenciamento (17/08) · almoço (20/08) |
+| 🟡 **Provável, a confirmar (1)** | Eventos UAB/UnAC/NTE (17/08): **UAB e UnAC no Pátio**, **NTE no Auditório** |
+| 🔴 **Falta (5 blocos, 2 perguntas)** | **1.** Sessões técnicas (18/08 tarde, 19/08 manhã e tarde — 3 blocos) · **2.** Mostra de Produtos e Produções Técnicas · Painel (18/08 — 2 blocos) |
 | 🟡 **Parcial** | Eventos paralelos (20/08): 1 definido, 1 entre duas opções, 3 a definir |
 
-**Por banner** (dos 10 do TR): #3 (17/08) tem **5 de 7** itens com local · #4 (18/08) **2 de 6** ·
-#5 (19/08) **4 de 7** · #6 (20/08, se confirmado) **0 de 5**.
-👉 O **#3 está a 2 itens de fechar** (credenciamento e eventos UAB/UnAC/NTE) e virou o mais
-próximo. Nenhum fecha ainda.
+**Por banner** (dos 10 do TR): #3 (17/08) **6 de 7 + 1 provável** · #4 (18/08) **3 de 6** ·
+#5 (19/08) **5 de 7** · #6 (20/08, se confirmado) **3 de 5**.
 
-> 🟡 **Aguardando a Viviane** (pedido feito em 28/07): a lista dos locais restantes. Assim que
-> chegar, preencher esta tabela e liberar as artes.
+👉 **Duas perguntas e uma confirmação fecham quatro banners:**
 
-> 🔎 **O item que mais rende:** **sessões técnicas** aparecem em 3 dos 4 dias (18/08 tarde,
-> 19/08 manhã e tarde). Uma única resposta sobre onde elas acontecem fecha 3 dos 15 blocos.
+| O que falta | Fecha |
+|---|---|
+| Onde ficam as **sessões técnicas**? *(3 blocos, 2 dias)* | **#5** completo, e metade do que falta no #4 |
+| Onde fica a **Mostra de Produtos e Produções Técnicas**? | **#4** completo, junto com a primeira |
+| **Confirmar** UAB/UnAC no Pátio e NTE no Auditório | **#3** completo |
+| *(os locais dos eventos paralelos)* | **#6** completo |
+
+> 🟡 **Aguardando a Viviane** (perguntado em 28/07). Assim que chegar, preencher esta tabela e
+> liberar as artes.
 
 > ✅ 5 eventos satélites confirmados (+ Aula Inaugural do Educimat pendente).
 > Detalhes em [07-eventos-paralelos.md](07-eventos-paralelos.md).

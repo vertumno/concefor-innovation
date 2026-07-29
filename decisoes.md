@@ -62,14 +62,17 @@ pendência aberta em 20/07: **1** Concefor Geral · **1** de eventos paralelos (
 `comunicacao/producao/01-brindes-promocionais/banners/brief.md`.
 
 **Fechado na mesma noite:**
-- 📍 **Todas as palestras e mesas-redondas acontecem no PÁTIO** — e **o bloco da noite de 17/08
-  também**: momento musical, abertura, palestra da Vanessa, lançamentos e celebração dos 20 anos
-  acontecem em sequência, no mesmo espaço. Juntas, as duas regras fecham **10 atividades**.
-  O que **não** é palestra nem mesa — credenciamento, eventos UAB/UnAC/NTE, mostras, sessões
-  técnicas, momentos culturais, coffees, almoço e premiação — **continua sem local** e já foi
-  perguntado à Viviane (aguardando). Mapa por dia e por banner em
-  `comunicacao/contexto/01-programacao.md`. Detalhe útil: **sessões técnicas** aparecem em 3 dos
-  4 dias, então uma resposta só fecha 3 dos 15 blocos que faltam.
+- 📍 **Locais da programação: quase tudo é o PÁTIO.** Ficam lá as **palestras e mesas-redondas**,
+  **todo o bloco da noite de 17/08** (momento musical, abertura, palestra da Vanessa, lançamentos
+  e celebração dos 20 anos, em sequência) e ainda os **momentos culturais**, os **coffee-breaks**
+  e a **premiação** — **15 atividades**.
+  ➖ **Credenciamento e almoço não levam local no banner**: é decisão editorial da peça, não falta
+  de informação (evita poluir a arte com o que não ajuda a orientar ninguém).
+  🟡 **Eventos UAB/UnAC provavelmente no Pátio e NTE no Auditório** — a confirmar.
+  🔴 **Sobraram 5 blocos, em 2 perguntas:** onde ficam as **sessões técnicas** (18/08 tarde,
+  19/08 manhã e tarde) e a **Mostra de Produtos e Produções Técnicas** (18/08, 2 blocos).
+  As duas respostas fecham os banners #4 e #5; a confirmação do UAB/NTE fecha o #3.
+  Mapa por dia e por banner em `comunicacao/contexto/01-programacao.md`.
 - 🚫 **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos.** A orientação
   da coordenação é que **não há problema em ficar sem a logo quando for necessário** — o que
   encerra a divergência com o item 4.1 do TR 72/2026. E o **selo fica de fora de propósito**:

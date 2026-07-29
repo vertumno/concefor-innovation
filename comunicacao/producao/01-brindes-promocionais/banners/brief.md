@@ -47,23 +47,28 @@
 
 ## Locais — o que já fecha
 
-✅ **Definido em 28/07 (duas regras):**
-1. **Todas as palestras e mesas-redondas são no PÁTIO.**
-2. **O bloco da noite de 17/08 é todo no Pátio** — momento musical, abertura, palestra da Vanessa,
-   lançamentos e celebração dos 20 anos, em sequência no mesmo espaço.
+✅ **Definido em 28/07 — quase tudo é Pátio:**
+1. **Palestras e mesas-redondas:** Pátio.
+2. **Bloco da noite de 17/08** (momento musical, abertura, palestra da Vanessa, lançamentos e
+   celebração dos 20 anos): Pátio.
+3. **Momentos culturais, coffee-breaks e premiação:** Pátio.
+4. ➖ **Credenciamento e almoço não levam local no banner** — decisão editorial da peça.
 
-Com as duas, **10 atividades já têm local**.
+5. 🟡 **Eventos UAB/UnAC/NTE (17/08):** **UAB e UnAC provavelmente no Pátio**, **NTE provavelmente
+   no Auditório** — `[a confirmar]`.
 
-**Cobertura por banner:** #3 (17/08) **5 de 7** · #4 (18/08) **2 de 6** · #5 (19/08) **4 de 7** ·
-#6 (20/08) **0 de 5**. Nenhum fecha ainda, mas o **#3 está a 2 itens** (credenciamento e eventos
-UAB/UnAC/NTE). Mapa completo em
+**15 atividades com local + 2 sem local por decisão + 1 provável.** Restam **5 blocos**, que se
+resumem a **2 perguntas**.
+
+**Cobertura por banner:** #3 (17/08) **6 de 7 + 1 provável** · #4 (18/08) **3 de 6** ·
+#5 (19/08) **5 de 7** · #6 (20/08) **3 de 5**. Mapa completo em
 [`contexto/01-programacao.md`](../../../contexto/01-programacao.md#locais--o-que-fecha-e-o-que-falta-2807).
 
 ## O que ainda falta para poder desenhar
 
 | # | Falta | Onde resolver | Estado |
 |---|---|---|---|
-| 1 | **Locais do que não é palestra nem mesa** — credenciamento, eventos UAB/UnAC/NTE, mostras/painéis, sessões técnicas, momentos culturais, coffees, almoço e premiação. 🔎 *Sessões técnicas aparecem em 3 dias: uma resposta fecha 3 blocos* | Viviane (Coordenação Geral) | 🟡 **perguntado, aguardando resposta** |
+| 1 | **Dois locais e uma confirmação:** (a) **sessões técnicas** — 18/08 tarde, 19/08 manhã e tarde *(fecha o #5)*; (b) **Mostra de Produtos e Produções Técnicas** — 18/08, 2 blocos *(fecha o #4, junto com "a")*; (c) **confirmar** UAB/UnAC no Pátio e NTE no Auditório *(fecha o #3)* | Viviane (Coordenação Geral) | 🟡 **perguntado, aguardando resposta** |
 | 2 | **Locais de 3 dos eventos paralelos** ("A Definir") e a escolha entre **Auditório ou Pátio** no "Ciência delas" | Coordenação / coordenadores | 🟡 **perguntado, aguardando resposta** |
 | 3 | **Confirmar o banner #6** (18/08 repetido × 20/08) | Viviane | 🟡 **perguntado, aguardando resposta** |
 | 4 | **Aula Inaugural do Educimat** — 20/08, 13h30–16h, **Pátio**; falta a programação. 📌 **Decisão de 28/07: este banner (#2) fica por último para imprimir**, esperando o Educimat | Educimat | 🔴 |

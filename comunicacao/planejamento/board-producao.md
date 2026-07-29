@@ -114,22 +114,27 @@
 > [`banners/brief.md`](../producao/01-brindes-promocionais/banners/brief.md).
 >
 > ✅ **Resolvido em 28/07 (rodada da noite):**
-> - **Todas as palestras e mesas-redondas são no PÁTIO**, e **o bloco da noite de 17/08 também**
->   (momento musical, abertura, palestra, lançamentos e celebração) → **10 atividades com local**.
->   Mapa completo do que fecha e do que falta em
+> - **Quase tudo é PÁTIO:** palestras e mesas-redondas · todo o bloco da noite de 17/08 (momento
+>   musical, abertura, palestra, lançamentos, celebração) · **momentos culturais, coffee-breaks e
+>   premiação**. São **15 atividades com local**. ➖ **Credenciamento e almoço não levam local no
+>   banner**, por decisão editorial da peça. 🟡 **Eventos UAB/UnAC provavelmente no Pátio e NTE no
+>   Auditório** — a confirmar. Mapa por dia e por banner em
 >   [`contexto/01-programacao.md`](../contexto/01-programacao.md#locais--o-que-fecha-e-o-que-falta-2807).
->   O banner **#3 (17/08) está a 2 itens de fechar**: credenciamento e eventos UAB/UnAC/NTE.
 > - **Os 4 banners de andar vão sem a logo do Concefor e sem o selo dos 20 anos** — são
 >   permanentes no prédio, e o selo os deixaria datados. A divergência com o item 4.1 do TR está
 >   coberta pela orientação da coordenação: não há problema em ficar sem a logo quando necessário.
 >   👉 **Estes 4 + o Concefor Geral (5 dos 10) não dependem de mais ninguém: dá para produzir já.**
 >
-> 🟡 **O que ainda trava os outros 5 — tudo já perguntado à Viviane, aguardando resposta:**
-> 1. **Locais do que não é palestra nem mesa** (credenciamento, UAB/UnAC/NTE, mostras, sessões
->    técnicas, momentos culturais, coffees, almoço, premiação).
->    🔎 *As **sessões técnicas** aparecem em 3 dos 4 dias — uma resposta só fecha 3 blocos.*
-> 2. **Três eventos paralelos ainda sem local** e um entre "Auditório ou Pátio" — trava o #2.
-> 3. **Confirmar o banner #6** (a lista traz 18/08 duas vezes).
+> 🟡 **O que ainda trava os outros 5 — tudo já perguntado à Viviane, aguardando resposta.**
+> Sobraram **5 blocos de programação, em 2 perguntas + 1 confirmação:**
+>
+> | O que falta | Fecha qual banner |
+> |---|---|
+> | Local das **sessões técnicas** (18/08 tarde, 19/08 manhã e tarde) | **#5**, e metade do #4 |
+> | Local da **Mostra de Produtos e Produções Técnicas** (18/08, 2 blocos) | **#4**, junto com a de cima |
+> | **Confirmar** UAB/UnAC no Pátio e NTE no Auditório | **#3** |
+> | Locais dos **eventos paralelos** (3 a definir + escolha no "Ciência delas") | **#2** e **#6** |
+> | **Confirmar o banner #6** (a lista traz 18/08 duas vezes) | **#6** |
 >
 > 🔴 Só o **#2** depende de terceiro fora da Coordenação: a programação da **Aula Inaugural do
 > Educimat** — e por isso ele já está definido como o **último a imprimir**.
