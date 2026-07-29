@@ -132,6 +132,9 @@ Quanto à quantidade de camisas:
 
 Fico à disposição.
 
+> ⚠️ **Esta grade foi substituída em 29/07.** O texto acima é o e-mail como foi enviado; a grade
+> que vale hoje é **PP 2 · P 20 · M 30 · G 28 · GG 16 · XG 2 · XXG 2 = 100**, com PP, XG e XXG.
+
 ### O que este e-mail estabelece
 
 | Ponto | Efeito |
@@ -140,7 +143,7 @@ Fico à disposição.
 | **Caneta: branca, logo só "Concefor"** | Muda a cor prevista no TR (que dizia "azul personalizada") e simplifica a marca — sem o nome por extenso do congresso. Aguarda nova montagem. |
 | **Bolsa: alinhamento e tamanho das logos ajustados por nós** | Foi anexado arquivo de referência; a gráfica remonta a partir dele. Aguarda nova montagem. |
 | **Copo: selo 20 anos no lado oposto ao Concefor, e maior** | A montagem tinha as duas logos lado a lado. Aguarda nova montagem. |
-| **Grade das camisas: 25 P · 30 M · 30 G · 15 GG** | Fecha as 100 unidades contratadas. Informação que faltava para a gráfica produzir. |
+| ~~**Grade das camisas: 25 P · 30 M · 30 G · 15 GG**~~ | ⚠️ **SUPERADA em 29/07.** A grade que vale é **PP 2 · P 20 · M 30 · G 28 · GG 16 · XG 2 · XXG 2 = 100**, com PP, XG e XXG incluídos. Ver [especificações](especificacoes-materiais-impressos.md). |
 | **Pedido de responder também por e-mail** | Reforça o combinado de 22/07 (cópia para cgte.cefor@ifes.edu.br): decisão que chega só por WhatsApp não é rastreável e a coordenação não acompanha. |
 
 ## Em aberto depois dessa resposta

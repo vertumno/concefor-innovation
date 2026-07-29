@@ -85,8 +85,10 @@ comunicacao/
   — **falta conferir se os três ajustes pedidos foram atendidos**.
   ✅ **28/07 — retorno das montagens enviado:** **camisa, bloco e crachá aprovados**; **caneta**
   (branca, logo só "Concefor"), **copo** (selo 20 anos no lado oposto e maior) e **bolsa**
-  (alinhamento das logos) voltam para nova montagem. Grade das camisas informada:
-  **25 P · 30 M · 30 G · 15 GG**.
+  (alinhamento das logos) voltam para nova montagem.
+  👕 **Grade final das camisas, enviada à gráfica em 29/07:**
+  **PP 2 · P 20 · M 30 · G 28 · GG 16 · XG 2 · XXG 2 = 100** — substitui a de 28/07
+  (25 P · 30 M · 30 G · 15 GG), que não tinha PP, XG nem XXG.
   [E-mail](producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)
   ⚠️ Quem conduz o contato com a gráfica está **de férias de 27 a 31/07** — nessa janela o
   acompanhamento é do **Marquito** (respostas com cópia para cgte.cefor@ifes.edu.br).

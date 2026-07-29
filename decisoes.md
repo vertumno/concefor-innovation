@@ -5,6 +5,24 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 ---
 
 
+## 2026-07-29 — Grade final das camisas enviada à gráfica (agora com PP, XG e XXG)
+
+**A grade que vale é esta**, enviada à Brindes Expresso:
+
+| PP | P | M | G | GG | XG | XXG | **Total** |
+|---|---|---|---|---|---|---|---|
+| 2 | 20 | 30 | 28 | 16 | 2 | 2 | **100** |
+
+**Substitui a grade do e-mail de 28/07** (25 P · 30 M · 30 G · 15 GG). A diferença que importa:
+a numeração **abriu nas pontas** — entraram **PP, XG e XXG**, que antes não existiam, e o miolo
+foi redistribuído (P caiu de 25 para 20, G subiu de 30 para 28, GG de 15 para 16). Continua
+fechando as **100 unidades** contratadas no TR 72/2026.
+
+**Por quê:** camisa de evento sem PP e sem XG/XXG deixa gente de fora — e sobra tamanho que
+ninguém usa. As 6 unidades das pontas saíram do miolo, sem alterar o total contratado.
+
+---
+
 ## 2026-07-29 — Banners de programação sem local; NTE vira "Encontro dos NTEs dos Ifes"
 
 **Decisão:** os **banners de programação por dia (#02 a #05) não levam mais o local das

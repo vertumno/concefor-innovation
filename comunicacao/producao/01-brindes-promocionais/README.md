@@ -18,7 +18,7 @@ Quantidades e medidas fechadas — ver o doc de especificações.
 
 | # | Peça | Qtd. | Status |
 |---|---|---|---|
-| 1 | Arte das **camisas** (sublimada, com Concefor/Cefor/Educimat + apoiadores) | 100 | ✅ **aprovada em 28/07 — opção 2** (Concefor + selo 20 anos na frente) · grade: 25 P · 30 M · 30 G · 15 GG |
+| 1 | Arte das **camisas** (sublimada, com Concefor/Cefor/Educimat + apoiadores) | 100 | ✅ **aprovada em 28/07 — opção 2** (Concefor + selo 20 anos na frente) · **grade final (29/07): PP 2 · P 20 · M 30 · G 28 · GG 16 · XG 2 · XXG 2 = 100** |
 | 2 | Arte dos **blocos** (148,5 × 210 mm, capa e contracapa) | 250 | ✅ **aprovada em 28/07** |
 | 3 | Arte da **bolsa de algodão** (280 × 350 × 80 mm) | 400 | 🔵 ajuste pedido em 28/07 (alinhamento/tamanho das logos) — aguardando nova montagem |
 | 4 | Arte das **canetas** (~~azul~~ **branca** ✅ avalizada pela comissão, logo só "Concefor") | 400 | 🔵 ajuste pedido em 28/07 — aguardando nova montagem |

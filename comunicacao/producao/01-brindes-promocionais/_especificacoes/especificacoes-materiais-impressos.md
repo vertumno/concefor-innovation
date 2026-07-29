@@ -57,8 +57,15 @@ em todos os quantitativos.**
 | 6 | **Copo bucks ecológico** | Com tampa, fibra de arroz/coco/trigo, mínimo 400 ml | 400 | R$ 12,00 | R$ 4.800,00 |
 | 7 | **Crachá credencial** | Papel fotográfico **fosco 240 g**, **10 × 14 cm**, acompanha **cordão de poliéster** | 400 | R$ 2,00 | R$ 800,00 |
 
-👕 **Grade das camisas (fechada em 28/07, informada à gráfica por e-mail):**
-**25 P · 30 M · 30 G · 15 GG = 100 unidades** — fecha exatamente o contratado.
+👕 **Grade das camisas — versão FINAL enviada à gráfica (29/07):**
+
+| PP | P | M | G | GG | XG | XXG | **Total** |
+|---|---|---|---|---|---|---|---|
+| 2 | 20 | 30 | 28 | 16 | 2 | 2 | **100** |
+
+Fecha exatamente as 100 unidades contratadas.
+> A grade informada no e-mail de **28/07** era outra — *25 P · 30 M · 30 G · 15 GG* — e foi
+> **substituída por esta**, que abre a numeração para **PP, XG e XXG**. Vale a de cima.
 
 🖊️ **Caneta: a cor mudou, com aval.** O TR diz "azul personalizada"; a definição de **28/07** é
 **caneta branca**, com a logo simplificada (só "Concefor", sem o nome do congresso por extenso).

@@ -29,7 +29,7 @@
 ### Itens contratados no TR 72/2026
 | Peça | Espec. contratada | Responsável | Prazo arte | Status |
 |---|---|---|---|---|
-| Arte **camisas** (Concefor, Cefor, Educimat + apoiadores) | 100 un · sublimada frente e costas · **grade: 25 P · 30 M · 30 G · 15 GG** | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** — **opção 2** (Concefor + selo 20 anos na frente) |
+| Arte **camisas** (Concefor, Cefor, Educimat + apoiadores) | 100 un · sublimada frente e costas · **grade final (29/07): PP 2 · P 20 · M 30 · G 28 · GG 16 · XG 2 · XXG 2 = 100** | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** — **opção 2** (Concefor + selo 20 anos na frente) |
 | Arte **blocos** (selo 20 anos) | 250 un · 148,5 × 210 mm · capa e contracapa | Andreia | antes de 07/08 | ✅ **APROVADA em 28/07** |
 | Arte **bolsa de algodão** | 400 un · 280 × 350 × 80 mm · estampa colorida | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — alinhamento e tamanho das logos; enviado arquivo de referência. Aguardando nova montagem |
 | Arte **canetas** | 400 un · **branca** (~~azul~~ — ✅ aval da comissão em 28/07) · logo só "Concefor" | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — logo simplificada. Aguardando nova montagem |
@@ -54,7 +54,8 @@
 > | Bolsa | 🔵 alinhamento e tamanho das logos ajustados por nós; **arquivo de referência foi anexado** |
 > | Copo | 🔵 selo 20 anos no **lado oposto** ao Concefor (vieram lado a lado) e **um pouco maior** |
 >
-> Informada também a **grade das camisas: 25 P · 30 M · 30 G · 15 GG** (= as 100 contratadas).
+> Informada também a grade das camisas — ⚠️ a do e-mail de 28/07 (25 P · 30 M · 30 G · 15 GG) foi
+> **substituída em 29/07** pela versão final enviada à gráfica: **PP 2 · P 20 · M 30 · G 28 · GG 16 · XG 2 · XXG 2 = 100**, agora com PP, XG e XXG.
 > ⚠️ **Reforçado o pedido de responder por e-mail, não só por WhatsApp** — arte aprovada por
 > WhatsApp não deixa rastro e a coordenação não acompanha.
 > ✅ **Caneta branca: a comissão deu o aval** (28/07). O TR contratou caneta azul; a troca está
