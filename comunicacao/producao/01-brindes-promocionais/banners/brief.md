@@ -20,8 +20,10 @@
 - **Formato:** **0,90 × 1,20 m**, coloridos — medida contratada
 - **Quantidade:** 10 (R$ 85,00/un · R$ 850,00)
 - **Responsável:** **Andreia** *(desde 28/07)*
-- **Prazo:** entrega contratada **07/08**; arte para a gráfica **com folga** sobre essa data
+- **Prazo das artes: 31/07** *(definido em 29/07)* — a entrega contratada da gráfica é 07/08
 - **Status:** 🟡 Em produção
+- **Assinaturas (29/07):** **Realização:** Cefor · **Apoio:** Ifes Campus Vila Velha e Educimat.
+  **São as únicas logos desta edição** — não há outras marcas de apoio.
 
 ## Os 10 banners
 
@@ -59,7 +61,8 @@
 ## Conteúdo obrigatório (banners 01 a 06)
 - **Selo dos 20 anos**
 - Logomarca do Concefor **sem o numeral da edição** ("VIII") — TR 72/2026, item 4.1
-- Assinaturas: **Realização** (Ifes/Cefor) e **Apoio**, como no rodapé dos banners de 2024
+- **Realização: Cefor** · **Apoio: Ifes Campus Vila Velha e Educimat** — as únicas logos desta
+  edição *(definido em 29/07; o rodapé de 2024 trazia mais marcas, não repetir)*
 - Tipografia de **alta legibilidade à distância** — é sinalização, não card de feed
 
 ## Locais — o que já fecha

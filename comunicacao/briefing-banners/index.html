@@ -29,7 +29,6 @@
   code{background:#eef2f8;border:1px solid var(--line);border-radius:5px;padding:1px 6px;
     font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;word-break:break-all}
 
-  /* header */
   header{background:linear-gradient(120deg,var(--cyan) 0%,var(--navy) 76%);color:#fff;padding:38px 0 34px}
   .head-inner{max-width:1060px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;
     align-items:flex-end;justify-content:space-between;gap:22px}
@@ -42,7 +41,6 @@
   .para .n{font-family:'Teko',sans-serif;font-size:44px;line-height:1}
   .para .l{font-size:11px;letter-spacing:.8px;font-weight:700;opacity:.92;text-transform:uppercase}
 
-  /* nav — sem barra de rolagem: quebra em linhas */
   nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;
     box-shadow:0 2px 10px rgba(20,40,80,.05)}
   .nav-inner{max-width:1060px;margin:0 auto;padding:9px 20px;display:flex;flex-wrap:wrap;gap:4px}
@@ -50,13 +48,11 @@
     padding:6px 11px;border-radius:8px}
   nav a:hover{background:#eef2f8;color:var(--navy)}
 
-  section{margin-top:34px}
+  section{margin-top:34px;scroll-margin-top:60px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;
     box-shadow:0 4px 16px rgba(20,40,80,.05)}
-  .card + .card{margin-top:14px}
   .lead{font-size:16.5px;line-height:1.6}
 
-  /* destaque */
   .callout{border:1px solid var(--line);border-left:4px solid var(--info);background:#fff;
     border-radius:12px;padding:15px 18px;margin:14px 0}
   .callout.warn{border-left-color:var(--wait)}
@@ -75,46 +71,71 @@
   .drive .ico{font-size:26px;line-height:1}
   .drive b{font-size:17px}
   .drive p{font-size:13.5px;color:var(--muted);margin:0}
-  .drive a.go-btn{margin-top:auto;display:inline-block;background:var(--navy);color:#fff;
-    text-decoration:none;font-size:13px;font-weight:700;padding:10px 16px;border-radius:9px;
-    text-align:center}
+  .drive a.go-btn{margin-top:auto;background:var(--navy);color:#fff;text-decoration:none;
+    font-size:13px;font-weight:700;padding:10px 16px;border-radius:9px;text-align:center}
   .drive.ref a.go-btn{background:var(--teal)}
   .drive a.go-btn:hover{filter:brightness(.92)}
 
-  /* lista numerada de banners */
-  .blist{margin:16px 0 0;padding:0;list-style:none;counter-reset:b}
-  .blist li{counter-increment:b;background:#fff;border:1px solid var(--line);border-radius:14px;
-    padding:16px 20px 16px 68px;position:relative;margin-bottom:10px}
-  .blist li:before{content:counter(b,decimal-leading-zero);position:absolute;left:18px;top:15px;
-    font-family:'Teko',sans-serif;font-size:30px;line-height:1;color:var(--navy);font-weight:600}
-  .blist li.go{border-left:4px solid var(--ok)}
-  .blist li.wait{border-left:4px solid var(--wait)}
-  .blist li.stop{border-left:4px solid var(--block)}
-  .blist .t{font-size:15.5px;font-weight:700;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-  .blist .d{font-size:13.5px;color:var(--muted);margin-top:5px}
-  .blist .d b{color:var(--ink)}
-  .pill{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;
-    padding:3px 9px;border-radius:999px}
-  .pill.go{background:#E7F6EC;color:var(--ok)}
-  .pill.wait{background:#FEF3E2;color:var(--wait)}
-  .pill.stop{background:#FDECEC;color:var(--block)}
-  .group-title{font-family:'Teko',sans-serif;font-size:24px;text-transform:uppercase;
-    letter-spacing:.6px;color:var(--navy);margin:26px 0 0;display:flex;align-items:center;gap:10px}
-  .group-title span{font-family:'Montserrat';font-size:12px;font-weight:600;color:var(--muted);
-    text-transform:none;letter-spacing:0}
-
   /* tabelas */
   .tw{overflow-x:auto;margin:12px 0}
-  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+  table{border-collapse:collapse;width:100%;font-size:13.5px}
   th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
   th{background:#f7f9fc;font-size:11.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted)}
   tbody tr:last-child td{border-bottom:none}
   td.h{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
-  .gap{background:#FDECEC;color:var(--block);font-weight:700;border-radius:5px;padding:2px 8px;
-    display:inline-block;font-size:12px}
-  .patio{color:var(--ok);font-weight:700}
-  .maybe{color:var(--wait);font-weight:700}
-  .none{color:var(--muted)}
+
+  /* tabela dos 13 */
+  .btab{min-width:660px}
+  .btab tbody tr:hover{background:#fafcff}
+  .btab td{padding:11px 12px}
+  .id{font-family:'Teko',sans-serif;font-size:25px;line-height:1;color:var(--navy);
+    font-weight:600;white-space:nowrap}
+  .bname{font-weight:700;font-size:14.5px}
+  .bwhat{font-size:12.5px;color:var(--muted);margin-top:2px;display:block}
+  .grouprow td{background:linear-gradient(90deg,#eef4ff,#fff);font-family:'Teko',sans-serif;
+    font-size:21px;text-transform:uppercase;letter-spacing:.7px;color:var(--navy);
+    border-bottom:2px solid var(--navy);padding:8px 12px}
+  .grouprow small{font-family:'Montserrat';font-size:11.5px;font-weight:600;color:var(--muted);
+    text-transform:none;letter-spacing:0;margin-left:8px}
+  .pill{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+    padding:4px 9px;border-radius:999px;white-space:nowrap}
+  .pill.go{background:#E7F6EC;color:var(--ok)}
+  .pill.wait{background:#FEF3E2;color:var(--wait)}
+  .pill.stop{background:#FDECEC;color:var(--block)}
+  .see{background:#fff;border:1.5px solid var(--navy);color:var(--navy);font:inherit;font-size:12px;
+    font-weight:700;padding:7px 12px;border-radius:8px;cursor:pointer;white-space:nowrap}
+  .see:hover{background:var(--navy);color:#fff}
+
+  /* blocos de conteúdo por banner */
+  .bc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;
+    margin-bottom:14px;scroll-margin-top:64px;box-shadow:0 4px 16px rgba(20,40,80,.05)}
+  .bc.target{border-color:var(--navy);box-shadow:0 0 0 3px rgba(23,59,121,.13)}
+  .bc-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:4px}
+  .bc-head .id{font-size:32px}
+  .bc-head .n{font-size:19px;font-weight:700}
+  .bc-note{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+  .bc-note b{color:var(--ink)}
+
+  .box{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:14px;background:#FBFCFE}
+  .box-top{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    background:#F1F5FB;padding:9px 14px;border-bottom:1px solid var(--line)}
+  .box-top b{font-size:11.5px;letter-spacing:1.1px;text-transform:uppercase;color:var(--navy)}
+  .copy{background:var(--navy);color:#fff;border:none;font:inherit;font-size:11.5px;font-weight:700;
+    padding:7px 13px;border-radius:8px;cursor:pointer}
+  .copy:hover{background:var(--navy900)}
+  .copy.done{background:var(--ok)}
+  .box-body{padding:14px 16px}
+  .dtag{display:inline-block;background:var(--navy);color:#fff;font-family:'Teko',sans-serif;
+    font-size:20px;letter-spacing:.6px;padding:2px 12px;border-radius:6px;margin-bottom:10px}
+  .cl{display:grid;grid-template-columns:112px 132px 1fr;gap:10px;padding:7px 0;
+    border-bottom:1px dashed var(--line);font-size:13.5px}
+  .cl:last-child{border-bottom:none}
+  .cl .t{font-weight:700;font-variant-numeric:tabular-nums}
+  .cl .l{font-weight:600}
+  .cl .l.patio{color:var(--ok)} .cl .l.maybe{color:var(--wait)}
+  .cl .l.gapl{color:var(--block)} .cl .l.none{color:var(--muted);font-weight:500}
+  .txt{font-size:14px} .txt div{padding:4px 0}
+  @media (max-width:640px){ .cl{grid-template-columns:1fr;gap:2px} .cl .l:before{content:"📍 "} }
 
   /* referências */
   .refs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:14px}
@@ -123,14 +144,6 @@
   .ref figcaption{padding:12px 15px;font-size:13px;color:var(--muted)}
   .ref figcaption b{color:var(--ink);display:block;margin-bottom:3px;font-size:13.5px}
 
-  /* paleta */
-  .pal{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-  .sw{border:1px solid var(--line);border-radius:10px;overflow:hidden;width:118px;background:#fff}
-  .sw .c{height:52px}
-  .sw .t{padding:7px 9px;font-size:11px;font-weight:600}
-  .sw .t small{display:block;color:var(--muted);font-weight:500;font-family:ui-monospace,monospace}
-
-  /* checklist e passos */
   .check{margin-left:0}
   .check li{list-style:none;position:relative;padding-left:28px;margin-bottom:8px;font-size:14px}
   .check li:before{content:"";position:absolute;left:0;top:2px;width:17px;height:17px;
@@ -143,14 +156,18 @@
 
   footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);
     font-size:12.5px;color:var(--muted)}
-  .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-size:13px;
-    font-weight:600;padding:9px 16px;border-radius:9px;border:none;cursor:pointer;font-family:inherit}
+  .btn{background:var(--navy);color:#fff;text-decoration:none;font-size:13px;font-weight:600;
+    padding:9px 16px;border-radius:9px;border:none;cursor:pointer;font-family:inherit}
   .btn:hover{background:var(--navy900)}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+    background:var(--ink);color:#fff;padding:11px 20px;border-radius:10px;font-size:13.5px;
+    font-weight:600;opacity:0;pointer-events:none;transition:.22s;z-index:60}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 
   @media (max-width:640px){ h1{font-size:42px} h2{font-size:28px} }
   @media print{
-    nav,.btn{display:none} body{background:#fff}
-    .card,.blist li,.ref figure,.drive{box-shadow:none;break-inside:avoid}
+    nav,.btn,.copy,.see{display:none} body{background:#fff}
+    .card,.bc,.ref figure,.drive{box-shadow:none;break-inside:avoid}
     header{background:var(--navy) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   }
 </style>
@@ -162,9 +179,8 @@
     <div>
       <div class="kicker">VIII Concefor · 17 a 20 de agosto de 2026 · Cefor/Ifes</div>
       <h1>Banners<br>Briefing de produção</h1>
-      <p class="sub">Tudo o que é preciso para produzir os <b>13 banners</b>: o que é cada um, o
-        conteúdo linha a linha, as regras de marca, onde estão os arquivos e o que ainda falta
-        chegar. <b>Produção: Andreia.</b></p>
+      <p class="sub">Os <b>13 banners</b> do congresso: o que é cada um, o conteúdo pronto para
+        copiar, prazos, referências e o que ainda falta chegar. <b>Produção: Andreia.</b></p>
     </div>
     <div class="para">
       <div class="n">13</div>
@@ -179,10 +195,8 @@
     <a href="#pastas">Pastas de trabalho</a>
     <a href="#prazos">Prazos</a>
     <a href="#specs">Especificações</a>
-    <a href="#marca">Regras de marca</a>
     <a href="#lista">Os 13 banners</a>
-    <a href="#conteudo">Conteúdo dos dias</a>
-    <a href="#institucionais">Banners institucionais</a>
+    <a href="#conteudo">Conteúdo de cada um</a>
     <a href="#refs">Referências</a>
     <a href="#entrega">Entrega</a>
     <a href="#pendencias">Pendências</a>
@@ -195,28 +209,29 @@
 <section id="resumo">
   <h2>O trabalho em uma frase</h2>
   <div class="card">
-    <p class="lead">Produzir <b>13 banners</b>: os <b>10 contratados no Termo de Referência 72/2026</b>,
-      impressos pela gráfica junto com o resto do material do evento, mais <b>3 banners
-      institucionais</b> — livro dos 20 anos, Base de Conhecimentos e plataforma de MOOCs —
+    <p class="lead">Produzir <b>13 banners</b>: os <b>10 do evento</b>, contratados no Termo de
+      Referência 72/2026 e impressos pela gráfica junto com o resto do material, mais
+      <b>3 institucionais</b> — livro dos 20 anos, Base de Conhecimentos e plataforma de MOOCs —
       pedidos pela Vanessa Battestin e custeados pela UAB.</p>
 
     <div class="callout go">
       <span class="tag">Comece por aqui</span>
-      <b>5 dos 13 já podem ser produzidos hoje</b>, sem depender de ninguém: o banner geral do
-      Concefor e os 4 de andar. Os banners de dia já têm todo o conteúdo escrito — falta só o
-      local de alguns itens.
+      <b>6 dos 13 podem ser produzidos hoje</b>, sem depender de ninguém:
+      <b>#01</b> (Concefor Geral), <b>#07 a #10</b> (andares) e <b>#11</b> (livro dos 20 anos —
+      a capa já está pronta). Os banners de dia já têm todo o conteúdo escrito: falta só o local
+      de alguns itens.
     </div>
 
     <div class="tw">
       <table>
         <thead><tr><th>Situação</th><th>Quais</th><th>Quantos</th></tr></thead>
         <tbody>
-          <tr><td><b>Pode produzir já</b></td><td>01 Geral · 07 a 10 (andares)</td>
-              <td><span class="pill go">5 · nada trava</span></td></tr>
-          <tr><td><b>Conteúdo pronto, falta o local</b></td><td>02 a 05 (programação por dia)</td>
+          <tr><td><b>Pode produzir já</b></td><td>#01 · #07 · #08 · #09 · #10 · #11</td>
+              <td><span class="pill go">6 · nada trava</span></td></tr>
+          <tr><td><b>Conteúdo pronto, falta o local</b></td><td>#02 · #03 · #04 · #05</td>
               <td><span class="pill wait">4 · 5 lacunas</span></td></tr>
-          <tr><td><b>Aguardando informação de terceiros</b></td><td>06 Eventos paralelos · 11, 12 e 13 (institucionais)</td>
-              <td><span class="pill stop">4</span></td></tr>
+          <tr><td><b>Aguardando informação</b></td><td>#06 (eventos paralelos) · #12 · #13</td>
+              <td><span class="pill stop">3</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -234,8 +249,7 @@
         <div class="ico">📂</div>
         <b>Artes Concefor 2026</b>
         <p><b>É aqui que você trabalha.</b> Salve nesta pasta os arquivos editáveis e as artes
-          finais dos banners. Os arquivos de marca do evento (logos, selo dos 20 anos, logos de
-          apoio) também ficam aqui.</p>
+          finais dos banners. Os arquivos de marca (logos e selo dos 20 anos) também ficam aqui.</p>
         <a class="go-btn" href="https://drive.google.com/drive/folders/1Qtm4qtGLQsV4svTGmPeBNx1SwfTCkdak?usp=sharing" target="_blank" rel="noopener">Abrir pasta de trabalho ↗</a>
       </div>
       <div class="drive ref">
@@ -258,8 +272,9 @@
       <table>
         <thead><tr><th>Quando</th><th>O quê</th></tr></thead>
         <tbody>
-          <tr><td class="h">01/08</td><td><b>Artes dos 3 banners institucionais</b> (livro, Base de Conhecimentos, MOOCs) — a Vanessa volta das férias no começo de agosto e leva à gráfica</td></tr>
-          <tr><td class="h">antes de 07/08</td><td><b>Artes dos 10 banners do evento na gráfica</b>, com folga. As outras peças do contrato foram enviadas em 22/07 e ainda assim voltaram para ajuste — conte com uma rodada de correção</td></tr>
+          <tr><td class="h">31/07</td><td><b>Banners do Concefor — #01 a #10.</b> É o prazo que vale para os dez do evento</td></tr>
+          <tr><td class="h">01/08</td><td><b>#11 livro dos 20 anos</b> e <b>#12 Base de Conhecimentos</b> — a Vanessa volta das férias no começo de agosto e leva à gráfica</td></tr>
+          <tr><td class="h">03/08</td><td><b>#13 vitrine de MOOCs</b></td></tr>
           <tr><td class="h">07/08</td><td>Prazo-limite contratado de <b>entrega</b> do material impresso no Cefor</td></tr>
           <tr><td class="h">17/08</td><td><b>Abertura do VIII Concefor.</b> Os banners precisam estar montados antes</td></tr>
         </tbody>
@@ -267,9 +282,9 @@
     </div>
     <div class="callout warn">
       <span class="tag">Atenção ao sequenciamento</span>
-      O <b>banner 06 (eventos paralelos) é o último a imprimir</b>, de propósito: ele espera a
-      programação da Aula Inaugural do Educimat. Os outros nove do evento não precisam esperar por
-      ele — podem ir à gráfica antes, em lote.
+      O <b>#06 (eventos paralelos) é o último a imprimir</b>, de propósito: ele espera a programação
+      da Aula Inaugural do Educimat. Os outros nove do evento não precisam esperar por ele — podem
+      ir à gráfica antes, em lote.
     </div>
   </div>
 </section>
@@ -285,283 +300,416 @@
           <tr><td><b>Medida</b></td><td><b>0,90 × 1,20 m</b> (vertical) — medida contratada no TR, não é estimativa. Vale para os 10 banners do evento</td></tr>
           <tr><td><b>Cor</b></td><td>Colorido, impressão em lona/banner conforme a gráfica</td></tr>
           <tr><td><b>Arquivo</b></td><td>PDF fechado, <b>com marcas de corte e sangria</b>, textos e logos <b>em curvas</b> — foi o que a gráfica pediu para as outras peças</td></tr>
+          <tr><td><b>Assinaturas</b></td><td><b>Realização:</b> Cefor.<br><b>Apoio:</b> Ifes Campus Vila Velha e Educimat.<br>São as únicas logos que teremos — não há outras marcas de apoio nesta edição</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
 
-<!-- ============ MARCA ============ -->
-<section id="marca">
-  <h2>Regras de marca</h2>
-  <div class="card">
-    <div class="callout stop">
-      <span class="tag">A regra que mais causa erro</span>
-      <b>A logomarca do Concefor vai SEM o numeral da edição.</b> Nada de "VIII". É exigência do
-      TR 72/2026 (item 4.1), para que o material possa ser reaproveitado em edições futuras.
-      ⚠️ Os banners de 2024 que servem de referência trazem <b>"VII Concefor"</b> no topo — não copie isso.
-    </div>
-
-    <div class="tw">
-      <table>
-        <thead><tr><th>Regra</th><th>Onde vale</th></tr></thead>
-        <tbody>
-          <tr><td><b>Logo do Concefor sem o numeral</b></td><td>Banners 01 a 06</td></tr>
-          <tr><td><b>Selo dos 20 anos do Cefor</b> — obrigatório</td><td>Banners 01 a 06 e os 3 institucionais</td></tr>
-          <tr><td><b>Sem logo do Concefor e sem selo</b></td><td>Banners 07 a 10 (andares) — <i>ver abaixo</i></td></tr>
-          <tr><td><b>Rodapé com Realização e Apoio</b></td><td>Banners 01 a 06, como no modelo de 2024</td></tr>
-          <tr><td><b>Etiqueta de data em destaque</b></td><td>Banners 02 a 06 — é o que faz a pessoa achar o dia certo de longe</td></tr>
-          <tr><td><b>Sem datas nem menções ao Concefor</b></td><td>Banners 11 a 13 — ficam no Cefor depois do evento, precisam ser atemporais</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="callout">
-      <span class="tag">Por que os banners de andar são diferentes</span>
-      Eles <b>ficam no prédio depois do evento</b>, como sinalização permanente do Cefor. Por isso
-      vão <b>sem a logo do Concefor</b> (decisão da coordenação: não há problema em ficar sem a logo
-      quando for necessário) e <b>sem o selo dos 20 anos</b> — o selo é comemorativo e deixaria a
-      peça datada. Nesses quatro fica só: <b>o nome do andar e dos espaços + assinatura Cefor / Ifes</b>.
-    </div>
-
-    <h3 style="margin-top:18px">Paleta</h3>
-    <p style="font-size:13.5px;color:var(--muted)">Concefor — a identidade que governa a peça:</p>
-    <div class="pal">
-      <div class="sw"><div class="c" style="background:#102A5C"></div><div class="t">navy 900<small>#102A5C</small></div></div>
-      <div class="sw"><div class="c" style="background:#173B79"></div><div class="t">navy 800<small>#173B79</small></div></div>
-      <div class="sw"><div class="c" style="background:#1E5A8C"></div><div class="t">blue 600<small>#1E5A8C</small></div></div>
-      <div class="sw"><div class="c" style="background:#0E8FA8"></div><div class="t">teal 500<small>#0E8FA8</small></div></div>
-      <div class="sw"><div class="c" style="background:#00C9C9"></div><div class="t">cyan 400<small>#00C9C9</small></div></div>
-      <div class="sw"><div class="c" style="background:#F5B82E"></div><div class="t">gold<small>#F5B82E</small></div></div>
-    </div>
-    <p style="font-size:13.5px;color:var(--muted);margin-top:14px">Selo dos 20 anos — cores exatas do
-      <a href="https://publicacoes.ifes.edu.br/cef/Manual_do_Selo_20_anos_Cefor.pdf" target="_blank" rel="noopener">manual oficial</a>:</p>
-    <div class="pal">
-      <div class="sw"><div class="c" style="background:#FF66CC"></div><div class="t">magenta<small>#FF66CC</small></div></div>
-      <div class="sw"><div class="c" style="background:#3399CC"></div><div class="t">azul<small>#3399CC</small></div></div>
-      <div class="sw"><div class="c" style="background:#3C9035"></div><div class="t">verde<small>#3C9035</small></div></div>
-      <div class="sw"><div class="c" style="background:#595C5A"></div><div class="t">cinza<small>#595C5A</small></div></div>
-    </div>
-    <div class="callout" style="margin-top:16px">
-      <span class="tag">Hierarquia</span>
-      <b>O Concefor governa a peça; o selo é acento comemorativo pontual.</b> O selo entra como
-      assinatura, não como protagonista — exceto nas peças que são do Cefor, e não do evento.
-    </div>
-  </div>
-</section>
-
-<!-- ============ OS 13 ============ -->
+<!-- ============ TABELA DOS 13 ============ -->
 <section id="lista">
   <h2>Os 13 banners</h2>
   <div class="card">
-    <p>Na ordem de produção. Os <b>10 primeiros</b> são os contratados no TR e vão para a gráfica em
-      lote; os <b>3 últimos</b> são institucionais, ficam no Cefor depois do evento e seguem por
-      outro caminho.</p>
+    <p>O número com <b>#</b> é o identificador de cada banner — use ele para nomear arquivos e
+      falar da peça. A ordem é a de produção.</p>
+    <div class="tw">
+      <table class="btab">
+        <thead><tr><th style="width:56px">ID</th><th>Banner</th><th style="width:150px">Situação</th><th style="width:132px"></th></tr></thead>
+        <tbody>
+          <tr class="grouprow"><td colspan="4">Banners do evento <small>10 unidades · 0,90 × 1,20 m · prazo 31/07</small></td></tr>
 
-    <div class="group-title">Banners do evento <span>10 unidades · 0,90 × 1,20 m · contratados no TR 72/2026</span></div>
-    <ol class="blist">
-      <li class="go">
-        <div class="t">Concefor Geral <span class="pill go">pode produzir</span></div>
-        <div class="d">A identidade do evento: marca do Concefor, tema da edição e selo dos 20 anos
-          sobre o fundo com o grafismo de linhas e nós. Rodapé com Realização e Apoio.
-          <b>Modelo: o banner geral de 2024</b>, na pasta de referências.</div>
-      </li>
-      <li class="wait">
-        <div class="t">Dia 17/08 — segunda-feira · Abertura <span class="pill wait">1 confirmação</span></div>
-        <div class="d">Programação do dia com horário, local e atividade — <b>8 linhas</b>, listadas
-          na seção <a href="#conteudo">Conteúdo dos dias</a>. Falta apenas confirmar se UAB/UnAC
-          ficam no Pátio e o NTE no Auditório.</div>
-      </li>
-      <li class="wait">
-        <div class="t">Dia 18/08 — terça-feira <span class="pill wait">3 lacunas</span></div>
-        <div class="d"><b>6 linhas.</b> Faltam os locais da <b>Mostra de Produtos</b> (2 blocos) e
-          das <b>sessões técnicas</b>.</div>
-      </li>
-      <li class="wait">
-        <div class="t">Dia 19/08 — quarta-feira <span class="pill wait">2 lacunas, 1 pergunta</span></div>
-        <div class="d"><b>7 linhas</b> — o dia mais cheio. Falta só o local das <b>sessões
-          técnicas</b>: uma resposta fecha o banner inteiro.</div>
-      </li>
-      <li class="wait">
-        <div class="t">Dia 20/08 — quinta-feira · Encerramento <span class="pill wait">confirmar o dia</span></div>
-        <div class="d"><b>5 linhas.</b> ⚠️ Falta confirmar se este banner é mesmo do dia 20 — a lista
-          da coordenação repete "18/08". O conteúdo aqui assume 20/08, o único dia sem banner próprio.</div>
-      </li>
-      <li class="stop">
-        <div class="t">Eventos paralelos — dia 20/08 <span class="pill stop">esperando locais</span></div>
-        <div class="d">Lista de <b>todos os eventos paralelos</b> com local e horário de cada, no
-          formato do banner de paralelos de 2024. Hoje: 1 evento com local definido, 1 entre duas
-          opções, 3 a definir — e a <b>Aula Inaugural do Educimat</b> ainda sem programação.
-          <b>É o último a imprimir</b>, por isso mesmo.</div>
-      </li>
-      <li class="go">
-        <div class="t">Térreo — Pátio <span class="pill go">pode produzir</span></div>
-        <div class="d">Sinalização de andar. <b>Sem logo do Concefor, sem selo.</b> Assinatura
-          Cefor / Ifes. Fica no prédio depois do evento.</div>
-      </li>
-      <li class="go">
-        <div class="t">1º Piso — Salas 1 e 2 <span class="pill go">pode produzir</span></div>
-        <div class="d">Mesma arte-base do anterior, muda só o texto.</div>
-      </li>
-      <li class="go">
-        <div class="t">2º Piso — Salas 3 e 4 <span class="pill go">pode produzir</span></div>
-        <div class="d">Mesma arte-base, muda só o texto.</div>
-      </li>
-      <li class="go">
-        <div class="t">4º Piso — Auditório e Laboratório <span class="pill go">pode produzir</span></div>
-        <div class="d">Mesma arte-base, muda só o texto.</div>
-      </li>
-    </ol>
+          <tr><td class="id">#01</td>
+            <td><span class="bname">Concefor Geral</span>
+              <span class="bwhat">Identidade do evento: marca, tema e selo dos 20 anos</span></td>
+            <td><span class="pill go">pode produzir</span></td>
+            <td><button class="see" data-go="b01">Ver conteúdo →</button></td></tr>
 
-    <div class="group-title" style="margin-top:26px">Banners institucionais
-      <span>3 unidades · fora do TR · pedido da Vanessa · custeados pela UAB</span></div>
-    <ol class="blist" start="11" style="counter-reset:b 10">
-      <li class="stop">
-        <div class="t">Livro dos 20 anos do Cefor <span class="pill stop">falta o link definitivo</span></div>
-        <div class="d">Capa do livro + <b>espaço para QR code</b> com o link de acesso. Ver
-          <a href="#institucionais">Banners institucionais</a>.</div>
-      </li>
-      <li class="stop">
-        <div class="t">Base de Conhecimentos <span class="pill stop">nova versão</span></div>
-        <div class="d">Plataforma já no ar:
-          <a href="https://conhecimento.cefor.ifes.edu.br/" target="_blank" rel="noopener">conhecimento.cefor.ifes.edu.br</a>
-          — dá para tirar a imagem representativa direto do site.</div>
-      </li>
-      <li class="stop">
-        <div class="t">Plataforma de MOOCs <span class="pill stop">falta o link</span></div>
-        <div class="d">Nova vitrine de cursos abertos. O endereço ainda não foi informado —
-          é o que trava esta peça.</div>
-      </li>
-    </ol>
+          <tr><td class="id">#02</td>
+            <td><span class="bname">Dia 17/08 — segunda · Abertura</span>
+              <span class="bwhat">Programação do dia · 8 linhas</span></td>
+            <td><span class="pill wait">1 confirmação</span></td>
+            <td><button class="see" data-go="b02">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#03</td>
+            <td><span class="bname">Dia 18/08 — terça</span>
+              <span class="bwhat">Programação do dia · 6 linhas</span></td>
+            <td><span class="pill wait">3 lacunas</span></td>
+            <td><button class="see" data-go="b03">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#04</td>
+            <td><span class="bname">Dia 19/08 — quarta</span>
+              <span class="bwhat">Programação do dia · 7 linhas</span></td>
+            <td><span class="pill wait">2 lacunas</span></td>
+            <td><button class="see" data-go="b04">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#05</td>
+            <td><span class="bname">Dia 20/08 — quinta · Encerramento</span>
+              <span class="bwhat">Programação do dia · 5 linhas</span></td>
+            <td><span class="pill wait">confirmar o dia</span></td>
+            <td><button class="see" data-go="b05">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#06</td>
+            <td><span class="bname">Eventos paralelos — 20/08</span>
+              <span class="bwhat">Todos os eventos do dia, com local e horário · último a imprimir</span></td>
+            <td><span class="pill stop">esperando locais</span></td>
+            <td><button class="see" data-go="b06">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#07</td>
+            <td><span class="bname">Térreo — Pátio</span>
+              <span class="bwhat">Sinalização de andar · permanente no prédio</span></td>
+            <td><span class="pill go">pode produzir</span></td>
+            <td><button class="see" data-go="b07">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#08</td>
+            <td><span class="bname">1º Piso — Salas 1 e 2</span>
+              <span class="bwhat">Mesma arte do #07, muda o texto</span></td>
+            <td><span class="pill go">pode produzir</span></td>
+            <td><button class="see" data-go="b07">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#09</td>
+            <td><span class="bname">2º Piso — Salas 3 e 4</span>
+              <span class="bwhat">Mesma arte do #07, muda o texto</span></td>
+            <td><span class="pill go">pode produzir</span></td>
+            <td><button class="see" data-go="b07">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#10</td>
+            <td><span class="bname">4º Piso — Auditório e Laboratório</span>
+              <span class="bwhat">Mesma arte do #07, muda o texto</span></td>
+            <td><span class="pill go">pode produzir</span></td>
+            <td><button class="see" data-go="b07">Ver conteúdo →</button></td></tr>
+
+          <tr class="grouprow"><td colspan="4">Banners institucionais <small>3 unidades · fora do TR · custeados pela UAB · arte única para os três</small></td></tr>
+
+          <tr><td class="id">#11</td>
+            <td><span class="bname">Livro dos 20 anos do Cefor</span>
+              <span class="bwhat">Capa do livro + QR code · prazo 01/08</span></td>
+            <td><span class="pill go">pode começar</span></td>
+            <td><button class="see" data-go="b11">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#12</td>
+            <td><span class="bname">Base de Conhecimentos</span>
+              <span class="bwhat">Plataforma no ar + QR code · prazo 01/08</span></td>
+            <td><span class="pill wait">link ✅, arte a fazer</span></td>
+            <td><button class="see" data-go="b12">Ver conteúdo →</button></td></tr>
+
+          <tr><td class="id">#13</td>
+            <td><span class="bname">Vitrine de MOOCs</span>
+              <span class="bwhat">Nova plataforma de cursos + QR code · prazo 03/08</span></td>
+            <td><span class="pill stop">falta o link</span></td>
+            <td><button class="see" data-go="b13">Ver conteúdo →</button></td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
 <!-- ============ CONTEÚDO ============ -->
 <section id="conteudo">
-  <h2>Conteúdo dos banners de dia</h2>
-  <div class="card">
-    <p>Cada tabela abaixo é <b>a peça</b>: as linhas na ordem em que devem aparecer. O layout segue
-      o banner de paralelos de 2024 — <b>horário e local à esquerda, atividade à direita</b>,
-      separados por filetes, com a etiqueta de data em destaque no topo.</p>
-    <p style="font-size:13px;color:var(--muted)">
-      <span class="patio">Pátio</span> = local confirmado ·
-      <span class="maybe">provável</span> = a confirmar ·
-      <span class="gap">a definir</span> = lacuna, ainda vai chegar ·
-      <span class="none">—</span> = não leva local no banner, por decisão
-    </p>
+  <h2>Conteúdo de cada banner</h2>
+  <p style="color:var(--muted);font-size:14px;max-width:760px">
+    O que está <b>dentro da caixa cinza é o conteúdo da peça</b> — dá para copiar com um clique.
+    O que está fora da caixa é orientação de produção.
+    Legenda dos locais: <b style="color:var(--ok)">verde</b> confirmado ·
+    <b style="color:var(--wait)">laranja</b> a confirmar ·
+    <b style="color:var(--block)">vermelho</b> ainda vai chegar.
+  </p>
 
-    <h3 style="margin-top:20px">Banner 02 · 17 AGO — segunda-feira · Abertura</h3>
-    <div class="tw"><table>
-      <thead><tr><th>Horário</th><th>Local</th><th>Atividade</th></tr></thead>
-      <tbody>
-        <tr><td class="h">13h30</td><td class="none">—</td><td><b>Credenciamento</b></td></tr>
-        <tr><td class="h">14h30–17h30</td><td class="maybe">Pátio*</td><td><b>Eventos UAB e UnAC</b></td></tr>
-        <tr><td class="h">14h30–17h30</td><td class="maybe">Auditório*</td><td><b>Evento NTE</b></td></tr>
-        <tr><td class="h">18h00</td><td class="patio">Pátio</td><td><b>Momento Musical</b></td></tr>
-        <tr><td class="h">18h30</td><td class="patio">Pátio</td><td><b>Abertura</b></td></tr>
-        <tr><td class="h">19h–20h</td><td class="patio">Pátio</td><td><b>Palestra "20 Anos de EaD e o Cefor"</b> · Dra. Vanessa Battestin</td></tr>
-        <tr><td class="h">20h–20h30</td><td class="patio">Pátio</td><td><b>Lançamentos</b> · e-book dos 20 anos · e-book do NTE · nova plataforma de MOOCs · nova Base de Conhecimentos</td></tr>
-        <tr><td class="h">20h30</td><td class="patio">Pátio</td><td><b>Celebração dos 20 anos do Cefor</b></td></tr>
-      </tbody>
-    </table></div>
-    <p style="font-size:13px"><b>*</b> O item oficial é um só — "Eventos UAB / UnAC / NTE" —, mas
-      <b>vira duas linhas aqui</b> porque os locais são diferentes. Confirmar antes de fechar.</p>
+  <!-- 01 -->
+  <div class="bc" id="b01">
+    <div class="bc-head"><span class="id">#01</span><span class="n">Concefor Geral</span>
+      <span class="pill go">pode produzir</span></div>
+    <p class="bc-note">O banner de identidade do evento. <b>Modelo: o banner geral de 2024</b>, na
+      pasta de referências — marca grande e centralizada sobre o fundo azul-petróleo com o grafismo
+      de linhas e nós, rodapé com Realização e Apoio.</p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="Concefor
+Congresso Regional de Formação e Educação a Distância
 
-    <h3 style="margin-top:24px">Banner 03 · 18 AGO — terça-feira</h3>
-    <div class="tw"><table>
-      <thead><tr><th>Horário</th><th>Local</th><th>Atividade</th></tr></thead>
-      <tbody>
-        <tr><td class="h">8h00</td><td><span class="gap">a definir</span></td><td><b>Mostra de Produtos e Produções Técnicas</b> · Painel</td></tr>
-        <tr><td class="h">9h30</td><td class="patio">Pátio</td><td><b>Mesa-redonda "Tecnologia Delas"</b> · Dra. Márcia Oliveira, Dra. Jaqueline Sanz e Dra. Mariella Berger</td></tr>
-        <tr><td class="h">11h30</td><td><span class="gap">a definir</span></td><td><b>Mostra de Produtos e Produções Técnicas</b> · Painel</td></tr>
-        <tr><td class="h">13h30</td><td><span class="gap">a definir</span></td><td><b>Sessões técnicas</b> · artigos completos</td></tr>
-        <tr><td class="h">14h30</td><td class="patio">Pátio</td><td><b>Palestra internacional</b> · Felipe Maciel Tessarolo (The Open University, Reino Unido)</td></tr>
-        <tr><td class="h">16h00</td><td class="patio">Pátio</td><td><b>Coffee-break</b></td></tr>
-      </tbody>
-    </table></div>
-    <p style="font-size:13px">💡 Se faltar espaço, as duas Mostras podem virar <b>uma linha só</b>
-      ("8h e 11h30"), já que compartilham o local.</p>
+Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais
 
-    <h3 style="margin-top:24px">Banner 04 · 19 AGO — quarta-feira</h3>
-    <div class="tw"><table>
-      <thead><tr><th>Horário</th><th>Local</th><th>Atividade</th></tr></thead>
-      <tbody>
-        <tr><td class="h">8h00</td><td><span class="gap">a definir</span></td><td><b>Sessões técnicas</b> · artigos completos</td></tr>
-        <tr><td class="h">9h00</td><td class="patio">Pátio</td><td><b>Momento Cultural</b></td></tr>
-        <tr><td class="h">9h30</td><td class="patio">Pátio</td><td><b>Mesa-redonda "Desafios da EaD para os próximos 20 anos"</b> · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero</td></tr>
-        <tr><td class="h">13h30</td><td><span class="gap">a definir</span></td><td><b>Sessões técnicas</b> · artigos completos</td></tr>
-        <tr><td class="h">14h30</td><td class="patio">Pátio</td><td><b>Palestra "Autoria com IA generativa: desafios para a EaD"</b> · Dr. Mariano Pimentel</td></tr>
-        <tr><td class="h">16h00</td><td class="patio">Pátio</td><td><b>Coffee-break</b></td></tr>
-        <tr><td class="h">16h30</td><td class="patio">Pátio</td><td><b>Palestra "Inovações da IA para a Educação"</b> · Dr. Mauro Oliveira</td></tr>
-      </tbody>
-    </table></div>
+17 a 20 de agosto de 2026 · Cefor/Ifes · Vitória-ES
 
-    <h3 style="margin-top:24px">Banner 05 · 20 AGO — quinta-feira · Encerramento</h3>
-    <div class="tw"><table>
-      <thead><tr><th>Horário</th><th>Local</th><th>Atividade</th></tr></thead>
-      <tbody>
-        <tr><td class="h">9h–12h</td><td class="none">cada evento no seu espaço</td><td><b>Momento I · Eventos paralelos</b></td></tr>
-        <tr><td class="h">12h00</td><td class="none">—</td><td><b>Almoço</b></td></tr>
-        <tr><td class="h">13h30–16h</td><td class="none">cada evento no seu espaço</td><td><b>Momento II · Eventos paralelos</b></td></tr>
-        <tr><td class="h">16h00</td><td class="patio">Pátio</td><td><b>Premiação dos Melhores Trabalhos do VIII Concefor</b></td></tr>
-        <tr><td class="h">16h30</td><td class="patio">Pátio</td><td><b>Coffee-break e Momento Cultural</b></td></tr>
-      </tbody>
-    </table></div>
-    <div class="callout">
-      <span class="tag">Não duplicar</span>
-      <b>Não repita aqui a lista dos eventos paralelos</b> — ela é o conteúdo inteiro do banner 06.
-      Neste, uma chamada basta: <i>"veja a programação completa no banner de Eventos Paralelos"</i>.
-      Repetir dobra o trabalho e dobra o risco de erro quando algum local mudar.
++ selo dos 20 anos do Cefor
+Realização: Cefor
+Apoio: Ifes Campus Vila Velha e Educimat">Copiar</button></div>
+      <div class="box-body txt">
+        <div><b>Concefor</b><br><span style="color:var(--muted)">Congresso Regional de Formação e Educação a Distância</span></div>
+        <div><b>Tema:</b> Tecnologia, Transformação e Educação a Distância: 20 anos construindo
+          novos cenários educacionais</div>
+        <div><b>17 a 20 de agosto de 2026</b> · Cefor/Ifes · Vitória-ES</div>
+        <div>+ <b>selo dos 20 anos do Cefor</b></div>
+        <div><b>Realização:</b> Cefor · <b>Apoio:</b> Ifes Campus Vila Velha e Educimat</div>
+      </div>
     </div>
   </div>
-</section>
 
-<!-- ============ INSTITUCIONAIS ============ -->
-<section id="institucionais">
-  <h2>Banners institucionais (11, 12 e 13)</h2>
-  <div class="card">
-    <p>Os três foram pedidos pela <b>Vanessa Battestin</b>: divulgar durante o Concefor e
-      <b>continuar no Cefor depois</b>. Ela mesma leva à gráfica na volta das férias.</p>
+  <!-- 02 -->
+  <div class="bc" id="b02">
+    <div class="bc-head"><span class="id">#02</span><span class="n">Dia 17/08 — segunda-feira · Abertura</span>
+      <span class="pill wait">1 confirmação</span></div>
+    <p class="bc-note">Layout dos banners de dia: <b>etiqueta de data no topo</b>, horário e local à
+      esquerda, atividade à direita — como no banner de eventos paralelos de 2024.
+      ⚠️ O item oficial "Eventos UAB / UnAC / NTE" <b>vira duas linhas</b>, porque os locais são
+      diferentes. Confirmar antes de fechar.</p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="17 AGO · segunda-feira
 
-    <div class="callout go">
-      <span class="tag">Faça como família</span>
-      A Vanessa deixou a critério do time: <b>uma arte única mudando só o tema</b> ou três artes
-      diferentes. A recomendação é a primeira — <b>um template, três conteúdos</b>. Produz mais
-      rápido, fica coerente na parede e facilita incluir um quarto no futuro.
+13h30 — Credenciamento
+14h30 às 17h30 · Pátio (a confirmar) — Eventos UAB e UnAC
+14h30 às 17h30 · Auditório (a confirmar) — Evento NTE
+18h00 · Pátio — Momento Musical
+18h30 · Pátio — Abertura
+19h00 às 20h00 · Pátio — Palestra 20 Anos de EaD e o Cefor · Dra. Vanessa Battestin
+20h00 às 20h30 · Pátio — Lançamentos: e-book dos 20 anos do Cefor, e-book do NTE, nova plataforma de MOOCs e nova Base de Conhecimentos
+20h30 · Pátio — Celebração dos 20 anos do Cefor">Copiar</button></div>
+      <div class="box-body">
+        <div class="dtag">17 AGO · segunda-feira</div>
+        <div class="cl"><span class="t">13h30</span><span class="l none">—</span><span>Credenciamento</span></div>
+        <div class="cl"><span class="t">14h30–17h30</span><span class="l maybe">Pátio*</span><span>Eventos UAB e UnAC</span></div>
+        <div class="cl"><span class="t">14h30–17h30</span><span class="l maybe">Auditório*</span><span>Evento NTE</span></div>
+        <div class="cl"><span class="t">18h00</span><span class="l patio">Pátio</span><span>Momento Musical</span></div>
+        <div class="cl"><span class="t">18h30</span><span class="l patio">Pátio</span><span>Abertura</span></div>
+        <div class="cl"><span class="t">19h–20h</span><span class="l patio">Pátio</span><span><b>Palestra "20 Anos de EaD e o Cefor"</b> · Dra. Vanessa Battestin</span></div>
+        <div class="cl"><span class="t">20h–20h30</span><span class="l patio">Pátio</span><span><b>Lançamentos</b> · e-book dos 20 anos · e-book do NTE · nova plataforma de MOOCs · nova Base de Conhecimentos</span></div>
+        <div class="cl"><span class="t">20h30</span><span class="l patio">Pátio</span><span><b>Celebração dos 20 anos do Cefor</b></span></div>
+      </div>
     </div>
+  </div>
 
-    <div class="tw"><table>
-      <thead><tr><th>Vale para os três</th><th>Definição</th></tr></thead>
-      <tbody>
-        <tr><td><b>Estrutura</b></td><td>Imagem representativa do produto + <b>espaço para QR code</b> com o link de acesso + assinatura Cefor / Ifes + selo dos 20 anos</td></tr>
-        <tr><td><b>Cuidado</b></td><td><b>Sem datas e sem menções ao Concefor.</b> São peças atemporais — ficam no Cefor depois do evento</td></tr>
-        <tr><td><b>QR code</b></td><td><b>Testar depois de gerado</b>, apontando para o link definitivo</td></tr>
-        <tr><td><b>Medida</b></td><td>Não são do TR. Definir com a Vanessa — a sugestão é seguir o mesmo formato dos outros, para uniformizar</td></tr>
-        <tr><td><b>Prazo</b></td><td><b>01/08</b></td></tr>
-      </tbody>
-    </table></div>
+  <!-- 03 -->
+  <div class="bc" id="b03">
+    <div class="bc-head"><span class="id">#03</span><span class="n">Dia 18/08 — terça-feira</span>
+      <span class="pill wait">3 lacunas</span></div>
+    <p class="bc-note">💡 Se faltar espaço, as duas Mostras podem virar <b>uma linha só</b>
+      ("8h e 11h30"), já que compartilham o local.</p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="18 AGO · terça-feira
 
-    <h3 style="margin-top:20px">11 · Livro dos 20 anos do Cefor</h3>
-    <p style="font-size:14px">Livro comemorativo dos 20 anos. A imagem representativa natural é a
-      <b>capa</b>. ⚠️ O link que existe hoje é <b>provisório</b> — pegar o definitivo com a Vanessa
-      antes de gerar o QR code.</p>
+8h00 · (local a definir) — Mostra de Produtos e Produções Técnicas · Painel
+9h30 · Pátio — Mesa-redonda Tecnologia Delas · Dra. Márcia Oliveira, Dra. Jaqueline Sanz e Dra. Mariella Berger
+11h30 · (local a definir) — Mostra de Produtos e Produções Técnicas · Painel
+13h30 · (local a definir) — Sessões técnicas · artigos completos
+14h30 · Pátio — Palestra internacional · Felipe Maciel Tessarolo (The Open University, Reino Unido)
+16h00 · Pátio — Coffee-break">Copiar</button></div>
+      <div class="box-body">
+        <div class="dtag">18 AGO · terça-feira</div>
+        <div class="cl"><span class="t">8h00</span><span class="l gapl">a definir</span><span>Mostra de Produtos e Produções Técnicas · Painel</span></div>
+        <div class="cl"><span class="t">9h30</span><span class="l patio">Pátio</span><span><b>Mesa-redonda "Tecnologia Delas"</b> · Dra. Márcia Oliveira, Dra. Jaqueline Sanz e Dra. Mariella Berger</span></div>
+        <div class="cl"><span class="t">11h30</span><span class="l gapl">a definir</span><span>Mostra de Produtos e Produções Técnicas · Painel</span></div>
+        <div class="cl"><span class="t">13h30</span><span class="l gapl">a definir</span><span>Sessões técnicas · artigos completos</span></div>
+        <div class="cl"><span class="t">14h30</span><span class="l patio">Pátio</span><span><b>Palestra internacional</b> · Felipe Maciel Tessarolo (The Open University, Reino Unido)</span></div>
+        <div class="cl"><span class="t">16h00</span><span class="l patio">Pátio</span><span>Coffee-break</span></div>
+      </div>
+    </div>
+  </div>
 
-    <h3 style="margin-top:18px">12 · Base de Conhecimentos</h3>
-    <p style="font-size:14px">
-      <a href="https://conhecimento.cefor.ifes.edu.br/" target="_blank" rel="noopener"><b>conhecimento.cefor.ifes.edu.br</b> ↗</a>
-      — já está no ar, então a imagem representativa pode sair de um print da própria home.<br>
-      <b>O que é:</b> repositório de conhecimento prático do Cefor, com <b>130 artigos</b>
-      organizados em trilhas temáticas sobre <b>Moodle, acessibilidade e IA na educação</b>.<br>
-      <b>Assinatura da plataforma:</b> <i>"Aprenda. Consulte. Ensine melhor."</i> — serve como
-      chamada do banner.<br>
-      <b>Identidade do site:</b> visual em preto e branco, com logo em prata/branco.
-      Vale conferir se ela conversa com a paleta do Cefor ou se o banner deve puxar a identidade
-      institucional.</p>
+  <!-- 04 -->
+  <div class="bc" id="b04">
+    <div class="bc-head"><span class="id">#04</span><span class="n">Dia 19/08 — quarta-feira</span>
+      <span class="pill wait">2 lacunas</span></div>
+    <p class="bc-note">O dia mais cheio — <b>7 linhas</b>. As duas lacunas são do mesmo item
+      (sessões técnicas): uma resposta fecha o banner inteiro.</p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="19 AGO · quarta-feira
 
-    <h3 style="margin-top:18px">13 · Plataforma de MOOCs</h3>
-    <p style="font-size:14px">Nova vitrine dos cursos abertos do Cefor. <b>O endereço ainda não foi
-      informado</b> — sem ele não há QR code nem print para a imagem. É a única trava desta peça;
-      está sendo cobrado.</p>
+8h00 · (local a definir) — Sessões técnicas · artigos completos
+9h00 · Pátio — Momento Cultural
+9h30 · Pátio — Mesa-redonda Desafios da EaD para os próximos 20 anos · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero
+13h30 · (local a definir) — Sessões técnicas · artigos completos
+14h30 · Pátio — Palestra Autoria com IA generativa: desafios para a EaD · Dr. Mariano Pimentel
+16h00 · Pátio — Coffee-break
+16h30 · Pátio — Palestra Inovações da IA para a Educação · Dr. Mauro Oliveira">Copiar</button></div>
+      <div class="box-body">
+        <div class="dtag">19 AGO · quarta-feira</div>
+        <div class="cl"><span class="t">8h00</span><span class="l gapl">a definir</span><span>Sessões técnicas · artigos completos</span></div>
+        <div class="cl"><span class="t">9h00</span><span class="l patio">Pátio</span><span>Momento Cultural</span></div>
+        <div class="cl"><span class="t">9h30</span><span class="l patio">Pátio</span><span><b>Mesa-redonda "Desafios da EaD para os próximos 20 anos"</b> · Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero</span></div>
+        <div class="cl"><span class="t">13h30</span><span class="l gapl">a definir</span><span>Sessões técnicas · artigos completos</span></div>
+        <div class="cl"><span class="t">14h30</span><span class="l patio">Pátio</span><span><b>Palestra "Autoria com IA generativa: desafios para a EaD"</b> · Dr. Mariano Pimentel</span></div>
+        <div class="cl"><span class="t">16h00</span><span class="l patio">Pátio</span><span>Coffee-break</span></div>
+        <div class="cl"><span class="t">16h30</span><span class="l patio">Pátio</span><span><b>Palestra "Inovações da IA para a Educação"</b> · Dr. Mauro Oliveira</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 -->
+  <div class="bc" id="b05">
+    <div class="bc-head"><span class="id">#05</span><span class="n">Dia 20/08 — quinta-feira · Encerramento</span>
+      <span class="pill wait">confirmar o dia</span></div>
+    <p class="bc-note">⚠️ <b>Falta confirmar se este banner é mesmo do dia 20</b> — a lista da
+      coordenação repete "18/08". O conteúdo aqui assume 20/08, o único dia sem banner próprio.<br>
+      📌 <b>Não repita aqui a lista dos eventos paralelos</b>: ela é o conteúdo inteiro do
+      <b>#06</b>. Uma chamada basta.</p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="20 AGO · quinta-feira
+
+9h00 às 12h00 — Momento I · Eventos paralelos (cada evento no seu espaço)
+12h00 — Almoço
+13h30 às 16h00 — Momento II · Eventos paralelos (cada evento no seu espaço)
+16h00 · Pátio — Premiação dos Melhores Trabalhos do VIII Concefor
+16h30 · Pátio — Coffee-break e Momento Cultural
+
+Veja a programação completa no banner de Eventos Paralelos">Copiar</button></div>
+      <div class="box-body">
+        <div class="dtag">20 AGO · quinta-feira</div>
+        <div class="cl"><span class="t">9h–12h</span><span class="l none">por evento</span><span><b>Momento I</b> · Eventos paralelos</span></div>
+        <div class="cl"><span class="t">12h00</span><span class="l none">—</span><span>Almoço</span></div>
+        <div class="cl"><span class="t">13h30–16h</span><span class="l none">por evento</span><span><b>Momento II</b> · Eventos paralelos</span></div>
+        <div class="cl"><span class="t">16h00</span><span class="l patio">Pátio</span><span><b>Premiação dos Melhores Trabalhos do VIII Concefor</b></span></div>
+        <div class="cl"><span class="t">16h30</span><span class="l patio">Pátio</span><span>Coffee-break e Momento Cultural</span></div>
+        <div class="cl"><span class="t"></span><span class="l none"></span><span><i>Veja a programação completa no banner de Eventos Paralelos</i></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 -->
+  <div class="bc" id="b06">
+    <div class="bc-head"><span class="id">#06</span><span class="n">Eventos paralelos — 20/08</span>
+      <span class="pill stop">esperando locais</span></div>
+    <p class="bc-note">Mesmo layout dos banners de dia. <b>É o último a imprimir</b>: espera a
+      programação da Aula Inaugural do Educimat. Os locais em vermelho ainda estão sendo definidos
+      pelas coordenações.</p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="20 AGO · quinta-feira · EVENTOS PARALELOS
+
+9h às 12h e 13h30 às 16h · Laboratório de Informática — IA além do chat: da célula ao organismo baseado em IA (Cefor)
+9h às 12h · Auditório ou Pátio (a definir) — Ciência delas no contexto do Projeto Rio Doce Escolar (Projeto Rio Doce Escolar / Ifes Vila Velha / Educimat)
+9h às 12h e 13h30 às 16h · (local a definir) — Escola de Inovação: sexto ano de popularização e divulgação de novas tecnologias digitais (CCEC-EI/SEME/PMV)
+13h30 às 16h · (local a definir) — Entre Dois Mundos: uma aventura para aprender Inteligência Artificial (Ifes)
+9h às 12h e 13h30 às 16h · (local a definir) — Workshop Pros@tec: Desafios da Educação em Computação e da Informática na Educação (Cefor)
+13h30 às 16h · Pátio — Aula Inaugural do Educimat (programação a confirmar)">Copiar</button></div>
+      <div class="box-body">
+        <div class="dtag">20 AGO · eventos paralelos</div>
+        <div class="cl"><span class="t">9h–12h e 13h30–16h</span><span class="l patio">Laboratório de Informática</span><span><b>IA além do chat: da célula ao organismo baseado em IA</b> · Cefor</span></div>
+        <div class="cl"><span class="t">9h–12h</span><span class="l maybe">Auditório ou Pátio</span><span><b>"Ciência delas" no contexto do Projeto Rio Doce Escolar</b> · Rio Doce Escolar / Ifes Vila Velha / Educimat</span></div>
+        <div class="cl"><span class="t">9h–12h e 13h30–16h</span><span class="l gapl">a definir</span><span><b>Escola de Inovação: sexto ano de popularização de novas tecnologias digitais</b> · CCEC-EI/SEME/PMV</span></div>
+        <div class="cl"><span class="t">13h30–16h</span><span class="l gapl">a definir</span><span><b>Entre Dois Mundos: uma aventura para aprender Inteligência Artificial</b> · Ifes</span></div>
+        <div class="cl"><span class="t">9h–12h e 13h30–16h</span><span class="l gapl">a definir</span><span><b>Workshop Pros@tec: Desafios da Educação em Computação e da Informática na Educação</b> · Cefor</span></div>
+        <div class="cl"><span class="t">13h30–16h</span><span class="l patio">Pátio</span><span><b>Aula Inaugural do Educimat</b> · programação a confirmar</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 a 10 -->
+  <div class="bc" id="b07">
+    <div class="bc-head"><span class="id">#07 a #10</span><span class="n">Andares do Cefor</span>
+      <span class="pill go">pode produzir</span></div>
+    <p class="bc-note"><b>Mesma arte-base, muda só o texto do andar.</b> São peças
+      <b>permanentes</b>: ficam no prédio depois do evento. Por isso vão <b>sem a logo do Concefor
+      e sem o selo dos 20 anos</b> — o selo é comemorativo e deixaria a peça datada. Só entra a
+      assinatura do Cefor / Ifes.</p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo dos quatro</b>
+        <button class="copy" data-copy="#07 — TÉRREO / Pátio
+#08 — 1º PISO / Salas 1 e 2
+#09 — 2º PISO / Salas 3 e 4
+#10 — 4º PISO / Auditório e Laboratório
+
+Assinatura: Cefor / Ifes
+Sem logo do Concefor e sem selo dos 20 anos (peças permanentes)">Copiar</button></div>
+      <div class="box-body">
+        <div class="cl"><span class="t">#07</span><span class="l"><b>TÉRREO</b></span><span>Pátio</span></div>
+        <div class="cl"><span class="t">#08</span><span class="l"><b>1º PISO</b></span><span>Salas 1 e 2</span></div>
+        <div class="cl"><span class="t">#09</span><span class="l"><b>2º PISO</b></span><span>Salas 3 e 4</span></div>
+        <div class="cl"><span class="t">#10</span><span class="l"><b>4º PISO</b></span><span>Auditório e Laboratório</span></div>
+        <div class="cl"><span class="t"></span><span class="l none"></span><span>Assinatura: <b>Cefor / Ifes</b> — sem logo do Concefor, sem selo</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- institucionais -->
+  <div class="callout go" style="margin-top:26px">
+    <span class="tag">#11, #12 e #13 — arte única</span>
+    Os três institucionais saem do <b>mesmo template</b>, mudando só o conteúdo: imagem do produto,
+    QR code, chamada e assinatura. Produz mais rápido, fica coerente com os três lado a lado na
+    parede e permite incluir um quarto produto depois. <b>São atemporais</b> — ficam no Cefor
+    depois do evento, então <b>sem datas e sem menção ao Concefor</b>.
+  </div>
+
+  <!-- 11 -->
+  <div class="bc" id="b11">
+    <div class="bc-head"><span class="id">#11</span><span class="n">Livro dos 20 anos do Cefor</span>
+      <span class="pill go">pode começar</span></div>
+    <p class="bc-note"><b>A capa do livro já está pronta</b> — é a imagem da peça, e por isso este
+      banner pode entrar já no primeiro lote. ⚠️ O link que existe hoje é <b>provisório</b>: pegar
+      o definitivo com a Vanessa antes de gerar o QR code. <b>Prazo 01/08.</b></p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="Livro dos 20 anos do Cefor
+
+Imagem: capa do livro (já pronta)
+QR code: link do livro — usar o DEFINITIVO, a ser confirmado com a Vanessa
+Assinatura: Cefor / Ifes + selo dos 20 anos
+Sem datas e sem menção ao Concefor (peça permanente)">Copiar</button></div>
+      <div class="box-body txt">
+        <div><b>Título:</b> Livro dos 20 anos do Cefor</div>
+        <div><b>Imagem:</b> capa do livro — já pronta</div>
+        <div><b>QR code:</b> link do livro <span style="color:var(--block)">(o atual é provisório — pegar o definitivo)</span></div>
+        <div><b>Assinatura:</b> Cefor / Ifes + selo dos 20 anos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12 -->
+  <div class="bc" id="b12">
+    <div class="bc-head"><span class="id">#12</span><span class="n">Base de Conhecimentos</span>
+      <span class="pill wait">link ✅, arte a fazer</span></div>
+    <p class="bc-note">A plataforma <b>já está no ar</b>, então a imagem pode sair de um print da
+      própria home:
+      <a href="https://conhecimento.cefor.ifes.edu.br/" target="_blank" rel="noopener">conhecimento.cefor.ifes.edu.br ↗</a>.
+      O site é em preto e branco — vale checar se a peça puxa a identidade dele ou a do Cefor.
+      <b>Prazo 01/08.</b></p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="Base de Conhecimentos do Cefor
+
+Chamada: Aprenda. Consulte. Ensine melhor.
+Descrição: 130 artigos em trilhas práticas sobre Moodle, acessibilidade e IA na educação
+Imagem: print da home da plataforma
+QR code: https://conhecimento.cefor.ifes.edu.br/
+Assinatura: Cefor / Ifes + selo dos 20 anos
+Sem datas e sem menção ao Concefor (peça permanente)">Copiar</button></div>
+      <div class="box-body txt">
+        <div><b>Título:</b> Base de Conhecimentos do Cefor</div>
+        <div><b>Chamada:</b> "Aprenda. Consulte. Ensine melhor."</div>
+        <div><b>Descrição:</b> 130 artigos em trilhas práticas sobre Moodle, acessibilidade e IA na educação</div>
+        <div><b>Imagem:</b> print da home da plataforma</div>
+        <div><b>QR code:</b> <code>https://conhecimento.cefor.ifes.edu.br/</code></div>
+        <div><b>Assinatura:</b> Cefor / Ifes + selo dos 20 anos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 13 -->
+  <div class="bc" id="b13">
+    <div class="bc-head"><span class="id">#13</span><span class="n">Vitrine de MOOCs</span>
+      <span class="pill stop">falta o link</span></div>
+    <p class="bc-note">Nova vitrine dos cursos abertos do Cefor. <b>O endereço ainda não foi
+      informado</b> — sem ele não há QR code nem print para a imagem. É a única trava desta peça, e
+      está sendo cobrado. <b>Prazo 03/08.</b></p>
+    <div class="box">
+      <div class="box-top"><b>Conteúdo do banner</b>
+        <button class="copy" data-copy="Nova vitrine de MOOCs do Cefor
+
+Chamada: (a definir)
+Imagem: print da nova vitrine — depende do endereço
+QR code: link da plataforma — A CONFIRMAR
+Assinatura: Cefor / Ifes + selo dos 20 anos
+Sem datas e sem menção ao Concefor (peça permanente)">Copiar</button></div>
+      <div class="box-body txt">
+        <div><b>Título:</b> Nova vitrine de MOOCs do Cefor</div>
+        <div><b>Imagem:</b> print da nova vitrine <span style="color:var(--block)">(depende do endereço)</span></div>
+        <div><b>QR code:</b> <span style="color:var(--block)"><b>link a confirmar</b></span></div>
+        <div><b>Assinatura:</b> Cefor / Ifes + selo dos 20 anos</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -575,36 +723,33 @@
       <div class="ref"><figure>
         <img src="../producao/01-brindes-promocionais/banners/_refs/banner-geral-concefor-2024.png"
              alt="Banner geral do Concefor 2024: marca centralizada sobre fundo azul-petróleo com grafismo de linhas e nós, rodapé branco com apoio e realização">
-        <figcaption><b>Modelo do banner 01 (Geral)</b>
+        <figcaption><b>Modelo do #01</b>
           Marca grande e centralizada sobre o fundo azul-petróleo com o grafismo de linhas e nós.
           Rodapé branco com Apoio e Realização.</figcaption>
       </figure></div>
       <div class="ref"><figure>
         <img src="../producao/01-brindes-promocionais/banners/_refs/banner-eventos-paralelos-concefor-2024.jpeg"
              alt="Banner de eventos paralelos do Concefor 2024: tarja vertical, etiqueta de data verde, lista em duas colunas com local e horário à esquerda">
-        <figcaption><b>Modelo dos banners 02 a 06</b>
+        <figcaption><b>Modelo do #02 ao #06</b>
           Tarja vertical com o nome do bloco, etiqueta de data em destaque (dia + mês + dia da
-          semana) e lista em duas colunas: local e horário à esquerda, título à direita.
-          ⚠️ Note o "VII" no topo — <b>este ano vai sem numeral</b>.</figcaption>
+          semana) e lista em duas colunas: local e horário à esquerda, título à direita.</figcaption>
       </figure></div>
     </div>
 
-    <h3 style="margin-top:20px">Referências dos banners institucionais</h3>
-    <div class="tw"><table>
-      <thead><tr><th>Banner</th><th>Onde ver o produto</th></tr></thead>
-      <tbody>
-        <tr><td><b>12 · Base de Conhecimentos</b></td>
-            <td><a href="https://conhecimento.cefor.ifes.edu.br/" target="_blank" rel="noopener">conhecimento.cefor.ifes.edu.br ↗</a> — plataforma no ar, dá para tirar print e conferir a identidade</td></tr>
-        <tr><td><b>11 · Livro dos 20 anos</b></td>
-            <td>Arquivo do livro com a Vanessa (link definitivo a caminho) — a capa é a imagem da peça</td></tr>
-        <tr><td><b>13 · MOOCs</b></td>
-            <td>Endereço da nova vitrine ainda não informado</td></tr>
-        <tr><td><b>Selo dos 20 anos</b></td>
-            <td><a href="https://publicacoes.ifes.edu.br/cef/Manual_do_Selo_20_anos_Cefor.pdf" target="_blank" rel="noopener">Manual de identidade visual (PDF) ↗</a></td></tr>
-        <tr><td><b>Evento</b></td>
-            <td><a href="https://concefor.cefor.ifes.edu.br/" target="_blank" rel="noopener">Site oficial do VIII Concefor ↗</a></td></tr>
-      </tbody>
-    </table></div>
+    <h3 style="margin-top:20px">Links úteis</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Para que</th><th>Onde</th></tr></thead>
+        <tbody>
+          <tr><td><b>#12 · Base de Conhecimentos</b> — print e QR code</td>
+              <td><a href="https://conhecimento.cefor.ifes.edu.br/" target="_blank" rel="noopener">conhecimento.cefor.ifes.edu.br ↗</a></td></tr>
+          <tr><td><b>Selo dos 20 anos</b> — manual de identidade visual</td>
+              <td><a href="https://publicacoes.ifes.edu.br/cef/Manual_do_Selo_20_anos_Cefor.pdf" target="_blank" rel="noopener">PDF oficial ↗</a></td></tr>
+          <tr><td><b>Programação e informações do evento</b></td>
+              <td><a href="https://concefor.cefor.ifes.edu.br/" target="_blank" rel="noopener">Site do VIII Concefor ↗</a></td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
@@ -613,12 +758,15 @@
   <h2>Como entregar</h2>
   <div class="card">
     <ol class="steps">
-      <li><b>Produza em grupos.</b> Comece pelos 5 que não dependem de nada (geral + andares).
-        Depois monte os de dia com as lacunas visíveis, para preencher quando os locais chegarem.</li>
+      <li><b>Comece pelos 6 que não dependem de nada:</b> <b>#01</b> (Concefor Geral),
+        <b>#07 a #10</b> (andares — uma arte, quatro textos) e <b>#11</b> (livro dos 20 anos, cuja
+        capa já está pronta).</li>
+      <li><b>Depois monte os banners de dia</b> (#02 a #05) com as lacunas de local visíveis, para
+        preencher assim que as informações chegarem.</li>
       <li><b>Salve tudo na pasta Artes Concefor 2026</b> — editáveis e finais, no mesmo lugar.</li>
       <li><b>Confira contra a programação</b> antes de fechar cada banner de dia: horários e títulos
         mudam quando o site do evento é atualizado.</li>
-      <li><b>Passe pela checagem final</b> (lista abaixo) — principalmente o "VIII".</li>
+      <li><b>Passe pela checagem final</b> (lista abaixo).</li>
       <li><b>Envie para aprovação interna</b> (Elton / Marquito / coordenação) antes de ir à gráfica.</li>
       <li><b>Envio à gráfica</b> (Brindes Expresso): <b>sempre por e-mail</b>, com cópia para
         <code>cgte.cefor@ifes.edu.br</code> — decisão que só existe em WhatsApp não fica rastreável
@@ -627,16 +775,16 @@
 
     <h3 style="margin-top:20px">Checagem final — por banner</h3>
     <ul class="check">
-      <li>Logo do Concefor <b>sem o "VIII"</b> (banners 01 a 06)</li>
-      <li>Selo dos 20 anos aplicado (01 a 06 e institucionais) — <b>e ausente</b> nos de andar</li>
+      <li>Logo do Concefor <b>sem o "VIII"</b> (#01 a #06)</li>
+      <li>Selo dos 20 anos aplicado (#01 a #06 e #11 a #13) — <b>e ausente</b> em #07 a #10</li>
+      <li><b>Realização: Cefor</b> · <b>Apoio: Ifes Campus Vila Velha e Educimat</b> — só essas logos</li>
       <li>Medida 0,90 × 1,20 m, com sangria e marcas de corte</li>
       <li>Textos e logos em curvas no PDF final</li>
       <li>Horários, títulos e nomes conferidos contra a programação</li>
       <li>Nomes próprios e títulos de palestra sem erro de grafia</li>
-      <li>Rodapé com Realização e Apoio (01 a 06)</li>
       <li>Legibilidade testada à distância — dê alguns passos para trás da tela</li>
-      <li>QR code testado, apontando para o link definitivo (banners 11 a 13)</li>
-      <li>Nada de data ou menção ao Concefor nos banners 07 a 13 (peças permanentes)</li>
+      <li>QR code testado, apontando para o link definitivo (#11 a #13)</li>
+      <li>Nada de data ou menção ao Concefor em #07 a #13 (peças permanentes)</li>
     </ul>
   </div>
 </section>
@@ -647,23 +795,25 @@
   <div class="card">
     <p>Nada disso é trabalho seu — é informação que já está sendo cobrada. A lista existe para você
       saber <b>o que esperar e de quem</b>, e para não parar a produção por causa delas.</p>
-    <div class="tw"><table>
-      <thead><tr><th>O que falta</th><th>Com quem</th><th>Destrava</th></tr></thead>
-      <tbody>
-        <tr><td><b>Local das sessões técnicas</b> (18/08 tarde, 19/08 manhã e tarde)</td><td>Viviane — Coordenação Geral</td><td>banner <b>04</b> inteiro e metade do <b>03</b></td></tr>
-        <tr><td><b>Local da Mostra de Produtos e Produções Técnicas</b> (18/08)</td><td>Viviane</td><td>banner <b>03</b>, junto com o de cima</td></tr>
-        <tr><td><b>Confirmar</b> UAB/UnAC no Pátio e NTE no Auditório</td><td>Viviane</td><td>banner <b>02</b></td></tr>
-        <tr><td><b>Confirmar se o banner 05 é do dia 20/08</b> (a lista repete 18/08)</td><td>Viviane</td><td>banner <b>05</b></td></tr>
-        <tr><td><b>Locais dos eventos paralelos</b> — 3 a definir + escolha entre Auditório e Pátio</td><td>Coordenação e coordenadores</td><td>banners <b>05</b> e <b>06</b></td></tr>
-        <tr><td><b>Programação da Aula Inaugural do Educimat</b></td><td>Educimat</td><td>banner <b>06</b> (o último a imprimir)</td></tr>
-        <tr><td><b>Link definitivo do livro</b> e <b>endereço da plataforma de MOOCs</b> + medida das peças</td><td>Vanessa Battestin</td><td>banners <b>11</b> e <b>13</b></td></tr>
-      </tbody>
-    </table></div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>O que falta</th><th>Com quem</th><th>Destrava</th></tr></thead>
+        <tbody>
+          <tr><td><b>Local das sessões técnicas</b> (18/08 tarde, 19/08 manhã e tarde)</td><td>Viviane — Coordenação Geral</td><td><b>#04</b> inteiro e metade do <b>#03</b></td></tr>
+          <tr><td><b>Local da Mostra de Produtos e Produções Técnicas</b> (18/08)</td><td>Viviane</td><td><b>#03</b>, junto com o de cima</td></tr>
+          <tr><td><b>Confirmar</b> UAB/UnAC no Pátio e NTE no Auditório</td><td>Viviane</td><td><b>#02</b></td></tr>
+          <tr><td><b>Confirmar se o #05 é do dia 20/08</b> (a lista repete 18/08)</td><td>Viviane</td><td><b>#05</b></td></tr>
+          <tr><td><b>Locais dos eventos paralelos</b> — 3 a definir + escolha entre Auditório e Pátio</td><td>Coordenação e coordenadores</td><td><b>#06</b></td></tr>
+          <tr><td><b>Programação da Aula Inaugural do Educimat</b></td><td>Educimat</td><td><b>#06</b> (o último a imprimir)</td></tr>
+          <tr><td><b>Link definitivo do livro</b></td><td>Vanessa Battestin</td><td>QR code do <b>#11</b></td></tr>
+          <tr><td><b>Endereço da nova vitrine de MOOCs</b></td><td>Vanessa Battestin</td><td><b>#13</b> inteiro</td></tr>
+        </tbody>
+      </table>
+    </div>
     <div class="callout go">
       <span class="tag">Resumindo</span>
       <b>Duas respostas fecham dois banners inteiros.</b> Onde ficam as <b>sessões técnicas</b> e a
-      <b>Mostra de Produtos</b> — só isso — libera os banners 03 e 04 por completo. O resto é
-      confirmação.
+      <b>Mostra de Produtos</b> — só isso — libera o <b>#03</b> e o <b>#04</b>. O resto é confirmação.
     </div>
   </div>
 </section>
@@ -679,5 +829,47 @@
 </footer>
 
 </div>
+
+<div class="toast" id="toast">Conteúdo copiado</div>
+
+<script>
+  var toast = document.getElementById('toast'), toastTimer;
+  function showToast(msg){
+    toast.textContent = msg; toast.classList.add('on');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function(){ toast.classList.remove('on'); }, 1800);
+  }
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly','');
+    ta.style.position = 'fixed'; ta.style.top = '-1000px';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta);
+  }
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = btn.getAttribute('data-copy') || '';
+      var done = function(){
+        var label = btn.textContent;
+        btn.textContent = 'Copiado ✓'; btn.classList.add('done');
+        showToast('Conteúdo copiado');
+        setTimeout(function(){ btn.textContent = label; btn.classList.remove('done'); }, 1800);
+      };
+      if (navigator.clipboard && window.isSecureContext){
+        navigator.clipboard.writeText(text).then(done, function(){ fallbackCopy(text); done(); });
+      } else { fallbackCopy(text); done(); }
+    });
+  });
+  document.querySelectorAll('.see').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var el = document.getElementById(btn.getAttribute('data-go'));
+      if(!el) return;
+      document.querySelectorAll('.bc.target').forEach(function(x){ x.classList.remove('target'); });
+      el.classList.add('target');
+      el.scrollIntoView({behavior:'smooth', block:'start'});
+      setTimeout(function(){ el.classList.remove('target'); }, 2600);
+    });
+  });
+</script>
 </body>
 </html>

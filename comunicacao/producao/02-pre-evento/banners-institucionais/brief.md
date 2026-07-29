@@ -22,7 +22,9 @@
 - **Responsável:** **Andreia** *(desde 29/07)* · solicitante: Vanessa Battestin — e-mail de 14/07, ver `_refs/`
 - **Onde produzir:** pasta **Artes Concefor 2026** no Drive —
   https://drive.google.com/drive/folders/1Qtm4qtGLQsV4svTGmPeBNx1SwfTCkdak?usp=sharing
-- **Prazo:** arte pronta até **01/08** — Vanessa volta de férias no início de agosto e envia para a gráfica
+- **Prazos (29/07):** **#11 livro e #12 Base de Conhecimentos até 01/08** · **#13 vitrine de
+  MOOCs até 03/08** — Vanessa volta de férias no início de agosto e envia para a gráfica
+- **Assinaturas:** **Realização:** Cefor · **Apoio:** Ifes Campus Vila Velha e Educimat
 - **Status:** ⬜ A fazer
 
 ## Objetivo

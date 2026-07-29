@@ -62,6 +62,16 @@ nenhum caminho interno. Pasta de trabalho: **Artes Concefor 2026**
 referência, com os banners de 2024: `.../folders/1ZzI49nOTudvH9JwZ4AHHO8xQjuJWw4xQ`. Ambas em
 `links.md`.
 
+**Prazos das artes (29/07):** **31/07** para os 10 banners do evento · **01/08** para o livro
+(#11) e a Base de Conhecimentos (#12) · **03/08** para a vitrine de MOOCs (#13). A entrega
+contratada da gráfica continua sendo 07/08 — o 31/07 é o prazo interno da arte.
+
+**Assinaturas desta edição:** **Realização: Cefor** · **Apoio: Ifes Campus Vila Velha e Educimat**.
+São as únicas logos — o rodapé de 2024 trazia mais marcas e **não deve ser repetido**.
+
+**O #11 (livro) entrou no primeiro lote de produção**, porque **a capa do livro já está pronta**:
+são 6 peças que não dependem de mais nada (#01, #07–#10 e #11), quase metade do trabalho.
+
 **Link confirmado:** a **Base de Conhecimentos** está no ar em https://conhecimento.cefor.ifes.edu.br/
 — *"Aprenda. Consulte. Ensine melhor."*, 130 artigos em trilhas sobre Moodle, acessibilidade e IA
 na educação. Já serve para o QR code. Faltam o **link definitivo do livro** e o **endereço da nova

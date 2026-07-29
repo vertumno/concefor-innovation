@@ -104,19 +104,18 @@ comunicacao/
 - **Prioridades agora (por prazo):**
   1. 🔴 **Artes dos 2 cards de mesa** — os 7 individuais acabam em 31/07 e a primeira mesa
      publica em **01/08**. Legendas prontas, falta só a arte.
-  2. 🟡 **3 banners de lançamentos da Vanessa** (livro, MOOCs, Base de Conhecimentos) —
-     **arte até 01/08**, para ela levar à gráfica na volta das férias. O **do livro foi para a
-     Andreia** em 28/07; **MOOCs e Base seguem sem responsável** e travados nos links que viram
-     QR code. [Brief](producao/02-pre-evento/banners-institucionais/brief.md)
-  3. 👷 **Banners — produção com a Andreia desde 28/07.** Briefing entregue:
+  2. 👷 **Os 13 banners — produção com a Andreia.** Briefing entregue:
      [página de briefing](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/)
-     ([fonte](briefing-banners/index.html)) — os 10 do TR **+ o banner do livro dos 20 anos**,
-     com conteúdo linha a linha, regras de marca, referências e pendências. Entrega **07/08**.
-     ✅ Rateio definido em 28/07: 1 geral · 1 de eventos paralelos · 4 de programação por dia ·
-     4 de andar do Cefor (**sem logo do Concefor e sem selo**, para não datar — ficam no prédio).
-     👉 **5 dos 10 podem ser produzidos já** (o geral + os 4 de andar). Os outros 5 esperam os
-     **locais**: palestras e mesas são no **Pátio**, o resto foi pedido à Viviane.
-     [Brief com os 10](producao/01-brindes-promocionais/banners/brief.md)
+     ([fonte](briefing-banners/index.html)) — os **10 do evento** (#01 a #10) **+ os 3
+     institucionais** (#11 livro · #12 Base de Conhecimentos · #13 MOOCs), cada um com o conteúdo
+     pronto para copiar. Ela trabalha pela pasta **Artes Concefor 2026** no Drive, não por este repo.
+     ⏰ **Prazos: 31/07** os do evento · **01/08** livro e Base · **03/08** MOOCs.
+     ✍️ **Assinaturas desta edição:** Realização **Cefor** · Apoio **Ifes Campus Vila Velha e
+     Educimat** — só essas logos.
+     👉 **6 dos 13 podem ser produzidos já:** #01, #07–#10 e #11 (a capa do livro está pronta).
+     Os banners de dia esperam os **locais** que faltam.
+     [Brief dos 10](producao/01-brindes-promocionais/banners/brief.md) ·
+     [Brief dos institucionais](producao/02-pre-evento/banners-institucionais/brief.md)
   4. 🔴 **Etiquetas dos nomes do crachá** — decidir **quais comprar** e **como será a impressão**.
      Ordem: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo →
      testar numa amostra. Sugerido decidir até **04/08**.
