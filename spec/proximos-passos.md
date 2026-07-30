@@ -132,10 +132,13 @@ a câmera do QR scanner (R7/networking) só funcionam em secure context.
 
 > **29/07:** app no ar em **http://172.17.159.15:3000** (servidor CGTI, Sérgio). Deploy
 > **manual** (Sérgio puxa o espelho GitLab no servidor); integração automática em estudo.
-> DNS: Sérgio testa via hosts e abre chamado na DRTI (`app.concefor.cefor.ifes.edu.br`).
-> **Faltam:** DNS, HTTPS/proxy e rotina de backup do volume. A primeira versão no ar
-> estava desatualizada (espelho sem R1–R9) e com a base do seed antigo — corrigido em
-> 29/07, ver `validacao-2026-07-30.md` e `../decisoes.md`.
+> A primeira versão no ar estava desatualizada (espelho sem R1–R9) e com a base do seed
+> antigo — corrigido em 29/07, ver `validacao-2026-07-30.md` e `../decisoes.md`.
+>
+> **30/07: 🎉 https://app.cefor.ifes.edu.br no ar com TLS válido** (proxy em IP público;
+> SSE atravessa — testado). PWA instalável e câmera de QR destravados. **Faltam:** testar
+> acesso de fora da rede (4G), rotina de backup do volume, e o smoke test de instalação
+> PWA no domínio (R8).
 
 - Articular com a TI do Cefor: onde roda o Docker, DNS/URL amigável, HTTPS (proxy
   reverso), persistência do volume `./data` + backup do arquivo SQLite.

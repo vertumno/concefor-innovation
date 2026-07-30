@@ -76,6 +76,27 @@ na lista de links — é lá que qualquer mudança aparece primeiro.
 ---
 
 
+## 2026-07-30 — DNS oficial no ar com HTTPS (app.cefor.ifes.edu.br) + sync automático do Even3 embutido no serviço
+
+**Fatos do dia da validação (30/07, durante os testes):**
+
+1. **https://app.cefor.ifes.edu.br está no ar** (DRTI/CGTI) — proxy com TLS válido em IP
+   público (200.137.82.61), na frente do servidor da CGTI. **SSE atravessa o proxy**
+   (testado ao vivo: `event: init` imediato) — telão em tempo real funciona no domínio.
+   Destrava o que dependia de secure context: **PWA instalável e câmera do QR scanner**.
+   O nome ficou mais curto que o aventado (`app.cefor…`, sem o "concefor"). Esse é o
+   endereço do lançamento de 07/08; `/projecao` gera o QR pro domínio automaticamente.
+   Verificar de fora da rede do IFES (4G) se o acesso público está liberado.
+
+2. **Sync automático embutido** (pedido do Marquito ao vivo, quando a inscrição da
+   Andreia não apareceu no app): `src/instrumentation.ts` (hook padrão do Next) roda o
+   `runSync()` no boot e a cada `SYNC_INTERVAL_MIN` minutos (default 10; `0` desliga; sem
+   token, não liga). Inscrição nova aparece sozinha — o botão do `/admin` vira o "forçar
+   agora". Guardas: execuções nunca se sobrepõem; falha de rede só loga, não derruba o
+   app. **Esclarecido de novo:** re-sync nunca exigiu rebuild — é ação de runtime.
+
+---
+
 ## 2026-07-29 — Conexões ganham contato preenchido pelo participante (telefone/Instagram) + foto e categoria do Even3
 
 **Decisão (Marquito, testando o networking em 29/07):** o cartão de conexão mostrava só
