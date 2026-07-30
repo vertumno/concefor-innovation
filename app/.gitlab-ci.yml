@@ -1,0 +1,46 @@
+﻿stages:
+  - deploy
+
+deploy:
+  stage: deploy
+
+  tags:
+    - concefor
+
+  script:
+    - echo "Criando imagem Docker..."
+    - docker build -t concefor-app .
+
+    - echo "Parando container atual..."
+    - docker stop concefor-app || true
+
+    - echo "Removendo container atual..."
+    - docker rm concefor-app || true
+
+    - echo "Garantindo volume persistente..."
+    - docker volume create concefor-data || true
+
+    - echo "Subindo nova versão..."
+    - |
+      docker run -d \
+        --name concefor-app \
+        --restart unless-stopped \
+        -p 3000:3000 \
+        -v concefor-data:/app/data \
+        --env-file /opt/apps/concefor-app/.env.local \
+        concefor-app
+
+    - echo "Aguardando aplicação iniciar..."
+    - sleep 10
+
+    - echo "Sincronizando programação oficial Even3..."
+    - |
+      docker run --rm \
+        -v concefor-data:/app/data \
+        --env-file /opt/apps/concefor-app/.env.local \
+        concefor-app node scripts/sync-even3.mjs
+
+    - echo "Deploy concluído com sucesso!"
+
+  only:
+    - main
