@@ -1,14 +1,21 @@
-// Reações da sessão ao vivo (E2/E3). Conjunto FECHADO — emoji + rótulo em texto
+// Reações da sessão ao vivo (E2/E3). Conjunto FECHADO — ícone + rótulo em texto
 // (o rótulo aparece na UI e no telão, para não depender de decodificar o emoji).
 // Fonte ÚNICA para a UI, a API e a agregação: quem valida no servidor e quem
 // desenha os botões olham para cá. Módulo isomórfico (sem dependências de node).
+//
+// A ORDEM é a da tela e sobe em intensidade: gostei → me tocou → é sobre mim →
+// vou agir → mudou tudo. `labelRelatorio` é o nome institucional: o relatório
+// fica arquivado e a gíria envelhece. Fundamentação: decisoes.md (2026-07-30).
+//
+// "amei" usa o CARACTERE ♥ (U+2665) + seletor de texto (U+FE0E), não o emoji
+// ❤️ — assim ele herda a cor do CSS (ciano da marca; teal escuro na impressão).
 
 export const REACTIONS = [
-  { kind: "adorei", emoji: "❤️", label: "Adorei" },
-  { kind: "parabens", emoji: "👏", label: "Parabéns" },
-  { kind: "uau", emoji: "🤩", label: "Uau!" },
-  { kind: "nossa", emoji: "😮", label: "Nossa!" },
-  { kind: "triste", emoji: "😢", label: "Que triste" },
+  { kind: "massa", emoji: "👏", label: "Que massa", labelRelatorio: "Satisfação" },
+  { kind: "amei", emoji: "\u2665\uFE0E", label: "Amei", labelRelatorio: "Afeto" },
+  { kind: "identifico", emoji: "🙋", label: "Me identifico", labelRelatorio: "Relevância" },
+  { kind: "usar", emoji: "✅", label: "Vou usar", labelRelatorio: "Intenção de aplicação" },
+  { kind: "explodiu", emoji: "🤯", label: "Explodiu a mente", labelRelatorio: "Aprendizagem" },
 ] as const;
 
 export type ReactionKind = (typeof REACTIONS)[number]["kind"];

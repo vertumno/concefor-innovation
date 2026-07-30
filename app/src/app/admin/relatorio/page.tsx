@@ -47,8 +47,9 @@ export default function RelatorioPage() {
   }
   if (!report) return <p className="page-sub">Gerando relatório…</p>;
 
-  const emojiDe = (kind: string) => REACTIONS.find((r) => r.kind === kind)?.emoji ?? kind;
-  const labelDe = (kind: string) => REACTIONS.find((r) => r.kind === kind)?.label ?? kind;
+  const emojiDe = (kind: string) => REACTIONS.find((r) => r.kind === kind)?.emoji ?? "";
+  const labelDe = (kind: string) =>
+    REACTIONS.find((r) => r.kind === kind)?.labelRelatorio ?? kind;
   const t = report.totais;
   const maxReacoes = Math.max(1, ...report.ranking.map((r) => r.reacoes));
 
