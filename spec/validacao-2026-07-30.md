@@ -1,9 +1,10 @@
 # Validação com a comissão — 30/07/2026, 9h às 10h (R6)
 
-Preparação feita em 29/07. O app roda no servidor da CGTI — **http://172.17.159.15:3000**
-(IP interno; DNS `app.concefor.cefor.ifes.edu.br` foi aventado pelo Sérgio, que vai
-testar via hosts e abrir chamado na DRTI). Deploy é **manual**: Sérgio puxa o espelho
-do GitLab no servidor e rebuilda (integração automática em estudo, com o Eduardo).
+Preparação feita em 29/07. O app roda no servidor da CGTI — endereço oficial (30/07):
+**https://app.cefor.ifes.edu.br** (TLS válido, SSE ok; **usar sempre o DNS nos links** —
+o IP interno http://172.17.159.15:3000 é só fallback). Deploy é **manual**: Sérgio puxa
+o espelho do GitLab no servidor e rebuilda (integração automática em estudo, com o
+Eduardo).
 
 ## O que aconteceu (diagnóstico de 29/07)
 

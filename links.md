@@ -3,6 +3,13 @@
 O cérebro não precisa guardar tudo dentro de si, mas precisa **saber onde tudo está**. Registre
 aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 
+## App do evento (PWA)
+
+- **Endereço oficial: https://app.cefor.ifes.edu.br** (no ar desde 30/07; TLS válido —
+  **usar sempre o DNS nos links**, inclusive QR/telão via `/projecao`)
+- Fallback (rede interna): http://172.17.159.15:3000 (servidor CGTI)
+- Admin: `https://app.cefor.ifes.edu.br/admin?token=…` (token com o Sérgio/CGTI)
+
 ## Repositório
 
 - **GitHub:** https://github.com/vertumno/concefor-innovation — **monorepo/fonte de verdade** (app + contexto + comunicação)

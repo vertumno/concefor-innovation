@@ -254,7 +254,7 @@ backlog em `app-v1.md` §8.
 
 | Pendência | Estado / onde está |
 |---|---|
-| Servidor do Cefor + URL/HTTPS para deploy (R5) | **no ar por IP desde 29/07** (http://172.17.159.15:3000, Sérgio/CGTI); DNS com a DRTI e HTTPS pendentes; deploy manual via espelho GitLab |
+| Servidor do Cefor + URL/HTTPS para deploy (R5) | ✅ **https://app.cefor.ifes.edu.br no ar desde 30/07** (TLS válido, SSE ok; usar sempre o DNS nos links). IP interno 172.17.159.15:3000 só como fallback. Deploy manual via espelho GitLab; falta backup do volume e teste de acesso externo (4G) |
 | ~~Chave `EVEN3_API_TOKEN` em `app/.env.local` desta máquina~~ | **resolvida 20/07** — Marquito enviou; gravada no `.env.local` (gitignored) |
 | Even3 desatualizado em relação ao site (fonte da verdade editorial) | **mensagem à Márcia preparada em 20/07**: atualizar o Even3 pra espelhar o site (mesa "Tecnologia Delas" 18/08, intervalos, momentos culturais) e mantê-lo em dia — o app espelha o Even3; até corrigirem lá, o app mostra a versão desatualizada |
 | Cadastro do Even3 sem salas/tags/palestrantes | pedir à organização preencher lá (aí `db/enrich.sql` esvazia); enquanto isso o enriquecimento local cobre |
