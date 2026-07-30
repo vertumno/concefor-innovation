@@ -808,12 +808,22 @@ h1.page-title {
   line-height: 1;
 }
 .reaction-label {
-  font-size: var(--text-xs);
+  font-size: var(--text-2xs);
   line-height: 1.1;
   text-transform: none;
   letter-spacing: 0;
   color: var(--ink);
   text-align: center;
+}
+/* "Amei" não é emoji: é o caractere ♥ (texto), e por isso obedece a `color`.
+   Os emojis vizinhos ignoram essa propriedade — têm cor própria —, então a
+   regra pode valer para todos os ícones sem efeito colateral. No @media print
+   o token --cyan-300 já vira teal escuro: a variante de impressão sai de graça. */
+.reaction-emoji,
+.fly,
+.telao-emoji,
+.telao-floater {
+  color: var(--cyan-300);
 }
 .reaction-n {
   font-variant-numeric: tabular-nums;
