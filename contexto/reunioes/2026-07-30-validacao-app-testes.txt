@@ -1,0 +1,707 @@
+# Meeting Transcription
+
+  Meeting started: 30/07/2026, 09:04:17
+  Duration: 104 minutes
+  Participants: Elton Vinicius, Juliana Cristina da Sillva Cassaro Cassaro, Marcos Vinícius Forecchi Accioly
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/Si9fVEzYfq8rIKh2Qql7?o=txt)
+
+    
+
+  
+
+  
+    ## Highlights
+
+    > 07:33 Marcos Vinícius Forecchi Accioly: Mas sabe o que que a gente vai fazer? Vamos liberar, vamos liberar no github por
+> 07:49 Marcos Vinícius Forecchi Accioly: no github, as pessoas que quiser baixa instala no servidor pronto que é isso
+
+  ## Transcript
+
+  00:00 Marcos Vinícius Forecchi Accioly: Porque porque começava às 9 horas o teste? Isso e tem um botão amarelo no meio ao vivo. E aí as reações aparecem aí se você reage vou te mostrar aqui agora. Aqui a gente consegue abrir em qualquer computador até lá. Então, a gente consegue ter um telão assim, ó. E aí na hora que as pessoas reagem aí fica ali ao vivo, tá vendo ó, você reagiu com Parabéns vou dar um parabéns também.
+00:36 Marcos Vinícius Forecchi Accioly: Com isso com esse link aberto tela cheia, tipo assim a pessoa não vê é só o telão digital. E aí reagindo o que tá acontecendo? Isso vai aparecer aqui. Sim, sim. boa
+01:33 Juliana Cristina da Sillva Cassaro Cassaro: Oi, tá me ouvindo testando som?
+01:34 Marcos Vinícius Forecchi Accioly: Tô queria te deixa ver se você sai aqui, fala aí para a gente ouvir. Falando que o monitor tem áudio, mas não sai nada queria ver se você saía no monitor porque aí a gente consegue te ouvir, né?
+01:47 Juliana Cristina da Sillva Cassaro Cassaro: entende Né caneca?
+01:52 Marcos Vinícius Forecchi Accioly: Não fazer só não dá para te ouvir. Só no fone então quando eu for para a gente te ouvir. Eu tenho que mudar para cá.
+01:58 Juliana Cristina da Sillva Cassaro Cassaro: Transcrever transcrever não tem que você ficar falando aí como é que é?
+02:02 Marcos Vinícius Forecchi Accioly: Tenho que te interpretar aqui.
+02:03 Juliana Cristina da Sillva Cassaro Cassaro: É isso é? Quem tá aí.
+02:10 Marcos Vinícius Forecchi Accioly: E tô vendo se a massa tava marcada era com a Márcia, né? Mas algumas outras pessoas você conseguiu entrar aí?
+02:20 Juliana Cristina da Sillva Cassaro Cassaro: Eu entrei tô futucando aqui Marquito.
+02:23 Marcos Vinícius Forecchi Accioly: Vai futucando vai futucando é tudo protótipo, né? Tem que lembrar isso.
+02:27 Juliana Cristina da Sillva Cassaro Cassaro: sim
+02:28 Marcos Vinícius Forecchi Accioly: Eu vou compartilhar a tela do telão com você, que é o que estaria no telão. No evento no evento seria uma TV. Talvez assim, ó.
+02:36 Juliana Cristina da Sillva Cassaro Cassaro: tá
+02:39 Marcos Vinícius Forecchi Accioly: Que vai ficar em algum lugar? Então você vê que essa essa palestra. Esse é porque no fundo aqui é validação do app. Mas seria a palestra tipo de abertura alguma coisa assim, se você reage a isso reage aqui aparece lá.
+02:55 Juliana Cristina da Sillva Cassaro Cassaro: muita coisa
+02:57 Marcos Vinícius Forecchi Accioly: Fone um pouco aqui Ju enquanto eu vou falar com os meninos aqui. Daqui a pouco eu volto.
+03:05 Juliana Cristina da Sillva Cassaro Cassaro: Que massa. Adorei.
+03:16 Marcos Vinícius Forecchi Accioly: Aqui o que aconteceu escrito.
+03:38 Marcos Vinícius Forecchi Accioly: Ficou ótimo instalou bonitinho com o negócio dos 20 anos.
+04:00 Marcos Vinícius Forecchi Accioly: Basicamente a gente trabalhou com uma linha do tempo tudo é uma linha do tempo. Então você entra na agenda vai ter uma linha agora nós vamos trabalhar em cima para melhor refinar vai que é ecossistema funcionou como clareza de que dá para rolar. Tem como a pessoa favoritar coisas básicas, né? Que aí vai aparecer na agenda dela, tipo a carta é só a minha programação, beleza? Aquela coisa simples de evento quando eu clico no meu nome já aparece o QR.
+04:28 Marcos Vinícius Forecchi Accioly: Code o meu número de inscrição, vamos melhorar aqui também, né? E quando eu entro na área de pessoas eu consigo conectar com alguém para poder pegar os dados então aqui por exemplo agora a gente eu já mexi tá e a gente não atualizou no servidor, mas a ideia é que a pessoa possa botar o telefone tem uma foto que posso botar lá no se ela coloca vai aparecer a fotinha aqui. Pedes né? Você vai colecionando as pessoas que você se conectou no evento. Então eu dou conectar ele abre a câmera você bota seu QR Code e já conecta.
+05:06 Marcos Vinícius Forecchi Accioly: E aí a gente fica perguntado isso é legal, porque não tem muito isso não é de ficar ao invés de fazer isso preenche aqui. Só falta não é ventre, mas não tá aparecendo foto ainda não.
+05:20 Juliana Cristina da Sillva Cassaro Cassaro: Onde eu coloco a minha foto? Onde eu coloco a minha foto? Ah tá, porque não é ventre já tem foto minha.
+05:32 Marcos Vinícius Forecchi Accioly: Então quando a gente atualizar o app você vai você vai ver sua fotinha e as
+05:38 Juliana Cristina da Sillva Cassaro Cassaro: tá
+05:39 Marcos Vinícius Forecchi Accioly: pessoas vão conseguir ver você pela fotinha também. Deixa eu sincronizar aqui
+05:41 Juliana Cristina da Sillva Cassaro Cassaro: Então tá bom.
+05:43 Marcos Vinícius Forecchi Accioly: só. Vamos ver aí Serginho, ó 305 deve ter sido você porque tava em 304. Isso você tem que botar seu número do ingresso que eu não sei mas você vai saber aí no ventre.
+06:02 Juliana Cristina da Sillva Cassaro Cassaro: Tem mensagens também no ao vivo, eu consigo mandar mensagem.
+06:05 Marcos Vinícius Forecchi Accioly: Não a gente não botou mensagem o que a gente botou foi perguntas para mesa.
+06:12 Juliana Cristina da Sillva Cassaro Cassaro: Cadê?
+06:12 Marcos Vinícius Forecchi Accioly: É que eu não abri ainda. Deixa eu abrir aqui para você ver ó, vou abrir
+06:14 Juliana Cristina da Sillva Cassaro Cassaro: Tá bom.
+06:17 Marcos Vinícius Forecchi Accioly: perguntas abertas.
+06:21 Juliana Cristina da Sillva Cassaro Cassaro: pera aí
+06:22 Marcos Vinícius Forecchi Accioly: Aí quando você entrar vai ter perguntas do público.
+06:26 Juliana Cristina da Sillva Cassaro Cassaro: Início entrar no ao vivo e reagir.
+06:30 Marcos Vinícius Forecchi Accioly: E isso tem a reação embaixo deveria aparecer perguntas do público embaixo das reações.
+06:34 Juliana Cristina da Sillva Cassaro Cassaro: abriu
+06:38 Marcos Vinícius Forecchi Accioly: Sempre elogiar é foi você. E aí ele consegue dar uma Pivot nas perguntas bota fé a pergunta. Tá no evento. Ela não fica no telão não quando você entra no ao vivo, a gente pode jogar aqui no telão. Isso vai ser legal, tipo assim perguntas mais votadas. Porque o Serginho colocou sempre pergunta só elogiar. Eu já peguei a pergunta dele de uma Pivot porque tem essa coisa das perguntas a galera fazer a mesma pergunta ficar repetida então quando coloca Perguntas quando esse F vai ser disponibilizado ao público boa muito bom isso.
+07:19 Juliana Cristina da Sillva Cassaro Cassaro: Ah legal
+07:23 Marcos Vinícius Forecchi Accioly: É eu acho que tá Tá rolando, entendeu?
+07:31 Juliana Cristina da Sillva Cassaro Cassaro: Não ouvi.
+07:33 Marcos Vinícius Forecchi Accioly: Mas sabe o que que a gente vai fazer? Vamos liberar, vamos liberar no github por
+07:36 Juliana Cristina da Sillva Cassaro Cassaro: Vai aqui. Aqui manda lá para aquele redetec é aquele negócio sobre ações lá igual a Simon, foi?
+07:49 Marcos Vinícius Forecchi Accioly: no github, as pessoas que quiser baixa instala no servidor pronto que é isso
+07:55 Marcos Vinícius Forecchi Accioly: que a gente faz muito bem. Quando você for vamos abrir caminho e fazer funcionar. é
+08:03 Juliana Cristina da Sillva Cassaro Cassaro: Até ido Campos resolve como é que faz para poder ajustar o código, né?
+08:06 Marcos Vinícius Forecchi Accioly: O Simon tá falando aqui também que outra abordagem a gente tem a infra e oferecer o serviço, eu acho ótimo também.
+08:15 Juliana Cristina da Sillva Cassaro Cassaro: Aí eu já não sei Tecnicamente, como é que é.
+08:20 Marcos Vinícius Forecchi Accioly: Vai vir para você as perguntas? Ele tá falando que as perguntas vão chegar para mim se prepara eu falei vai ver tudo para você para mim fazer nada, mas assim é isso, entendeu? A gente tem também aqui que que a gente fez fez uma interface administrativa que ó tá vendo tem perguntas tem como ocultar as perguntas, ó. Então vou contar alguma que você não tá vendo não Ju tá
+08:37 Juliana Cristina da Sillva Cassaro Cassaro: Eu não tô vendo não. Tô não.
+08:41 Marcos Vinícius Forecchi Accioly: aqui ó, vou te mostrar a interface administrativa a gente consegue saber
+08:42 Juliana Cristina da Sillva Cassaro Cassaro: Ah tá.
+08:45 Marcos Vinícius Forecchi Accioly: quantos dispositivos ativos na última hora quantas reações no total perguntas reações por minuto da última hora porque essa ideia da linha do tempo todas as reações e todas as perguntas ficam numa linha do tempo também que vocês não estão vendo mas depois a gente consegue gerar um relatório e saber. Onde teve pico de exatamente e a gente quer transcrever as palestras ao vivo, então isso vai ter uma máquina um computadorzinho comente ligado na mesa transcrevendo que que a gente vai conseguir fazer depois conectar aqui que a pessoa tava falando na palestra com uma parte das reações sem precisar de vídeo. É só tudo via dado texto e aí a gente vai conseguir fazer um relatório de tipo pontos quentes do concepó.
+09:31 Marcos Vinícius Forecchi Accioly: Para fazer uma análise de dados melhor, né? Não tipo PPT que é uma coisa que nós vamos colocar também.
+09:39 Juliana Cristina da Sillva Cassaro Cassaro: massa
+09:46 Marcos Vinícius Forecchi Accioly: vai
+09:49 Juliana Cristina da Sillva Cassaro Cassaro: Não ouço bem.
+09:49 Marcos Vinícius Forecchi Accioly: Já vai ter já vai transcrever automaticamente no YouTube isso aí, deixa eu botar o microfone da câmera aqui. Vou ver se fica melhor para você, vê se você consegue escutar a partir de agora daqui a pouco.
+10:00 Juliana Cristina da Sillva Cassaro Cassaro: Fala alguma coisa aí sai meu Andreia. Consigo dar risada, acho que eu ouvi da Andreia.
+10:12 Marcos Vinícius Forecchi Accioly: Então assim a ideia aqui também tem uns relatórios, né? Então tem como ter um relatório do evento aqui tem como fazer uma edição rápida aconteceu uma mudança do evento para não entrar o negócio da hora errada. Aonde que vai ser de que horas a que horas salva, não tem como inserir coisas na programação. Que é o jeito da gente fazer uma sincronização de tipo ó, tem que estar certo, não é? Vem uma fonte na verdade exatamente tem que ter uma fonte de verdade, porque senão fica uma loucura, você não altera aí não não altera não aqui não altera a tela não é vem de lá vai vir para cá as inscrições a mesma coisa então essa galera que tá escrito aqui tem feito. Ela sacou. Se não tá no L não vem para cá, tem que botar aí não não é que você não bota nada, não é pelo espelho das coisas o que dá para
+10:58 Juliana Cristina da Sillva Cassaro Cassaro: Mas aí se a pessoa fizer a inscrição na hora lá no eventn 3 aí ele já
+11:01 Marcos Vinícius Forecchi Accioly: Aí a gente sincroniza aqui, ó. Isso tem como vir aqui bate no botão é
+11:02 Juliana Cristina da Sillva Cassaro Cassaro: atualiza aqui sincroniza.
+11:06 Marcos Vinícius Forecchi Accioly: rapidinho, tipo assim, ele vai lá no eventria traz de volta. Inclusive as pessoas alterar a programação lá altera vem para cá.
+11:13 Juliana Cristina da Sillva Cassaro Cassaro: Mas quem vai quem vai gerenciar quem vai ficar como admin? tá
+11:18 Marcos Vinícius Forecchi Accioly: Eu já tô com uma de mim é uma de mim é um token é uma senha que a gente tem acesso a essa tela uma senha grandona, então não tem como ninguém acessar sem querer. Eu acho que no dia Ju a gente vai elencar quem vai ficar né poder ficar eu você o Elton e a gente ficar tipo de suporte para organização. Para poder fazer essas alterações porque aqui tem mensagem.
+11:39 Juliana Cristina da Sillva Cassaro Cassaro: É porque essa sincronização vai ter que ser feito manualmente assim, né?
+11:44 Marcos Vinícius Forecchi Accioly: Aqui tem mensagem também, né? Então, tipo assim você vai vai na tela inicial do seu app aí na hora que a gente publica aqui. Ei Juliana te vi online. Vai aparecer aí na tela inicial do Apple sem acesso todo mundo vê é uma
+12:00 Juliana Cristina da Sillva Cassaro Cassaro: pera aí
+12:04 Marcos Vinícius Forecchi Accioly: mensagem para todo mundo, então é uma mensagem que tem aquelas coisas de ocultar agora o bem vindos. Eu tinha botado errada, mas assim Vamos ajeitar pequenas questões de
+12:19 Juliana Cristina da Sillva Cassaro Cassaro: Ah para mim sumiu.
+12:27 Marcos Vinícius Forecchi Accioly: sincronização, tipo assim, não precisa clicar sair e voltar para fazer isso essas coisas. Se você fornecer para a gente pode de alguma maneira a função o Sérgio que o Cromo e essa atualização fica por baixo dos povos não já tá ativa botei de 10 em 10 minutos. Eu falei para não deixar ligado assim só para não dar m**** agora no teste. Então tô fazendo sinalização na mão, mas tipo vai ter um Trono que vai ficar rodando e o código tá todo no ventilado, entendeu? Que eu acho que é isso que vai ser fácil da gente também fornecer para outras pessoas porque agora é pegar aquele código todo Claro, depois você parametrizar tudo.
+13:12 Marcos Vinícius Forecchi Accioly: Esse aqui é o meu design System que você vê que ele fez todo no design System duplo se for então a gente eu peguei o que já tinha de identidade visual e trabalhei com a identidade visual do concerto. Izado não cara. Isso aqui é tipo Alfa do Alfa tava rodando só na máquina. E eu falei com o Sérgio pagou o DNS. Tá tudo online agora, mas tipo agora tinha que ver um jeito de fazer aquele talvez aquele.
+13:53 Marcos Vinícius Forecchi Accioly: Aquela coisa de ligar que já no meio já direto porque aí eu continuo trabalhando não mais trabalho para vocês a gente atualiza que o Branch isso já reflete lá no servidor que tem que fazer um sh lá porque não é não é só atualizar o né. Tem alguns. Pontos mas tem alguns comandos que você tem que rodar também pegar um reviewde, né?
+14:19 Juliana Cristina da Sillva Cassaro Cassaro: rebuild traduz isso rebuild
+14:26 Marcos Vinícius Forecchi Accioly: O Elton falou que tá usando aqui Deixa Eu Se ele quiser entrar no midi tá de férias, mas tá testando. Aí a ideia.
+14:40 Juliana Cristina da Sillva Cassaro Cassaro: Sabe o que eu senti falta?
+14:41 Marcos Vinícius Forecchi Accioly: O que que você sentiu falta?
+14:42 Juliana Cristina da Sillva Cassaro Cassaro: Da logo do que você for.
+14:45 Marcos Vinícius Forecchi Accioly: Ela tá lá em cima no topo.
+14:46 Juliana Cristina da Sillva Cassaro Cassaro: Não tá dos 20 anos.
+14:48 Marcos Vinícius Forecchi Accioly: Ah faltou a logo do consertou é vamos botar ela tem que botar em branco lá no topo quando tá ao vivo também vocês vão ver que o botão do áudio ele fica piscando um pouco, tipo assim, tem coisa acontecendo agora quando você entra no ouvido também as reações já pula elas sobem assim dá uma subida. Só aparece na inicial. Aí Serginho, abre aí agora, entra no seu usuário e abre para mim conectar você.
+15:22 Juliana Cristina da Sillva Cassaro Cassaro: Eu quero me conectar.
+15:26 Marcos Vinícius Forecchi Accioly: Já conectou você serginho@gmail.com na hora que você entra no seu perfil. Tem
+15:28 Juliana Cristina da Sillva Cassaro Cassaro: Tem que ler o QR Code né?
+15:34 Marcos Vinícius Forecchi Accioly: campo para você colocar seu telefone e ele vai salvar esse meu cadastro seu que aí já não é não é ventry porque o Wesley não tem esses dados vai salvar no banco de dados do evento que é como se fosse uma camada de dados adicional que a gente Colocando. E aí vamos pensar em outras coisas que que vai ter também que eu quero implementar que a gente já já conversou botar uns QR codes deater eggs ou coisas colecionáveis no evento que a pessoa pode ir ela tem que achar uma coisa. Por exemplo. Aí ela ganhou.
+16:13 Marcos Vinícius Forecchi Accioly: Na hashtag Eles colocaram assim de coisas visitar ou você faz a leitura e aí no final das contas, ele prendeu ali teve mais QR Code. Mas quem passou agora
+16:32 Juliana Cristina da Sillva Cassaro Cassaro: Não, espera aí aí não vai dar. Manda o print no WhatsApp.
+16:37 Marcos Vinícius Forecchi Accioly: manda o print no WhatsApp.
+16:42 Juliana Cristina da Sillva Cassaro Cassaro: Tô no computador, mas tá sumido por conta do efeito.
+16:48 Marcos Vinícius Forecchi Accioly: É completa do efeito fica piscando. Ah eu posso tirar o efeito? Espera aí, espera aí, vou tirar aqui vai de novo. Acho que não é que aparecer aqui remover tudo pronto. Ai a câmera dela a câmera dela ó tem pessoas que têm permissão no no app
+17:07 Juliana Cristina da Sillva Cassaro Cassaro: Tá dando para ligar, pera aí? pera aí
+17:16 Marcos Vinícius Forecchi Accioly: que não aparece a câmera aí eu não sei ainda como resolver isso a pessoa
+17:20 Juliana Cristina da Sillva Cassaro Cassaro: Não tá aparecendo a câmera.
+17:22 Marcos Vinícius Forecchi Accioly: clica, ele não pega permissão. Tá vou olhar o botão conectar tá avançando para fora também.
+17:31 Juliana Cristina da Sillva Cassaro Cassaro: Preciso do seu número.
+17:35 Marcos Vinícius Forecchi Accioly: Então na próxima tipo assim, sempre a gente clica no ouvir o Caio que tá ao vivo fizemos esse fizemos desse jeito a pessoa não tem que entrar na agenda xiao que tá ao vivo e tal sempre que tá ao vivo também fica marcado é não sei como é que vai ser isso se vários ao vivo de vários lugares poderia ser porque vai ter você vai ter provavelmente vai ter na programação técnica e isso tá acontecendo junto com a palestra. Isso é uma coisa que a gente não testei eu falei com ele que isso acontece, mas a gente nem entendeu como a gente vai desenhar aqui de 99 coisas que estão no mesmo horário. São aparece ouro ali do tempo do lado do outro.
+18:16 Marcos Vinícius Forecchi Accioly: Mas as coisas que não estão ao vivo, você vê que não consegue reagir ó,
+18:16 Juliana Cristina da Sillva Cassaro Cassaro: aqui
+18:20 Marcos Vinícius Forecchi Accioly: só consegue reagir quando entra no ar então é uma coisa que acontece só quando a coisa ao vivo lateral também que tá dando né na agenda nesse botão aqui, eu acho por causa dos Filtros na agenda no celular do Serginho que tá com a resolução um pouco maior. ele Nossa tem um zoom um pouco maior no celular dá para ver né? Algum detalhe de implementação no meu tá funcionando normal, o da Andreia tem Android também né? Andreia celular Android não abriu a câmera.
+18:55 Juliana Cristina da Sillva Cassaro Cassaro: O meu não abriu a câmera.
+18:57 Marcos Vinícius Forecchi Accioly: Sabe onde você vai a ideia aqui, ó? É porque você você não é né? Isso aqui instalou ele aonde que ela vai mexer, eu acho que a permissão.
+19:15 Juliana Cristina da Sillva Cassaro Cassaro: O meu eu não instalei não, gente. Eu tô no link.
+19:17 Marcos Vinícius Forecchi Accioly: Vou fazer assim, vem cá para te mostrar vamos ver se vai você não sabe ainda não, né? O André também não falou não é aqui ó.
+19:22 Juliana Cristina da Sillva Cassaro Cassaro: Não não apareceu nada para instalar.
+19:27 Marcos Vinícius Forecchi Accioly: Pois é você chegar a instalar na cama.
+19:32 Juliana Cristina da Sillva Cassaro Cassaro: Não apareceu para instalar Marquito.
+19:40 Marcos Vinícius Forecchi Accioly: Ter essa opção. Tá instalado, você vai aqui e ele aparece câmera ou não permitido microfone não pediu para instalar jogo o seu iPhone, né? Se não.
+20:04 Juliana Cristina da Sillva Cassaro Cassaro: o meu
+20:09 Marcos Vinícius Forecchi Accioly: Você for nos três pontinhos aqui no canto ou no menu do seu no menu do seu app e pedir para instalar. E é maneiro porque ele tem um Splash screen de p****, depois não tem né?
+20:24 Juliana Cristina da Sillva Cassaro Cassaro: O meu não tem opção de pedir para instalar. Nem tem três pontinhos.
+20:31 Marcos Vinícius Forecchi Accioly: Mas onde que é o menu do seu tu saiba tu saiba também é iPhone, ele tá dando
+20:31 Juliana Cristina da Sillva Cassaro Cassaro: Os três pontinhos é embaixo no mais?
+20:35 Marcos Vinícius Forecchi Accioly: uma olhadinha aqui agora. Um pouquinho, mas depois ele queria. Que legal.
+20:50 Juliana Cristina da Sillva Cassaro Cassaro: É o meu lá em cima tem a bolinha com meu nome o J. Mas não tem nada.
+21:05 Marcos Vinícius Forecchi Accioly: Talvez não tá habilitado gente. Vamos perguntar aqui já para o Cláudio aqui. adicionar Não tem sim. É para isso que a galera USA pwa. Por causa disso. Para poder não ter que ficar criando builds e apps específicos para cada um. Você conseguir instalar e rolou o atalho mesmo, ele abre no navegador quando você abre o aplicativo ele fica com o símbolo do 20 anos. Tem alguma igreja de moderação nas perguntas não só tem como contar você mandou uma pergunta suas questões da Alma filo é uma pergunta. Na hora né? Vai ter que ter alguém aí eu vou ficar no meu celular.
+22:29 Marcos Vinícius Forecchi Accioly: Possivelmente Pô, você pergunta que nada a ver tem essa moderação. Mas a gente pode embutir outros se você tivesse sugestão de mecanismo de moderação. Acho que é bom. Eu já tinha conversado com ele. Eu acho que talvez assim. Adicionar a tela de início. Se você abrir o link direto de dentro do WhatsApp o navegador embutido não oferece isso não você tem que você tem que ir no link por app ponto cefor.y é só criar um atalho, mas ele vai instalar ele fica uma mas ele vai criar um
+23:08 Juliana Cristina da Sillva Cassaro Cassaro: Compartilhar o que?
+23:11 Marcos Vinícius Forecchi Accioly: banquinho de dados também, você tem como eu tenho como um programador gravar coisas offline aí no seu celular dentro dessa desse conteúdo.
+23:20 Juliana Cristina da Sillva Cassaro Cassaro: Marquito Manda aí o passo a passo de novo, por favor.
+23:23 Marcos Vinícius Forecchi Accioly: Você tem que abrir o link dentro do safari, não é clicando no link do WhatsApp. Você vai lá e digita app ponto. Você é f*** depois desse link vai estar no site que você forma em outros lugares. É pipoca.br não tanto faz abrindo um Safari vai funcionar.
+23:39 Juliana Cristina da Sillva Cassaro Cassaro: É porque ele já abriu automaticamente no Safari quando eu cliquei pelo link do
+23:48 Marcos Vinícius Forecchi Accioly: O telão também eu tô na dúvida se eu coloco uma senha para o telão ou não.
+23:54 Juliana Cristina da Sillva Cassaro Cassaro: WhatsApp não funciona.
+23:55 Marcos Vinícius Forecchi Accioly: Pelo link do WhatsApp ele abriu um navegador interno, Júlio. Certamente, ele não abriu no sofá. O que o telão né? Porque a gente é eu vou botar um toque no telão também,
+24:05 Juliana Cristina da Sillva Cassaro Cassaro: Tô tentando.
+24:13 Marcos Vinícius Forecchi Accioly: porque na hora que fabrica ele pede um toque a área administrativa ela já faz isso, né? Tipo assim se eu não coloco o token abro o link aparece. Olha o toque tem um lugar também eu admin token ele vai pela URL, mas é melhor não
+24:25 Juliana Cristina da Sillva Cassaro Cassaro: que cocô
+24:30 Marcos Vinícius Forecchi Accioly: né? Isso vai no site. Me aceita aí. Elton Foi mal cara a gente tava aqui. Já te aceitei Já te aceitei. Desculpa aí, cara que a gente tá Que eu saiba o Serginho André e Juliano, a gente tá empolgado aqui.
+25:05 Juliana Cristina da Sillva Cassaro Cassaro: Depois que entra.
+25:07 Marcos Vinícius Forecchi Accioly: Depois que entrou no Safari você tiver acessando pelo Safari, você vai compartilhar adicionar a tela de início. Aí ele vai criar um link na sua tela de início.
+25:23 Juliana Cristina da Sillva Cassaro Cassaro: Mas tá escrito quando você for e o selo dos 20 anos.
+25:26 Marcos Vinícius Forecchi Accioly: E a logo do 20 anos que é o que a gente quis dar hoje de visibilidade assim, tipo não a logo dou com você fora em si, entendeu? Mas a logo vai entrar em
+25:33 Juliana Cristina da Sillva Cassaro Cassaro: deixa
+25:34 Marcos Vinícius Forecchi Accioly: outros lugares.
+25:36 Juliana Cristina da Sillva Cassaro Cassaro: Marcado Abrir como a ppoweb.
+25:39 Marcos Vinícius Forecchi Accioly: Acho que sim, não sei não sei será que deixa marcado sai
+25:41 Juliana Cristina da Sillva Cassaro Cassaro: Um ícone será adicionado a tela de início para acessar esse site rapidamente.
+25:44 Marcos Vinícius Forecchi Accioly: Abrir como app web isso é isso mesmo, Ju. Deixa aí para a gente ver vamos testar né? Já tá funcionando em todo foi mal, Elton, você chegou aí a gente tá aqui até que tem que falar, né?
+25:58 Juliana Cristina da Sillva Cassaro Cassaro: consegui
+26:00 Elton Vinicius: Não manda ver.
+26:00 Marcos Vinícius Forecchi Accioly: Isso é isso mesmo. Aí depois a gente.
+26:00 Juliana Cristina da Sillva Cassaro Cassaro: tá com 20 anos no
+26:10 Marcos Vinícius Forecchi Accioly: Pode pensar isso melhor pode mudar para o logo do ponto se forma, mas eu gostei mais da gente da visibilidade para o seu entendeu? Tipo assim. Acho que isso vai ser uma das coisas que vai acabar divulgando o seu mais né? Bastante assim usar o App a pessoa tá vendo ali.
+26:28 Juliana Cristina da Sillva Cassaro Cassaro: Tá aí, eu consegui então pelo aplicativo aí o que que tem de diferente quando vai adicionar pessoas.
+26:34 Marcos Vinícius Forecchi Accioly: Não aí agora tem uma coisa da câmera isso quando você clica lá em pessoas e
+26:37 Juliana Cristina da Sillva Cassaro Cassaro: isso
+26:39 Marcos Vinícius Forecchi Accioly: tem um botão de conectar QR do crachá o número de ingresso que eu vou até tirar isso, né? Porque não vai ter que QR. Code no crachá mais.
+26:44 Juliana Cristina da Sillva Cassaro Cassaro: Ah Pera aí que agora eu vou ter que entrar. Eu vou ter que entrar.
+26:48 Marcos Vinícius Forecchi Accioly: É isso mesmo, né?
+26:52 Elton Vinicius: Então cara vai dar para ter se quiser, né? Porque a gente vai ter que imprimir etiqueta.
+26:59 Marcos Vinícius Forecchi Accioly: Eu achei que a pessoa escreveu o nome na mão.
+27:00 Elton Vinicius: Não vai conseguir. Ah pode ser eu tenho que confirmar com a
+27:09 Juliana Cristina da Sillva Cassaro Cassaro: Aí agora eu posso ler então aqui, pera aí, pera aí.
+27:14 Marcos Vinícius Forecchi Accioly: E aí você consegue?
+27:15 Juliana Cristina da Sillva Cassaro Cassaro: Agora eu posso ler com a câmera, né?
+27:17 Marcos Vinícius Forecchi Accioly: Mas abriu a câmera agora?
+27:20 Juliana Cristina da Sillva Cassaro Cassaro: Não.
+27:21 Marcos Vinícius Forecchi Accioly: Também não você tem que ir nas permissões desse link aí desse app aqui no Android é mais fácil, né? Permissão são mais fácil.
+27:28 Juliana Cristina da Sillva Cassaro Cassaro: Eu tenho que digitar o número da inscrição da pessoa.
+27:32 Marcos Vinícius Forecchi Accioly: É no seu caso sim, se não deu você vai digitar o número vou fazer o seguinte tá com 306 pessoas agora. Talvez ele já sincronizou não você não conseguiu
+27:38 Juliana Cristina da Sillva Cassaro Cassaro: Mas tem que ele tem que liberar alguma coisa.
+27:46 Marcos Vinícius Forecchi Accioly: logar porque tava com 305 e foi para 306. Mas você é sincronizar. Não quero deixar automático agora não, tá tranquilo. Eu tô aquele basicão que a gente tinha pensado que a gente fez tal já tá funcionando, entendeu?
+28:05 Elton Vinicius: Eu testei pô aqui eu testei ontem. E tô vendo agora, pô, tá massa demais velho, já tá no servidor do do cefo,
+28:11 Marcos Vinícius Forecchi Accioly: Tá massa demais.
+28:13 Elton Vinicius: né?
+28:14 Marcos Vinícius Forecchi Accioly: Isso já tá no servidor Serginho colocou e a derretei já propagou o DNS, né? Então ele tá funcionando nesse link já se não tivesse feito isso o https não funciona. E aí a câmera não abre porque a câmera só abre com https. Então já foi, entendeu já a câmera e a parte do
+28:32 Juliana Cristina da Sillva Cassaro Cassaro: aqui
+28:42 Marcos Vinícius Forecchi Accioly: Esqueci agora é a câmera é mais uma coisa que dependia da https para funcionar a instalação a instalação do pwa, então, ele só funcionava e instalar no celular.
+28:52 Juliana Cristina da Sillva Cassaro Cassaro: Aqui deixa eu fazer uma pergunta, eu baixei no aplicativo, baixei no aplicativo tá aparecendo aqui na tela, mas ele não ele não é um aplicativo mesmo, né? Porque no não aparece na minha lista de aplicativos aqui.
+29:01 Marcos Vinícius Forecchi Accioly: Não. Ele não é um app mesmo, ele é um pwa é um aplicativo web que ele consegue criar um link na sua tela.
+29:10 Juliana Cristina da Sillva Cassaro Cassaro: Como se fosse um atalho, né? Tá mas aí?
+29:13 Elton Vinicius: Ele queria um.
+29:14 Marcos Vinícius Forecchi Accioly: Ele consegue gravar alguns bancos de dados também. Ju, tipo assim, a gente vai ter um banquinho local para pessoa poder usar o App offline se ela tiver sem internet isso supostamente no Android. Eu sei que é possível tá aí no IPhone eu não sei.
+29:33 Juliana Cristina da Sillva Cassaro Cassaro: Tá mas não tem como resolver no iPhone a questão da câmera então.
+29:37 Marcos Vinícius Forecchi Accioly: Não tem como resolver tem Ju durante o teste agora do nossa versão Alfa 0
+29:42 Juliana Cristina da Sillva Cassaro Cassaro: Tá então, tá bom.
+29:42 Marcos Vinícius Forecchi Accioly: protótipo UOL tá depois eu vou olhar isso. Como é que a câmera a gente pode fazer funcionar no iPhone e tal questão da segurança, eu vou pegar essa
+29:48 Juliana Cristina da Sillva Cassaro Cassaro: Então tá bom não beleza.
+29:53 Marcos Vinícius Forecchi Accioly: transcrição do que a gente tá conversando aqui e vou passar também para né para o sistema dar uma praia dar uma analisada ver que se dá para fazer alguma coisa. Aí eu tô só para vocês poder acompanhar e ver aí você quer que eu vou contar por exemplo a pergunta que tá como sem perguntas só elogiar o Apple boa, parabéns. A gente oculta elas já ocultam aí vou resumir uma que foi feita antes, por
+30:15 Elton Vinicius: Ah legal
+30:19 Marcos Vinícius Forecchi Accioly: exemplo. Esse App foi.
+30:24 Elton Vinicius: Você tá mexendo No administrativo?
+30:28 Marcos Vinícius Forecchi Accioly: Isso tem uma interface admin que funciona através do topo.
+30:29 Elton Vinicius: Compartilha aí para dar uma olhada para ver como ficou.
+30:34 Marcos Vinícius Forecchi Accioly: Eu é também mobile first, entendeu? Então a gente vai conseguir utilizar essa interface admin direto no celular. Entendeu? A gente faz um atalho para ela nos nossos celulares e a gente consegue mexer nas coisas direto no nosso bolso durante o evento.
+30:49 Elton Vinicius: Rapaz você fez a reações por minuto mesmo que
+30:52 Marcos Vinícius Forecchi Accioly: E isso total e a gente vai ter essa coisa da reação por minuto também, a gente vai saber quantos dispositivos estão conectados a gente pode tirar e tem um relatório aqui embaixo já né? A gente consegue clicar ele já faz um relatório do evento tipo assim momentos mais quentes. Então tipo dia 30/07/97 validação do ep 9 por minuto. o reações por tipo do Geraldo
+31:17 Elton Vinicius: Nossa ficou muito.
+31:17 Juliana Cristina da Sillva Cassaro Cassaro: Muito top Nelton.
+31:19 Elton Vinicius: Ficou top demais.
+31:20 Marcos Vinícius Forecchi Accioly: Falou que ele já vai complicar um serviço vai atender.
+31:21 Juliana Cristina da Sillva Cassaro Cassaro: Mais cedo estava falando que o IFES todo vai querer usar.
+31:37 Marcos Vinícius Forecchi Accioly: Mas assim se tivesse um serviço facilitado dos eventos fazerem isso, bicho,
+31:38 Juliana Cristina da Sillva Cassaro Cassaro: Já acho que tem que submeter esse daí lá para o para poder apresentar em
+31:41 Marcos Vinícius Forecchi Accioly: seria é pancada, a gente faz uns design System já padrão, entendeu?
+31:43 Juliana Cristina da Sillva Cassaro Cassaro: ação.
+31:48 Marcos Vinícius Forecchi Accioly: É tipo troca só a logo do evento é um serviço do setor mano, use um app para o seu evento e se tiver um evento aí por exemplo conectado, depois a gente vai adicionar integração com outros. Nós conseguimos deve ser ótimo de integrar.
+32:01 Juliana Cristina da Sillva Cassaro Cassaro: Tem o sistema de eventos do IFES, né no siga eventos, né?
+32:12 Marcos Vinícius Forecchi Accioly: Mas assim, né, obviamente a galera vai querer a gente falar não a gente tá implementando daqui a seis meses vocês falam com a gente. Porque tem isso também, né? Eu falei que eu saiba que uma coisa que a gente pode fazer é liberado. Mas se a gente oferecesse como serviço também é muito maneiro.
+32:34 Elton Vinicius: Eu acho que essa é a solução mesmo.
+32:41 Marcos Vinícius Forecchi Accioly: Fica tipo uma versão com limite e uma versão por exemplo, entendeu? A gente já oferece como serviço a pessoa entra solicita trem cria para ela. Porque assim dentro do Servidor em cima é muita coisa, mas as reações as coisas né, mas parece que a implementação tá bem legalzinha assim eu fui fazendo junto com Fable. Vou aproveitar o modelo melhor. Então a implementação tá toda feita Redonda, entendeu? Vamos ver no evento no teste de stress assim, né?
+33:25 Elton Vinicius: É porque tá tá preparado para quantas pessoas ao mesmo tempo assim.
+33:31 Marcos Vinícius Forecchi Accioly: Não sei você é infraestrutura que tá do Servidor.
+33:31 Elton Vinicius: quantidade
+33:35 Marcos Vinícius Forecchi Accioly: Então, o Elton perguntou que tá preparado para quantas pessoas ao mesmo tempo, eu não sei tipo, eu acho que não faz nem cosquinha também no servidor.
+33:47 Elton Vinicius: e também a quantidade de tráfego que
+33:51 Marcos Vinícius Forecchi Accioly: Vai ser uma com tráfego muito pontual também, né? Mas aí eu saio a gente consegue também aumentar é uma máquina virtual, tipo assim, se precisar durante o evento se a gente dá uma enfiada, né? É isso cara, o consumo de dados é mínimo.
+34:16 Elton Vinicius: Eles estão onde estão?
+34:20 Marcos Vinícius Forecchi Accioly: Então fisicamente aqui na sala com a gente Serginho aqui André tá aqui.
+34:22 Elton Vinicius: Olha só quero aproveitar não sei se é um bom momento agora mas uma sugestão eu tava pensando sobre as reações. que eu tinha conversado com você lá, talvez a gente pensar porque assim de
+34:39 Marcos Vinícius Forecchi Accioly: São reações genéricas.
+34:42 Elton Vinicius: alguma forma essas reações elas são São genéricas assim, né? Tipo. Amei. Adorei uau, parabéns e a gente tinha pensado naquela ideia de Ser um pouco mais contextualizada e talvez até conseguir aproveitar isso como relatório, né uma medição né? Aí foi fazer um. Fui tentar pensar algumas coisas assim que pudessem ser que tipo de vocabulário que poderia ser assim adaptado, né aí cara, cheguei mais ou menos nesse aqui que seria ao inveja assim porque assim você pensar.
+35:31 Elton Vinicius: Adorei e nós somos meio parecidos, né? O parabéns a gente tá na verdade já
+35:32 Marcos Vinícius Forecchi Accioly: É sempre uma dúvida de reações mesmo, né? Elas não são Profundas, né?
+35:39 Elton Vinicius: agradecendo e não expressando que a gente tá achando sobre né ficar meio Dub assim, né? E o que triste também fica um pouco assim. Ah é triste que triste o que o palestrante falou meu deus que triste ou que triste ver a realidade daquilo que Ele disse né? Tipo assim. É aí eu tava testando algumas aqui que a gente pudesse ser também útil até como avaliação, né? E aí surgir esses aqui.
+36:16 Marcos Vinícius Forecchi Accioly: Vai compartilhar tela.
+36:20 Elton Vinicius: Pode ser eu ia colar aqui.
+36:21 Marcos Vinícius Forecchi Accioly: Você vai falar pode falar tanto faz amigo. Eu vou no show da Xuxa. Você vai no show da Xuxa?
+36:30 Juliana Cristina da Sillva Cassaro Cassaro: Fui eu.
+36:33 Marcos Vinícius Forecchi Accioly: Vou dar um voto nessa pergunta aí.
+36:33 Elton Vinicius: Eu pensei nessas.
+36:42 Juliana Cristina da Sillva Cassaro Cassaro: Gente o show da Xuxa foi notícia a semana.
+36:42 Marcos Vinícius Forecchi Accioly: Deixa eu fechar essas perguntas. Será que ele
+36:48 Juliana Cristina da Sillva Cassaro Cassaro: Vocês viram? O Marquito não gostou da minha pergunta.
+36:55 Marcos Vinícius Forecchi Accioly: Ah legal, olá. Quando fecha as perguntas eu não tinha visto que a implementação estava assim, ele mantém as perguntas mais votadas, mas ele fecha a caixa para mandar novas perguntas. ou seja Ainda lá para as pessoas votarem nas perguntas ela subirem mas não dá para mandar novas legal.
+37:17 Elton Vinicius: Quando faz o que?
+37:18 Marcos Vinícius Forecchi Accioly: Quando fecha as perguntas
+37:21 Elton Vinicius: tipo bloqueado para perguntas é isso tipo você não
+37:24 Marcos Vinícius Forecchi Accioly: É Entendi, isso eu vim aqui, por exemplo tem tem duas é esse é perfeito com ela acontecer disponibilizado ao público, aí eu vou fechar a caixa para mandar a pergunta vai e fala.
+37:35 Elton Vinicius: Ninguém pode mais ninguém poderia mais mandar pergunta isso.
+37:38 Marcos Vinícius Forecchi Accioly: Mas vê se vocês conseguem votar, eu acho que vocês conseguem votar ainda.
+37:41 Elton Vinicius: Deixa eu ver aqui. consegue
+37:45 Marcos Vinícius Forecchi Accioly: Consegue né? boa
+37:49 Elton Vinicius: Só não é só não, abre de novo isso só para ver.
+37:54 Marcos Vinícius Forecchi Accioly: Ele dá uns 3 segundos, eu acho que aparece.
+37:59 Elton Vinicius: a verdade
+38:08 Marcos Vinícius Forecchi Accioly: Que depois tudo isso pode ser configurado parametrizado também, né faltando 20 minutos para o final da palestra. Abre as perguntas aí abre dando 5 minutos para o final da palestra fecha a perguntas ou começou a palestra quando passa 15 minutos abre perguntas. Vou usar.
+38:33 Elton Vinicius: Então mas a ideia aqui chegou chegou mais ou menos nessas ideias nessas ideias. Aqui já são exceção e trocam vocabulário. Aí seriam essas aqui é tipo. Vou usar Ah não tem aquela explodir a cabeça, né? Tipo? Vivo isso.
+38:53 Marcos Vinícius Forecchi Accioly: Palminha mesmo.
+38:54 Elton Vinicius: tá Pago foi o mais questionado aqui, né? Podia ser assim que aula né também. Porque a ideia também é?
+39:09 Marcos Vinícius Forecchi Accioly: que top
+39:15 Elton Vinicius: Isso que era outra opção. Ele tem mais ou menos uma progressão aí tipo legal, achei legal também assim que ele tem tipo uma característica diferente. Então você começa consegue também. Depois fazer né? Tipo? uma medição mas
+39:35 Marcos Vinícius Forecchi Accioly: Fica mais científico, né? Então acho que você tá indo para uma linha da pesquisa aí legal isso aí as reações também a gente conseguir medir alguma
+39:40 Elton Vinicius: é
+39:42 Marcos Vinícius Forecchi Accioly: coisa com elas, né? Não que as outras a gente não conseguiria, mas ficou mais bem categorizado.
+39:48 Elton Vinicius: Isso acho que a ideia é essa assim tipo de categorias a mais.
+39:53 Marcos Vinícius Forecchi Accioly: Isso já tá no isso já tá no quando você faz notion.
+39:57 Elton Vinicius: Isso eu tô fazendo um Branch separado aqui.
+40:00 Marcos Vinícius Forecchi Accioly: É se você achar que ficou legal, eu acho que tá legal o caminho, eu só mexeria não tá pago mesmo. Deixaria o aplausos e talvez o anotei vou usar eu
+40:05 Elton Vinicius: tá
+40:11 Marcos Vinícius Forecchi Accioly: anotei parece bastante também, né? Poderia ser talvez não vou usar a barra tomei nota.
+40:22 Elton Vinicius: Você acha parecido esses dois?
+40:24 Marcos Vinícius Forecchi Accioly: Eu acho parecido eu acho que fica faltando. Porque tem um explodiu tem um eu vivo isso já passei por isso, né? Alguma coisa assim.
+40:34 Elton Vinicius: aí
+40:36 Marcos Vinícius Forecchi Accioly: Acho que é tipo, eu acho que esses dois expressam isso, mas identificação
+40:36 Juliana Cristina da Sillva Cassaro Cassaro: Eu já passei por isso é o mesmo do Vivo isso né?
+40:43 Marcos Vinícius Forecchi Accioly: assim, já passei por isso vivo isso o Tá pago.
+40:47 Juliana Cristina da Sillva Cassaro Cassaro: Tá pago
+40:47 Elton Vinicius: Vai ser vai ser.
+40:48 Marcos Vinícius Forecchi Accioly: Poderia ser o parabéns mesmo, eu acho que é o Parabéns ou uau entendeu? o que aula a palminha podia ser um que a aula ou
+40:57 Juliana Cristina da Sillva Cassaro Cassaro: Eu gosto do que aula.
+40:59 Marcos Vinícius Forecchi Accioly: Que aula entendeu?
+41:00 Elton Vinicius: Vamos mudar para aqui. Mas aí a palminha você fala aí, ele sugeriu.
+41:06 Marcos Vinícius Forecchi Accioly: Eu tava pensando aqui, qual que era aquilo que vou usar eu anotei.
+41:08 Juliana Cristina da Sillva Cassaro Cassaro: Não.
+41:08 Elton Vinicius: Não acho que eu gosto. Então troque.
+41:12 Juliana Cristina da Sillva Cassaro Cassaro: Eu gosto mais da Palma.
+41:14 Elton Vinicius: Tá pago ou que a aula? e use
+41:25 Juliana Cristina da Sillva Cassaro Cassaro: explodiu Eu acho que tá faltando.
+41:32 Elton Vinicius: o cabeça
+41:33 Juliana Cristina da Sillva Cassaro Cassaro: Alguma outra coisa só com explodiu porque no as pessoas não vão saber que explodiu é uma virada de chave mudou o que eu pensava, né? Não vai aparecer isso.
+41:42 Marcos Vinícius Forecchi Accioly: Não mas é o explodiu explodiu a cabecinha, né? Tipo assim, aí tem que ser um
+41:45 Juliana Cristina da Sillva Cassaro Cassaro: Então mas aí só explodiu? Talvez a pessoa não entenda, entendeu? Talvez
+41:46 Marcos Vinícius Forecchi Accioly: outro nome eu acho que tipo explodiu minha mente.
+41:51 Juliana Cristina da Sillva Cassaro Cassaro: precise tipo explodiu a mente né? Talvez precise de uma outra palavra aí que só explodiu eu acho que as pessoas podem não entender.
+41:59 Elton Vinicius: É o que que vocês estão falando aí?
+42:00 Marcos Vinícius Forecchi Accioly: A gente falando pensando. Eles aqui também eles estão aqui na minha orelha que eu saiba. Tá rindo da minha cara aqui que eu tô falando.
+42:18 Juliana Cristina da Sillva Cassaro Cassaro: Explodiu a cabeça ou cabeça explodiu.
+42:22 Marcos Vinícius Forecchi Accioly: Já explodiu minha mente explodiu a mente é outra coisa, né?
+42:22 Juliana Cristina da Sillva Cassaro Cassaro: Explodiu né primeiro? É explodiu a mente, pode ser? Acho que é melhor.
+42:34 Marcos Vinícius Forecchi Accioly: Explodiu a mente explodiu minha mente explodiu a mente. Eu acho que explodiu a mente é legal vivo isso me identifico. Tipo assim me identifico. É legal também ou já passei por isso, né? Tá pago vira Que aula um ponto de exclamação acho que pode botar um ponto de exclamação, mas depois eu acerto aqui qualquer coisa tá? Então, fica que aula fica explodiu minha mente explodiu a mente fica um outro
+43:02 Juliana Cristina da Sillva Cassaro Cassaro: anotei
+43:04 Elton Vinicius: que
+43:08 Marcos Vinícius Forecchi Accioly: me identifico, tipo assim vivo isso passei por isso que eu acho que eu me identifico também serve para coisas tristes esse cruzamento a gente vai fazer na hora que a gente pegar o que tava sendo falado na palestra com me identifico.
+43:17 Juliana Cristina da Sillva Cassaro Cassaro: O que está sendo dito?
+43:21 Marcos Vinícius Forecchi Accioly: Tipo assim a situação difícil uma coisa assim, agora eu vou usar eu anotei eu acho que tá meio sobreposto ainda.
+43:29 Juliana Cristina da Sillva Cassaro Cassaro: Tem que melhorar aí. valor informativo
+43:34 Marcos Vinícius Forecchi Accioly: Porque tipo assim eu vou usar eu não tenho uma coisa assim, vou levar comigo. ou para eu levar para sala de aula ou
+43:41 Elton Vinicius: Pode ser pode ficar quatro também, cara. E aí a gente tipo ganha mais espaço
+43:42 Juliana Cristina da Sillva Cassaro Cassaro: Vou levar comigo.
+43:46 Elton Vinicius: ali, né? Apesar de
+43:47 Marcos Vinícius Forecchi Accioly: É eu acho que talvez quatro reações, fique legal também.
+43:54 Juliana Cristina da Sillva Cassaro Cassaro: Vou levar comigo até que eu curti, se a gente conseguir diminuir um pouquinho para ser só duas.
+43:59 Marcos Vinícius Forecchi Accioly: Mas Paulo o texto pode estar em duas linhas, tipo assim, o texto é mais uma ajuda, né?
+44:04 Elton Vinicius: Eu acho que o que
+44:07 Marcos Vinícius Forecchi Accioly: Tá faltando fazer umas animações também nesse telão, né? Ele tá muito pobre agora vou trabalhar uma coisa mais uau assim no fator ual do telão, tipo na hora que clica nas reações a parada aparecer grande Panda umas brincadas assim.
+44:24 Juliana Cristina da Sillva Cassaro Cassaro: Não pode ser quando atingir uma palestra sei lá atingir uma quantidade de
+44:27 Marcos Vinícius Forecchi Accioly: Por exemplo.
+44:28 Juliana Cristina da Sillva Cassaro Cassaro: marcações assim aí. Tem algum tipo de efeito, entendeu? Surpresa.
+44:33 Marcos Vinícius Forecchi Accioly: Sim é nessa linha aí tem um tipo de efeito de surpresa quando atingir um Trash
+44:35 Elton Vinicius: é
+44:38 Marcos Vinícius Forecchi Accioly: Road assim um limite.
+44:40 Elton Vinicius: O que eu percebi que poderia já ser ajustado.
+44:45 Marcos Vinícius Forecchi Accioly: Gente, pode ficar à vontade se vocês quiserem então, pera aí rapidinho, galera. Pode ficar à vontade era isso. Acho que tudo é o melhor teste protótipo, já fiz na minha vida, porque tudo funcionou, tipo assim tá tudo aqui só faltou a câmera no Iphone, só temos um banco para resolver. O resto é tudo implementação melhoria, né? E tal aí a parada integração continua depois vê lá a gente conseguir porque assim nós vamos fazer várias dessas melhorias e ficar te demandando para fazer isso vai ser ruim a gente pode fazer o esquema de trabalhar em Brant. E aí na hora que a gente Quiser a gente manda para o Man e já fica lá.
+45:25 Marcos Vinícius Forecchi Accioly: foi Pode falar Elton perdão, tá?
+45:35 Elton Vinicius: tranquilo
+45:37 Marcos Vinícius Forecchi Accioly: Tudo quiser entrar no médico a gente eu posso passar o link.
+45:39 Juliana Cristina da Sillva Cassaro Cassaro: Elton Ah tá se acertou agora explodiu.
+45:51 Elton Vinicius: Me identifico.
+46:05 Marcos Vinícius Forecchi Accioly: O Dudu, parece que vai entrar aí também gente. Que aí a gente também testa com ele e é sempre bom mais cabeças olhando né? Se vocês tiverem sugestão agora que o web já está instalado já tá funcionando, ele tá com essa programação aí meio nada a ver, né? Tem uma programação para hoje que eu coloquei fictício. E aí a programação é 17/08 já tá com a programação que tá mais entretanto.
+46:32 Marcos Vinícius Forecchi Accioly: beleza, mas hoje durante o dia todo até 16:30 vai estar funcionando, mas ele chegou cadastrar no Aí não ele fez uma coisa.
+46:42 Juliana Cristina da Sillva Cassaro Cassaro: Elton vou levar comigo, será que não daria ser levarei comigo não só não precisa colocar o voo. Não sei tô pensando aqui. Pensando talvez duas palavras, entendeu? Você?
+46:57 Elton Vinicius: Aqui não sei se me levarei comigo, vou usar gostei não.
+47:08 Juliana Cristina da Sillva Cassaro Cassaro: Tô tentando pensar. Tô aqui tentando pensar.
+47:15 Elton Vinicius: Vou usar.
+47:18 Juliana Cristina da Sillva Cassaro Cassaro: Talvez ele possa te sugerir alguma coisa não.
+47:22 Elton Vinicius: Ele pode atingir, mas eu gosto de vou usar vou usar.
+47:31 Juliana Cristina da Sillva Cassaro Cassaro: Vou usar aí só tem duas mas é o outro é vou levar comigo, né? Você tinha colocado?
+47:37 Elton Vinicius: Não, mas eu tô pensando eu acho que ele falou que levar comigo, mas vou usar ou testar vou aplicar.
+47:50 Juliana Cristina da Sillva Cassaro Cassaro: Vou usar.
+47:53 Elton Vinicius: A ideia é assim, eu quero usar isso eu gostei disso.
+47:55 Juliana Cristina da Sillva Cassaro Cassaro: Vou empregar vou aproveitar irei utilizar pretendo aplicar. Vou adotar. Tô procurando aqui na internet tá alguns sinônimos nesse sentido.
+48:37 Marcos Vinícius Forecchi Accioly: Talvez é lançar no dia 10, né? Você tava a gente tinha falado de lançar uma semana antes, né?
+48:44 Elton Vinicius: isso
+48:46 Marcos Vinícius Forecchi Accioly: Você alugou aí funcionou, né?
+48:50 Elton Vinicius: Cara, loguei ontem, né? Aqui eu não consegui logar não.
+48:56 Marcos Vinícius Forecchi Accioly: Isso você tem seus dados que busca para você?
+48:57 Elton Vinicius: É com os dados do evento mesmo. eu tenho que
+49:07 Marcos Vinícius Forecchi Accioly: Que é uma outra coisa da área administrativa, talvez ter uma busca de pessoas, né?
+49:13 Juliana Cristina da Sillva Cassaro Cassaro: aqui
+49:13 Marcos Vinícius Forecchi Accioly: Então e também tem uma coisa assim na área administrativa de quantas conexões?
+49:20 Juliana Cristina da Sillva Cassaro Cassaro: Aqui é para o Elton. Coloquei aqui na internet, ele deu opção, tipo vou aplicar útil na prática vou usar né? E para a vida.
+49:34 Marcos Vinícius Forecchi Accioly: Para a vida é legal. Útil na prática também é legal, bom dia, Marcinha Marcia Jesus.
+49:43 Juliana Cristina da Sillva Cassaro Cassaro: Eu acho que talvez vai ser outras vai ter que ser mais reações aí.
+49:50 Elton Vinicius: Vou usar.
+49:50 Juliana Cristina da Sillva Cassaro Cassaro: Eu gostei do para a vida.
+49:53 Marcos Vinícius Forecchi Accioly: Tá tranquilo aqui a massa chegou aqui dizendo que era 10 horas, mas ela mesma
+49:54 Juliana Cristina da Sillva Cassaro Cassaro: Assim às vezes falava. Nossa isso aqui é para vida, entendeu? Tipo assim você tem que
+50:12 Marcos Vinícius Forecchi Accioly: confirmou o evento na agenda 9 horas, fui eu já tinha confirmado aqui, entendeu? A gente tá testando mas tem um evento o Elton tá de férias, mas tá online que ninguém saiba disso do Ministério Público. Você tinha colocado 10 para você, né? Mas imagina que você confirmou comigo. A Ju também tá aí, o Dudu também tá entrando sai no celular você não
+50:35 Juliana Cristina da Sillva Cassaro Cassaro: 💡 "Vou aplicar"🚀 "Útil na prática"✅ "Vou usar"🧠 "Para a vida"
+50:40 Marcos Vinícius Forecchi Accioly: posso fazer o conteúdo não. Acho que é melhor pelo celular o Simon e o
+50:43 Elton Vinicius: agora
+50:45 Marcos Vinícius Forecchi Accioly: Serginho também tavam aqui tá André também já testou então eu quero te mostrar um Panorama Geral do que que é porque a ideia que no dia 10 a gente lança o app sim, tá para todas os inscritos, a gente pode mandar aquele e-mail que a gente tinha combinado lembra? Porque pela alegria pessoal, eles têm como mandar um e-mail para todos os inscritos, então a gente preparar uma mensagem e mandando falando que tem um app você foca as pessoas podem baixar aqui o endereço e tal.
+51:17 Elton Vinicius: Pode falar.
+51:19 Marcos Vinícius Forecchi Accioly: Vocês querem que eu fecho o microfone para vocês enquanto eu faço. Falo com a
+51:19 Juliana Cristina da Sillva Cassaro Cassaro: Pode ir falando.
+51:23 Marcos Vinícius Forecchi Accioly: Márcia eu deixo. Pode falar você vai entrar é porque agora não tá em lugar nenhum, né? Mas vai entrar no seu navegador. Você tá indo abrir seu Chrome o que você quiser, você vai digitar Apps. O Serginho só conseguiu, esse DNS tá pessoal, ele queria um app ponto quando você for quando você for construído, mas aí aí ficou a época e quando você for que parece um app do ser fora e não do que você for, mas eu acho que depois talvez a gente pode trocar nesse endereço, ele aparece para você, tá bom? E você vai ver aí Marcinha que assim a parte principal do app é a parte ao vivo, tá então quando você entra não é vai ter essa coisa aí ao vivo que é o botão do meio ao vivo agora o que que a gente tem ao vivo de 9 a 10 validação, não é tudo que você pode coloquei esse evento aí só para a gente testar esse telão aqui ó que tá compartilhado com os meninos ali é o que a gente vai abrir numa televisão ou em algum lugar ou no Pedaço do telão que está sendo transmitido lá.
+52:44 Marcos Vinícius Forecchi Accioly: Palestra a gente ainda não tem muita clareza, tá? Quando uma coisa está ao vivo, você consegue acessar o evento ao vivo e aí se você clicar nas reações vai reagir ali que é aquilo que a gente já tinha te mostrado. e Aí isso a gente tem uma área administrativa que onde a gente vai controlar então depois pode a gente ficar responsável, eu e o Elton eu Elton Juliana, você também pode entrar com alguém que você destacar da comissão que vai ter acesso a essa área nessa área a gente consegue fazer o quê ver quantos dispositivos estão ativos contra os inscritos, quantas reações no total quem tá logado. Onde estão alugados, né as reações por minuto da última hora tudo que foi de reação que aconteceu e também as perguntas então se você não tá aí eu vou contar todas só para não ficar aparecendo nada normalmente vai aparecer assim, ó.
+53:43 Marcos Vinícius Forecchi Accioly: Sem nada aqui, tá? Não evento ao vivo vai aparecer assim, ó, só as reações Beleza se a gente vier aqui dentro da área administrativa enquanto tá acontecendo. Depois a gente pode programar isso. Se a gente quiser tá? Por exemplo depois que iniciou um evento quando passar 15 minutos abre perguntas. Sim pode ser automático. A gente pode botar um serviço para fazer isso, por enquanto tá manual, tá então a gente vem.
+54:14 Marcos Vinícius Forecchi Accioly: Você clica Abrir Perguntas, quando eu clico Abrir pergunta vai abrir uma caixinha de perguntas aí você pode mandar uma pergunta, eu já vou deixar duas aí. Essas perguntas vão para todo mundo para todo mundo. Inclusive você quando você olha as perguntas que já tem você pode dar um upload tipo assim, ó. Ah essa pergunta aqui quero votar nela. Aí ela vai subindo e Fica para cima para ninguém mandar pergunta duplicada, entendeu? É isso? Qual a previsão do tempo? Então nessa área administrativa a gente consegue fazer uma certa gerência, porque se a pessoa colocou uma pergunta que não era para aparecer a gente consegue ocultar a pergunta. Tá você mandou aí, qual a previsão do tempo para hoje? Vou dar um voto na sua pergunta tá aí por exemplo isso ela vai subindo. Você viu que ela já subiu em relação ó? Se eu tirar é porque aqui não tem nenhuma ó. Beleza tem dois votos. Ela já foi mais legal exatamente tá? E se a gente quiser, por exemplo, quando será lançado você vê que em tempo real. Dá uma olhadinha aí se eu clicar para ocultar já sumiu a pergunta ou seja, alguém colocou um palavrão botou uma coisa a gente vai estar sempre a gente oculta.
+55:44 Marcos Vinícius Forecchi Accioly: Você vê que agora por exemplo ao vivo acabou de mudar para todo mundo, tá? Porque acabou de mudar porque a outra vez que tá ao vivo agora. Tá em casa?
+55:54 Juliana Cristina da Sillva Cassaro Cassaro: O Marquito você ativou as perguntas, mas no telão aqui não apareceu as perguntas.
+56:01 Marcos Vinícius Forecchi Accioly: É no telão não tá aparecendo as perguntas ainda Ju, mas a ideia é que a gente consiga jogar as perguntas no telão, tá bom?
+56:07 Juliana Cristina da Sillva Cassaro Cassaro: Tá. E vocês chegar a pensar tipo, porque pode ser que tenha uma barra de rolagem gigantesca de perguntas aqui ao longo da palestra, né? Vocês chegaram
+56:15 Marcos Vinícius Forecchi Accioly: pode
+56:17 Juliana Cristina da Sillva Cassaro Cassaro: a pensar em
+56:18 Marcos Vinícius Forecchi Accioly: Não pensar em nada ainda.
+56:19 Juliana Cristina da Sillva Cassaro Cassaro: Teta só pensando assim, você acha não você acha que é interessante?
+56:20 Marcos Vinícius Forecchi Accioly: Tá bom bom gente. A gente entrou no outro no outro teste aí agora tá? Porque
+56:25 Juliana Cristina da Sillva Cassaro Cassaro: Ficar sei lá três pontinhos para poder atualizar sempre Mostra assim com mais votadas, entendeu? E aí se quiser ver outras. Clica sei lá, tem uns três pontinhos ou atualiza a barra de rolagem ver as outras. é Abra as outras. E aí não sei.
+56:50 Marcos Vinícius Forecchi Accioly: o evento das dez às 11 horas é uma outra palestra que seria o teste aberto reações ao vivo, então ele começou do zero é bom que a massa chegou agora e tá do zero. Você vem então quando a gente começa a ficar vai acontecendo coisas lá, ele já mudou no telão, ou seja, não precisa a gente atualizar o telão começou uma nova palestra, ele já começa aqui também na área administ.
+57:14 Marcos Vinícius Forecchi Accioly: Negativa só para vocês entenderem. Então tá joia? O Elton quanto você também massa, vamos dizer que esse evento aqui entrou antes e entrar antes da hora atrasou a palestra a gente tem como vir aqui e dar uma mexida falar não vai iria começar 10 e 10. E vou salvar isso é que agora ele já tá aqui no ao vivo, telão, tá aqui funcionando e tal ó nenhuma sessão lá agora porque eu mudei o horário para 10:10. Beleza? Galera, mas se Ele vai. No chão ele já entra.
+57:49 Juliana Cristina da Sillva Cassaro Cassaro: Fala com ela que tá no automático da hora que tá no even3, não é isso?
+57:52 Marcos Vinícius Forecchi Accioly: Isso a fonte da Verdade Márcia é o que está no eventria. Beleza, então assim se tudo de programação que a gente quiser pensando que a gente vai ter um app que está refletindo essa fonte da verbal programação do evento. Se for mudar
+58:06 Juliana Cristina da Sillva Cassaro Cassaro: programação do evento Confirma aí
+58:11 Marcos Vinícius Forecchi Accioly: coisas é importante mudar não é bem acima de tudo aqueles que você pediu o ele vai girar. Nossa fonte da verdade o que a gente pode fazer também é fazer no site passar também refletir o que vem porque porque já fica sincronizado tanto é que quanto o site a gente muda num lugar só não é ventre. Beleza já tinha atualizado lá, mas aí como mudou aquele palestra.
+58:44 Marcos Vinícius Forecchi Accioly: E aquele aí eu já deixo alinhadinho aí para vocês. Se você olhar aqui em agenda que a segunda o segundo item vocês entrando em agenda Pessoal, vocês vão ver que na quinta-feira o evento das 9 horas, ele já ficou rebaixada a visibilidade, esse já passou nós estamos agora na bolinha azul no evento das 10 horas. Beleza e você rolar você já vai ver a programação do conservar
+59:08 Juliana Cristina da Sillva Cassaro Cassaro: ótimo
+59:11 Marcos Vinícius Forecchi Accioly: mais para baixo, porque porque essa programação de cima é uma programação de teste que eu inserir, mas para baixo programação do dia 17 18 19, isso tudo já entrei.
+59:23 Juliana Cristina da Sillva Cassaro Cassaro: Deixa eu te fazer uma pergunta, você mostrou para gente que você possa.
+59:28 Marcos Vinícius Forecchi Accioly: Rapidinho você vê que os coffee break. Eles não estão na programação, mas é importante entrar porque senão a pessoa não vai ver, será que é importante. Será que não é? Ah esses dados aí que você tá gerando aí vão para onde? Você tem alguma base, depois eu ia precisar para os relatórios é muito legal, mas a gente fez isso para poder te dar um relatório É isso mesmo. Pode ficar tranquilo que o relatório já existe.
+59:57 Marcos Vinícius Forecchi Accioly: Ah legal, a gente pode sentar com você, o Elton tava mostrando aqui Márcia só para você saber porque ele já compartilhou a tela, mas tipo, a gente está pensando até as reações isso aqui já vai mudar já vai ficar reações que também nos ajudem a entender o que que tá acontecendo com a pessoa do momento em que ela tá reagindo então fica uma coisa meio assim. Ah, vou levar para casa que aula tipo assim explodiu minha mente.
+01:00:29 Marcos Vinícius Forecchi Accioly: A programação isso nós vamos cruzar uma transcrição das palestras. Então seja a gente vai saber no minuto as 10:05, o Marquito tava falando tal coisa no teste e as pessoas foram lá e reagiram com o parabéns com palminha. Ou seja você vai saber o que que tava sendo dito naquela hora e quantas reações tiveram no público. Então a gente vai conseguir cruzar, entendeu? Por isso que vai ser interessante a gente começar a falar para as pessoas para usar o App, né? Tipo assim a gente comentar o uso, tá bom? Deixa eu te mostrar uma outra coisa rapidinho que é uma possibilidade também é bom para lembrar para junto para o Elton que é aqui na área administrativa, a gente vai ter uma área de avisos da organização. Ou seja quando a pessoa tá aqui no início na casinha, se você entrar aí você vai ver. Se eu botar aqui assim aviso para todos os docentes.
+01:01:33 Marcos Vinícius Forecchi Accioly: Tem doce de leite? E vou publicar esse aviso esse aviso, ele não tá aparecendo automático na casinha tão vendo aí pessoal para mim, ele não aparece eu já publiquei, mas
+01:01:45 Juliana Cristina da Sillva Cassaro Cassaro: Não apareceu também.
+01:01:47 Marcos Vinícius Forecchi Accioly: se você clicar em qualquer outra coisa, clica no ao vivo e volta, ele já aparece ele aparece lá em cima do negocinho amarelinho assim, ó, eu acho que ele pode ser um pouco mais visível.
+01:02:00 Elton Vinicius: Você tá falando de corda o quê?
+01:02:02 Marcos Vinícius Forecchi Accioly: Então ou seja pela interface administrativa quando a gente manda um aviso ele
+01:02:03 Juliana Cristina da Sillva Cassaro Cassaro: de avisos
+01:02:10 Marcos Vinícius Forecchi Accioly: aparece na home da pessoa do app ou seja, tem como durante o evento. Se necessário mandar aviso por aqui para todos que estão com web usando web, beleza?
+01:02:24 Juliana Cristina da Sillva Cassaro Cassaro: Só tem que ver uma maneira dele, ele consegue não atualizar somente mudando de menu Marquito.
+01:02:31 Marcos Vinícius Forecchi Accioly: Tem que acertar isso aí isso aí vai acertar ele vai aparecer igual outras
+01:02:31 Juliana Cristina da Sillva Cassaro Cassaro: tá
+01:02:34 Marcos Vinícius Forecchi Accioly: coisas estão aparecendo.
+01:02:38 Juliana Cristina da Sillva Cassaro Cassaro: Tem como acertar isso, né? E aí?
+01:02:39 Marcos Vinícius Forecchi Accioly: A gente isso outra coisa só mostrando para a massa aqui rapidinho é que a gente consegue recincronizar por exemplo. A Andreia nem o Saimon Serginho nem o Dudu tinham feito inscrição no evento agora fizeram para poder testar a Márcia também, não fez gente então assim vocês saibam que tá fora do que
+01:02:57 Elton Vinicius: Tá fora, tá fora.
+01:03:00 Marcos Vinícius Forecchi Accioly: você fora não vai poder participar.
+01:03:01 Elton Vinicius: Nem entrar.
+01:03:04 Marcos Vinícius Forecchi Accioly: E aí então é bom para Márcia ver isso aqui funcionando na hora, se você puder fazer sua inscrição enquanto a Juliana vai fazer uma outra. Eu vou te mostrar como a gente sincroniza as pessoas vão aparecer. E eu vou me conectar com você, depois fala aí Ju.
+01:03:22 Juliana Cristina da Sillva Cassaro Cassaro: Sobre essa questão dos avisos da organização. Quando tiver um evento para começar não sei se tá configurado já ou é possível tipo que ele lembra em 5 minutos vai começar a palestra tal. Não sei se você chegar a pensar nessa possibilidade, entendeu?
+01:03:39 Marcos Vinícius Forecchi Accioly: A gente pensou ele não consegue notificar as pessoas tá o sistema de bom a gente pode até testar. Vê se consegue notificações para pessoa que está com Eta Instalado, não tenho certeza se o pwa faz isso, mas o que que ele faz no ao vivo, quando você clica já fica um contador regressivo.
+01:03:58 Juliana Cristina da Sillva Cassaro Cassaro: sim
+01:03:59 Marcos Vinícius Forecchi Accioly: Próximo evento é tal coisa três horas e tantos minutos tá ele já ficam e também na parte do início. Ele mostra ao vivo então do tempo daqui a tanto tempo, beleza?
+01:04:12 Elton Vinicius: Aí uma coisa que eu acho que é importante aproveitar e falar para Márcia ou Marquito é de incluir na no cerimoniais, né a lembrança do app, né? E talvez na primeira no primeiro dia talvez explicar um pouco para ela, olha o para o pessoal assim dois minutos.
+01:04:37 Juliana Cristina da Sillva Cassaro Cassaro: Convida o Marquito para poder ter uma fala lá.
+01:04:40 Marcos Vinícius Forecchi Accioly: isso aí
+01:04:41 Elton Vinicius: Não é isso, mas eu digo assim não só não só divulgar a gente já vai fazer
+01:04:43 Juliana Cristina da Sillva Cassaro Cassaro: na cerimônia de abertura
+01:04:45 Elton Vinicius: a divulgação antes, mas assim lá na gente e lembrem de usar o aplicativo. Vocês podem fazer a reação durante a palestra e compartilhar isso a gente vai estar fazendo tá entendendo um pouco como é que a temperatura da palestra isso, entendeu? E tipo dá uma mini explicação de um minuto e convite para o pessoal usar o App durante.
+01:05:09 Marcos Vinícius Forecchi Accioly: Isso que eu tava sugerindo mesmo botar o QR Code do App no telão e falar para
+01:05:13 Elton Vinicius: Ah entendi
+01:05:13 Marcos Vinícius Forecchi Accioly: todo mundo baixar na hora entrar na hora entrar com seus dados, mas isso a gente já vai fazer antes também, porque a ideia que as pessoas já cheguem no
+01:05:21 Elton Vinicius: Com certeza
+01:05:21 Marcos Vinícius Forecchi Accioly: concefó um ego instalado.
+01:05:23 Elton Vinicius: E na inscrição também já já convide a pessoa para instalar para usar né na
+01:05:30 Marcos Vinícius Forecchi Accioly: enquanto a inscrição
+01:05:30 Elton Vinicius: recepção digo.
+01:05:31 Marcos Vinícius Forecchi Accioly: A recepção no credenciamento a gente pode pedir para não credenciamento
+01:05:33 Elton Vinicius: isso
+01:05:36 Marcos Vinícius Forecchi Accioly: sugerir já deixar o QR. Code do app ali o endereço a pessoa aponta já está no app, até porque no credenciamento ela já vai estar sabendo o número da inscrição dela, né?
+01:05:49 Elton Vinicius: Sim, logo logo, né?
+01:05:50 Marcos Vinícius Forecchi Accioly: Esse é legal também alto na hora se for imprimir etiqueta mesmo um nome imprimido com o nome QR Code o número de inscrição embaixo do QR. Code que
+01:05:58 Elton Vinicius: sim
+01:05:58 Marcos Vinícius Forecchi Accioly: às vezes ou de falha, né? Não funciona. E aí o número da inscrição ele
+01:06:00 Elton Vinicius: Com certeza
+01:06:03 Marcos Vinícius Forecchi Accioly: mas eu acho três momentos importantes sim, falaram credenciamento. Falar e talvez um dos lançamentos ou na na abertura no primeiro cerimonial assim, né jogar o QR. Code no telão pedir para as pessoas baixarem porque a partir daquele momento elas todo evento ao vivo, elas podem reagir. Eu vou falar com a Márcia depois que ela tá atenta que fazer na inscrição dela, porque o meu o principal já está cadastrado, ele não tá deixando fazer a inscrição, mas eu vou tentar.
+01:06:41 Elton Vinicius: Não.
+01:06:43 Marcos Vinícius Forecchi Accioly: Eu não tenho lista não, Márcia quem tem essa lista são vocês eu posso perguntar aqui para ele aí só pode associação. Como gestor e outra como?
+01:06:57 Juliana Cristina da Sillva Cassaro Cassaro: Olha, só, é porque você tá como organizadora do evento com um cadastro de e-mail. Ela que o participante ela tem que ter um outro cadastro de para ser
+01:07:08 Marcos Vinícius Forecchi Accioly: Você já tá como organizador?
+01:07:12 Juliana Cristina da Sillva Cassaro Cassaro: usuário. Aí tem que ser com outro e-mail.
+01:07:14 Marcos Vinícius Forecchi Accioly: Mas aí eu tenho acesso, né? Eu acho que como organizador não sei né? A gente
+01:07:16 Juliana Cristina da Sillva Cassaro Cassaro: Você tem acesso?
+01:07:18 Marcos Vinícius Forecchi Accioly: tem que conferir.
+01:07:22 Juliana Cristina da Sillva Cassaro Cassaro: Mas ela conseguiu ela não tem ela não tem número de inscrição.
+01:07:27 Marcos Vinícius Forecchi Accioly: A Juliana tá falando que ela faz dois cadastro também, ela faz com e-mail
+01:07:35 Juliana Cristina da Sillva Cassaro Cassaro: O Marquito porque quando eu eu faço organização de eventos não é não é ventre falar igual você, né? Eu acho estranho eu faço com meu e-mail institucional, o meu cadastro normalmente é com meu e-mail institucional aí quando eu sou participante eu faço com meu e-mail do Gmail. Você tá entendendo?
+01:07:55 Marcos Vinícius Forecchi Accioly: institucional para ser organizadora e quando ela vai fazer como participante ela faz com genesa. Mas é porque você não precisa fazer outro cadastro no evento
+01:08:06 Juliana Cristina da Sillva Cassaro Cassaro: Você não precisa.
+01:08:07 Marcos Vinícius Forecchi Accioly: isso vai fazer inscrição no evento.
+01:08:08 Juliana Cristina da Sillva Cassaro Cassaro: inscrição no evento
+01:08:13 Marcos Vinícius Forecchi Accioly: Tentou fazer a inscrição no evento e não deixou.
+01:08:15 Juliana Cristina da Sillva Cassaro Cassaro: Eu tenho dois Eu tenho dois e-mails de cadastro. Eu tenho dois dois logins no events.
+01:08:22 Marcos Vinícius Forecchi Accioly: É tem três Marcia aqui que apareceram tá escrita três vezes e Nenhuma das três tá confirmada para ela entrar no app hoje funciona o ingresso 71369979 ou
+01:08:31 Juliana Cristina da Sillva Cassaro Cassaro: ela
+01:08:34 Marcos Vinícius Forecchi Accioly: 7302-1520, ele apareceu dois aqui para você.
+01:08:37 Juliana Cristina da Sillva Cassaro Cassaro: ela como organizadora Marquita ela consegue ver os usuários escrito e ver se qual é a massa que tá
+01:08:42 Marcos Vinícius Forecchi Accioly: Não eu sei mas ela não tá conseguindo ver quem tá fazendo. Esse é o Alex gente entenda que ela não tá ela falou assim acessa. Aí você não tem acesso ela pediu para eu acessar, mas eu não tenho acesso a base de dados.
+01:08:56 Juliana Cristina da Sillva Cassaro Cassaro: Entendi.
+01:08:56 Marcos Vinícius Forecchi Accioly: É isso, mas tipo, ela não sabia onde aqui não. Depois a gente precisaria até entender existe uma coisa de confirmado não é vendrick, eu não consegui entender o que que é o que que é esse confirmado.
+01:09:13 Juliana Cristina da Sillva Cassaro Cassaro: Ele tem que o Marquês tá me ouvindo é quando a pessoa se inscreve no evento
+01:09:17 Marcos Vinícius Forecchi Accioly: Tô te ouvindo, pode falar.
+01:09:22 Juliana Cristina da Sillva Cassaro Cassaro: mas aí depois ele tem que se credenciar tem que ter um credenciamento no início do evento uma presença dele, entendeu? Porque tem que confirmar a
+01:09:28 Elton Vinicius: Aqui continua.
+01:09:32 Juliana Cristina da Sillva Cassaro Cassaro: presença para que ele possa estar habilitado depois de gerar o certificado.
+01:09:35 Marcos Vinícius Forecchi Accioly: Então mas você sabe o que que é engraçado Júlio tem 151 pessoas confirmadas já. Entendeu? E o evento nem começou.
+01:09:43 Juliana Cristina da Sillva Cassaro Cassaro: Aí eu não sei como que ele configurou no Evan 3, entendeu? Tem que ver a
+01:09:46 Marcos Vinícius Forecchi Accioly: Tá eu vou ver com o Alex depois disso.
+01:09:48 Juliana Cristina da Sillva Cassaro Cassaro: configuração dele se ele habilitou tipo quando eu fiz quando eu faço no dia eu libero a partir do dia tal lá na hora a pessoa faz o credenciamento.
+01:10:00 Marcos Vinícius Forecchi Accioly: Pera aí, pera aí que a massa já está cadastrado três vezes, ela tá tentando fazer um outro cadastro. Se tiver o Gmail você tá cadastrado com o máximo ponto de Oliveira. Tá bom você consegue acessar o app com o seu eu não sei qual dos dois você quer usar, tá? Aí ela falou assim. Isso muda a conversa a própria coordenadora do evento está no grupo dos loucos. E é isso mesmo.
+01:10:40 Marcos Vinícius Forecchi Accioly: Eu vou ver com o Alex depois Ju que sobre o que que é isso tá para você acessar o app massinha para você fazer seu login. Aí você vai botar uns quatro primeiros dias do seu CPF.
+01:11:54 Marcos Vinícius Forecchi Accioly: O seu e-mail tá funcionando gente tanto os quatro primeiros dígitos do CPF, quanto o e-mail tá tem gente que não tem CPF cadastrado.
+01:12:02 Juliana Cristina da Sillva Cassaro Cassaro: Mas lá só fala o CPF, eu acho eu falei meio também na mensagem, não me
+01:12:03 Marcos Vinícius Forecchi Accioly: beleza
+01:12:07 Juliana Cristina da Sillva Cassaro Cassaro: lembro.
+01:12:07 Marcos Vinícius Forecchi Accioly: Olá Márcia, que bom isso Márcia fez o login.
+01:12:12 Juliana Cristina da Sillva Cassaro Cassaro: Na mensagem fala que pode ser um e-mail Marquito.
+01:12:14 Marcos Vinícius Forecchi Accioly: Não fala não, talvez. Tem que acertar a mensagem.
+01:12:16 Juliana Cristina da Sillva Cassaro Cassaro: Tem que acertar a mensagem lá para ficar claro.
+01:12:19 Marcos Vinícius Forecchi Accioly: É isso aí Ju, eu acho que a mensagem não fala que pode ser o e-mail, tá?
+01:12:24 Juliana Cristina da Sillva Cassaro Cassaro: Pede para ir a incluir aí tá vendo Cloud.
+01:12:26 Marcos Vinícius Forecchi Accioly: Já tá incluindo.
+01:12:31 Juliana Cristina da Sillva Cassaro Cassaro: Eu fui.
+01:12:35 Elton Vinicius: Não foi não, vou agora.
+01:12:37 Marcos Vinícius Forecchi Accioly: Dá uma olhadinha porque na abinha de pessoas que que acontece Aparece todas as pessoas do evento.
+01:12:44 Elton Vinicius: um monte de número
+01:12:44 Juliana Cristina da Sillva Cassaro Cassaro: sozinho
+01:12:46 Marcos Vinícius Forecchi Accioly: É aparece só as iniciais é para você se conectar com as pessoas. Então vai aí mas agora no botão tem um botãozinho mais conectar Logo no início. Vê se ele vai Abrir a câmera.
+01:12:56 Elton Vinicius: Abriu a câmera aqui.
+01:12:59 Marcos Vinícius Forecchi Accioly: Não, né?
+01:12:59 Juliana Cristina da Sillva Cassaro Cassaro: O meu não abre não.
+01:13:01 Elton Vinicius: Fala o seu número aí Ju para eu conectar com você.
+01:13:04 Juliana Cristina da Sillva Cassaro Cassaro: Espera aí vou te falar o meu número. Lamentou o meu é 73.
+01:13:21 Elton Vinicius: 48
+01:13:22 Juliana Cristina da Sillva Cassaro Cassaro: 48 711
+01:13:25 Elton Vinicius: 7 Não encontrou esse ingresso 734871.
+01:13:30 Juliana Cristina da Sillva Cassaro Cassaro: 47 11
+01:13:36 Marcos Vinícius Forecchi Accioly: Pelo número só para você. Depois a gente vai resolver esse problema 732 99366
+01:13:39 Juliana Cristina da Sillva Cassaro Cassaro: Conseguiu?
+01:13:42 Elton Vinicius: Agora sim
+01:13:43 Juliana Cristina da Sillva Cassaro Cassaro: Me passa o seu.
+01:13:47 Elton Vinicius: Quando eu conecto você não conecta também não. pera aí
+01:13:59 Juliana Cristina da Sillva Cassaro Cassaro: Conseguiu?
+01:14:01 Elton Vinicius: eu conectei mas Que que muda? Não dá nada.
+01:14:04 Juliana Cristina da Sillva Cassaro Cassaro: Aparece o meu a minha inicial, tem que ficar com um verdezinho agora acesa lá embaixo.
+01:14:10 Elton Vinicius: Não mas aí o que que é isso?
+01:14:13 Juliana Cristina da Sillva Cassaro Cassaro: Aí você pode clicar no nome dela e você tem pode ter.
+01:14:22 Elton Vinicius: tá
+01:14:24 Juliana Cristina da Sillva Cassaro Cassaro: Tem um e-mail mas aí se você clica o Marquito falou que vai poder adicionar alguma outra coisa. Não lembro direito não agora. Me passa o seu.
+01:14:47 Elton Vinicius: 73 00 72 36
+01:14:55 Juliana Cristina da Sillva Cassaro Cassaro: Tá aqui. Elton Silva é esse?
+01:15:23 Juliana Cristina da Sillva Cassaro Cassaro: Não tá perguntando o quê?
+01:15:35 Marcos Vinícius Forecchi Accioly: vai aparecer sozinho o quadradinho que é o meu se você clica no meu nome, você vai conseguir ver meus contatos agora no caso o meu e-mail que a única coisa que tem no evento tá pessoal hoje não é vem só tem.
+01:15:51 Juliana Cristina da Sillva Cassaro Cassaro: Ele só precisa do e-mail para se cadastrar.
+01:15:54 Marcos Vinícius Forecchi Accioly: Então a gente vai abrir. Quando você clicar no seu avatar a gente vai abrir alguns Campos para pessoa colocar o telefone que a gente já vai transformar no WhatsApp botar o link do Instagram. O que é isso? Já fica no seu cadastro e aí quando você se conecta a gente poderia marcar também o que que você quer fornecer ou não como dados, né? Eu acho que se você não quer falecer você não preenche seria mais isso nesse momento. Talvez agora, tá?
+01:16:23 Juliana Cristina da Sillva Cassaro Cassaro: Eu tenho um pouco de dúvida Marquito se valeria a pena colocar tantos dados pessoais assim das pessoas não sei tô falando assim.
+01:16:30 Marcos Vinícius Forecchi Accioly: Mas antes que as pessoas querem fazer Juliana, elas vão no evento aqui também. Dá seu WhatsApp. É para isso essa parte de conexão, entendeu? Para termos informações das pessoas com quem você se conectou não tem que ficar anotando o WhatsApp de todo mundo é justamente para isso quem não quiser colocar o
+01:16:43 Juliana Cristina da Sillva Cassaro Cassaro: Você chegar a pensar em ter um vídeo no telão um PowerPoint passando
+01:16:46 Marcos Vinícius Forecchi Accioly: telefone tipo assim WhatsApp não coloca só não colocar no app. Né, tipo assim, a ideia é essa. Tipo assim e as pessoas possam se conectar e trocar contatos sacou
+01:17:10 Juliana Cristina da Sillva Cassaro Cassaro: explicando as funcionalidades do app ou ter um vídeo as pessoas baixa segue aqui um tutorial inicial para você entender tudo que você vai poder fazer no app.
+01:17:21 Marcos Vinícius Forecchi Accioly: Não pensamos não, mas eu acho que isso não é meio que vai ser enviado a todos os participantes gera uma boa de entrar. Tipo assim o vídeo de divulgação né pam você vai ver protetor todas as coisas ao vivo tal tal, será que é reagir a pergunta a organização vai falar
+01:17:33 Juliana Cristina da Sillva Cassaro Cassaro: Mais ou menos, o que que ele pode fazer? e
+01:17:37 Marcos Vinícius Forecchi Accioly: com você se conectar com pessoas. Acho que sim, tá bom? Isso é legal a ideia
+01:17:41 Juliana Cristina da Sillva Cassaro Cassaro: Talvez na no momento da abertura do evento, né? Que normalmente está a maioria
+01:17:42 Marcos Vinícius Forecchi Accioly: do vídeo.
+01:17:49 Juliana Cristina da Sillva Cassaro Cassaro: das pessoas ali, talvez falar também, né? Se conseguisse mostrar alguma coisa de funcionalidade que talvez reduz um monte de dúvidas que possa ter não sei.
+01:17:57 Marcos Vinícius Forecchi Accioly: É eu acho que nessa coisa de um minuto a gente pode falar, mas as dúvidas que as pessoas têm elas vão tirar com outras pessoas.
+01:18:03 Juliana Cristina da Sillva Cassaro Cassaro: Sim, não vão tirar mas talvez falar para ficar né? Falar disso talvez.
+01:18:10 Marcos Vinícius Forecchi Accioly: Eu acho que a principal das coisas para o público é falar sobre as perguntas para as palestras, né? É tipo assim as conexões entre pessoas e as perguntas para as palestras, tá? Uma coisa Não quem fez a pergunta não a pergunta entra sem nome, mas a gente poderia colocar para aparecer o nome da pessoa. Normalmente quando a gente manda perguntas para uma palestra para um papelzinho não fala quem foi que fez a pergunta Que você acha que vocês fazem aquela aqueles exemplos pelo YouTube e você? Às vezes sim, às vezes não como online não tem como a pessoa esconder porque ela não consegue entrar anônimo a gente fala o nome do usuário durante o evento aí a pessoa se manifesta ela vai com o microfone, só que aí.
+01:19:05 Marcos Vinícius Forecchi Accioly: Ela vai ficando Essa não é que a gente colocou como por isso que a gente abre a pergunta ou não. Por exemplo entra no evento ao vivo aí para vocês ver esse evento que tá rolando agora que é o nosso não tá com a pergunta aberta, mas é só entrar aqui, né? Teste aberto reações ao vivo que é isso que nós estamos fazendo se eu Vai abrir a caixa de perguntas para todo mundo, você acha que apareceu o nome é melhor do que anônimo? Não sei se vai dar trabalho aí não não pensa nisso agora não, só quero protótipo. O protótipo já tá assim, se a gente fosse usar o protótipo no evento já funciona, mas a gente vai fazer ficar melhor.
+01:20:00 Marcos Vinícius Forecchi Accioly: Tá eu acho que fora isso gente mais alguma coisa que a gente quer trazer aqui agora pensando que tem muita coisa para fazer ainda, né? Ó. Isso aqui é o primeira versão zero. Mas ela já tá instalada já tá funcionando o endereço, né? A gente já consegue utilizar tá a gente é porque ele é só um atalho, entendeu? Outro navegador que tivesse no meu celular, você pode fazer isso também é só você entrar no mesmo endereço.
+01:20:36 Marcos Vinícius Forecchi Accioly: A massa quer testar você tá falando navegador, não é? Pode ser mas eu acho que uma coisa que a gente vai fazer é acertar. Talvez para funcionar. Tem alguma coisa que está errado ou a câmera que não Para ninguém porque vamos preparar essa nova versão e fazer um novo teste. O ideal seria fazer com a comissão toda só não sei se você consegue puxar. Talvez no momento mesmo que seja online para semana que vem sim para a gente fazer essa validação com a comissão.
+01:21:14 Marcos Vinícius Forecchi Accioly: E outra coisa seria que o Elton sugeriu aqui que já tem um tempão, mas você tava fazendo seu cadastro.
+01:21:21 Elton Vinicius: Está ouvindo João ou só eu que não?
+01:21:22 Marcos Vinícius Forecchi Accioly: Vamos colocar na programação por exemplo no primeiro cerimonial falar do app porque quando as pessoas vão poder reagir não é legal que quem ainda não instalou saiba que eu acredito então no primeira vez que o Mestre de Cerimônia se for falar a gente falar que é então sempre no início quando o cerimonialismo que seria lá na abertura.
+01:21:49 Elton Vinicius: Acho que sempre Marquito porque vai ter uma televisão do lado então uma fala
+01:21:50 Juliana Cristina da Sillva Cassaro Cassaro: Também acho
+01:21:53 Elton Vinicius: de 15 segundos.
+01:21:56 Marcos Vinícius Forecchi Accioly: Foi iniciar a programação lembrando. Lembrando que a gente as reações de
+01:21:57 Elton Vinicius: e
+01:22:00 Marcos Vinícius Forecchi Accioly: vocês vão para o telão. Entrar no app com a inscrição de vocês. Maneiro pessoal, eu acho que das coisas que eu tinha para trazer eram mulher aí o nome é aplicativo que você for, né? Claro Total Ju, pode mandar print. O
+01:22:19 Juliana Cristina da Sillva Cassaro Cassaro: Makita eu vou te mandar um print de alguns ajustes de visuais, tá.
+01:22:26 Marcos Vinícius Forecchi Accioly: pessoal já falou de uns botões que estão vazando na tela esses acertos também que por exemplo você tá usando o iPhone a gente tá usando no Android são versões diferentes. O Serginho mostrou umas coisas dele que já vazou nós temos que fazer alguns acertos visuais e print é o melhor jeito, pode mandar.
+01:22:44 Elton Vinicius: O Marquito acho que uma coisa aproveitar com a Márcia aí uma intenção também era de gente disponibilizar os materiais dos palestrantes.
+01:22:58 Marcos Vinícius Forecchi Accioly: Isso vou falar isso com ela aqui agora.
+01:22:59 Elton Vinicius: E aí de ela fazer essa intermediação.
+01:23:03 Marcos Vinícius Forecchi Accioly: Outra coisa importante de fazer entender então, mas é autorização dos
+01:23:04 Elton Vinicius: e autorização
+01:23:07 Marcos Vinícius Forecchi Accioly: palestrantes para a gente poder inserir os materiais. Porque pensa só sempre fica aquela coisa de Vou mandar vou mandar o PowerPoint e se juntou onde aparece as perguntas, vou até mandar residir aí para vocês verem onde abre as perguntas também, tivesse os materiais então tipo palestrante disponibilizou a gente deixa que o pdf sabe alguma anotação. Que ele passa para gente a gente insere e cai aqui dentro do evento dele. Beleza então acho que já começar a preparar isso é importante.
+01:23:43 Marcos Vinícius Forecchi Accioly: né Lembrando também é o que a gente tinha falado de espalhar algumas coisas pelo que você for. Que geraria um como se fosse emblemas para as pessoas, então a gente poderia espalhar os QR codes que a pessoa se ela visitou o stand tal se ela foi numa sessão técnica e bateu no QR. Code se ela foi se ela foi ela ganha um emblema e esse emblema da direita a ela pegar uma coisa na no credenciamento. Por exemplo que é uma Squeeze. Sei lá, entende? Tô falando que a gente pode pensar em pequenos.
+01:24:22 Marcos Vinícius Forecchi Accioly: Então, depois vamos começar sobre isso um dia só nós vamos pensar aqui as questões de premiação que pode acontecer através do ep também porque aí vai ficando no cadastro dela, ela vai abrindo o emblemas, né? Tipo, você pode criar mais interativos. A gente pode fazer um algoritmo, né uma coisa que premia quem três pessoas que mais interagiram que mais promoveram perguntas interessantes, por exemplo que foram mais votados por todo mundo, então a gente pode pensar algumas categorias.
+01:25:04 Marcos Vinícius Forecchi Accioly: É isso, mas gente ó, se vocês tiverem ideias pensarem coisas ao longo aí dos dias o endereço vai continuar funcionando vocês podem continuar usando o app olhando mas não vai ter mais nada ao vivo, porque porque ao vivo mesmo é só durante o concepforma mesmo. A gente pode preparar outra rodada de programação ao vivo para semana que vem para esse teste que a gente pode fazer com comissão toda. Eu só fiquei em dúvida nessa parte aí do material do palestrante. Como que vai chegar para vocês antes a gente precisa ver.
+01:25:35 Marcos Vinícius Forecchi Accioly: Como que poderia chegar o material do palestrante para gente é alto, pode ser?
+01:25:37 Elton Vinicius: Não eu acho não se ele mandasse o pdf a gente cadastraria, né? Ele não isso.
+01:25:43 Marcos Vinícius Forecchi Accioly: Se chegar por WhatsApp se chamar por e-mail chegando no e-mail da FGTS ou chegando para mim eu para o Elton a gente dá um jeito e coloca lá.
+01:25:52 Juliana Cristina da Sillva Cassaro Cassaro: É uma pergunta. Tem uma pergunta Marquito, você sugeriu que esse material fique ali nas perguntas alguma coisa assim, não foi quando você falou com a Márcia isso a palestra acabou eu consigo ter acesso ainda esse material a
+01:26:03 Marcos Vinícius Forecchi Accioly: Ou alguma coisa?
+01:26:06 Elton Vinicius: É mas eu acho que vai ter até um lugar só para download também.
+01:26:10 Juliana Cristina da Sillva Cassaro Cassaro: palestra acabou não tá ao vivo mais, entendeu? Eu consigo ter acesso ali porque as perguntas talvez possam não tá mais disponíveis não sei entendeu?
+01:26:19 Marcos Vinícius Forecchi Accioly: Não fica disponível assim entra no evento das nove para você ver. Vai na agenda e entra no evento das nove tá tudo lá. Inclusive a pergunta tá aberta ainda do evento das 9 horas e não tem como fechar as perguntas que ele não aparece mais na área administrativa aqui para mim. Então, tipo assim você vê que fica um buraco, isso é uma coisa que a gente
+01:26:41 Juliana Cristina da Sillva Cassaro Cassaro: nossa
+01:26:45 Marcos Vinícius Forecchi Accioly: já vai ter que acertar, beleza? E também poder apagar os avisos que já foram feitos, então algum aviso que foi feito que não precisa mais aparecer a gente poder apagar.
+01:26:59 Elton Vinicius: Eu acho que vai ser importante ter também Uma página exclusiva para download de todos os materiais que esteja reunido então.
+01:27:07 Marcos Vinícius Forecchi Accioly: Não sei não porque é mais um menu mais uma página a gente vai ter que encaixar eu acho que talvez a gente pode. Essa página pode estar em outro lugar, né? Não precisaria estar aí poderia estar no site do conserval, por exemplo e tem um link Dentro de mais tipo assim algum lugar que cai em outro lugar, né? Veja todos os materiais do evento e cai uma página do evento.
+01:27:33 Elton Vinicius: tá
+01:27:34 Marcos Vinícius Forecchi Accioly: Não sei assim, podemos pensar nisso, mas inserir mais um menu aqui embaixo. Acho que não valeria a pena agora.
+01:27:40 Elton Vinicius: Eu pensei em mais ali mesmo. Achei que é porque o mais é uma página, né?
+01:27:46 Marcos Vinícius Forecchi Accioly: Mas é uma página ele não é um outro menu, podemos pensar em ser um outro menu.
+01:27:52 Elton Vinicius: tranquilo, mas
+01:27:53 Marcos Vinícius Forecchi Accioly: Eu acho que é uma coisa da gente pensar como fazer mesmo, tá? Mas sim ele falar alguma coisa quer falar mais a gente pode fazer o seguinte durante vai chegar no seu dia, a gente coloca alguém da cgts para tá recebendo os materiais encaminhar para cgts, beleza? E aí você já disponibilizam lá no aplicativo? Acho que isso aí vai ser excelente ótimo.
+01:28:22 Elton Vinicius: Mas é mas que é importante já ter conversado com os palestrantes, né? Porque às vezes a gente ele não quer disponibilizar, né?
+01:28:27 Marcos Vinícius Forecchi Accioly: Que às vezes ele não quer disponibilizar tá? Então é importante conversar antes e na verdade. Abrir até um pouco mais. Olha a gente tem a oportunidade de disponibilizar materiais para as pessoas que vão estar na sua palestra. Não precisa ser só o slide vai que ele quer disponibilizar outra coisa. Ele pode disponibilizar material para as pessoas sim que o texto e a gente organiza e coloca lá, beleza? Vai dar um pouco de trabalho, mas é isso a gente vai prever isso de alguma forma, mas vai ficar muito rico para quem tá vivendo, né? Mas eles então eles vão ter que entregar porque eles vão ter projetado, mas às vezes ele não quer compartilhar não quer compartilhar isso acontece muito em evento. Ele quer botar na tela, mas ele não quer mandar o arquivo.
+01:29:07 Elton Vinicius: é Às vezes ele traz o próprio computador para nem ficar compartilhado.
+01:29:12 Marcos Vinícius Forecchi Accioly: Então é importante para não compartilhar isso acontece por quê? Porque essa palestra é o conhecimento dele, então tipo assim, ele não quer compartilhar, mas é legal você fazer essa conversa pedir essa autorização e se ele quiser, ele manda os materiais e a gente vai inserir porque as pessoas têm um Épica desse material vai ficar quando a gente tá organizando para fornecer esses materiais da melhor. Talvez pela p.i a Juliana, mas é um jeito de organizar bom Juliana ajuda
+01:29:51 Juliana Cristina da Sillva Cassaro Cassaro: Pelo que eu tô pesquisando aqui, eu nunca tinha eu não lembro de ter feito isso não, mas o even3 ele permite que o organizador disponibilize materiais da palestra na nas atividades. Então ele pode ir lá na atividade cadastrada e adicionar documentos slides pdfs, né daquela atividade se você tava conectado ao evn3, talvez eu não sei se isso viria automático aqui para o aplicativo. Você tá entendendo?
+01:30:23 Marcos Vinícius Forecchi Accioly: dizendo que pelo as pessoas o palestrante as pessoas que estão lá conseguem cadastrar coisas lá. O organizador, talvez a gente podia ver se a gente
+01:30:30 Juliana Cristina da Sillva Cassaro Cassaro: Não O organizador cadastra. O organizador cadastro documento
+01:30:36 Marcos Vinícius Forecchi Accioly: conseguir ler de lá, depois eu posso checar isso, se a gente conseguir pela pila os materiais que estão no eventria a gente bota não é ventry. Puxa de lá, vamos dar uma olhada nisso.
+01:30:46 Juliana Cristina da Sillva Cassaro Cassaro: Porque aí até os usuários pelo even3 também consegue ter acesso por lá, entendeu? Se disponibilizar lá.
+01:30:52 Marcos Vinícius Forecchi Accioly: Porque a pessoa poderia ver pelo web mas se ela entrar no evento ela também consegue ver os materiais e é mais um lugar onde ela consegue ver Entendeu Legal?
+01:31:04 Juliana Cristina da Sillva Cassaro Cassaro: Entendeu? Porque aí Quem o esqueci o nome do Servidor que tá sendo responsável por manter o every 3 ele já coloca lá.
+01:31:15 Marcos Vinícius Forecchi Accioly: Se essa funcionalidade está no nosso plano, eu posso ver com Alex beleza? Eu posso ver com o Alex perguntar aí pode perguntar a ele, mas eu posso sentar com ele funcionalidades. Aí a gente pediu algumas que são necessárias para Tá tranquilo para não ficar pesando você Márcia. Faz essa conversa com Alex isso mas depois eu sento com ele na semana que vem e a gente faz um momento só de alinhamento sobre o que que tem no evento que a gente consegue usar e trazer para o app por exemplo, beleza? Eu já adianta aqui com Ele quem eu tô sabe outra coisa que eu pensei que a gente pode conectar o site do conceptório WordPress nessa peido e trazer coisas de lá, por exemplo para programação ser montada de acordo com o entreter sem a gente precisa ficar acertando a programação no site na mão, entendeu?
+01:32:01 Elton Vinicius: É mas é porque o site do conservar ele ele tem todas as Tem mais informações
+01:32:02 Marcos Vinícius Forecchi Accioly: Isso é muito bom também então, depois eu vou experimentar isso porque ele tem
+01:32:03 Juliana Cristina da Sillva Cassaro Cassaro: nossa
+01:32:06 Marcos Vinícius Forecchi Accioly: a peneira.
+01:32:06 Juliana Cristina da Sillva Cassaro Cassaro: E deixa eu perguntar porque que a Márcia ainda mantém o site do que você foi e não deixa tudo no ventre.
+01:32:13 Marcos Vinícius Forecchi Accioly: Não sei essa é outra pergunta, depois a gente pode conversar.
+01:32:22 Elton Vinicius: do que no evento.
+01:32:27 Juliana Cristina da Sillva Cassaro Cassaro: Mas ele consegue botar nela?
+01:32:27 Marcos Vinícius Forecchi Accioly: E aí vocês lançam? É isso a ideia Márcia é lançar no dia 10. Então nós vamos ter que nos preparar primeira coisa é fazer esse experimentação semana que vem, se você conseguir um horário com a comissão isso por exemplo na quarta à tarde. Porque a ideia seria que a gente lançasse na segunda-feira dia 10? Aí dá uma olhadinha. Vê isso na quarta tarde é um bom momento para a gente
+01:32:56 Juliana Cristina da Sillva Cassaro Cassaro: e um pensamento para o próximo evento..... de avaliar de usar apenas um site....
+01:32:59 Marcos Vinícius Forecchi Accioly: poder fazer um teste toda. Todo mundo entra todo mundo reage a gente prepara esse teste. Sim. Já vai ter outras coisas novas, já vai ter as melhorias no app tal e a gente testa na quarta-feira. Quarta tarde ou quinta à tarde poderia ser na quinta-feira também.
+01:33:18 Elton Vinicius: quinta vai ser o
+01:33:24 Marcos Vinícius Forecchi Accioly: Seria uma forma da gente fazer uma da tarde a gente experimenta o app duas horas. Talvez já é um momento, mas essa reunião ainda 3:30 poderia ser duas horas então duas horas já experimentação da sala híbrida poderia ser uma hora da tarde uma hora você não encontra docente aqui diz a mais difícil, se essa reta prevista para 3:30 a gente pode fazer de três a três e meia.
+01:33:56 Marcos Vinícius Forecchi Accioly: É muito em cima não a gente faz meia hora todo mundo baixo é piores Experimenta porque ele já vai estar bem mais Redondo é mais que as pessoas entenderem conhecerem e darem ideias, eu acho que meia hora é mais suficiente, tá? Então ficaria 15 na terça, você não conseguia não, né? Mas é Para apoiar, né? Não a gente consegue sim terça-feira. Fica menos tempo para a gente poder implementar as coisas. Tá bom.
+01:34:59 Marcos Vinícius Forecchi Accioly: Beleza, ficou para quarta-feira 15 horas.
+01:35:03 Elton Vinicius: Tá coloca aí me chama.
+01:35:05 Marcos Vinícius Forecchi Accioly: Chamar você também, tá? Juro? Fechou, todo mundo é claro, talvez não vai vir todo mundo e tal, mas a gente faz com quem? Gente, acho que é isso, né mais coisa agora fica muita coisa porque a gente fica querendo fazer tudo de uma vez só Já temos um monte de coisa para acertar. Beleza? Acho que é isso.
+01:35:42 Juliana Cristina da Sillva Cassaro Cassaro: top
+01:35:45 Marcos Vinícius Forecchi Accioly: Né isso Beleza. Lembrando que além dessa reunião na semana que vem a gente precisa também preparar esse e-mail saber como vai lançar como vai mandar se vai fazer um vídeo tutorial ou não? Então se a gente vai conversar internamente eu vou fazer essa ponte com Alex já deixa analisado que eu vou procurar então eu acho que O ideal Mas aí tem aqueles que fazem a inscrição de última hora vão receber mas aí no dia a gente fala do Éden sentado à tarde remanescentes.
+01:36:32 Marcos Vinícius Forecchi Accioly: Pode ser claro, a gente pode deixar no telão também nesse telão que vai ficar lateral ou em qualquer outro lugar enquanto não tem nada ao vivo fica essa coisa aqui acesse o Apple é brincadeira, viu? Tá bom até mais se foi tranquilo, tranquilo. Fui te compartilhar o compartilhamento e sair da chamada p*** aí gente. Ju já recebi aqui os prints tá? Depois vou rodar isso hoje meu dia tá um pouco
+01:37:10 Juliana Cristina da Sillva Cassaro Cassaro: tá
+01:37:12 Marcos Vinícius Forecchi Accioly: apertado gente, porque eu vou para Brasília 5 e pouco. Então eu faço o papo
+01:37:17 Juliana Cristina da Sillva Cassaro Cassaro: mais tarde
+01:37:19 Marcos Vinícius Forecchi Accioly: correndo, entendeu? Já tô na correria, mas eu consigo dar uma mistura.
+01:37:25 Juliana Cristina da Sillva Cassaro Cassaro: Se chegar a mostrar esse tipo no papo, Iaiá?
+01:37:29 Marcos Vinícius Forecchi Accioly: Não sei não lembro. Acho que eu mostrei alguma coisa de protótipo, mas não lembro tanto que mostrou não era uma boa mostrar né hoje falar alguma coisa.
+01:37:37 Elton Vinicius: A gente mostrou assim até o pessoal colaborou.
+01:37:37 Juliana Cristina da Sillva Cassaro Cassaro: Eu não lembro eu.
+01:37:39 Elton Vinicius: Ficou assim:
+👏 Que aula! · 
+🙋 Me identifico · 
+🤯 Explodiu a mente · 
+✅ Vou usar · 
+🦋 Para a vida
+01:37:41 Elton Vinicius: não várias pessoas que
+01:37:41 Marcos Vinícius Forecchi Accioly: É as pessoas falaram algumas coisas, você quer que eu Copie isso aqui para lá ficou assim que a aula me identifico explodiu a mente vou usar e para a vida.
+01:37:52 Elton Vinicius: para a vida que
+01:37:55 Marcos Vinícius Forecchi Accioly: É gosto de todos gosto de todos gosto de todos. Achei que faltou um assim bem
+01:37:56 Juliana Cristina da Sillva Cassaro Cassaro: Eu gosto do para a vida, vai lá que Fala alguma coisa de ética, entendeu do uso da ia.
+01:38:05 Marcos Vinícius Forecchi Accioly: mais simples, tipo. Amei sabe um coração que às vezes a pessoa quer só estipular. Eles são todos muito fortes, né? E muito específicos, tipo assim que aula me identifico explodiu a mente vou usar e para vidro não tem nada tipo assim legal.
+01:38:24 Elton Vinicius: legal
+01:38:25 Marcos Vinícius Forecchi Accioly: Às vezes a reação é essa, tipo assim, mas não é uma coisa estrondosa igual tá aqui tá tudo meio demais assim.
+01:38:33 Juliana Cristina da Sillva Cassaro Cassaro: Tudo Top, né?
+01:38:33 Elton Vinicius: Tem que ser tem que ter sido muito impactante tudo, né?
+01:38:36 Marcos Vinícius Forecchi Accioly: Fica parecendo que eu não posso reagir uma coisa simples.
+01:38:40 Juliana Cristina da Sillva Cassaro Cassaro: E coisa negativa não né?
+01:38:42 Marcos Vinícius Forecchi Accioly: Tipo assim Curti demais, eu tinha colocado um que triste tipo assim ou uma coisa
+01:38:43 Elton Vinicius: Não.
+01:38:46 Marcos Vinícius Forecchi Accioly: do tipo me solidarizo sabe poderia ser uma coisa meio.
+01:38:54 Elton Vinicius: Qual que a gente tira então para botar um que legal? que top
+01:38:58 Marcos Vinícius Forecchi Accioly: eu acho que é Para a vida e vou usar ainda continua sendo parecido que algo não sei se que aula para a vida e vou usar mas não né? É talvez em vez do que aula fosse um que massa. Que ele é mais ele é menor do que um que aula que top não sei que top.
+01:39:24 Juliana Cristina da Sillva Cassaro Cassaro: E aí, e aí, substitui o seu coração como se fosse que massa?
+01:39:29 Marcos Vinícius Forecchi Accioly: Eu gosto da palminha verde de coração, ficaria o nosso like na verdade é Palmas, que que tem a ver momento, né, tipo geralmente a gente bate palma,
+01:39:33 Elton Vinicius: Amém Então amei.
+01:39:37 Marcos Vinícius Forecchi Accioly: quando a gente gosta né? É só a frase mesmo que talvez tá muito forte me pareceu mas também isso é bobeira gente a gente.
+01:39:45 Elton Vinicius: Se for assim, adorei o Amei só isso assim
+01:39:49 Juliana Cristina da Sillva Cassaro Cassaro: Tudo tem duas né?
+01:39:50 Elton Vinicius: Em vez de que aula?
+01:39:54 Marcos Vinícius Forecchi Accioly: Olha eu gosto do massa que é capixaba, né? A gente é massa.
+01:39:57 Juliana Cristina da Sillva Cassaro Cassaro: Também gosto que massa.
+01:39:57 Elton Vinicius: Tá então que massa fechou.
+01:40:05 Marcos Vinícius Forecchi Accioly: A me identifico é?
+01:40:10 Juliana Cristina da Sillva Cassaro Cassaro: Passei por isso já.
+01:40:11 Marcos Vinícius Forecchi Accioly: Uma identifico o me identifico ele tem uma coisa de também de poder ser para coisas difíceis, não precisa ser para coisa só Alegre. Então acho que ele
+01:40:17 Juliana Cristina da Sillva Cassaro Cassaro: sim também
+01:40:20 Marcos Vinícius Forecchi Accioly: já contempla. Talvez é a ordem mesmo, né? Talvez seriam gostei de que massa me identifico. Explodiu a mente que poderia talvez ser o último.
+01:40:34 Elton Vinicius: aham
+01:40:34 Marcos Vinícius Forecchi Accioly: Tipo assim numa escala, né? Poderia ser que massa me identifico. Vou usar para a vida explodiu a mente. O vou usar para a vida ele ainda aparece muito próximo para mim, tá? Vou levar isso para minha vida. Vou usar para mim, né?
+01:40:53 Elton Vinicius: Vamos mudar então.
+01:41:04 Juliana Cristina da Sillva Cassaro Cassaro: Eu acho que se tivesse que escolher.
+01:41:04 Marcos Vinícius Forecchi Accioly: Que eu vou usar é uma coisa meio vai para minha prática, né?
+01:41:08 Juliana Cristina da Sillva Cassaro Cassaro: Eu gosto mais eu vou usar se fosse para escolher, eu acho.
+01:41:12 Elton Vinicius: Eu também gosto mais.
+01:41:12 Marcos Vinícius Forecchi Accioly: Eu acho que eu vou usar é mais interessante que para a vida talvez saio para a
+01:41:15 Juliana Cristina da Sillva Cassaro Cassaro: é
+01:41:17 Marcos Vinícius Forecchi Accioly: vida e entrasse um coração, tipo. Amei que é uma coisa que amei eu gostei muito ou que é uma coisa mais a ver com sentimento mexeu com meu sentimento também, entendeu? Tipo assim, porque eu para a vida tem esse lugar, né?
+01:41:34 Juliana Cristina da Sillva Cassaro Cassaro: Sim tem.
+01:41:35 Elton Vinicius: Agora qual a diferença de que massa e amei?
+01:41:39 Marcos Vinícius Forecchi Accioly: O que massa parece mais um parabéns na mãozinha e eu amei é mais tá dentro de mim me causou coisas na minha visão.
+01:41:50 Elton Vinicius: tá
+01:41:50 Marcos Vinícius Forecchi Accioly: Que não precisaria ser um coração vermelho, bota um coração de acordo com você, falta talvez aquele Azul ciano ou um coração verde verde.
+01:41:58 Juliana Cristina da Sillva Cassaro Cassaro: Mas o azul com fundo azul não vai ficar legal talvez.
+01:42:02 Elton Vinicius: Coração verde
+01:42:03 Juliana Cristina da Sillva Cassaro Cassaro: Mas vai ficar do lado do vôo tá verde ali.
+01:42:04 Marcos Vinícius Forecchi Accioly: Não, mas eles estão dentro. O coração se ama destaca bem Ju, porque o azul de lá é um azul meio Cobalto.
+01:42:12 Juliana Cristina da Sillva Cassaro Cassaro: Luciano tá
+01:42:14 Marcos Vinícius Forecchi Accioly: É porque esse microfone também é uma m**** de trocar aqui para o outro tem como vocês estavam ouvindo bem que esse aqui é bem melhor fica mais claro.
+01:42:22 Juliana Cristina da Sillva Cassaro Cassaro: É melhor.
+01:42:26 Marcos Vinícius Forecchi Accioly: Tava no outro para você escutar em todo mundo. Gente, acho que é isso, vou partir. Então tá bom.
+01:42:33 Juliana Cristina da Sillva Cassaro Cassaro: Tá bom.
+01:42:34 Elton Vinicius: Parabéns meu querido ficou top.
+01:42:36 Marcos Vinícius Forecchi Accioly: É isso.
+01:42:37 Juliana Cristina da Sillva Cassaro Cassaro: Ficou top.
+01:42:39 Elton Vinicius: Que massa que ficou viu minha mente.
+01:42:40 Juliana Cristina da Sillva Cassaro Cassaro: Ficou muito bom.
+01:42:42 Marcos Vinícius Forecchi Accioly: Vou levar para vida, obrigado.
+01:42:45 Elton Vinicius: Eu vou usar.
+01:42:49 Marcos Vinícius Forecchi Accioly: É isso.
+01:42:50 Elton Vinicius: Falou então.
+01:42:51 Juliana Cristina da Sillva Cassaro Cassaro: Tá joia, então, meninos falou.
+01:42:51 Marcos Vinícius Forecchi Accioly: Beleza, valeu, gente. E aí, Elton? Pode me passar Ju. Pode me passar uma coisa também que eu vou juntar tudo amanhã eu consigo dar uma mexida já entendeu? E
+01:42:57 Juliana Cristina da Sillva Cassaro Cassaro: Eu vou tocar mais se tiver.
+01:43:03 Marcos Vinícius Forecchi Accioly: mas assim o grosso vai ser terça-feira segunda e terça que eu vou mexer.
+01:43:07 Elton Vinicius: Só uma coisa, eu queria um Branch, aí eu finalizo aqui esse brinde com esses emojis e faço o convite e solicito por Quest é isso? Como é que faz?
+01:43:22 Marcos Vinícius Forecchi Accioly: Você que sabe se você quiser já deixar o currículo este aberto pode desse Branch para o Master.
+01:43:27 Elton Vinicius: Nunca fiz isso, eu não sei não.
+01:43:29 Marcos Vinícius Forecchi Accioly: Pode fazer.
+01:43:30 Juliana Cristina da Sillva Cassaro Cassaro: Hora gente a minha cabeça podia.
+01:43:32 Marcos Vinícius Forecchi Accioly: Explodiu a mente.
+01:43:36 Elton Vinicius: Entendeu nada.
+01:43:39 Juliana Cristina da Sillva Cassaro Cassaro: Comete beleza, aí, depois teve uma outra que tu me adaptando agora o último
+01:43:42 Elton Vinicius: Nem eu sei também.
+01:43:44 Juliana Cristina da Sillva Cassaro Cassaro: que você falou aí não sei não.
+01:43:49 Marcos Vinícius Forecchi Accioly: Parabéns para nós gente. Acho que é uma construção, né? Vamos indo agora a gente Abriu uma nova frente. Nossa de fazer ep. E um é evento, né? Que eu acho que é bom.
+01:44:02 Juliana Cristina da Sillva Cassaro Cassaro: Muito bom.
+01:44:04 Marcos Vinícius Forecchi Accioly: Valeu gente
+01:44:05 Juliana Cristina da Sillva Cassaro Cassaro: valeu
+01:44:06 Elton Vinicius: Um abraço.
+  

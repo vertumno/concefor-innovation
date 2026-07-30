@@ -1,5 +1,11 @@
 # Validação com a comissão — 30/07/2026, 9h às 10h (R6)
 
+> **✅ RESULTADO (30/07): validação feita e aprovada** — "o melhor teste de protótipo
+> que já fiz; tudo funcionou". Síntese completa (validado, bugs, decisões, datas novas):
+> `../contexto/reunioes/sintese-2026-07-30.md`. Plano reescrito em `proximos-passos.md`
+> (V1–V5; lançamento remarcado para **10/08**, teste com a comissão toda **05/08 15h**).
+> O restante deste documento é o material de preparação, mantido como registro.
+
 Preparação feita em 29/07. O app roda no servidor da CGTI — endereço oficial (30/07):
 **https://app.cefor.ifes.edu.br** (TLS válido, SSE ok; **usar sempre o DNS nos links** —
 o IP interno http://172.17.159.15:3000 é só fallback). Deploy é **manual**: Sérgio puxa

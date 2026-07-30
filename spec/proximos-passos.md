@@ -1,15 +1,19 @@
-# Próximos passos — plano de execução (revisado em 16/07/2026)
+# Próximos passos — plano de execução (revisado em 30/07/2026, pós-validação)
 
-Plano acionável do app v1, reformulado após a reunião com a Márcia (16/07 — ver
-`../contexto/reunioes/sintese-2026-07-16.md`) e o benchmark do app EDEN
-(`../contexto/benchmark-app-eden/`). Cada etapa está escopada para ser **uma sessão de
-trabalho** (um prompt, um PR): objetivo, tarefas e critério de pronto.
+Plano acionável do app v1. Última revisão grande após o **teste de validação de 30/07**
+(aprovado — ver `../contexto/reunioes/sintese-2026-07-30.md`); histórico das revisões
+anteriores em 16/07 (`sintese-2026-07-16.md`) e no benchmark EDEN. Cada etapa está
+escopada para ser **uma sessão de trabalho**: objetivo, tarefas e critério de pronto.
 
-**Datas duras** (acordadas com a Márcia, não mudam):
+**Datas duras** (revisadas em 30/07 com Márcia/Elton/Juliana):
 
-- **30/07, 10h** — validação com a comissão do Concefor
-- **07/08 (sexta)** — lançamento por e-mail aos inscritos
+- ~~30/07~~ — **validação feita e aprovada** (9h–10h45)
+- **05/08 (qua), 15h** — teste com a comissão toda (meia hora, sala híbrida)
+- **10/08 (segunda)** — lançamento por e-mail aos inscritos (~~era 07/08~~)
 - **17/08, 18h30** — abertura do evento
+
+Janela de implementação: **o grosso em 03–04/08** (segunda/terça; Marquito viaja
+31/07–02/08).
 
 Estado de partida (16/07): E1–E3 do plano anterior **entregues** — SQLite + API routes,
 reações com throttle, SSE, telão "batimento cardíaco". Não há dashboard admin nem barra
@@ -148,14 +152,19 @@ a câmera do QR scanner (R7/networking) só funcionam em secure context.
 **Pronto quando:** URL estável com HTTPS abre o app de fora da rede do Cefor, reações
 fluem pro telão em <2s e o arquivo do banco sobrevive a restart do container.
 
-### R6 — Validação com a comissão (30/07, **9h às 10h**)
+### R6 — Validação com a comissão (30/07) ✅ (feita e aprovada)
 
 **Objetivo:** validar o app reformulado com gente de verdade e decidir o corte final do
 lançamento.
 
-> **Preparação pronta em 29/07** — roteiro, checklists (Marquito + Sérgio) e riscos em
-> **`validacao-2026-07-30.md`**. Sessões fictícias do dia inteiro: `npm run seed:validacao`;
-> QR de acesso projetável: página `/projecao`.
+> **✅ 30/07:** *"o melhor teste de protótipo que já fiz — tudo funcionou"*. Telão,
+> reações, perguntas, admin, PWA, login e conexões validados no domínio oficial com
+> Elton, Juliana, CGTI e Márcia. Aprendizados, bugs e decisões em
+> **`../contexto/reunioes/sintese-2026-07-30.md`** e `../decisoes.md`. O plano abaixo
+> ("Da validação ao lançamento") foi reescrito a partir deles.
+
+> Preparação de 29/07 (roteiro, checklists, riscos): `validacao-2026-07-30.md`.
+> Sessões fictícias: `npm run seed:validacao`; QR projetável: `/projecao`.
 
 - Preparo: sessão fictícia no horário da reunião (extra local, sobrevive ao sync), QR de
   acesso projetado, telão, roteiro de 10 min (entrar → navegar pela barra → Ao Vivo →
@@ -169,7 +178,64 @@ lançamento.
 
 ---
 
-## Da validação ao lançamento (07/08)
+## Da validação ao lançamento (10/08)
+
+Etapas novas saídas do teste de 30/07, em ordem de prioridade. V1 e V2 precisam estar
+prontas **antes do teste de 05/08**; o resto entra até o congelamento do lançamento.
+
+### V1 — Correções do teste de 30/07 (bugs) — antes de 05/08
+
+1. **Login por e-mail** (⚠️ anunciado como funcionando na reunião — implementar JÁ):
+   `findAttendeeByLogin` aceita, no mesmo campo, 4 primeiros dígitos do CPF **ou**
+   e-mail da inscrição; texto da tela atualizado ("…ou o e-mail usado na inscrição").
+2. **Scanner de QR sem câmera no iPhone/alguns Androids**: `BarcodeDetector` não existe
+   no Safari — adotar leitura via `getUserMedia` + decodificador em JS (ex.: jsQR) com
+   o fallback digitado mantido; se a permissão falhar, mensagem clara.
+3. **Vazamentos de layout** (celular do Sérgio + prints da Juliana): botão Conectar,
+   filtros da Agenda, revisar em viewport pequeno/zoom grande.
+4. **Avisos**: aparecer sem trocar de aba (polling na home), mais visíveis, e botão
+   **apagar** (além de ocultar).
+5. **Perguntas órfãs**: admin lista toda sessão com janela aberta (não só a ao vivo)
+   para poder fechar depois que a sessão termina.
+6. Polimento da tela do perfil (meu QR / nº do ingresso).
+
+**Pronto quando:** iPhone da Juliana conecta pela câmera (ou recebe fallback claro),
+Márcia loga com e-mail, aviso publicado aparece sozinho, e nenhum botão vaza nos prints.
+
+### V2 — Novas reações contextualizadas (Elton implementa) — antes de 05/08
+
+**Que massa 👏 · Me identifico 🙋 · Vou usar ✅ · Amei 💚 (coração na paleta) ·
+Explodiu a mente 🤯** — substituem as genéricas; viram medição (cruzam com transcrição
+no relatório). **Branch do Elton, merge direto autorizado.** Apoiar: revisar o branch,
+atualizar o mapeamento de emojis do telão e as legendas, migrar/zerar dados de teste.
+
+**Pronto quando:** mergeado, telão e relatório falam as novas reações, espelho GitLab
+atualizado.
+
+### V3 — Telão 2.0
+
+- **Token no telão** (hoje é público; mesma mecânica do admin, `?token=` → localStorage).
+- **Perguntas mais votadas no telão** (top N, sem scroll infinito — desenho da Juliana:
+  mostrar as primeiras, "ver outras" a critério do operador).
+- Animações/efeito "uau": thresholds de reações disparam surpresa visual; reação
+  aparece grande ao clicar.
+- Telão ocioso (sem sessão ao vivo) mostra a tela de acesso (`/projecao`) sozinho.
+
+### V4 — Materiais dos palestrantes (depende do Alex/Even3)
+
+- Reunião com o Alex (semana de 03/08): a API expõe os materiais anexados à atividade?
+  (Juliana confirmou que o organizador consegue anexar no painel.)
+- Se sim: sync puxa e a página da sessão mostra os materiais (sem menu novo; "todos os
+  materiais" pode ser link no Mais). Se não: CGTE recebe por e-mail e cadastra à mão
+  (mecanismo mínimo de upload/URL no admin).
+- Márcia intermedia autorização com cada palestrante (nem todos compartilham).
+
+### V5 — Teste com a comissão toda (05/08, 15h)
+
+- Nova grade fictícia: `npm run seed:validacao -- --data=2026-08-05` (ajustar horários
+  pelo admin se preciso); `--limpar` da grade de 30/07.
+- Meia hora, sala híbrida: entrar pelo QR → reagir (novas reações) → perguntar → telão.
+- Coletar de novo: fricção, ideias, veto de última hora. Registrar no cérebro.
 
 ### R7 — Login pelo crachá + consentimento (LGPD) 🟡 (núcleo entregue 20/07; exigência p/ interagir fica pós-validação)
 
@@ -201,20 +267,25 @@ API: o QR do crachá codifica o `checkin_code` que já vem no sync de inscritos.
 **Pronto quando:** um inscrito real loga com nº do ingresso + segundo fator, reage, e a
 reação sai associada a ele no banco; quem recusa o consentimento continua navegando.
 
-### R8 — Lançamento (07/08): PWA de verdade + e-mail aos inscritos
+### R8 — Lançamento (**10/08, segunda**): PWA de verdade + e-mail aos inscritos
 
 **Objetivo:** o app público, instalável, divulgado para quem está inscrito.
 
-- PWA: manifest ok, ícone do selo, cache offline da programação, teste de instalação
-  Android + iPhone.
-- Congelamento de features do lançamento (o que não entrou vai pra semana do evento ou
-  morre).
-- Texto do e-mail com a Márcia (ela manda pros grupos de inscritos) + QR code de acesso
-  para materiais impressos/telões.
-- Smoke test final na URL pública; seed real conferido.
+> 30/07: instalação validada (iPhone via Safari/Compartilhar, Android via menu;
+> `apple-touch-icon` corrigido no mesmo dia). Manifest ok. Falta o service worker.
 
-**Pronto quando:** e-mail enviado em 07/08 com o app no ar, instalável, com a programação
-oficial.
+- PWA: wiring do `next-pwa` (service worker + cache offline da programação); de quebra,
+  **testar notificações push** (pedido da Juliana: "faltam 5 min pra palestra") — se o
+  suporte for ruim (iOS), o contador regressivo do Ao Vivo já cobre.
+- **Limpar os dados de teste do servidor** (reações/perguntas/conexões de 29–30/07 e
+  05/08 + `seed-validacao --limpar`) no congelamento.
+- Congelamento de features (o que não entrou vai pra semana do evento ou morre).
+- Texto do e-mail com a Márcia (ela envia pela plataforma a todos os inscritos) +
+  **vídeo tutorial curto** (Juliana/CGTE) + QR de acesso para materiais impressos.
+- Smoke test final no domínio; programação real conferida.
+
+**Pronto quando:** e-mail enviado em 10/08 com o app no ar, instalável, com a programação
+oficial e sem dados de teste.
 
 ---
 
@@ -230,6 +301,14 @@ oficial.
   Imprimir/PDF com `@media print` limpo. Insumo do relatório institucional (PRPPG).
   Entregue 20/07.
 - [ ] Ensaio de telão na sala real; plaquinhas físicas de fallback impressas.
+- [ ] **Cerimonial** (30/07): fala de 1 min na abertura + lembrete de 15 s do mestre de
+  cerimônias em toda sessão + QR no telão — combinar roteiro com a Márcia.
+- [ ] **Etiquetas do crachá com QR do app + nº do ingresso embaixo** (Elton confirma a
+  impressão; gerar a partir do sync — casa com `comunicacao/.../etiquetas-nomes.md`).
+- [ ] **Desenhar o Ao Vivo com sessões simultâneas** (programação técnica paralela à
+  palestra): o seletor por sala existe, mas a UX de "vários ao vivo" não foi testada.
+- [ ] Admins do evento: Marquito, Elton, Juliana + indicação da Márcia (tokens e
+  treino de 15 min no /admin mobile).
 
 ### R10 — Candidatas da semana do evento (só se R1–R9 estiverem sólidos; nesta ordem)
 
@@ -258,14 +337,14 @@ backlog em `app-v1.md` §8.
 | ~~Chave `EVEN3_API_TOKEN` em `app/.env.local` desta máquina~~ | **resolvida 20/07** — Marquito enviou; gravada no `.env.local` (gitignored) |
 | Even3 desatualizado em relação ao site (fonte da verdade editorial) | **mensagem à Márcia preparada em 20/07**: atualizar o Even3 pra espelhar o site (mesa "Tecnologia Delas" 18/08, intervalos, momentos culturais) e mantê-lo em dia — o app espelha o Even3; até corrigirem lá, o app mostra a versão desatualizada |
 | Cadastro do Even3 sem salas/tags/palestrantes | pedir à organização preencher lá (aí `db/enrich.sql` esvazia); enquanto isso o enriquecimento local cobre |
-| ~~Segundo fator do login (CPF parcial × e-mail)~~ | **decidido 20/07** — 4 primeiros dígitos do CPF. ⚠️ **29/07: a premissa "CPF existe para todos" quebrou** — 67/298 inscritos sem CPF utilizável (66 deles sem categoria/não confirmados). Proposta mínima: aceitar o e-mail (o vice de 16/07) como confirmação alternativa no mesmo campo; confirmar com o Elton ou na validação |
+| ~~Segundo fator do login (CPF parcial × e-mail)~~ | **fechado 30/07: aceitar CPF4 OU e-mail no mesmo campo** (premissa "CPF p/ todos" quebrou em 29/07; na reunião foi dito como já funcionando) — **implementar no V1** |
 | Crachá: gráfica imprime lote personalizado (nome+QR+categoria)? | Elton verifica com a copiadora/gráfica; se sim, geramos a planilha a partir do sync Even3 (R2/R7) |
 | Impressora de etiquetas no campus (inscrições de última hora) | organização do evento verifica (20/07) |
 | Teste de carga das reações (SQLite, 100–200 simultâneos) | fazer no R9 (endurecimento), na URL real do R5 |
-| Inscritos não confirmados no Even3 (151/298, **todos** sem categoria — parecem inscrições incompletas) | apurado 29/07; decidir se o app filtra `confirmado=1` em login/mosaico/números — pergunta nº 2 da validação (`validacao-2026-07-30.md`) |
-| Limpar dados de teste do servidor antes do lançamento (07/08) | reações/perguntas/conexões criadas nos testes de 29–30/07 ficam em `timeline_events`/`connections`; sessões `demo-validacao-*` saem com `seed-validacao --limpar`; fazer a faxina no congelamento do R8 |
-| Convidados da validação de 30/07 | Márcia convida (CGPE, Simon, Rutinelli aventados) |
-| Texto do e-mail de lançamento (07/08) | escrever com a Márcia na semana de 03/08 |
+| Inscritos não confirmados no Even3 (~151/300, todos sem categoria; **a própria Márcia está 3× entre eles**) | 30/07: **não filtrar** por ora; Juliana acha que "confirmado" = credenciamento no evento, mas há ~150 marcados antes — **perguntar ao Alex** (reunião semana de 03/08, junto com API de materiais, e-mail e coffee breaks) |
+| Limpar dados de teste do servidor antes do lançamento (10/08) | reações/perguntas/conexões dos testes de 29–30/07 e 05/08 em `timeline_events`; sessões `demo-validacao-*` saem com `seed-validacao --limpar`; faxina no congelamento do R8 |
+| ~~Convidados da validação de 30/07~~ | **feita 30/07** — Elton, Juliana, CGTI, Márcia; próximo: comissão toda em 05/08 15h (Márcia convoca) |
+| Texto do e-mail de lançamento (**10/08**) + vídeo tutorial | escrever com a Márcia na semana de 03/08 (ela envia pela plataforma); vídeo curto com a CGTE (ideia da Juliana, 30/07) |
 | Conteúdo de "dica do dia" / alimentação / arredores | pedir à Márcia (ela topou mandar) |
 | Transmissão ao vivo × gravação por sessão | Márcia levou pro checklist dela (16/07) |
 | Envio de mensagem aos inscritos pelo Even3 | verificar; plano A é e-mail comum |

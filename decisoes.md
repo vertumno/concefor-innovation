@@ -76,6 +76,38 @@ na lista de links — é lá que qualquer mudança aparece primeiro.
 ---
 
 
+## 2026-07-30 — Validação aprovada; lançamento vai para 10/08; novas reações (Elton); teste com a comissão em 05/08
+
+**Decisões do teste de validação** (9h–10h45, Marquito + Elton + Juliana + CGTI na sala +
+Márcia no final — síntese em `contexto/reunioes/sintese-2026-07-30.md`):
+
+1. **O app está validado.** Telão, reações, perguntas com upvote, admin (inclusive edição
+   de horário ao vivo), PWA instalável (ícone do selo aprovado), login e conexões — tudo
+   funcionou com gente real no domínio oficial. Bugs restantes são de acabamento (câmera
+   de QR no iPhone/alguns Androids, botões vazando em telas maiores, avisos sem
+   auto-atualizar, janela de perguntas órfã em sessão encerrada).
+2. **Lançamento remarcado: 10/08 (segunda)**, e-mail pela plataforma (Márcia) + vídeo
+   tutorial curto (CGTE). Antes disso, **teste com a comissão toda em 05/08 (qua) 15h**.
+3. **Reações deixam de ser genéricas** e viram instrumento de medição (cruzam com a
+   transcrição das palestras no relatório): **Que massa · Me identifico · Vou usar ·
+   Amei · Explodiu a mente**. **Elton implementa** em branch próprio, com merge direto
+   autorizado.
+4. **⚠️ Compromisso assumido em voz alta que ainda não existe em código:** na reunião foi
+   dito que o login aceita "CPF ou e-mail" — o fallback de e-mail (decisão de 29/07)
+   **ainda não foi implementado**. Vira prioridade nº 1, junto com o texto da tela.
+5. **Divulgação no evento**: etiqueta do crachá com QR do app + nº do ingresso (Elton),
+   fala de 1 min na abertura, lembrete de 15 s do cerimonial em toda sessão, QR no telão
+   ocioso (`/projecao`).
+6. **Materiais dos palestrantes**: Márcia intermedia e colhe autorização; Even3 permite
+   anexar materiais à atividade — verificar com o Alex se a API expõe (aí entra no sync).
+   Reunião com o Alex na semana de 03/08 (também: semântica do "confirmado", envio de
+   e-mail, coffee breaks na programação).
+7. **Nova frente registrada (pós-evento):** oferecer o app como **serviço de eventos do
+   Cefor/Ifes** (fala do Saymon: "temos a infra"; design system parametrizável) e/ou
+   liberar o código. Sem compromisso agora.
+
+---
+
 ## 2026-07-30 — DNS oficial no ar com HTTPS (app.cefor.ifes.edu.br) + sync automático do Even3 embutido no serviço
 
 **Fatos do dia da validação (30/07, durante os testes):**
