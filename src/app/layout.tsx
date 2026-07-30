@@ -26,6 +26,8 @@ export const metadata: Metadata = {
   title: "VIII Concefor",
   description: "Programação, reações ao vivo e a sua linha do tempo do VIII Concefor.",
   manifest: "/manifest.json",
+  // iOS ignora os ícones do manifest na Tela de Início — exige apple-touch-icon.
+  icons: { apple: "/apple-touch-icon.png" },
   appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "Concefor" },
 };
 
