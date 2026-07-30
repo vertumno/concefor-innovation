@@ -90,10 +90,14 @@ na lista de links — é lá que qualquer mudança aparece primeiro.
 
 2. **Sync automático embutido** (pedido do Marquito ao vivo, quando a inscrição da
    Andreia não apareceu no app): `src/instrumentation.ts` (hook padrão do Next) roda o
-   `runSync()` no boot e a cada `SYNC_INTERVAL_MIN` minutos (default 10; `0` desliga; sem
-   token, não liga). Inscrição nova aparece sozinha — o botão do `/admin` vira o "forçar
-   agora". Guardas: execuções nunca se sobrepõem; falha de rede só loga, não derruba o
-   app. **Esclarecido de novo:** re-sync nunca exigiu rebuild — é ação de runtime.
+   `runSync()` no boot e a cada `SYNC_INTERVAL_MIN` minutos. **Desligado por padrão**
+   (decisão do Marquito na sequência: o botão de re-sync do `/admin` cobre a necessidade
+   por ora; liga-se definindo a env). Guardas: execuções nunca se sobrepõem; falha de
+   rede só loga, não derruba o app. Nota técnica: a checagem de `NEXT_RUNTIME` precisa
+   ser um `if` englobando `import()` de arquivo separado (padrão da doc do Next) — como
+   early-return, o webpack tentava resolver o better-sqlite3 no compile edge e o dev
+   quebrava com "Can't resolve 'fs'". **Esclarecido de novo:** re-sync nunca exigiu
+   rebuild — é ação de runtime.
 
 ---
 
