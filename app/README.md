@@ -106,7 +106,9 @@ Baseie-se em `.env.example`. Segredos **não** estão no repositório (`.env.loc
 ## Operação
 
 - **Backup:** copiar o arquivo `concefor.db` do volume `/app/data` — o backup é o próprio arquivo.
-- **Atualizar:** `git pull` → `docker build` → recriar o container. Os dados persistem no volume, sem re-seed.
+- **Atualizar:** merge no `main` deste repositório → **deploy automático em produção**
+  (integração contínua, 30/07). Mudanças entram por **branch + Merge Request** — nunca
+  commit direto no `main`. Os dados persistem no volume, sem re-seed.
 - **Logs:** `docker logs -f concefor-app`.
 - **Atualizar a programação:** botão "re-sincronizar Even3" no `/admin`, ou o comando
   docker do passo 3; reações e demais registros em `timeline_events` são preservados.

@@ -76,6 +76,36 @@ na lista de links — é lá que qualquer mudança aparece primeiro.
 ---
 
 
+## 2026-07-30 — Integração contínua no servidor: main do GitLab = produção; espelho passa a fluxo branch + MR
+
+**Fato novo (CGTI, tarde de 30/07):** o servidor ganhou **integração contínua** — todo
+merge no `main` do repositório GitLab (`concefor-app`) **vai direto para produção**
+(https://app.cefor.ifes.edu.br).
+
+**Decisão (Marquito):** o desenvolvimento passa a ser em **branch separado**: implementar
+→ **testar localmente** → enviar o branch ao GitLab → **Merge Request** → merge lá (=
+deploy). A rotina do espelho de 23/07 muda no alvo do push:
+
+```bash
+# num branch do monorepo (ex.: feat/xyz), depois de testado local:
+git subtree split --prefix=app -b gitlab-split
+git push gitlab gitlab-split:feat/xyz        # branch no GitLab, NÃO o main
+git branch -D gitlab-split
+# → abrir MR feat/xyz → main no GitLab; o merge é o deploy.
+# Depois do merge, fechar o ciclo:
+git fetch gitlab
+git checkout gitlab-app && git merge --no-edit gitlab/main && git checkout main
+# e mergear o feat/xyz no main do monorepo (fonte de verdade), se ainda não estava.
+```
+
+**Regra de ouro: nunca mais `git push gitlab <algo>:main` direto** — todo caminho até o
+`main` do GitLab passa por MR, porque main = produção. O monorepo (GitHub) segue sendo a
+fonte de verdade; o branch local `gitlab-app` continua existindo só para manter a ponte
+de histórico com o GitLab (sempre via merge de `gitlab/main`, nunca via push direto).
+Casa com o combinado da reunião: o Elton já trabalha assim (branch das novas reações).
+
+---
+
 ## 2026-07-30 — Validação aprovada; lançamento vai para 10/08; novas reações (Elton); teste com a comissão em 05/08
 
 **Decisões do teste de validação** (9h–10h45, Marquito + Elton + Juliana + CGTI na sala +

@@ -140,9 +140,12 @@ a câmera do QR scanner (R7/networking) só funcionam em secure context.
 > antigo — corrigido em 29/07, ver `validacao-2026-07-30.md` e `../decisoes.md`.
 >
 > **30/07: 🎉 https://app.cefor.ifes.edu.br no ar com TLS válido** (proxy em IP público;
-> SSE atravessa — testado). PWA instalável e câmera de QR destravados. **Faltam:** testar
-> acesso de fora da rede (4G), rotina de backup do volume, e o smoke test de instalação
-> PWA no domínio (R8).
+> SSE atravessa — testado). PWA instalável e câmera de QR destravados.
+>
+> **30/07 (tarde): integração contínua no ar** — merge no `main` do GitLab = produção.
+> Fluxo de trabalho: branch → teste local → MR no GitLab (ver `../decisoes.md`).
+> **Faltam:** testar acesso de fora da rede (4G), rotina de backup do volume, e o smoke
+> test de instalação PWA no domínio (R8).
 
 - Articular com a TI do Cefor: onde roda o Docker, DNS/URL amigável, HTTPS (proxy
   reverso), persistência do volume `./data` + backup do arquivo SQLite.

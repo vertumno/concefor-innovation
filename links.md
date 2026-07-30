@@ -13,7 +13,7 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 ## Repositório
 
 - **GitHub:** https://github.com/vertumno/concefor-innovation — **monorepo/fonte de verdade** (app + contexto + comunicação)
-- **GitLab IFES (app):** https://gitlab.ifes.edu.br/cefor/concefor-app — **espelho só do `app/`** (código do PWA, com histórico), para a CGTI/Sérgio deployar. Fonte segue sendo o monorepo; atualizar o espelho pelo procedimento em `decisoes.md` (2026-07-23)
+- **GitLab IFES (app):** https://gitlab.ifes.edu.br/cefor/concefor-app — **espelho só do `app/`** (código do PWA, com histórico). ⚠️ **`main` = produção** (integração contínua desde 30/07): mudanças chegam por **branch + Merge Request**, nunca push direto no main — procedimento em `decisoes.md` (2026-07-23, revisto 2026-07-30). Fonte segue sendo o monorepo
 - **Ex-repo `concefor2026`** (central de comunicação): https://github.com/vertumno/concefor2026 — **incorporado aqui em `comunicacao/` (16/07/2026)**; arquivar no GitHub para não virar fonte concorrente
 
 ## Comunicação (CGTE)
