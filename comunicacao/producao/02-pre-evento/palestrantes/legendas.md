@@ -78,7 +78,7 @@ Card do VIII Concefor com foto de Felipe Maciel Tessarolo. Palestra internaciona
 
 ---
 
-## 3 · Dr. Mariano Pimentel · publicar 27/07
+## 3 · Dr. Mariano Pimentel · ✅ publicado 27/07 → https://www.instagram.com/p/DbT3A9apgf0/
 
 ### Instagram
 Quando um texto nasce junto com a IA generativa, de quem é a autoria? É essa questão que o Dr. Mariano Pimentel leva para a palestra "Autoria com IA generativa: desafios para a EaD", no dia 19/08, às 14h30.
@@ -104,7 +104,7 @@ Card do VIII Concefor com foto do Dr. Mariano Pimentel, professor na UNIRIO. Pal
 
 ---
 
-## 4 · Dra. Rutinelli da Penha Fávero · publicar 28/07
+## 4 · Dra. Rutinelli da Penha Fávero · ✅ publicado 28/07 → https://www.instagram.com/p/DbT4FRUJKh1/
 
 ### Instagram
 Quais serão os desafios da educação a distância para os próximos 20 anos? É esse o debate da mesa-redonda que reúne a Dra. Rutinelli da Penha Fávero, no dia 19/08, às 9h30.
@@ -130,7 +130,7 @@ Card do VIII Concefor com foto da Dra. Rutinelli da Penha Fávero. Mesa-redonda:
 
 ---
 
-## 5 · Dra. Márcia Oliveira · publicar 29/07
+## 5 · Dra. Márcia Oliveira · ✅ publicado 29/07 → https://www.instagram.com/ifescefor/p/DbT5NHkJCqP/
 
 ### Instagram
 Mulheres que estão transformando a tecnologia na educação: essa é a proposta da mesa-redonda "Tecnologia Delas" (18/08), com a Dra. Márcia Oliveira entre as participantes.
@@ -156,7 +156,7 @@ Card do VIII Concefor com foto da Dra. Márcia Oliveira. Mesa-redonda Tecnologia
 
 ---
 
-## 6 · Dra. Mariella Berger Andrade · publicar 30/07
+## 6 · Dra. Mariella Berger Andrade · ✅ publicado 30/07 → https://www.instagram.com/ifescefor/p/DbT43IkpyLd/
 
 ### Instagram
 Mulheres que estão transformando a tecnologia na educação: na mesa-redonda "Tecnologia Delas" (18/08), a Dra. Mariella Berger Andrade traz sua pesquisa em inteligência artificial, EaD e robótica.
@@ -182,7 +182,7 @@ Card do VIII Concefor com foto da Dra. Mariella Berger Andrade. Mesa-redonda Tec
 
 ---
 
-## 7 · Dra. Jaqueline Sanz · publicar 31/07
+## 7 · Dra. Jaqueline Sanz · ✅ publicado 31/07 → https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/
 
 ### Instagram
 Tecnologia para mapear a vida das mulheres do Espírito Santo. É sobre isso que pesquisa a Dra. Jaqueline Sanz, que completa a mesa-redonda "Tecnologia Delas" (18/08).
@@ -252,3 +252,32 @@ https://concefor.cefor.ifes.edu.br/inscricoes/
 
 ### Alt text
 Card do VIII Concefor com fotos da Dra. Márcia Oliveira, Dra. Mariella Berger Andrade e Dra. Jaqueline Sanz. Mesa-redonda Tecnologia Delas, 18/08 às 9h30. Selo comemorativo de 20 anos do Cefor.
+
+---
+
+## 10 · Dr. Mauro Oliveira · publicar 11/08 *(fecha a série)*
+
+> Fonte única dos dados: [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md#dr-mauro-oliveira).
+> Instagram dele ainda `[a confirmar]`, por isso a legenda vai sem @handle.
+
+### Instagram
+Para o Dr. Mauro Oliveira, a IA generativa não é mais um passo da tecnologia que já existia: é uma ruptura. É essa a discussão que ele leva para a palestra "Inovações da IA para a Educação", no dia 19/08, às 16h30.
+
+Ele defende que a engenharia de prompt já nasceu como profissão e precisa entrar no ensino universitário. Mauro é doutor em Informática pela Sorbonne (Paris), com pós-doutorados no King's College London e na Ottawa University, professor do IFCE e do doutorado da Fiocruz, e foi Secretário de Telecomunicações do Ministério das Comunicações. A palestra dele encerra o dia 19/08, que às 14h30 já traz o Dr. Mariano Pimentel falando de autoria com IA generativa.
+
+Inscreva-se até 15/08 no link da bio e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância.
+
+#Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
+
+### WhatsApp
+📢 *VIII Concefor · Palestra*
+
+Para o Dr. Mauro Oliveira, a IA generativa não é mais um passo da tecnologia que já existia: é uma ruptura. É essa a discussão que ele leva para a palestra "Inovações da IA para a Educação", no dia *19/08, às 16h30*.
+
+Ele defende que a engenharia de prompt já nasceu como profissão e precisa entrar no ensino universitário. Mauro é doutor em Informática pela Sorbonne (Paris), com pós-doutorados no King's College London e na Ottawa University, professor do IFCE e do doutorado da Fiocruz, e foi Secretário de Telecomunicações do Ministério das Comunicações. A palestra dele encerra o dia 19/08, que às 14h30 já traz o Dr. Mariano Pimentel falando de autoria com IA generativa.
+
+Inscreva-se até 15/08 e venha participar do principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância:
+https://concefor.cefor.ifes.edu.br/inscricoes/
+
+### Alt text
+Card do VIII Concefor com foto do Dr. Mauro Oliveira. Palestra Inovações da IA para a Educação, 19/08 às 16h30. Professor do IFCE e do doutorado da Fiocruz. Selo comemorativo de 20 anos do Cefor.

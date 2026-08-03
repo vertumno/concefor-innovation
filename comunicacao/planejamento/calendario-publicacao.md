@@ -17,19 +17,26 @@
 | 24/07 | Card palestrante — Felipe Tessarolo (internacional) | Feed | ✅ [publicado](https://www.instagram.com/p/DbF4cUPh-TT/) |
 | 27/07 | Card palestrante — Mariano Pimentel (IA) | Feed | ✅ [publicado](https://www.instagram.com/p/DbT3A9apgf0/) |
 | 28/07 | Card palestrante — Rutinelli da Penha Fávero (mesa "Desafios da EaD") | Feed | ✅ [publicado](https://www.instagram.com/p/DbT4FRUJKh1/) |
-| **29/07** | Card palestrante — Márcia Oliveira (mesa "Tecnologia Delas") | Feed | ⬜ **próximo da fila** |
-| 30/07 | Card palestrante — Mariella Berger (mesa "Tecnologia Delas") | Feed | ⬜ |
-| 31/07 | Card palestrante — Jaqueline Sanz (mesa "Tecnologia Delas") | Feed | ⬜ |
+| 29/07 | Card palestrante — Márcia Oliveira (mesa "Tecnologia Delas") | Feed | ✅ [publicado](https://www.instagram.com/ifescefor/p/DbT5NHkJCqP/) |
+| 30/07 | Card palestrante — Mariella Berger (mesa "Tecnologia Delas") | Feed | ✅ [publicado](https://www.instagram.com/ifescefor/p/DbT43IkpyLd/) |
+| 31/07 | Card palestrante — Jaqueline Sanz (mesa "Tecnologia Delas") | Feed | ✅ [publicado](https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/) — **fecha a série dos 7** |
 | ~~28/07~~ | ~~Reforço: última semana do prazo de envio~~ | ~~Story~~ | ❌ retirado em 27/07 (só cards) |
 
 ## Agosto — reta final (pré-evento)
 | Data | Publicação | Formato | Status |
 |---|---|---|---|
-| 01/08 *(sáb)* | Card mesa — "Desafios da EaD para os próximos 20 anos" (Rutinelli + Felipe Tessarolo) | Feed | ⬜ **arte a produzir** |
-| 02/08 *(dom)* | Card mesa — "Tecnologia Delas" (as três juntas) | Feed | ⬜ **arte a produzir** |
+| ~~01/08~~ *(sáb)* | Card mesa — "Desafios da EaD para os próximos 20 anos" (Rutinelli + Felipe Tessarolo) | Feed | 🔴 **não publicou: a arte não existe** — remarcar |
+| ~~02/08~~ *(dom)* | Card mesa — "Tecnologia Delas" (as três juntas) | Feed | 🔴 **não publicou: a arte não existe** — remarcar |
 | 03/08 | Marco: prazo de envio final (Even3) + prazo interno dos vídeos | — | ⬜ |
 | 04/08 | Eventos paralelos — carrossel dos 6 eventos | Feed | ⬜ ✅ todos os dados completos |
-| 11/08 | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | 🔵 **arte produzida (02/08)** |
+
+> ⚠️ **A cadência diária quebrou em 01/08.** Os 7 individuais se esgotaram em 31/07 e as duas
+> artes de mesa nunca foram produzidas, então o feed está **sem card desde 01/08**. As legendas
+> dos dois estão prontas em
+> [legendas.md](../producao/02-pre-evento/palestrantes/legendas.md#8--mesa-desafios-da-ead-para-os-próximos-20-anos--publicar-0108).
+> Assim que as artes saírem, a fila é: mesa "Desafios da EaD" → mesa "Tecnologia Delas" →
+> carrossel dos eventos paralelos → Mauro Oliveira (11/08).
+| 11/08 | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | 🔵 arte produzida (02/08) · legenda pronta (03/08) · 🔴 **v2: trocar "MESA" por "PALESTRA"** |
 | ~~01/08~~ | ~~Reforço: últimos dias do prazo de envio~~ | ~~Story~~ | ❌ retirado em 27/07 (só cards) |
 
 > ⚠️ **01/08 é sábado e 02/08 é domingo.** A sequência diária cai neles. Se a preferência for

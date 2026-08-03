@@ -241,7 +241,7 @@
    links:   [{t:'rótulo', u:'caminho'}]  — .md abre no GitHub, resto abre direto
    ========================================================================= */
 
-const ATUALIZADO = '28/07/2026';
+const ATUALIZADO = '03/08/2026';
 const EVENTO     = '2026-08-17';
 const GITHUB     = 'https://github.com/vertumno/concefor-innovation/blob/main/comunicacao/';
 
@@ -253,14 +253,15 @@ const PECAS = [
     links:[{t:'PDF final',u:'../producao/01-brindes-promocionais/cracha/cracha_FINAL_PARA_IMPRESSAO.pdf'},
            {t:'E-mail à gráfica',u:'../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md'}] },
 
-  { nome:'Crachá · definir rateio das 4 variantes', fase:'impressao', status:'todo', resp:'CGTE',
-    prazo:'2026-08-10', prazoTx:'antes do evento',
-    nota:'O TR contratou 400 no total sem dizer quantos de cada tipo: normal, palestrante, QR code e inscrição.' },
+  { nome:'Crachá · rateio das 4 variantes', fase:'impressao', status:'feito', resp:'CGTE',
+    prazo:'2026-08-10', prazoTx:'sem efeito',
+    nota:'DEIXOU DE EXISTIR (verificado em 03/08). O arquivo enviado à gráfica é uma arte só, de uma página, igual para os 400: sem faixa de PALESTRANTE e sem QR code. Se for preciso distinguir palestrante, organização e participante, a distinção passa para a etiqueta com o nome.' },
 
-  { nome:'Etiquetas com os nomes · decidir, comprar e imprimir', fase:'impressao', status:'todo', resp:'Alex',
-    prazo:'2026-08-04', prazoTx:'decidir até 04/08',
-    nota:'PENDENTE: quais etiquetas comprar e como será a impressão dos nomes. A ordem importa — medir a área livre do crachá, achar um gabarito A4 que exista à venda, comprar, gerar o arquivo a partir da lista do Even3 e testar numa amostra antes das 400. Comprar antes de medir é comprar errado.',
-    links:[{t:'Brief',u:'../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md'}] },
+  { nome:'Etiquetas com os nomes · comprar e imprimir', fase:'impressao', status:'producao', resp:'Alex',
+    prazo:'2026-08-04', prazoTx:'comprar até 04/08',
+    nota:'MEDIDA RESOLVIDA em 03/08: a área livre do crachá é de 100 x 43,7 mm, medida no PDF final. Isso descarta 3 das 5 opções (as de 101,6 mm são mais largas que o crachá) e deixa Pimaco A4360 (25,4 x 66,7 mm, folgada, recomendada) ou A4362 (33,9 x 99 mm, justa). FALTA: comprar e definir como será a impressão dos nomes (impressora, operador, arquivo). Testar numa amostra quando os 400 chegarem, em 07/08.',
+    links:[{t:'Brief',u:'../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md'},
+           {t:'Medida visual',u:'../producao/01-brindes-promocionais/cracha/area-livre-etiqueta.png'}] },
 
   { nome:'Camisas · 100 un sublimadas', fase:'impressao', status:'feito', resp:'Elton',
     prazo:'2026-08-07', prazoTx:'aprovada 28/07',
@@ -290,7 +291,7 @@ const PECAS = [
 
   { nome:'Banners · 10 un · 0,90 × 1,20 m', fase:'impressao', status:'producao', resp:'Juliana',
     prazo:'2026-08-04', prazoTx:'artes até 04/08 12h · gráfica entrega 11/08',
-    nota:'EM PRODUÇÃO COM A JULIANA desde 02/08, com briefing próprio (13 banners: estes 10 + os 3 institucionais). Prazo das artes: 04/08 12h. Gráfica entrega banners impressos em 11/08. Assinaturas: Realização Cefor; Apoio Ifes Campus Vila Velha e Educimat. Banner #05 CONFIRMADO como dia 20/08 (02/08). Banner #06 (Eventos Paralelos) COMPLETO. Só o #13 (falta o link dos MOOCs) segue parado.',
+    nota:'APROVAÇÃO FEITA EM 03/08, em reunião de 47 min com a Juliana. Todos os banners do evento já existem em versão para avaliação, feitos no Illustrator e no tamanho final de 0,90 x 1,20 m, com o padrão visual alinhado com a Andreia. O #06 (eventos paralelos) passou sem ajuste; o #01 e os dias #02 a #05 saem com ajustes de acabamento (tirar a caixa da data, padronizar horários com 9h e tracinho, aliviar o peso da tipografia, acrescentar Encerramento do Evento no dia 20); o de localização (#07 a #10) é o que falta e vai depois, com o desenho do prédio refeito. Fluxo: ela ajusta, exporta em JPG e o Elton manda para a Viviane avaliar. ATENÇÃO: a Juliana pediu que alguém confira as informações com calma antes de fechar com a gráfica. Sem definição: destacar o andar em cada banner (se sim, deixam de ser 4 iguais) e o que fazer com o 3º piso, que não tem atividade.',
     links:[{t:'Briefing da produção',u:'../briefing-banners/'},
            {t:'Brief com os 10',u:'producao/01-brindes-promocionais/banners/brief.md'},
            {t:'Conteúdo dos banners de dia',u:'producao/01-brindes-promocionais/banners/conteudo-banners-programacao.md'},
@@ -299,8 +300,8 @@ const PECAS = [
 
   /* ---------------- IMPRESSÃO — fora do TR ---------------- */
   { nome:'Banners institucionais · 3 un · livro, Base de Conhecimentos, MOOCs', fase:'impressao',
-    status:'producao', resp:'Juliana / UAB (custeio)', prazo:'2026-08-04',
-    nota:'Produção com a Juliana (desde 02/08), junto com os 10 do TR (13 no total). ARTE ÚNICA: um template, três conteúdos. Pagos pela UAB. Links: Base confirmada (conhecimento.cefor.ifes.edu.br), livro ainda com link provisório e MOOCs sem endereço — é a única trava. Prazo: artes até 04/08 12h, gráfica entrega 11/08.',
+    status:'bloqueado', resp:'a definir (Juliana ou Andreia) / UAB (custeio)', prazo:null,
+    nota:'SAÍRAM DA LEVA DE AMANHÃ (03/08). Nenhuma das três artes foi produzida e a Juliana não vai fazê-las agora: o banner do prédio consome o tempo dela até 04/08. Como são outro fornecedor e outra leva, dá para adiar: o Elton renegocia a data com a Vanessa e a Andreia é candidata a assumir, já que trabalha no livro. Decidido antes: arte única, um template para os três, pagos pela UAB. Links: Base confirmada (conhecimento.cefor.ifes.edu.br), livro com link provisório e MOOCs sem endereço. Falta também o Elton mandar o conteúdo da vitrine de MOOCs.',
     links:[{t:'Briefing da produção',u:'../briefing-banners/#institucionais'},
            {t:'Brief',u:'producao/02-pre-evento/banners-institucionais/brief.md'}] },
 
@@ -341,37 +342,45 @@ const PECAS = [
     links:[{t:'Ver no Instagram',u:'https://www.instagram.com/p/DbT4FRUJKh1/'},
            {t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-rutinelli-favero_v1.png'}] },
 
-  { nome:'Card palestrante · Márcia Oliveira', fase:'pre', status:'agendado', resp:'Elton',
-    prazo:'2026-07-29', prazoTx:'agendado 29/07',
-    nota:'Arte v2 liberada e publicação agendada. Mesa "Tecnologia Delas".',
-    links:[{t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-marcia-oliveira_v2.png'},
+  { nome:'Card palestrante · Márcia Oliveira', fase:'pre', status:'feito', resp:'Elton',
+    prazo:'2026-07-29', prazoTx:'publicado 29/07',
+    nota:'No ar no Instagram. Arte v2. Mesa "Tecnologia Delas".',
+    links:[{t:'Ver no Instagram',u:'https://www.instagram.com/ifescefor/p/DbT5NHkJCqP/'},
+           {t:'Arte v2',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-marcia-oliveira_v2.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
-  { nome:'Card palestrante · Mariella Berger', fase:'pre', status:'agendado', resp:'Elton',
-    prazo:'2026-07-30', prazoTx:'agendado 30/07',
-    nota:'Arte v1 liberada e publicação agendada. Mesa "Tecnologia Delas".',
-    links:[{t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png'},
+  { nome:'Card palestrante · Mariella Berger', fase:'pre', status:'feito', resp:'Elton',
+    prazo:'2026-07-30', prazoTx:'publicado 30/07',
+    nota:'No ar no Instagram. Arte v1. Mesa "Tecnologia Delas".',
+    links:[{t:'Ver no Instagram',u:'https://www.instagram.com/ifescefor/p/DbT43IkpyLd/'},
+           {t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
-  { nome:'Card palestrante · Jaqueline Sanz', fase:'pre', status:'agendado', resp:'Elton',
-    prazo:'2026-07-31', prazoTx:'agendado 31/07',
-    nota:'Arte v3 liberada e publicação agendada. Mesa "Tecnologia Delas". Último dos 7 individuais.',
-    links:[{t:'Arte v3',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-jaqueline-sanz_v3.png'},
+  { nome:'Card palestrante · Jaqueline Sanz', fase:'pre', status:'feito', resp:'Elton',
+    prazo:'2026-07-31', prazoTx:'publicado 31/07',
+    nota:'No ar no Instagram. Arte v3. Mesa "Tecnologia Delas". Fecha a série dos 7 individuais.',
+    links:[{t:'Ver no Instagram',u:'https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/'},
+           {t:'Arte v3',u:'../producao/02-pre-evento/palestrantes/cards/2026-07-21_pre_card_palestrante-jaqueline-sanz_v3.png'},
            {t:'Aprovação',u:'../aprovacao/cards-palestrantes.html'}] },
 
   { nome:'Card palestrante · Mauro Oliveira', fase:'pre', status:'aprovacao', resp:'Elton',
     prazo:'2026-08-11',
-    nota:'Arte PRODUZIDA em 02/08. Publica 11/08. Último card da série.',
-    links:[{t:'Infos para o card',u:'producao/02-pre-evento/palestrantes/painel-producao-cards.md'},
-           {t:'Foto',u:'../producao/02-pre-evento/palestrantes/_refs/fotos/Mauro_Oliveira.png'}] },
+    nota:'Arte produzida em 02/08 e arquivada em 03/08, com legenda escrita. PRECISA DE V2: a arte diz MESA, mas a atividade dele é uma PALESTRA (19/08, 16h30). Publica 11/08, então há folga para corrigir.',
+    links:[{t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-08-02_pre_card_palestrante-mauro-oliveira_v1.png'},
+           {t:'Infos para o card',u:'producao/02-pre-evento/palestrantes/painel-producao-cards.md'}] },
 
   { nome:'Card mesa · "Desafios da EaD"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-01',
-    nota:'GARGALO: os 7 cards individuais acabam em 31/07 e esta arte ainda não existe. Legenda pronta, composição fechada (Rutinelli + Tessarolo). 01/08 é sábado.',
+    nota:'ATRASADO: era para publicar em 01/08 e a arte nunca foi produzida, então o feed está sem card desde então. Legenda pronta, composição fechada (Rutinelli + Tessarolo). É a peça mais urgente da comunicação.',
     links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'}] },
 
   { nome:'Card mesa · "Tecnologia Delas"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-02',
-    nota:'Arte ainda não produzida, legenda pronta. Fecha a série antes do Mauro. 02/08 é domingo.',
+    nota:'ATRASADO: era para publicar em 02/08 e a arte nunca foi produzida. Legenda pronta. Entra logo depois da mesa "Desafios da EaD".',
     links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'}] },
+
+  { nome:'Cantinho instagramável · espaço de fotos', fase:'durante', status:'bloqueado',
+    resp:'sem dono (Elton leva à comissão)', prazo:'2026-08-05', prazoTx:'retorno pedido até 05/08',
+    nota:'A CGTE DEVOLVEU (03/08). O Marquito pediu à Juliana que pensasse o espaço, mas sem dizer onde vai ser, que tamanho tem nem com que material, e não voltou com as informações. Posição dela, como CGTE: o cantinho é da comissão organizadora, não da CGTE. Em Colatina quem faz isso é o núcleo de arte e cultura, que tem os materiais de decoração. Ideia deixada: aproveitar a arte do bolo dos 20 anos, que a Andreia está produzindo. Se ninguém assumir, o cenário padrão é banner, plantas e cadeira.',
+    links:[{t:'Síntese da reunião',u:'../../contexto/reunioes/sintese-2026-08-03.md'}] },
 
   { nome:'Mensagem aos palestrantes · pedido de vídeo-convite', fase:'pre', status:'todo',
     resp:'Elton', prazo:'2026-07-18',
@@ -441,7 +450,7 @@ const MARCOS = [
   { data:'2026-07-28', tx:'Amostras dos brindes avaliadas', sub:'FINALIZADO · realizado por Viviane e Dennis' },
   { data:'2026-07-28', tx:'Retorno das montagens à gráfica', sub:'camisa, bloco e crachá aprovados; caneta, copo e bolsa com ajuste' },
   { data:'2026-07-30', tx:'Validação do app', sub:'com a coordenação' },
-  { data:'2026-08-01', tx:'Banners de lançamentos na gráfica', sub:'livro, MOOCs, Base' },
+  { data:'2026-08-04', tx:'Artes dos 13 banners na gráfica', sub:'até 12h · impressos voltam em 11/08' },
   { data:'2026-08-03', tx:'Prazo de envio final dos trabalhos', sub:'Even3 · e vídeos-convite' },
   { data:'2026-08-07', tx:'Lançamento do app + entrega da gráfica', sub:'prazo-limite contratado' },
   { data:'2026-08-15', tx:'Fim das inscrições', sub:'capacidade: 400 pessoas' },
@@ -449,6 +458,9 @@ const MARCOS = [
 ];
 
 const AGUARDANDO = [
+  { q:'Endereço da nova vitrine de MOOCs — trava o banner #13', who:'Vanessa Battestin · cobrado 03/08' },
+  { q:'Link definitivo do livro dos 20 anos (hoje é um link provisório do Drive)', who:'Vanessa Battestin · cobrado 03/08' },
+  { q:'Status de cada uma das 13 artes de banner, antes do prazo de 04/08', who:'Juliana · cobrado 03/08' },
   { q:'Hosts dos podcasts (1 por episódio)', who:'Márcia / Coordenação' },
   { q:'Local das sessões técnicas e da Mostra de Produtos — e confirmar UAB/UnAC no Pátio e NTE no Auditório', who:'Viviane · perguntado 28/07' },
   { q:'Logo do Educimat para os impressos', who:'Educimat' },

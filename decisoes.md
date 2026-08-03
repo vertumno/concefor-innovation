@@ -4,6 +4,47 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-03 — Banners aprovados com ajustes; institucionais saem da leva; cantinho instagramável volta para a comissão
+
+Reunião de 47 min entre Elton e Juliana, banner a banner, com a tela compartilhada. Transcrição e
+síntese em `contexto/reunioes/` (`2026-08-03-reuniao-juliana-banners.txt` e `sintese-2026-08-03.md`).
+
+**1. Os banners do evento estão aprovados, com ajustes de acabamento.** Todos existem em versão
+para avaliação, feitos **no Illustrator, no tamanho final de 0,90 × 1,20 m**, com o padrão visual
+alinhado com a Andreia (o layout da apresentação institucional dela virou a referência, em vez de
+um padrão novo). O #06 (eventos paralelos) passou sem ajuste nenhum.
+
+**2. Decisões de arte que ficaram fechadas:**
+- **Selo dos 20 anos vai embaixo** no banner geral, não em cima. *Por quê:* em cima ele disputava
+  atenção com a marca do Concefor; embaixo, o Concefor respira e fica maior.
+- **"Cefor · Vitória" fica na peça.** *Por quê:* congresso mostra onde acontece, mesmo quando todo
+  mundo que vai já sabe. Elton achou dispensável, a Juliana defendeu e prevaleceu.
+- **Horário é "9h" com tracinho, nunca "9h00".** *Por quê:* os dois consideram o zero-zero ruído
+  em peça de sinalização. O que estava errado era o espaçamento, não o formato.
+- **Os 4 banners de andar são a mesma arte**, confirmado. Destacar o andar onde cada um está
+  pendurado foi levantado e **não decidido** — se for adotado, deixam de ser 4 impressões iguais.
+
+**3. Os 3 banners institucionais saíram da leva de amanhã.** Nenhuma das artes foi produzida e a
+Juliana não vai produzi-las agora: o banner de localização, com o desenho do prédio, consome o
+tempo que resta até 04/08. *Por quê é possível adiar:* eles são de **outro fornecedor e outra
+leva**, não estão presos ao pacote da gráfica do TR. Elton renegocia a data com a Vanessa, e a
+Andreia é candidata a assumir, já que trabalha no livro.
+
+**4. Cantinho instagramável: a CGTE devolveu formalmente.** O Marquito tinha pedido à Juliana que
+pensasse o espaço, mas sem dizer **onde**, **de que tamanho** ou **com que material** — e não voltou
+com essas informações. A posição dela, como CGTE: **o cantinho é da comissão organizadora, não da
+CGTE**. *Por quê:* diante do volume de demanda já na mesa (13 banners), o cantinho é pequeno perto
+do que custa acompanhar, e a comissão resolve escolhendo o local; em Colatina, quem faz isso é o
+núcleo de arte e cultura, que tem os materiais de decoração. Elton leva o assunto à comissão.
+Retorno pedido até **05/08**. Única pista de execução deixada: **aproveitar a arte do bolo** dos 20
+anos, que a Andreia está produzindo.
+
+**5. Pedido de conferência antes da gráfica.** A Juliana pediu formalmente que alguém revise as
+informações dos banners com calma antes de fechar. *Por quê:* é muito conteúdo passando por uma
+pessoa só, e erro em sinalização impressa não tem conserto.
+
+---
+
 
 ## 2026-07-30 — Vocabulário novo das reações: da emoção genérica para o que a pessoa faz com aquilo
 

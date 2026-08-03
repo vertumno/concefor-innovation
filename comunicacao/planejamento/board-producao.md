@@ -79,11 +79,14 @@
 > Podemos imprimir nome até a véspera, inclusive de quem se inscrever depois de 15/08 — e errar
 > um nome custa uma etiqueta, não um crachá.
 
-> ❓ **Crachá: falta definir o rateio das 400 unidades.** A arte tem **4 variantes** em
-> [`cracha/3x/`](../producao/01-brindes-promocionais/cracha/3x/): **normal** (nome + nome completo),
-> **palestrante** (faixa escura "PALESTRANTE" + nome + instituição), **qrcode** (nome + QR abaixo)
-> e **inscrição**. O TR contratou 400 crachás no total, sem dizer quantos de cada tipo.
-> Definir antes de mandar para a gráfica.
+> ✅ **Crachá: o "rateio das 400 unidades" não existe mais** (verificado em 03/08). O arquivo
+> enviado à gráfica em 22/07
+> ([`cracha_FINAL_PARA_IMPRESSAO.pdf`](../producao/01-brindes-promocionais/cracha/cracha_FINAL_PARA_IMPRESSAO.pdf))
+> é **uma arte só, de uma página**, igual para os 400: cabeçalho com logo Concefor e selo 20 anos,
+> faixa branca no meio e rodapé de Realização/Apoio. Não há faixa "PALESTRANTE" nem QR code, e as
+> antigas 4 variantes (`3x/`) não estão mais no repo. 👉 **Se for preciso distinguir palestrante,
+> organização e participante, a distinção passa para a etiqueta** — entrou como pendência em
+> [`cracha/etiquetas-nomes.md`](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md#ainda-em-aberto).
 
 > ✅ **Fechado em 28/07** — a aprovação enviada à gráfica encerra a fila de camisa e bloco.
 > 👕 **Camisa: ficou a OPÇÃO 2** — **logo do Concefor e selo dos 20 anos do Cefor na frente**;
@@ -139,14 +142,33 @@
 >
 > 🟡 **Produção agora com a Juliana** (desde 02/08). Prazo combinado com a gráfica: **04/08 até 12h**.
 > Gráfica prometeu entregar os banners impressos em **11/08**.
+>
+> ✅ **03/08 — RODADA DE APROVAÇÃO FEITA** (reunião de 47 min, Elton + Juliana ·
+> [síntese](../../contexto/reunioes/sintese-2026-08-03.md) ·
+> [ajustes banner a banner](../producao/01-brindes-promocionais/banners/brief.md#-rodada-de-aprovação--reunião-de-03082026-elton--juliana-47-min)).
+> Todos os banners do evento **já existem em versão para avaliação**, feitos **no Illustrator, no
+> tamanho final**, com o padrão visual alinhado com a Andreia.
+> | Banner | Situação |
+> |---|---|
+> | #01 Geral | ✅ aprovado com 1 ajuste (a quebra da data) |
+> | #02 a #05 dias | ✅ aprovados com ajustes de acabamento (tirar a caixa da data, padronizar horários, aliviar o peso da tipografia) |
+> | #06 Eventos paralelos | ✅ **aprovado sem ajuste** |
+> | #07 a #10 andares | 🟡 **o que falta** — o desenho do prédio pede outra rodada e sai depois |
+>
+> **Fluxo:** Juliana ajusta todos menos o do prédio → exporta em **JPG** → **Elton envia para a
+> Viviane avaliar** → o do prédio vai depois, em separado.
+> ⚠️ **Pedido da Juliana: alguém precisa conferir as informações com calma antes de fechar com a
+> gráfica.** É muito conteúdo passando por uma pessoa só.
+> ❓ Seguem sem definição: **destacar o andar em cada banner** (se sim, deixam de ser 4 iguais) e
+> **o que fazer com o 3º piso**, que não tem atividade nenhuma.
 
 > ⏰ **A conta do prazo:** entrega contratada em 07/08, evento em 17/08. Artes devem chegar à gráfica até 04/08 12h; gráfica entrega 11/08.
 
 ### Fora do TR
 | Peça | Situação | Responsável | Prazo | Status |
 |---|---|---|---|---|
-| 🏷️ **Etiquetas com os nomes** (crachá) | 🔴 **duas decisões em aberto (reforçado em 28/07): quais etiquetas comprar e como será a impressão dos nomes.** Sequência obrigatória: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo → testar numa amostra. [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) | **Alex** | **decidir até 04/08** *(sugerido)*; testar antes da entrega dos 400; imprimir até a véspera de 17/08 | 🔴 |
-| **Banners institucionais** — livro dos 20 anos, Base de Conhecimentos, MOOCs | 👷 **Produção com a Juliana** (desde 02/08), junto com os 10 do TR — 13 no total ([briefing](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#institucionais), banners 11 a 13). ✅ **Decidido: arte única, um template para os três.** À parte, **pagos pela UAB**. Links: Base ✅ `conhecimento.cefor.ifes.edu.br` · livro provisório · **MOOCs 🔴 sem link — única trava**. [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | **Juliana** / UAB *(custeio)* | **artes até 04/08 12h** · gráfica entrega **11/08** | 🟡 |
+| 🏷️ **Etiquetas com os nomes** (crachá) | ✅ **03/08: área livre medida no PDF final — 100 × 43,7 mm.** Isso derruba 3 das 5 opções (as de 101,6 mm são mais largas que o crachá) e deixa a escolha entre **Pimaco A4360** (25,4 × 66,7, folgada, **recomendada**) e **A4362** (33,9 × 99, justa, 0,5 mm de folga). 🔴 Segue em aberto **como será a impressão** (impressora, operador, arquivo). [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) · [medida visual](../producao/01-brindes-promocionais/cracha/area-livre-etiqueta.png) | **Alex** | **comprar até 04/08**; testar quando os 400 chegarem (07/08); imprimir até a véspera de 17/08 | 🔵 |
+| **Banners institucionais** — livro dos 20 anos, Base de Conhecimentos, MOOCs | 🔴 **03/08: SAÍRAM DA LEVA DE AMANHÃ.** Nenhuma das três artes foi produzida e a Juliana não vai fazê-las agora (o banner do prédio consome o tempo dela até 04/08). Como são **outro fornecedor, outra leva**, dá para adiar: **Elton renegocia a data com a Vanessa** e a **Andreia é candidata a assumir** (já trabalha no livro). ✅ Decidido antes: arte única, um template para os três; pagos pela UAB. Links: Base ✅ `conhecimento.cefor.ifes.edu.br` · livro provisório · **MOOCs 🔴 sem link**, e falta o Elton mandar o conteúdo. [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | **a definir** *(Juliana ou Andreia)* / UAB *(custeio)* | 🔴 **sem data até falar com a Vanessa** | 🔴 |
 | **Fundo de palco** | 🔴 citado na descrição do TR mas **sem item contratado** — confirmar | ___ | ___ | ⬜ |
 | ~~Arte **squeezes**~~ | ❌ **CANCELADO (28/07): não será produzido.** O **copo bucks** ocupou o lugar — é ele que vai no kit. Encerra a dúvida aberta desde 20/07 | — | — | ❌ |
 | Arte **bolo** comemoração (20 anos do Cefor) | não é item de gráfica; alinhar com quem fornece o bolo | **Andreia** | ___ | ⬜ |
@@ -163,12 +185,12 @@
 | Card palestrante — Felipe Tessarolo | Elton | 24/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbF4cUPh-TT/) |
 | Card palestrante — Mariano Pimentel | Elton | 27/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbT3A9apgf0/) |
 | Card palestrante — Rutinelli Fávero | Elton | 28/07 | ✅ **publicado** → [post](https://www.instagram.com/p/DbT4FRUJKh1/) |
-| Card palestrante — Márcia Oliveira — arte liberada | Elton | **publicar 29/07 (próximo)** | 🔵 |
-| Card palestrante — Mariella Berger — arte liberada | Elton | publicar 30/07 | 🔵 |
-| Card palestrante — Jaqueline Sanz — arte liberada | Elton | publicar 31/07 | 🔵 |
-| Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton | publicar **01/08** (sáb) | ⬜ **próxima arte a fazer** |
-| Card mesa "Tecnologia Delas" — **arte ainda não produzida** (legenda pronta) | Elton | publicar **02/08** (dom) | ⬜ |
-| Card palestrante — Mauro Oliveira — ✅ **arte produzida (02/08)**. [Infos para o card](../producao/02-pre-evento/palestrantes/painel-producao-cards.md) | Elton | publicar 11/08 (último da série) | 🔵 **arte pronta** |
+| Card palestrante — Márcia Oliveira | Elton | 29/07 | ✅ **publicado** → [post](https://www.instagram.com/ifescefor/p/DbT5NHkJCqP/) |
+| Card palestrante — Mariella Berger | Elton | 30/07 | ✅ **publicado** → [post](https://www.instagram.com/ifescefor/p/DbT43IkpyLd/) |
+| Card palestrante — Jaqueline Sanz | Elton | 31/07 | ✅ **publicado** → [post](https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/) — fecha os 7 individuais |
+| Card mesa "Desafios da EaD" — **arte nunca foi produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton | era **01/08** · ⚠️ **não publicou** | 🔴 **atrasado — é a arte mais urgente** |
+| Card mesa "Tecnologia Delas" — **arte nunca foi produzida** (legenda pronta) | Elton | era **02/08** · ⚠️ **não publicou** | 🔴 **atrasado** |
+| Card palestrante — Mauro Oliveira — arte produzida (02/08), arquivada em `cards/` em 03/08; ✅ legenda escrita em 03/08. 🔴 **v2 pendente: a arte diz "MESA", mas é PALESTRA** (19/08, 16h30). [Infos para o card](../producao/02-pre-evento/palestrantes/painel-producao-cards.md) | Elton | corrigir antes de **11/08** | 🔵 **em correção** |
 | Mensagem aos palestrantes (pedido de vídeo **+ material para o app**) | Elton | ⚠️ prazo era **18/07** — sem registro de envio; retorno esperado 03/08 | 🔴 |
 | Vídeos-convite dos palestrantes (receber até 03/08) | Elton *(a princípio)* | reels 08–14/08 | ⬜ |
 | Cards eventos paralelos — ✅ **6 eventos completos em 29/07** (todos com local; Educimat entrou com nome oficial). **Publicar tudo junto** após liberação da Márcia | Elton *(a princípio)* | sugerido 04/08 | ⬜ |
@@ -183,6 +205,7 @@
 ## Durante o evento
 | Frente | Responsável | Status |
 |---|---|---|
+| 📸 **Cantinho instagramável** (espaço de fotos) — 🔴 **03/08: a CGTE devolveu.** O Marquito pediu à Juliana que pensasse o espaço, mas sem dizer **onde**, **de que tamanho** nem **com que material**, e não voltou com as informações. Posição dela: **é da comissão organizadora, não da CGTE** (em Colatina quem faz é o núcleo de arte e cultura, que tem material de decoração). Elton leva à comissão. 💡 Pista: aproveitar a **arte do bolo** que a Andreia está fazendo. [Síntese](../../contexto/reunioes/sintese-2026-08-03.md) | 🔴 **sem dono** — Elton leva à comissão, retorno pedido até **05/08** | 🔴 |
 | Cobertura fotográfica | Tiago / Leonardo / Nanda | ⬜ |
 | Redes ao vivo (reels/stories) | ___ | ⬜ |
 | Podcasts com palestrantes — [plano pronto](../producao/03-durante-evento/podcasts/plano-podcasts.md) (5 episódios); 🔴 falta: hosts (Coordenação) + termo de autorização de imagem | Leo / Tiago / Nanda | 🟡 |

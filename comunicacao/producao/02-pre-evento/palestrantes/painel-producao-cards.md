@@ -10,12 +10,18 @@
 > 📅 **Cadência definida em 27/07/2026: um card por dia, em sequência, sem pular data — e só
 > cards** (os stories programados foram retirados). As datas abaixo já refletem a nova ordem.
 >
-> ✅ **Publicados até agora (4 dos 7):** Vanessa Battestin (21/07,
+> ✅ **Série dos 7 individuais COMPLETA:** Vanessa Battestin (21/07,
 > [post](https://www.instagram.com/p/DbF30gOOToU/)) · Felipe Tessarolo (24/07,
 > [post](https://www.instagram.com/p/DbF4cUPh-TT/)) · Mariano Pimentel (27/07,
 > [post](https://www.instagram.com/p/DbT3A9apgf0/)) · Rutinelli Fávero (28/07,
-> [post](https://www.instagram.com/p/DbT4FRUJKh1/)).
-> **Próximo da fila:** Márcia Oliveira, em 29/07.
+> [post](https://www.instagram.com/p/DbT4FRUJKh1/)) · Márcia Oliveira (29/07,
+> [post](https://www.instagram.com/ifescefor/p/DbT5NHkJCqP/)) · Mariella Berger (30/07,
+> [post](https://www.instagram.com/ifescefor/p/DbT43IkpyLd/)) · Jaqueline Sanz (31/07,
+> [post](https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/)).
+>
+> 🔴 **O que vem depois travou:** os **2 cards de mesa** deviam ter publicado em 01 e 02/08 e as
+> artes nunca foram produzidas, então **o feed está sem card desde 01/08**. Depois deles vem o
+> carrossel dos eventos paralelos e, fechando tudo, o **Mauro Oliveira em 11/08**.
 
 ## Especificação fixa do card (igual para os 7)
 - **Formato:** 1080×1350 (feed) — se der, versão story 1080×1920
@@ -101,7 +107,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Status:** ✅ produzido 20/07 — arte traz "Professora do Ifes/Cefor" (previsto era
   "Professora do Ifes"); ajuste correto, ela é do Cefor.
 
-## 5 · Dra. Márcia Oliveira · publicar 29/07
+## 5 · Dra. Márcia Oliveira — ✅ PUBLICADO 29/07 ([post](https://www.instagram.com/ifescefor/p/DbT5NHkJCqP/))
 
 > ⚠️ **Nome:** o completo, "Dra. Márcia Gonçalves de Oliveira", também está correto.
 > **Ao abreviar, usar "Márcia Oliveira", nunca "Márcia Gonçalves"** (definido em 21/07/2026).
@@ -119,7 +125,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
   A linha de cargo ("Professora do Ifes/Cefor e coordenadora do Programa Corte de Lovelace",
   sem citar a Coordenação Geral do Concefor) foi **decidida em 20/07 e permanece**.
 
-## 6 · Dra. Mariella Berger Andrade — publicar 30/07
+## 6 · Dra. Mariella Berger Andrade — ✅ PUBLICADO 30/07 ([post](https://www.instagram.com/ifescefor/p/DbT43IkpyLd/))
 
 - **Foto:** `_refs/fotos/Mariella_Berger_Andrade.png`
 - **No card — nome da palestra:** Mesa · *"Tecnologia Delas"* · 18/08
@@ -129,7 +135,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Arquivo:** `cards/2026-07-20_pre_card_palestrante-mariella-berger_v1.png`
 - **Status:** ✅ produzido 20/07 — arte bate com o previsto.
 
-## 7 · Dra. Jaqueline Sanz · publicar 31/07
+## 7 · Dra. Jaqueline Sanz — ✅ PUBLICADO 31/07 ([post](https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/))
 
 > ⚠️ **Nome: usar "Jaqueline Sanz" em tudo** (definido em 21/07/2026), que é como ela é mais
 > conhecida. Não usar "Celia", "Celia Jaqueline" nem o registro completo nas peças.
@@ -170,7 +176,20 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Credenciais mais fortes para a legenda:** doutorado em Informática na **Sorbonne**,
   pós-doutorados no **King's College London** e na **Ottawa University**, e passagem como
   **Secretário de Telecomunicações do Ministério das Comunicações**.
-- **Status:** ✅ **arte produzida (02/08)** — pronta para publicar em 11/08.
+- **Arquivo:** `cards/2026-08-02_pre_card_palestrante-mauro-oliveira_v1.png` *(processado do
+  `_inbox` em 03/08)*
+- **Status:** 🔵 **arte produzida (02/08), com uma correção pendente antes de publicar.**
+- 🔴 **Correção necessária (v2): a arte diz "MESA".** O card traz a etiqueta **MESA** acima do
+  título "Inovações da IA para a Educação", mas na programação oficial isso é **Palestra**
+  (19/08, 16h30 — [`contexto/01-programacao.md`](../../../contexto/01-programacao.md)). O Mauro
+  não participa de nenhuma mesa-redonda. Trocar **MESA → PALESTRA** e regerar como `_v2`.
+  Há folga: publica só em 11/08.
+- ✅ **O resto bate com o previsto:** foto recortada e centralizada no padrão da série, linha de
+  credencial na versão longa ("Doutor pela Sorbonne, Paris, Professor do IFCE e do doutorado da
+  Fiocruz"), sem data e hora da fala na arte, CTA do site.
+- ✅ **Legenda escrita em 03/08** (Instagram, WhatsApp e alt text) em
+  [legendas.md](legendas.md#10--dr-mauro-oliveira--publicar-1108-fecha-a-série) e espelhada na
+  [página de aprovação](../../../aprovacao/cards-palestrantes.html).
 - **Por que é o último da série:** ficou em 11/08 justamente para dar o maior prazo possível
   até os dados dele chegarem. Ainda assim publica 4 dias antes do fim das inscrições (15/08).
 
@@ -255,12 +274,13 @@ do `_inbox`). Todos em **1080×1350**, conforme a spec. Arquivos em `cards/`.
 
 1. Os **2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") não vieram no lote. As legendas
    dos dois já estão prontas em [legendas.md](legendas.md), então é só a arte.
-2. O **card do Dr. Mauro Oliveira** (item 8 acima) — ✅ **arte produzida em 02/08**.
+2. O **card do Dr. Mauro Oliveira** (item 8 acima) — ✅ arte produzida em 02/08, mas
+   🔴 **precisa de v2: a arte diz "MESA" onde deveria dizer "PALESTRA"**.
 
 ## Depois de cada card pronto
 1. Salvar o PNG final na pasta do palestrante ou direto aqui em `palestrantes/`
    (convenção de nome no topo deste documento).
 2. Marcar ✅ nesta lista **e** atualizar a linha correspondente no
    [board de produção](../../../planejamento/board-producao.md).
-3. Legendas (Instagram + WhatsApp + alt text) **já prontas para os 9 cards** (7 individuais +
-   2 mesas) em [legendas.md](legendas.md) — só publicar.
+3. Legendas (Instagram + WhatsApp + alt text) **prontas para os 10 cards** (7 individuais +
+   2 mesas + Mauro Oliveira, escrita em 03/08) em [legendas.md](legendas.md) — só publicar.

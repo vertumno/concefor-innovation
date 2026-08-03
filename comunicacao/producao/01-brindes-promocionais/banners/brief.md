@@ -14,6 +14,58 @@
 > Ela reorganiza o rateio original da Viviane (que listava os eventos paralelos em segundo lugar)
 > para seguir o calendário — geral, dias em sequência, paralelos, andares.
 
+## ✅ Rodada de aprovação — reunião de 03/08/2026 (Elton + Juliana, 47 min)
+
+> Todos os banners do evento **já existem em versão para avaliação**. A Juliana está produzindo
+> **no Illustrator** (não no Canva), **no tamanho final de 0,90 × 1,20 m**, com os arquivos na
+> pasta do Drive, e alinhou o padrão visual **com a Andreia** antes de começar (seguiu o layout da
+> apresentação institucional dela, em vez de criar um padrão novo).
+> Síntese completa: [`contexto/reunioes/sintese-2026-08-03.md`](../../../../contexto/reunioes/sintese-2026-08-03.md).
+
+### O que ficou aprovado
+
+| Banner | Situação |
+|---|---|
+| **#01 Geral** | ✅ Aprovado com **um ajuste**. Nome do Cefor entrou no topo; **selo 20 anos vai embaixo** (em cima disputava com a marca do Concefor); **"Cefor · Vitória" fica** na peça. |
+| **#02 a #05 dias** | ✅ Aprovados com ajustes de acabamento. Fundo branco com box azul escuro, "20" sangrando na borda. |
+| **#06 Eventos paralelos** | ✅ **Aprovado sem ajuste.** O título propositalmente diferente, para não ter cara de "mais um dia", funcionou. |
+| **#07 a #10 andares** | 🟡 **É o que falta.** Confirmado que **os quatro são iguais**. O desenho do prédio precisa de outra rodada e sai depois dos demais. |
+
+### Ajustes a fazer
+
+- **#01:** a data passa a ler **"17 a 20" seguido de "agosto de 2026"**, na mesma sequência (a
+  quebra atual incomoda). E **conferir a fonte do "17 a 20"**, copiada de outra arte e diferente do
+  resto: comparar com a de "Tecnologia, Transformação e Educação a Distância", que está viva no
+  arquivo, não em curva.
+- **#02 a #05:** tirar o **quadrado da data no topo** (a informação se repete e aperta a peça) ·
+  padronizar o **espaçamento dos horários**, hoje inconsistente · **nada de "9h00"**, fica **"9h"
+  com tracinho** (os dois descartaram o zero-zero) · aliviar o peso da tipografia, trocando
+  **semibold por regular** onde couber.
+- **#05 (dia 20/08):** acrescentar **"Encerramento do Evento"** (Evento com E maiúsculo, sem
+  vírgula) antes do coffee-break, no horário das 16h30.
+- **#07 a #10:** tirar **"sala 5 e 6"** (numeração era chute) · **"laboratório" vira "laboratório
+  de informática"**, como aparece nos eventos paralelos · padronizar e **aumentar os números dos
+  pisos** (o "1" está maior que os outros) · abrir o **espaçamento entre andares** · deixar o
+  **desenho do prédio mais realista** e com menos ruído, para a informação ganhar destaque. Os
+  **ícones ficam**, como reforço visual.
+
+### Decisões e pontos que continuam abertos
+
+- 💡 **Destacar no banner o andar onde ele está pendurado** (ex.: box do andar em verde) foi
+  levantado e **não decidido**. Se for adotado, deixam de ser 4 impressões da mesma arte.
+- ❓ **O 3º piso não tem nenhuma atividade.** A Juliana acha estranho pulá-lo numa peça que fica no
+  prédio depois do evento; a orientação foi que **a prioridade é sinalizar o evento**, e servir aos
+  dois usos é bônus. **Sem definição.**
+- ⚠️ **Pedido expresso da Juliana: alguém precisa conferir as informações com calma antes de fechar
+  com a gráfica.** É muito conteúdo e um erro passa fácil.
+
+### Fluxo combinado
+
+1. Juliana ajusta **todos menos o do prédio** e avisa.
+2. Exporta em **JPG**.
+3. **Elton envia para a Viviane avaliar.**
+4. O banner do prédio vai **depois**, em separado.
+
 ## Identificação
 - **Peça:** 10 banners do VIII Concefor (+ 3 institucionais, fora do TR — ver [outro brief](../../02-pre-evento/banners-institucionais/brief.md))
 - **Fase:** brindes / impressão (item 2 do TR 72/2026)

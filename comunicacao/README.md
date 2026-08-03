@@ -63,16 +63,23 @@ comunicacao/
 
 ## Estado do momento (atualizar sempre)
 
-- **Hoje:** 29/07/2026 — faltam **19 dias** para a abertura (17/08).
+- **Hoje:** 03/08/2026 — faltam **14 dias** para a abertura (17/08).
 - **Cadência de publicação (definida em 27/07):** **um card por dia, em sequência, e só cards.**
   Os stories programados foram retirados do [calendário](planejamento/calendario-publicacao.md).
 - **Já no ar:** card do prazo de envio (16/07) · [Vanessa Battestin](https://www.instagram.com/p/DbF30gOOToU/) (21/07) ·
   [Felipe Tessarolo](https://www.instagram.com/p/DbF4cUPh-TT/) (24/07) ·
   [Mariano Pimentel](https://www.instagram.com/p/DbT3A9apgf0/) (27/07) ·
-  [Rutinelli Fávero](https://www.instagram.com/p/DbT4FRUJKh1/) (28/07).
-  **Agendados:** Márcia Oliveira (29/07) · Mariella Berger (30/07) · Jaqueline Sanz (31/07) —
-  artes liberadas, publicação programada. Com eles a série dos 7 individuais se fecha.
-- ✅ **Card do Mauro Oliveira PRODUZIDO (02/08).** Arte finalizada. Publica 11/08.
+  [Rutinelli Fávero](https://www.instagram.com/p/DbT4FRUJKh1/) (28/07) ·
+  [Márcia Oliveira](https://www.instagram.com/ifescefor/p/DbT5NHkJCqP/) (29/07) ·
+  [Mariella Berger](https://www.instagram.com/ifescefor/p/DbT43IkpyLd/) (30/07) ·
+  [Jaqueline Sanz](https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/) (31/07).
+  ✅ **A série dos 7 individuais está fechada.**
+- 🔴 **O feed está sem card desde 01/08.** Os dois cards de mesa ("Desafios da EaD", que era
+  01/08, e "Tecnologia Delas", 02/08) **não publicaram porque as artes nunca foram produzidas**.
+  As legendas dos dois estão prontas. É a peça mais atrasada da operação.
+- 🔵 **Card do Mauro Oliveira produzido (02/08)**, arquivado em `cards/` e com legenda escrita
+  (03/08). ⚠️ **Precisa de v2: a arte diz "MESA", mas é PALESTRA** (19/08, 16h30). Publica 11/08,
+  então há folga para corrigir.
 - **Inscritos:** **288** pela API do Even3 (16/07) — capacidade 400.
 - **Próximos prazos externos:** envio final dos trabalhos até **03/08 (Even3)** · inscrições até 15/08.
 - **Gráfica:** artes enviadas em 22/07. ✅ **Amostras dos brindes avaliadas e finalizadas em 28/07**
@@ -88,7 +95,11 @@ comunicacao/
   e-mail**, senão a definição não fica rastreável.
 - **Crachás vêm todos em branco** → os nomes viram **etiquetas adesivas**
   ([frente aberta em 27/07](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md)).
-  🔴 **Falta decidir quais etiquetas comprar e como imprimir os nomes** — **Alex** é o responsável.
+  ✅ **03/08 — a área livre foi medida no PDF final: 100 × 43,7 mm.** Isso descarta 3 das 5 opções
+  (as de 101,6 mm são mais largas que o crachá) e deixa **Pimaco A4360** (recomendada, folgada) ou
+  **A4362** (justa). [Medida visual](producao/01-brindes-promocionais/cracha/area-livre-etiqueta.png) ·
+  [mensagem pronta para o Alex](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md#-mensagem-pronta-para-o-alex-0308).
+  🔴 Falta **comprar** e definir **como será a impressão** — **Alex** é o responsável.
 - **Transmissão + Libras:** ✅ definido — **todas as palestras e mesas-redondas** (16/07).
 - **Aguardando da Márcia/Coordenação:** ✅ camisa (**opção 2**) e bloco **aprovados em 28/07** ·
   🔴 **hosts dos podcasts** ·
@@ -96,29 +107,42 @@ comunicacao/
   [notícia para a ACS](producao/02-pre-evento/noticia-acs/rascunho-noticia.md) ·
   atualização do **Even3** para espelhar o site (o app do evento lê de lá).
 - **Prioridades agora (por prazo):**
-  1. 🔴 **Artes dos 2 cards de mesa** — os 7 individuais acabam em 31/07 e a primeira mesa
-     publica em **01/08**. Legendas prontas, falta só a arte.
+  1. 🔴 **Artes dos 2 cards de mesa — ATRASADAS.** Deviam ter publicado em 01 e 02/08 e o feed
+     está parado desde então. Legendas prontas, falta só a arte.
   2. 👷 **Os 13 banners — produção com a Juliana.** Briefing entregue:
      [página de briefing](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/)
      ([fonte](briefing-banners/index.html)) — os **10 do evento** (#01 a #10) **+ os 3
      institucionais** (#11 livro · #12 Base de Conhecimentos · #13 MOOCs), cada um com o conteúdo
      pronto para copiar. Ela trabalha pela pasta **Artes Concefor 2026** no Drive, não por este repo.
-     ⏰ **Prazos: artes até 04/08 12h · gráfica entrega banners impressos 11/08.**
+     ⏰ **Prazos: artes até 04/08 12h (é amanhã) · gráfica entrega banners impressos 11/08.**
+     ✅ **03/08 — rodada de aprovação feita** (reunião de 47 min com a Juliana ·
+     [síntese](../contexto/reunioes/sintese-2026-08-03.md)): **todos os banners do evento já
+     existem**, feitos no Illustrator, no tamanho final. #06 passou sem ajuste; #01 a #05 saem com
+     ajustes de acabamento; **falta o de localização** (desenho do prédio), que vai depois.
+     Fluxo: ela ajusta → exporta em JPG → **Elton manda para a Viviane avaliar**.
+     ⚠️ **Ela pediu que alguém confira as informações com calma antes de fechar com a gráfica.**
+     🔴 **Os 3 institucionais saíram desta leva** (nenhuma arte foi feita): são outro fornecedor,
+     então o Elton vai
+     [renegociar a data com a Vanessa](producao/02-pre-evento/banners-institucionais/brief.md)
+     e a Andreia é candidata a assumir.
      ✍️ **Assinaturas desta edição:** Realização **Cefor** · Apoio **Ifes Campus Vila Velha e
      Educimat** — só essas logos.
-     ✅ **Banner #05 CONFIRMADO como dia 20/08** (02/08).
-     ✅ **Banner #06 (Eventos Paralelos) COMPLETO** — todas as informações em mãos.
-     🔴 Só o **#13** (falta o link dos MOOCs) segue parado.
-     [Brief dos 10](producao/01-brindes-promocionais/banners/brief.md) ·
+     [Brief dos 10, com os ajustes banner a banner](producao/01-brindes-promocionais/banners/brief.md) ·
      [Brief dos institucionais](producao/02-pre-evento/banners-institucionais/brief.md)
-  4. 🔴 **Etiquetas dos nomes do crachá** — **Alex** é o responsável. Decidir **quais comprar** e **como será a impressão**.
-     Ordem: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo →
-     testar numa amostra. Sugerido decidir até **04/08**.
+  3. 📸 **Cantinho instagramável — 🔴 sem dono, e a CGTE devolveu (03/08).** O Marquito pediu à
+     Juliana que pensasse o espaço, mas sem dizer onde, de que tamanho nem com que material.
+     A posição dela é que **o cantinho é da comissão organizadora, não da CGTE**. Elton leva à
+     comissão; ela pediu retorno **até 05/08**. 💡 Pista deixada: aproveitar a **arte do bolo**
+     que a Andreia está fazendo. [Síntese](../contexto/reunioes/sintese-2026-08-03.md)
+  4. 🔵 **Etiquetas dos nomes do crachá** — **Alex** é o responsável. ✅ A medida saiu (03/08) e a
+     escolha caiu para duas opções, com recomendação. Falta **comprar** (sugerido até 04/08) e
+     definir **como será a impressão**; testar numa amostra quando os 400 chegarem (07/08).
      [Brief](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md)
   5. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
      (vídeo-convite **+ material para o app**) — prazo interno era 18/07 e o retorno é 03/08.
   6. ✅ ~~Conferir a 3ª leva de artes da gráfica~~ — **caneta, copo e bolsa aprovados em 02/08**.
-  7. ✅ ~~**Card do Mauro Oliveira**~~ — **arte produzida em 02/08**, publica 11/08.
+  7. 🔵 **Card do Mauro Oliveira** — arte produzida em 02/08 e legenda pronta, mas
+     **precisa de v2 (MESA → PALESTRA)** antes de publicar em 11/08.
   8. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
 - **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
 
