@@ -11,7 +11,7 @@
 
 ## 🔴 Decisão pendente (reaberta em 28/07)
 
-**Duas perguntas ainda sem resposta, e uma depende da outra:**
+**Duas perguntas ainda sem resposta, e uma depende da outra — Responsável: Alex:**
 
 1. **Quais etiquetas comprar?** → depende de medir a área livre do crachá e achar um gabarito A4
    que exista à venda.
@@ -22,7 +22,7 @@
 Entre uma coisa e outra é preciso comprar (prazo de entrega da papelaria), imprimir uma folha de
 teste, colar numa amostra e só então rodar as 400 — e ainda sobra a reimpressão de quem se
 inscrever depois de 15/08. **Sugestão de data-limite para decidir: 04/08**, para o teste caber na
-semana da entrega. `[confirmar a data com o Marquito/Andreia]`
+semana da entrega. **Responsável: Alex.**
 
 ## As três tarefas
 
@@ -56,6 +56,18 @@ O crachá é **10 × 14 cm**. A etiqueta precisa:
 
 **Ordem certa de resolver:** medir a área livre do crachá impresso → procurar o gabarito de
 etiqueta comercial mais próximo → só então comprar → só então gerar o arquivo.
+
+### 📊 Opções Comerciais Mapeadas (para decisão do Alex)
+
+| Código / Modelo | Dimensões (mm) | Etiquetas por Folha | Formato | Indicação |
+|---|---|---|---|---|
+| **Pimaco 6183** | 50,8 × 101,6 mm | 10 por folha | Carta | **Recomendada para crachá maior**: excelente espaço para Nome + Sobrenome + Instituição em destaque. |
+| **Pimaco 6182** | 33,9 × 101,6 mm | 14 por folha | Carta | **Ótima para crachás padrão**: largura de 10 cm acomoda nomes longos sem cortar. |
+| **Pimaco A4362** | 33,9 × 99,0 mm | 16 por folha | Folha A4 | **Formato A4 nativo**: ótima compatibilidade com impressoras jato de tinta/laser comuns. |
+| **Pimaco 6181** | 25,4 × 101,6 mm | 20 por folha | Carta | Modelo mais estreito, para áreas de nome com menor altura. |
+| **Pimaco 6180** | 25,4 × 66,7 mm | 30 por folha | Carta | Etiqueta padrão menor; adequada apenas se a área limpa do crachá for compacta. |
+
+> 💡 **Dica de impressão:** Todos os gabaritos oficiais (.doc / .pdf) estão disponíveis gratuitamente nos sites da Pimaco, Tilibra e Colacril. No Microsoft Word ou gerador de PDF, certifique-se de configurar a escala em **100% / Tamanho Real** (nunca "ajustar à página") e fazer o teste prévio imprimindo em folha sulfite comum e sobrepondo ao crachá contra a luz.
 
 > ⚠️ **Testar antes de rodar as 400.** Imprimir uma folha, colar numa amostra de crachá e
 > conferir alinhamento, legibilidade e se o adesivo gruda no papel fotográfico fosco.

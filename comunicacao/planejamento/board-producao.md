@@ -31,11 +31,11 @@
 |---|---|---|---|---|
 | Arte **camisas** (Concefor, Cefor, Educimat + apoiadores) | 100 un · sublimada frente e costas · **grade final (29/07): PP 2 · P 20 · M 30 · G 28 · GG 16 · XG 2 · XXG 2 = 100** | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** — **opção 2** (Concefor + selo 20 anos na frente) |
 | Arte **blocos** (selo 20 anos) | 250 un · 148,5 × 210 mm · capa e contracapa | Andreia | antes de 07/08 | ✅ **APROVADA em 28/07** |
-| Arte **bolsa de algodão** | 400 un · 280 × 350 × 80 mm · estampa colorida | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — alinhamento e tamanho das logos; enviado arquivo de referência. Aguardando nova montagem |
-| Arte **canetas** | 400 un · **branca** (~~azul~~ — ✅ aval da comissão em 28/07) · logo só "Concefor" | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — logo simplificada. Aguardando nova montagem |
-| Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | Gráfica *(monta)* | antes de 07/08 | 🔵 **ajuste pedido em 28/07** — selo 20 anos no lado oposto ao Concefor e um pouco maior. Aguardando nova montagem |
+| Arte **bolsa de algodão** | 400 un · 280 × 350 × 80 mm · estampa colorida | Gráfica *(monta)* | antes de 07/08 | ✅ **APROVADA (02/08)** — ajustes de alinhamento e tamanho das logos atendidos |
+| Arte **canetas** | 400 un · **branca** (~~azul~~ — ✅ aval da comissão em 28/07) · logo só "Concefor" | Gráfica *(monta)* | antes de 07/08 | ✅ **APROVADA (02/08)** — logo simplificada ok |
+| Arte **copo bucks ecológico** 🆕 | 400 un · c/ tampa · fibra de arroz/coco/trigo · 400 ml | Gráfica *(monta)* | antes de 07/08 | ✅ **APROVADO (02/08)** — selo 20 anos no lado oposto, tamanho ok |
 | Arte **crachá credencial** ✅ *(necessidade confirmada pelo TR)* | 400 un · 10 × 14 cm · papel fotográfico fosco 240 g · cordão de poliéster | ___ | antes de 07/08 | ✅ **APROVADA em 28/07** (arte enviada em 22/07); modelo de lote pronto no Canva |
-| Arte **banners** (10 un · 0,90 × 1,20 m) | 10 un · 0,90 × 1,20 m · **rateio definido em 28/07** · **Realização: Cefor · Apoio: Ifes Vila Velha e Educimat** | **Andreia** *(desde 28/07)* | **31/07** *(definido em 29/07)* | 🟡 **em produção com a Andreia** — [briefing visual](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/) (13 banners: estes 10 + os 3 institucionais) · [brief](../producao/01-brindes-promocionais/banners/brief.md) · trabalho no Drive, pasta **Artes Concefor 2026** |
+| Arte **banners** (10 un · 0,90 × 1,20 m) | 10 un · 0,90 × 1,20 m · **rateio definido em 28/07** · **Realização: Cefor · Apoio: Ifes Vila Velha e Educimat** | **Juliana** *(desde 02/08)* | **artes até 04/08 12h** · gráfica entrega **11/08** | 🟡 **em produção com a Juliana** — [briefing visual](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/) (13 banners: estes 10 + os 3 institucionais) · [brief](../producao/01-brindes-promocionais/banners/brief.md) · trabalho no Drive, pasta **Artes Concefor 2026** |
 
 > 📤 **Artes enviadas à gráfica em 22/07** (e-mail em
 > [`_especificacoes/email-grafica-envio-artes.md`](../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md)):
@@ -60,7 +60,7 @@
 > WhatsApp não deixa rastro e a coordenação não acompanha.
 > ✅ **Caneta branca: a comissão deu o aval** (28/07). O TR contratou caneta azul; a troca está
 > chancelada, não é divergência em aberto.
-> **Aguardando da gráfica:** as três montagens refeitas, com folga sobre 07/08.
+> ✅ **02/08 — TUDO APROVADO.** As três montagens (caneta, copo e bolsa) foram aprovadas.
 
 > 🪪 **Crachás: todos vêm em branco (definido 22/07, por telefone com a gráfica).** A produção é em
 > impressão gráfica, não digital, então **não existe personalização com o nome**. Os 400 chegam sem
@@ -107,7 +107,7 @@
 > | 02 | **Dia 17/08** — programação com data, horário e atividade *(sem local)* | |
 > | 03 | **Dia 18/08** — idem | |
 > | 04 | **Dia 19/08** — idem | |
-> | 05 | **Dia `[confirmar]`** | a lista traz "18/08" duas vezes; provavelmente é **20/08** |
+> | 05 | **Dia 20/08** | ✅ **confirmado em 02/08** — é o dia 20/08 (Encerramento) |
 > | 06 | **Eventos paralelos** (os 6 do dia 20/08) | ✅ **destravado em 29/07** — todos os locais definidos e o evento do Educimat completo |
 > | 07–10 | **Locais do Cefor** — 🔁 **uma arte só, 4 impressões** (os quatro são iguais: Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório) | **sem a logo do Concefor e sem selo**, para ficarem no prédio depois do evento |
 > | 11–13 | **Institucionais** — livro dos 20 anos · Base de Conhecimentos · MOOCs | fora do TR, pagos pela UAB · **arte única para os três** · prazo 01/08 |
@@ -134,21 +134,19 @@
 > ✅ **29/07 — quase nada trava mais.** Os banners de programação (02 a 05) **deixaram de levar o
 > local das atividades**, o que encerrou as lacunas de sala; e os eventos paralelos fecharam.
 >
-> | O que falta | Fecha qual banner |
-> |---|---|
-> | **Confirmar o banner 05** (a lista traz 18/08 duas vezes) | **05** |
+> ✅ **02/08 — Banner #05 CONFIRMADO como dia 20/08.** Não há mais banners travados por confirmação.
+> ✅ **02/08 — Banner #06 (Eventos Paralelos) COMPLETO** — todas as informações necessárias em mãos.
 >
-> 🔴 Só o **06** depende de terceiro fora da Coordenação: a programação da **Aula Inaugural do
-> Educimat** — e por isso ele já está definido como o **último a imprimir**.
->
-> ⏰ **A conta do prazo:** entrega contratada em 07/08, evento em 17/08. As outras peças foram
-> para a gráfica em 22/07 e mesmo assim voltaram para ajuste — estas ainda não começaram.
+> 🟡 **Produção agora com a Juliana** (desde 02/08). Prazo combinado com a gráfica: **04/08 até 12h**.
+> Gráfica prometeu entregar os banners impressos em **11/08**.
+
+> ⏰ **A conta do prazo:** entrega contratada em 07/08, evento em 17/08. Artes devem chegar à gráfica até 04/08 12h; gráfica entrega 11/08.
 
 ### Fora do TR
 | Peça | Situação | Responsável | Prazo | Status |
 |---|---|---|---|---|
-| 🏷️ **Etiquetas com os nomes** (crachá) | 🔴 **duas decisões em aberto (reforçado em 28/07): quais etiquetas comprar e como será a impressão dos nomes.** Sequência obrigatória: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo → testar numa amostra. [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) | ___ | **decidir até 04/08** *(sugerido)*; testar antes da entrega dos 400; imprimir até a véspera de 17/08 | 🔴 |
-| **Banners institucionais** — livro dos 20 anos, Base de Conhecimentos, MOOCs | 👷 **29/07: os TRÊS foram para a Andreia**, junto com os 10 do TR — 13 no total ([briefing](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#institucionais), banners 11 a 13). ✅ **Decidido: arte única, um template para os três.** À parte, **pagos pela UAB**. Links: Base ✅ `conhecimento.cefor.ifes.edu.br` · livro provisório · **MOOCs 🔴 sem link — única trava**. [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | **Andreia** / UAB *(custeio)* | **livro e Base: 01/08 · MOOCs: 03/08** → Vanessa leva à gráfica na volta das férias | 🟡 |
+| 🏷️ **Etiquetas com os nomes** (crachá) | 🔴 **duas decisões em aberto (reforçado em 28/07): quais etiquetas comprar e como será a impressão dos nomes.** Sequência obrigatória: medir a área livre do crachá → achar o gabarito à venda → comprar → gerar o arquivo → testar numa amostra. [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) | **Alex** | **decidir até 04/08** *(sugerido)*; testar antes da entrega dos 400; imprimir até a véspera de 17/08 | 🔴 |
+| **Banners institucionais** — livro dos 20 anos, Base de Conhecimentos, MOOCs | 👷 **Produção com a Juliana** (desde 02/08), junto com os 10 do TR — 13 no total ([briefing](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#institucionais), banners 11 a 13). ✅ **Decidido: arte única, um template para os três.** À parte, **pagos pela UAB**. Links: Base ✅ `conhecimento.cefor.ifes.edu.br` · livro provisório · **MOOCs 🔴 sem link — única trava**. [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | **Juliana** / UAB *(custeio)* | **artes até 04/08 12h** · gráfica entrega **11/08** | 🟡 |
 | **Fundo de palco** | 🔴 citado na descrição do TR mas **sem item contratado** — confirmar | ___ | ___ | ⬜ |
 | ~~Arte **squeezes**~~ | ❌ **CANCELADO (28/07): não será produzido.** O **copo bucks** ocupou o lugar — é ele que vai no kit. Encerra a dúvida aberta desde 20/07 | — | — | ❌ |
 | Arte **bolo** comemoração (20 anos do Cefor) | não é item de gráfica; alinhar com quem fornece o bolo | **Andreia** | ___ | ⬜ |
@@ -170,7 +168,7 @@
 | Card palestrante — Jaqueline Sanz — arte liberada | Elton | publicar 31/07 | 🔵 |
 | Card mesa "Desafios da EaD" — **arte ainda não produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton | publicar **01/08** (sáb) | ⬜ **próxima arte a fazer** |
 | Card mesa "Tecnologia Delas" — **arte ainda não produzida** (legenda pronta) | Elton | publicar **02/08** (dom) | ⬜ |
-| Card palestrante — Mauro Oliveira — ✅ **desbloqueado em 28/07**: chegaram foto oficial e minibio. Falta produzir a arte e escrever a legenda. [Infos para o card](../producao/02-pre-evento/palestrantes/painel-producao-cards.md) | Elton | publicar 11/08 (último da série) | ⬜ |
+| Card palestrante — Mauro Oliveira — ✅ **arte produzida (02/08)**. [Infos para o card](../producao/02-pre-evento/palestrantes/painel-producao-cards.md) | Elton | publicar 11/08 (último da série) | 🔵 **arte pronta** |
 | Mensagem aos palestrantes (pedido de vídeo **+ material para o app**) | Elton | ⚠️ prazo era **18/07** — sem registro de envio; retorno esperado 03/08 | 🔴 |
 | Vídeos-convite dos palestrantes (receber até 03/08) | Elton *(a princípio)* | reels 08–14/08 | ⬜ |
 | Cards eventos paralelos — ✅ **6 eventos completos em 29/07** (todos com local; Educimat entrou com nome oficial). **Publicar tudo junto** após liberação da Márcia | Elton *(a princípio)* | sugerido 04/08 | ⬜ |

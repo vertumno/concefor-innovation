@@ -14,7 +14,7 @@
 | Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | ⬜ |
 | Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | ⬜ |
-| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ✅ *(28/07, precisa recorte)* | ⬜ **produzir** | ⬜ | ⬜ |
+| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ✅ *(28/07, precisa recorte)* | ✅ **produzido (02/08)** | ⬜ | ⬜ |
 
 > ✅ Fotos oficiais dos 7 recebidas em 16/07/2026 →
 > `producao/02-pre-evento/palestrantes/_refs/fotos/` (PNG, nome = nome do palestrante).

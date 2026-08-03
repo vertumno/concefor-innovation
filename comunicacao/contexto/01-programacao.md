@@ -114,5 +114,5 @@
   Mariano Pimentel (IA) e Mauro Oliveira (IA na educação).
 - **2 mesas-redondas:** "Tecnologia Delas" e "Desafios da EaD para os próximos 20 anos".
 - **Premiação** (20/08): fechamento com foto e divulgação dos vencedores.
-- ⚠️ **Mauro Oliveira precisa de peça.** Não temos foto, minibio nem card dele. Ver
+- ✅ ~~**Mauro Oliveira precisa de peça.**~~ Card produzido em 02/08. Publica 11/08.
   [03-palestrantes.md](03-palestrantes.md).

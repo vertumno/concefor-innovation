@@ -4,7 +4,7 @@
 > esta peça desde 20/07 está resolvida: sabemos o que é cada um dos 10.
 > Falta produzir as artes — é o **último item do TR sem arte**.
 >
-> 👷 **Produção com a Andreia (28/07).** O briefing entregue a ela é a página
+> 👷 **Produção com a Juliana (02/08).** O briefing entregue a ela é a página
 > https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/
 > ([fonte](../../../briefing-banners/index.html)), que soma aos 10 deste brief os **3 banners
 > institucionais** (livro dos 20 anos, Base de Conhecimentos e MOOCs) — **13 no total**.
@@ -19,7 +19,7 @@
 - **Fase:** brindes / impressão (item 2 do TR 72/2026)
 - **Formato:** **0,90 × 1,20 m**, coloridos — medida contratada
 - **Quantidade:** 10 (R$ 85,00/un · R$ 850,00)
-- **Responsável:** **Andreia** *(desde 28/07)*
+- **Responsável:** **Juliana** *(desde 02/08)*
 - **Prazo das artes: 31/07** *(definido em 29/07)* — a entrega contratada da gráfica é 07/08
 - **Status:** 🟡 Em produção
 - **Assinaturas (29/07):** **Realização:** Cefor · **Apoio:** Ifes Campus Vila Velha e Educimat.
@@ -33,7 +33,7 @@
 | 02 | **Dia 17/08** | Programação do dia: **data · horário · atividade** *(sem local)* | [2024](_refs/banner-eventos-paralelos-concefor-2024.jpeg) |
 | 03 | **Dia 18/08** | idem | idem #02 |
 | 04 | **Dia 19/08** | idem | idem #02 |
-| 05 | **Dia 20/08** `[confirmar]` | ⚠️ A lista da Viviane traz "18/08" **duas vezes**. Como o dia 20 é o único sem banner próprio, assume-se que este seja o **20/08** (que tem premiação às 16h e momento cultural). **Confirmar antes de desenhar** | idem #02 |
+| 05 | **Dia 20/08** | ✅ **confirmado em 02/08** | idem #02 |
 | 06 | **Eventos paralelos** | Os **6 eventos do dia 20/08**, com local e horário. ✅ **Destravado em 29/07:** todos os locais definidos e o evento do Educimat completo | idem #02 |
 | 07–10 | **Locais do Cefor** — 🔁 **uma arte só, 4 impressões** | Os quatro são **iguais**: lista Térreo/Pátio · 1º/Salas 1 e 2 · 2º/Salas 3 e 4 · 4º/Auditório e Laboratório. Uma cópia por andar | — |
 
@@ -81,17 +81,17 @@ são seis eventos simultâneos em espaços diferentes, e todos já estão defini
 
 | # | Falta | Onde resolver | Estado |
 |---|---|---|---|
-| 1 | **Confirmar o banner #05** (18/08 repetido × 20/08) | Viviane | 🟡 **perguntado, aguardando resposta** |
+| 1 | ~~**Confirmar o banner #05** (18/08 repetido × 20/08)~~ | ~~Viviane~~ | ✅ **confirmado em 02/08 — é dia 20/08** |
 | ~~2~~ | ~~**Locais das atividades**~~ → ✅ **resolvido em 29/07:** os banners de dia não levam local | — | ✅ |
 | ~~3~~ | ~~**Locais dos eventos paralelos**~~ → ✅ **resolvido em 29/07:** todos definidos | — | ✅ |
 | ~~4~~ | ~~**Educimat**~~ → ✅ **resolvido em 29/07:** o evento entrou completo — *EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas*, 13h30–16h, **Pátio**, com Edmar Reis Thiengo e Ana Raquel Santos de Medeiros Garcia. **O #06 deixou de ser o último a imprimir** | — | ✅ |
 
 > ✅ **Nada trava #01, #02, #03, #04, #06 e #07–#10.** São **9 dos 10**, em 6 artes.
-> Só o **#05** espera a confirmação de qual dia ele é.
+> ✅ **Banner #05 confirmado como dia 20/08 (02/08).** Só o #13 (MOOCs) segue parado.
 
 ## Onde a produção acontece (Drive)
 
-- 📂 **Pasta de trabalho da Andreia — "Artes Concefor 2026":**
+- 📂 **Pasta de trabalho da Juliana — "Artes Concefor 2026":**
   https://drive.google.com/drive/folders/1Qtm4qtGLQsV4svTGmPeBNx1SwfTCkdak?usp=sharing
   — editáveis, artes finais e arquivos de marca. **Ela não acessa este repositório**; tudo que ela
   precisa tem que estar lá.
@@ -132,7 +132,7 @@ são seis eventos simultâneos em espaços diferentes, e todos já estão defini
 - Arquivos finais:
 
 ## Checklist final
-- [ ] Banner #05 confirmado (18/08 × 20/08)
+- [x] Banner #05 confirmado (dia 20/08 — 02/08)
 - [x] **Palestras e mesas-redondas: Pátio** *(28/07)*
 - [ ] Locais das demais atividades dos dias 17 a 20 obtidos *(pedido à Viviane em 28/07)*
 - [ ] Locais dos eventos paralelos fechados

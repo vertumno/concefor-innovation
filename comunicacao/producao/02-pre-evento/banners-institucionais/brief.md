@@ -1,6 +1,6 @@
 # Brief — Banners institucionais (livro · MOOCs · Base de Conhecimentos)
 
-> 👷 **29/07 — os TRÊS banners foram passados para a Andreia**, junto com os 10 do TR (13 no
+> 👷 **02/08 — os TRÊS banners foram passados para a Juliana**, junto com os 10 do TR (13 no
 > total). O briefing dela é a página
 > [briefing-banners](https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/#institucionais),
 > onde eles aparecem como **11 (livro) · 12 (Base de Conhecimentos) · 13 (MOOCs)**.
@@ -19,7 +19,7 @@
 - **Peça:** 3 banners impressos — (1) Livro do Cefor, (2) Plataforma de MOOCs (nova vitrine), (3) nova versão da Base de Conhecimentos
 - **Fase:** pré-evento (exposição durante o Concefor; **permanecem no Cefor depois**)
 - **Formato:** banner impresso (dimensões a confirmar com a gráfica)
-- **Responsável:** **Andreia** *(desde 29/07)* · solicitante: Vanessa Battestin — e-mail de 14/07, ver `_refs/`
+- **Responsável:** **Juliana** *(desde 02/08)* · solicitante: Vanessa Battestin — e-mail de 14/07, ver `_refs/`
 - **Onde produzir:** pasta **Artes Concefor 2026** no Drive —
   https://drive.google.com/drive/folders/1Qtm4qtGLQsV4svTGmPeBNx1SwfTCkdak?usp=sharing
 - **Prazos (29/07):** **#11 livro e #12 Base de Conhecimentos até 01/08** · **#13 vitrine de

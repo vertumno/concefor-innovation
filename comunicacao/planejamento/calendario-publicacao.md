@@ -28,8 +28,8 @@
 | 01/08 *(sáb)* | Card mesa — "Desafios da EaD para os próximos 20 anos" (Rutinelli + Felipe Tessarolo) | Feed | ⬜ **arte a produzir** |
 | 02/08 *(dom)* | Card mesa — "Tecnologia Delas" (as três juntas) | Feed | ⬜ **arte a produzir** |
 | 03/08 | Marco: prazo de envio final (Even3) + prazo interno dos vídeos | — | ⬜ |
-| 04/08 | Eventos paralelos — carrossel dos 5 satélites | Feed | ⬜ aguardando Educimat |
-| 11/08 | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | ⬜ **desbloqueado 28/07** — falta arte e legenda |
+| 04/08 | Eventos paralelos — carrossel dos 6 eventos | Feed | ⬜ ✅ todos os dados completos |
+| 11/08 | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | 🔵 **arte produzida (02/08)** |
 | ~~01/08~~ | ~~Reforço: últimos dias do prazo de envio~~ | ~~Story~~ | ❌ retirado em 27/07 (só cards) |
 
 > ⚠️ **01/08 é sábado e 02/08 é domingo.** A sequência diária cai neles. Se a preferência for
@@ -78,7 +78,7 @@ stories — ficam de pé em qualquer opção.
   com a cadência diária a primeira vence em **01/08**. Legendas prontas; falta só a arte.
 - Decidir o destino da **contagem regressiva** (bloco acima).
 - Decidir se a sequência diária **pula fim de semana** (01–02/08).
-- Aula Inaugural do Educimat (evento paralelo) — aguardando informações da Márcia.
+- ~~Aula Inaugural do Educimat (evento paralelo)~~ → ✅ **completo (29/07)**.
 - Vídeos-convite dos palestrantes — receber até 03/08 (**mensagem de solicitação ainda não
   consta como enviada**).
-- ~~Foto e minibio do Dr. Mauro Oliveira~~ → ✅ chegaram em 28/07; falta produzir arte e legenda.
+- ~~Foto e minibio do Dr. Mauro Oliveira~~ → ✅ chegaram em 28/07; ✅ **arte produzida em 02/08**.

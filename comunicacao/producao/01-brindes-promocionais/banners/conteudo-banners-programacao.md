@@ -66,8 +66,7 @@ UAB/UnAC e o **Encontro dos NTEs dos Ifes** são atividades distintas.
 ---
 
 ## Banner 05 · **20 AGO** — quinta-feira · Encerramento
-> ⚠️ `[confirmar]` — a lista da Viviane repete "18/08" no item 6. Este esqueleto assume **20/08**,
-> que é o único dia sem banner próprio. Se a resposta for outra, refazer este bloco.
+> ✅ **Confirmado em 02/08** — é o dia 20/08.
 
 | Horário | Atividade |
 |---|---|

@@ -1,6 +1,6 @@
 # Banners — 10 unidades · 0,90 × 1,20 m (TR 72/2026)
 
-> 📄 **Briefing visual para quem vai produzir (Andreia):**
+> 📄 **Briefing visual para quem vai produzir (Juliana):**
 > https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/
 > — reúne os 10 + o banner do livro dos 20 anos, com conteúdo linha a linha, regras de marca,
 > referências, arquivos e pendências. Fonte: [`../../../briefing-banners/index.html`](../../../briefing-banners/index.html).
@@ -11,8 +11,8 @@
 | # | Banner |
 |---|---|
 | 1 | Concefor Geral |
-| 2 | Eventos paralelos (dia 20/08) — *imprimir por último, esperando o Educimat* |
-| 3–6 | Programação por dia (17, 18, 19 e `[confirmar]` o quarto) — data · horário · local. **Conteúdo pronto:** [`conteudo-banners-programacao.md`](conteudo-banners-programacao.md) |
+| 2 | Eventos paralelos (dia 20/08) — ✅ **completo** |
+| 3–6 | Programação por dia (17, 18, 19 e **20/08 ✅ confirmado**) — data · horário · local. **Conteúdo pronto:** [`conteudo-banners-programacao.md`](conteudo-banners-programacao.md) |
 | 7–10 | Locais do Cefor, um por andar — **sem a logo do Concefor**, para ficarem no prédio depois |
 
 Brief das placas de sinalização (peça relacionada): [`../placas-sinalizacao/`](../placas-sinalizacao/).

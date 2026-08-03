@@ -29,7 +29,7 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 | 5 | 31/07 | Dra. Márcia Oliveira | Mesa "Tecnologia Delas" (18/08) + Coordenadora Geral | ⬜ |
 | 6 | 04/08 | Dra. Mariella Berger | Mesa "Tecnologia Delas" (18/08) | ⬜ |
 | 7 | 06/08 | Dra. Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ⬜ |
-| 8 | 11/08 | Dr. Mauro Oliveira | Palestra "Inovações da IA para a Educação" (19/08, 16h30) | 🆕 sem foto, sem minibio |
+| 8 | 11/08 | Dr. Mauro Oliveira | Palestra "Inovações da IA para a Educação" (19/08, 16h30) | ✅ arte produzida (02/08) |
 
 ## Cronograma — Cards das mesas (sessões)
 > Além dos cards individuais, cada **mesa-redonda** ganha seu card, promovendo a sessão como um todo.
@@ -73,7 +73,7 @@ público. Publicados como reels na reta final, intercalados com a contagem regre
 - [x] Dra. Rutinelli confirmada na mesa "Desafios da EaD para os próximos 20 anos" (19/08, 9h30)
 - [x] Felipe Tessarolo confirmado na mesa "Desafios da EaD para os próximos 20 anos" (16/07)
 - [x] Confirmar a composição da mesa "Desafios da EaD": fechada em 21/07 com Rutinelli e Felipe Tessarolo
-- [ ] Pedir foto oficial, minibio e Instagram do **Dr. Mauro Oliveira** (entrou na programação em 21/07)
+- [x] Pedir foto oficial, minibio e Instagram do **Dr. Mauro Oliveira** (entrou na programação em 21/07) — ✅ recebidos em 28/07; ✅ arte produzida em 02/08
 - [x] Definir a data de publicação do card do Mauro Oliveira: **11/08**, último da série (decidido em 21/07, para dar prazo aos dados dele chegarem)
 - [ ] Definir quem envia a mensagem de solicitação de vídeo (sugestão: coordenação geral,
       por dar peso institucional — com apoio da CGTE)

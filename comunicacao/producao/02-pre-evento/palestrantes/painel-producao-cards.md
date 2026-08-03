@@ -147,7 +147,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
   Arte atual: nome + "Coordenadora do Atlas das Mulheres do ES, Secretaria Estadual das Mulheres
   (SESM) e Incaper". V1 e v2 apagadas.
 
-## 8 · Dr. Mauro Oliveira · publicar 11/08 — ✅ DESBLOQUEADO 28/07
+## 8 · Dr. Mauro Oliveira · publicar 11/08 — ✅ ARTE PRODUZIDA (02/08)
 
 > ✅ **Foto e minibio chegaram em 28/07.** Dados completos e fontes em
 > [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md#dr-mauro-oliveira).
@@ -170,9 +170,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 - **Credenciais mais fortes para a legenda:** doutorado em Informática na **Sorbonne**,
   pós-doutorados no **King's College London** e na **Ottawa University**, e passagem como
   **Secretário de Telecomunicações do Ministério das Comunicações**.
-- **Arquivo:** ainda não existe → `2026-XX-XX_pre_card_palestrante-mauro-oliveira_v1.png`
-- **Status:** ⬜ **a produzir** — arte e legenda. É o único dos 8 sem legenda escrita
-  ([legendas.md](legendas.md) cobre os outros 7 + as 2 mesas).
+- **Status:** ✅ **arte produzida (02/08)** — pronta para publicar em 11/08.
 - **Por que é o último da série:** ficou em 11/08 justamente para dar o maior prazo possível
   até os dados dele chegarem. Ainda assim publica 4 dias antes do fim das inscrições (15/08).
 
@@ -257,8 +255,7 @@ do `_inbox`). Todos em **1080×1350**, conforme a spec. Arquivos em `cards/`.
 
 1. Os **2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") não vieram no lote. As legendas
    dos dois já estão prontas em [legendas.md](legendas.md), então é só a arte.
-2. O **card do Dr. Mauro Oliveira** (item 8 acima) — ✅ **desbloqueado em 28/07**, com foto e
-   minibio em mãos. Falta a arte (com recorte da foto) e a legenda.
+2. O **card do Dr. Mauro Oliveira** (item 8 acima) — ✅ **arte produzida em 02/08**.
 
 ## Depois de cada card pronto
 1. Salvar o PNG final na pasta do palestrante ou direto aqui em `palestrantes/`
