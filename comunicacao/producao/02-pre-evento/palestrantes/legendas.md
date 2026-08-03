@@ -255,7 +255,7 @@ Card do VIII Concefor com fotos da Dra. Márcia Oliveira, Dra. Mariella Berger A
 
 ---
 
-## 10 · Dr. Mauro Oliveira · publicar 11/08 *(fecha a série)*
+## 10 · Dr. Mauro Oliveira · ✅ publicado 03/08 → https://www.instagram.com/ifescefor/p/DblPpaYuAN9/
 
 > Fonte única dos dados: [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md#dr-mauro-oliveira).
 > Instagram dele ainda `[a confirmar]`, por isso a legenda vai sem @handle.

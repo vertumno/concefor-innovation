@@ -77,9 +77,10 @@ comunicacao/
 - 🔴 **O feed está sem card desde 01/08.** Os dois cards de mesa ("Desafios da EaD", que era
   01/08, e "Tecnologia Delas", 02/08) **não publicaram porque as artes nunca foram produzidas**.
   As legendas dos dois estão prontas. É a peça mais atrasada da operação.
-- 🔵 **Card do Mauro Oliveira produzido (02/08)**, arquivado em `cards/` e com legenda escrita
-  (03/08). ⚠️ **Precisa de v2: a arte diz "MESA", mas é PALESTRA** (19/08, 16h30). Publica 11/08,
-  então há folga para corrigir.
+- ✅ **Card do Mauro Oliveira publicado em 03/08** ([post](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/)), **antecipado de 11/08** para o
+  feed não passar mais um dia vazio. **Com ele, os 8 cards de palestrante estão no ar.**
+  ⚠️ Foi ao ar com a **v1, que diz "MESA"** onde a atividade é **palestra**; a legenda publicada
+  está correta.
 - **Inscritos:** **288** pela API do Even3 (16/07) — capacidade 400.
 - **Próximos prazos externos:** envio final dos trabalhos até **03/08 (Even3)** · inscrições até 15/08.
 - **Gráfica:** artes enviadas em 22/07. ✅ **Amostras dos brindes avaliadas e finalizadas em 28/07**
@@ -141,8 +142,7 @@ comunicacao/
   5. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
      (vídeo-convite **+ material para o app**) — prazo interno era 18/07 e o retorno é 03/08.
   6. ✅ ~~Conferir a 3ª leva de artes da gráfica~~ — **caneta, copo e bolsa aprovados em 02/08**.
-  7. 🔵 **Card do Mauro Oliveira** — arte produzida em 02/08 e legenda pronta, mas
-     **precisa de v2 (MESA → PALESTRA)** antes de publicar em 11/08.
+  7. ✅ ~~**Card do Mauro Oliveira**~~ — **publicado em 03/08**, antecipado de 11/08.
   8. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
 - **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
 

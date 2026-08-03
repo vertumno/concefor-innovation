@@ -34,9 +34,10 @@
 > artes de mesa nunca foram produzidas, então o feed está **sem card desde 01/08**. As legendas
 > dos dois estão prontas em
 > [legendas.md](../producao/02-pre-evento/palestrantes/legendas.md#8--mesa-desafios-da-ead-para-os-próximos-20-anos--publicar-0108).
-> Assim que as artes saírem, a fila é: mesa "Desafios da EaD" → mesa "Tecnologia Delas" →
-> carrossel dos eventos paralelos → Mauro Oliveira (11/08).
-| 11/08 | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | 🔵 arte produzida (02/08) · legenda pronta (03/08) · 🔴 **v2: trocar "MESA" por "PALESTRA"** |
+> O **card do Mauro foi antecipado para 03/08** justamente para o feed não passar mais um dia
+> vazio, e com ele os 8 cards de palestrante estão no ar. Assim que as artes das mesas saírem, a
+> fila é: mesa "Desafios da EaD" → mesa "Tecnologia Delas" → carrossel dos eventos paralelos.
+| **03/08** *(era 11/08)* | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | ✅ [publicado](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/) — **antecipado** porque o feed estava parado desde 01/08. Foi ao ar com a v1, que traz "MESA" em vez de "PALESTRA" |
 | ~~01/08~~ | ~~Reforço: últimos dias do prazo de envio~~ | ~~Story~~ | ❌ retirado em 27/07 (só cards) |
 
 > ⚠️ **01/08 é sábado e 02/08 é domingo.** A sequência diária cai neles. Se a preferência for

@@ -190,7 +190,7 @@
 | Card palestrante — Jaqueline Sanz | Elton | 31/07 | ✅ **publicado** → [post](https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/) — fecha os 7 individuais |
 | Card mesa "Desafios da EaD" — **arte nunca foi produzida** (legenda pronta; composição fechada em 21/07: Rutinelli + Tessarolo) | Elton | era **01/08** · ⚠️ **não publicou** | 🔴 **atrasado — é a arte mais urgente** |
 | Card mesa "Tecnologia Delas" — **arte nunca foi produzida** (legenda pronta) | Elton | era **02/08** · ⚠️ **não publicou** | 🔴 **atrasado** |
-| Card palestrante — Mauro Oliveira — arte produzida (02/08), arquivada em `cards/` em 03/08; ✅ legenda escrita em 03/08. 🔴 **v2 pendente: a arte diz "MESA", mas é PALESTRA** (19/08, 16h30). [Infos para o card](../producao/02-pre-evento/palestrantes/painel-producao-cards.md) | Elton | corrigir antes de **11/08** | 🔵 **em correção** |
+| Card palestrante — Mauro Oliveira — **antecipado de 11/08 para 03/08**, para o feed não seguir parado. Fecha a série de palestrantes. ⚠️ Foi ao ar com a **v1, que diz "MESA"** onde a atividade é **palestra**. [Infos para o card](../producao/02-pre-evento/palestrantes/painel-producao-cards.md) | Elton | 03/08 | ✅ **publicado** → [post](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/) |
 | Mensagem aos palestrantes (pedido de vídeo **+ material para o app**) | Elton | ⚠️ prazo era **18/07** — sem registro de envio; retorno esperado 03/08 | 🔴 |
 | Vídeos-convite dos palestrantes (receber até 03/08) | Elton *(a princípio)* | reels 08–14/08 | ⬜ |
 | Cards eventos paralelos — ✅ **6 eventos completos em 29/07** (todos com local; Educimat entrou com nome oficial). **Publicar tudo junto** após liberação da Márcia | Elton *(a princípio)* | sugerido 04/08 | ⬜ |

@@ -19,9 +19,11 @@
 > [post](https://www.instagram.com/ifescefor/p/DbT43IkpyLd/)) · Jaqueline Sanz (31/07,
 > [post](https://www.instagram.com/ifescefor/p/DbT4ejZpGSv/)).
 >
-> 🔴 **O que vem depois travou:** os **2 cards de mesa** deviam ter publicado em 01 e 02/08 e as
-> artes nunca foram produzidas, então **o feed está sem card desde 01/08**. Depois deles vem o
-> carrossel dos eventos paralelos e, fechando tudo, o **Mauro Oliveira em 11/08**.
+> ✅ **Mauro Oliveira publicado em 03/08** ([post](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/)), **antecipado de 11/08**, porque o feed
+> estava parado desde 01/08. **Com ele, todos os 8 cards de palestrante estão no ar.**
+>
+> 🔴 **O que segue travado:** os **2 cards de mesa**, que deviam ter publicado em 01 e 02/08 e cujas
+> artes nunca foram produzidas. Depois deles vem o carrossel dos eventos paralelos.
 
 ## Especificação fixa do card (igual para os 7)
 - **Formato:** 1080×1350 (feed) — se der, versão story 1080×1920
@@ -153,7 +155,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
   Arte atual: nome + "Coordenadora do Atlas das Mulheres do ES, Secretaria Estadual das Mulheres
   (SESM) e Incaper". V1 e v2 apagadas.
 
-## 8 · Dr. Mauro Oliveira · publicar 11/08 — ✅ ARTE PRODUZIDA (02/08)
+## 8 · Dr. Mauro Oliveira — ✅ PUBLICADO 03/08 ([post](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/))
 
 > ✅ **Foto e minibio chegaram em 28/07.** Dados completos e fontes em
 > [contexto/03-palestrantes.md](../../../contexto/03-palestrantes.md#dr-mauro-oliveira).
@@ -178,20 +180,22 @@ Concefor — nunca uma curiosidade solta sobre ela.
   **Secretário de Telecomunicações do Ministério das Comunicações**.
 - **Arquivo:** `cards/2026-08-02_pre_card_palestrante-mauro-oliveira_v1.png` *(processado do
   `_inbox` em 03/08)*
-- **Status:** 🔵 **arte produzida (02/08), com uma correção pendente antes de publicar.**
-- 🔴 **Correção necessária (v2): a arte diz "MESA".** O card traz a etiqueta **MESA** acima do
-  título "Inovações da IA para a Educação", mas na programação oficial isso é **Palestra**
-  (19/08, 16h30 — [`contexto/01-programacao.md`](../../../contexto/01-programacao.md)). O Mauro
-  não participa de nenhuma mesa-redonda. Trocar **MESA → PALESTRA** e regerar como `_v2`.
-  Há folga: publica só em 11/08.
+- **Status:** ✅ **publicado em 03/08** ([post](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/)), **antecipado de 11/08** para o feed não
+  seguir parado desde 01/08.
+- ⚠️ **Foi ao ar com a v1, que diz "MESA".** O card traz a etiqueta **MESA** acima do título
+  "Inovações da IA para a Educação", mas na programação oficial isso é **Palestra** (19/08, 16h30 —
+  [`contexto/01-programacao.md`](../../../contexto/01-programacao.md)); ele não participa de
+  nenhuma mesa-redonda. **A legenda publicada está correta e diz "palestra"**, o que ameniza.
+  Como já está no ar, sobra escolher entre conviver com o rótulo errado ou apagar e repostar com
+  uma v2. Se alguma peça futura reaproveitar esta arte, corrigir antes.
 - ✅ **O resto bate com o previsto:** foto recortada e centralizada no padrão da série, linha de
   credencial na versão longa ("Doutor pela Sorbonne, Paris, Professor do IFCE e do doutorado da
   Fiocruz"), sem data e hora da fala na arte, CTA do site.
 - ✅ **Legenda escrita em 03/08** (Instagram, WhatsApp e alt text) em
   [legendas.md](legendas.md#10--dr-mauro-oliveira--publicar-1108-fecha-a-série) e espelhada na
   [página de aprovação](../../../aprovacao/cards-palestrantes.html).
-- **Por que é o último da série:** ficou em 11/08 justamente para dar o maior prazo possível
-  até os dados dele chegarem. Ainda assim publica 4 dias antes do fim das inscrições (15/08).
+- **Por que era o último da série:** 11/08 dava o maior prazo possível até os dados dele
+  chegarem. Com os dados em mãos desde 28/07 e o feed parado, a data perdeu a razão de ser.
 
 ---
 
@@ -220,7 +224,7 @@ Concefor — nunca uma curiosidade solta sobre ela.
 ## Ordem de produção sugerida (para não perder o ritmo)
 1. Vanessa (21/07) → 2. Tessarolo (24/07) → 3. Mariano (28/07) → 4. Rutinelli (30/07) →
 5. Márcia Oliveira (31/07) → 6. Mariella (04/08) → 7. Jaqueline Sanz (06/08) → cards das mesas
-→ 8. Mauro Oliveira (11/08, fecha a série assim que os dados dele chegarem).
+→ 8. Mauro Oliveira (previsto 11/08, **publicado em 03/08**, antecipado para o feed não seguir parado).
 
 ## Conferência dos cards recebidos (20/07/2026)
 
@@ -274,8 +278,8 @@ do `_inbox`). Todos em **1080×1350**, conforme a spec. Arquivos em `cards/`.
 
 1. Os **2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") não vieram no lote. As legendas
    dos dois já estão prontas em [legendas.md](legendas.md), então é só a arte.
-2. O **card do Dr. Mauro Oliveira** (item 8 acima) — ✅ arte produzida em 02/08, mas
-   🔴 **precisa de v2: a arte diz "MESA" onde deveria dizer "PALESTRA"**.
+2. ~~O **card do Dr. Mauro Oliveira**~~ — ✅ produzido em 02/08 e **publicado em 03/08**.
+   ⚠️ Foi ao ar com "MESA" onde deveria ler "PALESTRA" (item 8 acima).
 
 ## Depois de cada card pronto
 1. Salvar o PNG final na pasta do palestrante ou direto aqui em `palestrantes/`
