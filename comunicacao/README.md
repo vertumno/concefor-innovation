@@ -130,20 +130,26 @@ comunicacao/
      Educimat** — só essas logos.
      [Brief dos 10, com os ajustes banner a banner](producao/01-brindes-promocionais/banners/brief.md) ·
      [Brief dos institucionais](producao/02-pre-evento/banners-institucionais/brief.md)
-  3. 📸 **Cantinho instagramável — 🔴 sem dono, e a CGTE devolveu (03/08).** O Marquito pediu à
+  3. 🆕 **Cards dos eventos paralelos — pedido de 03/08.** A coordenação pediu **um card por
+     evento, para cada coordenador divulgar na própria rede** (eram um carrossel só). ✅ Conteúdo,
+     spec e os textos de WhatsApp dos 6 já estão escritos:
+     [brief](producao/02-pre-evento/eventos-paralelos/brief-cards.md).
+     🔴 **Falta definir quem produz as artes** — a Juliana está nos banners e a Andreia no bolo e
+     no livro. Os eventos são em **20/08**, então quanto antes começar a divulgação, melhor.
+  4. 📸 **Cantinho instagramável — 🔴 sem dono, e a CGTE devolveu (03/08).** O Marquito pediu à
      Juliana que pensasse o espaço, mas sem dizer onde, de que tamanho nem com que material.
      A posição dela é que **o cantinho é da comissão organizadora, não da CGTE**. Elton leva à
      comissão; ela pediu retorno **até 05/08**. 💡 Pista deixada: aproveitar a **arte do bolo**
      que a Andreia está fazendo. [Síntese](../contexto/reunioes/sintese-2026-08-03.md)
-  4. 🔵 **Etiquetas dos nomes do crachá** — **Alex** é o responsável. ✅ A medida saiu (03/08) e a
+  5. 🔵 **Etiquetas dos nomes do crachá** — **Alex** é o responsável. ✅ A medida saiu (03/08) e a
      escolha caiu para duas opções, com recomendação. Falta **comprar** (sugerido até 04/08) e
      definir **como será a impressão**; testar numa amostra quando os 400 chegarem (07/08).
      [Brief](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md)
-  5. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
+  6. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
      (vídeo-convite **+ material para o app**) — prazo interno era 18/07 e o retorno é 03/08.
-  6. ✅ ~~Conferir a 3ª leva de artes da gráfica~~ — **caneta, copo e bolsa aprovados em 02/08**.
-  7. ✅ ~~**Card do Mauro Oliveira**~~ — **publicado em 03/08**, antecipado de 11/08.
-  8. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
+  7. ✅ ~~Conferir a 3ª leva de artes da gráfica~~ — **caneta, copo e bolsa aprovados em 02/08**.
+  8. ✅ ~~**Card do Mauro Oliveira**~~ — **publicado em 03/08**, antecipado de 11/08.
+  9. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
 - **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
 
 > Mantenha este bloco e o [board de produção](planejamento/board-producao.md) atualizados —

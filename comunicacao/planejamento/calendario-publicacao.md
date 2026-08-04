@@ -28,20 +28,21 @@
 | ~~01/08~~ *(sáb)* | Card mesa — "Desafios da EaD para os próximos 20 anos" (Rutinelli + Felipe Tessarolo) | Feed | 🔴 **não publicou: a arte não existe** — remarcar |
 | ~~02/08~~ *(dom)* | Card mesa — "Tecnologia Delas" (as três juntas) | Feed | 🔴 **não publicou: a arte não existe** — remarcar |
 | 03/08 | Marco: prazo de envio final (Even3) + prazo interno dos vídeos | — | ⬜ |
-| 04/08 | Eventos paralelos — carrossel dos 6 eventos | Feed | ⬜ ✅ todos os dados completos |
+| **03/08** *(era 11/08)* | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | ✅ [publicado](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/) — **antecipado** porque o feed estava parado desde 01/08. Foi ao ar com a v1, que traz "MESA" em vez de "PALESTRA" |
+| 04/08 | Eventos paralelos — carrossel dos 6 eventos | Feed | ⬜ dados completos · ⚠️ **o pedido de 03/08 é por 6 cards individuais para os coordenadores**, não pelo carrossel. A recomendação é fazer os cards primeiro e montar o carrossel a partir deles. [Brief](../producao/02-pre-evento/eventos-paralelos/brief-cards.md) |
+| 🆕 sem data | **6 cards dos eventos paralelos** para as coordenações divulgarem (não é publicação nossa: é entrega a cada coordenador, com texto pronto) | WhatsApp/redes de terceiros | ⬜ conteúdo pronto · 🔴 **falta quem produz** · [Brief](../producao/02-pre-evento/eventos-paralelos/brief-cards.md) |
+| ~~01/08~~ | ~~Reforço: últimos dias do prazo de envio~~ | ~~Story~~ | ❌ retirado em 27/07 (só cards) |
 
 > ⚠️ **A cadência diária quebrou em 01/08.** Os 7 individuais se esgotaram em 31/07 e as duas
-> artes de mesa nunca foram produzidas, então o feed está **sem card desde 01/08**. As legendas
+> artes de mesa nunca foram produzidas, então o feed ficou **sem card em 01 e 02/08**. As legendas
 > dos dois estão prontas em
 > [legendas.md](../producao/02-pre-evento/palestrantes/legendas.md#8--mesa-desafios-da-ead-para-os-próximos-20-anos--publicar-0108).
 > O **card do Mauro foi antecipado para 03/08** justamente para o feed não passar mais um dia
 > vazio, e com ele os 8 cards de palestrante estão no ar. Assim que as artes das mesas saírem, a
 > fila é: mesa "Desafios da EaD" → mesa "Tecnologia Delas" → carrossel dos eventos paralelos.
-| **03/08** *(era 11/08)* | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | ✅ [publicado](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/) — **antecipado** porque o feed estava parado desde 01/08. Foi ao ar com a v1, que traz "MESA" em vez de "PALESTRA" |
-| ~~01/08~~ | ~~Reforço: últimos dias do prazo de envio~~ | ~~Story~~ | ❌ retirado em 27/07 (só cards) |
-
-> ⚠️ **01/08 é sábado e 02/08 é domingo.** A sequência diária cai neles. Se a preferência for
-> só dia útil, os dois cards de mesa vão para 03/08 e 04/08 — **decidir**.
+>
+> ⚠️ **01/08 foi sábado e 02/08 domingo.** A sequência diária caía neles e não rodou. Se a
+> preferência for só dia útil, isso precisa virar regra explícita, e não acidente.
 
 ### Contagem regressiva (07–16/08) — ⚠️ pendente de decisão
 As 10 peças planejadas aqui são, em sua maioria, **stories**. A regra "só cards" de 27/07 as

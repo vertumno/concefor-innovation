@@ -9,6 +9,11 @@
 > Com isso **cai a razão que segurava o banner de eventos paralelos para o final**.
 > 📌 **Combinado com a Márcia (16/07):** a divulgação dos eventos paralelos sai **tudo junto**,
 > depois que o Educimat mandar as informações e a Márcia finalizar/liberar a especificação.
+> ✅ **03/08 — LIBERADO, e com pedido novo:** chegou a solicitação de **cards individuais dos
+> eventos paralelos, um por evento, para cada coordenação divulgar na própria rede**. Conteúdo,
+> spec e textos de WhatsApp dos seis já escritos em
+> [`producao/02-pre-evento/eventos-paralelos/brief-cards.md`](../producao/02-pre-evento/eventos-paralelos/brief-cards.md).
+> 🔴 Falta definir **quem produz as artes**.
 
 Todos acontecem na **quinta-feira, 20/08/2026** (Momento I: 9h–12h · Momento II: 13h30–16h).
 
