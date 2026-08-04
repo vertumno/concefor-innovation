@@ -45,7 +45,21 @@ export default function AdminPage() {
   }, []);
 
   const headers = useMemo(() => ({ "x-admin-token": token ?? "" }), [token]);
-  const aoVivo = splitNowNext(sessions, now).agora;
+  // Modera as sessões no ar e também as que ficaram com a janela de perguntas
+  // aberta depois de encerrar — senão não havia como fechá-las (teste de 30/07).
+  // A chave é string de propósito: `stats` chega novo a cada poll e uma lista
+  // nova aqui reconstruiria o efeito do polling a cada resposta.
+  const janelasAbertas = (stats?.sessoesComJanelaAberta ?? []).join(",");
+  const aoVivo = useMemo(() => {
+    const agora = splitNowNext(sessions, now).agora;
+    const jaListadas = new Set(agora.map((s) => s.id));
+    const orfas = janelasAbertas
+      .split(",")
+      .filter((id) => id && !jaListadas.has(id))
+      .map((id) => sessions.find((s) => s.id === id))
+      .filter((s): s is Session => Boolean(s));
+    return [...agora, ...orfas];
+  }, [sessions, now, janelasAbertas]);
 
   const refresh = useCallback(async () => {
     if (!token) return;
@@ -266,10 +280,11 @@ export default function AdminPage() {
         <div className="empty">Nenhuma reação registrada ainda.</div>
       )}
 
-      <div className="section-label">Perguntas — sessões ao vivo</div>
+      <div className="section-label">Perguntas — sessões ao vivo e janelas abertas</div>
       {aoVivo.length === 0 && <div className="empty">Nenhuma sessão no ar agora.</div>}
       {aoVivo.map((s) => {
         const q = qBySession[s.id];
+        const encerrada = Boolean(s.fim && new Date(s.fim).getTime() < now.getTime());
         return (
           <div key={s.id} className="admin-session">
             <div className="admin-session-head">
@@ -277,6 +292,7 @@ export default function AdminPage() {
               <span className="admin-session-meta">
                 {formatHora(s.inicio)}
                 {s.sala ? ` · ${s.sala}` : ""}
+                {encerrada ? " · encerrada, perguntas ainda abertas" : ""}
               </span>
               <button
                 type="button"
@@ -338,6 +354,17 @@ export default function AdminPage() {
                 onClick={() => avisar({ avisoId: a.id, action: a.hidden ? "unhide" : "hide" })}
               >
                 {a.hidden ? "Reexibir" : "Ocultar"}
+              </button>
+              <button
+                type="button"
+                className="admin-btn admin-btn-sm"
+                onClick={() => {
+                  if (confirm("Apagar este aviso de vez?")) {
+                    avisar({ avisoId: a.id, action: "delete" });
+                  }
+                }}
+              >
+                Apagar
               </button>
             </li>
           ))}

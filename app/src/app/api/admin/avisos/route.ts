@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
-import { getAvisos, insertAviso, setAvisoHidden } from "@/lib/db";
+import { deleteAviso, getAvisos, insertAviso, setAvisoHidden } from "@/lib/db";
 import { isAdmin, unauthorized } from "@/lib/adminAuth";
 
 // Publicação e moderação dos avisos do Início (admin):
-//   GET                                → lista com ocultos
-//   POST { texto }                     → publica
-//   POST { avisoId, action: hide|unhide } → oculta/reexibe
+//   GET                                       → lista com ocultos
+//   POST { texto }                            → publica
+//   POST { avisoId, action: hide|unhide }     → oculta/reexibe
+//   POST { avisoId, action: delete }          → apaga de vez
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -32,6 +33,13 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "aviso desconhecido" }, { status: 400 });
     }
     return NextResponse.json({ ok: true });
+  }
+
+  if (action === "delete") {
+    if (typeof avisoId !== "string" || !deleteAviso(avisoId)) {
+      return NextResponse.json({ error: "aviso desconhecido" }, { status: 400 });
+    }
+    return NextResponse.json({ ok: true, avisos: getAvisos(true) });
   }
 
   const t = typeof texto === "string" ? texto.trim() : "";
