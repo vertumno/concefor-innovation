@@ -9,6 +9,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { corDe, iniciais } from "@/components/Speakers";
 import { ConnectDialog } from "@/components/ConnectDialog";
+import { PessoaCard } from "@/components/PessoaCard";
 import { fetchSpeakers } from "@/lib/speakers";
 import { getClientId } from "@/lib/clientId";
 import type { Participante } from "@/lib/db";
@@ -95,68 +96,7 @@ export default function PessoasPage() {
           {aviso && <div className="connect-ok">{aviso}</div>}
 
           {selecionado && (
-            <div className="person-pop">
-              {selecionado.conectado && selecionado.foto ? (
-                // eslint-disable-next-line @next/next/no-img-element -- foto externa (Even3)
-                <img className="person-foto-sm" src={selecionado.foto} alt="" />
-              ) : (
-                <span
-                  className="speaker-avatar"
-                  style={{ background: selecionado.conectado ? corDe(selecionado.nomeCompleto ?? selecionado.nome) : "var(--surface-2)" }}
-                  aria-hidden
-                >
-                  {selecionado.iniciais}
-                </span>
-              )}
-              <div className="person-text">
-                <span className="speaker-name">
-                  {selecionado.conectado ? selecionado.nomeCompleto : selecionado.nome}
-                </span>
-                {selecionado.conectado ? (
-                  <>
-                    {selecionado.categoria && (
-                      <span className="person-chip">{selecionado.categoria}</span>
-                    )}
-                    {selecionado.email && (
-                      <a className="speaker-inst" href={`mailto:${selecionado.email}`}>
-                        {selecionado.email}
-                      </a>
-                    )}
-                    {selecionado.telefone && (
-                      <a
-                        className="speaker-inst"
-                        href={`https://wa.me/${selecionado.telefone.length <= 11 ? `55${selecionado.telefone}` : selecionado.telefone}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        WhatsApp: {selecionado.telefone}
-                      </a>
-                    )}
-                    {selecionado.instagram && (
-                      <a
-                        className="speaker-inst"
-                        href={`https://instagram.com/${selecionado.instagram}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        @{selecionado.instagram}
-                      </a>
-                    )}
-                  </>
-                ) : (
-                  <span className="speaker-inst">
-                    Conecte-se com essa pessoa para ver o contato.
-                  </span>
-                )}
-              </div>
-              <button
-                type="button"
-                className="admin-btn admin-btn-sm"
-                onClick={() => setSelecionado(null)}
-              >
-                Fechar
-              </button>
-            </div>
+            <PessoaCard pessoa={selecionado} onFechar={() => setSelecionado(null)} />
           )}
 
           <div className="dots" role="list" aria-label="Mapa de participantes">

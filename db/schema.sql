@@ -89,8 +89,11 @@ create table if not exists attendee_profile (
 
 -- =========================================================
 -- timeline_events: todo evento da linha do tempo
--- v1 usa tipo='reaction'; fase 2 estende (pergunta, foto, anotacao, checkin...)
--- sem PII no v1 (client_id é id anônimo de dispositivo)
+-- v1 usa tipo='reaction' | 'question' | 'question_vote' | 'questions_window'
+-- | 'aviso' | 'connection'; fase 2 estende (foto, anotacao, checkin...).
+-- client_id é o id anônimo do aparelho (sem PII). Exceção: 'connection' carrega
+-- o attendee em payload.de — conexão é entre PESSOAS e precisa sobreviver à
+-- troca de aparelho (ver lib/db.ts, insertConnection).
 -- =========================================================
 create table if not exists timeline_events (
   id          text primary key,

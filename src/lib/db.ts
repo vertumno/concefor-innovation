@@ -30,7 +30,27 @@ function open(): Database.Database {
   db.pragma("foreign_keys = ON");
   // Schema idempotente (create table if not exists): seguro aplicar a cada boot.
   db.exec(readFileSync(join(process.cwd(), "db", "schema.sql"), "utf8"));
+  migrar(db);
   return db;
+}
+
+// Migrações idempotentes de DADOS (o DDL vive no schema.sql, que já é "if not
+// exists"). Rodam a cada boot e não fazem nada quando já foram aplicadas.
+function migrar(db: Database.Database): void {
+  // 04/08: conexões passaram a ser da PESSOA, não do aparelho (payload.de).
+  // As criadas antes só têm client_id — recupera o dono pelo login daquele
+  // aparelho. Conexão de aparelho que nunca logou (ou que já saiu) fica órfã:
+  // não há como saber de quem era, e some do mosaico.
+  db.exec(
+    `update timeline_events
+        set payload = json_set(payload, '$.de',
+              (select i.attendee_id from identities i
+                where i.client_id = timeline_events.client_id))
+      where tipo = 'connection'
+        and json_extract(payload, '$.de') is null
+        and exists (select 1 from identities i
+                     where i.client_id = timeline_events.client_id)`,
+  );
 }
 
 export function getDb(): Database.Database {
@@ -240,17 +260,35 @@ export function getReport(): Report {
 // Associação client_id ↔ inscrito, criada no login com consentimento (LGPD).
 // PII nunca sai do servidor: as rotas públicas só devolvem o primeiro nome.
 
-// nº do ingresso + 4 primeiros dígitos do CPF (decisão de 20/07).
+// nº do ingresso + segundo fator: 4 primeiros dígitos do CPF (decisão de 20/07)
+// OU o e-mail da inscrição, no mesmo campo (decisão de 29–30/07 — a premissa
+// "todo inscrito tem CPF no cadastro" caiu em 29/07).
 export function findAttendeeByLogin(
   checkinCode: string,
-  cpf4: string,
+  segundoFator: string,
 ): { id: number; nome: string } | null {
-  const row = getDb()
-    .prepare(
-      `select id, nome from attendees
-        where checkin_code = ? and documento is not null and substr(documento, 1, 4) = ?`,
-    )
-    .get(checkinCode.trim(), cpf4.trim()) as { id: number; nome: string } | undefined;
+  const db = getDb();
+  const code = checkinCode.trim();
+  const fator = segundoFator.trim();
+
+  const row = (
+    fator.includes("@")
+      ? db
+          .prepare(
+            `select id, nome from attendees
+              where checkin_code = ? and email is not null
+                and lower(trim(email)) = lower(?)`,
+          )
+          .get(code, fator)
+      : db
+          .prepare(
+            `select id, nome from attendees
+              where checkin_code = ? and documento is not null
+                and substr(documento, 1, 4) = ?`,
+          )
+          .get(code, fator.replace(/\D/g, ""))
+  ) as { id: number; nome: string } | undefined;
+
   return row ? { ...row, nome: nomeBonito(row.nome) } : null;
 }
 
@@ -280,8 +318,10 @@ export function deleteIdentity(clientId: string): void {
 // ─────────────────────── Conexões / networking (Pessoas) ───────────────────────
 // "Mapa de bolinhas" (ideia de 20/07): cada inscrito é uma bolinha; escanear o
 // QR (ou digitar o nº do ingresso) do outro cria a conexão e acende a bolinha.
-// Conexão = tipo='connection' na linha do tempo (client_id=meu, payload
-// {"attendeeId": n}). Contato completo só aparece DEPOIS de conectar.
+// Conexão = tipo='connection' na linha do tempo, payload
+// {"de": meuAttendeeId, "attendeeId": doOutro} — a conexão segue a PESSOA, e
+// por isso sobrevive a trocar de aparelho, reinstalar o PWA ou limpar o
+// navegador. Contato completo só aparece DEPOIS de conectar.
 
 export type Participante = {
   id: number;
@@ -360,26 +400,42 @@ export function attendeeByCheckin(code: string): { id: number; nome: string; ema
 }
 
 // true se criou; false se já existia (idempotente).
-export function insertConnection(clientId: string, attendeeId: number): boolean {
+//
+// A conexão é da PESSOA (`payload.de`), não do aparelho: `client_id` fica só
+// como rastro de onde foi feita. Amarrar ao dispositivo (como era até 04/08)
+// perdia o mosaico quando o localStorage sumia — e no iOS o PWA instalado tem
+// storage próprio, separado do Safari, então bastava abrir pelo ícone.
+export function insertConnection(
+  deAttendeeId: number,
+  paraAttendeeId: number,
+  clientId: string,
+): boolean {
   const db = getDb();
   const dup = db
     .prepare(
       `select 1 from timeline_events
-        where tipo = 'connection' and client_id = ?
+        where tipo = 'connection'
+          and json_extract(payload, '$.de') = ?
           and json_extract(payload, '$.attendeeId') = ?`,
     )
-    .get(clientId, attendeeId);
+    .get(deAttendeeId, paraAttendeeId);
   if (dup) return false;
   db.prepare(
     `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
      values (?, 'connection', null, ?, ?, ?)`,
-  ).run(randomUUID(), new Date().toISOString(), JSON.stringify({ attendeeId }), clientId);
+  ).run(
+    randomUUID(),
+    new Date().toISOString(),
+    JSON.stringify({ attendeeId: paraAttendeeId, de: deAttendeeId }),
+    clientId,
+  );
   return true;
 }
 
 // Todos os inscritos como bolinhas: conexões primeiro (mais recentes no topo,
 // com contato completo), depois o resto em ordem alfabética (só 1º nome).
-export function getParticipantes(clientId: string | null): Participante[] {
+// Recebe o attendee da pessoa logada (null = anônimo, ninguém aceso).
+export function getParticipantes(attendeeId: number | null): Participante[] {
   const db = getDb();
   const todos = db
     .prepare(
@@ -400,15 +456,17 @@ export function getParticipantes(clientId: string | null): Participante[] {
   }[];
 
   const ordem = new Map<number, number>(); // attendeeId → posição (0 = mais recente)
-  if (clientId) {
+  if (attendeeId) {
     const rows = db
       .prepare(
         `select json_extract(payload, '$.attendeeId') as a from timeline_events
-          where tipo = 'connection' and client_id = ?
+          where tipo = 'connection' and json_extract(payload, '$.de') = ?
           order by ts desc`,
       )
-      .all(clientId) as { a: number }[];
-    rows.forEach((r, i) => ordem.set(r.a, i));
+      .all(attendeeId) as { a: number }[];
+    rows.forEach((r, i) => {
+      if (!ordem.has(r.a)) ordem.set(r.a, i);
+    });
   }
 
   const mk = (t: (typeof todos)[number]): Participante => {
