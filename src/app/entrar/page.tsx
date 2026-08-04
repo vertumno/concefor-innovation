@@ -141,8 +141,8 @@ export default function EntrarPage() {
             {/* eslint-disable-next-line @next/next/no-img-element -- data URL gerada localmente */}
             <img src={qr} alt={`QR do seu ingresso (${me.checkinCode})`} className="myqr-img" />
             <p className="page-sub">
-              Nº do ingresso: <strong>{me.checkinCode}</strong>. Quem escanear este código em{" "}
-              Pessoas → Conectar vira uma conexão sua no evento.
+              Nº do ingresso: <strong>{me.checkinCode}</strong>. Quando alguém escanear este
+              código em Pessoas → Conectar, vocês dois ficam conectados no evento.
             </p>
           </div>
         )}

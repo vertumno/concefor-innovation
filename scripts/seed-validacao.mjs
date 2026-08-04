@@ -6,6 +6,8 @@
 // Uso:
 //   npm run seed:validacao                      # grade de 2026-07-30
 //   node scripts/seed-validacao.mjs --data=2026-07-31   # replicar noutro dia
+//   node scripts/seed-validacao.mjs --data=2026-08-05 --comissao
+//                                               # grade curta do teste das 15h
 //   node scripts/seed-validacao.mjs --limpar    # remove todas as demo-validacao-*
 //
 // No servidor (Docker):
@@ -43,9 +45,24 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(dia)) {
 // compara strings ISO com offset, então o fuso da máquina não interfere.
 const em = (hhmm) => `${dia}T${hhmm}:00-03:00`;
 
+// Grade enxuta do teste com a comissão toda (05/08, 15h, meia hora): um bloco
+// de aquecimento antes, a demonstração no horário da reunião e uma janela
+// aberta depois, para quem quiser continuar mexendo.
+const gradeComissao = [
+  ["01", "14:30", "15:00", "Aquecimento — entre no app e explore",
+    "Entre com sua inscrição (nº do ingresso + CPF ou e-mail), navegue pela agenda e favorite o que interessa.",
+    null],
+  ["02", "15:00", "15:30", "Teste com a comissão — VIII Concefor",
+    "Demonstração ao vivo: reações no telão, perguntas com upvote e conexões entre participantes.",
+    "Equipe do app"],
+  ["03", "15:30", "17:00", "Janela aberta de testes",
+    "Sessão de teste livre depois da reunião: reaja, pergunte e conecte-se com quem estiver por perto.",
+    null],
+];
+
 // Grade do dia: validação às 9h e blocos de teste até o fim da tarde. O vão do
 // almoço (12h–13h30) fica de propósito — mostra a contagem regressiva no Ao Vivo.
-const grade = [
+const gradePadrao = [
   ["01", "09:00", "10:00", "Validação do app — comissão do VIII Concefor",
     "Demonstração ao vivo do app com a comissão: navegação, Ao Vivo, reações no telão, perguntas e dashboard.",
     "Equipe do app"],
@@ -62,6 +79,8 @@ const grade = [
   ["07", "16:30", "17:30", "Teste da tarde — encerramento",
     "Última janela de teste do dia.", null],
 ];
+
+const grade = args.includes("--comissao") ? gradeComissao : gradePadrao;
 
 const upsert = db.prepare(
   `insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fim)
@@ -84,5 +103,6 @@ for (const [n, ini, fim, titulo, descricao, palestrante] of grade) {
 }
 
 db.close();
-console.log(`${grade.length} sessões de validação gravadas para ${dia} (09:00–17:30).`);
+const janela = `${grade[0][1]}–${grade[grade.length - 1][2]}`;
+console.log(`${grade.length} sessões de validação gravadas para ${dia} (${janela}).`);
 console.log("Ajustes de horário ao vivo: /admin > Programação. Limpar depois: --limpar.");

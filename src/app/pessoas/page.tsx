@@ -62,8 +62,8 @@ export default function PessoasPage() {
         <>
           <p className="page-sub" style={{ marginBottom: 10 }}>
             {mapa.total} pessoas no evento
-            {mapa.logado ? ` · você se conectou com ${mapa.conexoes}` : ""}. Cada quadradinho
-            é alguém — conecte-se e acenda o seu mosaico.
+            {mapa.logado ? ` · você tem ${mapa.conexoes} conexões` : ""}. Cada quadradinho é
+            alguém — conectar acende o quadradinho no seu mosaico e no da outra pessoa.
           </p>
 
           {mapa.logado ? (
@@ -85,8 +85,8 @@ export default function PessoasPage() {
                 setSelecionado(null);
                 setAviso(
                   r.nova
-                    ? `Você se conectou com ${r.pessoa.nome}!`
-                    : `Você já estava conectado com ${r.pessoa.nome}.`,
+                    ? `Pronto: você e ${r.pessoa.nome.split(/\s+/)[0]} agora estão conectados.`
+                    : `Vocês já estavam conectados.`,
                 );
                 refreshMapa();
               }}

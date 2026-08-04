@@ -51,6 +51,25 @@ function migrar(db: Database.Database): void {
         and exists (select 1 from identities i
                      where i.client_id = timeline_events.client_id)`,
   );
+
+  // 04/08: conexão virou bilateral. Cria o lado que falta nas antigas, para
+  // ninguém ficar conectado "de um jeito só" (id em hex — só precisa ser único).
+  db.exec(
+    `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+     select lower(hex(randomblob(16))), 'connection', null, e.ts,
+            json_object('attendeeId', json_extract(e.payload, '$.de'),
+                        'de',         json_extract(e.payload, '$.attendeeId'),
+                        'recebida',   json('true')),
+            null
+       from timeline_events e
+      where e.tipo = 'connection'
+        and json_extract(e.payload, '$.de') is not null
+        and not exists (
+              select 1 from timeline_events x
+               where x.tipo = 'connection'
+                 and json_extract(x.payload, '$.de')         = json_extract(e.payload, '$.attendeeId')
+                 and json_extract(x.payload, '$.attendeeId') = json_extract(e.payload, '$.de'))`,
+  );
 }
 
 export function getDb(): Database.Database {
@@ -248,7 +267,11 @@ export function getReport(): Report {
       votosEmPerguntas: n(
         "select count(*) as n from timeline_events where tipo = 'question_vote'",
       ),
-      conexoes: n("select count(*) as n from timeline_events where tipo = 'connection'"),
+      // Conta o par, não os dois lados: desde 04/08 conectar grava ida e volta.
+      conexoes: n(
+        `select count(*) as n from timeline_events
+          where tipo = 'connection' and json_extract(payload, '$.recebida') is null`,
+      ),
     },
     reacoesPorTipo,
     ranking,
@@ -405,31 +428,47 @@ export function attendeeByCheckin(code: string): { id: number; nome: string; ema
 // como rastro de onde foi feita. Amarrar ao dispositivo (como era até 04/08)
 // perdia o mosaico quando o localStorage sumia — e no iOS o PWA instalado tem
 // storage próprio, separado do Safari, então bastava abrir pelo ícone.
+//
+// E é BILATERAL (decisão de 04/08): quem escaneia e quem teve o crachá
+// escaneado ficam conectados. As duas pessoas estavam frente a frente e
+// trocaram contato de fato — só uma delas ter feito o gesto é detalhe de
+// interface. O lado que não escaneou fica marcado com `recebida: true`, para o
+// relatório saber quem puxou a conversa.
 export function insertConnection(
   deAttendeeId: number,
   paraAttendeeId: number,
   clientId: string,
 ): boolean {
   const db = getDb();
-  const dup = db
-    .prepare(
-      `select 1 from timeline_events
-        where tipo = 'connection'
-          and json_extract(payload, '$.de') = ?
-          and json_extract(payload, '$.attendeeId') = ?`,
-    )
-    .get(deAttendeeId, paraAttendeeId);
-  if (dup) return false;
-  db.prepare(
+  const existe = db.prepare(
+    `select 1 from timeline_events
+      where tipo = 'connection'
+        and json_extract(payload, '$.de') = ?
+        and json_extract(payload, '$.attendeeId') = ?`,
+  );
+  const inserir = db.prepare(
     `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
      values (?, 'connection', null, ?, ?, ?)`,
-  ).run(
-    randomUUID(),
-    new Date().toISOString(),
-    JSON.stringify({ attendeeId: paraAttendeeId, de: deAttendeeId }),
-    clientId,
   );
-  return true;
+  const ts = new Date().toISOString();
+
+  const criar = (de: number, para: number, recebida: boolean): boolean => {
+    if (existe.get(de, para)) return false;
+    inserir.run(
+      randomUUID(),
+      ts,
+      JSON.stringify({ attendeeId: para, de, ...(recebida ? { recebida: true } : {}) }),
+      // O aparelho é de quem escaneou; do outro lado não há aparelho envolvido.
+      recebida ? null : clientId,
+    );
+    return true;
+  };
+
+  return db.transaction(() => {
+    const nova = criar(deAttendeeId, paraAttendeeId, false);
+    criar(paraAttendeeId, deAttendeeId, true); // volta: idempotente por si só
+    return nova;
+  })();
 }
 
 // Todos os inscritos como bolinhas: conexões primeiro (mais recentes no topo,
