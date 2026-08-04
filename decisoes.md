@@ -4,6 +4,37 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-04 (tarde) — O app é só dos inscritos CONFIRMADOS; bloco ao vivo ganha descrição; avisos invertidos
+
+**Só inscrito confirmado no Even3 entra no app** (decisão do Marquito). Vale para tudo que
+depende de identidade: **login**, **mapa de Pessoas** e **conexão por QR**. Hoje são 158
+confirmados de 308 inscritos no banco — quase metade da base era gente que se inscreveu e não
+confirmou. *Por quê:* quem não confirmou não é público do evento; no mosaico de Pessoas viraria
+bolinha morta que nunca acende, e no relatório inflaria o denominador ("X de 308 entraram" quando
+o universo real é 158). Os números de inscritos do `/admin` e do relatório passam a contar
+confirmados — o rótulo mudou junto, para o número não mentir.
+
+Quem tenta entrar sem confirmação recebe **erro específico** ("sua inscrição ainda não está
+confirmada no Even3 — procure a organização no credenciamento"), não o genérico "não
+encontramos". *Por quê:* a pessoa achou o próprio cadastro; o que falta é a confirmação. Mandar
+"não encontramos" faria ela tentar de novo à toa na fila do credenciamento. Como `confirmado` vem
+do sync do Even3, confirmar lá e re-sincronizar já libera o acesso — não tem nada a mexer no app.
+
+**Bloco ao vivo (ex-"bloco de teste") ganha descrição** e passa a assumir o segundo uso: além de
+testar o app com a plateia, abrir uma **ação ao vivo** fora da programação do Even3 (enunciado de
+dinâmica, chamada de perguntas para a mesa). A descrição é o texto que aparece no app; vazia, cai
+no texto padrão de teste. Os campos do formulário estavam com o estilo nativo do navegador (input
+branco no meio do painel escuro) — agora seguem o visual do resto.
+
+**Avisos da organização invertidos:** fundo dourado, letra azul. *Por quê:* no card escuro o
+aviso se perdia entre as sessões do Início, e ele é justamente a coisa que precisa gritar.
+
+**Tela Entrar:** o espaçamento entre os blocos (Meu QR / Meu contato / Sair) vinha do colapso de
+margens de parágrafos `page-sub` soltos, o que dava um respiro diferente a cada bloco. Agora cada
+bloco é rótulo + conteúdo, com a distância vindo só do rótulo.
+
+---
+
 ## 2026-08-04 — Conexão é da pessoa, não do aparelho; login aceita e-mail; contato da conexão vira cartão com WhatsApp e cópia
 
 **Bug encontrado (Marquito, testando o networking):** as conexões sumiam. A causa estava no

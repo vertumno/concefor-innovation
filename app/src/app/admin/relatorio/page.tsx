@@ -72,7 +72,7 @@ export default function RelatorioPage() {
 
       <div className="section-label">Números gerais</div>
       <div className="admin-tiles report-tiles">
-        <div className="admin-tile"><span className="admin-n">{t.inscritos}</span><span className="admin-l">inscritos</span></div>
+        <div className="admin-tile"><span className="admin-n">{t.inscritos}</span><span className="admin-l">inscritos confirmados</span></div>
         <div className="admin-tile"><span className="admin-n">{t.logados}</span><span className="admin-l">entraram com inscrição</span></div>
         <div className="admin-tile"><span className="admin-n">{t.dispositivos}</span><span className="admin-l">dispositivos participantes</span></div>
         <div className="admin-tile"><span className="admin-n">{t.reacoes}</span><span className="admin-l">reações</span></div>

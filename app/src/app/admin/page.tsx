@@ -28,6 +28,7 @@ export default function AdminPage() {
   const [avisos, setAvisos] = useState<Aviso[]>([]);
   const [avisoTexto, setAvisoTexto] = useState("");
   const [blocoTitulo, setBlocoTitulo] = useState("");
+  const [blocoDesc, setBlocoDesc] = useState("");
   const [blocoMin, setBlocoMin] = useState(60);
   const [editando, setEditando] = useState<string | null>(null);
   const [edIni, setEdIni] = useState("");
@@ -170,8 +171,9 @@ export default function AdminPage() {
     setEdSala(s.sala ?? "");
   }
 
-  // Bloco de teste: sessão fictícia no ar agora, criada daqui mesmo — antes
-  // isso exigia rodar o seed por linha de comando no servidor.
+  // Bloco ao vivo: sessão fora do Even3 no ar agora, criada daqui mesmo — antes
+  // isso exigia rodar o seed por linha de comando no servidor. Serve para testar
+  // com a plateia e também para uma ação ao vivo (a descrição diz o que fazer).
   async function criarBlocoTeste() {
     try {
       const res = await fetch("/api/admin/sessions", {
@@ -180,11 +182,15 @@ export default function AdminPage() {
         body: JSON.stringify({
           action: "bloco-teste",
           titulo: blocoTitulo.trim(),
+          descricao: blocoDesc.trim(),
           minutos: blocoMin,
         }),
       });
       setOpErro(res.ok ? null : `Falhou: ${((await res.json()) as { error?: string }).error}`);
-      if (res.ok) setBlocoTitulo("");
+      if (res.ok) {
+        setBlocoTitulo("");
+        setBlocoDesc("");
+      }
     } catch {
       setOpErro("Sem conexão com o servidor — tente de novo.");
     }
@@ -278,7 +284,7 @@ export default function AdminPage() {
         </div>
         <div className="admin-tile">
           <span className="admin-n">{stats?.totalInscritos ?? "…"}</span>
-          <span className="admin-l">inscritos (Even3)</span>
+          <span className="admin-l">confirmados (Even3)</span>
         </div>
         <div className="admin-tile">
           <span className="admin-n">{stats?.totalLogados ?? "…"}</span>
@@ -409,32 +415,46 @@ export default function AdminPage() {
         </ul>
       )}
 
-      <div className="section-label">Bloco de teste</div>
+      <div className="section-label">Bloco ao vivo (teste ou ação)</div>
       <p className="page-sub">
-        Cria uma sessão <strong>no ar agora</strong>, só para a plateia interagir: quem abrir o
-        Ao Vivo cai direto na tela de reagir e perguntar. Não vem do Even3 e some quando você
-        apagar — leva junto as reações e perguntas do teste.
+        Cria uma sessão <strong>no ar agora</strong> para a plateia interagir: quem abrir o Ao
+        Vivo cai direto na tela de reagir e perguntar. Serve para testar o app e também para uma
+        ação de última hora — a descrição é o enunciado que aparece no app. Não vem do Even3 e
+        some quando você apagar, levando junto as reações e perguntas.
       </p>
       <div className="admin-bloco-teste">
-        <input
-          placeholder="Teste do app — reaja e pergunte"
-          value={blocoTitulo}
-          onChange={(e) => setBlocoTitulo(e.target.value)}
-          aria-label="Título do bloco de teste"
-        />
-        <select
-          value={blocoMin}
-          onChange={(e) => setBlocoMin(Number(e.target.value))}
-          aria-label="Duração do bloco"
-        >
-          <option value={30}>30 min</option>
-          <option value={60}>1 hora</option>
-          <option value={120}>2 horas</option>
-          <option value={240}>4 horas</option>
-        </select>
-        <button type="button" className="admin-btn" onClick={criarBlocoTeste}>
-          Inserir bloco para agora
-        </button>
+        <label className="admin-campo">
+          Título
+          <input
+            placeholder="Ex.: Teste do app — reaja e pergunte"
+            value={blocoTitulo}
+            onChange={(e) => setBlocoTitulo(e.target.value)}
+          />
+        </label>
+        <label className="admin-campo">
+          Descrição (opcional)
+          <textarea
+            rows={2}
+            maxLength={400}
+            placeholder="Ex.: Mande sua pergunta para a mesa — as mais votadas vão ao palco."
+            value={blocoDesc}
+            onChange={(e) => setBlocoDesc(e.target.value)}
+          />
+        </label>
+        <div className="admin-bloco-teste-foot">
+          <label className="admin-campo admin-campo-inline">
+            Duração
+            <select value={blocoMin} onChange={(e) => setBlocoMin(Number(e.target.value))}>
+              <option value={30}>30 min</option>
+              <option value={60}>1 hora</option>
+              <option value={120}>2 horas</option>
+              <option value={240}>4 horas</option>
+            </select>
+          </label>
+          <button type="button" className="admin-btn admin-btn-accent" onClick={criarBlocoTeste}>
+            Inserir bloco para agora
+          </button>
+        </div>
       </div>
 
       <div className="section-label">Programação — ajuste de última hora</div>

@@ -28,11 +28,18 @@ nenhuma transmissão. Confirmar disponibilidade de cada convidado com antecedên
 | 2 | Mesa "Tecnologia Delas" (1–2 participantes) | 18/08 9h30 | **18/08 12h00–13h30** (almoço) | 18/08 13h30–14h15 (sessões técnicas) |
 | 3 | Felipe Tessarolo | 18/08 14h30 | **18/08 16h20–17h00** (pós-coffee) | 19/08 8h00–9h00 |
 | 4 | Mesa "Desafios da EaD" (Rutinelli + convidado) | 19/08 9h30 | **19/08 12h00–13h30** (almoço) | 19/08 13h30–14h15 (sessões técnicas) |
-| 5 | Mariano Pimentel | 19/08 14h30 | **19/08 16h20–17h00** (pós-coffee) | 20/08 12h–13h30 |
+| 5 | Mariano Pimentel | 19/08 14h30 | ⚠️ **19/08 16h20–17h00 não serve mais** — ver abaixo | **20/08 12h–13h30** (almoço) |
 | — | Repescagem / episódio extra | — | **20/08 12h00–13h30** (almoço) | — |
 
-⚠️ Horários que **nunca** podem receber podcast (transmissão no ar): 17/08 18h30–20h ·
-18/08 9h30–11h30 e 14h30–16h · 19/08 9h30–11h30 e 14h30–16h · 20/08 16h (premiação).
+⚠️ Horários que **nunca** podem receber podcast (transmissão no ar): 17/08 18h30–20h30 ·
+18/08 9h30–11h30 e 14h30–16h · 19/08 9h30–11h30 e **14h30–17h30** · 20/08 16h (premiação).
+
+🔴 **Conflito detectado em 04/08 (ao montar a planilha de atuação da CGTE):** a janela do
+episódio 5 (Mariano Pimentel, 19/08 16h20–17h) **colide com a palestra do Dr. Mauro Oliveira**,
+que entrou na programação em 21/07 às **16h30 do dia 19/08** e também tem transmissão + Libras.
+Com ela, a tarde de quarta fica bloqueada das 14h30 às ~17h30. **Sugestão: mover o episódio 5
+para o almoço de 20/08 (12h–13h30)**, que era a janela de repescagem — ou gravar na quarta
+depois das 18h, se o convidado topar. Decidir com a Coordenação.
 
 ## Fluxo por episódio
 

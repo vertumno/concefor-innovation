@@ -53,6 +53,7 @@ comunicacao/
 | **Painel visual do status** (abrir no celular / mostrar em reunião) | [painel/](painel/) · [no ar](https://vertumno.github.io/concefor-innovation/comunicacao/painel/) |
 | Calendário de posts | [planejamento/calendario-publicacao.md](planejamento/calendario-publicacao.md) |
 | Escalas (podcast, transmissão, fotografia) | [planejamento/distribuicao-equipe.md](planejamento/distribuicao-equipe.md) |
+| **Planilha de atuação da CGTE no evento** (uma aba por dia) | [planejamento/ATUACAO DA CGTE NO CONCEFOR 2026.xlsx](planejamento/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202026.xlsx) · [modelo de 2024](planejamento/_referencias/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202024.xlsx) |
 | Começar uma peça nova | [templates/brief-peca.md](templates/brief-peca.md) |
 | **Pedidos da Márcia** (atualização do site + novas peças) | [Doc de solicitações (Google Docs)](https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true) |
 | Artes produzidas (Canva) | [Pasta no Canva](https://canva.link/wdnsx8ggf61x2hs) |

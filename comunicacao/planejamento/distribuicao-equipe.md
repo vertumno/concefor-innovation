@@ -2,6 +2,13 @@
 
 > Quem faz o quê durante o evento. Base: [equipe da CGTE](../contexto/04-equipe-cgte.md) e
 > [programação](../contexto/01-programacao.md).
+>
+> 📊 **A escala operacional do evento é a planilha
+> [ATUACAO DA CGTE NO CONCEFOR 2026.xlsx](ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202026.xlsx)**
+> (criada em 04/08/2026, no formato da [planilha de 2024](_referencias/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202024.xlsx)):
+> uma aba por dia, com programação · local · transmissão e filmagem · Libras · podcast ·
+> cobertura reels/stories e fotografia · observações. É ela que vai impressa/aberta durante
+> o evento — as tabelas abaixo continuam sendo o rascunho de planejamento.
 
 ## Escala de fotografia / vídeo (por turno)
 | Dia | Manhã | Tarde | Noite |

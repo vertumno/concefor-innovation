@@ -136,49 +136,51 @@ export default function EntrarPage() {
         </p>
 
         {qr && (
-          <div className="myqr">
+          <section className="login-sec">
             <div className="section-label">Meu QR</div>
             {/* eslint-disable-next-line @next/next/no-img-element -- data URL gerada localmente */}
             <img src={qr} alt={`QR do seu ingresso (${me.checkinCode})`} className="myqr-img" />
-            <p className="page-sub">
+            <p className="login-nota">
               Nº do ingresso: <strong>{me.checkinCode}</strong>. Quando alguém escanear este
               código em Pessoas → Conectar, vocês dois ficam conectados no evento.
             </p>
-          </div>
+          </section>
         )}
 
-        <div className="section-label">Meu contato para conexões</div>
-        <form onSubmit={salvarPerfil} className="login-form">
-          <p className="page-sub" style={{ marginBottom: 4 }}>
+        <section className="login-sec">
+          <div className="section-label">Meu contato para conexões</div>
+          <p className="login-nota">
             Opcional: aparece <strong>apenas para quem se conectar com você</strong> em
             Pessoas. Deixe em branco (e salve) para não mostrar.
           </p>
-          <label className="login-label">
-            Telefone / WhatsApp
-            <input
-              inputMode="tel"
-              autoComplete="tel"
-              placeholder="Ex.: 27 99999-9999"
-              value={telefone}
-              onChange={(e) => setTelefone(e.target.value)}
-            />
-          </label>
-          <label className="login-label">
-            Instagram
-            <input
-              autoComplete="off"
-              placeholder="@seu.usuario"
-              value={instagram}
-              onChange={(e) => setInstagram(e.target.value)}
-            />
-          </label>
-          {perfilMsg && <p className="page-sub">{perfilMsg}</p>}
-          <button type="submit" className="login-btn" disabled={salvandoPerfil}>
-            {salvandoPerfil ? "Salvando…" : "Salvar contato"}
-          </button>
-        </form>
+          <form onSubmit={salvarPerfil} className="login-form">
+            <label className="login-label">
+              Telefone / WhatsApp
+              <input
+                inputMode="tel"
+                autoComplete="tel"
+                placeholder="Ex.: 27 99999-9999"
+                value={telefone}
+                onChange={(e) => setTelefone(e.target.value)}
+              />
+            </label>
+            <label className="login-label">
+              Instagram
+              <input
+                autoComplete="off"
+                placeholder="@seu.usuario"
+                value={instagram}
+                onChange={(e) => setInstagram(e.target.value)}
+              />
+            </label>
+            {perfilMsg && <p className="login-msg">{perfilMsg}</p>}
+            <button type="submit" className="login-btn" disabled={salvandoPerfil}>
+              {salvandoPerfil ? "Salvando…" : "Salvar contato"}
+            </button>
+          </form>
+        </section>
 
-        <button type="button" className="admin-btn" onClick={sair}>
+        <button type="button" className="admin-btn login-sair" onClick={sair}>
           Sair (desconectar este aparelho)
         </button>
       </>
