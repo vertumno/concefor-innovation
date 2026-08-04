@@ -35,9 +35,14 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "código inválido" }, { status: 400 });
   }
 
+  // Só conecta com inscrito confirmado (filtro dentro de attendeeByCheckin) —
+  // por isso o erro cita a confirmação: é a causa provável de não achar.
   const outro = attendeeByCheckin(codigo);
   if (!outro) {
-    return NextResponse.json({ error: "não encontramos esse ingresso" }, { status: 404 });
+    return NextResponse.json(
+      { error: "não encontramos esse ingresso — a inscrição precisa estar confirmada" },
+      { status: 404 },
+    );
   }
   if (outro.id === meuAttendee) {
     return NextResponse.json({ error: "esse é o seu próprio ingresso 🙂" }, { status: 400 });

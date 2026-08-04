@@ -77,6 +77,13 @@ export function getDb(): Database.Database {
   return g.conceforDb;
 }
 
+// Regra do app (decisão de 04/08): só inscrito CONFIRMADO no Even3 participa —
+// entra, aparece no mapa de Pessoas e pode ser conectado. Quem só se inscreveu
+// (confirmação pendente) não é público do evento e ficaria como bolinha morta
+// no mosaico. `confirmado` vem do sync (a.confirmed do Even3) e pode ser NULL
+// em linhas antigas — daí o coalesce.
+const confirmadoSql = (col = "confirmado") => `coalesce(${col}, 0) = 1`;
+
 // ─────────────────────────── Sessões ───────────────────────────
 
 type SessionRow = {
@@ -192,12 +199,16 @@ export function updateSessionAdmin(
   return r.changes > 0;
 }
 
-// ─── Bloco de teste criado do próprio /admin ───
+// ─── Bloco ao vivo criado do próprio /admin (teste ou ação) ───
 // Para experimentar com gente na sala sem depender de rodar script no servidor
-// (era `seed:validacao` por docker run). Nasce JÁ no ar, então o Ao Vivo cai
-// direto na tela de reagir. Prefixo `demo-` = descartável: sobrevive ao
-// re-sync do Even3 (que só mexe nos `even3-`) e pode ser apagado por aqui.
+// (era `seed:validacao` por docker run) e, desde 04/08, também para abrir uma
+// ação ao vivo fora da programação do Even3 (enquete/dinâmica de última hora) —
+// daí a descrição ser editável. Nasce JÁ no ar, então o Ao Vivo cai direto na
+// tela de reagir. Prefixo `demo-` = descartável: sobrevive ao re-sync do Even3
+// (que só mexe nos `even3-`) e pode ser apagado por aqui.
 const PREFIXO_TESTE = "demo-";
+const DESCRICAO_PADRAO_TESTE =
+  "Bloco criado pelo /admin para experimentar o app com o público presente.";
 
 // ISO com o fuso de Brasília fixo, como o sync e os seeds. O container pode
 // estar em UTC; sem isso, um bloco criado à noite cairia no dia seguinte da
@@ -207,11 +218,17 @@ function agoraEmBrasilia(deslocamentoMin = 0): string {
   return `${new Date(t).toISOString().slice(0, 19)}-03:00`;
 }
 
-export function insertBlocoTeste(
-  titulo: string,
-  minutos: number,
-  sala: string | null,
-): { id: string; inicio: string; fim: string } {
+export function insertBlocoTeste({
+  titulo,
+  minutos,
+  sala = null,
+  descricao = null,
+}: {
+  titulo: string;
+  minutos: number;
+  sala?: string | null;
+  descricao?: string | null;
+}): { id: string; inicio: string; fim: string } {
   const id = `${PREFIXO_TESTE}teste-${Date.now().toString(36)}`;
   // Começa um minuto atrás para já contar como "no ar" no primeiro carregamento.
   const inicio = agoraEmBrasilia(-1);
@@ -221,14 +238,7 @@ export function insertBlocoTeste(
       `insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fim)
        values (?, ?, ?, ?, 'Teste', null, ?, ?)`,
     )
-    .run(
-      id,
-      titulo,
-      "Bloco criado pelo /admin para experimentar o app com o público presente.",
-      sala,
-      inicio,
-      fim,
-    );
+    .run(id, titulo, descricao || DESCRICAO_PADRAO_TESTE, sala, inicio, fim);
   return { id, inicio, fim };
 }
 
@@ -313,7 +323,8 @@ export function getReport(): Report {
   return {
     geradoEm: new Date().toISOString(),
     totais: {
-      inscritos: n("select count(*) as n from attendees"),
+      // Inscritos = confirmados: é o público que o app atende (ver confirmadoSql).
+      inscritos: n(`select count(*) as n from attendees where ${confirmadoSql()}`),
       logados: n("select count(*) as n from identities"),
       dispositivos: n(
         "select count(distinct client_id) as n from timeline_events where client_id is not null",
@@ -342,10 +353,14 @@ export function getReport(): Report {
 // nº do ingresso + segundo fator: 4 primeiros dígitos do CPF (decisão de 20/07)
 // OU o e-mail da inscrição, no mesmo campo (decisão de 29–30/07 — a premissa
 // "todo inscrito tem CPF no cadastro" caiu em 29/07).
+//
+// Devolve o inscrito mesmo quando NÃO confirmado (04/08: só confirmado entra —
+// ver confirmadoSql) para a rota de login poder dizer o motivo em vez de um
+// genérico "não encontramos".
 export function findAttendeeByLogin(
   checkinCode: string,
   segundoFator: string,
-): { id: number; nome: string } | null {
+): { id: number; nome: string; confirmado: boolean } | null {
   const db = getDb();
   const code = checkinCode.trim();
   const fator = segundoFator.trim();
@@ -354,21 +369,23 @@ export function findAttendeeByLogin(
     fator.includes("@")
       ? db
           .prepare(
-            `select id, nome from attendees
+            `select id, nome, coalesce(confirmado, 0) as confirmado from attendees
               where checkin_code = ? and email is not null
                 and lower(trim(email)) = lower(?)`,
           )
           .get(code, fator)
       : db
           .prepare(
-            `select id, nome from attendees
+            `select id, nome, coalesce(confirmado, 0) as confirmado from attendees
               where checkin_code = ? and documento is not null
                 and substr(documento, 1, 4) = ?`,
           )
           .get(code, fator.replace(/\D/g, ""))
-  ) as { id: number; nome: string } | undefined;
+  ) as { id: number; nome: string; confirmado: number } | undefined;
 
-  return row ? { ...row, nome: nomeBonito(row.nome) } : null;
+  return row
+    ? { id: row.id, nome: nomeBonito(row.nome), confirmado: Boolean(row.confirmado) }
+    : null;
 }
 
 export function upsertIdentity(clientId: string, attendeeId: number, nome: string): void {
@@ -473,7 +490,10 @@ export function nomeBonito(nome: string): string {
 
 export function attendeeByCheckin(code: string): { id: number; nome: string; email: string | null } | null {
   const row = getDb()
-    .prepare("select id, nome, email from attendees where checkin_code = ?")
+    .prepare(
+      `select id, nome, email from attendees
+        where checkin_code = ? and ${confirmadoSql()}`,
+    )
     .get(code.trim()) as { id: number; nome: string; email: string | null } | undefined;
   return row ? { ...row, nome: nomeBonito(row.nome) } : null;
 }
@@ -527,8 +547,8 @@ export function insertConnection(
   })();
 }
 
-// Todos os inscritos como bolinhas: conexões primeiro (mais recentes no topo,
-// com contato completo), depois o resto em ordem alfabética (só 1º nome).
+// Os inscritos CONFIRMADOS como bolinhas: conexões primeiro (mais recentes no
+// topo, com contato completo), depois o resto em ordem alfabética (só 1º nome).
 // Recebe o attendee da pessoa logada (null = anônimo, ninguém aceso).
 export function getParticipantes(attendeeId: number | null): Participante[] {
   const db = getDb();
@@ -538,6 +558,7 @@ export function getParticipantes(attendeeId: number | null): Participante[] {
               p.telefone, p.instagram
          from attendees a
          left join attendee_profile p on p.attendee_id = a.id
+        where ${confirmadoSql("a.confirmado")}
         order by a.nome asc`,
     )
     .all() as {
@@ -662,7 +683,7 @@ export type AdminStats = {
   reacoesPorSessao: { sessionId: string | null; titulo: string; n: number }[];
   reacoesPorMinuto: { minuto: string; n: number }[]; // últimos 60 min (UTC "HH:MM")
   totalPerguntas: number;
-  totalInscritos: number; // sincronizados do Even3 (R7)
+  totalInscritos: number; // confirmados no Even3 — o público do app (R7)
   totalLogados: number; // identities criadas no login
   sessoesComJanelaAberta: string[]; // inclusive as que já terminaram (órfãs)
 };
@@ -710,7 +731,9 @@ export function getAdminStats(): AdminStats {
     .prepare("select count(*) as n from timeline_events where tipo = 'question'")
     .get() as { n: number };
 
-  const inscritos = db.prepare("select count(*) as n from attendees").get() as { n: number };
+  const inscritos = db
+    .prepare(`select count(*) as n from attendees where ${confirmadoSql()}`)
+    .get() as { n: number };
   const logados = db.prepare("select count(*) as n from identities").get() as { n: number };
 
   // Janela de perguntas que ficou aberta — inclusive de sessão já encerrada.

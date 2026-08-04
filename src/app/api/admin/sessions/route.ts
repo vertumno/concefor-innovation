@@ -9,7 +9,7 @@ import { isAdmin, unauthorized } from "@/lib/adminAuth";
 
 // Programação pelo admin:
 //   POST { id, inicio?, fim?, sala? }            → ajuste de última hora (R9)
-//   POST { action: "bloco-teste", titulo?, minutos?, sala? } → bloco ao vivo agora
+//   POST { action: "bloco-teste", titulo?, descricao?, minutos?, sala? } → bloco ao vivo agora
 //   POST { action: "apagar", id }                → apaga bloco de teste
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -27,7 +27,7 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
-  const { id, inicio, fim, sala, action, titulo, minutos } = (body ?? {}) as Record<
+  const { id, inicio, fim, sala, action, titulo, descricao, minutos } = (body ?? {}) as Record<
     string,
     unknown
   >;
@@ -37,7 +37,17 @@ export async function POST(req: Request) {
     const m = Number(minutos);
     const dur = Number.isFinite(m) && m > 0 ? Math.min(Math.round(m), MINUTOS_MAX) : MINUTOS_PADRAO;
     const local = typeof sala === "string" && sala.trim() ? sala.trim() : null;
-    return NextResponse.json({ ok: true, ...insertBlocoTeste(t.slice(0, 120), dur, local) });
+    // Descrição vazia cai no texto padrão (ver DESCRICAO_PADRAO_TESTE no db).
+    const desc = typeof descricao === "string" ? descricao.trim().slice(0, 400) : "";
+    return NextResponse.json({
+      ok: true,
+      ...insertBlocoTeste({
+        titulo: t.slice(0, 120),
+        minutos: dur,
+        sala: local,
+        descricao: desc || null,
+      }),
+    });
   }
 
   if (action === "apagar") {

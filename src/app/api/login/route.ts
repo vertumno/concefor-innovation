@@ -74,6 +74,18 @@ export async function POST(req: Request) {
       { status: 401 },
     );
   }
+  // Só inscrito confirmado entra (decisão de 04/08). O erro é específico de
+  // propósito: a pessoa achou o próprio cadastro, o que falta é a confirmação —
+  // mandar "não encontramos" faria ela tentar de novo à toa.
+  if (!attendee.confirmado) {
+    return NextResponse.json(
+      {
+        error:
+          "sua inscrição ainda não está confirmada no Even3 — procure a organização no credenciamento",
+      },
+      { status: 403 },
+    );
+  }
 
   upsertIdentity(clientId, attendee.id, attendee.nome);
   return NextResponse.json({ nome: attendee.nome.split(/\s+/)[0] });
