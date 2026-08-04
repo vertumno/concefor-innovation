@@ -4,6 +4,56 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-04 — Conexão é da pessoa, não do aparelho; login aceita e-mail; contato da conexão vira cartão com WhatsApp e cópia
+
+**Bug encontrado (Marquito, testando o networking):** as conexões sumiam. A causa estava no
+modelo: `insertConnection` gravava só o `client_id` — o UUID que vive no `localStorage` — e a
+leitura filtrava por ele. **A conexão pertencia ao navegador, não à pessoa.**
+
+Quatro consequências, todas plausíveis no evento:
+
+1. **No iOS o PWA instalado tem storage separado do Safari.** Conectar no navegador e depois
+   abrir pelo ícone da tela de início dava mosaico zerado — exatamente o caminho que a gente
+   pede ao participante fazer.
+2. Trocar de aparelho, limpar dados ou usar aba anônima perdia tudo, mesmo logando com a
+   mesma inscrição.
+3. O Safari **descarta o localStorage de sites sem uso por 7 dias**: quem entrasse no
+   lançamento (10/08) podia chegar em 17/08 deslogado e sem conexões.
+4. Furo de privacidade: sair e outra pessoa entrar no mesmo aparelho **herdava as conexões da
+   anterior** — `deleteIdentity` nunca tocou nelas.
+
+**Decisão:** a conexão passa a carregar `payload.de` (o `attendee_id` de quem conectou) e é lida
+por pessoa logada. O `client_id` fica como rastro de onde foi feita. Migração idempetente no
+boot preenche o `de` das conexões antigas pelo login daquele aparelho; conexão de aparelho que
+nunca logou fica órfã e some (não há como saber de quem era — são todas de teste).
+
+**Junto, do V1 prometido em 30/07:**
+
+- **Login aceita o e-mail da inscrição** no mesmo campo do CPF4 — era o compromisso assumido em
+  voz alta na validação que ainda não existia em código. O campo antigo (`cpf4`) continua aceito
+  no corpo da requisição, porque um app já aberto ou em cache do PWA segue mandando por ele.
+- **Cartão da conexão:** símbolo do WhatsApp com link `wa.me` (número normalizado para DDI+DDD —
+  a conta antiga quebrava com número de 8 dígitos), **copiar em cada dado**, "copiar tudo" e
+  **salvar nos contatos** (.vcf, via folha de compartilhamento no iPhone e download no resto).
+  *Por quê:* networking aqui é troca de contato (sem chat, decisão do benchmark EDEN) — o que a
+  pessoa quer no corredor é levar o dado embora, não navegar até ele. `navigator.clipboard` só
+  existe em contexto seguro; no IP de fallback em HTTP entra o `execCommand`.
+- **QR no Safari:** `BarcodeDetector` não existe lá nem em vários Androids (foi o que derrubou a
+  câmera no teste da Juliana). Agora, quando ele falta, a leitura é feita com **jsQR** sobre um
+  canvas em meia resolução — carregado sob demanda, para não pesar 40 kB em quem não precisa.
+- **Avisos chegam sozinhos** (polling de 30 s + ao voltar para a aba) e o admin ganhou **apagar**,
+  além de ocultar.
+- **Perguntas órfãs:** o admin lista também as sessões já encerradas com a janela aberta.
+- Achado de quebra: o `/admin` refazia o efeito de polling a cada render (lista nova de sessões
+  ao vivo nas dependências) — na prática pedia dados em loop, não a cada 5 s. Corrigido.
+
+**Fica em aberto (decisão de produto, não implementada):** a conexão é **unilateral** — quem
+escaneia vê o contato do outro, o outro não ganha nada. Combina com a decisão de 20/07 (sem
+autorização do outro lado), mas na prática as duas pessoas estão frente a frente e trocaram
+contato de fato. Reavaliar depois do teste de 05/08.
+
+---
+
 ## 2026-08-03 — Banners aprovados com ajustes; institucionais saem da leva; cantinho instagramável volta para a comissão
 
 Reunião de 47 min entre Elton e Juliana, banner a banner, com a tela compartilhada. Transcrição e
