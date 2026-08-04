@@ -1806,6 +1806,22 @@ h1.page-title {
   line-height: 1.5;
 }
 
+/* Bloco de teste criado do próprio admin (título + duração + botão) */
+.admin-bloco-teste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.admin-bloco-teste input {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+.admin-bloco-teste select {
+  flex: 0 0 auto;
+}
+
 /* =================== Admin: programação (R9) =================== */
 .admin-prog {
   display: flex;

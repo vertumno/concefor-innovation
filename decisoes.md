@@ -56,9 +56,23 @@ conversa e conta **pares**, não os dois registros. A migração do boot também
 faltava nas conexões antigas. Efeito colateral bem-vindo: quem tem o crachá lido passa a ver
 que alguém se conectou, em vez de nunca ficar sabendo.
 
+**Bloco de teste pelo `/admin`** (pedido do Marquito, mesmo dia): botão **"Inserir bloco para
+agora"** cria uma sessão fictícia já no ar, com duração escolhida — quem abre o Ao Vivo cai
+direto na tela de reagir e perguntar. Apagar leva junto as reações e perguntas do teste, para
+não sujar o relatório; a rota só apaga ids `demo-`, então nenhuma sessão do Even3 some por ali.
+*Por quê:* até agora, ter uma sessão fictícia no servidor exigia `docker run … seed-validacao`
+— ou seja, dependia de quem tem acesso ao servidor, no meio de uma reunião. O `seed-validacao`
+continua para grades de um dia inteiro, e ganhou `--comissao` (grade curta do teste das 15h).
+
 **Marcado antes de subir:** tag **`app-v1.0`** no GitHub (`fac6721`) e no GitLab (`6881a1f`,
 o que está em produção) — ponto de retorno da versão validada em 30/07, caso algo destas
 mudanças precise ser revertido durante a semana do lançamento.
+
+**Achado ao espelhar:** o `main` do GitLab estava parado em 30/07 de manhã — **o vocabulário
+novo das reações nunca chegou à produção**. O app no ar ainda mostrava *Adorei · Parabéns ·
+Uau! · Nossa! · Que triste*. Vai junto no MR !2. Lição repetida (a mesma de 29/07): merge no
+`main` do monorepo que toca `app/` **não é deploy** — o espelho é um passo à parte e some do
+radar exatamente quando o dia foi corrido.
 
 ---
 
