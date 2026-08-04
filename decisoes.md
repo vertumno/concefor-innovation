@@ -47,10 +47,18 @@ nunca logou fica órfã e some (não há como saber de quem era — são todas d
 - Achado de quebra: o `/admin` refazia o efeito de polling a cada render (lista nova de sessões
   ao vivo nas dependências) — na prática pedia dados em loop, não a cada 5 s. Corrigido.
 
-**Fica em aberto (decisão de produto, não implementada):** a conexão é **unilateral** — quem
-escaneia vê o contato do outro, o outro não ganha nada. Combina com a decisão de 20/07 (sem
-autorização do outro lado), mas na prática as duas pessoas estão frente a frente e trocaram
-contato de fato. Reavaliar depois do teste de 05/08.
+**Conexão passa a ser bilateral** (decisão do Marquito no mesmo dia): quem escaneia e quem
+teve o crachá escaneado ficam conectados. *Por quê:* as duas pessoas estavam frente a frente
+e trocaram contato de fato — qual delas segurou o celular é detalhe de interface. Substitui a
+leitura unilateral que vinha de 20/07 (que tratava só o gesto de escanear). O lado que não
+escaneou fica marcado com `recebida: true`, então o relatório continua sabendo quem puxou a
+conversa e conta **pares**, não os dois registros. A migração do boot também cria o lado que
+faltava nas conexões antigas. Efeito colateral bem-vindo: quem tem o crachá lido passa a ver
+que alguém se conectou, em vez de nunca ficar sabendo.
+
+**Marcado antes de subir:** tag **`app-v1.0`** no GitHub (`fac6721`) e no GitLab (`6881a1f`,
+o que está em produção) — ponto de retorno da versão validada em 30/07, caso algo destas
+mudanças precise ser revertido durante a semana do lançamento.
 
 ---
 
