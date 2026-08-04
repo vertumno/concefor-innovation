@@ -70,14 +70,20 @@ O volume `/app/data` guarda o arquivo SQLite entre reinícios e atualizações.
 
 ### Sessões de teste (período de validação)
 
-Enquanto o app não é público, `scripts/seed-validacao.mjs` cria uma grade de sessões
-fictícias para demonstrar o "Ao Vivo"/telão em dia de teste (elas sobrevivem ao
-re-sync; horários ajustáveis pelo `/admin`):
+**Sem acesso ao servidor:** o painel `/admin` tem o botão **"Inserir bloco para agora"**
+(seção *Bloco de teste*) — cria uma sessão fictícia já no ar, com a duração escolhida,
+para o público presente reagir e perguntar. O mesmo painel apaga o bloco depois, junto
+com as reações e perguntas do teste. É o caminho normal para experimentar com gente.
+
+Para uma **grade inteira** de um dia, `scripts/seed-validacao.mjs` (as sessões sobrevivem
+ao re-sync; horários ajustáveis pelo `/admin`):
 
 ```bash
 docker run --rm -v concefor-data:/app/data --env-file .env.local \
   concefor-app node scripts/seed-validacao.mjs            # grade de 30/07/2026
 #   ... node scripts/seed-validacao.mjs --data=AAAA-MM-DD # outro dia
+#   ... node scripts/seed-validacao.mjs --data=AAAA-MM-DD --comissao
+#                                                         # grade curta (teste de 30 min às 15h)
 #   ... node scripts/seed-validacao.mjs --limpar          # remover tudo depois
 ```
 

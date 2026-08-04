@@ -192,6 +192,62 @@ export function updateSessionAdmin(
   return r.changes > 0;
 }
 
+// ─── Bloco de teste criado do próprio /admin ───
+// Para experimentar com gente na sala sem depender de rodar script no servidor
+// (era `seed:validacao` por docker run). Nasce JÁ no ar, então o Ao Vivo cai
+// direto na tela de reagir. Prefixo `demo-` = descartável: sobrevive ao
+// re-sync do Even3 (que só mexe nos `even3-`) e pode ser apagado por aqui.
+const PREFIXO_TESTE = "demo-";
+
+// ISO com o fuso de Brasília fixo, como o sync e os seeds. O container pode
+// estar em UTC; sem isso, um bloco criado à noite cairia no dia seguinte da
+// agenda.
+function agoraEmBrasilia(deslocamentoMin = 0): string {
+  const t = Date.now() + deslocamentoMin * 60_000 - 3 * 60 * 60_000;
+  return `${new Date(t).toISOString().slice(0, 19)}-03:00`;
+}
+
+export function insertBlocoTeste(
+  titulo: string,
+  minutos: number,
+  sala: string | null,
+): { id: string; inicio: string; fim: string } {
+  const id = `${PREFIXO_TESTE}teste-${Date.now().toString(36)}`;
+  // Começa um minuto atrás para já contar como "no ar" no primeiro carregamento.
+  const inicio = agoraEmBrasilia(-1);
+  const fim = agoraEmBrasilia(minutos);
+  getDb()
+    .prepare(
+      `insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fim)
+       values (?, ?, ?, ?, 'Teste', null, ?, ?)`,
+    )
+    .run(
+      id,
+      titulo,
+      "Bloco criado pelo /admin para experimentar o app com o público presente.",
+      sala,
+      inicio,
+      fim,
+    );
+  return { id, inicio, fim };
+}
+
+// Só apaga o que foi criado para teste — sessão do Even3 nunca some por aqui.
+// Leva junto as reações e perguntas do bloco: são de brincadeira e, sem isso,
+// entrariam no relatório final como "(sessão removida)".
+export function deleteSessaoTeste(id: string): boolean {
+  if (!id.startsWith(PREFIXO_TESTE)) return false;
+  const db = getDb();
+  return db.transaction(() => {
+    db.prepare("delete from timeline_events where session_id = ?").run(id);
+    return db.prepare("delete from sessions where id = ?").run(id).changes > 0;
+  })();
+}
+
+export function isSessaoTeste(id: string): boolean {
+  return id.startsWith(PREFIXO_TESTE);
+}
+
 // ─────────────────────── Relatório pós-evento (R9) ───────────────────────
 // Tudo derivado de timeline_events + sessions — "sem trabalho manual: é só
 // ler a tabela" (spec §5). A página /admin/relatorio imprime/exporta em PDF.
