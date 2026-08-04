@@ -548,6 +548,15 @@ export function setAvisoHidden(avisoId: string, hidden: boolean): boolean {
   return r.changes > 0;
 }
 
+// Ocultar tira do app mas guarda o registro; apagar some de vez — pedido de
+// 30/07, para o aviso escrito errado não ficar pendurado na lista do admin.
+export function deleteAviso(avisoId: string): boolean {
+  const r = getDb()
+    .prepare("delete from timeline_events where id = ? and tipo = 'aviso'")
+    .run(avisoId);
+  return r.changes > 0;
+}
+
 // ─────────────────────── Dashboard admin (R3) ───────────────────────
 // Tudo derivado de timeline_events — o dashboard é só uma leitura da linha
 // do tempo (mesmo modelo que alimenta app e telão; spec §5).
@@ -560,6 +569,7 @@ export type AdminStats = {
   totalPerguntas: number;
   totalInscritos: number; // sincronizados do Even3 (R7)
   totalLogados: number; // identities criadas no login
+  sessoesComJanelaAberta: string[]; // inclusive as que já terminaram (órfãs)
 };
 
 export function getAdminStats(): AdminStats {
@@ -608,6 +618,19 @@ export function getAdminStats(): AdminStats {
   const inscritos = db.prepare("select count(*) as n from attendees").get() as { n: number };
   const logados = db.prepare("select count(*) as n from identities").get() as { n: number };
 
+  // Janela de perguntas que ficou aberta — inclusive de sessão já encerrada.
+  // Sem isso o admin só enxergava as sessões ao vivo e não tinha como fechar
+  // depois que a palestra acabava (achado do teste de 30/07).
+  const janelas = db
+    .prepare(
+      `select session_id from timeline_events e
+        where tipo = 'questions_window'
+          and ts = (select max(ts) from timeline_events x
+                     where x.tipo = 'questions_window' and x.session_id = e.session_id)
+          and json_extract(payload, '$.open') = 1`,
+    )
+    .all() as { session_id: string | null }[];
+
   return {
     ativosUltimaHora: ativos.n,
     totalReacoes: total.n,
@@ -616,6 +639,7 @@ export function getAdminStats(): AdminStats {
     totalPerguntas: perguntas.n,
     totalInscritos: inscritos.n,
     totalLogados: logados.n,
+    sessoesComJanelaAberta: janelas.map((j) => j.session_id).filter((s): s is string => Boolean(s)),
   };
 }
 
