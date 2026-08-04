@@ -43,7 +43,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "esse é o seu próprio ingresso 🙂" }, { status: 400 });
   }
 
-  const nova = insertConnection(clientId, outro.id);
+  const nova = insertConnection(meuAttendee, outro.id, clientId);
   return NextResponse.json({
     nova,
     pessoa: { nome: outro.nome, email: outro.email },

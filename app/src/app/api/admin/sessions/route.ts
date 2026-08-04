@@ -1,10 +1,22 @@
 import { NextResponse } from "next/server";
-import { sessionExists, updateSessionAdmin } from "@/lib/db";
+import {
+  deleteSessaoTeste,
+  insertBlocoTeste,
+  sessionExists,
+  updateSessionAdmin,
+} from "@/lib/db";
 import { isAdmin, unauthorized } from "@/lib/adminAuth";
 
-// Ajuste de última hora da programação (R9): horário/sala de uma sessão.
+// Programação pelo admin:
+//   POST { id, inicio?, fim?, sala? }            → ajuste de última hora (R9)
+//   POST { action: "bloco-teste", titulo?, minutos?, sala? } → bloco ao vivo agora
+//   POST { action: "apagar", id }                → apaga bloco de teste
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+const TITULO_PADRAO = "Teste do app — reaja e pergunte";
+const MINUTOS_PADRAO = 60;
+const MINUTOS_MAX = 480;
 
 export async function POST(req: Request) {
   if (!isAdmin(req)) return unauthorized();
@@ -15,7 +27,28 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
-  const { id, inicio, fim, sala } = (body ?? {}) as Record<string, unknown>;
+  const { id, inicio, fim, sala, action, titulo, minutos } = (body ?? {}) as Record<
+    string,
+    unknown
+  >;
+
+  if (action === "bloco-teste") {
+    const t = typeof titulo === "string" && titulo.trim() ? titulo.trim() : TITULO_PADRAO;
+    const m = Number(minutos);
+    const dur = Number.isFinite(m) && m > 0 ? Math.min(Math.round(m), MINUTOS_MAX) : MINUTOS_PADRAO;
+    const local = typeof sala === "string" && sala.trim() ? sala.trim() : null;
+    return NextResponse.json({ ok: true, ...insertBlocoTeste(t.slice(0, 120), dur, local) });
+  }
+
+  if (action === "apagar") {
+    if (typeof id !== "string" || !deleteSessaoTeste(id)) {
+      return NextResponse.json(
+        { error: "só dá para apagar blocos de teste criados aqui" },
+        { status: 400 },
+      );
+    }
+    return NextResponse.json({ ok: true });
+  }
 
   if (typeof id !== "string" || !sessionExists(id)) {
     return NextResponse.json({ error: "sessão desconhecida" }, { status: 400 });

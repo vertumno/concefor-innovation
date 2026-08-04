@@ -186,21 +186,30 @@ lançamento.
 Etapas novas saídas do teste de 30/07, em ordem de prioridade. V1 e V2 precisam estar
 prontas **antes do teste de 05/08**; o resto entra até o congelamento do lançamento.
 
-### V1 — Correções do teste de 30/07 (bugs) — antes de 05/08
+### V1 — Correções do teste de 30/07 (bugs) — antes de 05/08 🟡 (4 de 6 entregues em 04/08)
 
-1. **Login por e-mail** (⚠️ anunciado como funcionando na reunião — implementar JÁ):
-   `findAttendeeByLogin` aceita, no mesmo campo, 4 primeiros dígitos do CPF **ou**
-   e-mail da inscrição; texto da tela atualizado ("…ou o e-mail usado na inscrição").
-2. **Scanner de QR sem câmera no iPhone/alguns Androids**: `BarcodeDetector` não existe
-   no Safari — adotar leitura via `getUserMedia` + decodificador em JS (ex.: jsQR) com
-   o fallback digitado mantido; se a permissão falhar, mensagem clara.
-3. **Vazamentos de layout** (celular do Sérgio + prints da Juliana): botão Conectar,
+> **Entregue em 04/08** (branch `feat/conexoes-por-pessoa`, ver `../decisoes.md`), com um
+> bug novo achado no caminho: **as conexões eram do aparelho, não da pessoa** —
+> `insertConnection` gravava só o `client_id` do localStorage, então reinstalar o PWA
+> (no iOS o app instalado tem storage separado do Safari), trocar de aparelho ou limpar
+> o navegador zerava o mosaico, e outra pessoa logando no mesmo aparelho herdava as
+> conexões da anterior. Agora a conexão carrega `payload.de` (o attendee de quem
+> conecta), com migração idempotente no boot. **Falta testar no iPhone de verdade.**
+
+1. [x] **Login por e-mail** — `findAttendeeByLogin` aceita CPF4 **ou** e-mail no mesmo
+   campo; a rota ainda aceita o nome antigo `cpf4` no corpo (app em cache do PWA).
+2. [x] **Scanner de QR sem câmera no iPhone/alguns Androids**: sem `BarcodeDetector`, cai
+   no **jsQR** sobre canvas (import dinâmico, meia resolução), com mensagem clara quando a
+   permissão é negada e botão de tentar de novo. **Validar no iPhone da Juliana.**
+3. [ ] **Vazamentos de layout** (celular do Sérgio + prints da Juliana): botão Conectar,
    filtros da Agenda, revisar em viewport pequeno/zoom grande.
-4. **Avisos**: aparecer sem trocar de aba (polling na home), mais visíveis, e botão
-   **apagar** (além de ocultar).
-5. **Perguntas órfãs**: admin lista toda sessão com janela aberta (não só a ao vivo)
-   para poder fechar depois que a sessão termina.
-6. Polimento da tela do perfil (meu QR / nº do ingresso).
+4. [x] **Avisos**: polling de 30 s + ao voltar pra aba, e botão **apagar** no admin.
+5. [x] **Perguntas órfãs**: o admin lista também sessões encerradas com janela aberta.
+6. [ ] Polimento da tela do perfil (meu QR / nº do ingresso).
+
+**Também em 04/08 (não estava na lista):** cartão da conexão com **símbolo do WhatsApp +
+wa.me** (número normalizado), **copiar cada dado**, copiar tudo e **salvar nos contatos**
+(.vcf) — pedido do Marquito ao rever o networking.
 
 **Pronto quando:** iPhone da Juliana conecta pela câmera (ou recebe fallback claro),
 Márcia loga com e-mail, aviso publicado aparece sozinho, e nenhum botão vaza nos prints.

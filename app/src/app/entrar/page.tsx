@@ -1,7 +1,7 @@
 "use client";
 
-// Login pelo crachá (R7): nº do ingresso + 4 primeiros dígitos do CPF, com
-// consentimento explícito (LGPD). Navegar segue aberto sem login; quem entra
+// Login pelo crachá (R7): nº do ingresso + 4 primeiros dígitos do CPF ou o
+// e-mail da inscrição, com consentimento (LGPD). Navegar segue sem login; quem entra
 // ganha identidade (avatar no topo; reações/perguntas associadas no relatório
 // interno). Texto do termo a validar com a organização antes do lançamento.
 
@@ -22,7 +22,7 @@ export default function EntrarPage() {
   const router = useRouter();
   const [me, setMe] = useState<Me | null>(null);
   const [codigo, setCodigo] = useState("");
-  const [cpf4, setCpf4] = useState("");
+  const [segundoFator, setSegundoFator] = useState("");
   const [consent, setConsent] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
@@ -100,7 +100,7 @@ export default function EntrarPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           checkinCode: codigo,
-          cpf4,
+          segundoFator,
           clientId: getClientId(),
           consent,
         }),
@@ -141,8 +141,8 @@ export default function EntrarPage() {
             {/* eslint-disable-next-line @next/next/no-img-element -- data URL gerada localmente */}
             <img src={qr} alt={`QR do seu ingresso (${me.checkinCode})`} className="myqr-img" />
             <p className="page-sub">
-              Nº do ingresso: <strong>{me.checkinCode}</strong>. Quem escanear este código em{" "}
-              Pessoas → Conectar vira uma conexão sua no evento.
+              Nº do ingresso: <strong>{me.checkinCode}</strong>. Quando alguém escanear este
+              código em Pessoas → Conectar, vocês dois ficam conectados no evento.
             </p>
           </div>
         )}
@@ -204,16 +204,17 @@ export default function EntrarPage() {
         </label>
 
         <label className="login-label">
-          4 primeiros dígitos do seu CPF
+          4 primeiros dígitos do CPF ou o e-mail da inscrição
           <input
-            inputMode="numeric"
             autoComplete="off"
-            type="password"
-            maxLength={4}
-            placeholder="••••"
-            value={cpf4}
-            onChange={(e) => setCpf4(e.target.value)}
+            placeholder="Ex.: 1234 ou voce@email.com"
+            value={segundoFator}
+            onChange={(e) => setSegundoFator(e.target.value)}
           />
+          <small>
+            Nem todo cadastro do Even3 tem CPF — nesses casos, use o e-mail com que você se
+            inscreveu.
+          </small>
         </label>
 
         <label className="login-consent">

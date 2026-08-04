@@ -25,14 +25,31 @@ export default function Home() {
   useEffect(() => {
     fetchSessions().then(setSessions);
     setFavoritos(getFavorites());
-    fetch("/api/avisos")
-      .then((r) => r.json())
-      .then(setAvisos)
-      .catch(() => {});
     fetch(`/api/me?clientId=${encodeURIComponent(getClientId())}`)
       .then((r) => r.json())
       .then((me: { logado: boolean; nome?: string }) => setNome(me.logado ? (me.nome ?? null) : null))
       .catch(() => {});
+  }, []);
+
+  // Aviso publicado tem que chegar em quem já está com o app aberto — na
+  // validação de 30/07 só aparecia trocando de aba e voltando.
+  useEffect(() => {
+    let vivo = true;
+    const buscar = () => {
+      if (document.hidden) return; // app em segundo plano não gasta rede
+      fetch("/api/avisos")
+        .then((r) => r.json())
+        .then((a) => vivo && setAvisos(a))
+        .catch(() => {});
+    };
+    buscar();
+    const id = setInterval(buscar, 30000);
+    document.addEventListener("visibilitychange", buscar);
+    return () => {
+      vivo = false;
+      clearInterval(id);
+      document.removeEventListener("visibilitychange", buscar);
+    };
   }, []);
 
   function onToggle(id: string) {

@@ -9,6 +9,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { corDe, iniciais } from "@/components/Speakers";
 import { ConnectDialog } from "@/components/ConnectDialog";
+import { PessoaCard } from "@/components/PessoaCard";
 import { fetchSpeakers } from "@/lib/speakers";
 import { getClientId } from "@/lib/clientId";
 import type { Participante } from "@/lib/db";
@@ -61,8 +62,8 @@ export default function PessoasPage() {
         <>
           <p className="page-sub" style={{ marginBottom: 10 }}>
             {mapa.total} pessoas no evento
-            {mapa.logado ? ` · você se conectou com ${mapa.conexoes}` : ""}. Cada quadradinho
-            é alguém — conecte-se e acenda o seu mosaico.
+            {mapa.logado ? ` · você tem ${mapa.conexoes} conexões` : ""}. Cada quadradinho é
+            alguém — conectar acende o quadradinho no seu mosaico e no da outra pessoa.
           </p>
 
           {mapa.logado ? (
@@ -84,8 +85,8 @@ export default function PessoasPage() {
                 setSelecionado(null);
                 setAviso(
                   r.nova
-                    ? `Você se conectou com ${r.pessoa.nome}!`
-                    : `Você já estava conectado com ${r.pessoa.nome}.`,
+                    ? `Pronto: você e ${r.pessoa.nome.split(/\s+/)[0]} agora estão conectados.`
+                    : `Vocês já estavam conectados.`,
                 );
                 refreshMapa();
               }}
@@ -95,68 +96,7 @@ export default function PessoasPage() {
           {aviso && <div className="connect-ok">{aviso}</div>}
 
           {selecionado && (
-            <div className="person-pop">
-              {selecionado.conectado && selecionado.foto ? (
-                // eslint-disable-next-line @next/next/no-img-element -- foto externa (Even3)
-                <img className="person-foto-sm" src={selecionado.foto} alt="" />
-              ) : (
-                <span
-                  className="speaker-avatar"
-                  style={{ background: selecionado.conectado ? corDe(selecionado.nomeCompleto ?? selecionado.nome) : "var(--surface-2)" }}
-                  aria-hidden
-                >
-                  {selecionado.iniciais}
-                </span>
-              )}
-              <div className="person-text">
-                <span className="speaker-name">
-                  {selecionado.conectado ? selecionado.nomeCompleto : selecionado.nome}
-                </span>
-                {selecionado.conectado ? (
-                  <>
-                    {selecionado.categoria && (
-                      <span className="person-chip">{selecionado.categoria}</span>
-                    )}
-                    {selecionado.email && (
-                      <a className="speaker-inst" href={`mailto:${selecionado.email}`}>
-                        {selecionado.email}
-                      </a>
-                    )}
-                    {selecionado.telefone && (
-                      <a
-                        className="speaker-inst"
-                        href={`https://wa.me/${selecionado.telefone.length <= 11 ? `55${selecionado.telefone}` : selecionado.telefone}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        WhatsApp: {selecionado.telefone}
-                      </a>
-                    )}
-                    {selecionado.instagram && (
-                      <a
-                        className="speaker-inst"
-                        href={`https://instagram.com/${selecionado.instagram}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        @{selecionado.instagram}
-                      </a>
-                    )}
-                  </>
-                ) : (
-                  <span className="speaker-inst">
-                    Conecte-se com essa pessoa para ver o contato.
-                  </span>
-                )}
-              </div>
-              <button
-                type="button"
-                className="admin-btn admin-btn-sm"
-                onClick={() => setSelecionado(null)}
-              >
-                Fechar
-              </button>
-            </div>
+            <PessoaCard pessoa={selecionado} onFechar={() => setSelecionado(null)} />
           )}
 
           <div className="dots" role="list" aria-label="Mapa de participantes">

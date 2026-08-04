@@ -27,6 +27,8 @@ export default function AdminPage() {
   const [qBySession, setQBySession] = useState<Record<string, QState>>({});
   const [avisos, setAvisos] = useState<Aviso[]>([]);
   const [avisoTexto, setAvisoTexto] = useState("");
+  const [blocoTitulo, setBlocoTitulo] = useState("");
+  const [blocoMin, setBlocoMin] = useState(60);
   const [editando, setEditando] = useState<string | null>(null);
   const [edIni, setEdIni] = useState("");
   const [edFim, setEdFim] = useState("");
@@ -45,7 +47,21 @@ export default function AdminPage() {
   }, []);
 
   const headers = useMemo(() => ({ "x-admin-token": token ?? "" }), [token]);
-  const aoVivo = splitNowNext(sessions, now).agora;
+  // Modera as sessões no ar e também as que ficaram com a janela de perguntas
+  // aberta depois de encerrar — senão não havia como fechá-las (teste de 30/07).
+  // A chave é string de propósito: `stats` chega novo a cada poll e uma lista
+  // nova aqui reconstruiria o efeito do polling a cada resposta.
+  const janelasAbertas = (stats?.sessoesComJanelaAberta ?? []).join(",");
+  const aoVivo = useMemo(() => {
+    const agora = splitNowNext(sessions, now).agora;
+    const jaListadas = new Set(agora.map((s) => s.id));
+    const orfas = janelasAbertas
+      .split(",")
+      .filter((id) => id && !jaListadas.has(id))
+      .map((id) => sessions.find((s) => s.id === id))
+      .filter((s): s is Session => Boolean(s));
+    return [...agora, ...orfas];
+  }, [sessions, now, janelasAbertas]);
 
   const refresh = useCallback(async () => {
     if (!token) return;
@@ -152,6 +168,42 @@ export default function AdminPage() {
     setEdIni(s.inicio.slice(11, 16));
     setEdFim(s.fim ? s.fim.slice(11, 16) : "");
     setEdSala(s.sala ?? "");
+  }
+
+  // Bloco de teste: sessão fictícia no ar agora, criada daqui mesmo — antes
+  // isso exigia rodar o seed por linha de comando no servidor.
+  async function criarBlocoTeste() {
+    try {
+      const res = await fetch("/api/admin/sessions", {
+        method: "POST",
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "bloco-teste",
+          titulo: blocoTitulo.trim(),
+          minutos: blocoMin,
+        }),
+      });
+      setOpErro(res.ok ? null : `Falhou: ${((await res.json()) as { error?: string }).error}`);
+      if (res.ok) setBlocoTitulo("");
+    } catch {
+      setOpErro("Sem conexão com o servidor — tente de novo.");
+    }
+    fetchSessions().then(setSessions);
+  }
+
+  async function apagarBlocoTeste(s: Session) {
+    if (!confirm(`Apagar "${s.titulo}" e as reações/perguntas do teste?`)) return;
+    try {
+      const res = await fetch("/api/admin/sessions", {
+        method: "POST",
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "apagar", id: s.id }),
+      });
+      setOpErro(res.ok ? null : `Falhou: ${((await res.json()) as { error?: string }).error}`);
+    } catch {
+      setOpErro("Sem conexão com o servidor — tente de novo.");
+    }
+    fetchSessions().then(setSessions);
   }
 
   async function salvarSessao(s: Session) {
@@ -266,10 +318,11 @@ export default function AdminPage() {
         <div className="empty">Nenhuma reação registrada ainda.</div>
       )}
 
-      <div className="section-label">Perguntas — sessões ao vivo</div>
+      <div className="section-label">Perguntas — sessões ao vivo e janelas abertas</div>
       {aoVivo.length === 0 && <div className="empty">Nenhuma sessão no ar agora.</div>}
       {aoVivo.map((s) => {
         const q = qBySession[s.id];
+        const encerrada = Boolean(s.fim && new Date(s.fim).getTime() < now.getTime());
         return (
           <div key={s.id} className="admin-session">
             <div className="admin-session-head">
@@ -277,6 +330,7 @@ export default function AdminPage() {
               <span className="admin-session-meta">
                 {formatHora(s.inicio)}
                 {s.sala ? ` · ${s.sala}` : ""}
+                {encerrada ? " · encerrada, perguntas ainda abertas" : ""}
               </span>
               <button
                 type="button"
@@ -339,10 +393,49 @@ export default function AdminPage() {
               >
                 {a.hidden ? "Reexibir" : "Ocultar"}
               </button>
+              <button
+                type="button"
+                className="admin-btn admin-btn-sm"
+                onClick={() => {
+                  if (confirm("Apagar este aviso de vez?")) {
+                    avisar({ avisoId: a.id, action: "delete" });
+                  }
+                }}
+              >
+                Apagar
+              </button>
             </li>
           ))}
         </ul>
       )}
+
+      <div className="section-label">Bloco de teste</div>
+      <p className="page-sub">
+        Cria uma sessão <strong>no ar agora</strong>, só para a plateia interagir: quem abrir o
+        Ao Vivo cai direto na tela de reagir e perguntar. Não vem do Even3 e some quando você
+        apagar — leva junto as reações e perguntas do teste.
+      </p>
+      <div className="admin-bloco-teste">
+        <input
+          placeholder="Teste do app — reaja e pergunte"
+          value={blocoTitulo}
+          onChange={(e) => setBlocoTitulo(e.target.value)}
+          aria-label="Título do bloco de teste"
+        />
+        <select
+          value={blocoMin}
+          onChange={(e) => setBlocoMin(Number(e.target.value))}
+          aria-label="Duração do bloco"
+        >
+          <option value={30}>30 min</option>
+          <option value={60}>1 hora</option>
+          <option value={120}>2 horas</option>
+          <option value={240}>4 horas</option>
+        </select>
+        <button type="button" className="admin-btn" onClick={criarBlocoTeste}>
+          Inserir bloco para agora
+        </button>
+      </div>
 
       <div className="section-label">Programação — ajuste de última hora</div>
       <p className="page-sub">
@@ -378,9 +471,20 @@ export default function AdminPage() {
                 </button>
               </div>
             ) : (
-              <button type="button" className="admin-btn admin-btn-sm" onClick={() => abrirEdicao(s)}>
-                Editar
-              </button>
+              <div className="admin-prog-edit">
+                <button type="button" className="admin-btn admin-btn-sm" onClick={() => abrirEdicao(s)}>
+                  Editar
+                </button>
+                {s.id.startsWith("demo-") && (
+                  <button
+                    type="button"
+                    className="admin-btn admin-btn-sm"
+                    onClick={() => apagarBlocoTeste(s)}
+                  >
+                    Apagar
+                  </button>
+                )}
+              </div>
             )}
           </div>
         ))}

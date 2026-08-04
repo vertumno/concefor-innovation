@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
 import { findAttendeeByLogin, upsertIdentity } from "@/lib/db";
 
-// Login pelo crachá (R7): nº do ingresso (checkin_code, 8 dígitos) + 4 primeiros
-// dígitos do CPF (decisão de 20/07). Exige consentimento explícito (LGPD).
+// Login pelo crachá (R7): nº do ingresso (checkin_code, 8 dígitos) + segundo
+// fator — 4 primeiros dígitos do CPF (20/07) OU o e-mail da inscrição (29/07),
+// no mesmo campo. Exige consentimento explícito (LGPD).
 // Associa o client_id (dispositivo) ao inscrito; PII não volta na resposta —
 // só o primeiro nome, para o avatar.
 export const runtime = "nodejs";
@@ -21,7 +22,12 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
-  const { checkinCode, cpf4, clientId, consent } = (body ?? {}) as Record<string, unknown>;
+  // `cpf4` é o nome antigo do campo: um app já aberto (ou em cache do PWA)
+  // continua mandando por ele.
+  const { checkinCode, segundoFator, cpf4, clientId, consent } = (body ?? {}) as Record<
+    string,
+    unknown
+  >;
 
   if (consent !== true) {
     return NextResponse.json({ error: "é preciso aceitar o termo para entrar" }, { status: 400 });
@@ -30,10 +36,17 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "clientId requerido" }, { status: 400 });
   }
   const code = typeof checkinCode === "string" ? checkinCode.replace(/\D/g, "") : "";
-  const cpf = typeof cpf4 === "string" ? cpf4.replace(/\D/g, "") : "";
-  if (!code || cpf.length !== 4) {
+  const bruto = typeof segundoFator === "string" ? segundoFator : cpf4;
+  const fator = (typeof bruto === "string" ? bruto : "").trim();
+  const fatorValido = fator.includes("@")
+    ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fator)
+    : fator.replace(/\D/g, "").length === 4;
+  if (!code || !fatorValido) {
     return NextResponse.json(
-      { error: "informe o nº do ingresso e os 4 primeiros dígitos do CPF" },
+      {
+        error:
+          "informe o nº do ingresso e os 4 primeiros dígitos do CPF (ou o e-mail da inscrição)",
+      },
       { status: 400 },
     );
   }
@@ -50,10 +63,14 @@ export async function POST(req: Request) {
   recent.push(now);
   tries.set(clientId, recent);
 
-  const attendee = findAttendeeByLogin(code, cpf);
+  const attendee = findAttendeeByLogin(code, fator);
   if (!attendee) {
     return NextResponse.json(
-      { error: "não encontramos essa combinação de ingresso e CPF" },
+      {
+        error: fator.includes("@")
+          ? "não encontramos essa combinação de ingresso e e-mail"
+          : "não encontramos essa combinação de ingresso e CPF",
+      },
       { status: 401 },
     );
   }

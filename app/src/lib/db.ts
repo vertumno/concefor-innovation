@@ -30,7 +30,46 @@ function open(): Database.Database {
   db.pragma("foreign_keys = ON");
   // Schema idempotente (create table if not exists): seguro aplicar a cada boot.
   db.exec(readFileSync(join(process.cwd(), "db", "schema.sql"), "utf8"));
+  migrar(db);
   return db;
+}
+
+// Migrações idempotentes de DADOS (o DDL vive no schema.sql, que já é "if not
+// exists"). Rodam a cada boot e não fazem nada quando já foram aplicadas.
+function migrar(db: Database.Database): void {
+  // 04/08: conexões passaram a ser da PESSOA, não do aparelho (payload.de).
+  // As criadas antes só têm client_id — recupera o dono pelo login daquele
+  // aparelho. Conexão de aparelho que nunca logou (ou que já saiu) fica órfã:
+  // não há como saber de quem era, e some do mosaico.
+  db.exec(
+    `update timeline_events
+        set payload = json_set(payload, '$.de',
+              (select i.attendee_id from identities i
+                where i.client_id = timeline_events.client_id))
+      where tipo = 'connection'
+        and json_extract(payload, '$.de') is null
+        and exists (select 1 from identities i
+                     where i.client_id = timeline_events.client_id)`,
+  );
+
+  // 04/08: conexão virou bilateral. Cria o lado que falta nas antigas, para
+  // ninguém ficar conectado "de um jeito só" (id em hex — só precisa ser único).
+  db.exec(
+    `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+     select lower(hex(randomblob(16))), 'connection', null, e.ts,
+            json_object('attendeeId', json_extract(e.payload, '$.de'),
+                        'de',         json_extract(e.payload, '$.attendeeId'),
+                        'recebida',   json('true')),
+            null
+       from timeline_events e
+      where e.tipo = 'connection'
+        and json_extract(e.payload, '$.de') is not null
+        and not exists (
+              select 1 from timeline_events x
+               where x.tipo = 'connection'
+                 and json_extract(x.payload, '$.de')         = json_extract(e.payload, '$.attendeeId')
+                 and json_extract(x.payload, '$.attendeeId') = json_extract(e.payload, '$.de'))`,
+  );
 }
 
 export function getDb(): Database.Database {
@@ -153,6 +192,62 @@ export function updateSessionAdmin(
   return r.changes > 0;
 }
 
+// ─── Bloco de teste criado do próprio /admin ───
+// Para experimentar com gente na sala sem depender de rodar script no servidor
+// (era `seed:validacao` por docker run). Nasce JÁ no ar, então o Ao Vivo cai
+// direto na tela de reagir. Prefixo `demo-` = descartável: sobrevive ao
+// re-sync do Even3 (que só mexe nos `even3-`) e pode ser apagado por aqui.
+const PREFIXO_TESTE = "demo-";
+
+// ISO com o fuso de Brasília fixo, como o sync e os seeds. O container pode
+// estar em UTC; sem isso, um bloco criado à noite cairia no dia seguinte da
+// agenda.
+function agoraEmBrasilia(deslocamentoMin = 0): string {
+  const t = Date.now() + deslocamentoMin * 60_000 - 3 * 60 * 60_000;
+  return `${new Date(t).toISOString().slice(0, 19)}-03:00`;
+}
+
+export function insertBlocoTeste(
+  titulo: string,
+  minutos: number,
+  sala: string | null,
+): { id: string; inicio: string; fim: string } {
+  const id = `${PREFIXO_TESTE}teste-${Date.now().toString(36)}`;
+  // Começa um minuto atrás para já contar como "no ar" no primeiro carregamento.
+  const inicio = agoraEmBrasilia(-1);
+  const fim = agoraEmBrasilia(minutos);
+  getDb()
+    .prepare(
+      `insert into sessions (id, titulo, descricao, sala, eixo, palestrante, inicio, fim)
+       values (?, ?, ?, ?, 'Teste', null, ?, ?)`,
+    )
+    .run(
+      id,
+      titulo,
+      "Bloco criado pelo /admin para experimentar o app com o público presente.",
+      sala,
+      inicio,
+      fim,
+    );
+  return { id, inicio, fim };
+}
+
+// Só apaga o que foi criado para teste — sessão do Even3 nunca some por aqui.
+// Leva junto as reações e perguntas do bloco: são de brincadeira e, sem isso,
+// entrariam no relatório final como "(sessão removida)".
+export function deleteSessaoTeste(id: string): boolean {
+  if (!id.startsWith(PREFIXO_TESTE)) return false;
+  const db = getDb();
+  return db.transaction(() => {
+    db.prepare("delete from timeline_events where session_id = ?").run(id);
+    return db.prepare("delete from sessions where id = ?").run(id).changes > 0;
+  })();
+}
+
+export function isSessaoTeste(id: string): boolean {
+  return id.startsWith(PREFIXO_TESTE);
+}
+
 // ─────────────────────── Relatório pós-evento (R9) ───────────────────────
 // Tudo derivado de timeline_events + sessions — "sem trabalho manual: é só
 // ler a tabela" (spec §5). A página /admin/relatorio imprime/exporta em PDF.
@@ -228,7 +323,11 @@ export function getReport(): Report {
       votosEmPerguntas: n(
         "select count(*) as n from timeline_events where tipo = 'question_vote'",
       ),
-      conexoes: n("select count(*) as n from timeline_events where tipo = 'connection'"),
+      // Conta o par, não os dois lados: desde 04/08 conectar grava ida e volta.
+      conexoes: n(
+        `select count(*) as n from timeline_events
+          where tipo = 'connection' and json_extract(payload, '$.recebida') is null`,
+      ),
     },
     reacoesPorTipo,
     ranking,
@@ -240,17 +339,35 @@ export function getReport(): Report {
 // Associação client_id ↔ inscrito, criada no login com consentimento (LGPD).
 // PII nunca sai do servidor: as rotas públicas só devolvem o primeiro nome.
 
-// nº do ingresso + 4 primeiros dígitos do CPF (decisão de 20/07).
+// nº do ingresso + segundo fator: 4 primeiros dígitos do CPF (decisão de 20/07)
+// OU o e-mail da inscrição, no mesmo campo (decisão de 29–30/07 — a premissa
+// "todo inscrito tem CPF no cadastro" caiu em 29/07).
 export function findAttendeeByLogin(
   checkinCode: string,
-  cpf4: string,
+  segundoFator: string,
 ): { id: number; nome: string } | null {
-  const row = getDb()
-    .prepare(
-      `select id, nome from attendees
-        where checkin_code = ? and documento is not null and substr(documento, 1, 4) = ?`,
-    )
-    .get(checkinCode.trim(), cpf4.trim()) as { id: number; nome: string } | undefined;
+  const db = getDb();
+  const code = checkinCode.trim();
+  const fator = segundoFator.trim();
+
+  const row = (
+    fator.includes("@")
+      ? db
+          .prepare(
+            `select id, nome from attendees
+              where checkin_code = ? and email is not null
+                and lower(trim(email)) = lower(?)`,
+          )
+          .get(code, fator)
+      : db
+          .prepare(
+            `select id, nome from attendees
+              where checkin_code = ? and documento is not null
+                and substr(documento, 1, 4) = ?`,
+          )
+          .get(code, fator.replace(/\D/g, ""))
+  ) as { id: number; nome: string } | undefined;
+
   return row ? { ...row, nome: nomeBonito(row.nome) } : null;
 }
 
@@ -280,8 +397,10 @@ export function deleteIdentity(clientId: string): void {
 // ─────────────────────── Conexões / networking (Pessoas) ───────────────────────
 // "Mapa de bolinhas" (ideia de 20/07): cada inscrito é uma bolinha; escanear o
 // QR (ou digitar o nº do ingresso) do outro cria a conexão e acende a bolinha.
-// Conexão = tipo='connection' na linha do tempo (client_id=meu, payload
-// {"attendeeId": n}). Contato completo só aparece DEPOIS de conectar.
+// Conexão = tipo='connection' na linha do tempo, payload
+// {"de": meuAttendeeId, "attendeeId": doOutro} — a conexão segue a PESSOA, e
+// por isso sobrevive a trocar de aparelho, reinstalar o PWA ou limpar o
+// navegador. Contato completo só aparece DEPOIS de conectar.
 
 export type Participante = {
   id: number;
@@ -360,26 +479,58 @@ export function attendeeByCheckin(code: string): { id: number; nome: string; ema
 }
 
 // true se criou; false se já existia (idempotente).
-export function insertConnection(clientId: string, attendeeId: number): boolean {
+//
+// A conexão é da PESSOA (`payload.de`), não do aparelho: `client_id` fica só
+// como rastro de onde foi feita. Amarrar ao dispositivo (como era até 04/08)
+// perdia o mosaico quando o localStorage sumia — e no iOS o PWA instalado tem
+// storage próprio, separado do Safari, então bastava abrir pelo ícone.
+//
+// E é BILATERAL (decisão de 04/08): quem escaneia e quem teve o crachá
+// escaneado ficam conectados. As duas pessoas estavam frente a frente e
+// trocaram contato de fato — só uma delas ter feito o gesto é detalhe de
+// interface. O lado que não escaneou fica marcado com `recebida: true`, para o
+// relatório saber quem puxou a conversa.
+export function insertConnection(
+  deAttendeeId: number,
+  paraAttendeeId: number,
+  clientId: string,
+): boolean {
   const db = getDb();
-  const dup = db
-    .prepare(
-      `select 1 from timeline_events
-        where tipo = 'connection' and client_id = ?
-          and json_extract(payload, '$.attendeeId') = ?`,
-    )
-    .get(clientId, attendeeId);
-  if (dup) return false;
-  db.prepare(
+  const existe = db.prepare(
+    `select 1 from timeline_events
+      where tipo = 'connection'
+        and json_extract(payload, '$.de') = ?
+        and json_extract(payload, '$.attendeeId') = ?`,
+  );
+  const inserir = db.prepare(
     `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
      values (?, 'connection', null, ?, ?, ?)`,
-  ).run(randomUUID(), new Date().toISOString(), JSON.stringify({ attendeeId }), clientId);
-  return true;
+  );
+  const ts = new Date().toISOString();
+
+  const criar = (de: number, para: number, recebida: boolean): boolean => {
+    if (existe.get(de, para)) return false;
+    inserir.run(
+      randomUUID(),
+      ts,
+      JSON.stringify({ attendeeId: para, de, ...(recebida ? { recebida: true } : {}) }),
+      // O aparelho é de quem escaneou; do outro lado não há aparelho envolvido.
+      recebida ? null : clientId,
+    );
+    return true;
+  };
+
+  return db.transaction(() => {
+    const nova = criar(deAttendeeId, paraAttendeeId, false);
+    criar(paraAttendeeId, deAttendeeId, true); // volta: idempotente por si só
+    return nova;
+  })();
 }
 
 // Todos os inscritos como bolinhas: conexões primeiro (mais recentes no topo,
 // com contato completo), depois o resto em ordem alfabética (só 1º nome).
-export function getParticipantes(clientId: string | null): Participante[] {
+// Recebe o attendee da pessoa logada (null = anônimo, ninguém aceso).
+export function getParticipantes(attendeeId: number | null): Participante[] {
   const db = getDb();
   const todos = db
     .prepare(
@@ -400,15 +551,17 @@ export function getParticipantes(clientId: string | null): Participante[] {
   }[];
 
   const ordem = new Map<number, number>(); // attendeeId → posição (0 = mais recente)
-  if (clientId) {
+  if (attendeeId) {
     const rows = db
       .prepare(
         `select json_extract(payload, '$.attendeeId') as a from timeline_events
-          where tipo = 'connection' and client_id = ?
+          where tipo = 'connection' and json_extract(payload, '$.de') = ?
           order by ts desc`,
       )
-      .all(clientId) as { a: number }[];
-    rows.forEach((r, i) => ordem.set(r.a, i));
+      .all(attendeeId) as { a: number }[];
+    rows.forEach((r, i) => {
+      if (!ordem.has(r.a)) ordem.set(r.a, i);
+    });
   }
 
   const mk = (t: (typeof todos)[number]): Participante => {
@@ -490,6 +643,15 @@ export function setAvisoHidden(avisoId: string, hidden: boolean): boolean {
   return r.changes > 0;
 }
 
+// Ocultar tira do app mas guarda o registro; apagar some de vez — pedido de
+// 30/07, para o aviso escrito errado não ficar pendurado na lista do admin.
+export function deleteAviso(avisoId: string): boolean {
+  const r = getDb()
+    .prepare("delete from timeline_events where id = ? and tipo = 'aviso'")
+    .run(avisoId);
+  return r.changes > 0;
+}
+
 // ─────────────────────── Dashboard admin (R3) ───────────────────────
 // Tudo derivado de timeline_events — o dashboard é só uma leitura da linha
 // do tempo (mesmo modelo que alimenta app e telão; spec §5).
@@ -502,6 +664,7 @@ export type AdminStats = {
   totalPerguntas: number;
   totalInscritos: number; // sincronizados do Even3 (R7)
   totalLogados: number; // identities criadas no login
+  sessoesComJanelaAberta: string[]; // inclusive as que já terminaram (órfãs)
 };
 
 export function getAdminStats(): AdminStats {
@@ -550,6 +713,19 @@ export function getAdminStats(): AdminStats {
   const inscritos = db.prepare("select count(*) as n from attendees").get() as { n: number };
   const logados = db.prepare("select count(*) as n from identities").get() as { n: number };
 
+  // Janela de perguntas que ficou aberta — inclusive de sessão já encerrada.
+  // Sem isso o admin só enxergava as sessões ao vivo e não tinha como fechar
+  // depois que a palestra acabava (achado do teste de 30/07).
+  const janelas = db
+    .prepare(
+      `select session_id from timeline_events e
+        where tipo = 'questions_window'
+          and ts = (select max(ts) from timeline_events x
+                     where x.tipo = 'questions_window' and x.session_id = e.session_id)
+          and json_extract(payload, '$.open') = 1`,
+    )
+    .all() as { session_id: string | null }[];
+
   return {
     ativosUltimaHora: ativos.n,
     totalReacoes: total.n,
@@ -558,6 +734,7 @@ export function getAdminStats(): AdminStats {
     totalPerguntas: perguntas.n,
     totalInscritos: inscritos.n,
     totalLogados: logados.n,
+    sessoesComJanelaAberta: janelas.map((j) => j.session_id).filter((s): s is string => Boolean(s)),
   };
 }
 
