@@ -27,6 +27,7 @@ export default function AdminPage() {
   const [qBySession, setQBySession] = useState<Record<string, QState>>({});
   const [avisos, setAvisos] = useState<Aviso[]>([]);
   const [avisoTexto, setAvisoTexto] = useState("");
+  const [telaoPerguntasOn, setTelaoPerguntasOn] = useState<boolean | null>(null);
   const [blocoTitulo, setBlocoTitulo] = useState("");
   const [blocoDesc, setBlocoDesc] = useState("");
   const [blocoMin, setBlocoMin] = useState(60);
@@ -77,6 +78,8 @@ export default function AdminPage() {
       setStats((await res.json()) as AdminStats);
       const av = await fetch("/api/admin/avisos", { headers });
       if (av.ok) setAvisos((await av.json()) as Aviso[]);
+      const tl = await fetch("/api/telao");
+      if (tl.ok) setTelaoPerguntasOn(((await tl.json()) as { perguntas: boolean }).perguntas);
     } catch {
       /* mantém o último estado */
     }
@@ -141,6 +144,22 @@ export default function AdminPage() {
       setOpErro("Sem conexão com o servidor — tente de novo.");
     }
     refreshQuestions();
+  }
+
+  // Painel "Perguntas mais votadas" do telão: dá para tirar do ar na hora
+  // (ex.: pergunta fora de tom no topo) sem fechar a janela de perguntas.
+  async function alternarPerguntasTelao() {
+    try {
+      const res = await fetch("/api/admin/telao", {
+        method: "POST",
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify({ perguntas: !(telaoPerguntasOn ?? true) }),
+      });
+      if (res.ok) setTelaoPerguntasOn(((await res.json()) as { perguntas: boolean }).perguntas);
+      setOpErro(res.ok ? null : "Falhou ao alternar as perguntas do telão.");
+    } catch {
+      setOpErro("Sem conexão com o servidor — tente de novo.");
+    }
   }
 
   async function avisar(body: Record<string, string>) {
@@ -323,6 +342,24 @@ export default function AdminPage() {
       ) : (
         <div className="empty">Nenhuma reação registrada ainda.</div>
       )}
+
+      <div className="section-label">Telão</div>
+      <p className="page-sub">
+        O telão mostra as 3 perguntas mais votadas da sessão no ar. Aqui dá para ocultar o
+        painel na hora, sem fechar a janela de perguntas — e reexibir quando quiser.
+      </p>
+      <button
+        type="button"
+        className="admin-btn"
+        onClick={alternarPerguntasTelao}
+        disabled={telaoPerguntasOn === null}
+      >
+        {telaoPerguntasOn === null
+          ? "Perguntas no telão: …"
+          : telaoPerguntasOn
+            ? "Perguntas no telão: exibindo — ocultar"
+            : "Perguntas no telão: OCULTAS — reexibir"}
+      </button>
 
       <div className="section-label">Perguntas — sessões ao vivo e janelas abertas</div>
       {aoVivo.length === 0 && <div className="empty">Nenhuma sessão no ar agora.</div>}

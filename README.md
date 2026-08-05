@@ -134,7 +134,7 @@ src/
 │   ├── page.tsx         Início — Agora / A seguir + banner "não perca"
 │   ├── timeline/        Programação completa (filtros, busca, "minha programação")
 │   ├── sessao/[id]/     Detalhe da sessão (+ favoritar + reações ao vivo)
-│   ├── telao/           Telão "batimento" — /telao (sessão no ar) ou /telao/[sessionId]
+│   ├── telao/           Telão "linha do tempo" — /telao (sessão no ar / sala de espera) ou /telao/[sessionId]
 │   └── api/             sessions · reactions (POST/GET) · live/[sessionId] (SSE)
 ├── components/          SessionCard · Reactions · Telao · Speakers · TimeStamp
 └── lib/                 db (SQLite, interface única) · reactions · clientId (anônimo) · favorites · sessions · types
@@ -154,7 +154,7 @@ a dados, o que mantém barata uma futura volta ao Postgres.
 - [x] Identidade visual (Concefor base + selo 20 anos acento)
 - [x] Backend próprio: SQLite local (`lib/db.ts`) + `GET /api/sessions` + `npm run seed`
 - [x] Reações na sessão ao vivo → `timeline_events`, com throttle anti-flood
-- [x] Tempo real (SSE) + modo telão "batimento cardíaco" em `/telao`
+- [x] Tempo real (SSE) + telão "linha do tempo de reações" em `/telao` (com sala de espera/contagem regressiva)
 - [x] Dashboard admin ao vivo (`/admin`) + relatório (`/admin/relatorio`)
 - [x] Sync da programação oficial via API do Even3 (substituiu o seed)
 - [x] Perguntas com upvote · login opcional pelo crachá · mosaico de conexões
