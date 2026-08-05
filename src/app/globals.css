@@ -1175,6 +1175,33 @@ h1.page-title {
     opacity: 0.82;
   }
 }
+/* QR de acesso ao app — canto inferior direito: a espera dobra como cartaz. */
+.telao-wait-qr {
+  position: absolute;
+  right: 3vw;
+  bottom: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8vh;
+}
+.telao-wait-qr-img {
+  width: clamp(110px, 17vh, 230px);
+  height: auto;
+  border-radius: var(--radius-md);
+}
+.telao-wait-qr-cta {
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  font-weight: var(--weight-semibold);
+  font-size: clamp(0.7rem, 1.3vw, 1.05rem);
+}
+.telao-wait-qr-url {
+  color: var(--cyan-300);
+  letter-spacing: 0.04em;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
 
 /* =================== /projecao — QR de acesso no telão =================== */
 /* Herda o fundo/tela cheia de .telao; só organiza o miolo em coluna central. */
