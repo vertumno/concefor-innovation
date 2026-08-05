@@ -4,9 +4,19 @@
 // compile edge do webpack.
 import { runSync } from "../scripts/sync-even3.mjs";
 
-// Desligado por padrão (decisão de 30/07: o re-sync do /admin cobre a
-// necessidade); ligar definindo SYNC_INTERVAL_MIN (minutos) no .env.local.
-const min = Number(process.env.SYNC_INTERVAL_MIN ?? "0");
+// Ligado por padrão EM PRODUÇÃO a cada 10 min (decisão de 05/08). Era desligado
+// desde 30/07 ("o re-sync do /admin cobre a necessidade"), mas em 04/08 o campo
+// `confirmado` do Even3 virou controle de acesso: quem confirma no credenciamento
+// só entra no app depois de um sync. Depender de alguém lembrar de apertar o
+// botão no meio do evento é frágil demais para isso.
+// Em dev fica desligado (não mexer no banco local sem pedir) e
+// SYNC_INTERVAL_MIN sobrepõe os dois — `SYNC_INTERVAL_MIN=0` desliga.
+//
+// O teste é "não é development" e não "é production" de propósito: se o
+// ambiente do container subir sem NODE_ENV, o certo é o sync LIGAR — ficar
+// desligado em silêncio no evento é o que a decisão de 05/08 quer evitar.
+const PADRAO_MIN = process.env.NODE_ENV === "development" ? 0 : 10;
+const min = Number(process.env.SYNC_INTERVAL_MIN ?? PADRAO_MIN);
 let rodando = false;
 
 const tick = async () => {
@@ -27,7 +37,9 @@ const tick = async () => {
 };
 
 if (!min || min < 0) {
-  console.log("[sync-even3] sync automático desligado (defina SYNC_INTERVAL_MIN para ligar)");
+  console.log(
+    `[sync-even3] sync automático desligado (SYNC_INTERVAL_MIN=${process.env.SYNC_INTERVAL_MIN ?? "não definido"}; padrão fora de dev: ${PADRAO_MIN} min)`,
+  );
 } else if (!process.env.EVEN3_API_TOKEN) {
   console.log("[sync-even3] sem EVEN3_API_TOKEN — sync automático desligado");
 } else {

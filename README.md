@@ -106,7 +106,7 @@ Baseie-se em `.env.example`. Segredos **não** estão no repositório (`.env.loc
 | `DATABASE_PATH` | Caminho do arquivo SQLite. No Docker: `/app/data/concefor.db`. Default local: `./data/concefor.db`. |
 | `ADMIN_TOKEN` | Segredo do painel admin (`/admin`). |
 | `EVEN3_API_TOKEN` | Token de **leitura** da API do Even3 (programação/inscritos). |
-| `SYNC_INTERVAL_MIN` | Sync automático do Even3 embutido no serviço, em minutos (ex.: `10`). **Desligado por padrão** — o normal é o botão de re-sync no `/admin`; quando ligado, roda também uma vez no boot. |
+| `SYNC_INTERVAL_MIN` | Sync automático do Even3 embutido no serviço, em minutos. **Padrão: 10 fora de dev** (em `next dev` fica desligado). Roda também uma vez no boot. `0` desliga — mas em produção isso significa que quem for confirmado no credenciamento **não entra no app** até alguém apertar o re-sync no `/admin`. |
 | `NEXT_PUBLIC_DEMO` | `0` em produção (`1` = modo demonstração com dados fictícios). Embutido no build. |
 
 ## Operação
