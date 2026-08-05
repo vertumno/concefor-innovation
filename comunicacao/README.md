@@ -64,7 +64,11 @@ comunicacao/
 
 ## Estado do momento (atualizar sempre)
 
-- **Hoje:** 03/08/2026 — faltam **14 dias** para a abertura (17/08).
+- **Hoje:** 04/08/2026 — faltam **13 dias** para a abertura (17/08).
+- 🆕 **04/08 — inbox processado.** Dois áudios da **Vanessa**, de **14/07**, estavam parados lá:
+  ela pediu o **card do e-book do NTE** (texto pela CGTE) e **um local para hospedar o e-book**,
+  com link ou QR code. A hospedagem não estava registrada em lugar nenhum e o lançamento é
+  **17/08 às 20h**. [Brief, com rascunho da copy e mensagem pronta](producao/02-pre-evento/livro-nte/brief.md)
 - **Cadência de publicação (definida em 27/07):** **um card por dia, em sequência, e só cards.**
   Os stories programados foram retirados do [calendário](planejamento/calendario-publicacao.md).
 - **Já no ar:** card do prazo de envio (16/07) · [Vanessa Battestin](https://www.instagram.com/p/DbF30gOOToU/) (21/07) ·
@@ -137,20 +141,26 @@ comunicacao/
      [brief](producao/02-pre-evento/eventos-paralelos/brief-cards.md).
      🔴 **Falta definir quem produz as artes** — a Juliana está nos banners e a Andreia no bolo e
      no livro. Os eventos são em **20/08**, então quanto antes começar a divulgação, melhor.
-  4. 📸 **Cantinho instagramável — 🔴 sem dono, e a CGTE devolveu (03/08).** O Marquito pediu à
+  4. 🔴 **Onde o e-book do NTE vai ficar hospedado — recuperado do inbox em 04/08.** Ele é lançado
+     no palco em **17/08 às 20h** e não tem endereço de acesso: sem local, não há link nem QR code.
+     Recomendação no brief: publicar na **Base de Conhecimentos**, que já está no ar e mantém o
+     link válido depois do evento. ⚠️ Resolver junto com o **link definitivo do livro dos 20 anos**,
+     hoje um Drive provisório. O **card** que a Vanessa pediu depende disso e da **sinopse do NTE**.
+     [Brief + mensagem pronta para a Vanessa e a Andrômeda](producao/02-pre-evento/livro-nte/brief.md)
+  5. 📸 **Cantinho instagramável — 🔴 sem dono, e a CGTE devolveu (03/08).** O Marquito pediu à
      Juliana que pensasse o espaço, mas sem dizer onde, de que tamanho nem com que material.
      A posição dela é que **o cantinho é da comissão organizadora, não da CGTE**. Elton leva à
      comissão; ela pediu retorno **até 05/08**. 💡 Pista deixada: aproveitar a **arte do bolo**
      que a Andreia está fazendo. [Síntese](../contexto/reunioes/sintese-2026-08-03.md)
-  5. 🔵 **Etiquetas dos nomes do crachá** — **Alex** é o responsável. ✅ A medida saiu (03/08) e a
+  6. 🔵 **Etiquetas dos nomes do crachá** — **Alex** é o responsável. ✅ A medida saiu (03/08) e a
      escolha caiu para duas opções, com recomendação. Falta **comprar** (sugerido até 04/08) e
      definir **como será a impressão**; testar numa amostra quando os 400 chegarem (07/08).
      [Brief](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md)
-  6. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
+  7. 🔴 Enviar a [mensagem aos palestrantes](producao/02-pre-evento/palestrantes/mensagem-solicitacao-video.md)
      (vídeo-convite **+ material para o app**) — prazo interno era 18/07 e o retorno é 03/08.
-  7. ✅ ~~Conferir a 3ª leva de artes da gráfica~~ — **caneta, copo e bolsa aprovados em 02/08**.
-  8. ✅ ~~**Card do Mauro Oliveira**~~ — **publicado em 03/08**, antecipado de 11/08.
-  9. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
+  8. ✅ ~~Conferir a 3ª leva de artes da gráfica~~ — **caneta, copo e bolsa aprovados em 02/08**.
+  9. ✅ ~~**Card do Mauro Oliveira**~~ — **publicado em 03/08**, antecipado de 11/08.
+  10. Decidir o destino da **contagem regressiva** (9 das 10 peças são stories).
 - **Canva (produção de artes):** https://www.canva.com/folder/FAHDrZ44PIM
 
 > Mantenha este bloco e o [board de produção](planejamento/board-producao.md) atualizados —

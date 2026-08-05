@@ -35,75 +35,46 @@ bloco é rótulo + conteúdo, com a distância vindo só do rótulo.
 
 ---
 
+## 2026-08-04 — E-book do NTE precisa de card e de um lugar para morar (pedido de 14/07 recuperado do inbox)
+
+Processamento do `comunicacao/_inbox/`: dois áudios de WhatsApp da **Vanessa Battestin**, de
+**14/07 às 17h59**, que ficaram três semanas sem processar. Transcritos e arquivados em
+`comunicacao/producao/02-pre-evento/livro-nte/_refs/`, junto com os `.ogg` originais.
+
+**A autoria é dela com alta confiança:** o [e-mail dos banners institucionais](comunicacao/producao/02-pre-evento/banners-institucionais/_refs/2026-07-14-email-vanessa-arte-banners.md)
+saiu 14 minutos depois, às 18h13, sobre o mesmo assunto (produto institucional, link, QR code).
+
+**1. O texto do card do e-book do NTE é da CGTE.** Ela pediu explicitamente que "a própria CGTE"
+escrevesse, não o NTE. *Por quê importa registrar:* essa peça não estava no board como item
+próprio; existia só diluída na linha "Divulgação dos lançamentos", que trata os 5 lançamentos como
+um carrossel único. O rascunho da copy está escrito no
+[brief](comunicacao/producao/02-pre-evento/livro-nte/brief.md).
+
+**2. 🔴 O e-book do NTE não tem onde morar, e isso não estava registrado em lugar nenhum.** Ela
+pediu "um local para botar um link ou um QR code de acesso". *Por quê é o item crítico:* o
+lançamento é **17/08 às 20h, no Pátio**, dentro do bloco dos 4 lançamentos. Sem endereço, o e-book
+é anunciado no palco e ninguém consegue abrir. Sem link, também não existe QR code.
+
+**Recomendação registrada: publicar na Base de Conhecimentos** (https://conhecimento.cefor.ifes.edu.br/).
+*Por quê:* já está no ar, já é do Cefor, já reúne trilhas e artigos, e um endereço estável lá
+continua funcionando depois do Concefor. Drive resolve rápido mas quebra quando alguém mexe na
+pasta, e QR impresso não tem volta.
+
+**3. A mesma decisão vale para o livro dos 20 anos.** Ele está com link provisório de Drive no
+banner institucional. Os dois e-books precisam de endereço definitivo e faz pouco sentido resolver
+um sem o outro.
+
+**4. A sinopse do e-book pode nunca ter chegado.** No áudio encaminhado, a Vanessa pede a alguém do
+NTE uma descrição curta do lançamento (com imagem, se houvesse) e combina receber na quinta,
+**16/07**. Não há registro no repo de que tenha chegado. A [mensagem para destravar os dois pontos](comunicacao/producao/02-pre-evento/livro-nte/brief.md#-mensagem-pronta-para-destravar-vanessa-e-andrômeda)
+está pronta no brief.
+
+**Lição de processo:** o inbox da comunicação ficou três semanas sem ser processado e engoliu um
+pedido com prazo. `_inbox/` vazio continua sendo o estado bom (decisão de 2026-07-06).
+
+---
+
 ## 2026-08-04 — Conexão é da pessoa, não do aparelho; login aceita e-mail; contato da conexão vira cartão com WhatsApp e cópia
-
-**Bug encontrado (Marquito, testando o networking):** as conexões sumiam. A causa estava no
-modelo: `insertConnection` gravava só o `client_id` — o UUID que vive no `localStorage` — e a
-leitura filtrava por ele. **A conexão pertencia ao navegador, não à pessoa.**
-
-Quatro consequências, todas plausíveis no evento:
-
-1. **No iOS o PWA instalado tem storage separado do Safari.** Conectar no navegador e depois
-   abrir pelo ícone da tela de início dava mosaico zerado — exatamente o caminho que a gente
-   pede ao participante fazer.
-2. Trocar de aparelho, limpar dados ou usar aba anônima perdia tudo, mesmo logando com a
-   mesma inscrição.
-3. O Safari **descarta o localStorage de sites sem uso por 7 dias**: quem entrasse no
-   lançamento (10/08) podia chegar em 17/08 deslogado e sem conexões.
-4. Furo de privacidade: sair e outra pessoa entrar no mesmo aparelho **herdava as conexões da
-   anterior** — `deleteIdentity` nunca tocou nelas.
-
-**Decisão:** a conexão passa a carregar `payload.de` (o `attendee_id` de quem conectou) e é lida
-por pessoa logada. O `client_id` fica como rastro de onde foi feita. Migração idempetente no
-boot preenche o `de` das conexões antigas pelo login daquele aparelho; conexão de aparelho que
-nunca logou fica órfã e some (não há como saber de quem era — são todas de teste).
-
-**Junto, do V1 prometido em 30/07:**
-
-- **Login aceita o e-mail da inscrição** no mesmo campo do CPF4 — era o compromisso assumido em
-  voz alta na validação que ainda não existia em código. O campo antigo (`cpf4`) continua aceito
-  no corpo da requisição, porque um app já aberto ou em cache do PWA segue mandando por ele.
-- **Cartão da conexão:** símbolo do WhatsApp com link `wa.me` (número normalizado para DDI+DDD —
-  a conta antiga quebrava com número de 8 dígitos), **copiar em cada dado**, "copiar tudo" e
-  **salvar nos contatos** (.vcf, via folha de compartilhamento no iPhone e download no resto).
-  *Por quê:* networking aqui é troca de contato (sem chat, decisão do benchmark EDEN) — o que a
-  pessoa quer no corredor é levar o dado embora, não navegar até ele. `navigator.clipboard` só
-  existe em contexto seguro; no IP de fallback em HTTP entra o `execCommand`.
-- **QR no Safari:** `BarcodeDetector` não existe lá nem em vários Androids (foi o que derrubou a
-  câmera no teste da Juliana). Agora, quando ele falta, a leitura é feita com **jsQR** sobre um
-  canvas em meia resolução — carregado sob demanda, para não pesar 40 kB em quem não precisa.
-- **Avisos chegam sozinhos** (polling de 30 s + ao voltar para a aba) e o admin ganhou **apagar**,
-  além de ocultar.
-- **Perguntas órfãs:** o admin lista também as sessões já encerradas com a janela aberta.
-- Achado de quebra: o `/admin` refazia o efeito de polling a cada render (lista nova de sessões
-  ao vivo nas dependências) — na prática pedia dados em loop, não a cada 5 s. Corrigido.
-
-**Conexão passa a ser bilateral** (decisão do Marquito no mesmo dia): quem escaneia e quem
-teve o crachá escaneado ficam conectados. *Por quê:* as duas pessoas estavam frente a frente
-e trocaram contato de fato — qual delas segurou o celular é detalhe de interface. Substitui a
-leitura unilateral que vinha de 20/07 (que tratava só o gesto de escanear). O lado que não
-escaneou fica marcado com `recebida: true`, então o relatório continua sabendo quem puxou a
-conversa e conta **pares**, não os dois registros. A migração do boot também cria o lado que
-faltava nas conexões antigas. Efeito colateral bem-vindo: quem tem o crachá lido passa a ver
-que alguém se conectou, em vez de nunca ficar sabendo.
-
-**Bloco de teste pelo `/admin`** (pedido do Marquito, mesmo dia): botão **"Inserir bloco para
-agora"** cria uma sessão fictícia já no ar, com duração escolhida — quem abre o Ao Vivo cai
-direto na tela de reagir e perguntar. Apagar leva junto as reações e perguntas do teste, para
-não sujar o relatório; a rota só apaga ids `demo-`, então nenhuma sessão do Even3 some por ali.
-*Por quê:* até agora, ter uma sessão fictícia no servidor exigia `docker run … seed-validacao`
-— ou seja, dependia de quem tem acesso ao servidor, no meio de uma reunião. O `seed-validacao`
-continua para grades de um dia inteiro, e ganhou `--comissao` (grade curta do teste das 15h).
-
-**Marcado antes de subir:** tag **`app-v1.0`** no GitHub (`fac6721`) e no GitLab (`6881a1f`,
-o que está em produção) — ponto de retorno da versão validada em 30/07, caso algo destas
-mudanças precise ser revertido durante a semana do lançamento.
-
-**Achado ao espelhar:** o `main` do GitLab estava parado em 30/07 de manhã — **o vocabulário
-novo das reações nunca chegou à produção**. O app no ar ainda mostrava *Adorei · Parabéns ·
-Uau! · Nossa! · Que triste*. Vai junto no MR !2. Lição repetida (a mesma de 29/07): merge no
-`main` do monorepo que toca `app/` **não é deploy** — o espelho é um passo à parte e some do
-radar exatamente quando o dia foi corrido.
 
 ---
 

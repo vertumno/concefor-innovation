@@ -198,6 +198,8 @@
 | ~~Banners institucionais — livro, MOOCs, Base de Conhecimentos~~ → **movido para a seção de Impressão** (é peça para gráfica) | — | — | ↗️ |
 | Notícia do Concefor para ACS — [rascunho pronto](../producao/02-pre-evento/noticia-acs/rascunho-noticia.md), falta revisão da Márcia | Elton *(a princípio)* | antes de 15/08 | 🟡 |
 | Divulgação dos lançamentos (livro Cefor, Base de Conhecimentos, vitrine MOOCs, livro NTE, "AI no Moodle do Ifes") — pode ir em carrossel com chamada de inscrição | Elton *(a princípio)* | ___ | ⬜ |
+| **Card do e-book do NTE** 🆕 **pedido de 14/07 recuperado do inbox em 04/08** (dois áudios da Vanessa). O **texto é da CGTE**, como ela pediu. ✅ Rascunho da copy escrito. 🔴 Faltam a **sinopse do NTE** (pedida por ela em 14/07, sem registro de retorno) e **quem faz a arte**. [Brief](../producao/02-pre-evento/livro-nte/brief.md) | Texto: Elton/Marquito · arte: 🔴 **a definir** | antes de **17/08** | ⬜ |
+| 🔴 **Hospedagem do e-book do NTE (link + QR code)** 🆕 **mesmo pedido de 14/07.** É o item crítico: o lançamento é **17/08 às 20h** e o e-book não tem endereço de acesso. Recomendação registrada no brief: publicar na **Base de Conhecimentos** (já no ar, link sobrevive ao evento). ⚠️ **Resolver junto com o link definitivo do livro dos 20 anos**, que também está com link provisório de Drive. [Brief](../producao/02-pre-evento/livro-nte/brief.md) | 🔴 **a definir** — Elton leva à Vanessa/Andrômeda | antes de **17/08** | ⬜ |
 | Divulgação do lançamento do app (e-mail aos inscritos + QR codes no evento) | Marquito / Elton | lançamento **07/08** | ⬜ |
 
 > Plano detalhado: [plano-divulgacao-palestrantes.md](../producao/02-pre-evento/palestrantes/plano-divulgacao-palestrantes.md)
