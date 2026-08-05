@@ -78,7 +78,7 @@ export default function AdminPage() {
       setStats((await res.json()) as AdminStats);
       const av = await fetch("/api/admin/avisos", { headers });
       if (av.ok) setAvisos((await av.json()) as Aviso[]);
-      const tl = await fetch("/api/telao");
+      const tl = await fetch("/api/telao", { cache: "no-store" });
       if (tl.ok) setTelaoPerguntasOn(((await tl.json()) as { perguntas: boolean }).perguntas);
     } catch {
       /* mantém o último estado */
