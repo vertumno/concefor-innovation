@@ -84,7 +84,10 @@ export function Telao({ session }: { session: Session }) {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
     resize();
-    window.addEventListener("resize", resize);
+    // ResizeObserver, não window.resize: o canvas também muda de tamanho quando
+    // a coluna de perguntas aparece/some ao lado dele.
+    const ro = new ResizeObserver(resize);
+    ro.observe(canvas);
 
     // Oswald resolvida pelo next/font — o canvas herda de .telao.
     const fonte = getComputedStyle(canvas).fontFamily || "system-ui, sans-serif";
@@ -274,7 +277,7 @@ export function Telao({ session }: { session: Session }) {
 
     return () => {
       cancelAnimationFrame(raf);
-      window.removeEventListener("resize", resize);
+      ro.disconnect();
     };
   }, [iniMs, fimMs]);
 
@@ -422,7 +425,9 @@ export function Telao({ session }: { session: Session }) {
       </div>
 
       <div className="telao-miolo">
-        <canvas ref={canvasRef} className="telao-timeline" />
+        <div className="telao-grafico">
+          <canvas ref={canvasRef} className="telao-timeline" />
+        </div>
         {perguntas.length > 0 && (
           <aside className="telao-perguntas" aria-label="Perguntas mais votadas">
             <p className="telao-perguntas-titulo">Perguntas mais votadas</p>

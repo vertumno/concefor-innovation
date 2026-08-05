@@ -4,6 +4,23 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-05 (fim de tarde) — Conexão pode ser desfeita, e some para os dois
+
+**Decisão do Marquito:** a pessoa pode **desfazer uma conexão** no card do contato
+(tela Pessoas), e desfazer **remove para as duas pessoas** — espelho exato do conectar,
+que também é bilateral desde 04/08. A conexão é o par, não o gesto de cada lado.
+Ação discreta (link apagado no rodapé do card, com confirmação), porque o card existe
+para levar o contato embora, não para desfazê-lo. Os dois registros somem da linha do
+tempo (delete real, como avisos apagados) e o relatório passa a contar só o que existe.
+
+No mesmo pacote: fotos de participantes/palestrantes passam a ser servidas por
+**proxy com cache em disco** (`/api/foto?h=<hash da URL>`) — as `<img>` apontavam
+direto pro CDN do Even3, lento na rede do evento. Content-addressed: foto trocada no
+Even3 = URL nova = hash novo; e o hash não é enumerável, então quem não recebeu a foto
+pela API (attendee não conectado) continua sem acesso a ela.
+
+---
+
 ## 2026-08-05 (tarde) — Interagir exige login; pergunta sai com nome completo
 
 **Decisão do Marquito, após a demo do telão:** reagir, perguntar e votar passam a exigir

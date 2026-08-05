@@ -15,7 +15,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const MAX_CHARS = 140;
-const THROTTLE_MS = 15000; // 1 pergunta a cada 15s por dispositivo
+const THROTTLE_MS = 30000; // 1 pergunta a cada 30s por dispositivo (era 15s; 05/08)
 type ThrottleGlobal = { questionLast?: Map<string, number> };
 const g = globalThis as unknown as ThrottleGlobal;
 
@@ -69,7 +69,7 @@ export async function POST(req: Request) {
   const last = (g.questionLast ??= new Map()).get(cid) ?? 0;
   const now = Date.now();
   if (now - last < THROTTLE_MS) {
-    return NextResponse.json({ error: "calma — uma pergunta a cada 15s" }, { status: 429 });
+    return NextResponse.json({ error: "calma — uma pergunta a cada 30s" }, { status: 429 });
   }
   g.questionLast.set(cid, now);
 

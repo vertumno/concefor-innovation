@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import {
   attendeeByCheckin,
+  deleteConnection,
   getIdentityAttendeeId,
   insertConnection,
 } from "@/lib/db";
@@ -53,4 +54,32 @@ export async function POST(req: Request) {
     nova,
     pessoa: { nome: outro.nome, email: outro.email },
   });
+}
+
+// DELETE /api/connect { clientId, attendeeId } — desfaz a conexão nos DOIS
+// sentidos (decisão de 05/08): espelho do conectar bilateral. Só a própria
+// pessoa logada desfaz as suas; some do mosaico dos dois lados.
+export async function DELETE(req: Request) {
+  let body: unknown;
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
+  }
+  const { clientId, attendeeId } = (body ?? {}) as Record<string, unknown>;
+
+  if (typeof clientId !== "string" || !clientId) {
+    return NextResponse.json({ error: "clientId requerido" }, { status: 400 });
+  }
+  const meuAttendee = getIdentityAttendeeId(clientId);
+  if (!meuAttendee) {
+    return NextResponse.json({ error: "entre com sua inscrição" }, { status: 401 });
+  }
+  const outro = Number(attendeeId);
+  if (!Number.isInteger(outro) || outro <= 0 || outro === meuAttendee) {
+    return NextResponse.json({ error: "attendeeId inválido" }, { status: 400 });
+  }
+
+  const ok = deleteConnection(meuAttendee, outro);
+  return NextResponse.json({ ok });
 }

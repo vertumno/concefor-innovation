@@ -7,6 +7,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { corDe } from "@/components/Speakers";
+import { getClientId } from "@/lib/clientId";
 import {
   contatoEmTexto,
   copiarTexto,
@@ -21,9 +22,11 @@ import type { Participante } from "@/lib/db";
 export function PessoaCard({
   pessoa,
   onFechar,
+  onDesfeita,
 }: {
   pessoa: Participante;
   onFechar: () => void;
+  onDesfeita?: () => void;
 }) {
   // Qual campo acabou de ser copiado (mostra o "copiado ✓" naquela linha).
   const [copiado, setCopiado] = useState<string | null>(null);
@@ -41,6 +44,23 @@ export function PessoaCard({
       setCopiado(null);
       setFalhou(false);
     }, 2000);
+  }
+
+  // Desfazer remove a conexão PARA OS DOIS (decisão de 05/08) — daí o confirm.
+  async function desfazer() {
+    if (!confirm(`Desfazer a conexão com ${pessoa.nomeCompleto ?? pessoa.nome}? Ela some para vocês dois.`)) {
+      return;
+    }
+    try {
+      const res = await fetch("/api/connect", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ clientId: getClientId(), attendeeId: pessoa.id }),
+      });
+      if (res.ok) onDesfeita?.();
+    } catch {
+      /* rede oscilou: o card continua aberto e a pessoa tenta de novo */
+    }
   }
 
   const nome = pessoa.conectado ? (pessoa.nomeCompleto ?? pessoa.nome) : pessoa.nome;
@@ -145,6 +165,10 @@ export function PessoaCard({
               Não consegui copiar por aqui — toque e segure o texto para copiar à mão.
             </p>
           )}
+
+          <button type="button" className="desfazer-conexao" onClick={desfazer}>
+            Desfazer conexão
+          </button>
         </div>
       )}
     </div>

@@ -10,7 +10,7 @@
 import Database from "better-sqlite3";
 import { readFileSync } from "node:fs";
 import { mkdirSync } from "node:fs";
-import { randomUUID } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import { dirname, join } from "node:path";
 import type { Session, Speaker } from "./types";
 import { emptyCounts, type ReactionCounts, type ReactionKind } from "./reactions";
@@ -84,6 +84,43 @@ export function getDb(): Database.Database {
 // em linhas antigas — daí o coalesce.
 const confirmadoSql = (col = "confirmado") => `coalesce(${col}, 0) = 1`;
 
+// ─────────────────────── Fotos via proxy com cache ───────────────────────
+// As fotos vêm do CDN do Even3 e as <img> apontavam direto pra lá: lento na
+// rede do evento e sem cache. Toda foto servida pela API vira /api/foto?h=<sha1
+// da URL> — o proxy baixa uma vez, guarda em disco e serve local (ver a rota).
+// Content-addressed de propósito: (1) foto trocada no Even3 = URL nova = hash
+// novo, sem cache velho; (2) o hash é impossível de enumerar, então quem não
+// recebeu a foto pela API (ex.: attendee não conectado) não a acessa por id.
+
+export function fotoProxy(url: string | null): string | null {
+  if (!url || !/^https?:\/\//i.test(url)) return url; // demo/local: segue direto
+  return `/api/foto?h=${createHash("sha1").update(url).digest("hex")}`;
+}
+
+// hash → URL real, para a rota /api/foto. Recarrega o mapa quando não acha
+// (o re-sync do Even3 pode ter trocado as URLs no meio do caminho).
+type FotoMapGlobal = { conceforFotoMap?: Map<string, string> };
+const gFoto = globalThis as unknown as FotoMapGlobal;
+
+export function fotoUrlByHash(h: string): string | null {
+  const build = (): Map<string, string> => {
+    const m = new Map<string, string>();
+    const db = getDb();
+    const rows = [
+      ...(db.prepare("select foto from attendees where foto is not null").all() as { foto: string }[]),
+      ...(db.prepare("select foto from speakers where foto is not null").all() as { foto: string }[]),
+    ];
+    for (const { foto } of rows) {
+      if (/^https?:\/\//i.test(foto)) m.set(createHash("sha1").update(foto).digest("hex"), foto);
+    }
+    gFoto.conceforFotoMap = m;
+    return m;
+  };
+  let m = gFoto.conceforFotoMap ?? build();
+  if (!m.has(h)) m = build();
+  return m.get(h) ?? null;
+}
+
 // ─────────────────────────── Sessões ───────────────────────────
 
 type SessionRow = {
@@ -114,7 +151,10 @@ export function getSessions(): Session[] {
   );
 
   return rows.map((r) => {
-    const speakers = speakersDe.all(r.id) as Speaker[];
+    const speakers = (speakersDe.all(r.id) as Speaker[]).map((s) => ({
+      ...s,
+      foto: fotoProxy(s.foto),
+    }));
     return {
       ...r,
       speakerIds: speakers.map((s) => s.id),
@@ -125,12 +165,14 @@ export function getSessions(): Session[] {
 
 // Todos os palestrantes (tela Pessoas). bio/foto podem vir nulos — a UI trata.
 export function getSpeakers(): Speaker[] {
-  return getDb()
-    .prepare(
-      `select id, nome, titulo, instituicao, bio, foto
-         from speakers order by nome asc`,
-    )
-    .all() as Speaker[];
+  return (
+    getDb()
+      .prepare(
+        `select id, nome, titulo, instituicao, bio, foto
+           from speakers order by nome asc`,
+      )
+      .all() as Speaker[]
+  ).map((s) => ({ ...s, foto: fotoProxy(s.foto) }));
 }
 
 export function sessionExists(id: string): boolean {
@@ -565,6 +607,20 @@ export function insertConnection(
   })();
 }
 
+// Desfaz a conexão NOS DOIS SENTIDOS (decisão de 05/08): a conexão é o par de
+// pessoas, não o gesto — espelho do conectar bilateral. Some do mosaico dos dois.
+export function deleteConnection(a: number, b: number): boolean {
+  const r = getDb()
+    .prepare(
+      `delete from timeline_events
+        where tipo = 'connection'
+          and ((json_extract(payload, '$.de') = ? and json_extract(payload, '$.attendeeId') = ?)
+            or (json_extract(payload, '$.de') = ? and json_extract(payload, '$.attendeeId') = ?))`,
+    )
+    .run(a, b, b, a);
+  return r.changes > 0;
+}
+
 // Os inscritos CONFIRMADOS como bolinhas: conexões primeiro (mais recentes no
 // topo, com contato completo), depois o resto em ordem alfabética (só 1º nome).
 // Recebe o attendee da pessoa logada (null = anônimo, ninguém aceso).
@@ -614,7 +670,7 @@ export function getParticipantes(attendeeId: number | null): Participante[] {
         ? {
             nomeCompleto: nome,
             email: t.email ?? undefined,
-            foto: t.foto ?? undefined,
+            foto: fotoProxy(t.foto) ?? undefined,
             categoria: categoriaCurta(t.categoria) ?? undefined,
             telefone: t.telefone ?? undefined,
             instagram: t.instagram ?? undefined,
