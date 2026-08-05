@@ -388,7 +388,10 @@ export default function AdminPage() {
                 {q.questions.map((p) => (
                   <li key={p.id} className={`q-item ${p.hidden ? "q-hidden" : ""}`}>
                     <span className="q-vote q-vote-static">▲ {p.votes}</span>
-                    <p className="q-texto">{p.texto}</p>
+                    <div className="q-corpo">
+                      <p className="q-texto">{p.texto}</p>
+                      {p.autor && <span className="q-autor">{p.autor}</span>}
+                    </div>
                     <button
                       type="button"
                       className="admin-btn admin-btn-sm"

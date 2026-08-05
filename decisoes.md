@@ -4,6 +4,25 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-05 (tarde) — Interagir exige login; pergunta sai com nome completo
+
+**Decisão do Marquito, após a demo do telão:** reagir, perguntar e votar passam a exigir
+**login pelo ingresso**; anônimo continua vendo tudo que é público (contagens, perguntas,
+telão). E toda pergunta é **identificada** — o nome completo de quem mandou aparece junto
+(no app, no telão e na moderação do /admin), mesmo que pequeno.
+
+*Por quê:* pergunta assinada inibe pergunta tosca ou ofensiva antes de ela existir — a
+moderação do /admin continua como segunda linha, não como primeira. E amarrar a interação
+ao ingresso fecha a porta de flood anônimo que o throttle sozinho só atenuava.
+
+Como foi feito: o nome é **fotografado no envio** (`payload.autor`, sem mudar schema) —
+resolver pelo `client_id` na leitura mudaria o autor retroativamente se o aparelho trocasse
+de dono ou saísse. Perguntas de antes da decisão não têm autor e a UI apenas omite. O
+servidor barra anônimo com 401 nas três rotas (reagir/perguntar/votar); a UI desliga os
+botões e aponta para `/entrar`. Supera o "autor oculto" da spec §8 (R4).
+
+---
+
 ## 2026-08-05 — Sync do Even3 passa a rodar sozinho a cada 10 min em produção
 
 **Achado do teste com o Elton (14h54):** o Marquito colocou a foto no Even3, conectaram no app
