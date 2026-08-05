@@ -7,9 +7,9 @@
 // Atualiza por polling curto — mesma filosofia do SSE do telão (poll no SQLite).
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { getClientId } from "@/lib/clientId";
 import { useMe } from "@/lib/useMe";
+import { LoginCta } from "./LoginCta";
 import type { Question } from "@/lib/db";
 
 const MAX_CHARS = 140;
@@ -121,10 +121,7 @@ export function Questions({ sessionId, live }: { sessionId: string; live: boolea
           </div>
         ) : (
           me && (
-            <p className="q-fechada">
-              As perguntas são identificadas — <Link href="/entrar">entre com seu ingresso</Link>{" "}
-              para perguntar e votar.
-            </p>
+            <LoginCta>As perguntas são identificadas — entre para perguntar e votar.</LoginCta>
           )
         )
       ) : (

@@ -9,9 +9,9 @@
 // palma da mão. O tempo real dedicado (SSE) mora no telão (E3).
 
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
-import Link from "next/link";
 import { getClientId } from "@/lib/clientId";
 import { useMe } from "@/lib/useMe";
+import { LoginCta } from "./LoginCta";
 import {
   REACTIONS,
   emptyCounts,
@@ -84,10 +84,10 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
     fly(EMOJI[kind]); // feedback imediato em todo toque
     navigator.vibrate?.(12);
 
-    // Debounce alinhado ao throttle do servidor (1/seg): toques extras viram
-    // só animação, sem enviar — evita frustração e respeita o anti-flood.
+    // Debounce alinhado ao throttle do servidor (1 a cada 5s): toques extras
+    // viram só animação, sem enviar — evita frustração e respeita o anti-flood.
     const now = Date.now();
-    if (now - lastSentRef.current < 1000) return;
+    if (now - lastSentRef.current < 5000) return;
     lastSentRef.current = now;
 
     // Otimista: mantém o espelho em sincronia para o polling não "revoar" a minha.
@@ -153,9 +153,7 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
         ))}
       </div>
       {me && !logado ? (
-        <p className="reactions-hint">
-          Para reagir, <Link href="/entrar">entre com seu ingresso</Link> — anônimo só acompanha.
-        </p>
+        <LoginCta>Para reagir, entre com seu ingresso — anônimo só acompanha.</LoginCta>
       ) : (
         <p className="reactions-hint">Toque para reagir — vai aparecer no telão ao vivo.</p>
       )}

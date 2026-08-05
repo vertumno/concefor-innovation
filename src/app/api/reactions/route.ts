@@ -5,9 +5,10 @@ import { isReactionKind } from "@/lib/reactions";
 export const runtime = "nodejs"; // better-sqlite3 é binário nativo
 export const dynamic = "force-dynamic"; // dados vivos
 
-// Anti-flood: no máx 1 reação/seg por dispositivo (client_id anônimo). Estado
-// em memória do processo — best-effort, suficiente para conter martelada de toque.
-const THROTTLE_MS = 1000;
+// Anti-flood: no máx 1 reação a cada 5s por dispositivo (era 1s; esticado em
+// 05/08 junto com a exigência de login). Estado em memória do processo —
+// best-effort, suficiente para conter martelada de toque.
+const THROTTLE_MS = 5000;
 type ThrottleGlobal = { reactionLast?: Map<string, number> };
 const g = globalThis as unknown as ThrottleGlobal;
 function lastByClient(): Map<string, number> {

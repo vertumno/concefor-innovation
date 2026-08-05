@@ -96,7 +96,15 @@ export default function PessoasPage() {
           {aviso && <div className="connect-ok">{aviso}</div>}
 
           {selecionado && (
-            <PessoaCard pessoa={selecionado} onFechar={() => setSelecionado(null)} />
+            <PessoaCard
+              pessoa={selecionado}
+              onFechar={() => setSelecionado(null)}
+              onDesfeita={() => {
+                setSelecionado(null);
+                setAviso("Conexão desfeita — sumiu para vocês dois.");
+                refreshMapa();
+              }}
+            />
           )}
 
           <div className="dots" role="list" aria-label="Mapa de participantes">
