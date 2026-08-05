@@ -4,6 +4,30 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-05 — Sync do Even3 passa a rodar sozinho a cada 10 min em produção
+
+**Achado do teste com o Elton (14h54):** o Marquito colocou a foto no Even3, conectaram no app
+e a foto não apareceu. O banco explica: a conexão foi criada às **14:54:59** e o sync do Even3
+rodou às **14:56:12** — a foto entrou no banco um minuto *depois* da conexão. Não era bug de
+código; era dado velho.
+
+**Decisão:** o sync automático (que existia desde 30/07 atrás de `SYNC_INTERVAL_MIN`, desligado)
+passa a vir **ligado por padrão fora de dev, a cada 10 minutos**. Em `next dev` continua
+desligado, para não mexer no banco local de quem está desenvolvendo. A variável segue
+sobrepondo o padrão — `SYNC_INTERVAL_MIN=0` desliga.
+
+*Por quê:* em 30/07 a conclusão foi "o re-sync do `/admin` cobre a necessidade", e cobria
+mesmo — o pior caso era uma foto desatualizada. Desde 04/08 o campo `confirmado` do Even3
+virou **controle de acesso**: quem for confirmado no credenciamento **não entra no app** até
+alguém lembrar de apertar o botão. Depender de memória humana no meio de um evento de quatro
+dias é frágil demais para uma porta de entrada.
+
+O teste é `NODE_ENV !== "development"`, e não `=== "production"`, de propósito: se o container
+subir sem `NODE_ENV`, o certo é o sync **ligar**. Falha de rede não derruba o app (só loga e
+tenta na próxima) e duas execuções nunca se sobrepõem.
+
+---
+
 ## 2026-08-04 (tarde) — O app é só dos inscritos CONFIRMADOS; bloco ao vivo ganha descrição; avisos invertidos
 
 **Só inscrito confirmado no Even3 entra no app** (decisão do Marquito). Vale para tudo que
