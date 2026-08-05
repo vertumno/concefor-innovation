@@ -327,9 +327,10 @@ export function Telao({ session }: { session: Session }) {
     setPerguntas([]);
     const busca = async () => {
       try {
+        // no-store: telão fica dias aberto — nenhum navegador pode servir cache aqui.
         const [cfgRes, qRes] = await Promise.all([
-          fetch("/api/telao"),
-          fetch(`/api/questions?sessionId=${encodeURIComponent(session.id)}`),
+          fetch("/api/telao", { cache: "no-store" }),
+          fetch(`/api/questions?sessionId=${encodeURIComponent(session.id)}`, { cache: "no-store" }),
         ]);
         if (cfgRes.ok && ((await cfgRes.json()) as { perguntas?: boolean }).perguntas === false) {
           if (vivo) setPerguntas([]);
@@ -343,7 +344,8 @@ export function Telao({ session }: { session: Session }) {
       }
     };
     busca();
-    const id = setInterval(busca, 10_000);
+    // 5s: ocultar pergunta fora de tom do telão precisa valer quase na hora.
+    const id = setInterval(busca, 5_000);
     return () => {
       vivo = false;
       clearInterval(id);
