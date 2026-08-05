@@ -7,9 +7,12 @@ pra não perder.
 ## Reações na linha do tempo (semana 3 / E3) — parcialmente feito
 
 **Feito:**
-- **Telão "batimento cardíaco"** (`/telao`): linha ECG em canvas que pulsa a cada reação
-  (cyan → vermelho nos picos), contadores por tipo e emojis subindo com a cor do avatar
-  anônimo de cada dispositivo. Alimentado por SSE (`/api/live/[sessionId]`).
+- **Telão "linha do tempo"** (`/telao`): canvas com o acúmulo de reações minuto a minuto
+  (barras empilhadas, uma cor por tipo — início→fim da sessão), cursor "agora" pulsante,
+  fagulhas/ondas a cada reação e emojis subindo com a cor do avatar anônimo de cada
+  dispositivo. Substituiu a linha ECG em 05/08 (mostrava o pulso, mas não o acúmulo).
+  Sem sessão no ar, vira sala de espera com contagem regressiva para a próxima.
+  Alimentado por SSE (`/api/live/[sessionId]`).
 - **Na tela da sessão**: as reações (suas e as de outras pessoas, detectadas no polling)
   fazem o emoji "voar" — a mesma energia do telão, na palma da mão.
 - Reações fecharam em **5**, com emoji **+ rótulo em texto**: Adorei ❤️, Parabéns 👏,

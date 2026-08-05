@@ -1,11 +1,14 @@
 "use client";
 
 // Modo telão (E3) — o momento "uau" do piloto. Projetado num PC ligado ao projetor.
-// Uma linha de "batimento cardíaco" (canvas) pulsa a cada reação; contadores por
-// tipo; emojis sobem pela tela com a cor do avatar anônimo de cada dispositivo.
+// O miolo é a LINHA DO TEMPO da sessão (canvas): as reações se acumulam em barras
+// por minuto, do início ao fim da sessão — uma cor por tipo, com a bolinha dos
+// contadores servindo de legenda. Cada reação nova vira fagulhas e uma onda que
+// saltam do cursor "agora". Passagem do tempo + acúmulo na mesma imagem: a
+// espinha conceitual do app. Emojis sobem pela tela com a cor do avatar anônimo.
 // Recebe as reações ao vivo do servidor via SSE (/api/live/[sessionId]).
 
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import Link from "next/link";
 import {
   REACTIONS,
@@ -15,44 +18,58 @@ import {
   type ReactionKind,
 } from "@/lib/reactions";
 import { getAvatar } from "@/lib/clientId";
+import { getNow } from "@/lib/clock";
+import { formatDiaCurto, formatHoraH } from "@/lib/sessions";
 import type { Session } from "@/lib/types";
 
 const EMOJI = Object.fromEntries(REACTIONS.map((r) => [r.kind, r.emoji])) as Record<
   ReactionKind,
   string
 >;
+const KIND_INDEX = Object.fromEntries(REACTIONS.map((r, i) => [r.kind, i])) as Record<
+  ReactionKind,
+  number
+>;
+const CORES = REACTIONS.map((r) => r.cor);
 
-const CYAN: [number, number, number] = [0, 221, 202];
-const RED: [number, number, number] = [214, 0, 75];
-const mix = (a: number[], b: number[], t: number) =>
-  a.map((v, i) => Math.round(v + (b[i] - v) * t));
+const MINUTO = 60_000;
+const UMA_HORA = 60 * MINUTO; // sessão sem fim declarado: assume 1h (como lib/sessions)
 
 let floatSeq = 0;
 type Floater = { id: number; emoji: string; cor: string; left: number; dur: number; drift: number };
+
+// Recorte do que o telão mostra de /api/questions (já vem ordenado por votos).
+type PerguntaTelao = { id: string; texto: string; votes: number };
+
+// Acúmulo real: minuto da sessão → contagem por tipo (índices na ordem de REACTIONS).
+type Buckets = Map<number, number[]>;
 
 export function Telao({ session }: { session: Session }) {
   const [counts, setCounts] = useState<ReactionCounts>(emptyCounts);
   const [floaters, setFloaters] = useState<Floater[]>([]);
   const [connected, setConnected] = useState(false);
+  const [perguntas, setPerguntas] = useState<PerguntaTelao[]>([]);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const levelRef = useRef(0); // altura instantânea do batimento (decai a cada frame)
-  const heatRef = useRef(0); // "calor" recente → cor da linha (cyan calmo → vermelho no pico)
+  const bucketsRef = useRef<Buckets>(new Map());
+  const burstsRef = useRef<number[]>([]); // reações recém-chegadas à espera de fagulhas
+  const heatRef = useRef(0); // atividade recente → intensidade do cursor "agora"
 
-  // ── Batimento cardíaco (canvas + requestAnimationFrame; nada re-renderiza por frame) ──
+  const iniMs = useMemo(() => new Date(session.inicio).getTime(), [session.inicio]);
+  const fimMs = useMemo(
+    () => (session.fim ? new Date(session.fim).getTime() : iniMs + UMA_HORA),
+    [session.fim, iniMs],
+  );
+
+  // ── Linha do tempo (canvas + requestAnimationFrame; nada re-renderiza por frame) ──
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) return;
 
-    const N = 260;
-    const STEP_MS = 55; // tempo por amostra: controla a velocidade da rolagem (maior = mais calmo)
-    const buf = new Array(N).fill(0);
     let W = 0;
     let H = 0;
     let raf = 0;
-    let acc = 0;
-    let last = performance.now();
 
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -65,40 +82,188 @@ export function Telao({ session }: { session: Session }) {
     resize();
     window.addEventListener("resize", resize);
 
-    // Um "passo" da simulação: decai o batimento e empurra uma amostra.
-    const step = () => {
-      levelRef.current *= 0.8;
-      heatRef.current *= 0.9;
-      buf.push(Math.min(1, levelRef.current + (Math.random() - 0.5) * 0.04 + 0.03));
-      buf.shift();
+    // Oswald resolvida pelo next/font — o canvas herda de .telao.
+    const fonte = getComputedStyle(canvas).fontFamily || "system-ui, sans-serif";
+
+    type Fagulha = { x: number; y: number; vx: number; vy: number; vida: number; total: number; cor: string };
+    type Anel = { x: number; r: number; alfa: number };
+    const fagulhas: Fagulha[] = [];
+    const aneis: Anel[] = [];
+
+    // A altura desenhada persegue a real (lerp): a barra "cresce" quando a reação cai.
+    const alturas = new Map<number, number[]>();
+    let escala = 6; // teto suavizado do eixo Y (mínimo p/ 1 reação não virar arranha-céu)
+
+    const horaCurta = (ms: number) => {
+      const d = new Date(ms);
+      return `${d.getHours()}h${String(d.getMinutes()).padStart(2, "0")}`;
     };
 
-    const draw = (t: number) => {
-      acc += t - last;
-      last = t;
-      let n = 0;
-      while (acc >= STEP_MS && n < 6) {
-        step();
-        acc -= STEP_MS;
-        n++;
+    const draw = () => {
+      const agora = getNow().getTime();
+      // Domínio fixo início→fim: a tela inteira É a sessão; estica se passar da hora.
+      const domFim = Math.max(fimMs, agora + MINUTO);
+      const domDur = domFim - iniMs;
+      const baseY = H - 30;
+      const topoY = H * 0.1;
+      const plotH = baseY - topoY;
+      const xDe = (ms: number) => ((ms - iniMs) / domDur) * W;
+      const nowX = Math.max(0, Math.min(W, xDe(agora)));
+
+      heatRef.current *= 0.97;
+
+      // Reações desde o último frame → fagulhas + onda nascendo no "agora".
+      let kIdx: number | undefined;
+      while ((kIdx = burstsRef.current.shift()) !== undefined) {
+        const cor = CORES[kIdx];
+        for (let i = 0; i < 9; i++) {
+          fagulhas.push({
+            x: nowX + (Math.random() - 0.5) * 10,
+            y: baseY,
+            vx: (Math.random() - 0.5) * 3,
+            vy: -(2.2 + Math.random() * 3.4),
+            vida: 0,
+            total: 55 + Math.random() * 35,
+            cor,
+          });
+        }
+        aneis.push({ x: nowX, r: 4, alfa: 0.5 });
       }
+      if (fagulhas.length > 360) fagulhas.splice(0, fagulhas.length - 360);
 
       ctx.clearRect(0, 0, W, H);
-      const mid = H * 0.5;
-      const amp = H * 0.4;
-      const col = mix(CYAN, RED, Math.min(1, heatRef.current));
-      ctx.lineJoin = "round";
-      ctx.lineWidth = 3;
-      ctx.strokeStyle = `rgb(${col[0]},${col[1]},${col[2]})`;
-      ctx.shadowColor = ctx.strokeStyle;
-      ctx.shadowBlur = 18;
+
+      // ── Eixo do tempo + marcações de hora ──
+      ctx.strokeStyle = "rgba(255,255,255,0.16)";
+      ctx.lineWidth = 1;
       ctx.beginPath();
-      for (let i = 0; i < N; i++) {
-        const x = (i / (N - 1)) * W;
-        const y = mid - buf[i] * amp;
-        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-      }
+      ctx.moveTo(0, baseY);
+      ctx.lineTo(W, baseY);
       ctx.stroke();
+
+      const durMin = domDur / MINUTO;
+      const passo = durMin <= 45 ? 5 : durMin <= 100 ? 15 : durMin <= 240 ? 30 : 60;
+      ctx.font = `500 ${Math.max(11, Math.round(H * 0.026))}px ${fonte}`;
+      ctx.textBaseline = "top";
+      for (let ms = iniMs; ms <= domFim; ms += passo * MINUTO) {
+        const x = xDe(ms);
+        ctx.strokeStyle = "rgba(255,255,255,0.16)";
+        ctx.beginPath();
+        ctx.moveTo(x, baseY);
+        ctx.lineTo(x, baseY + 6);
+        ctx.stroke();
+        ctx.fillStyle = "rgba(159,182,214,0.85)";
+        ctx.textAlign = x < 30 ? "left" : x > W - 30 ? "right" : "center";
+        ctx.fillText(horaCurta(ms), x, baseY + 10);
+      }
+
+      // ── Barras empilhadas: o acúmulo minuto a minuto ──
+      let alvoMax = 6;
+      for (const c of bucketsRef.current.values()) {
+        const soma = c.reduce((s, v) => s + v, 0);
+        if (soma > alvoMax) alvoMax = soma;
+      }
+      escala += (alvoMax - escala) * 0.08;
+
+      const largMin = W / durMin; // largura de 1 minuto na tela
+      const bw = Math.max(2, largMin - Math.min(3, largMin * 0.25));
+      for (const [idx, alvo] of bucketsRef.current) {
+        let disp = alturas.get(idx);
+        if (!disp) {
+          disp = CORES.map(() => 0);
+          alturas.set(idx, disp);
+        }
+        const x = xDe(iniMs + idx * MINUTO) + (largMin - bw) / 2;
+        let y = baseY;
+        let corTopo = "";
+        for (let k = 0; k < CORES.length; k++) {
+          disp[k] += (alvo[k] - disp[k]) * 0.16;
+          const h = (disp[k] / escala) * plotH;
+          if (h < 0.4) continue;
+          ctx.globalAlpha = 0.92;
+          ctx.fillStyle = CORES[k];
+          ctx.fillRect(x, y - h, bw, h);
+          y -= h;
+          corTopo = CORES[k];
+        }
+        ctx.globalAlpha = 1;
+        if (corTopo) {
+          // topo aceso da pilha: dá leitura de "chama" sem custo de glow por segmento
+          ctx.fillStyle = corTopo;
+          ctx.shadowColor = corTopo;
+          ctx.shadowBlur = 10;
+          ctx.fillRect(x, y - 2, bw, 2);
+          ctx.shadowBlur = 0;
+        }
+      }
+
+      // ── Cursor "agora": feixe vertical + ponto que pulsa com a atividade ──
+      const heat = Math.min(1, heatRef.current);
+      const feixe = ctx.createLinearGradient(0, topoY, 0, baseY);
+      feixe.addColorStop(0, "rgba(0,221,202,0)");
+      feixe.addColorStop(1, `rgba(0,221,202,${0.35 + heat * 0.45})`);
+      ctx.strokeStyle = feixe;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(nowX, topoY);
+      ctx.lineTo(nowX, baseY);
+      ctx.stroke();
+      ctx.fillStyle = "#00ddca";
+      ctx.shadowColor = "#00ddca";
+      ctx.shadowBlur = 14 + heat * 22;
+      ctx.beginPath();
+      ctx.arc(nowX, baseY, 4 + heat * 5, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+
+      // ── Ondas (semicírculos que se expandem do "agora") ──
+      for (let i = aneis.length - 1; i >= 0; i--) {
+        const a = aneis[i];
+        a.r += 2.4;
+        a.alfa *= 0.94;
+        if (a.alfa < 0.02) {
+          aneis.splice(i, 1);
+          continue;
+        }
+        ctx.strokeStyle = `rgba(0,221,202,${a.alfa})`;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(a.x, baseY, a.r, Math.PI, 2 * Math.PI);
+        ctx.stroke();
+      }
+
+      // ── Fagulhas (sobem do "agora" e recaem na linha do tempo) ──
+      for (let i = fagulhas.length - 1; i >= 0; i--) {
+        const f = fagulhas[i];
+        f.vida++;
+        if (f.vida >= f.total) {
+          fagulhas.splice(i, 1);
+          continue;
+        }
+        f.vy += 0.1;
+        f.x += f.vx;
+        f.y += f.vy;
+        if (f.y > baseY) {
+          f.y = baseY;
+          f.vy *= -0.35; // quica de leve na linha
+        }
+        ctx.globalAlpha = 1 - f.vida / f.total;
+        ctx.fillStyle = f.cor;
+        ctx.beginPath();
+        ctx.arc(f.x, f.y, 2.6, 0, 2 * Math.PI);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+
+      // Sessão ainda sem reação: convite no lugar do gráfico vazio.
+      if (bucketsRef.current.size === 0) {
+        ctx.fillStyle = "rgba(159,182,214,0.7)";
+        ctx.font = `500 ${Math.max(16, Math.round(H * 0.05))}px ${fonte}`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText("As reações de vocês desenham esta linha do tempo", W / 2, topoY + plotH * 0.42);
+      }
+
       raf = requestAnimationFrame(draw);
     };
     raf = requestAnimationFrame(draw);
@@ -107,7 +272,7 @@ export function Telao({ session }: { session: Session }) {
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", resize);
     };
-  }, []);
+  }, [iniMs, fimMs]);
 
   // ── SSE: reações ao vivo ──
   useEffect(() => {
@@ -115,7 +280,24 @@ export function Telao({ session }: { session: Session }) {
     es.addEventListener("open", () => setConnected(true));
     es.addEventListener("init", (e) => {
       try {
-        setCounts(JSON.parse((e as MessageEvent).data).counts);
+        const d = JSON.parse((e as MessageEvent).data) as {
+          counts: ReactionCounts;
+          timeline?: { minuto: string; kind: string; n: number }[];
+        };
+        setCounts(d.counts);
+        // Reconstrói o acúmulo por minuto — verdade do servidor, re-sincronizada
+        // a cada reconexão (o telão pode ser ligado no meio da sessão).
+        const buckets: Buckets = new Map();
+        for (const { minuto, kind, n } of d.timeline ?? []) {
+          if (!isReactionKind(kind)) continue;
+          const t = Date.parse(`${minuto}:00Z`); // ts é ISO UTC; o corte no minuto perde o "Z"
+          if (!Number.isFinite(t)) continue;
+          const idx = Math.max(0, Math.floor((t - iniMs) / MINUTO));
+          const b = buckets.get(idx) ?? CORES.map(() => 0);
+          b[KIND_INDEX[kind]] += n;
+          buckets.set(idx, b);
+        }
+        bucketsRef.current = buckets;
         setConnected(true);
       } catch {
         /* ignora payload malformado */
@@ -123,20 +305,66 @@ export function Telao({ session }: { session: Session }) {
     });
     es.addEventListener("reaction", (e) => {
       try {
-        const d = JSON.parse((e as MessageEvent).data) as { reaction: string; clientId: string | null };
-        if (isReactionKind(d.reaction)) pulse(d.reaction, d.clientId);
+        const d = JSON.parse((e as MessageEvent).data) as {
+          reaction: string;
+          clientId: string | null;
+          ts?: string;
+        };
+        if (isReactionKind(d.reaction)) pulse(d.reaction, d.clientId, d.ts);
       } catch {
         /* ignora */
       }
     });
     es.onerror = () => setConnected(false);
     return () => es.close();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session.id, iniMs]);
+
+  // ── Perguntas mais votadas (poll leve; a mesma API da tela da sessão) ──
+  // O /admin pode ocultar o painel na hora (GET /api/telao, padrão: exibe).
+  useEffect(() => {
+    let vivo = true;
+    setPerguntas([]);
+    const busca = async () => {
+      try {
+        const [cfgRes, qRes] = await Promise.all([
+          fetch("/api/telao"),
+          fetch(`/api/questions?sessionId=${encodeURIComponent(session.id)}`),
+        ]);
+        if (cfgRes.ok && ((await cfgRes.json()) as { perguntas?: boolean }).perguntas === false) {
+          if (vivo) setPerguntas([]);
+          return;
+        }
+        if (!qRes.ok) return;
+        const d = (await qRes.json()) as { questions?: PerguntaTelao[] };
+        if (vivo) setPerguntas((d.questions ?? []).slice(0, 3));
+      } catch {
+        /* rede oscilou: mantém as últimas mostradas */
+      }
+    };
+    busca();
+    const id = setInterval(busca, 10_000);
+    return () => {
+      vivo = false;
+      clearInterval(id);
+    };
   }, [session.id]);
 
-  function pulse(kind: ReactionKind, clientId: string | null) {
+  function pulse(kind: ReactionKind, clientId: string | null, ts?: string) {
     setCounts((c) => ({ ...c, [kind]: c[kind] + 1 }));
-    levelRef.current = 1;
-    heatRef.current = Math.min(1.2, heatRef.current + 0.34);
+    heatRef.current = Math.min(1.3, heatRef.current + 0.3);
+
+    // Acumula no minuto do evento (ts do servidor; fallback: agora).
+    const tMs = ts ? Date.parse(ts) : NaN;
+    const idx = Math.max(
+      0,
+      Math.floor(((Number.isFinite(tMs) ? tMs : getNow().getTime()) - iniMs) / MINUTO),
+    );
+    const kIdx = KIND_INDEX[kind];
+    const b = bucketsRef.current.get(idx) ?? CORES.map(() => 0);
+    b[kIdx]++;
+    bucketsRef.current.set(idx, b);
+    if (burstsRef.current.length < 40) burstsRef.current.push(kIdx);
 
     const cor = clientId ? getAvatar(clientId).cor : "#00ddca";
     const id = ++floatSeq;
@@ -178,12 +406,31 @@ export function Telao({ session }: { session: Session }) {
             <span key={counts[r.kind]} className="telao-n">
               {counts[r.kind]}
             </span>
-            <span className="telao-count-label">{r.label}</span>
+            <span className="telao-count-label">
+              {/* bolinha-legenda: mesma cor da barra na linha do tempo */}
+              <span className="telao-count-dot" style={{ background: r.cor }} aria-hidden />
+              {r.label}
+            </span>
           </div>
         ))}
       </div>
 
-      <canvas ref={canvasRef} className="telao-ecg" />
+      <div className="telao-miolo">
+        <canvas ref={canvasRef} className="telao-timeline" />
+        {perguntas.length > 0 && (
+          <aside className="telao-perguntas" aria-label="Perguntas mais votadas">
+            <p className="telao-perguntas-titulo">Perguntas mais votadas</p>
+            <ol className="telao-perguntas-lista">
+              {perguntas.map((q) => (
+                <li key={q.id} className="telao-pergunta">
+                  <span className="telao-pergunta-votos">▲ {q.votes}</span>
+                  <span className="telao-pergunta-texto">{q.texto}</span>
+                </li>
+              ))}
+            </ol>
+          </aside>
+        )}
+      </div>
 
       <div className="telao-floaters" aria-hidden>
         {floaters.map((f) => (
@@ -207,6 +454,47 @@ export function Telao({ session }: { session: Session }) {
       <div className="telao-foot">
         <span className="telao-total">{total} reações</span>
         {!connected && <span className="telao-off">reconectando…</span>}
+      </div>
+    </div>
+  );
+}
+
+// "03:12", "1:07:45", "2d 3h" — regressiva legível de longe (dias só quando falta muito).
+function formatCountdown(ms: number): string {
+  const s = Math.max(0, Math.floor(ms / 1000));
+  const d = Math.floor(s / 86400);
+  if (d > 0) return `${d}d ${Math.floor((s % 86400) / 3600)}h`;
+  const h = Math.floor(s / 3600);
+  const mm = String(Math.floor((s % 3600) / 60)).padStart(2, "0");
+  const ss = String(s % 60).padStart(2, "0");
+  return h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
+}
+
+// Sala de espera do telão: sem sessão no ar, projeta a PRÓXIMA com contagem
+// regressiva — o telão nunca fica mudo e a passagem do tempo continua visível.
+export function TelaoAguardando({ session, now }: { session: Session; now: Date }) {
+  const inicio = new Date(session.inicio);
+  const mesmoDia = inicio.toDateString() === now.toDateString();
+  const meta = [!mesmoDia && formatDiaCurto(session.inicio), formatHoraH(session.inicio), session.sala]
+    .filter(Boolean)
+    .join(" · ");
+  const quem = session.speakers?.length
+    ? session.speakers.map((s) => s.nome).join(" · ")
+    : session.palestrante;
+
+  return (
+    <div className="telao telao-wait">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="telao-selo" src="/selo-20-anos-branco.png" alt="Selo 20 anos do Cefor" />
+      <p className="telao-wait-eyebrow">A seguir</p>
+      <h1 className="telao-wait-title">{session.titulo}</h1>
+      <p className="telao-wait-meta">{meta}</p>
+      {quem && <p className="telao-wait-quem">{quem}</p>}
+      <div className="telao-wait-bloco">
+        <span className="telao-wait-rotulo">Começa em</span>
+        <span className="telao-wait-count">
+          {formatCountdown(inicio.getTime() - now.getTime())}
+        </span>
       </div>
     </div>
   );

@@ -154,6 +154,24 @@ export function insertReaction(
     .run(randomUUID(), sessionId, new Date().toISOString(), JSON.stringify({ reaction }), clientId);
 }
 
+// Acúmulo por minuto e tipo — o telão desenha a linha do tempo da sessão com
+// isso (leitura pura). `minuto` é o ts UTC cortado no minuto ("2026-08-18T12:31");
+// o cliente devolve o "Z" ao interpretar.
+export function getReactionTimeline(
+  sessionId: string,
+): { minuto: string; kind: string; n: number }[] {
+  return getDb()
+    .prepare(
+      `select substr(ts, 1, 16) as minuto,
+              json_extract(payload, '$.reaction') as kind, count(*) as n
+         from timeline_events
+        where tipo = 'reaction' and session_id = ?
+        group by minuto, kind
+        order by minuto asc`,
+    )
+    .all(sessionId) as { minuto: string; kind: string; n: number }[];
+}
+
 // Contagem agregada por tipo, para a própria tela da sessão.
 export function getReactionCounts(sessionId: string): ReactionCounts {
   const rows = getDb()
@@ -759,6 +777,30 @@ export function getAdminStats(): AdminStats {
     totalLogados: logados.n,
     sessoesComJanelaAberta: janelas.map((j) => j.session_id).filter((s): s is string => Boolean(s)),
   };
+}
+
+// ─────────────────────── Config do telão ───────────────────────
+// Mesmo padrão de questions_window: estado = último evento (tipo='telao_config'),
+// sem mudar o schema. Por ora um único ajuste: o painel "Perguntas mais votadas"
+// do telão, que o /admin pode ocultar na hora (padrão: exibe).
+
+export function telaoPerguntasVisiveis(): boolean {
+  const row = getDb()
+    .prepare(
+      `select json_extract(payload, '$.perguntas') as p from timeline_events
+        where tipo = 'telao_config' order by ts desc limit 1`,
+    )
+    .get() as { p: number | null } | undefined;
+  return row ? Boolean(row.p) : true; // padrão: exibe
+}
+
+export function setTelaoPerguntas(visiveis: boolean): void {
+  getDb()
+    .prepare(
+      `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+       values (?, 'telao_config', null, ?, ?, null)`,
+    )
+    .run(randomUUID(), new Date().toISOString(), JSON.stringify({ perguntas: visiveis }));
 }
 
 // ─────────────────────── Perguntas com upvote (R4) ───────────────────────

@@ -1,4 +1,4 @@
-import { getDb, getReactionCounts, sessionExists } from "@/lib/db";
+import { getDb, getReactionCounts, getReactionTimeline, sessionExists } from "@/lib/db";
 
 // Tempo real do telão (E3) via Server-Sent Events. O mais simples que funciona:
 // poll interno no SQLite a ~1s, emitindo as reações novas desde a última vista.
@@ -36,7 +36,9 @@ export async function GET(req: Request, ctx: { params: Promise<{ sessionId: stri
         }
       };
 
-      send("init", { counts: getReactionCounts(sessionId) });
+      // `timeline` = acúmulo por minuto/tipo: o telão redesenha o histórico da
+      // sessão ao (re)conectar, em vez de começar do zero.
+      send("init", { counts: getReactionCounts(sessionId), timeline: getReactionTimeline(sessionId) });
 
       const poll = setInterval(() => {
         try {
