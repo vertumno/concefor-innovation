@@ -805,13 +805,19 @@ export function setTelaoPerguntas(visiveis: boolean): void {
 
 // ─────────────────────── Perguntas com upvote (R4) ───────────────────────
 // Tudo em timeline_events, sem mudar o schema (spec §3):
-//   tipo='question'         payload {"texto": "...", "hidden": true?}
+//   tipo='question'         payload {"texto": "...", "autor": "Nome", "hidden": true?}
 //   tipo='question_vote'    payload {"questionId": "..."} (1 por client/pergunta)
 //   tipo='questions_window' payload {"open": true|false} (estado = último evento)
+//
+// `autor` é FOTOGRAFADO no envio (decisão de 05/08: pergunta identificada inibe
+// abuso) — não se resolve pelo client_id na leitura, porque o aparelho pode
+// trocar de dono ou sair, e o nome da pergunta não pode mudar retroativamente.
+// Perguntas de antes da decisão não têm autor (null) e a UI trata.
 
 export type Question = {
   id: string;
   texto: string;
+  autor: string | null;
   ts: string;
   votes: number;
   hidden: boolean;
@@ -838,14 +844,19 @@ export function setQuestionsWindow(sessionId: string, open: boolean): void {
     .run(randomUUID(), sessionId, new Date().toISOString(), JSON.stringify({ open }));
 }
 
-export function insertQuestion(sessionId: string, texto: string, clientId: string | null): string {
+export function insertQuestion(
+  sessionId: string,
+  texto: string,
+  clientId: string | null,
+  autor: string,
+): string {
   const id = randomUUID();
   getDb()
     .prepare(
       `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
        values (?, 'question', ?, ?, ?, ?)`,
     )
-    .run(id, sessionId, new Date().toISOString(), JSON.stringify({ texto }), clientId);
+    .run(id, sessionId, new Date().toISOString(), JSON.stringify({ texto, autor }), clientId);
   return id;
 }
 
@@ -861,6 +872,7 @@ export function getQuestions(
     .prepare(
       `select e.id, e.ts,
               json_extract(e.payload, '$.texto') as texto,
+              json_extract(e.payload, '$.autor') as autor,
               coalesce(json_extract(e.payload, '$.hidden'), 0) as hidden,
               (select count(*) from timeline_events v
                 where v.tipo = 'question_vote'

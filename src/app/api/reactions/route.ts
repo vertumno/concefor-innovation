@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getReactionCounts, insertReaction, sessionExists } from "@/lib/db";
+import { getIdentity, getReactionCounts, insertReaction, sessionExists } from "@/lib/db";
 import { isReactionKind } from "@/lib/reactions";
 
 export const runtime = "nodejs"; // better-sqlite3 é binário nativo
@@ -38,7 +38,13 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "sessão desconhecida" }, { status: 400 });
   }
 
-  const cid = typeof clientId === "string" && clientId ? clientId : "anon";
+  // Só participa quem entrou com o ingresso (decisão de 05/08 — inibe abuso).
+  // Anônimo continua VENDO a contagem (GET); enviar é que exige identidade.
+  const cid = typeof clientId === "string" && clientId ? clientId : null;
+  if (!cid || !getIdentity(cid)) {
+    return NextResponse.json({ error: "entre com seu ingresso para reagir" }, { status: 401 });
+  }
+
   const now = Date.now();
   const last = lastByClient().get(cid) ?? 0;
   if (now - last < THROTTLE_MS) {
@@ -50,6 +56,6 @@ export async function POST(req: Request) {
   }
   lastByClient().set(cid, now);
 
-  insertReaction(sessionId, reaction, cid === "anon" ? null : cid);
+  insertReaction(sessionId, reaction, cid);
   return NextResponse.json({ counts: getReactionCounts(sessionId) });
 }

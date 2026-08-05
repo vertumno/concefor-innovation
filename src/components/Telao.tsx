@@ -43,7 +43,7 @@ let floatSeq = 0;
 type Floater = { id: number; emoji: string; cor: string; left: number; dur: number; drift: number };
 
 // Recorte do que o telão mostra de /api/questions (já vem ordenado por votos).
-type PerguntaTelao = { id: string; texto: string; votes: number };
+type PerguntaTelao = { id: string; texto: string; autor: string | null; votes: number };
 
 // Acúmulo real: minuto da sessão → contagem por tipo (índices na ordem de REACTIONS).
 type Buckets = Map<number, number[]>;
@@ -430,7 +430,10 @@ export function Telao({ session }: { session: Session }) {
               {perguntas.map((q) => (
                 <li key={q.id} className="telao-pergunta">
                   <span className="telao-pergunta-votos">▲ {q.votes}</span>
-                  <span className="telao-pergunta-texto">{q.texto}</span>
+                  <span className="telao-pergunta-corpo">
+                    <span className="telao-pergunta-texto">{q.texto}</span>
+                    {q.autor && <span className="telao-pergunta-autor">{q.autor}</span>}
+                  </span>
                 </li>
               ))}
             </ol>

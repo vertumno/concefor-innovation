@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import {
+  getIdentity,
   getQuestions,
   insertQuestion,
   questionsWindowOpen,
@@ -7,8 +8,9 @@ import {
 } from "@/lib/db";
 import { isAdmin } from "@/lib/adminAuth";
 
-// Perguntas com upvote (R4). Anônimas no app (autor oculto); texto curto;
-// janela controlada pelo admin. Tudo vira registro em timeline_events.
+// Perguntas com upvote (R4). IDENTIFICADAS (decisão de 05/08): só logado envia
+// e a pergunta sai com o nome completo de quem mandou — inibe pergunta tosca ou
+// ofensiva. Texto curto; janela controlada pelo admin; tudo em timeline_events.
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -57,7 +59,13 @@ export async function POST(req: Request) {
     );
   }
 
-  const cid = typeof clientId === "string" && clientId ? clientId : "anon";
+  // Pergunta é identificada: exige login e fotografa o nome completo no envio.
+  const cid = typeof clientId === "string" && clientId ? clientId : null;
+  const identidade = cid ? getIdentity(cid) : null;
+  if (!cid || !identidade) {
+    return NextResponse.json({ error: "entre com seu ingresso para perguntar" }, { status: 401 });
+  }
+
   const last = (g.questionLast ??= new Map()).get(cid) ?? 0;
   const now = Date.now();
   if (now - last < THROTTLE_MS) {
@@ -65,6 +73,6 @@ export async function POST(req: Request) {
   }
   g.questionLast.set(cid, now);
 
-  const id = insertQuestion(sessionId, t, cid === "anon" ? null : cid);
+  const id = insertQuestion(sessionId, t, cid, identidade.nome);
   return NextResponse.json({ id, questions: getQuestions(sessionId, cid, false) });
 }

@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
-import { getQuestions, questionExists, sessionExists, toggleQuestionVote } from "@/lib/db";
+import { getIdentity, getQuestions, questionExists, sessionExists, toggleQuestionVote } from "@/lib/db";
 
 // Upvote de pergunta (R4): 1 voto por dispositivo por pergunta — segundo
-// toque retira o voto (toggle).
+// toque retira o voto (toggle). Como toda interação (decisão de 05/08),
+// votar exige estar logado; anônimo só vê.
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -21,8 +22,8 @@ export async function POST(req: Request) {
   if (typeof questionId !== "string" || !questionExists(sessionId, questionId)) {
     return NextResponse.json({ error: "pergunta desconhecida" }, { status: 400 });
   }
-  if (typeof clientId !== "string" || !clientId) {
-    return NextResponse.json({ error: "clientId requerido" }, { status: 400 });
+  if (typeof clientId !== "string" || !clientId || !getIdentity(clientId)) {
+    return NextResponse.json({ error: "entre com seu ingresso para votar" }, { status: 401 });
   }
 
   const { voted } = toggleQuestionVote(sessionId, questionId, clientId);

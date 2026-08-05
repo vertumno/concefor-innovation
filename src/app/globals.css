@@ -830,6 +830,11 @@ h1.page-title {
   color: var(--ink-dim);
   font-size: var(--text-sm);
 }
+/* Anônimo vê a contagem mas não reage (decisão de 05/08) — botão desligado. */
+.reaction-btn--off {
+  opacity: 0.55;
+  cursor: default;
+}
 .reactions-hint {
   margin: 10px 0 0;
   font-size: var(--text-xs);
@@ -1006,6 +1011,17 @@ h1.page-title {
   display: flex;
   align-items: baseline;
   gap: 0.7em;
+}
+.telao-pergunta-corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vh;
+  min-width: 0;
+}
+.telao-pergunta-autor {
+  color: var(--ink-dim);
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
+  letter-spacing: 0.03em;
 }
 .telao-pergunta-votos {
   flex: none;
@@ -1764,6 +1780,25 @@ h1.page-title {
   line-height: 1.45;
   min-width: 0;
   flex: 1;
+}
+/* Texto + autor empilhados (a pergunta é identificada — decisão de 05/08). */
+.q-corpo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.q-corpo .q-texto {
+  flex: none;
+}
+.q-autor {
+  font-size: var(--text-xs);
+  color: var(--ink-dim);
+}
+.q-vote:disabled {
+  opacity: 0.55;
+  cursor: default;
 }
 .q-hidden {
   opacity: 0.45;

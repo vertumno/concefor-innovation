@@ -1,11 +1,15 @@
 "use client";
 
-// Perguntas com upvote (R4, spec §8): texto curto, autor oculto, mais votadas
-// no topo, 1 voto por dispositivo (toggle). A janela abre/fecha pelo /admin.
+// Perguntas com upvote (R4, spec §8): texto curto, mais votadas no topo, 1 voto
+// por dispositivo (toggle). A janela abre/fecha pelo /admin. Desde 05/08 as
+// perguntas são IDENTIFICADAS (saem com o nome completo de quem mandou — inibe
+// pergunta tosca/ofensiva) e perguntar/votar exige login; anônimo só vê.
 // Atualiza por polling curto — mesma filosofia do SSE do telão (poll no SQLite).
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { getClientId } from "@/lib/clientId";
+import { useMe } from "@/lib/useMe";
 import type { Question } from "@/lib/db";
 
 const MAX_CHARS = 140;
@@ -19,6 +23,8 @@ export function Questions({ sessionId, live }: { sessionId: string; live: boolea
   const [sending, setSending] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
   const clientId = useRef<string>("");
+  const me = useMe();
+  const logado = me?.logado === true;
 
   useEffect(() => {
     clientId.current = getClientId();
@@ -92,24 +98,35 @@ export function Questions({ sessionId, live }: { sessionId: string; live: boolea
       <div className="section-label">Perguntas do público</div>
 
       {open ? (
-        <div className="q-composer">
-          <textarea
-            value={texto}
-            maxLength={MAX_CHARS}
-            rows={2}
-            placeholder={live ? "Pergunte à mesa (anônimo no app)…" : "Deixe sua pergunta…"}
-            onChange={(e) => setTexto(e.target.value)}
-          />
-          <div className="q-composer-foot">
-            <span className="q-chars">
-              {texto.length}/{MAX_CHARS}
-            </span>
-            <button type="button" onClick={enviar} disabled={sending || !texto.trim()}>
-              {sending ? "Enviando…" : "Perguntar"}
-            </button>
+        logado ? (
+          <div className="q-composer">
+            <textarea
+              value={texto}
+              maxLength={MAX_CHARS}
+              rows={2}
+              placeholder={live ? "Pergunte à mesa…" : "Deixe sua pergunta…"}
+              onChange={(e) => setTexto(e.target.value)}
+            />
+            <div className="q-composer-foot">
+              {/* Transparência: a pessoa sabe que a pergunta sai assinada. */}
+              <span className="q-chars">
+                {me?.nome ? `sai como ${me.nome} · ` : ""}
+                {texto.length}/{MAX_CHARS}
+              </span>
+              <button type="button" onClick={enviar} disabled={sending || !texto.trim()}>
+                {sending ? "Enviando…" : "Perguntar"}
+              </button>
+            </div>
+            {erro && <p className="q-erro">{erro}</p>}
           </div>
-          {erro && <p className="q-erro">{erro}</p>}
-        </div>
+        ) : (
+          me && (
+            <p className="q-fechada">
+              As perguntas são identificadas — <Link href="/entrar">entre com seu ingresso</Link>{" "}
+              para perguntar e votar.
+            </p>
+          )
+        )
       ) : (
         <p className="q-fechada">O envio de perguntas está fechado.</p>
       )}
@@ -124,10 +141,14 @@ export function Questions({ sessionId, live }: { sessionId: string; live: boolea
                 aria-pressed={q.myVote}
                 aria-label={q.myVote ? "Retirar meu voto" : "Votar nesta pergunta"}
                 onClick={() => votar(q.id)}
+                disabled={!logado}
               >
                 ▲<span className="q-vote-n">{q.votes}</span>
               </button>
-              <p className="q-texto">{q.texto}</p>
+              <div className="q-corpo">
+                <p className="q-texto">{q.texto}</p>
+                {q.autor && <span className="q-autor">{q.autor}</span>}
+              </div>
             </li>
           ))}
         </ol>

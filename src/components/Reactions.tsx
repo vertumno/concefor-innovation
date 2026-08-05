@@ -2,12 +2,16 @@
 
 // Reações ao vivo da sessão (E2 + E3). Botões visíveis só enquanto a sessão está
 // no ar (o pai decide via prop `live`). Cada toque: feedback tátil + emoji que
-// "voa" + envio anônimo para /api/reactions. A contagem é agregada e, no polling,
-// as reações que chegam DE OUTRAS pessoas também fazem o emoji voar aqui — a mesma
-// energia do telão, na palma da mão. O tempo real dedicado (SSE) mora no telão (E3).
+// "voa" + envio para /api/reactions. Desde 05/08, reagir exige estar LOGADO
+// (anônimo vê a contagem, botões desligados + CTA de entrar — o servidor também
+// barra com 401). A contagem é agregada e, no polling, as reações que chegam DE
+// OUTRAS pessoas também fazem o emoji voar aqui — a mesma energia do telão, na
+// palma da mão. O tempo real dedicado (SSE) mora no telão (E3).
 
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
+import Link from "next/link";
 import { getClientId } from "@/lib/clientId";
+import { useMe } from "@/lib/useMe";
 import {
   REACTIONS,
   emptyCounts,
@@ -28,6 +32,8 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
   const [flies, setFlies] = useState<Fly[]>([]);
   const countsRef = useRef<ReactionCounts>(emptyCounts()); // espelho do que a tela mostra
   const lastSentRef = useRef(0);
+  const me = useMe();
+  const logado = me?.logado === true;
 
   function fly(emoji: string, n = 1) {
     const novos: Fly[] = [];
@@ -74,6 +80,7 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
   }, [loadCounts, live]);
 
   async function react(kind: ReactionKind) {
+    if (!logado) return; // botão já vem desligado; cinto de segurança
     fly(EMOJI[kind]); // feedback imediato em todo toque
     navigator.vibrate?.(12);
 
@@ -132,8 +139,9 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
           <button
             key={r.kind}
             type="button"
-            className="reaction-btn"
+            className={`reaction-btn ${logado ? "" : "reaction-btn--off"}`}
             onClick={() => react(r.kind)}
+            disabled={!logado}
             aria-label={r.label}
           >
             <span className="reaction-emoji" aria-hidden>
@@ -144,7 +152,13 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
           </button>
         ))}
       </div>
-      <p className="reactions-hint">Toque para reagir — vai aparecer no telão ao vivo.</p>
+      {me && !logado ? (
+        <p className="reactions-hint">
+          Para reagir, <Link href="/entrar">entre com seu ingresso</Link> — anônimo só acompanha.
+        </p>
+      ) : (
+        <p className="reactions-hint">Toque para reagir — vai aparecer no telão ao vivo.</p>
+      )}
     </div>
   );
 }
