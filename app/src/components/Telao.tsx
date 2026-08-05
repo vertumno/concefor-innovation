@@ -10,6 +10,7 @@
 
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import Link from "next/link";
+import QRCode from "qrcode";
 import {
   REACTIONS,
   emptyCounts,
@@ -34,6 +35,9 @@ const CORES = REACTIONS.map((r) => r.cor);
 
 const MINUTO = 60_000;
 const UMA_HORA = 60 * MINUTO; // sessão sem fim declarado: assume 1h (como lib/sessions)
+
+// URL oficial do app (decisão: sempre o DNS, nunca o IP) — vira QR na sala de espera.
+const APP_URL = "https://app.cefor.ifes.edu.br/";
 
 let floatSeq = 0;
 type Floater = { id: number; emoji: string; cor: string; left: number; dur: number; drift: number };
@@ -475,6 +479,20 @@ function formatCountdown(ms: number): string {
 // Sala de espera do telão: sem sessão no ar, projeta a PRÓXIMA com contagem
 // regressiva — o telão nunca fica mudo e a passagem do tempo continua visível.
 export function TelaoAguardando({ session, now }: { session: Session; now: Date }) {
+  // QR de acesso ao app: a sala de espera dobra como cartaz de entrada.
+  const [qr, setQr] = useState<string | null>(null);
+  useEffect(() => {
+    QRCode.toDataURL(APP_URL, {
+      width: 640,
+      margin: 2, // zona de silêncio branca — legível sobre o navy do telão
+      color: { dark: "#0b1f45", light: "#ffffff" },
+    })
+      .then(setQr)
+      .catch(() => {
+        /* sem QR o telão segue útil */
+      });
+  }, []);
+
   const inicio = new Date(session.inicio);
   const mesmoDia = inicio.toDateString() === now.toDateString();
   const meta = [!mesmoDia && formatDiaCurto(session.inicio), formatHoraH(session.inicio), session.sala]
@@ -498,6 +516,15 @@ export function TelaoAguardando({ session, now }: { session: Session; now: Date 
           {formatCountdown(inicio.getTime() - now.getTime())}
         </span>
       </div>
+      {qr && (
+        <div className="telao-wait-qr">
+          <span className="telao-wait-qr-cta">Entre no app do evento</span>
+          {/* dataURL gerado no cliente — next/image não se aplica */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className="telao-wait-qr-img" src={qr} alt="QR code de acesso ao app: app.cefor.ifes.edu.br" />
+          <span className="telao-wait-qr-url">app.cefor.ifes.edu.br</span>
+        </div>
+      )}
     </div>
   );
 }
