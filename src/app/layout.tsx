@@ -44,6 +44,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="app-shell">
           <header className="topbar">
             <Link href="/" className="brand" aria-label="VIII Concefor — início">
+              <Image
+                className="brand-concefor"
+                src="/logo-concefor.png"
+                alt="Marca do Concefor"
+                width={667}
+                height={560}
+                priority
+              />
               {/* Selo 20 anos (acento). Versão branca: manual manda mono sobre fundo colorido. */}
               <Image
                 className="brand-selo"
@@ -51,14 +59,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 alt="Selo 20 anos do Cefor"
                 width={2938}
                 height={2149}
-                priority
-              />
-              <Image
-                className="brand-concefor"
-                src="/logo-concefor.png"
-                alt="Marca do Concefor"
-                width={667}
-                height={560}
                 priority
               />
               <span className="brand-word">
