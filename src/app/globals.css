@@ -85,6 +85,12 @@ code {
   width: auto;
   display: block;
 }
+.brand-concefor {
+  height: 32px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
 .brand-word {
   font-family: var(--font-title);
   font-weight: var(--weight-semibold);
@@ -96,6 +102,15 @@ code {
 .brand-word strong {
   color: var(--accent);
   font-weight: var(--weight-bold);
+}
+
+@media (max-width: 380px) {
+  .brand {
+    gap: 8px;
+  }
+  .brand-word {
+    display: none;
+  }
 }
 
 /* ============ Barra inferior de navegação (R1, spec §4.0) ============ */

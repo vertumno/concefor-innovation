@@ -53,6 +53,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 height={2149}
                 priority
               />
+              <Image
+                className="brand-concefor"
+                src="/logo-concefor.png"
+                alt="Marca do Concefor"
+                width={2430}
+                height={1540}
+                priority
+              />
               <span className="brand-word">
                 VIII <strong>Concefor</strong>
               </span>
