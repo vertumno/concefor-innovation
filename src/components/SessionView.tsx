@@ -127,11 +127,12 @@ export function SessionView({ id, showBack = true }: { id: string; showBack?: bo
       {/* Reações ao vivo (feature 4.2 / E2): botões só quando a sessão está no ar. */}
       <Reactions sessionId={session.id} live={status === "live"} />
 
+      {/* Enquete tem prioridade visual sobre as perguntas quando estiver ativa. */}
+      <Poll sessionId={session.id} />
+
       {/* Perguntas com upvote (R4): aparece quando a janela está aberta no /admin
           (ou quando já existem perguntas públicas). */}
       <Questions sessionId={session.id} live={status === "live"} />
-
-      <Poll sessionId={session.id} />
     </div>
   );
 }
