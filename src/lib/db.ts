@@ -40,6 +40,45 @@ function open(): Database.Database {
   return db;
 }
 
+// Recupera conexões do formato antigo, que guardava apenas o aparelho de
+// origem. Além do boot, roda após cada login: a associação aparelho→pessoa
+// pode ter sido recriada depois que a migração inicial já havia passado.
+function repairLegacyConnections(db: Database.Database, attendeeId?: number): void {
+  const attendeeFilter = attendeeId === undefined
+    ? ""
+    : `and exists (select 1 from identities owner
+                    where owner.client_id = timeline_events.client_id
+                      and owner.attendee_id = ?)`;
+  db.prepare(
+    `update timeline_events
+        set payload = json_set(payload, '$.de',
+              (select i.attendee_id from identities i
+                where i.client_id = timeline_events.client_id))
+      where tipo = 'connection'
+        and json_extract(payload, '$.de') is null
+        and exists (select 1 from identities i
+                     where i.client_id = timeline_events.client_id)
+        ${attendeeFilter}`,
+  ).run(...(attendeeId === undefined ? [] : [attendeeId]));
+
+  db.exec(
+    `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+     select lower(hex(randomblob(16))), 'connection', null, e.ts,
+            json_object('attendeeId', json_extract(e.payload, '$.de'),
+                        'de',         json_extract(e.payload, '$.attendeeId'),
+                        'recebida',   json('true')),
+            null
+       from timeline_events e
+      where e.tipo = 'connection'
+        and json_extract(e.payload, '$.de') is not null
+        and not exists (
+              select 1 from timeline_events x
+               where x.tipo = 'connection'
+                 and json_extract(x.payload, '$.de')         = json_extract(e.payload, '$.attendeeId')
+                   and json_extract(x.payload, '$.attendeeId') = json_extract(e.payload, '$.de'))`,
+  );
+}
+
 // Migrações idempotentes de DADOS (o DDL vive no schema.sql, que já é "if not
 // exists"). Rodam a cada boot e não fazem nada quando já foram aplicadas.
 function migrar(db: Database.Database): void {
@@ -62,39 +101,7 @@ function migrar(db: Database.Database): void {
     }
   }
 
-  // 04/08: conexões passaram a ser da PESSOA, não do aparelho (payload.de).
-  // As criadas antes só têm client_id — recupera o dono pelo login daquele
-  // aparelho. Conexão de aparelho que nunca logou (ou que já saiu) fica órfã:
-  // não há como saber de quem era, e some do mosaico.
-  db.exec(
-    `update timeline_events
-        set payload = json_set(payload, '$.de',
-              (select i.attendee_id from identities i
-                where i.client_id = timeline_events.client_id))
-      where tipo = 'connection'
-        and json_extract(payload, '$.de') is null
-        and exists (select 1 from identities i
-                     where i.client_id = timeline_events.client_id)`,
-  );
-
-  // 04/08: conexão virou bilateral. Cria o lado que falta nas antigas, para
-  // ninguém ficar conectado "de um jeito só" (id em hex — só precisa ser único).
-  db.exec(
-    `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
-     select lower(hex(randomblob(16))), 'connection', null, e.ts,
-            json_object('attendeeId', json_extract(e.payload, '$.de'),
-                        'de',         json_extract(e.payload, '$.attendeeId'),
-                        'recebida',   json('true')),
-            null
-       from timeline_events e
-      where e.tipo = 'connection'
-        and json_extract(e.payload, '$.de') is not null
-        and not exists (
-              select 1 from timeline_events x
-               where x.tipo = 'connection'
-                 and json_extract(x.payload, '$.de')         = json_extract(e.payload, '$.attendeeId')
-                 and json_extract(x.payload, '$.attendeeId') = json_extract(e.payload, '$.de'))`,
-  );
+  repairLegacyConnections(db);
 }
 
 export function getDb(): Database.Database {
@@ -482,8 +489,9 @@ export function findAttendeeByLogin(
 }
 
 export function upsertIdentity(clientId: string, attendeeId: number, nome: string): void {
-  getDb()
-    .prepare(
+  const db = getDb();
+  db.transaction(() => {
+    db.prepare(
       `insert into identities (client_id, attendee_id, nome, consent_ts)
        values (?, ?, ?, ?)
        on conflict(client_id) do update set
@@ -491,6 +499,8 @@ export function upsertIdentity(clientId: string, attendeeId: number, nome: strin
          consent_ts = excluded.consent_ts`,
     )
     .run(clientId, attendeeId, nome, new Date().toISOString());
+    repairLegacyConnections(db, attendeeId);
+  })();
 }
 
 export function getIdentity(clientId: string): { nome: string } | null {

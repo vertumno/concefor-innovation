@@ -81,7 +81,7 @@ test("perfil novo inicia com compartilhamento marcado por campo", () => {
   });
 });
 
-test("contato conectado respeita a escolha independente por campo", () => {
+test("novo login recupera conexão antiga e respeita a escolha por campo", () => {
   assert.deepEqual(dbModule.attendeeByCheckin("10000002"), {
     id: 2,
     nome: "Bruno Teste",
@@ -94,13 +94,23 @@ test("contato conectado respeita a escolha independente por campo", () => {
     shareTelefone: true,
     shareInstagram: false,
   });
-  dbModule.insertConnection(1, 2, "client-connect-0001");
+  // Formato anterior a 04/08: havia destino e aparelho, mas não a pessoa de origem.
+  db.prepare(
+    `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+     values ('legacy-connection', 'connection', null, ?, ?, ?)`,
+  ).run(
+    new Date().toISOString(),
+    JSON.stringify({ attendeeId: 2 }),
+    "client-connect-legacy",
+  );
+  dbModule.upsertIdentity("client-connect-legacy", 1, "Ana Teste");
 
   const primeiro = dbModule.getParticipantes(1).find((p) => p.id === 2);
   assert.equal(primeiro?.conectado, true);
   assert.equal(primeiro?.email, undefined);
   assert.equal(primeiro?.telefone, "5527999999999");
   assert.equal(primeiro?.instagram, undefined);
+  assert.equal(dbModule.getParticipantes(2).find((p) => p.id === 1)?.conectado, true);
 
   dbModule.setPerfil(2, {
     telefonePais: "55",

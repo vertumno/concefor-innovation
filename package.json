@@ -17,6 +17,7 @@
     "seed:validacao": "node scripts/seed-validacao.mjs",
     "seed:demo": "node scripts/seed-demo.mjs",
     "seed:qa": "node scripts/seed-qa.mjs",
+    "audit:persistence": "node scripts/audit-persistence.mjs",
     "backup": "node scripts/backup.mjs"
   },
   "dependencies": {

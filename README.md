@@ -62,6 +62,8 @@ docker run --rm -v concefor-data:/app/data --env-file .env.local \
 ```
 
 O volume `/app/data` guarda o arquivo SQLite entre reinícios e atualizações.
+Antes e depois de cada deploy, `npm run audit:persistence` verifica a integridade
+do banco e contabiliza conexões atuais, recuperáveis e órfãs sem exibir dados pessoais.
 
 > ⚠️ **Se a base foi criada com o antigo `scripts/seed.mjs`** (programação manual,
 > hoje desatualizada): apague o arquivo `concefor.db` do volume e rode o passo 3 de
@@ -72,8 +74,10 @@ O volume `/app/data` guarda o arquivo SQLite entre reinícios e atualizações.
 ### Sessões de teste (período de validação)
 
 Para um teste inteiramente local, com três participantes fictícios e uma sessão
-já no ar, use `npm run seed:qa`. As credenciais aparecem no terminal. Ao terminar,
-`npm run seed:qa -- --limpar` remove a sessão, as contas e todas as interações delas.
+já no ar, use `npm run seed:qa`. As credenciais aparecem no terminal. Reexecutar o
+comando atualiza a massa sem apagar logins, perfis, conexões ou interações. Ao terminar,
+`npm run seed:qa -- --limpar` remove deliberadamente a sessão, as contas e todas as
+interações delas.
 
 **Sem acesso ao servidor:** o painel `/admin` tem o botão **"Inserir bloco para agora"**
 (seção *Bloco de teste*) — cria uma sessão fictícia já no ar, com a duração escolhida,

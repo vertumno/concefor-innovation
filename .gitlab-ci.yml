@@ -32,6 +32,13 @@ deploy:
 
     - echo "Criando backup consistente antes da troca..."
     - docker volume create concefor-data >/dev/null
+    - echo "Auditando persistência antes da troca..."
+    - |
+      docker run --rm \
+        -v concefor-data:/app/data \
+        -e DATABASE_PATH=/app/data/concefor.db \
+        concefor-app:candidate sh -c \
+        'if [ -f /app/data/concefor.db ]; then node scripts/audit-persistence.mjs; else echo "Primeiro deploy: ainda não há banco para auditar."; fi'
     - |
       docker run --rm \
         -v concefor-data:/app/data \
@@ -87,6 +94,9 @@ deploy:
         -v concefor-data:/app/data \
         --env-file /opt/apps/concefor-app/.env.local \
         concefor-app:candidate node scripts/sync-even3.mjs
+
+    - echo "Auditando persistência depois do deploy..."
+    - docker exec concefor-app node scripts/audit-persistence.mjs
 
     - echo "Deploy concluído com sucesso!"
 
