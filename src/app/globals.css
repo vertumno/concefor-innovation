@@ -457,9 +457,30 @@ h1.page-title {
   background: rgba(0, 221, 202, 0.06);
   font-weight: var(--weight-semibold);
 }
-.info-alert {
-  color: var(--accent);
-  line-height: 1.45;
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 2px 0 4px;
+  padding: 0;
+  list-style: none;
+}
+.info-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.info-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.info-list a {
+  font-weight: var(--weight-semibold);
+}
+.info-list span {
+  font-size: var(--text-xs);
 }
 
 /* =================== Linha do tempo =================== */

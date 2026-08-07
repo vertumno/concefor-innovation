@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 
+const RESTAURANTES = [
+  ["Restaurante Pioneiro", "Avenida Paulino Muller, 815 · Jucutuquara"],
+  ["Subway", "Avenida Vitória, 1980, loja 1 · Monte Belo"],
+  ["Restaurante Casa da Ilha", "Avenida João Santos Filho, 340 · Ilha de Santa Maria"],
+  ["Horto Mercado", "Rua Licínio dos Santos Conte, 51 · Enseada do Suá"],
+  ["Salsa Self-Service", "Rua Madeira de Freitas, 76 · Praia do Canto"],
+] as const;
+
 export const metadata: Metadata = {
   title: "Mais — VIII Concefor",
   description: "Guia prático do evento: local, alimentação, 20 anos, certificados e contato.",
@@ -49,17 +57,24 @@ export default function MaisPage() {
       <div className="section-label">Alimentação e hospedagem</div>
       <div className="notice info-card">
         <span>
-          Consulte as listas do site oficial e confirme horário e disponibilidade diretamente
-          com o estabelecimento.
+          Algumas opções indicadas pela organização. Confirme horário e disponibilidade
+          diretamente com o estabelecimento.
         </span>
+        <ul className="info-list">
+          {RESTAURANTES.map(([nome, endereco]) => (
+            <li key={nome}>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${nome}, ${endereco}, Vitória, ES`)}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {nome} ↗
+              </a>
+              <span>{endereco}</span>
+            </li>
+          ))}
+        </ul>
         <div className="info-actions">
-          <a
-            href="https://concefor.cefor.ifes.edu.br/opcoes-de-restaurantes/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Restaurantes ↗
-          </a>
           <a
             href="https://concefor.cefor.ifes.edu.br/opcoes-de-hospedagens/"
             target="_blank"
@@ -68,9 +83,6 @@ export default function MaisPage() {
             Hospedagens ↗
           </a>
         </div>
-        <small className="info-alert">
-          Atenção: o restaurante Francischetto, ainda citado no site, está fechado.
-        </small>
       </div>
 
       <div className="section-label">20 anos do Cefor</div>
