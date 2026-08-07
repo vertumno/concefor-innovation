@@ -71,6 +71,10 @@ O volume `/app/data` guarda o arquivo SQLite entre reinícios e atualizações.
 
 ### Sessões de teste (período de validação)
 
+Para um teste inteiramente local, com três participantes fictícios e uma sessão
+já no ar, use `npm run seed:qa`. As credenciais aparecem no terminal. Ao terminar,
+`npm run seed:qa -- --limpar` remove a sessão, as contas e todas as interações delas.
+
 **Sem acesso ao servidor:** o painel `/admin` tem o botão **"Inserir bloco para agora"**
 (seção *Bloco de teste*) — cria uma sessão fictícia já no ar, com a duração escolhida,
 para o público presente reagir e perguntar. O mesmo painel apaga o bloco depois, junto
