@@ -3,12 +3,17 @@
 import { useCallback, useEffect, useState } from "react";
 import { LoginCta } from "./LoginCta";
 import { useMe } from "@/lib/useMe";
-import { POLL_RESPONSE_MAX, type Poll as PollType } from "@/lib/polls";
+import {
+  POLL_COOLDOWN_SECONDS,
+  POLL_RESPONSE_MAX,
+  type Poll as PollType,
+} from "@/lib/polls";
 
 export function Poll({ sessionId }: { sessionId: string }) {
   const [poll, setPoll] = useState<PollType | null>(null);
   const [texto, setTexto] = useState("");
   const [sending, setSending] = useState(false);
+  const [cooldown, setCooldown] = useState(0);
   const [message, setMessage] = useState<string | null>(null);
   const me = useMe();
 
@@ -23,7 +28,9 @@ export function Poll({ sessionId }: { sessionId: string }) {
 
   useEffect(() => {
     refresh();
-    const id = setInterval(refresh, 4000);
+    // A projeção continua em 3s; o participante só precisa descobrir abertura/
+    // encerramento e não deve baixar metadados 50 vezes/s em uma sala de 200.
+    const id = setInterval(refresh, 8000);
     return () => clearInterval(id);
   }, [refresh]);
 
@@ -32,11 +39,17 @@ export function Poll({ sessionId }: { sessionId: string }) {
     setTexto(localStorage.getItem(`concefor:poll-draft:${poll.id}`) ?? "");
   }, [poll?.id]);
 
+  useEffect(() => {
+    if (cooldown <= 0) return;
+    const id = setTimeout(() => setCooldown((value) => Math.max(0, value - 1)), 1000);
+    return () => clearTimeout(id);
+  }, [cooldown]);
+
   if (!poll) return null;
 
   async function submit() {
     const t = texto.trim();
-    if (!t || sending) return;
+    if (!t || sending || cooldown > 0) return;
     setSending(true);
     setMessage(null);
     try {
@@ -45,14 +58,26 @@ export function Poll({ sessionId }: { sessionId: string }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pollId: poll!.id, texto: t }),
       });
-      const data = (await res.json()) as { error?: string; poll?: PollType };
+      const data = (await res.json()) as {
+        error?: string;
+        retryAfterMs?: number;
+        cooldownSeconds?: number;
+      };
       if (!res.ok) {
         setMessage(data.error ?? "não foi possível enviar");
+        if (res.status === 429) {
+          setCooldown(
+            Math.max(1, Math.ceil((data.retryAfterMs ?? POLL_COOLDOWN_SECONDS * 1000) / 1000)),
+          );
+        }
       } else {
         localStorage.removeItem(`concefor:poll-draft:${poll!.id}`);
         setTexto("");
-        if (data.poll) setPoll(data.poll);
-        setMessage("Resposta publicada no telão. Você pode responder novamente.");
+        setPoll((current) => current
+          ? { ...current, myResponses: (current.myResponses ?? 0) + 1 }
+          : current);
+        setCooldown(data.cooldownSeconds ?? POLL_COOLDOWN_SECONDS);
+        setMessage("Resposta publicada no telão.");
       }
     } catch {
       setMessage("Sem conexão — seu texto continua aqui para tentar novamente.");
@@ -88,8 +113,8 @@ export function Poll({ sessionId }: { sessionId: string }) {
               {poll.myResponses ? `${poll.myResponses} enviada${poll.myResponses > 1 ? "s" : ""} · ` : ""}
               {texto.length}/{POLL_RESPONSE_MAX}
             </span>
-            <button type="button" onClick={submit} disabled={sending || !texto.trim()}>
-              {sending ? "Enviando…" : "Enviar"}
+            <button type="button" onClick={submit} disabled={sending || cooldown > 0 || !texto.trim()}>
+              {sending ? "Enviando…" : cooldown > 0 ? `Aguarde ${cooldown}s` : "Enviar"}
             </button>
           </div>
           <p className="poll-moderation-note">

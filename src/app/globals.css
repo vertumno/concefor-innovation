@@ -2057,6 +2057,8 @@ h1.page-title {
   overflow-y: auto;
 }
 .admin-poll-response {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 84px;
   display: flex;
   align-items: center;
   justify-content: space-between;

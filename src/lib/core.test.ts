@@ -14,6 +14,7 @@ let dbModule: typeof import("./db");
 let authModule: typeof import("./authSession");
 let pollModule: typeof import("./polls");
 let contactModule: typeof import("./contato");
+let pollApiModule: typeof import("../app/api/polls/route");
 let db: Database.Database;
 
 before(async () => {
@@ -21,6 +22,7 @@ before(async () => {
   authModule = await import("./authSession");
   pollModule = await import("./polls");
   contactModule = await import("./contato");
+  pollApiModule = await import("../app/api/polls/route");
   db = dbModule.getDb();
 
   db.prepare(
@@ -132,20 +134,53 @@ test("telefone usa E.164 e formata o padrão brasileiro sem presumir WhatsApp", 
   assert.equal(contactModule.telefoneFormatado("351912345678"), "+351912345678");
 });
 
-test("enquete modera respostas e preserva resultado após encerrar", () => {
+test("enquete aplica cooldown, modera e preserva resultado após encerrar", async () => {
   const poll = dbModule.createPoll({
     sessionId: "sessao-1",
     question: "O que não pode faltar?",
     stopwords: pollModule.normalizeStopwords("a, o, de"),
   });
-  const responseId = dbModule.insertPollResponse({
-    pollId: poll.id,
-    sessionId: poll.sessionId,
-    texto: "Educação pública e educação inclusiva!",
+  const participant = authModule.createParticipantSession({
     attendeeId: 1,
-    autor: "Ana Teste",
     clientId: "client-poll-0001",
+    nome: "Ana Teste",
   });
+  const cookie = authModule.sessionCookie(participant.token).split(";")[0];
+  const first = await pollApiModule.POST(
+    new Request("http://localhost/api/polls", {
+      method: "POST",
+      headers: { cookie, "content-type": "application/json" },
+      body: JSON.stringify({
+        pollId: poll.id,
+        texto: "Educação pública e educação educação inclusiva!",
+      }),
+    }),
+  );
+  assert.equal(first.status, 200);
+  assert.equal((await first.json()).cooldownSeconds, 5);
+
+  const immediate = await pollApiModule.POST(
+    new Request("http://localhost/api/polls", {
+      method: "POST",
+      headers: { cookie, "content-type": "application/json" },
+      body: JSON.stringify({ pollId: poll.id, texto: "Outra resposta" }),
+    }),
+  );
+  const throttled = await immediate.json();
+  assert.equal(immediate.status, 429);
+  assert.match(immediate.headers.get("retry-after") ?? "", /^[1-5]$/);
+  assert.ok(throttled.retryAfterMs > 0 && throttled.retryAfterMs <= 5000);
+
+  const participantView = await pollApiModule.GET(
+    new Request(`http://localhost/api/polls?sessionId=${poll.sessionId}`, {
+      headers: { cookie },
+    }),
+  );
+  const participantPoll = (await participantView.json()).poll;
+  assert.equal(participantPoll.responses.length, 0);
+  assert.equal(participantPoll.myResponses, 1);
+
+  const responseId = dbModule.getAdminPoll()!.responses[0].id;
 
   assert.equal(dbModule.getProjectionPoll()?.responses.length, 1);
   assert.equal(dbModule.getAdminPoll()?.responses[0]?.autor, "Ana Teste");
@@ -159,9 +194,24 @@ test("enquete modera respostas e preserva resultado após encerrar", () => {
 
   const frequencies = pollModule.wordFrequencies(projection?.responses ?? [], ["e"]);
   assert.deepEqual(frequencies.slice(0, 2), [
-    { word: "educação", count: 2 },
+    { word: "educação", count: 1 },
     { word: "inclusiva", count: 1 },
   ]);
+
+  assert.deepEqual(
+    pollModule.wordFrequencies(
+      [
+        { texto: "Educação educação EDUCAÇÃO" },
+        { texto: "educação inclusiva" },
+      ],
+      [],
+    ).slice(0, 2),
+    [
+      { word: "educação", count: 2 },
+      { word: "inclusiva", count: 1 },
+    ],
+  );
+  assert.equal(pollModule.POLL_COOLDOWN_SECONDS, 5);
 
   assert.equal(dbModule.closePoll(poll.id), true);
   assert.equal(dbModule.getActivePoll("sessao-1"), null);

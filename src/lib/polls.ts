@@ -1,5 +1,6 @@
 export const POLL_RESPONSE_MAX = 150;
 export const POLL_QUESTION_MAX = 180;
+export const POLL_COOLDOWN_SECONDS = 5;
 
 export const DEFAULT_STOPWORDS = [
   "a",
@@ -86,12 +87,17 @@ export function wordFrequencies(
   const ignored = new Set(normalizeStopwords(stopwords));
   const counts = new Map<string, number>();
   for (const response of responses) {
-    const words = response.texto
-      .normalize("NFC")
-      .toLocaleLowerCase("pt-BR")
-      .replace(/[^\p{L}\p{N}\s-]/gu, " ")
-      .split(/[\s-]+/u)
-      .filter((word) => word.length > 1 && !ignored.has(word));
+    // Uma palavra conta no máximo uma vez por resposta. Participantes diferentes
+    // continuam somando frequência, mas repetir a mesma palavra no mesmo texto
+    // não infla artificialmente a nuvem.
+    const words = new Set(
+      response.texto
+        .normalize("NFC")
+        .toLocaleLowerCase("pt-BR")
+        .replace(/[^\p{L}\p{N}\s-]/gu, " ")
+        .split(/[\s-]+/u)
+        .filter((word) => word.length > 1 && !ignored.has(word)),
+    );
     for (const word of words) counts.set(word, (counts.get(word) ?? 0) + 1);
   }
   return [...counts]

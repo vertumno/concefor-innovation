@@ -7,12 +7,12 @@ import {
   sessionExists,
 } from "@/lib/db";
 import { participantSession } from "@/lib/authSession";
-import { POLL_RESPONSE_MAX } from "@/lib/polls";
+import { POLL_COOLDOWN_SECONDS, POLL_RESPONSE_MAX } from "@/lib/polls";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const THROTTLE_MS = 4000;
+const THROTTLE_MS = POLL_COOLDOWN_SECONDS * 1000;
 type PollThrottleGlobal = { pollResponseLast?: Map<string, number> };
 const g = globalThis as unknown as PollThrottleGlobal;
 
@@ -27,7 +27,8 @@ export function GET(req: Request) {
   }
   const sessao = participantSession(req);
   return NextResponse.json({
-    poll: getActivePoll(sessionId, sessao?.attendeeId ?? null),
+    // Participante usa pergunta/status/contador próprio, não a lista inteira.
+    poll: getActivePoll(sessionId, sessao?.attendeeId ?? null, false),
   });
 }
 
@@ -53,7 +54,7 @@ export async function POST(req: Request) {
   if (typeof pollId !== "string") {
     return NextResponse.json({ error: "enquete desconhecida" }, { status: 400 });
   }
-  const poll = getPollById(pollId, false, sessao.attendeeId);
+  const poll = getPollById(pollId, false, sessao.attendeeId, false);
   if (!poll || poll.status !== "active") {
     return NextResponse.json({ error: "esta enquete já foi encerrada" }, { status: 409 });
   }
@@ -62,7 +63,11 @@ export async function POST(req: Request) {
   const now = Date.now();
   const last = (g.pollResponseLast ??= new Map()).get(key) ?? 0;
   if (now - last < THROTTLE_MS) {
-    return NextResponse.json({ error: "aguarde alguns segundos para enviar novamente" }, { status: 429 });
+    const retryAfterMs = THROTTLE_MS - (now - last);
+    return NextResponse.json(
+      { error: `aguarde ${POLL_COOLDOWN_SECONDS} segundos entre respostas`, retryAfterMs },
+      { status: 429, headers: { "Retry-After": String(Math.ceil(retryAfterMs / 1000)) } },
+    );
   }
   g.pollResponseLast.set(key, now);
 
@@ -76,6 +81,6 @@ export async function POST(req: Request) {
   });
   return NextResponse.json({
     ok: true,
-    poll: getActivePoll(poll.sessionId, sessao.attendeeId),
+    cooldownSeconds: POLL_COOLDOWN_SECONDS,
   });
 }

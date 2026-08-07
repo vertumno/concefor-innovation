@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import {
   DEFAULT_STOPWORDS,
@@ -17,6 +17,7 @@ export function AdminPolls({ sessions, token }: { sessions: Session[]; token: st
   const [stopwords, setStopwords] = useState(DEFAULT_STOPWORDS.join(", "));
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const lastPollJson = useRef("");
   const headers = useMemo(
     () => ({ "Content-Type": "application/json", "x-admin-token": token }),
     [token],
@@ -35,7 +36,14 @@ export function AdminPolls({ sessions, token }: { sessions: Session[]; token: st
   const refresh = useCallback(async () => {
     try {
       const res = await fetch("/api/admin/polls", { headers: { "x-admin-token": token } });
-      if (res.ok) setPoll(((await res.json()) as { poll: Poll | null }).poll);
+      if (res.ok) {
+        const next = ((await res.json()) as { poll: Poll | null }).poll;
+        const serialized = JSON.stringify(next);
+        if (serialized !== lastPollJson.current) {
+          lastPollJson.current = serialized;
+          setPoll(next);
+        }
+      }
     } catch {
       /* próximo poll tenta de novo */
     }
@@ -43,7 +51,9 @@ export function AdminPolls({ sessions, token }: { sessions: Session[]; token: st
 
   useEffect(() => {
     refresh();
-    const id = setInterval(refresh, 4000);
+    const id = setInterval(() => {
+      if (!document.hidden) refresh();
+    }, 5000);
     return () => clearInterval(id);
   }, [refresh]);
 
@@ -59,7 +69,9 @@ export function AdminPolls({ sessions, token }: { sessions: Session[]; token: st
       const data = (await res.json()) as { poll?: Poll; error?: string };
       if (!res.ok) setError(data.error ?? "não foi possível concluir");
       else {
-        setPoll(data.poll ?? null);
+        const next = data.poll ?? null;
+        lastPollJson.current = JSON.stringify(next);
+        setPoll(next);
         if (body.action === "create") setQuestion("");
       }
     } catch {

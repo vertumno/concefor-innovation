@@ -1201,21 +1201,24 @@ function pollFromRow(
   },
   includeAll: boolean,
   attendeeId: number | null,
+  loadResponses = true,
 ): Poll {
   const payload = JSON.parse(row.payload) as PollPayload;
-  const responseRows = getDb()
-    .prepare(
-      `select id, ts,
-              json_extract(payload, '$.texto') as texto,
-              json_extract(payload, '$.autor') as autor,
-              coalesce(json_extract(payload, '$.status'), 'pending') as status,
-              json_extract(payload, '$.attendeeId') as attendeeId
-         from timeline_events
-        where tipo = 'poll_response'
-          and json_extract(payload, '$.pollId') = ?
-        order by ts desc`,
-    )
-    .all(row.id) as (PollResponse & { attendeeId: number | null })[];
+  const responseRows = loadResponses
+    ? getDb()
+        .prepare(
+          `select id, ts,
+                  json_extract(payload, '$.texto') as texto,
+                  json_extract(payload, '$.autor') as autor,
+                  coalesce(json_extract(payload, '$.status'), 'pending') as status,
+                  json_extract(payload, '$.attendeeId') as attendeeId
+             from timeline_events
+            where tipo = 'poll_response'
+              and json_extract(payload, '$.pollId') = ?
+            order by ts desc`,
+        )
+        .all(row.id) as (PollResponse & { attendeeId: number | null })[]
+    : [];
   const publicResponses = responseRows.filter((r) => includeAll || r.status === "approved");
   return {
     id: row.id,
@@ -1230,7 +1233,16 @@ function pollFromRow(
       includeAll ? { ...r, autor } : r,
     ),
     ...(attendeeId
-      ? { myResponses: responseRows.filter((r) => r.attendeeId === attendeeId).length }
+      ? {
+          myResponses: loadResponses
+            ? responseRows.filter((r) => r.attendeeId === attendeeId).length
+            : (getDb().prepare(
+                `select count(*) as n from timeline_events
+                  where tipo = 'poll_response'
+                    and json_extract(payload, '$.pollId') = ?
+                    and json_extract(payload, '$.attendeeId') = ?`,
+              ).get(row.id, attendeeId) as { n: number }).n,
+        }
       : {}),
   };
 }
@@ -1250,21 +1262,26 @@ function pollRow(where: string, ...params: unknown[]) {
     | undefined;
 }
 
-export function getActivePoll(sessionId: string, attendeeId: number | null = null): Poll | null {
+export function getActivePoll(
+  sessionId: string,
+  attendeeId: number | null = null,
+  loadResponses = true,
+): Poll | null {
   const row = pollRow(
     `e.session_id = ? and json_extract(e.payload, '$.status') = 'active'`,
     sessionId,
   );
-  return row ? pollFromRow(row, false, attendeeId) : null;
+  return row ? pollFromRow(row, false, attendeeId, loadResponses) : null;
 }
 
 export function getPollById(
   pollId: string,
   includeAll = false,
   attendeeId: number | null = null,
+  loadResponses = true,
 ): Poll | null {
   const row = pollRow("e.id = ?", pollId);
-  return row ? pollFromRow(row, includeAll, attendeeId) : null;
+  return row ? pollFromRow(row, includeAll, attendeeId, loadResponses) : null;
 }
 
 export function getAdminPoll(): Poll | null {
