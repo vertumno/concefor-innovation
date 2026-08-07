@@ -314,10 +314,10 @@ export function Telao({ session }: { session: Session }) {
       try {
         const d = JSON.parse((e as MessageEvent).data) as {
           reaction: string;
-          clientId: string | null;
+          actorId: string | null;
           ts?: string;
         };
-        if (isReactionKind(d.reaction)) pulse(d.reaction, d.clientId, d.ts);
+        if (isReactionKind(d.reaction)) pulse(d.reaction, d.actorId, d.ts);
       } catch {
         /* ignora */
       }
@@ -359,7 +359,7 @@ export function Telao({ session }: { session: Session }) {
     };
   }, [session.id]);
 
-  function pulse(kind: ReactionKind, clientId: string | null, ts?: string) {
+  function pulse(kind: ReactionKind, actorId: string | null, ts?: string) {
     setCounts((c) => ({ ...c, [kind]: c[kind] + 1 }));
     heatRef.current = Math.min(1.3, heatRef.current + 0.3);
 
@@ -375,7 +375,7 @@ export function Telao({ session }: { session: Session }) {
     bucketsRef.current.set(idx, b);
     if (burstsRef.current.length < 40) burstsRef.current.push(kIdx);
 
-    const cor = clientId ? getAvatar(clientId).cor : "#00ddca";
+    const cor = actorId ? getAvatar(actorId).cor : "#00ddca";
     const id = ++floatSeq;
     const f: Floater = {
       id,

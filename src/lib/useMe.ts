@@ -6,14 +6,12 @@
 // 05/08: reagir/perguntar/votar só logado; anônimo vê o que é público).
 
 import { useEffect, useState } from "react";
-import { getClientId } from "./clientId";
-
 export type Me = { logado: boolean; nome?: string };
 
 export function useMe(): Me | null {
   const [me, setMe] = useState<Me | null>(null);
   useEffect(() => {
-    fetch(`/api/me?clientId=${encodeURIComponent(getClientId())}`)
+    fetch("/api/me")
       .then((r) => r.json())
       .then((d: { logado?: boolean; nome?: string }) =>
         setMe({ logado: Boolean(d.logado), nome: d.nome }),

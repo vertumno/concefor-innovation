@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
 import {
-  getIdentity,
   getQuestions,
   insertQuestion,
   questionsWindowOpen,
   sessionExists,
 } from "@/lib/db";
 import { isAdmin } from "@/lib/adminAuth";
+import { participantSession } from "@/lib/authSession";
 
 // Perguntas com upvote (R4). IDENTIFICADAS (decisão de 05/08): só logado envia
 // e a pergunta sai com o nome completo de quem mandou — inibe pergunta tosca ou
@@ -19,23 +19,23 @@ const THROTTLE_MS = 30000; // 1 pergunta a cada 30s por dispositivo (era 15s; 05
 type ThrottleGlobal = { questionLast?: Map<string, number> };
 const g = globalThis as unknown as ThrottleGlobal;
 
-// GET /api/questions?sessionId=&clientId= → { open, questions }
+// GET /api/questions?sessionId= → { open, questions }
 // Com token de admin: inclui as ocultas (moderação).
 export function GET(req: Request) {
   const url = new URL(req.url);
   const sessionId = url.searchParams.get("sessionId");
-  const clientId = url.searchParams.get("clientId");
   if (!sessionId || !sessionExists(sessionId)) {
     return NextResponse.json({ error: "sessão desconhecida" }, { status: 400 });
   }
   const admin = isAdmin(req);
+  const sessao = participantSession(req);
   return NextResponse.json({
     open: questionsWindowOpen(sessionId),
-    questions: getQuestions(sessionId, clientId, admin),
+    questions: getQuestions(sessionId, sessao?.attendeeId ?? null, admin),
   });
 }
 
-// POST /api/questions { sessionId, texto, clientId } → cria pergunta.
+// POST /api/questions { sessionId, texto } → cria pergunta.
 export async function POST(req: Request) {
   let body: unknown;
   try {
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
-  const { sessionId, texto, clientId } = (body ?? {}) as Record<string, unknown>;
+  const { sessionId, texto } = (body ?? {}) as Record<string, unknown>;
 
   if (typeof sessionId !== "string" || !sessionExists(sessionId)) {
     return NextResponse.json({ error: "sessão desconhecida" }, { status: 400 });
@@ -60,11 +60,11 @@ export async function POST(req: Request) {
   }
 
   // Pergunta é identificada: exige login e fotografa o nome completo no envio.
-  const cid = typeof clientId === "string" && clientId ? clientId : null;
-  const identidade = cid ? getIdentity(cid) : null;
-  if (!cid || !identidade) {
+  const sessao = participantSession(req);
+  if (!sessao) {
     return NextResponse.json({ error: "entre com seu ingresso para perguntar" }, { status: 401 });
   }
+  const cid = sessao.clientId;
 
   const last = (g.questionLast ??= new Map()).get(cid) ?? 0;
   const now = Date.now();
@@ -73,6 +73,9 @@ export async function POST(req: Request) {
   }
   g.questionLast.set(cid, now);
 
-  const id = insertQuestion(sessionId, t, cid, identidade.nome);
-  return NextResponse.json({ id, questions: getQuestions(sessionId, cid, false) });
+  const id = insertQuestion(sessionId, t, cid, sessao.attendeeId, sessao.nome);
+  return NextResponse.json({
+    id,
+    questions: getQuestions(sessionId, sessao.attendeeId, false),
+  });
 }

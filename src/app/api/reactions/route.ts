@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import { getIdentity, getReactionCounts, insertReaction, sessionExists } from "@/lib/db";
+import { getReactionCounts, insertReaction, sessionExists } from "@/lib/db";
 import { isReactionKind } from "@/lib/reactions";
+import { participantSession } from "@/lib/authSession";
 
 export const runtime = "nodejs"; // better-sqlite3 é binário nativo
 export const dynamic = "force-dynamic"; // dados vivos
@@ -22,7 +23,7 @@ export function GET(req: Request) {
   return NextResponse.json({ counts: getReactionCounts(sessionId) });
 }
 
-// POST /api/reactions { sessionId, reaction, clientId } → grava na linha do tempo.
+// POST /api/reactions { sessionId, reaction } → grava na linha do tempo.
 export async function POST(req: Request) {
   let body: unknown;
   try {
@@ -30,7 +31,7 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
-  const { sessionId, reaction, clientId } = (body ?? {}) as Record<string, unknown>;
+  const { sessionId, reaction } = (body ?? {}) as Record<string, unknown>;
 
   if (!isReactionKind(reaction)) {
     return NextResponse.json({ error: "reação inválida" }, { status: 400 });
@@ -41,10 +42,11 @@ export async function POST(req: Request) {
 
   // Só participa quem entrou com o ingresso (decisão de 05/08 — inibe abuso).
   // Anônimo continua VENDO a contagem (GET); enviar é que exige identidade.
-  const cid = typeof clientId === "string" && clientId ? clientId : null;
-  if (!cid || !getIdentity(cid)) {
+  const sessao = participantSession(req);
+  if (!sessao) {
     return NextResponse.json({ error: "entre com seu ingresso para reagir" }, { status: 401 });
   }
+  const cid = sessao.clientId;
 
   const now = Date.now();
   const last = lastByClient().get(cid) ?? 0;
@@ -57,6 +59,6 @@ export async function POST(req: Request) {
   }
   lastByClient().set(cid, now);
 
-  insertReaction(sessionId, reaction, cid);
+  insertReaction(sessionId, reaction, cid, sessao.attendeeId);
   return NextResponse.json({ counts: getReactionCounts(sessionId) });
 }

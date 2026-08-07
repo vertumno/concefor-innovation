@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { getIdentityAttendeeId, setPerfil } from "@/lib/db";
+import { setPerfil } from "@/lib/db";
+import { participantSession } from "@/lib/authSession";
 
 // Contato que o próprio participante preenche (telefone/WhatsApp, Instagram) —
 // voluntário, mostrado apenas às conexões dele. Campo vazio = apagar o dado.
@@ -13,13 +14,13 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
-  const { clientId, telefone, instagram } = (body ?? {}) as Record<string, unknown>;
+  const { telefone, instagram, shareEmail, shareTelefone, shareInstagram } = (body ?? {}) as Record<
+    string,
+    unknown
+  >;
 
-  if (typeof clientId !== "string" || !clientId) {
-    return NextResponse.json({ error: "clientId requerido" }, { status: 400 });
-  }
-  const attendeeId = getIdentityAttendeeId(clientId);
-  if (!attendeeId) {
+  const sessao = participantSession(req);
+  if (!sessao) {
     return NextResponse.json({ error: "entre com sua inscrição primeiro" }, { status: 401 });
   }
 
@@ -42,7 +43,13 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "usuário do Instagram inválido" }, { status: 400 });
   }
 
-  const perfil = { telefone: tel || null, instagram: insta.toLowerCase() || null };
-  setPerfil(attendeeId, perfil);
+  const perfil = {
+    telefone: tel || null,
+    instagram: insta.toLowerCase() || null,
+    shareEmail: shareEmail === true,
+    shareTelefone: Boolean(tel) && shareTelefone === true,
+    shareInstagram: Boolean(insta) && shareInstagram === true,
+  };
+  setPerfil(sessao.attendeeId, perfil);
   return NextResponse.json(perfil);
 }

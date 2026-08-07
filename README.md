@@ -1,8 +1,8 @@
 # App — VIII CONCEFOR (PWA)
 
 PWA do evento **VIII CONCEFOR** (17–20/08/2026, Cefor/IFES, Vitória-ES). Escopo v1:
-**programação viva (timeline)** · **reações ao vivo no telão** · **dashboard/relatório**.
-Mobile-first, instalável.
+**programação viva (timeline)** · **reações/perguntas/enquetes ao vivo** ·
+**networking com opt-in** · **dashboard/relatório**. Mobile-first, instalável.
 
 > Espelho do código do app. O desenvolvimento e o contexto do projeto ficam no repositório
 > interno da equipe — abra *issues* aqui, mas alinhe mudanças com o time antes de contribuir.
@@ -17,7 +17,8 @@ Mobile-first, instalável.
 
 - **Next.js 15** (App Router, `output: standalone`) + React 19 + TypeScript
 - **SQLite local** (`better-sqlite3`, binário nativo) atrás de `src/lib/db.ts` (interface única de dados) + **API routes** + **SSE** (Server-Sent Events) para o tempo real das reações/telão
-- `next-pwa` (service worker + cache offline — em wiring)
+- Manifesto web + instalação na tela inicial. Cache offline fica para uma etapa
+  própria, com solução atual e teste específico no iOS/Android.
 
 > ⚠️ **Restrição de arquitetura:** por usar **SQLite em disco + SSE**, o app precisa de um
 > **processo sempre-ligado com disco persistente**. **Não roda em serverless** (Vercel/Functions).
@@ -111,7 +112,13 @@ Baseie-se em `.env.example`. Segredos **não** estão no repositório (`.env.loc
 
 ## Operação
 
-- **Backup:** copiar o arquivo `concefor.db` do volume `/app/data` — o backup é o próprio arquivo.
+- **Verificar:** `npm test`, `npx tsc --noEmit`, `npm run build` e `npm run smoke`.
+  O smoke sobe a compilação com um banco temporário e valida saúde/autorização.
+- **Backup:** `npm run backup -- /diretorio/de-destino` (ou o equivalente no
+  container). O script usa a API de backup do SQLite, segura com WAL ativo, e
+  valida o resultado com `integrity_check`, entregando um único arquivo `.db`.
+  A pipeline cria um backup no volume
+  antes de trocar o container; copie periodicamente uma cópia para fora do host.
 - **Atualizar:** merge no `main` deste repositório → **deploy automático em produção**
   (integração contínua, 30/07). Mudanças entram por **branch + Merge Request** — nunca
   commit direto no `main`. Os dados persistem no volume, sem re-seed.
@@ -158,4 +165,7 @@ a dados, o que mantém barata uma futura volta ao Postgres.
 - [x] Dashboard admin ao vivo (`/admin`) + relatório (`/admin/relatorio`)
 - [x] Sync da programação oficial via API do Even3 (substituiu o seed)
 - [x] Perguntas com upvote · login opcional pelo crachá · mosaico de conexões
-- [ ] Wiring do `next-pwa` (service worker + cache offline da programação)
+- [x] Sessão autenticada HttpOnly · compartilhamento de contato com opt-in por campo
+- [x] Enquetes moderadas em lista/nuvem de palavras + projeção em `/enquete`
+- [x] Backup consistente · healthcheck · rollback de deploy · validação de branches
+- [ ] Cache offline da programação (integração anterior removida por estar desativada e obsoleta)

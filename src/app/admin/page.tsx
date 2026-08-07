@@ -6,6 +6,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { AdminPolls } from "@/components/AdminPolls";
 import { fetchSessions, splitNowNext, formatHora, formatDiaCurto } from "@/lib/sessions";
 import { useEventClock } from "@/lib/clock";
 import type { AdminStats, Aviso, Question } from "@/lib/db";
@@ -360,6 +361,8 @@ export default function AdminPage() {
             ? "Perguntas no telão: exibindo — ocultar"
             : "Perguntas no telão: OCULTAS — reexibir"}
       </button>
+
+      <AdminPolls sessions={sessions} token={token} />
 
       <div className="section-label">Perguntas — sessões ao vivo e janelas abertas</div>
       {aoVivo.length === 0 && <div className="empty">Nenhuma sessão no ar agora.</div>}

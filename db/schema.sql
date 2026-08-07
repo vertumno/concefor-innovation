@@ -84,8 +84,27 @@ create table if not exists attendee_profile (
   attendee_id integer primary key references attendees(id) on delete cascade,
   telefone    text,                   -- só dígitos (com DDD; DDI opcional)
   instagram   text,                   -- handle sem @
+  share_email integer not null default 0,
+  share_telefone integer not null default 0,
+  share_instagram integer not null default 0,
   updated_at  text not null
 );
+
+-- Sessão autenticada opaca. O navegador recebe o token bruto apenas em cookie
+-- HttpOnly; o banco guarda somente o SHA-256. client_id continua sendo a
+-- identidade visual do aparelho, nunca a credencial de autorização.
+create table if not exists auth_sessions (
+  token_hash  text primary key,
+  attendee_id integer not null references attendees(id) on delete cascade,
+  client_id   text not null,
+  nome        text not null,
+  created_at  text not null,
+  expires_at  text not null,
+  last_seen_at text not null
+);
+
+create index if not exists idx_auth_sessions_attendee on auth_sessions (attendee_id);
+create index if not exists idx_auth_sessions_expires on auth_sessions (expires_at);
 
 -- =========================================================
 -- timeline_events: todo evento da linha do tempo

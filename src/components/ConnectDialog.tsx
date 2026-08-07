@@ -8,9 +8,8 @@
 // funciona.
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { getClientId } from "@/lib/clientId";
 
-type Resultado = { nova: boolean; pessoa: { nome: string; email: string | null } };
+type Resultado = { nova: boolean; pessoa: { nome: string } };
 
 type BarcodeDetectorLike = {
   detect(source: CanvasImageSource): Promise<{ rawValue: string }[]>;
@@ -50,7 +49,7 @@ export function ConnectDialog({
       const res = await fetch("/api/connect", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ clientId: getClientId(), code }),
+        body: JSON.stringify({ code }),
       });
       const data = await res.json();
       if (!res.ok) {

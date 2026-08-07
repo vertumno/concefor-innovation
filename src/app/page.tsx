@@ -11,7 +11,6 @@ import { SessionCard } from "@/components/SessionCard";
 import { getFavorites, toggleFavorite } from "@/lib/favorites";
 import { fetchSessions, splitNowNext, proximaFavorita, formatHora } from "@/lib/sessions";
 import { useEventClock } from "@/lib/clock";
-import { getClientId } from "@/lib/clientId";
 import type { Session } from "@/lib/types";
 import type { Aviso } from "@/lib/db";
 
@@ -25,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     fetchSessions().then(setSessions);
     setFavoritos(getFavorites());
-    fetch(`/api/me?clientId=${encodeURIComponent(getClientId())}`)
+    fetch("/api/me")
       .then((r) => r.json())
       .then((me: { logado: boolean; nome?: string }) => setNome(me.logado ? (me.nome ?? null) : null))
       .catch(() => {});

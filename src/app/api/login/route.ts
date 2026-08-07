@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { findAttendeeByLogin, upsertIdentity } from "@/lib/db";
+import { createParticipantSession, sessionCookie } from "@/lib/authSession";
 
 // Login pelo crachá (R7): nº do ingresso (checkin_code, 8 dígitos) + segundo
 // fator — 4 primeiros dígitos do CPF (20/07) OU o e-mail da inscrição (29/07),
@@ -9,7 +10,8 @@ import { findAttendeeByLogin, upsertIdentity } from "@/lib/db";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-// Anti força-bruta: 5 tentativas por minuto por dispositivo.
+// Anti força-bruta: 5 tentativas por minuto por IP + ingresso. clientId é
+// controlado pelo navegador e, portanto, nunca pode ser a chave de segurança.
 const WINDOW_MS = 60_000;
 const MAX_TRIES = 5;
 type ThrottleGlobal = { loginTries?: Map<string, number[]> };
@@ -32,12 +34,12 @@ export async function POST(req: Request) {
   if (consent !== true) {
     return NextResponse.json({ error: "é preciso aceitar o termo para entrar" }, { status: 400 });
   }
-  if (typeof clientId !== "string" || !clientId) {
+  if (typeof clientId !== "string" || !/^[a-zA-Z0-9_-]{8,100}$/.test(clientId)) {
     return NextResponse.json({ error: "clientId requerido" }, { status: 400 });
   }
   const code = typeof checkinCode === "string" ? checkinCode.replace(/\D/g, "") : "";
   const bruto = typeof segundoFator === "string" ? segundoFator : cpf4;
-  const fator = (typeof bruto === "string" ? bruto : "").trim();
+  const fator = (typeof bruto === "string" ? bruto : "").trim().slice(0, 254);
   const fatorValido = fator.includes("@")
     ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fator)
     : fator.replace(/\D/g, "").length === 4;
@@ -51,9 +53,14 @@ export async function POST(req: Request) {
     );
   }
 
+  const ip =
+    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    req.headers.get("x-real-ip") ||
+    "ip-desconhecido";
+  const throttleKey = `${ip}:${code}`;
   const tries = (g.loginTries ??= new Map());
   const now = Date.now();
-  const recent = (tries.get(clientId) ?? []).filter((t: number) => now - t < WINDOW_MS);
+  const recent = (tries.get(throttleKey) ?? []).filter((t: number) => now - t < WINDOW_MS);
   if (recent.length >= MAX_TRIES) {
     return NextResponse.json(
       { error: "muitas tentativas — aguarde um minuto" },
@@ -61,7 +68,7 @@ export async function POST(req: Request) {
     );
   }
   recent.push(now);
-  tries.set(clientId, recent);
+  tries.set(throttleKey, recent);
 
   const attendee = findAttendeeByLogin(code, fator);
   if (!attendee) {
@@ -88,5 +95,12 @@ export async function POST(req: Request) {
   }
 
   upsertIdentity(clientId, attendee.id, attendee.nome);
-  return NextResponse.json({ nome: attendee.nome.split(/\s+/)[0] });
+  const sessao = createParticipantSession({
+    attendeeId: attendee.id,
+    clientId,
+    nome: attendee.nome,
+  });
+  const response = NextResponse.json({ nome: attendee.nome.split(/\s+/)[0] });
+  response.headers.append("Set-Cookie", sessionCookie(sessao.token));
+  return response;
 }

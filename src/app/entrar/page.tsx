@@ -16,6 +16,9 @@ type Me = {
   checkinCode?: string | null;
   telefone?: string | null;
   instagram?: string | null;
+  shareEmail?: boolean;
+  shareTelefone?: boolean;
+  shareInstagram?: boolean;
 };
 
 export default function EntrarPage() {
@@ -30,16 +33,22 @@ export default function EntrarPage() {
   // Contato para conexões (preenchido pela própria pessoa, opcional).
   const [telefone, setTelefone] = useState("");
   const [instagram, setInstagram] = useState("");
+  const [shareEmail, setShareEmail] = useState(false);
+  const [shareTelefone, setShareTelefone] = useState(false);
+  const [shareInstagram, setShareInstagram] = useState(false);
   const [salvandoPerfil, setSalvandoPerfil] = useState(false);
   const [perfilMsg, setPerfilMsg] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(`/api/me?clientId=${encodeURIComponent(getClientId())}`)
+    fetch("/api/me")
       .then((r) => r.json())
       .then((m: Me) => {
         setMe(m);
         setTelefone(m.telefone ?? "");
         setInstagram(m.instagram ?? "");
+        setShareEmail(Boolean(m.shareEmail));
+        setShareTelefone(Boolean(m.shareTelefone));
+        setShareInstagram(Boolean(m.shareInstagram));
       })
       .catch(() => setMe({ logado: false }));
   }, []);
@@ -53,11 +62,20 @@ export default function EntrarPage() {
       const res = await fetch("/api/profile", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ clientId: getClientId(), telefone, instagram }),
+        body: JSON.stringify({
+          telefone,
+          instagram,
+          shareEmail,
+          shareTelefone,
+          shareInstagram,
+        }),
       });
       const data = (await res.json()) as {
         telefone?: string | null;
         instagram?: string | null;
+        shareEmail?: boolean;
+        shareTelefone?: boolean;
+        shareInstagram?: boolean;
         error?: string;
       };
       if (!res.ok) {
@@ -65,7 +83,14 @@ export default function EntrarPage() {
       } else {
         setTelefone(data.telefone ?? "");
         setInstagram(data.instagram ?? "");
-        setPerfilMsg("Contato salvo — suas conexões já conseguem ver.");
+        setShareEmail(Boolean(data.shareEmail));
+        setShareTelefone(Boolean(data.shareTelefone));
+        setShareInstagram(Boolean(data.shareInstagram));
+        setPerfilMsg(
+          data.shareEmail || data.shareTelefone || data.shareInstagram
+            ? "Preferências salvas — suas conexões veem somente os campos autorizados."
+            : "Preferências salvas — nenhum contato está sendo compartilhado.",
+        );
       }
     } catch {
       setPerfilMsg("sem conexão — tente de novo");
@@ -120,7 +145,7 @@ export default function EntrarPage() {
   }
 
   async function sair() {
-    await fetch(`/api/me?clientId=${encodeURIComponent(getClientId())}`, { method: "DELETE" });
+    await fetch("/api/me", { method: "DELETE" });
     window.dispatchEvent(new Event("concefor:auth"));
     setMe({ logado: false });
   }
@@ -150,10 +175,18 @@ export default function EntrarPage() {
         <section className="login-sec">
           <div className="section-label">Meu contato para conexões</div>
           <p className="login-nota">
-            Opcional: aparece <strong>apenas para quem se conectar com você</strong> em
-            Pessoas. Deixe em branco (e salve) para não mostrar.
+            Você escolhe, campo por campo, o que deseja compartilhar quando trocar contato.
+            Nada fica visível sem o seu aceite abaixo.
           </p>
           <form onSubmit={salvarPerfil} className="login-form">
+            <label className="profile-share">
+              <input
+                type="checkbox"
+                checked={shareEmail}
+                onChange={(e) => setShareEmail(e.target.checked)}
+              />
+              <span>Desejo compartilhar meu e-mail da inscrição ao trocar contato.</span>
+            </label>
             <label className="login-label">
               Telefone / WhatsApp
               <input
@@ -164,6 +197,15 @@ export default function EntrarPage() {
                 onChange={(e) => setTelefone(e.target.value)}
               />
             </label>
+            <label className="profile-share">
+              <input
+                type="checkbox"
+                checked={shareTelefone}
+                disabled={!telefone.trim()}
+                onChange={(e) => setShareTelefone(e.target.checked)}
+              />
+              <span>Desejo compartilhar este WhatsApp ao trocar contato.</span>
+            </label>
             <label className="login-label">
               Instagram
               <input
@@ -172,6 +214,15 @@ export default function EntrarPage() {
                 value={instagram}
                 onChange={(e) => setInstagram(e.target.value)}
               />
+            </label>
+            <label className="profile-share">
+              <input
+                type="checkbox"
+                checked={shareInstagram}
+                disabled={!instagram.trim()}
+                onChange={(e) => setShareInstagram(e.target.checked)}
+              />
+              <span>Desejo compartilhar este Instagram ao trocar contato.</span>
             </label>
             {perfilMsg && <p className="login-msg">{perfilMsg}</p>}
             <button type="submit" className="login-btn" disabled={salvandoPerfil}>
@@ -226,10 +277,10 @@ export default function EntrarPage() {
             onChange={(e) => setConsent(e.target.checked)}
           />
           <span>
-            Aceito que minhas interações no app (reações e perguntas) sejam associadas à minha
-            inscrição para fins do relatório interno do evento. Nada é publicado com meu nome no
-            app ou no telão. Os dados da inscrição ficam no servidor do Cefor e posso me
-            desconectar quando quiser.
+            Aceito que minhas reações, votos e perguntas sejam associados à minha inscrição para
+            o relatório interno do evento. Minhas perguntas aparecem com meu nome completo no app
+            e no telão. Meus dados ficam no servidor do Cefor; os campos de contato só são
+            compartilhados quando eu autorizar cada um no perfil.
           </span>
         </label>
 
@@ -240,8 +291,8 @@ export default function EntrarPage() {
         </button>
         <p className="login-skip">
           Prefere não se identificar? Você continua usando a programação, os favoritos e as
-          informações do evento normalmente — mas as interações mais ricas, como se conectar
-          com outros participantes, dependem de identificação.
+          informações do evento normalmente. Reagir, perguntar, votar e trocar contatos dependem
+          da identificação pelo ingresso.
         </p>
       </form>
     </>

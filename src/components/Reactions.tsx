@@ -9,7 +9,6 @@
 // palma da mão. O tempo real dedicado (SSE) mora no telão (E3).
 
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
-import { getClientId } from "@/lib/clientId";
 import { useMe } from "@/lib/useMe";
 import { LoginCta } from "./LoginCta";
 import {
@@ -93,12 +92,11 @@ export function Reactions({ sessionId, live }: { sessionId: string; live: boolea
     // Otimista: mantém o espelho em sincronia para o polling não "revoar" a minha.
     countsRef.current = { ...countsRef.current, [kind]: countsRef.current[kind] + 1 };
     setCounts((c) => ({ ...c, [kind]: c[kind] + 1 }));
-    const clientId = getClientId(); // fora do try: não mascarar erro na geração do id
     try {
       const res = await fetch("/api/reactions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId, reaction: kind, clientId }),
+        body: JSON.stringify({ sessionId, reaction: kind }),
       });
       if (res.ok) {
         // Reconcilia com o servidor sem revoar (o espelho já contém a minha).

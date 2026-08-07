@@ -7,7 +7,6 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { corDe } from "@/components/Speakers";
-import { getClientId } from "@/lib/clientId";
 
 type Me = { logado: boolean; nome?: string };
 
@@ -15,7 +14,7 @@ export function UserBadge() {
   const [me, setMe] = useState<Me>({ logado: false });
 
   const refresh = useCallback(() => {
-    fetch(`/api/me?clientId=${encodeURIComponent(getClientId())}`)
+    fetch("/api/me")
       .then((r) => r.json())
       .then(setMe)
       .catch(() => {});

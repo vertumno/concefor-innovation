@@ -11,7 +11,6 @@ import { corDe, iniciais } from "@/components/Speakers";
 import { ConnectDialog } from "@/components/ConnectDialog";
 import { PessoaCard } from "@/components/PessoaCard";
 import { fetchSpeakers } from "@/lib/speakers";
-import { getClientId } from "@/lib/clientId";
 import type { Participante } from "@/lib/db";
 import type { Speaker } from "@/lib/types";
 
@@ -30,7 +29,7 @@ export default function PessoasPage() {
   const [aviso, setAviso] = useState<string | null>(null);
 
   const refreshMapa = useCallback(() => {
-    fetch(`/api/participantes?clientId=${encodeURIComponent(getClientId())}`)
+    fetch("/api/participantes")
       .then((r) => r.json())
       .then(setMapa)
       .catch(() => {});

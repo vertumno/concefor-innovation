@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import {
   attendeeByCheckin,
   deleteConnection,
-  getIdentityAttendeeId,
   insertConnection,
 } from "@/lib/db";
+import { participantSession } from "@/lib/authSession";
 
 // Conectar com outra pessoa (networking): escaneia o QR do crachá dela (ou
 // digita o nº do ingresso). Exige estar logado — a conexão é entre pessoas,
@@ -19,13 +19,9 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
-  const { clientId, code } = (body ?? {}) as Record<string, unknown>;
-
-  if (typeof clientId !== "string" || !clientId) {
-    return NextResponse.json({ error: "clientId requerido" }, { status: 400 });
-  }
-  const meuAttendee = getIdentityAttendeeId(clientId);
-  if (!meuAttendee) {
+  const { code } = (body ?? {}) as Record<string, unknown>;
+  const sessao = participantSession(req);
+  if (!sessao) {
     return NextResponse.json(
       { error: "entre com sua inscrição para se conectar" },
       { status: 401 },
@@ -45,18 +41,18 @@ export async function POST(req: Request) {
       { status: 404 },
     );
   }
-  if (outro.id === meuAttendee) {
+  if (outro.id === sessao.attendeeId) {
     return NextResponse.json({ error: "esse é o seu próprio ingresso 🙂" }, { status: 400 });
   }
 
-  const nova = insertConnection(meuAttendee, outro.id, clientId);
+  const nova = insertConnection(sessao.attendeeId, outro.id, sessao.clientId);
   return NextResponse.json({
     nova,
-    pessoa: { nome: outro.nome, email: outro.email },
+    pessoa: { nome: outro.nome },
   });
 }
 
-// DELETE /api/connect { clientId, attendeeId } — desfaz a conexão nos DOIS
+// DELETE /api/connect { attendeeId } — desfaz a conexão nos DOIS
 // sentidos (decisão de 05/08): espelho do conectar bilateral. Só a própria
 // pessoa logada desfaz as suas; some do mosaico dos dois lados.
 export async function DELETE(req: Request) {
@@ -66,20 +62,16 @@ export async function DELETE(req: Request) {
   } catch {
     return NextResponse.json({ error: "JSON inválido" }, { status: 400 });
   }
-  const { clientId, attendeeId } = (body ?? {}) as Record<string, unknown>;
-
-  if (typeof clientId !== "string" || !clientId) {
-    return NextResponse.json({ error: "clientId requerido" }, { status: 400 });
-  }
-  const meuAttendee = getIdentityAttendeeId(clientId);
-  if (!meuAttendee) {
+  const { attendeeId } = (body ?? {}) as Record<string, unknown>;
+  const sessao = participantSession(req);
+  if (!sessao) {
     return NextResponse.json({ error: "entre com sua inscrição" }, { status: 401 });
   }
   const outro = Number(attendeeId);
-  if (!Number.isInteger(outro) || outro <= 0 || outro === meuAttendee) {
+  if (!Number.isInteger(outro) || outro <= 0 || outro === sessao.attendeeId) {
     return NextResponse.json({ error: "attendeeId inválido" }, { status: 400 });
   }
 
-  const ok = deleteConnection(meuAttendee, outro);
+  const ok = deleteConnection(sessao.attendeeId, outro);
   return NextResponse.json({ ok });
 }

@@ -7,7 +7,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { corDe } from "@/components/Speakers";
-import { getClientId } from "@/lib/clientId";
 import {
   contatoEmTexto,
   copiarTexto,
@@ -55,7 +54,7 @@ export function PessoaCard({
       const res = await fetch("/api/connect", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ clientId: getClientId(), attendeeId: pessoa.id }),
+        body: JSON.stringify({ attendeeId: pessoa.id }),
       });
       if (res.ok) onDesfeita?.();
     } catch {
@@ -140,7 +139,7 @@ export function PessoaCard({
           )}
           {!temContato && (
             <p className="page-sub" style={{ margin: 0 }}>
-              Essa pessoa ainda não preencheu um contato no app.
+              Essa pessoa não está compartilhando campos de contato no app.
             </p>
           )}
 

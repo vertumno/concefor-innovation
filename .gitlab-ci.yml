@@ -1,5 +1,23 @@
 stages:
+  - verify
   - deploy
+
+# Todo branch enviado ao GitLab é compilado e testado no mesmo Linux/Alpine do
+# servidor, sem tocar no container nem no volume de produção.
+verify-branch:
+  stage: verify
+
+  tags:
+    - concefor
+
+  script:
+    - docker build --target builder -t "concefor-app:verify-${CI_COMMIT_SHORT_SHA}" .
+
+  after_script:
+    - docker image rm "concefor-app:verify-${CI_COMMIT_SHORT_SHA}" || true
+
+  except:
+    - main
 
 deploy:
   stage: deploy
@@ -8,8 +26,18 @@ deploy:
     - concefor
 
   script:
-    - echo "Criando imagem Docker..."
-    - docker build -t concefor-app .
+    - echo "Criando imagem candidata..."
+    - docker image inspect concefor-app:latest >/dev/null 2>&1 && docker tag concefor-app:latest concefor-app:previous || true
+    - docker build -t concefor-app:candidate .
+
+    - echo "Criando backup consistente antes da troca..."
+    - docker volume create concefor-data >/dev/null
+    - |
+      docker run --rm \
+        -v concefor-data:/app/data \
+        -e DATABASE_PATH=/app/data/concefor.db \
+        concefor-app:candidate sh -c \
+        'if [ -f /app/data/concefor.db ]; then node scripts/backup.mjs /app/data/backups; else echo "Primeiro deploy: ainda não há banco para copiar."; fi'
 
     - echo "Parando container atual..."
     - docker stop concefor-app || true
@@ -17,10 +45,7 @@ deploy:
     - echo "Removendo container atual..."
     - docker rm concefor-app || true
 
-    - echo "Garantindo volume persistente..."
-    - docker volume create concefor-data || true
-
-    - echo "Subindo nova versão..."
+    - echo "Subindo a versão candidata..."
     - |
       docker run -d \
         --name concefor-app \
@@ -28,17 +53,40 @@ deploy:
         -p 3000:3000 \
         -v concefor-data:/app/data \
         --env-file /opt/apps/concefor-app/.env.local \
-        concefor-app
+        concefor-app:candidate
 
-    - echo "Aguardando aplicação iniciar..."
-    - sleep 10
+    - echo "Validando saúde da aplicação..."
+    - |
+      healthy=0
+      for i in $(seq 1 20); do
+        if docker exec concefor-app node -e "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"; then
+          healthy=1
+          break
+        fi
+        sleep 2
+      done
+      if [ "$healthy" -ne 1 ]; then
+        docker logs concefor-app || true
+        docker rm -f concefor-app || true
+        if docker image inspect concefor-app:previous >/dev/null 2>&1; then
+          docker run -d \
+            --name concefor-app \
+            --restart unless-stopped \
+            -p 3000:3000 \
+            -v concefor-data:/app/data \
+            --env-file /opt/apps/concefor-app/.env.local \
+            concefor-app:previous
+        fi
+        exit 1
+      fi
+      docker tag concefor-app:candidate concefor-app:latest
 
     - echo "Sincronizando programação oficial Even3..."
     - |
       docker run --rm \
         -v concefor-data:/app/data \
         --env-file /opt/apps/concefor-app/.env.local \
-        concefor-app node scripts/sync-even3.mjs
+        concefor-app:candidate node scripts/sync-even3.mjs
 
     - echo "Deploy concluído com sucesso!"
 

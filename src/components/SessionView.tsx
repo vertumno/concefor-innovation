@@ -19,6 +19,7 @@ import { TimeStamp } from "@/components/TimeStamp";
 import { Speakers } from "@/components/Speakers";
 import { Reactions } from "@/components/Reactions";
 import { Questions } from "@/components/Questions";
+import { Poll } from "@/components/Poll";
 import type { Session } from "@/lib/types";
 
 function faseLabel(pct: number): string {
@@ -129,6 +130,8 @@ export function SessionView({ id, showBack = true }: { id: string; showBack?: bo
       {/* Perguntas com upvote (R4): aparece quando a janela está aberta no /admin
           (ou quando já existem perguntas públicas). */}
       <Questions sessionId={session.id} live={status === "live"} />
+
+      <Poll sessionId={session.id} />
     </div>
   );
 }

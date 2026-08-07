@@ -1,13 +1,12 @@
 "use client";
 
 // Perguntas com upvote (R4, spec §8): texto curto, mais votadas no topo, 1 voto
-// por dispositivo (toggle). A janela abre/fecha pelo /admin. Desde 05/08 as
+// por pessoa autenticada (toggle). A janela abre/fecha pelo /admin. Desde 05/08 as
 // perguntas são IDENTIFICADAS (saem com o nome completo de quem mandou — inibe
 // pergunta tosca/ofensiva) e perguntar/votar exige login; anônimo só vê.
 // Atualiza por polling curto — mesma filosofia do SSE do telão (poll no SQLite).
 
-import { useCallback, useEffect, useRef, useState } from "react";
-import { getClientId } from "@/lib/clientId";
+import { useCallback, useEffect, useState } from "react";
 import { useMe } from "@/lib/useMe";
 import { LoginCta } from "./LoginCta";
 import type { Question } from "@/lib/db";
@@ -22,18 +21,13 @@ export function Questions({ sessionId, live }: { sessionId: string; live: boolea
   const [texto, setTexto] = useState("");
   const [sending, setSending] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
-  const clientId = useRef<string>("");
   const me = useMe();
   const logado = me?.logado === true;
-
-  useEffect(() => {
-    clientId.current = getClientId();
-  }, []);
 
   const refresh = useCallback(async () => {
     try {
       const res = await fetch(
-        `/api/questions?sessionId=${encodeURIComponent(sessionId)}&clientId=${encodeURIComponent(clientId.current)}`,
+        `/api/questions?sessionId=${encodeURIComponent(sessionId)}`,
       );
       if (res.ok) setState((await res.json()) as State);
     } catch {
@@ -56,7 +50,7 @@ export function Questions({ sessionId, live }: { sessionId: string; live: boolea
       const res = await fetch("/api/questions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId, texto: t, clientId: clientId.current }),
+        body: JSON.stringify({ sessionId, texto: t }),
       });
       const data = (await res.json()) as { error?: string; questions?: Question[] };
       if (!res.ok) {
@@ -77,7 +71,7 @@ export function Questions({ sessionId, live }: { sessionId: string; live: boolea
       const res = await fetch("/api/questions/vote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId, questionId, clientId: clientId.current }),
+        body: JSON.stringify({ sessionId, questionId }),
       });
       const data = (await res.json()) as { questions?: Question[] };
       if (res.ok && data.questions) {
@@ -110,7 +104,7 @@ export function Questions({ sessionId, live }: { sessionId: string; live: boolea
             <div className="q-composer-foot">
               {/* Transparência: a pessoa sabe que a pergunta sai assinada. */}
               <span className="q-chars">
-                {me?.nome ? `sai como ${me.nome} · ` : ""}
+                {me?.nome ? "seu nome da inscrição será exibido · " : ""}
                 {texto.length}/{MAX_CHARS}
               </span>
               <button type="button" onClick={enviar} disabled={sending || !texto.trim()}>
