@@ -52,7 +52,7 @@ export function Poll({ sessionId }: { sessionId: string }) {
         localStorage.removeItem(`concefor:poll-draft:${poll!.id}`);
         setTexto("");
         if (data.poll) setPoll(data.poll);
-        setMessage("Resposta enviada para a moderação. Você pode responder novamente.");
+        setMessage("Resposta publicada no telão. Você pode responder novamente.");
       }
     } catch {
       setMessage("Sem conexão — seu texto continua aqui para tentar novamente.");
@@ -93,9 +93,9 @@ export function Poll({ sessionId }: { sessionId: string }) {
             </button>
           </div>
           <p className="poll-moderation-note">
-            A resposta aparece sem seu nome no telão depois da aprovação da organização.
+            A resposta aparece sem seu nome no telão e pode ser ocultada pela organização.
           </p>
-          {message && <p className={message.startsWith("Resposta enviada") ? "login-msg" : "q-erro"}>{message}</p>}
+          {message && <p className={message.startsWith("Resposta publicada") ? "login-msg" : "q-erro"}>{message}</p>}
         </div>
       ) : (
         me && <LoginCta>Entre com seu ingresso para responder à enquete.</LoginCta>

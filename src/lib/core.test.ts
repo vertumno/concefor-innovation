@@ -13,12 +13,14 @@ process.env.DATABASE_PATH = join(tempDir, "test.db");
 let dbModule: typeof import("./db");
 let authModule: typeof import("./authSession");
 let pollModule: typeof import("./polls");
+let contactModule: typeof import("./contato");
 let db: Database.Database;
 
 before(async () => {
   dbModule = await import("./db");
   authModule = await import("./authSession");
   pollModule = await import("./polls");
+  contactModule = await import("./contato");
   db = dbModule.getDb();
 
   db.prepare(
@@ -68,12 +70,24 @@ test("identidade pública do telão não revela o clientId", () => {
   assert.match(actor ?? "", /^[a-f0-9]{20}$/);
 });
 
-test("contato conectado respeita opt-in independente por campo", () => {
+test("perfil novo inicia com compartilhamento marcado por campo", () => {
+  assert.deepEqual(dbModule.getPerfil(1), {
+    telefonePais: "55",
+    telefone: null,
+    instagram: null,
+    shareEmail: true,
+    shareTelefone: true,
+    shareInstagram: true,
+  });
+});
+
+test("contato conectado respeita a escolha independente por campo", () => {
   assert.deepEqual(dbModule.attendeeByCheckin("10000002"), {
     id: 2,
     nome: "Bruno Teste",
   });
   dbModule.setPerfil(2, {
+    telefonePais: "55",
     telefone: "27999999999",
     instagram: "bruno.teste",
     shareEmail: false,
@@ -85,10 +99,11 @@ test("contato conectado respeita opt-in independente por campo", () => {
   const primeiro = dbModule.getParticipantes(1).find((p) => p.id === 2);
   assert.equal(primeiro?.conectado, true);
   assert.equal(primeiro?.email, undefined);
-  assert.equal(primeiro?.telefone, "27999999999");
+  assert.equal(primeiro?.telefone, "5527999999999");
   assert.equal(primeiro?.instagram, undefined);
 
   dbModule.setPerfil(2, {
+    telefonePais: "55",
     telefone: "27999999999",
     instagram: "bruno.teste",
     shareEmail: true,
@@ -99,6 +114,12 @@ test("contato conectado respeita opt-in independente por campo", () => {
   assert.equal(atualizado?.email, "bruno@example.org");
   assert.equal(atualizado?.telefone, undefined);
   assert.equal(atualizado?.instagram, "bruno.teste");
+});
+
+test("telefone usa E.164 e formata o padrão brasileiro sem presumir WhatsApp", () => {
+  assert.equal(contactModule.telefoneE164("55 27 99999-8888"), "+5527999998888");
+  assert.equal(contactModule.telefoneFormatado("5527999998888"), "+55 (27) 99999-8888");
+  assert.equal(contactModule.telefoneFormatado("351912345678"), "+351912345678");
 });
 
 test("enquete modera respostas e preserva resultado após encerrar", () => {
@@ -116,8 +137,11 @@ test("enquete modera respostas e preserva resultado após encerrar", () => {
     clientId: "client-poll-0001",
   });
 
-  assert.equal(dbModule.getProjectionPoll()?.responses.length, 0);
+  assert.equal(dbModule.getProjectionPoll()?.responses.length, 1);
   assert.equal(dbModule.getAdminPoll()?.responses[0]?.autor, "Ana Teste");
+  assert.equal(dbModule.getProjectionPoll()?.responses[0].autor, undefined);
+  assert.equal(dbModule.setPollResponseStatus(poll.id, responseId, "hidden"), true);
+  assert.equal(dbModule.getProjectionPoll()?.responses.length, 0);
   assert.equal(dbModule.setPollResponseStatus(poll.id, responseId, "approved"), true);
   const projection = dbModule.getProjectionPoll();
   assert.equal(projection?.responses.length, 1);

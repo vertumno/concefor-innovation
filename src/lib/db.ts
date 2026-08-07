@@ -43,16 +43,22 @@ function open(): Database.Database {
 // Migrações idempotentes de DADOS (o DDL vive no schema.sql, que já é "if not
 // exists"). Rodam a cada boot e não fazem nada quando já foram aplicadas.
 function migrar(db: Database.Database): void {
-  // 07/08: compartilhamento de cada campo de contato virou opt-in. Bancos já
+  // 07/08: compartilhamento ganhou controles independentes por campo. Bancos já
   // existentes precisam receber as colunas; o schema cobre bases novas.
   const profileCols = new Set(
     (db.prepare("pragma table_info(attendee_profile)").all() as { name: string }[]).map(
       (c) => c.name,
     ),
   );
-  for (const col of ["share_email", "share_telefone", "share_instagram"]) {
+  const profileDefs: Record<string, string> = {
+    telefone_pais: "text not null default '55'",
+    share_email: "integer not null default 1",
+    share_telefone: "integer not null default 1",
+    share_instagram: "integer not null default 1",
+  };
+  for (const [col, definition] of Object.entries(profileDefs)) {
     if (!profileCols.has(col)) {
-      db.exec(`alter table attendee_profile add column ${col} integer not null default 0`);
+      db.exec(`alter table attendee_profile add column ${col} ${definition}`);
     }
   }
 
@@ -590,6 +596,7 @@ export function categoriaCurta(categoria: string | null): string | null {
 // ─── Perfil preenchido pelo próprio participante (contato para conexões) ───
 
 export type Perfil = {
+  telefonePais: string;
   telefone: string | null;
   instagram: string | null;
   shareEmail: boolean;
@@ -600,7 +607,7 @@ export type Perfil = {
 export function getPerfil(attendeeId: number): Perfil {
   const row = getDb()
     .prepare(
-      `select telefone, instagram,
+      `select telefone_pais as telefonePais, telefone, instagram,
               share_email as shareEmail,
               share_telefone as shareTelefone,
               share_instagram as shareInstagram
@@ -608,6 +615,7 @@ export function getPerfil(attendeeId: number): Perfil {
     )
     .get(attendeeId) as
     | {
+        telefonePais: string;
         telefone: string | null;
         instagram: string | null;
         shareEmail: number;
@@ -617,6 +625,7 @@ export function getPerfil(attendeeId: number): Perfil {
     | undefined;
   return row
     ? {
+        telefonePais: row.telefonePais || "55",
         telefone: row.telefone,
         instagram: row.instagram,
         shareEmail: Boolean(row.shareEmail),
@@ -624,11 +633,12 @@ export function getPerfil(attendeeId: number): Perfil {
         shareInstagram: Boolean(row.shareInstagram),
       }
     : {
+        telefonePais: "55",
         telefone: null,
         instagram: null,
-        shareEmail: false,
-        shareTelefone: false,
-        shareInstagram: false,
+        shareEmail: true,
+        shareTelefone: true,
+        shareInstagram: true,
       };
 }
 
@@ -636,10 +646,11 @@ export function setPerfil(attendeeId: number, p: Perfil): void {
   getDb()
     .prepare(
       `insert into attendee_profile
-         (attendee_id, telefone, instagram, share_email, share_telefone,
+         (attendee_id, telefone_pais, telefone, instagram, share_email, share_telefone,
           share_instagram, updated_at)
-       values (?, ?, ?, ?, ?, ?, ?)
+       values (?, ?, ?, ?, ?, ?, ?, ?)
        on conflict(attendee_id) do update set
+          telefone_pais = excluded.telefone_pais,
           telefone = excluded.telefone, instagram = excluded.instagram,
           share_email = excluded.share_email,
           share_telefone = excluded.share_telefone,
@@ -648,11 +659,12 @@ export function setPerfil(attendeeId: number, p: Perfil): void {
     )
     .run(
       attendeeId,
+      p.telefonePais,
       p.telefone,
       p.instagram,
       p.shareEmail ? 1 : 0,
-      p.telefone && p.shareTelefone ? 1 : 0,
-      p.instagram && p.shareInstagram ? 1 : 0,
+      p.shareTelefone ? 1 : 0,
+      p.shareInstagram ? 1 : 0,
       new Date().toISOString(),
     );
 }
@@ -761,7 +773,8 @@ export function getParticipantes(attendeeId: number | null): Participante[] {
       `select a.id, a.nome,
               case when coalesce(p.share_email, 0) = 1 then a.email end as email,
               a.foto, a.categoria,
-              case when coalesce(p.share_telefone, 0) = 1 then p.telefone end as telefone,
+              case when coalesce(p.share_telefone, 0) = 1 and p.telefone is not null
+                   then coalesce(p.telefone_pais, '55') || p.telefone end as telefone,
               case when coalesce(p.share_instagram, 0) = 1 then p.instagram end as instagram
          from attendees a
          left join attendee_profile p on p.attendee_id = a.id
@@ -1158,8 +1171,8 @@ export function setQuestionHidden(questionId: string, hidden: boolean): boolean 
 // A enquete e suas respostas continuam na linha do tempo:
 //   tipo='poll'          payload {question,status,mode,stopwords}
 //   tipo='poll_response' payload {pollId,texto,attendeeId,autor,status}
-// Uma enquete ativa por vez no MVP. Resposta nasce `pending` e só as
-// `approved` saem na projeção pública.
+// Uma enquete ativa por vez no MVP. Resposta nasce `approved` e entra direto
+// na projeção; a moderação atua por exceção, ocultando o que for inadequado.
 
 type PollPayload = {
   question: string;
@@ -1330,7 +1343,7 @@ export function insertPollResponse(args: {
         texto: args.texto,
         attendeeId: args.attendeeId,
         autor: args.autor,
-        status: "pending",
+        status: "approved",
       }),
       args.clientId,
     );

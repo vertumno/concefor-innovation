@@ -2,7 +2,7 @@
 
 PWA do evento **VIII CONCEFOR** (17–20/08/2026, Cefor/IFES, Vitória-ES). Escopo v1:
 **programação viva (timeline)** · **reações/perguntas/enquetes ao vivo** ·
-**networking com opt-in** · **dashboard/relatório**. Mobile-first, instalável.
+**networking com escolha por campo** · **dashboard/relatório**. Mobile-first, instalável.
 
 > Espelho do código do app. O desenvolvimento e o contexto do projeto ficam no repositório
 > interno da equipe — abra *issues* aqui, mas alinhe mudanças com o time antes de contribuir.
@@ -169,7 +169,7 @@ a dados, o que mantém barata uma futura volta ao Postgres.
 - [x] Dashboard admin ao vivo (`/admin`) + relatório (`/admin/relatorio`)
 - [x] Sync da programação oficial via API do Even3 (substituiu o seed)
 - [x] Perguntas com upvote · login opcional pelo crachá · mosaico de conexões
-- [x] Sessão autenticada HttpOnly · compartilhamento de contato com opt-in por campo
+- [x] Sessão autenticada HttpOnly · compartilhamento de contato configurável por campo
 - [x] Enquetes moderadas em lista/nuvem de palavras + projeção em `/enquete`
 - [x] Backup consistente · healthcheck · rollback de deploy · validação de branches
 - [ ] Cache offline da programação (integração anterior removida por estar desativada e obsoleta)

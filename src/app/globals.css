@@ -925,7 +925,7 @@ h1.page-title {
   background: none;
   border: none;
   align-self: flex-start;
-  padding: 4px 0 0;
+  padding: 4px 0;
   color: var(--ink-dim);
   font-size: var(--text-xs);
   text-decoration: underline;
@@ -1493,11 +1493,45 @@ h1.page-title {
   font-family: var(--font-text);
   letter-spacing: 0.06em;
 }
+.login-label input[readonly] {
+  opacity: 0.72;
+  cursor: not-allowed;
+  background: var(--surface);
+}
+.login-label input[aria-invalid="true"] {
+  border-color: var(--accent);
+}
 .login-label small {
   font-family: var(--font-text);
   text-transform: none;
   letter-spacing: 0;
   font-size: var(--text-xs);
+}
+.phone-fields {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 8px;
+}
+.phone-country,
+.phone-number {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.phone-country span,
+.phone-number span {
+  font-family: var(--font-text);
+  font-size: 11px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.phone-fields input {
+  width: 100%;
+}
+.field-error {
+  color: var(--accent);
+  font-weight: var(--weight-semibold);
 }
 .login-consent {
   display: flex;
@@ -1523,6 +1557,11 @@ h1.page-title {
   font-size: var(--text-sm);
   line-height: 1.4;
   cursor: pointer;
+}
+.connection-danger-zone {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
 }
 .profile-share input {
   margin-top: 2px;
@@ -1669,7 +1708,7 @@ h1.page-title {
   align-items: center;
   gap: 11px;
 }
-/* Contato da conexão: o dado é o alvo grande (abre WhatsApp/e-mail/Instagram) e
+/* Contato da conexão: o dado é o alvo grande (telefone/e-mail/Instagram) e
    o copiar fica à direita — no evento, copiar é tão comum quanto abrir. */
 .contato-lista {
   display: flex;
@@ -1706,9 +1745,6 @@ h1.page-title {
   display: inline-flex;
   color: var(--cyan-300);
   flex-shrink: 0;
-}
-.contato-icone-wa {
-  color: #25d366; /* verde do WhatsApp: o símbolo só é reconhecível na cor dele */
 }
 .contato-copiar {
   display: inline-flex;

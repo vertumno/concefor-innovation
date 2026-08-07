@@ -77,16 +77,17 @@ create table if not exists identities (
 
 -- =========================================================
 -- attendee_profile: contato que o PRÓPRIO participante preenche no app
--- (telefone/WhatsApp, Instagram) — mostrado apenas às conexões dele.
+-- (telefone, Instagram) — mostrado apenas às conexões dele.
 -- Tabela separada de attendees para o sync do Even3 nunca sobrescrever.
 -- =========================================================
 create table if not exists attendee_profile (
   attendee_id integer primary key references attendees(id) on delete cascade,
-  telefone    text,                   -- só dígitos (com DDD; DDI opcional)
+  telefone_pais text not null default '55', -- DDI, Brasil como padrão
+  telefone    text,                   -- número nacional, só dígitos
   instagram   text,                   -- handle sem @
-  share_email integer not null default 0,
-  share_telefone integer not null default 0,
-  share_instagram integer not null default 0,
+  share_email integer not null default 1,
+  share_telefone integer not null default 1,
+  share_instagram integer not null default 1,
   updated_at  text not null
 );
 

@@ -79,8 +79,8 @@ export function AdminPolls({ sessions, token }: { sessions: Session[]; token: st
     <section className="admin-polls">
       <div className="section-label">Enquete aberta ao vivo</div>
       <p className="page-sub">
-        Uma enquete por vez. Toda resposta entra em revisão e só aparece na projeção depois de
-        aprovada.
+        Uma enquete por vez. As respostas aparecem imediatamente e a moderação oculta apenas o
+        que não deve permanecer na projeção.
       </p>
 
       {poll && (
@@ -142,7 +142,7 @@ export function AdminPolls({ sessions, token }: { sessions: Session[]; token: st
                         onClick={() => action({ action: "approve", pollId: poll.id, responseId: response.id })}
                         disabled={busy}
                       >
-                        Aprovar
+                        {response.status === "hidden" ? "Reexibir" : "Aprovar"}
                       </button>
                     )}
                     {response.status !== "hidden" && (

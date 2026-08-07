@@ -67,7 +67,7 @@ export function PollScreen() {
 
       <section className={`poll-screen-results poll-screen-results--${poll.mode}`}>
         {poll.responses.length === 0 ? (
-          <p className="poll-screen-wait">Aguardando respostas aprovadas…</p>
+          <p className="poll-screen-wait">Aguardando respostas…</p>
         ) : poll.mode === "cloud" ? (
           <div className="poll-cloud" aria-label="Nuvem de palavras">
             {words.map(({ word, count }) => (

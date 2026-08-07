@@ -10,30 +10,27 @@ export type Contato = {
   categoria?: string;
 };
 
-// Só dígitos, no formato que o wa.me exige (com DDI). Devolve null quando o
-// número não dá para discar — aí a UI mostra o número sem link, mas ainda
-// copiável.
-export function whatsappNumero(telefone: string): string | null {
+// E.164 simplificado: o perfil já guarda DDI + número. Devolve null quando o
+// valor não cabe no padrão internacional; a UI ainda permite copiá-lo.
+export function telefoneE164(telefone: string): string | null {
   const d = telefone.replace(/\D/g, "");
-  if (d.length === 10 || d.length === 11) return `55${d}`; // DDD + número
-  if ((d.length === 12 || d.length === 13) && d.startsWith("55")) return d; // já com DDI
-  return null;
+  return d.length >= 7 && d.length <= 15 ? `+${d}` : null;
 }
 
-export function whatsappLink(telefone: string): string | null {
-  const n = whatsappNumero(telefone);
-  return n ? `https://wa.me/${n}` : null;
-}
-
-// "27999998888" → "(27) 99999-8888". Número fora do padrão volta como veio.
+// "5527999998888" → "+55 (27) 99999-8888". Para outros países, preserva o
+// formato universal sem inventar agrupamentos nacionais.
 export function telefoneFormatado(telefone: string): string {
   const d = telefone.replace(/\D/g, "");
-  const local = d.length > 11 && d.startsWith("55") ? d.slice(2) : d;
-  if (local.length !== 10 && local.length !== 11) return telefone;
-  const ddd = local.slice(0, 2);
-  const resto = local.slice(2);
-  const meio = resto.length === 9 ? resto.slice(0, 5) : resto.slice(0, 4);
-  return `(${ddd}) ${meio}-${resto.slice(meio.length)}`;
+  if (d.startsWith("55")) {
+    const local = d.slice(2);
+    if (local.length === 10 || local.length === 11) {
+      const ddd = local.slice(0, 2);
+      const resto = local.slice(2);
+      const meio = resto.length === 9 ? resto.slice(0, 5) : resto.slice(0, 4);
+      return `+55 (${ddd}) ${meio}-${resto.slice(meio.length)}`;
+    }
+  }
+  return telefoneE164(d) ?? telefone;
 }
 
 export function instagramLink(handle: string): string {
@@ -75,7 +72,7 @@ export function contatoEmTexto(c: Contato): string {
     c.nome,
     c.categoria,
     c.email,
-    c.telefone ? `WhatsApp: ${telefoneFormatado(c.telefone)}` : null,
+    c.telefone ? `Telefone: ${telefoneFormatado(c.telefone)}` : null,
     c.instagram ? `Instagram: @${c.instagram}` : null,
     "Conexão feita no VIII Concefor",
   ]
@@ -91,14 +88,14 @@ export function vcard(c: Contato): string {
   const partes = c.nome.trim().split(/\s+/);
   const sobrenome = partes.length > 1 ? partes[partes.length - 1] : "";
   const primeiro = partes[0] ?? "";
-  const wa = c.telefone ? whatsappNumero(c.telefone) : null;
+  const tel = c.telefone ? telefoneE164(c.telefone) : null;
   const linhas = [
     "BEGIN:VCARD",
     "VERSION:3.0",
     `N:${escapaVCard(sobrenome)};${escapaVCard(primeiro)};;;`,
     `FN:${escapaVCard(c.nome)}`,
     c.email ? `EMAIL;TYPE=INTERNET:${escapaVCard(c.email)}` : null,
-    c.telefone ? `TEL;TYPE=CELL:${wa ? `+${wa}` : c.telefone}` : null,
+    c.telefone ? `TEL;TYPE=CELL:${tel ?? c.telefone}` : null,
     c.instagram ? `URL:${instagramLink(c.instagram)}` : null,
     `NOTE:${escapaVCard(`Conexão do VIII Concefor${c.categoria ? ` · ${c.categoria}` : ""}`)}`,
     "END:VCARD",

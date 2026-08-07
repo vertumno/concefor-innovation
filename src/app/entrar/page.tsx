@@ -14,6 +14,8 @@ type Me = {
   logado: boolean;
   nome?: string;
   checkinCode?: string | null;
+  email?: string | null;
+  telefonePais?: string;
   telefone?: string | null;
   instagram?: string | null;
   shareEmail?: boolean;
@@ -31,19 +33,25 @@ export default function EntrarPage() {
   const [sending, setSending] = useState(false);
   const [qr, setQr] = useState<string | null>(null);
   // Contato para conexões (preenchido pela própria pessoa, opcional).
+  const [telefonePais, setTelefonePais] = useState("55");
   const [telefone, setTelefone] = useState("");
   const [instagram, setInstagram] = useState("");
-  const [shareEmail, setShareEmail] = useState(false);
-  const [shareTelefone, setShareTelefone] = useState(false);
-  const [shareInstagram, setShareInstagram] = useState(false);
+  const [shareEmail, setShareEmail] = useState(true);
+  const [shareTelefone, setShareTelefone] = useState(true);
+  const [shareInstagram, setShareInstagram] = useState(true);
   const [salvandoPerfil, setSalvandoPerfil] = useState(false);
   const [perfilMsg, setPerfilMsg] = useState<string | null>(null);
+  const [perfilErros, setPerfilErros] = useState<{
+    telefone?: string;
+    instagram?: string;
+  }>({});
 
   useEffect(() => {
     fetch("/api/me")
       .then((r) => r.json())
       .then((m: Me) => {
         setMe(m);
+        setTelefonePais(m.telefonePais ?? "55");
         setTelefone(m.telefone ?? "");
         setInstagram(m.instagram ?? "");
         setShareEmail(Boolean(m.shareEmail));
@@ -58,11 +66,13 @@ export default function EntrarPage() {
     if (salvandoPerfil) return;
     setSalvandoPerfil(true);
     setPerfilMsg(null);
+    setPerfilErros({});
     try {
       const res = await fetch("/api/profile", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          telefonePais,
           telefone,
           instagram,
           shareEmail,
@@ -71,16 +81,20 @@ export default function EntrarPage() {
         }),
       });
       const data = (await res.json()) as {
+        telefonePais?: string;
         telefone?: string | null;
         instagram?: string | null;
         shareEmail?: boolean;
         shareTelefone?: boolean;
         shareInstagram?: boolean;
+        field?: "telefone" | "instagram";
         error?: string;
       };
       if (!res.ok) {
-        setPerfilMsg(data.error ?? "não foi possível salvar");
+        if (data.field) setPerfilErros({ [data.field]: data.error ?? "campo inválido" });
+        else setPerfilMsg(data.error ?? "não foi possível salvar");
       } else {
+        setTelefonePais(data.telefonePais ?? "55");
         setTelefone(data.telefone ?? "");
         setInstagram(data.instagram ?? "");
         setShareEmail(Boolean(data.shareEmail));
@@ -175,10 +189,15 @@ export default function EntrarPage() {
         <section className="login-sec">
           <div className="section-label">Meu contato para conexões</div>
           <p className="login-nota">
-            Você escolhe, campo por campo, o que deseja compartilhar quando trocar contato.
-            Nada fica visível sem o seu aceite abaixo.
+            As opções começam marcadas para facilitar a troca de contato. Desmarque qualquer
+            campo que você não queira compartilhar com suas conexões.
           </p>
           <form onSubmit={salvarPerfil} className="login-form">
+            <label className="login-label">
+              E-mail da inscrição
+              <input value={me.email ?? ""} readOnly aria-readonly="true" />
+              <small>Este é o e-mail informado na inscrição e não pode ser alterado aqui.</small>
+            </label>
             <label className="profile-share">
               <input
                 type="checkbox"
@@ -187,16 +206,51 @@ export default function EntrarPage() {
               />
               <span>Desejo compartilhar meu e-mail da inscrição ao trocar contato.</span>
             </label>
-            <label className="login-label">
-              Telefone / WhatsApp
-              <input
-                inputMode="tel"
-                autoComplete="tel"
-                placeholder="Ex.: 27 99999-9999"
-                value={telefone}
-                onChange={(e) => setTelefone(e.target.value)}
-              />
-            </label>
+            <div className="login-label">
+              <span>Telefone</span>
+              <div className="phone-fields">
+                <label className="phone-country">
+                  <span>Código do país</span>
+                  <input
+                    inputMode="numeric"
+                    autoComplete="tel-country-code"
+                    placeholder="+55"
+                    maxLength={4}
+                    value={`+${telefonePais}`}
+                    aria-invalid={Boolean(perfilErros.telefone)}
+                    onChange={(e) => {
+                      setTelefonePais(e.target.value.replace(/\D/g, "").slice(0, 3));
+                      setPerfilErros((errors) => ({ ...errors, telefone: undefined }));
+                    }}
+                  />
+                </label>
+                <label className="phone-number">
+                  <span>Número com área/DDD</span>
+                  <input
+                    inputMode="tel"
+                    autoComplete="tel-national"
+                    placeholder="27 99999-9999"
+                    value={telefone}
+                    aria-invalid={Boolean(perfilErros.telefone)}
+                    aria-describedby={perfilErros.telefone ? "telefone-error" : "telefone-help"}
+                    onChange={(e) => {
+                      setTelefone(e.target.value);
+                      setPerfilErros((errors) => ({ ...errors, telefone: undefined }));
+                    }}
+                  />
+                </label>
+              </div>
+              {perfilErros.telefone ? (
+                <small id="telefone-error" className="field-error" role="alert">
+                  {perfilErros.telefone}
+                </small>
+              ) : (
+                <small id="telefone-help">
+                  Brasil já vem como +55. Em outro país, troque o código e informe o número
+                  como seria discado depois dele.
+                </small>
+              )}
+            </div>
             <label className="profile-share">
               <input
                 type="checkbox"
@@ -204,7 +258,7 @@ export default function EntrarPage() {
                 disabled={!telefone.trim()}
                 onChange={(e) => setShareTelefone(e.target.checked)}
               />
-              <span>Desejo compartilhar este WhatsApp ao trocar contato.</span>
+              <span>Desejo compartilhar este telefone ao trocar contato.</span>
             </label>
             <label className="login-label">
               Instagram
@@ -212,8 +266,18 @@ export default function EntrarPage() {
                 autoComplete="off"
                 placeholder="@seu.usuario"
                 value={instagram}
-                onChange={(e) => setInstagram(e.target.value)}
+                aria-invalid={Boolean(perfilErros.instagram)}
+                aria-describedby={perfilErros.instagram ? "instagram-error" : undefined}
+                onChange={(e) => {
+                  setInstagram(e.target.value);
+                  setPerfilErros((errors) => ({ ...errors, instagram: undefined }));
+                }}
               />
+              {perfilErros.instagram && (
+                <small id="instagram-error" className="field-error" role="alert">
+                  {perfilErros.instagram}
+                </small>
+              )}
             </label>
             <label className="profile-share">
               <input

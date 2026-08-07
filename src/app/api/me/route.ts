@@ -17,14 +17,15 @@ export function GET(req: Request) {
   if (!sessao) return NextResponse.json({ logado: false });
   const row = getDb()
     .prepare(
-      `select checkin_code as code from attendees where id = ?`,
+      `select checkin_code as code, email from attendees where id = ?`,
     )
-    .get(sessao.attendeeId) as { code: string } | undefined;
+    .get(sessao.attendeeId) as { code: string; email: string | null } | undefined;
   const perfil = getPerfil(sessao.attendeeId);
   return NextResponse.json({
     logado: true,
     nome: sessao.nome.split(/\s+/)[0],
     checkinCode: row?.code ?? null,
+    email: row?.email ?? null,
     ...perfil,
   });
 }
