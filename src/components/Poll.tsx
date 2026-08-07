@@ -118,7 +118,8 @@ export function Poll({ sessionId }: { sessionId: string }) {
             </button>
           </div>
           <p className="poll-moderation-note">
-            A resposta aparece sem seu nome no telão e pode ser ocultada pela organização.
+            As palavras da sua resposta aparecem no telão e podem ser ocultadas pela
+            organização, que recebe sua identificação.
           </p>
           {message && <p className={message.startsWith("Resposta publicada") ? "login-msg" : "q-erro"}>{message}</p>}
         </div>
