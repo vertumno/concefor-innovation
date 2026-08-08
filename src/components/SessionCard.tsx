@@ -35,7 +35,7 @@ export function SessionCard({
     >
       <TimeStamp inicio={session.inicio} fim={session.fim} status={status} variant="rail" />
 
-      <div className="tl-body">
+      <Link className="tl-body" href={`/sessao/${session.id}`}>
         <div className="card-meta">
           {status === "live" && (
             <span className="live-tag">
@@ -50,9 +50,7 @@ export function SessionCard({
           )}
         </div>
 
-        <h3 className="card-title">
-          <Link href={`/sessao/${session.id}`}>{session.titulo}</Link>
-        </h3>
+        <h3 className="card-title">{session.titulo}</h3>
         {session.palestrante && <p className="card-sub">{session.palestrante}</p>}
 
         {status === "live" && (
@@ -67,7 +65,7 @@ export function SessionCard({
             <span style={{ width: `${Math.round(sessionProgress(session, now) * 100)}%` }} />
           </div>
         )}
-      </div>
+      </Link>
 
       <button
         type="button"

@@ -620,10 +620,20 @@ h1.page-title {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   padding: 11px 13px;
-  transition: border-color var(--transition-fast);
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
 }
-.tl-item:hover .tl-body {
+.tl-body:hover {
   border-color: rgba(0, 221, 202, 0.45);
+}
+.tl-body:hover .card-title {
+  color: var(--cyan-300);
+}
+.tl-body:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
 }
 [data-status="live"] .tl-body {
   border-color: rgba(214, 0, 75, 0.55);
