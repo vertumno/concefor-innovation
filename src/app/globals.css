@@ -355,6 +355,23 @@ h1.page-title {
   color: var(--accent);
 }
 
+.agenda-favorites-filter {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.agenda-favorites-filter input {
+  margin: 0;
+}
+.agenda-favorites-star {
+  color: var(--accent);
+  font-size: 18px;
+  line-height: 1;
+}
+
 /* Banner "Não perca" — gold: a única CTA proativa do app. */
 .banner {
   display: block;

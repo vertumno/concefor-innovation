@@ -83,13 +83,14 @@ export default function AgendaPage() {
         </select>
       </div>
 
-      <label className="page-sub" style={{ display: "block", marginBottom: 12 }}>
+      <label className="agenda-favorites-filter page-sub">
         <input
           type="checkbox"
           checked={soFavoritos}
           onChange={(e) => setSoFavoritos(e.target.checked)}
-        />{" "}
-        Só a minha programação (favoritos)
+        />
+        <span className="agenda-favorites-star" aria-hidden>★</span>
+        <span>Ver apenas meus favoritos</span>
       </label>
 
       {filtradas.length === 0 && (
