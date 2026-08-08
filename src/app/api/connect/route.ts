@@ -73,5 +73,8 @@ export async function DELETE(req: Request) {
   }
 
   const ok = deleteConnection(sessao.attendeeId, outro);
-  return NextResponse.json({ ok });
+  return NextResponse.json(
+    ok ? { ok: true } : { ok: false, error: "essa conexão não foi encontrada" },
+    { status: ok ? 200 : 404 },
+  );
 }

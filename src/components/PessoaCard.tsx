@@ -30,6 +30,8 @@ export function PessoaCard({
   // Qual campo acabou de ser copiado (mostra o "copiado ✓" naquela linha).
   const [copiado, setCopiado] = useState<string | null>(null);
   const [falhou, setFalhou] = useState(false);
+  const [desfazendo, setDesfazendo] = useState(false);
+  const [erroDesfazer, setErroDesfazer] = useState<string | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => () => { if (timer.current) clearTimeout(timer.current); }, []);
@@ -50,15 +52,24 @@ export function PessoaCard({
     if (!confirm(`Desfazer a conexão com ${pessoa.nomeCompleto ?? pessoa.nome}? Ela some para vocês dois.`)) {
       return;
     }
+    setDesfazendo(true);
+    setErroDesfazer(null);
     try {
       const res = await fetch("/api/connect", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ attendeeId: pessoa.id }),
       });
-      if (res.ok) onDesfeita?.();
+      const data = await res.json().catch(() => null) as { ok?: boolean; error?: string } | null;
+      if (!res.ok || data?.ok !== true) {
+        setErroDesfazer(data?.error ?? "Não foi possível desfazer. Tente novamente.");
+        return;
+      }
+      onDesfeita?.();
     } catch {
-      /* rede oscilou: o card continua aberto e a pessoa tenta de novo */
+      setErroDesfazer("Sem conexão com o servidor — tente novamente.");
+    } finally {
+      setDesfazendo(false);
     }
   }
 
@@ -164,9 +175,15 @@ export function PessoaCard({
           )}
 
           <div className="connection-danger-zone">
-            <button type="button" className="desfazer-conexao" onClick={desfazer}>
-              Desfazer conexão
+            <button
+              type="button"
+              className="desfazer-conexao"
+              onClick={desfazer}
+              disabled={desfazendo}
+            >
+              {desfazendo ? "Desfazendo…" : "Desfazer conexão"}
             </button>
+            {erroDesfazer && <p className="q-erro">{erroDesfazer}</p>}
           </div>
         </div>
       )}

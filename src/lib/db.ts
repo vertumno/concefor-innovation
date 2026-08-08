@@ -766,10 +766,21 @@ export function deleteConnection(a: number, b: number): boolean {
     .prepare(
       `delete from timeline_events
         where tipo = 'connection'
-          and ((json_extract(payload, '$.de') = ? and json_extract(payload, '$.attendeeId') = ?)
-            or (json_extract(payload, '$.de') = ? and json_extract(payload, '$.attendeeId') = ?))`,
+          and (
+            (json_extract(payload, '$.de') = ? and json_extract(payload, '$.attendeeId') = ?)
+            or (json_extract(payload, '$.de') = ? and json_extract(payload, '$.attendeeId') = ?)
+            -- Formato anterior: a origem estava apenas em client_id. Apagamos
+            -- todas as identidades conhecidas dos dois participantes para a
+            -- migração de login não reconstruir uma conexão já desfeita.
+            or (json_extract(payload, '$.de') is null
+                and json_extract(payload, '$.attendeeId') = ?
+                and client_id in (select client_id from identities where attendee_id = ?))
+            or (json_extract(payload, '$.de') is null
+                and json_extract(payload, '$.attendeeId') = ?
+                and client_id in (select client_id from identities where attendee_id = ?))
+          )`,
     )
-    .run(a, b, b, a);
+    .run(a, b, b, a, b, a, a, b);
   return r.changes > 0;
 }
 

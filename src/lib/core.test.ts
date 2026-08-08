@@ -126,6 +126,24 @@ test("novo login recupera conexão antiga e respeita a escolha por campo", () =>
   assert.equal(atualizado?.email, "bruno@example.org");
   assert.equal(atualizado?.telefone, undefined);
   assert.equal(atualizado?.instagram, "bruno.teste");
+
+  assert.equal(dbModule.deleteConnection(1, 2), true);
+  assert.equal(dbModule.getParticipantes(1).find((p) => p.id === 2)?.conectado, false);
+  assert.equal(dbModule.getParticipantes(2).find((p) => p.id === 1)?.conectado, false);
+  assert.equal(
+    (db.prepare("select count(*) as n from timeline_events where tipo = 'connection'").get() as { n: number }).n,
+    0,
+  );
+});
+
+test("desfazer conexão nova remove os dois sentidos", () => {
+  assert.equal(dbModule.insertConnection(1, 2, "client-connect-new"), true);
+  assert.equal(dbModule.getParticipantes(1).find((p) => p.id === 2)?.conectado, true);
+  assert.equal(dbModule.getParticipantes(2).find((p) => p.id === 1)?.conectado, true);
+
+  assert.equal(dbModule.deleteConnection(1, 2), true);
+  assert.equal(dbModule.getParticipantes(1).find((p) => p.id === 2)?.conectado, false);
+  assert.equal(dbModule.getParticipantes(2).find((p) => p.id === 1)?.conectado, false);
 });
 
 test("telefone usa E.164 e formata o padrão brasileiro sem presumir WhatsApp", () => {
