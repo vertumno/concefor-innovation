@@ -68,7 +68,9 @@ export async function DELETE(req: Request) {
     return NextResponse.json({ error: "entre com sua inscrição" }, { status: 401 });
   }
   const outro = Number(attendeeId);
-  if (!Number.isInteger(outro) || outro <= 0 || outro === sessao.attendeeId) {
+  // IDs reais do Even3 são positivos; a massa local usa negativos reservados
+  // para jamais colidir com eles. Ambos são IDs SQLite válidos.
+  if (!Number.isSafeInteger(outro) || outro === 0 || outro === sessao.attendeeId) {
     return NextResponse.json({ error: "attendeeId inválido" }, { status: 400 });
   }
 

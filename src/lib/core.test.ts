@@ -15,6 +15,7 @@ let authModule: typeof import("./authSession");
 let pollModule: typeof import("./polls");
 let contactModule: typeof import("./contato");
 let pollApiModule: typeof import("../app/api/polls/route");
+let connectApiModule: typeof import("../app/api/connect/route");
 let db: Database.Database;
 
 before(async () => {
@@ -23,6 +24,7 @@ before(async () => {
   pollModule = await import("./polls");
   contactModule = await import("./contato");
   pollApiModule = await import("../app/api/polls/route");
+  connectApiModule = await import("../app/api/connect/route");
   db = dbModule.getDb();
 
   db.prepare(
@@ -144,6 +146,33 @@ test("desfazer conexão nova remove os dois sentidos", () => {
   assert.equal(dbModule.deleteConnection(1, 2), true);
   assert.equal(dbModule.getParticipantes(1).find((p) => p.id === 2)?.conectado, false);
   assert.equal(dbModule.getParticipantes(2).find((p) => p.id === 1)?.conectado, false);
+});
+
+test("API desfaz conexão com ID negativo reservado para QA", async () => {
+  db.prepare(
+    `insert into attendees
+       (id, checkin_code, nome, email, documento, confirmado, updated_at)
+     values (?, ?, ?, ?, ?, 1, ?)`,
+  ).run(-99, "99999999", "QA NEGATIVO", "qa-negativo@example.org", "99990000000", new Date().toISOString());
+  assert.equal(dbModule.insertConnection(1, -99, "client-connect-negative"), true);
+
+  const participant = authModule.createParticipantSession({
+    attendeeId: 1,
+    clientId: "client-delete-negative",
+    nome: "Ana Teste",
+  });
+  const cookie = authModule.sessionCookie(participant.token).split(";")[0];
+  const response = await connectApiModule.DELETE(
+    new Request("http://localhost/api/connect", {
+      method: "DELETE",
+      headers: { cookie, "content-type": "application/json" },
+      body: JSON.stringify({ attendeeId: -99 }),
+    }),
+  );
+
+  assert.equal(response.status, 200);
+  assert.deepEqual(await response.json(), { ok: true });
+  assert.equal(dbModule.getParticipantes(1).find((p) => p.id === -99)?.conectado, false);
 });
 
 test("telefone usa E.164 e formata o padrão brasileiro sem presumir WhatsApp", () => {
