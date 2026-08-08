@@ -17,6 +17,14 @@ export function telefoneE164(telefone: string): string | null {
   return d.length >= 7 && d.length <= 15 ? `+${d}` : null;
 }
 
+// O dado continua sendo um telefone genérico no perfil. Na tela de conexão,
+// porém, tocar nele tenta abrir o WhatsApp — conveniência de uso, não uma
+// afirmação de que todo número cadastrado necessariamente tenha uma conta lá.
+export function whatsappLink(telefone: string): string | null {
+  const e164 = telefoneE164(telefone);
+  return e164 ? `https://wa.me/${e164.slice(1)}` : null;
+}
+
 // "5527999998888" → "+55 (27) 99999-8888". Para outros países, preserva o
 // formato universal sem inventar agrupamentos nacionais.
 export function telefoneFormatado(telefone: string): string {

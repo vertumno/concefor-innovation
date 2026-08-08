@@ -12,9 +12,9 @@ import {
   copiarTexto,
   instagramLink,
   salvarContato,
-  telefoneE164,
   telefoneFormatado,
   type Contato,
+  whatsappLink,
 } from "@/lib/contato";
 import type { Participante } from "@/lib/db";
 
@@ -81,7 +81,7 @@ export function PessoaCard({
     instagram: pessoa.instagram,
     categoria: pessoa.categoria,
   };
-  const tel = pessoa.telefone ? telefoneE164(pessoa.telefone) : null;
+  const whatsapp = pessoa.telefone ? whatsappLink(pessoa.telefone) : null;
   const temContato = Boolean(pessoa.email || pessoa.telefone || pessoa.instagram);
 
   return (
@@ -130,7 +130,8 @@ export function PessoaCard({
               icone={<IconeTelefone />}
               rotulo="telefone"
               texto={telefoneFormatado(pessoa.telefone)}
-              href={tel ? `tel:${tel}` : null}
+              href={whatsapp}
+              externo
               copiado={copiado === "telefone"}
               onCopiar={() => copiar("telefone", telefoneFormatado(pessoa.telefone!))}
             />

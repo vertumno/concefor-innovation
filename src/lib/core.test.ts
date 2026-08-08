@@ -150,6 +150,8 @@ test("telefone usa E.164 e formata o padrão brasileiro sem presumir WhatsApp", 
   assert.equal(contactModule.telefoneE164("55 27 99999-8888"), "+5527999998888");
   assert.equal(contactModule.telefoneFormatado("5527999998888"), "+55 (27) 99999-8888");
   assert.equal(contactModule.telefoneFormatado("351912345678"), "+351912345678");
+  assert.equal(contactModule.whatsappLink("+55 (27) 99999-8888"), "https://wa.me/5527999998888");
+  assert.equal(contactModule.whatsappLink("inválido"), null);
 });
 
 test("enquete aplica cooldown, modera e preserva resultado após encerrar", async () => {
