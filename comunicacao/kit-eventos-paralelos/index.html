@@ -169,7 +169,7 @@ Inscrição no Concefor até 15/08, o principal congresso do Espírito Santo sob
     <button class="ver-mais" data-alvo="t-ig">Ver o texto completo</button>
     <div class="acoes">
       <button class="btn btn-copiar" data-copia="t-ig">Copiar legenda</button>
-      <a class="btn btn-forte" download href="../producao/02-pre-evento/eventos-paralelos/cards/proposta-v1-com-imagem/2026-08-10_eventos-paralelos_carrossel-completo.zip">Baixar as 7 imagens (zip)</a>
+      <button class="btn btn-forte" id="baixar-todos">Baixar as 7 imagens</button>
     </div>
     <div class="grade" id="grade-ig"></div>
   </div>
@@ -285,6 +285,28 @@ document.getElementById("lista").innerHTML = EVENTOS.map((e, i) => {
     '</div>' +
   '</div>';
 }).join("");
+
+/* ---- baixar as 7 de uma vez ----
+   Sem zip de proposito: o .gitignore do repo ignora *.zip ("arquivos
+   compactados de download"), entao um zip versionado nunca chegaria ao
+   GitHub Pages. Os downloads saem em sequencia, com um respiro entre eles
+   para o navegador nao tratar a rajada como popup. */
+document.getElementById("baixar-todos").addEventListener("click", async ev => {
+  const btn = ev.currentTarget;
+  const urls = [capa].concat(EVENTOS.map(e => arte(e.slug)));
+  btn.disabled = true;
+  const antes = btn.textContent;
+  for (let i = 0; i < urls.length; i++){
+    const a = document.createElement("a");
+    a.href = urls[i];
+    a.download = urls[i].split("/").pop();
+    document.body.appendChild(a); a.click(); a.remove();
+    btn.textContent = "Baixando " + (i + 1) + " de " + urls.length;
+    await new Promise(r => setTimeout(r, 400));
+  }
+  btn.textContent = antes; btn.disabled = false;
+  toast("7 imagens baixadas. Publique na ordem: capa, depois 01 a 06.");
+});
 
 /* ---- toast ---- */
 let timer;
