@@ -135,12 +135,14 @@ comunicacao/
      Educimat** — só essas logos.
      [Brief dos 10, com os ajustes banner a banner](producao/01-brindes-promocionais/banners/brief.md) ·
      [Brief dos institucionais](producao/02-pre-evento/banners-institucionais/brief.md)
-  3. 🆕 **Cards dos eventos paralelos — pedido de 03/08.** A coordenação pediu **um card por
-     evento, para cada coordenador divulgar na própria rede** (eram um carrossel só). ✅ Conteúdo,
-     spec e os textos de WhatsApp dos 6 já estão escritos:
+  3. ✅ **Cards dos eventos paralelos — produzidos em 07/08.** Pedido de 03/08 (um card por
+     evento, para cada coordenador divulgar na própria rede) atendido: os 6 PNGs (1080×1350) estão
+     em [`producao/02-pre-evento/eventos-paralelos/cards/`](producao/02-pre-evento/eventos-paralelos/cards/),
+     gerados por código (mesma família visual dos cards de palestrante — logo, selo 20 anos,
+     gradiente turquesa→azul). Textos de WhatsApp dos 6 prontos desde antes:
      [brief](producao/02-pre-evento/eventos-paralelos/brief-cards.md).
-     🔴 **Falta definir quem produz as artes** — a Juliana está nos banners e a Andreia no bolo e
-     no livro. Os eventos são em **20/08**, então quanto antes começar a divulgação, melhor.
+     🟡 **Falta revisar 3 coordenações abreviadas por espaço** (ver o brief) antes de montar os
+     kits e enviar às 6 coordenações. Os eventos são em **20/08**.
   4. 🔴 **Onde o e-book do NTE vai ficar hospedado — recuperado do inbox em 04/08.** Ele é lançado
      no palco em **17/08 às 20h** e não tem endereço de acesso: sem local, não há link nem QR code.
      Recomendação no brief: publicar na **Base de Conhecimentos**, que já está no ar e mantém o

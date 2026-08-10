@@ -1,0 +1,85 @@
+<!doctype html><html><head><meta charset='utf-8'><style>
+@font-face{font-family:'Teko';src:url('assets/fonts/Teko.ttf') format('truetype');font-weight:300 700;font-style:normal;}
+@font-face{font-family:'Montserrat';src:url('assets/fonts/Montserrat.ttf') format('truetype');font-weight:100 900;font-style:normal;}
+
+:root{
+  --turquesa:#00DCC9; --azul:#1F4AA1; --branco:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#000;}
+.stage{position:relative;width:1080px;height:1350px;overflow:hidden;
+  font-family:'Montserrat',sans-serif;-webkit-font-smoothing:antialiased;
+  text-rendering:geometricPrecision;
+  background:linear-gradient(135deg,var(--turquesa) 0%,var(--azul) 68%);}
+
+/* textura organica sutil, muito discreta */
+.blob{position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none;}
+
+.logo{position:absolute;left:96px;top:86px;width:260px;}
+.logo img{display:block;width:100%;height:auto;}
+
+.rule-top{position:absolute;left:96px;height:2px;background:rgba(255,255,255,.5);}
+
+.tag{position:absolute;left:96px;padding:16px 36px;border-radius:999px;
+  background:var(--turquesa);
+  font-family:'Montserrat',sans-serif;font-weight:800;font-size:29px;color:var(--azul);
+  text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;}
+
+.titulo{position:absolute;left:96px;width:888px;color:#fff;
+  font-family:'Teko',sans-serif;font-weight:700;text-transform:uppercase;
+  letter-spacing:.002em;}
+
+.sobre{position:absolute;left:96px;width:840px;color:rgba(255,255,255,.94);
+  font-family:'Montserrat',sans-serif;font-weight:500;font-size:30px;line-height:1.38;}
+
+.rule-acc{position:absolute;left:96px;width:110px;height:4px;background:var(--turquesa);}
+
+.info{position:absolute;left:96px;width:820px;}
+.info .lbl{font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;
+  letter-spacing:.14em;text-transform:uppercase;color:rgba(0,220,201,.95);margin-bottom:5px;}
+.info .val{font-family:'Montserrat',sans-serif;font-weight:600;font-size:31px;
+  line-height:1.22;color:#fff;}
+
+.vagas{display:inline-block;margin-top:14px;padding:9px 20px;border-radius:999px;
+  background:#fff;color:var(--azul);font-family:'Montserrat',sans-serif;font-weight:800;
+  font-size:18px;letter-spacing:.05em;text-transform:uppercase;}
+
+.footer-label{position:absolute;left:96px;bottom:96px;font-family:'Montserrat',sans-serif;
+  font-weight:700;font-size:17px;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.78);}
+.footer-url{position:absolute;left:96px;bottom:54px;font-family:'Montserrat',sans-serif;
+  font-weight:800;font-size:34px;color:#fff;}
+
+.selo-wrap{position:absolute;right:56px;bottom:34px;width:200px;height:200px;
+  background:#fff;border-radius:20px;transform:rotate(45deg);
+  box-shadow:0 12px 30px rgba(16,42,92,.28);
+  display:flex;align-items:center;justify-content:center;}
+.selo-wrap img{width:150px;height:auto;transform:rotate(-45deg);display:block;}
+</style></head><body><div class="stage">
+  <div class="blob" style="width:640px;height:640px;left:620px;top:-220px;
+    background:radial-gradient(circle,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 68%);"></div>
+  <div class="blob" style="width:560px;height:560px;left:-220px;top:760px;
+    background:radial-gradient(circle,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 68%);"></div>
+
+  <div class="logo"><img src="assets/logo-concefor-branco.png"></div>
+  <div class="rule-top" style="top:458px;width:700px"></div>
+
+  <div class="tag" style="top:496px">Evento paralelo</div>
+  <div class="titulo" style="top:592px;font-size:60px;line-height:56.4px">EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas</div>
+  <div class="sobre" style="top:797.2px;font-size:30px">Celebração dos 15 anos do Educimat, aberta a quem quiser participar.</div>
+  <div class="rule-acc" style="top:912.0px"></div>
+
+  <div class="info" style="top:936.0px">
+    <div class="lbl">Coordenação</div>
+    <div class="val">Edmar Reis Thiengo e Ana Raquel S. de M. Garcia (Educimat)</div>
+    
+  </div>
+  <div class="info" style="top:1056.6px">
+    <div class="lbl">Quando</div>
+    <div class="val">20/08 (quinta) &middot; 13h30 às 16h</div>
+  </div>
+
+  <div class="footer-label">Inscreva-se em</div>
+  <div class="footer-url">concefor.cefor.ifes.edu.br</div>
+  <div class="selo-wrap"><img src="assets/selo-20-anos-colorido.png"></div>
+</div></body></html>

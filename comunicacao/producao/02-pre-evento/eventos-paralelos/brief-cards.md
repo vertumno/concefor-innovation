@@ -19,8 +19,38 @@
 - **Peça:** 6 cards individuais, um por evento paralelo, + texto pronto para cada coordenação enviar
 - **Fase:** pré-evento
 - **Data dos eventos:** todos na **quinta-feira, 20/08/2026** (Momento I: 9h–12h · Momento II: 13h30–16h)
-- **Responsável pela arte:** 🔴 **a definir** (ver pendências)
-- **Status:** ⬜ A fazer
+- **Responsável pela arte:** Elton (produzida em 07/08 com Claude Code, ver abaixo)
+- **Status:** 🟡 Artes produzidas, aguardando revisão antes de enviar às coordenações
+
+## Como a arte foi produzida (07/08/2026)
+
+Template único, gerado por código para garantir que os 6 saiam idênticos em estrutura — mesma
+técnica já usada no card do Defeso Eleitoral do Cefor (`comunicacao-periodo-eleitoral/`):
+HTML/CSS → Chrome headless (2x) → downscale Lanczos → PNG 1080×1350. Identidade visual seguindo
+[`contexto/05-identidade-visual.md`](../../../contexto/05-identidade-visual.md) — a mesma família
+dos 8 cards de palestrante já publicados (logo VIII Concefor, selo 20 anos, gradiente
+turquesa→azul, tipografia Teko + Montserrat), não a de nenhuma ferramenta genérica de carrossel.
+
+- **Fonte:** [`_build/build_cards.py`](_build/build_cards.py) (conteúdo + layout) e
+  [`_build/render_cards.py`](_build/render_cards.py) (renderização)
+- **Resultado:** [`cards/`](cards/) — 6 PNGs, nomeados
+  `2026-08-07_pre_card_evento-paralelo-<slug>_v1.png`
+
+**v2 (07/08, após 1ª rodada de revisão):** local retirado da arte (fica só no texto de WhatsApp);
+horário migrou para dentro do badge de data, no topo direito (abaixo de "20 AGO · 2026"), o que
+liberou espaço embaixo; logo do Concefor maior; tag "Evento paralelo" e título do evento maiores;
+no lugar do gancho de uma linha, cada card agora traz uma descrição de 2–3 linhas sobre o que
+acontece no evento, condensada da **descrição original enviada pelos coordenadores**
+([`fonte-eventos-satelites.md`](fonte-eventos-satelites.md)) — não é texto inventado, é a
+descrição oficial resumida para caber no card.
+
+- ⚠️ **Revisar antes de enviar:** para caber no espaço do card, a coordenação saiu abreviada em
+  3 dos 6 (nome ou instituição cortados). Conferir linha a linha:
+  - **Ciência delas:** título sem "no contexto do"; coordenação sem "Ifes Vila Velha"
+    (ficou só "Rio Doce Escolar / Educimat")
+  - **Escola de Inovação:** coordenação sem a instituição entre parênteses (era
+    "CCEC-EI / SEME / PMV")
+  - **Educimat:** "Ana Raquel Santos de Medeiros Garcia" abreviado para "Ana Raquel S. de M. Garcia"
 
 ## Por que é um card por evento, e não só o carrossel
 
@@ -57,7 +87,7 @@ Fonte dos dados: [`contexto/07-eventos-paralelos.md`](../../../contexto/07-event
 - **Tipo:** oficina prática · **máximo de 20 pessoas**
 - **Quando:** 20/08, **9h–12h e 13h30–16h** (os dois momentos)
 - **Onde:** **Laboratório de Informática**
-- **Coordenação:** Marcos Accioly e Elton Silva (Cefor)
+- **Coordenação:** Marcos Accioly e Elton Vinícius (Cefor)
 - **Na arte:** "Cansou de explicar tudo de novo à IA a cada conversa?"
 - **Inscrição:** https://docs.google.com/forms/d/e/1FAIpQLScT0PBfPLGfWC3Dqn5DoLLr7z0VQvY1JG28dU4cgfiAY4151w/viewform
 - ⚠️ **É o único com limite de vagas.** O texto precisa dizer isso, senão gera fila e frustração.
@@ -216,18 +246,18 @@ Qualquer ajuste no card ou no texto, é só falar.
 
 | # | Pendência | Quem decide |
 |---|---|---|
-| 1 | 🔴 **Quem produz as 6 artes.** A Juliana está com os 13 banners até 04/08 e a Andreia está no bolo e no livro dos 20 anos. Sem alguém definido, isto não anda. | Coordenação / CGTE |
+| 1 | ✅ **Quem produz as 6 artes** — resolvido em 07/08: Elton, via pipeline de código (ver acima). Falta revisar as abreviações de coordenação antes de enviar. | Elton |
 | 2 | ❓ **Participar de um evento paralelo exige inscrição no Concefor**, além do formulário próprio? Os textos acima levam só ao formulário do evento. Se exigir, é preciso dizer nos seis. | Coordenação |
 | 3 | ❓ **Educimat sem formulário.** Confirmar se terá inscrição própria ou entrada livre. | Educimat |
 | 4 | ❓ **QR code do formulário na arte**, sim ou não. | quem produzir |
 | 5 | ❓ **O carrossel dos 6 no feed do Cefor continua de pé?** A recomendação é sim, montado a partir dos mesmos cards, respeitando a cadência de um card por dia. | Elton / Coordenação |
 
 ## Checklist final
-- [ ] Definido quem produz as artes
-- [ ] Template aprovado (um dos seis serve de piloto)
-- [ ] Os 6 cards exportados em 1080 × 1350
-- [ ] Conferência de nome, horário, local e coordenação, evento por evento
+- [x] Definido quem produz as artes — Elton, 07/08
+- [x] Template aprovado (um dos seis serve de piloto) — template único gerado por código, ver acima
+- [x] Os 6 cards exportados em 1080 × 1350
+- [ ] Conferência de nome, horário, local e coordenação, evento por evento — **3 abreviações a confirmar** (ver acima)
 - [ ] Links de inscrição testados um a um
-- [ ] Selo 20 anos e assinaturas aplicados
+- [x] Selo 20 anos e assinaturas aplicados
 - [ ] Kits enviados às 6 coordenações (card + texto)
-- [ ] Registrado no board de produção
+- [x] Registrado no board de produção
