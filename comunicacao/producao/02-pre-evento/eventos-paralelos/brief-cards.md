@@ -19,8 +19,10 @@
 - **Peça:** 6 cards individuais, um por evento paralelo, + texto pronto para cada coordenação enviar
 - **Fase:** pré-evento
 - **Data dos eventos:** todos na **quinta-feira, 20/08/2026** (Momento I: 9h–12h · Momento II: 13h30–16h)
-- **Responsável pela arte:** Elton (produzida em 07/08 com Claude Code, ver abaixo)
-- **Status:** 🟡 Artes produzidas, aguardando revisão antes de enviar às coordenações
+- **Responsável pela arte:** Elton (07/08 cards individuais · **10/08 carrossel v4/v5** — ver abaixo)
+- **Status:** 🟡 **Carrossel em refinamento (v4 → v5).** ✅ Coordenações completas e ✅ textos
+  revisados em 10/08. 🔴 **Falta regerar os PNGs com os textos novos** e depois **enviar** os kits
+  às 6 coordenações. Os eventos são **20/08**
 
 ## Como a arte foi produzida (07/08/2026)
 
@@ -44,13 +46,136 @@ acontece no evento, condensada da **descrição original enviada pelos coordenad
 ([`fonte-eventos-satelites.md`](fonte-eventos-satelites.md)) — não é texto inventado, é a
 descrição oficial resumida para caber no card.
 
-- ⚠️ **Revisar antes de enviar:** para caber no espaço do card, a coordenação saiu abreviada em
-  3 dos 6 (nome ou instituição cortados). Conferir linha a linha:
-  - **Ciência delas:** título sem "no contexto do"; coordenação sem "Ifes Vila Velha"
-    (ficou só "Rio Doce Escolar / Educimat")
-  - **Escola de Inovação:** coordenação sem a instituição entre parênteses (era
-    "CCEC-EI / SEME / PMV")
-  - **Educimat:** "Ana Raquel Santos de Medeiros Garcia" abreviado para "Ana Raquel S. de M. Garcia"
+## 🔄 10/08 — nova direção visual: o carrossel (v4 / v5)
+
+**O layout acima, de 07/08, foi superado.** A peça passou a ser um **carrossel de 7 slides**
+(capa + os 6 eventos), com direção visual nova: **fundo escuro**, badge "20 AGO 2026" no topo,
+etiqueta do tipo de evento, numeração "02 / 07" e — o ganho maior — **a imagem que cada
+coordenação enviou** ocupando o topo do slide (logo do Rio Doce Escolar, foto da Escola de
+Inovação, capas do Sofia Carter, logo do Pros@tec, logo do Educimat).
+
+| Onde | O quê |
+|---|---|
+| [`_build_v4/`](_build_v4/) | Pipeline do carrossel. **`build_cards_v4.py` é a fonte única dos dados** (lista `EVENTOS`) |
+| [`_build_v5/`](_build_v5/) | Refinamento de tipografia sobre o v4 — ele **importa o `EVENTOS` do v4**, não duplica conteúdo. Traz [`auditoria-tipografia.md`](_build_v5/auditoria-tipografia.md), que dimensiona cada bloco pela leitura real no celular (arte de 1080 px exibida a ~360 px) |
+| [`cards/proposta-v4/`](cards/proposta-v4/) · [`cards/proposta-v5-gradiente/`](cards/proposta-v5-gradiente/) | Saídas para avaliação, com preview do carrossel e `.zip` para publicar |
+| [`_build/`](_build/) | 🕘 **Histórico.** Cards individuais 1080×1350 em gradiente turquesa (07/08). Mantido como referência |
+
+✅ **As 3 abreviações de coordenação já entraram resolvidas no v4** — Ciência delas com "Ifes Vila
+Velha", Escola de Inovação com "(CCEC-EI / SEME / PMV)" e o Educimat com "Ana Raquel Santos de
+Medeiros Garcia" por extenso. **A pendência que travava o envio está encerrada.**
+
+### ✏️ Revisão de texto — 10/08
+
+Aplicada em `_build_v4/build_cards_v4.py`, campo `"sobre"`, que alimenta **v4 e v5 de uma vez**.
+
+**Duas retiradas pedidas:**
+- 🚫 *"Não é preciso saber programar"* (IA além do chat) — a ressalva ocupava o lugar do argumento.
+- 🚫 *"aberta a quem quiser participar"* (Educimat) — não diz nada sobre o evento.
+
+**E os seis passaram a usar a informação concreta que já estava na
+[descrição enviada pelos coordenadores](fonte-eventos-satelites.md) e não chegava ao card:**
+
+| # | Antes | Agora |
+|---|---|---|
+| 1 | Monte um espaço de trabalho que guarda seu contexto e produz com você. Não é preciso saber programar. | Um professor levava uma semana para transformar aulas antigas. **Passou a levar meia hora.** Você sai com o seu próprio espaço de trabalho, pronto para usar. |
+| 2 | O trabalho das mulheres da Rede de Educadores Ambientais do Rio Doce Escolar em pauta. | **Gestoras, pesquisadoras, professoras e agentes comunitárias** da bacia do Rio Doce contam a ciência que fazem na Rede de Educadores Ambientais. |
+| 3 | Cultura maker, impressão 3D, robótica e realidade virtual na educação de Vitória. | Impressão 3D, **corte a laser**, robótica e realidade virtual: seis anos da Escola de Inovação, **com visita às estações** onde tudo acontece. |
+| 4 | Livros-jogo e projeto autoral para alfabetização em IA na educação básica, com abordagem STEAM. | **Uma jornada em sete etapas** com a coleção de livros-jogo Sofia Carter, para levar a alfabetização em IA à sua sala de aula. |
+| 5 | Propostas de resposta aos desafios da Educação em Computação elencados pela SBC. | Pesquisadores apresentam respostas aos desafios da Educação em Computação apontados pela SBC, **em rodas de conversa nos dois turnos**. |
+| 6 | Uma celebração aberta a quem quiser participar dos 15 anos do Programa Educimat. | **Quinze anos do mestrado e doutorado profissional em Educação em Ciências e Matemática do Ifes**, comemorados dentro do Concefor. |
+
+**De onde saiu cada informação** *(nada inventado — Artigo IV)*: o caso do professor que passou de
+uma semana para meia hora, o corte a laser, a visita às estações, as rodas de conversa nos dois
+turnos e a jornada de sete etapas estão todos na descrição ou na programação que os coordenadores
+preencheram no formulário. **O evento 6 é a exceção: não tem descrição na fonte** *(consta como
+"programação interna ainda sem divulgação")*, então o texto passou a dizer **o que o Educimat é**,
+conforme [`contexto/00-evento.md`](../../../contexto/00-evento.md) — mestrado e doutorado
+profissional em Educação em Ciências e Matemática do Ifes.
+
+✅ Os textos já apareceram na `proposta-v5-gradiente`, gerada depois da edição — como o v5 lê o
+`EVENTOS` do v4, bastou corrigir num lugar.
+
+## 🆕 Proposta "v1 com imagem" — o layout do v1, agora com a imagem de cada evento
+
+**Pedido de 10/08:** uma nova versão do **v1** (card individual, não carrossel) **inserindo a
+imagem de referência** que cada coordenação enviou, hoje em [`_refs/`](_refs/).
+
+- **Pipeline:** [`_build_v1-com-imagem/`](_build_v1-com-imagem/) — `build_cards.py` + `render_cards.py`
+- **Saída:** [`cards/proposta-v1-com-imagem/`](cards/proposta-v1-com-imagem/) — 6 PNGs
+  1080×1350, [preview em grade](cards/proposta-v1-com-imagem/00-preview.png) e
+  `preview-celular-360px/` *(mesmo critério da auditoria do v5: 360px é o tamanho real de leitura
+  no feed)*
+- ⚠️ **Por que o nome não é numerado:** esta proposta nasceu como `_build_v6` e foi **sobrescrita**
+  por outra sessão, que usava o mesmo número para a variação *respiro* do carrossel
+  ([`cards/proposta-v6-respiro/`](cards/proposta-v6-respiro/)). O nome descritivo tira as duas
+  linhas de trabalho da disputa por número.
+- **Conteúdo:** importado do `EVENTOS` do v4, como o v5 faz. **Nenhum texto duplicado.**
+- **Assets:** referenciados nas pastas que já existem (`../_build/assets` e
+  `../_build_v4/assets/events`), sem copiar binário novo para o repo.
+
+### O que mudou em relação ao v1
+
+| # | Decisão | Por quê |
+|---|---|---|
+| 1 | **Faixa de imagem sangrada no topo** (440px) com a imagem da coordenação | Era o ganho real do v4: a peça deixa de ser só tipografia e passa a mostrar o evento |
+| 2 | **Barra de marca sólida** sobre a faixa, com o logo horizontal branco | ⚠️ **Um scrim em degradê não resolveu.** Três imagens vieram como **logo em fundo branco** (Rio Doce Escolar, Pros@tec, Educimat) e o logo branco do Concefor sumia sobre elas. A barra garante contraste em qualquer imagem e conversa com o header do v4/v5 |
+| 3 | **Corte reto no fim da faixa + régua turquesa** | O gradiente do card é diagonal, então nenhuma cor fixa casaria com ele. Borda assumida fica mais limpa que um degradê aproximado |
+| 4 | **Etiqueta do tipo** ao lado de "Evento paralelo" | O campo `tipo` já existia no v4 e não era aproveitado no v1 |
+| 5 | **Dia da semana** no bloco "Quando" | "20/08 · 9h às 12h · quinta-feira" ajuda quem lê sem calendário na mão |
+| 6 | **Layout em flexbox**, no lugar do posicionamento absoluto | 🐛 O v1 calculava cada posição a partir de `titulo_lines`, `sobre_lines` e `coord_lines` **declarados à mão**. Se o texto quebrasse em uma linha a mais que o declarado, o bloco seguinte era sobreposto — e cada mudança de texto exigia recontar linha por linha. Em fluxo, o problema deixa de existir |
+
+🐛 **Bug de CSS encontrado e corrigido:** o seletor do modo `contain` era `.hero.is-contain img`,
+que atinge **toda** `img` dentro da faixa — inclusive o logo da barra de marca, que herdou um
+`padding-top` de 154px e foi empurrado para fora. Pior: com duas classes, ele vencia
+`.brandbar img` por especificidade. Resolvido com filho direto (`.hero > img`).
+
+### 🔁 Rodada de ajuste — 10/08
+
+- **Logo do Concefor maior:** 74 → **104px** de altura, com a barra de marca subindo de 138 para
+  **168px** para acomodá-la. Era a queixa principal: na barra estreita a marca ficava tímida.
+- **Rio Doce Escolar e Educimat maiores.** Os dois são logos em modo `contain`, então ficam
+  limitados pela **altura** disponível — mexer só no padding lateral não resolveria. Ganharam
+  faixa mais alta (**484px** e **452px**, contra os 440 do padrão) **e** padding bem menor
+  (lateral de 96 → **28px**). O ganho maior veio do padding.
+- ⚠️ **As duas alturas não são iguais de propósito.** Quanto mais alta a faixa, menos sobra para o
+  texto: numa primeira tentativa com 536px nos dois, o bloco "Quando" encostou no rodapé — pior no
+  Educimat, cujo título ocupa 3 linhas contra 2 do Ciência delas. Os valores estão calibrados até
+  o respiro voltar.
+- **Pros@tec ficou no padrão**, embora também seja `contain`: o arquivo enviado já traz uma caixa
+  clara própria em volta da marca, e ampliar só aumentaria essa caixa.
+
+### 🔁 Segunda rodada — 10/08
+
+**Educimat maior, sem tocar no layout.** O ajuste anterior tinha esbarrado num limite: a faixa não
+podia crescer mais sem espremer o texto. A causa real estava no arquivo — o PNG enviado tem
+400×300, mas **o logo ocupa só 45% da altura**; o resto é margem em branco. Como o modo `contain`
+encaixa a *imagem inteira* na caixa, a margem entrava junto e o logo saía pequeno por mais que a
+faixa crescesse. Recortando a margem (`assets/06-educimat-trim.png`, gerado do próprio arquivo do
+v4), **a altura útil dobrou** e o logo cresceu na mesma caixa. O v4 não foi alterado.
+
+**Capa do carrossel criada.** Slide 1 para um carrossel cujos slides 2 a 7 são os cards.
+- Arquivo: `2026-08-10_pre_capa-carrossel-eventos-paralelos.png`
+- Fonte: [`_build_v1-com-imagem/build_capa.py`](_build_v1-com-imagem/build_capa.py) +
+  `render_capa.py` — ⚠️ **arquivos separados de propósito.** Os cards estão aprovados: a capa
+  apenas importa o CSS e os dados de `build_cards.py`. **Rodar a capa não regenera card nenhum.**
+- Traz o título em Teko, a chamada, o badge de data, a **grade dos 6 numerada na ordem do
+  carrossel** e o mesmo rodapé e selo dos cards.
+- Duas colisões resolvidas no caminho, ambas causadas pelo selo em losango — que, girado 45°, tem
+  o vértice superior em `y=1075` e se abre para os lados dali para baixo: o CTA "arraste" passava
+  por baixo dele, e a miniatura 06 tinha o canto coberto. O CTA foi para a linha da data (e
+  encurtou, porque a versão longa cobria o badge) e a grade fecha antes de `y=1075`.
+
+### 👀 Três pontos para a sua avaliação
+
+1. **Entre Dois Mundos:** a barra de marca cobre os títulos das capas Sofia Carter, que ficam no
+   topo da imagem. Um `object-position` mais baixo resolveria — mas o dado vem do v4, que está
+   sendo editado na outra sessão, então não toquei.
+2. **Pros@tec:** o PNG enviado tem uma caixa clara própria, que forma um retângulo dentro do fundo
+   escuro declarado (`#0b2d54`). Um fundo claro nessa faixa deixaria mais limpo.
+3. **Contraste de bloco:** nos dois cards de fundo claro (Ciência delas e Educimat) a barra escura
+   cria um contraste forte no topo. Funciona, mas é escolha estética — dá para clarear a barra e
+   usar uma versão colorida do logo, se preferir.
 
 ## Por que é um card por evento, e não só o carrossel
 
@@ -246,7 +371,8 @@ Qualquer ajuste no card ou no texto, é só falar.
 
 | # | Pendência | Quem decide |
 |---|---|---|
-| 1 | ✅ **Quem produz as 6 artes** — resolvido em 07/08: Elton, via pipeline de código (ver acima). Falta revisar as abreviações de coordenação antes de enviar. | Elton |
+| 1 | ✅ **Quem produz as artes** — Elton, via pipeline de código. ✅ **Coordenações e textos revisados em 10/08.** Falta **regerar os PNGs** e **enviar**. | Elton |
+| 6 | ⚠️ **A arte manda para o site do Concefor, mas a inscrição de cada evento é por formulário próprio.** O rodapé leva a `concefor.cefor.ifes.edu.br`, enquanto o link real é um Google Forms que vai só no texto que acompanha. **O uso previsto é exatamente o que expõe isso:** a coordenação joga a peça num grupo de WhatsApp e ela é repassada adiante **sem o texto**. Quem receber assim vai ao site e não encontra o formulário daquele evento. 👉 Duas saídas: **QR code do formulário na arte** (é a pendência 4) ou aceitar o risco, contando que quem se interessar chegue à inscrição do Concefor de todo modo. Nota: para o **Educimat** não há divergência, porque ele não tem formulário próprio e o site é o destino certo. | Elton / quem produzir |
 | 2 | ❓ **Participar de um evento paralelo exige inscrição no Concefor**, além do formulário próprio? Os textos acima levam só ao formulário do evento. Se exigir, é preciso dizer nos seis. | Coordenação |
 | 3 | ❓ **Educimat sem formulário.** Confirmar se terá inscrição própria ou entrada livre. | Educimat |
 | 4 | ❓ **QR code do formulário na arte**, sim ou não. | quem produzir |
@@ -256,8 +382,10 @@ Qualquer ajuste no card ou no texto, é só falar.
 - [x] Definido quem produz as artes — Elton, 07/08
 - [x] Template aprovado (um dos seis serve de piloto) — template único gerado por código, ver acima
 - [x] Os 6 cards exportados em 1080 × 1350
-- [ ] Conferência de nome, horário, local e coordenação, evento por evento — **3 abreviações a confirmar** (ver acima)
-- [ ] Links de inscrição testados um a um
+- [x] **Coordenações completas, sem abreviação** — entraram resolvidas no v4 *(10/08)*
+- [x] **Textos revisados** — 2 trechos retirados e os 6 reescritos com informação da fonte *(10/08)*
+- [ ] 🔴 **Regerar os PNGs com os textos novos** *(pendente: v5 em edição)*
+- [ ] **Links de inscrição testados um a um** — 5 formulários + o caso do Educimat, que não tem
 - [x] Selo 20 anos e assinaturas aplicados
-- [ ] Kits enviados às 6 coordenações (card + texto)
+- [ ] 🔴 **Kits enviados às 6 coordenações (card + texto)** — é o que falta, e os eventos são 20/08
 - [x] Registrado no board de produção

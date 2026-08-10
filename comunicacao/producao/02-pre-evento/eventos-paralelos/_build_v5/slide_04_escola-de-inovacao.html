@@ -1,0 +1,115 @@
+<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><style>
+@font-face{font-family:'Teko';src:url('assets/fonts/Teko.ttf') format('truetype');font-weight:300 700;font-style:normal;}
+@font-face{font-family:'Montserrat';src:url('assets/fonts/Montserrat.ttf') format('truetype');font-weight:100 900;font-style:normal;}
+:root{
+  --navy:#061d45;
+  --navy-deep:#041634;
+  --turquoise:#00dcc9;
+  --blue:#1f4aa1;
+  --lime:#d7df23;
+  --gradient:linear-gradient(135deg,#00dcc9 0%,#0daebb 27%,#1784b5 55%,#1f4aa1 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#1f4aa1;}
+body{font-family:'Montserrat',sans-serif;-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision;}
+.stage{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--gradient);color:white;isolation:isolate;}
+.stage:before{content:'';position:absolute;z-index:-1;inset:0;background:
+  radial-gradient(circle at 86% 18%,rgba(255,255,255,.16),transparent 23%),
+  radial-gradient(circle at 5% 78%,rgba(0,220,201,.22),transparent 29%);}
+.stage:after{content:'';position:absolute;z-index:-1;right:-170px;bottom:170px;width:470px;height:470px;border:2px solid rgba(255,255,255,.12);transform:rotate(45deg);}
+
+/* Cabeçalho: a própria faixa já é o gradiente institucional. */
+.masthead{position:absolute;inset:0 0 auto 0;height:150px;z-index:20;}
+.masthead:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,29,69,.78) 0 46%,rgba(6,29,69,.28) 62%,transparent 76%);}
+.masthead:after{content:'';position:absolute;left:58px;bottom:7px;width:690px;height:2px;background:rgba(255,255,255,.68);}
+.concefor-horizontal{position:absolute;z-index:2;left:56px;top:22px;width:438px;height:108px;object-fit:contain;object-position:left center;}
+.date-lockup{position:absolute;z-index:2;right:58px;top:31px;display:flex;align-items:center;gap:17px;color:white;}
+.date-lockup .day{font-family:'Teko',sans-serif;font-weight:700;font-size:82px;line-height:.8;}
+.date-lockup .month{font-size:30px;line-height:1.02;font-weight:900;letter-spacing:.08em;text-transform:uppercase;}
+.brand-pixels{position:absolute;z-index:2;right:58px;bottom:11px;display:flex;gap:7px;}
+.brand-pixels i{display:block;width:10px;height:10px;transform:rotate(45deg);background:white;}
+.brand-pixels i:nth-child(1){background:#d7df23}.brand-pixels i:nth-child(2){background:#d6194d}.brand-pixels i:nth-child(3){background:#76b82a}
+
+/* Referência enviada pela coordenação, preservada sem regeneração. */
+.visual{position:absolute;left:56px;right:56px;top:158px;height:350px;overflow:hidden;background:var(--visual-bg);border:3px solid rgba(255,255,255,.92);box-shadow:0 18px 46px rgba(5,28,68,.24);}
+.visual img{width:100%;height:100%;display:block;object-fit:var(--visual-fit);object-position:center;}
+.visual.contain{padding:24px 72px;background:linear-gradient(135deg,#00dcc9,#1f4aa1);}
+.visual.contain img{padding:0;object-fit:contain;background:white;box-shadow:0 14px 34px rgba(6,29,69,.24);}
+.visual:after{content:'';position:absolute;inset:auto 0 0;height:82px;background:linear-gradient(180deg,transparent,rgba(4,22,52,.42));pointer-events:none;}
+.event-marker{position:absolute;left:22px;bottom:20px;z-index:3;background:rgba(4,22,52,.93);border-left:7px solid var(--turquoise);padding:13px 20px 12px;color:white;font-size:30px;font-weight:900;line-height:1;letter-spacing:.07em;text-transform:uppercase;}
+.event-marker strong{color:var(--turquoise);margin-left:12px;}
+.seal{position:absolute;right:68px;top:438px;z-index:25;width:150px;height:150px;background:white;transform:rotate(45deg);display:flex;align-items:center;justify-content:center;box-shadow:0 15px 42px rgba(4,22,52,.26);}
+.seal img{width:108px;height:auto;transform:rotate(-45deg);}
+
+.content{position:absolute;left:0;right:0;top:508px;bottom:104px;padding:38px 66px 18px;}
+.content:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,29,69,.52) 0%,rgba(6,29,69,.30) 55%,rgba(6,29,69,.05) 100%);}
+.content>*{position:relative;z-index:1;}
+.type{display:inline-flex;align-items:center;min-height:48px;padding:8px 18px 6px;background:var(--navy);color:var(--turquoise);font-size:32px;font-weight:900;line-height:1;letter-spacing:.055em;text-transform:uppercase;}
+.title{max-width:920px;margin-top:12px;color:white;font-family:'Teko',sans-serif;font-weight:700;font-size:var(--title-size);line-height:.86;letter-spacing:-.012em;text-transform:uppercase;text-shadow:0 3px 18px rgba(4,22,52,.22);}
+.summary{max-width:920px;margin-top:12px;color:rgba(255,255,255,.98);font-size:40px;line-height:1.16;font-weight:620;letter-spacing:-.014em;}
+.accent-rule{width:126px;height:3px;margin-top:13px;background:rgba(255,255,255,.82);}
+.info-list{display:grid;gap:8px;margin-top:13px;}
+.info-row{display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:start;padding:10px 17px 11px;background:rgba(4,22,52,.31);border-left:5px solid rgba(255,255,255,.88);}
+.info-label{padding-top:2px;color:var(--turquoise);font-size:30px;line-height:1.1;font-weight:900;letter-spacing:.015em;text-transform:uppercase;white-space:nowrap;}
+.info-value{color:white;font-size:36px;line-height:1.18;font-weight:780;letter-spacing:-.016em;}
+.limited{display:inline-block;margin-top:9px;padding:7px 12px 6px;background:white;color:var(--blue);font-size:30px;line-height:1;font-weight:950;letter-spacing:.025em;text-transform:uppercase;}
+
+.footer{position:absolute;left:0;right:0;bottom:0;height:104px;background:rgba(4,22,52,.76);border-top:2px solid rgba(255,255,255,.42);display:flex;align-items:center;padding:0 66px;color:white;z-index:30;}
+.footer .url-label{display:none;}
+.footer .url{font-size:40px;line-height:1;font-weight:900;letter-spacing:-.03em;}
+.footer .slide-number{margin-left:auto;font-family:'Teko',sans-serif;font-size:48px;font-weight:600;letter-spacing:.035em;color:white;}
+
+/* Capa: o gradiente é protagonista, conforme a referência enviada. */
+.cover:before{background:
+  radial-gradient(circle at 84% 17%,rgba(255,255,255,.22),transparent 25%),
+  radial-gradient(circle at 13% 86%,rgba(255,255,255,.08),transparent 29%);}
+.cover-logo-field{position:absolute;left:0;top:0;width:640px;height:183px;background:linear-gradient(90deg,rgba(6,29,69,.72),rgba(6,29,69,.22) 74%,transparent);}
+.cover-logo{position:absolute;z-index:2;left:62px;top:41px;width:470px;height:118px;object-fit:contain;object-position:left center;}
+.cover-kicker{position:absolute;right:62px;top:68px;font-size:30px;font-weight:900;letter-spacing:.075em;text-transform:uppercase;color:white;}
+.cover-title{position:absolute;left:62px;top:193px;width:950px;font-family:'Teko',sans-serif;font-size:132px;font-weight:700;line-height:.79;letter-spacing:-.012em;text-transform:uppercase;color:white;text-shadow:0 4px 24px rgba(4,22,52,.22);}
+.cover-title span{display:table;margin-top:7px;padding:5px 22px 1px 17px;background:rgba(4,22,52,.74);color:var(--turquoise);}
+.cover-subtitle{position:absolute;left:67px;top:432px;width:650px;font-size:38px;line-height:1.2;font-weight:680;color:white;}
+.cover-date{position:absolute;right:64px;top:426px;width:250px;border-left:5px solid white;padding:3px 0 2px 18px;font-size:32px;line-height:1.25;font-weight:900;letter-spacing:.045em;text-transform:uppercase;}
+.cover-grid{position:absolute;left:62px;right:62px;top:580px;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:231px;gap:16px;}
+.cover-tile{position:relative;overflow:hidden;background:var(--tile-bg);border:3px solid rgba(255,255,255,.92);box-shadow:0 12px 32px rgba(4,22,52,.15);}
+.cover-tile img{display:block;width:100%;height:100%;object-fit:var(--tile-fit);object-position:center;}
+.cover-tile.contain img{padding:21px;}
+.cover-tile:after{content:'';position:absolute;inset:auto 0 0;height:56px;background:linear-gradient(180deg,transparent,rgba(4,22,52,.68));}
+.cover-tile b{position:absolute;left:13px;bottom:11px;z-index:2;width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:var(--turquoise);color:var(--navy);font-size:30px;line-height:1;font-weight:950;}
+.cover-footer{position:absolute;left:62px;right:62px;bottom:42px;height:76px;border-top:2px solid rgba(255,255,255,.7);display:flex;align-items:flex-end;color:white;}
+.cover-footer .site{font-size:40px;font-weight:900;letter-spacing:-.03em;}
+.cover-footer .swipe{margin-left:auto;font-size:30px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;}
+</style></head><body><main class="stage" style="--visual-bg:#d9e6e2;--visual-fit:cover;--title-size:64px">
+      
+      <header class="masthead">
+        <img class="concefor-horizontal" src="assets/logo-concefor-horizontal-branco.png" alt="VIII Concefor">
+        <div class="date-lockup"><div class="day">20</div><div class="month">AGO<br>2026</div></div>
+        <div class="brand-pixels"><i></i><i></i><i></i></div>
+      </header>
+      <section class="visual ">
+        <img src="assets/events/03-escola-de-inovacao.png" alt="Imagem enviada para o evento Escola de Inovação: 6º ano de popularização de novas tecnologias digitais">
+        <div class="event-marker">Evento paralelo <strong>03 / 06</strong></div>
+      </section>
+      <div class="seal"><img src="assets/selo-20-anos-colorido.png" alt="20 anos Cefor"></div>
+      <section class="content">
+        <div class="type">Cultura maker e robótica</div>
+        <h1 class="title">Escola de Inovação: 6º ano de popularização de novas tecnologias digitais</h1>
+        <p class="summary">Impressão 3D, corte a laser, robótica e realidade virtual: seis anos da Escola de Inovação, com visita às estações onde tudo acontece.</p>
+        <div class="accent-rule"></div>
+        <div class="info-list">
+          <div class="info-row">
+            <div class="info-label">Quando</div>
+            <div class="info-value">20/08 · 9h às 12h e 13h30 às 16h</div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">Coordenação</div>
+            <div class="info-value">Patrícia Piana de Andrade e Daniel Moreira dos Santos (CCEC-EI / SEME / PMV)</div>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer">
+        <div><div class="url-label">Programação e inscrições</div><div class="url">concefor.cefor.ifes.edu.br</div></div>
+        <div class="slide-number">04 / 07</div>
+      </footer>
+    </main></body></html>

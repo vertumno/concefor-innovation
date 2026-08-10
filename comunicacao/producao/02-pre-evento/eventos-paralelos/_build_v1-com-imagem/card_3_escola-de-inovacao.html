@@ -1,0 +1,117 @@
+<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><style>
+@font-face{font-family:'Teko';src:url('../_build/assets/fonts/Teko.ttf') format('truetype');font-weight:300 700;}
+@font-face{font-family:'Montserrat';src:url('../_build/assets/fonts/Montserrat.ttf') format('truetype');font-weight:100 900;}
+
+:root{--turquesa:#00DCC9;--azul:#1F4AA1;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#000;}
+
+.stage{position:relative;width:1080px;height:1350px;overflow:hidden;
+  font-family:'Montserrat',sans-serif;-webkit-font-smoothing:antialiased;
+  text-rendering:geometricPrecision;
+  background:linear-gradient(135deg,var(--turquesa) 0%,var(--azul) 68%);}
+
+/* textura organica sutil, herdada do v1 */
+.blob{position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none;}
+
+/* ---------- faixa de imagem ---------- */
+/* a altura vem de --hero-h (varia por evento), nao de um valor fixo */
+.hero{position:absolute;top:0;left:0;width:1080px;height:var(--hero-h);
+  overflow:hidden;background:var(--hero-bg);}
+/* ">" e obrigatorio: a logo da barra de marca tambem e descendente de .hero, e
+   um seletor solto (.hero img) a atingia — o padding do modo contain vazava
+   para a logo e a empurrava fora da barra, alem de vencer .brandbar img por
+   especificidade (2 classes contra 1). */
+.hero > img{width:100%;height:100%;object-fit:var(--hero-fit);object-position:center;
+  display:block;}
+/* contain: a imagem nao preenche a faixa, entao respira para dentro — e desce
+   o que a barra de marca ocupa, para nao ficar com o topo cortado */
+.hero.is-contain > img{padding:var(--pad-t) var(--pad-x) var(--pad-b);}
+.hero-rule{position:absolute;top:var(--hero-h);left:0;width:1080px;height:6px;
+  background:var(--turquesa);}
+
+.brandbar{position:absolute;top:0;left:0;width:1080px;height:168px;
+  background:rgba(5,22,47,.88);display:flex;align-items:center;
+  padding-left:96px;}
+.brandbar img{display:block;height:104px;width:auto;}
+
+/* ---------- corpo ---------- */
+.body{position:absolute;left:96px;width:888px;
+  top:calc(var(--hero-h) + 52px);
+  height:calc(1102px - var(--hero-h));
+  display:flex;flex-direction:column;align-items:flex-start;}
+
+.tags{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+.tag{padding:15px 34px;border-radius:999px;background:var(--turquesa);
+  font-weight:800;font-size:27px;color:var(--azul);
+  text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;}
+.tipo{font-weight:700;font-size:24px;color:rgba(255,255,255,.9);
+  text-transform:uppercase;letter-spacing:.1em;white-space:nowrap;}
+
+.titulo{margin-top:26px;color:#fff;font-family:'Teko',sans-serif;font-weight:700;
+  text-transform:uppercase;letter-spacing:.002em;
+  font-size:var(--titulo-size);line-height:.94;}
+
+.sobre{margin-top:22px;width:846px;color:rgba(255,255,255,.94);
+  font-weight:500;font-size:30px;line-height:1.36;}
+
+.rule-acc{margin-top:30px;width:110px;height:4px;background:var(--turquesa);
+  flex:none;}
+
+.info{margin-top:22px;width:846px;}
+.info .lbl{font-weight:700;font-size:16px;letter-spacing:.14em;
+  text-transform:uppercase;color:rgba(0,220,201,.95);margin-bottom:5px;}
+.info .val{font-weight:600;font-size:31px;line-height:1.22;color:#fff;}
+
+.vagas{margin-top:14px;display:inline-block;padding:9px 20px;border-radius:999px;
+  background:#fff;color:var(--azul);font-weight:800;font-size:18px;
+  letter-spacing:.05em;text-transform:uppercase;}
+
+/* ---------- rodape ---------- */
+.footer-label{position:absolute;left:96px;bottom:96px;font-weight:700;font-size:17px;
+  letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.78);}
+.footer-url{position:absolute;left:96px;bottom:54px;font-weight:800;font-size:34px;
+  color:#fff;}
+
+.selo-wrap{position:absolute;right:56px;bottom:34px;width:200px;height:200px;
+  background:#fff;border-radius:20px;transform:rotate(45deg);
+  box-shadow:0 12px 30px rgba(16,42,92,.28);
+  display:flex;align-items:center;justify-content:center;}
+.selo-wrap img{width:150px;height:auto;transform:rotate(-45deg);display:block;}
+</style></head><body><div class="stage" style="--titulo-size:57px;--hero-h:440px;--pad-t:184px;--pad-x:96px;--pad-b:26px">
+  <div class="blob" style="width:560px;height:560px;left:-220px;top:820px;
+    background:radial-gradient(circle,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 68%);"></div>
+
+  <div class="hero "
+       style="--hero-bg:#d9e6e2;--hero-fit:cover">
+    <img src="../_build_v4/assets/events/03-escola-de-inovacao.png"
+         alt="Imagem de divulgacao enviada para o evento Escola de Inovação: 6º ano de popularização de novas tecnologias digitais">
+    <div class="brandbar">
+      <img src="../_build_v4/assets/logo-concefor-horizontal-branco.png" alt="VIII Concefor">
+    </div>
+  </div>
+  <div class="hero-rule"></div>
+
+  <div class="body">
+    <div class="tags">
+      <span class="tag">Evento paralelo</span>
+      <span class="tipo">Cultura maker e robótica</span>
+    </div>
+    <div class="titulo">Escola de Inovação: 6º ano de popularização de novas tecnologias digitais</div>
+    <div class="sobre">Impressão 3D, corte a laser, robótica e realidade virtual: seis anos da Escola de Inovação, com visita às estações onde tudo acontece.</div>
+    <div class="rule-acc"></div>
+    <div class="info">
+      <div class="lbl">Coordenação</div>
+      <div class="val">Patrícia Piana de Andrade e Daniel Moreira dos Santos (CCEC-EI / SEME / PMV)</div>
+      
+    </div>
+    <div class="info">
+      <div class="lbl">Quando</div>
+      <div class="val">20/08 · 9h às 12h e 13h30 às 16h &middot; quinta-feira</div>
+    </div>
+  </div>
+
+  <div class="footer-label">Inscreva-se em</div>
+  <div class="footer-url">concefor.cefor.ifes.edu.br</div>
+  <div class="selo-wrap"><img src="../_build/assets/selo-20-anos-colorido.png" alt="20 anos do Cefor"></div>
+</div></body></html>

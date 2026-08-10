@@ -1,0 +1,87 @@
+<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#000;}
+:root{--turquesa:#00DCC9;--azul:#1F4AA1;}
+
+@font-face{font-family:'Teko';src:url('../_build/assets/fonts/Teko.ttf') format('truetype');font-weight:300 700;}
+@font-face{font-family:'Montserrat';src:url('../_build/assets/fonts/Montserrat.ttf') format('truetype');font-weight:100 900;}
+
+.stage{position:relative;width:1080px;height:1350px;overflow:hidden;
+  font-family:'Montserrat',sans-serif;-webkit-font-smoothing:antialiased;
+  text-rendering:geometricPrecision;
+  background:linear-gradient(135deg,var(--turquesa) 0%,var(--azul) 68%);}
+
+.blob{position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none;}
+
+/* mesma barra de marca dos cards, para o slide 1 nao destoar dos outros 6 */
+.brandbar{position:absolute;top:0;left:0;width:1080px;height:168px;
+  background:rgba(5,22,47,.88);display:flex;align-items:center;padding-left:96px;}
+.brandbar img{display:block;height:104px;width:auto;}
+.brand-rule{position:absolute;top:168px;left:0;width:1080px;height:6px;
+  background:var(--turquesa);}
+
+.titulo{position:absolute;left:96px;top:232px;width:888px;color:#fff;
+  font-family:'Teko',sans-serif;font-weight:700;font-size:146px;line-height:.85;
+  text-transform:uppercase;letter-spacing:.002em;}
+.titulo b{color:#06213f;font-weight:700;}
+
+.chamada{position:absolute;left:96px;top:512px;width:790px;
+  color:rgba(255,255,255,.95);font-weight:500;font-size:33px;line-height:1.34;}
+
+.data{position:absolute;left:96px;top:626px;padding:15px 34px;border-radius:999px;
+  background:var(--turquesa);color:var(--azul);font-weight:800;font-size:28px;
+  text-transform:uppercase;letter-spacing:.05em;}
+
+/* Grade dos 6, na ordem em que aparecem no carrossel.
+   Altura e topo calibrados para a grade FECHAR ANTES do selo: o losango tem
+   200x200 girado 45 graus, entao seu vertice de cima chega a y=1075 e a partir
+   dali ele se abre para os lados — com a grade terminando em 1140, o canto
+   inferior direito da miniatura 06 ficava coberto. */
+.grade{position:absolute;left:96px;top:716px;width:888px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.mini{position:relative;height:170px;border-radius:14px;overflow:hidden;
+  background:var(--mini-bg);box-shadow:0 8px 22px rgba(6,24,50,.22);}
+.mini > img{width:100%;height:100%;object-fit:var(--mini-fit);object-position:center;
+  display:block;}
+.mini.is-contain > img{padding:22px;}
+.mini b{position:absolute;left:0;bottom:0;min-width:52px;padding:6px 14px 4px;
+  background:rgba(5,22,47,.9);color:#fff;font-family:'Teko',sans-serif;
+  font-weight:700;font-size:34px;line-height:1;letter-spacing:.03em;}
+
+/* na LINHA DA DATA, nao no rodape: o selo em losango tem 200x200 gpirado 45
+   graus, entao seu bounding box invade a faixa de baixo a direita e cortava o
+   fim da frase. Aqui ele fica livre e ainda equilibra o badge da esquerda. */
+.arraste{position:absolute;right:96px;top:638px;font-weight:700;font-size:24px;
+  letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.92);
+  display:flex;align-items:center;gap:12px;}
+.arraste span{font-size:30px;line-height:1;}
+
+.footer-label{position:absolute;left:96px;bottom:96px;font-weight:700;font-size:17px;
+  letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.78);}
+.footer-url{position:absolute;left:96px;bottom:54px;font-weight:800;font-size:34px;color:#fff;}
+
+.selo-wrap{position:absolute;right:56px;bottom:34px;width:200px;height:200px;
+  background:#fff;border-radius:20px;transform:rotate(45deg);
+  box-shadow:0 12px 30px rgba(16,42,92,.28);
+  display:flex;align-items:center;justify-content:center;}
+.selo-wrap img{width:150px;height:auto;transform:rotate(-45deg);display:block;}
+</style></head><body><div class="stage">
+  <div class="blob" style="width:620px;height:620px;left:640px;top:560px;
+    background:radial-gradient(circle,rgba(255,255,255,.09) 0%,rgba(255,255,255,0) 68%);"></div>
+
+  <div class="brandbar">
+    <img src="../_build_v4/assets/logo-concefor-horizontal-branco.png" alt="VIII Concefor">
+  </div>
+  <div class="brand-rule"></div>
+
+  <div class="titulo">Eventos<br>paralelos</div>
+  <div class="chamada">Seis encontros no último dia do VIII Concefor, cada um com inscrição própria.</div>
+  <div class="data">20 de agosto &middot; quinta-feira</div>
+
+  <div class="grade"><div class="mini " style="--mini-bg:#071a35;--mini-fit:cover"><img src="../_build_v4/assets/events/01-ia-alem-do-chat.png" alt="IA além do chat: da célula ao organismo baseado em IA"><b>01</b></div><div class="mini is-contain" style="--mini-bg:#f7f8f3;--mini-fit:contain"><img src="../_build_v4/assets/events/02-ciencia-delas.png" alt="“Ciência delas” no Projeto Rio Doce Escolar"><b>02</b></div><div class="mini " style="--mini-bg:#d9e6e2;--mini-fit:cover"><img src="../_build_v4/assets/events/03-escola-de-inovacao.png" alt="Escola de Inovação: 6º ano de popularização de novas tecnologias digitais"><b>03</b></div><div class="mini " style="--mini-bg:#071a35;--mini-fit:cover"><img src="../_build_v4/assets/events/04-entre-dois-mundos.png" alt="Entre Dois Mundos: uma aventura para aprender IA"><b>04</b></div><div class="mini is-contain" style="--mini-bg:#0b2d54;--mini-fit:contain"><img src="../_build_v4/assets/events/05-workshop-prostec.png" alt="Workshop Pros@tec: Desafios da Educação em Computação e da Informática na Educação"><b>05</b></div><div class="mini is-contain" style="--mini-bg:#f7f8f3;--mini-fit:contain"><img src="assets/06-educimat-trim.png" alt="EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas"><b>06</b></div></div>
+
+  <div class="arraste">Arraste<span>&rsaquo;&rsaquo;</span></div>
+  <div class="footer-label">Inscreva-se em</div>
+  <div class="footer-url">concefor.cefor.ifes.edu.br</div>
+  <div class="selo-wrap"><img src="../_build/assets/selo-20-anos-colorido.png" alt="20 anos do Cefor"></div>
+</div></body></html>

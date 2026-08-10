@@ -1,0 +1,333 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit dos eventos paralelos · VIII Concefor</title>
+<style>
+  :root{
+    --turquesa:#00DCC9; --azul:#1F4AA1; --navy:#05162F;
+    --bg:#f2f5f9; --card:#fff; --linha:#dde4ed;
+    --texto:#1b2733; --suave:#5d6b7a;
+    --wa:#128C7E; --wa-bg:#e8f7ef;
+    --ok:#1a7f37; --ok-bg:#e6f4ea;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--texto);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;line-height:1.5}
+
+  /* ---------- topo ---------- */
+  header{background:linear-gradient(135deg,var(--turquesa) 0%,var(--azul) 68%);color:#fff;
+    padding:30px 20px 34px}
+  .wrap{max-width:780px;margin:0 auto}
+  header .tag{display:inline-block;background:rgba(5,22,47,.28);border:1px solid rgba(255,255,255,.35);
+    padding:5px 13px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.08em;
+    text-transform:uppercase}
+  header h1{margin:14px 0 6px;font-size:29px;line-height:1.15;font-weight:800}
+  header p{margin:0;font-size:15.5px;color:rgba(255,255,255,.94);max-width:620px}
+  header .quando{margin-top:16px;display:inline-block;background:var(--turquesa);color:var(--azul);
+    font-weight:800;font-size:14px;padding:9px 16px;border-radius:999px}
+
+  /* ---------- como usar ---------- */
+  .como{max-width:780px;margin:-18px auto 0;padding:0 16px}
+  .como-in{background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:16px 18px;
+    box-shadow:0 6px 18px rgba(16,42,92,.07)}
+  .como-in h2{margin:0 0 8px;font-size:14px;text-transform:uppercase;letter-spacing:.07em;
+    color:var(--suave)}
+  .como-in ol{margin:0;padding-left:20px;font-size:14.5px;color:var(--suave)}
+  .como-in li{margin-bottom:5px}
+  .como-in b{color:var(--texto)}
+
+  /* ---------- seções ---------- */
+  section{max-width:780px;margin:30px auto 0;padding:0 16px}
+  .sec-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+  .sec-head h2{margin:0;font-size:21px;font-weight:800}
+  .sec-head span{font-size:13.5px;color:var(--suave)}
+  .sec-sub{margin:0 0 16px;font-size:14.5px;color:var(--suave)}
+
+  /* ---------- bloco ---------- */
+  .bloco{background:var(--card);border:1px solid var(--linha);border-radius:14px;overflow:hidden;
+    margin-bottom:18px;box-shadow:0 3px 10px rgba(16,42,92,.05)}
+  .bloco-head{display:flex;gap:14px;padding:14px;align-items:flex-start;border-bottom:1px solid #eef2f7}
+  .num{flex:0 0 auto;width:30px;height:30px;border-radius:8px;background:var(--navy);color:#fff;
+    font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+  .bloco-head .t{flex:1 1 auto;min-width:0}
+  .bloco-head h3{margin:0 0 3px;font-size:16.5px;line-height:1.25;font-weight:750}
+  .meta{font-size:13px;color:var(--suave)}
+  .meta b{color:var(--texto);font-weight:650}
+  .thumb{flex:0 0 auto;width:74px;border-radius:8px;border:1px solid var(--linha);display:block}
+
+  /* ---------- texto copiável ---------- */
+  .txt{margin:0;padding:14px 16px;background:#fbfcfe;border-top:1px solid #eef2f7;
+    font-family:var(--sans);font-size:14px;line-height:1.55;white-space:pre-wrap;word-wrap:break-word;
+    color:#26333f;max-height:230px;overflow:auto}
+  .txt.aberto{max-height:none}
+  .ver-mais{display:block;width:100%;background:#fbfcfe;border:0;border-top:1px dashed var(--linha);
+    padding:8px;font-family:inherit;font-size:12.5px;font-weight:700;color:var(--azul);cursor:pointer}
+
+  /* ---------- ações ---------- */
+  .acoes{display:flex;gap:8px;flex-wrap:wrap;padding:12px 14px;border-top:1px solid #eef2f7;
+    background:#fff}
+  .btn{font-family:inherit;font-size:13.5px;font-weight:700;border-radius:9px;padding:9px 14px;
+    border:1px solid var(--linha);background:#fff;color:var(--texto);cursor:pointer;
+    display:inline-flex;align-items:center;gap:7px;text-decoration:none;line-height:1.2}
+  .btn:hover{background:#f4f7fb}
+  .btn-copiar{background:var(--wa-bg);border-color:#bfe3d0;color:var(--wa)}
+  .btn-copiar:hover{background:#d8f0e4}
+  .btn-copiar.feito{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+  .btn-baixar{color:var(--azul);border-color:#c9d9f2;background:#eef4ff}
+  .btn-baixar:hover{background:#e0ebff}
+  .btn-form{color:#7a4a00;border-color:#f0dcb8;background:#fdf5e6}
+  .btn-form:hover{background:#fbecd0}
+  .btn-forte{background:var(--azul);border-color:var(--azul);color:#fff}
+  .btn-forte:hover{background:#173b82}
+
+  .aviso{margin:0;padding:11px 14px;background:#fff8e6;border-top:1px solid #f3e2b8;
+    font-size:13.5px;color:#7a5b00}
+
+  /* ---------- grade de download ---------- */
+  .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:10px;
+    padding:14px}
+  .grade a{display:block;text-decoration:none;color:var(--suave);font-size:11.5px;text-align:center}
+  .grade img{width:100%;border-radius:8px;border:1px solid var(--linha);display:block;margin-bottom:5px}
+  .grade a:hover{color:var(--azul)}
+
+  footer{max-width:780px;margin:34px auto;padding:0 16px 40px;color:var(--suave);font-size:13px}
+  footer a{color:var(--azul)}
+
+  .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(18px);
+    background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;
+    font-weight:600;opacity:0;pointer-events:none;transition:.22s;z-index:50}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  @media (max-width:520px){
+    header h1{font-size:24px}
+    .thumb{width:58px}
+    .btn{font-size:13px;padding:8px 12px}
+  }
+</style>
+
+<header>
+  <div class="wrap">
+    <span class="tag">VIII Concefor · 20 anos do Cefor</span>
+    <h1>Kit dos eventos paralelos</h1>
+    <p>Os cards e os textos prontos dos seis encontros do último dia do congresso.
+       Copie o texto, baixe o card e divulgue na sua rede.</p>
+    <div class="quando">20 de agosto de 2026 · quinta-feira</div>
+  </div>
+</header>
+
+<div class="como">
+  <div class="como-in">
+    <h2>Como usar</h2>
+    <ol>
+      <li><b>Para o WhatsApp:</b> escolha o evento, toque em <b>Copiar texto</b>, baixe o card e
+          envie os dois juntos.</li>
+      <li><b>Para o Instagram:</b> use o bloco do carrossel. São 7 imagens, na ordem, com uma
+          legenda só.</li>
+      <li>O texto já vem com o <b>link de inscrição do evento</b> e o <b>link do Concefor</b>.
+          Pode adaptar do jeito que preferir.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- ============ CARROSSEL ============ -->
+<section>
+  <div class="sec-head">
+    <h2>Instagram</h2><span>carrossel de 7 imagens, uma legenda</span>
+  </div>
+  <p class="sec-sub">Publique na ordem: capa, depois os seis eventos. A legenda manda para a página
+     que reúne os seis formulários, porque link na legenda do Instagram não é clicável.</p>
+
+  <div class="bloco">
+    <div class="bloco-head">
+      <div class="num">IG</div>
+      <div class="t">
+        <h3>Legenda do carrossel</h3>
+        <div class="meta">7 imagens · capa + 6 eventos</div>
+      </div>
+      <img class="thumb" src="../producao/02-pre-evento/eventos-paralelos/cards/proposta-v1-com-imagem/2026-08-10_pre_capa-carrossel-eventos-paralelos.png" alt="Capa do carrossel">
+    </div>
+    <pre class="txt" id="t-ig">Seis encontros acontecem ao mesmo tempo no dia 20 de agosto, o último dia do VIII Concefor. Cada um tem inscrição própria, e dá para escolher pelo que chega mais perto do seu trabalho.
+
+01 IA além do chat. Oficina prática: você monta um espaço de trabalho que guarda o seu contexto e produz com você. Abrimos com o caso de um professor que levava uma semana para transformar aulas antigas e passou a levar meia hora. São 20 vagas.
+
+02 "Ciência delas" no Projeto Rio Doce Escolar. Gestoras, pesquisadoras, professoras e agentes comunitárias da bacia do Rio Doce contam a ciência que fazem na Rede de Educadores Ambientais.
+
+03 Escola de Inovação. Seis anos levando impressão 3D, corte a laser, robótica e realidade virtual para a educação de Vitória, com visita às estações onde tudo acontece.
+
+04 Entre Dois Mundos. Alfabetização em Inteligência Artificial na educação básica, com a coleção de livros-jogo Sofia Carter e abordagem STEAM.
+
+05 Workshop Pros@tec. Pesquisadores apresentam respostas aos desafios da Educação em Computação apontados pela SBC, em rodas de conversa nos dois turnos.
+
+06 Educimat. Os 15 anos do mestrado e doutorado profissional em Educação em Ciências e Matemática do Ifes, comemorados dentro do Concefor.
+
+Arraste para ver o horário, o local e a coordenação de cada encontro.
+
+Os seis formulários estão reunidos em concefor.cefor.ifes.edu.br/eventos-paralelos
+Inscrição no Concefor até 15/08, o principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância: concefor.cefor.ifes.edu.br/inscricoes
+
+#Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD</pre>
+    <button class="ver-mais" data-alvo="t-ig">Ver o texto completo</button>
+    <div class="acoes">
+      <button class="btn btn-copiar" data-copia="t-ig">Copiar legenda</button>
+      <a class="btn btn-forte" download href="../producao/02-pre-evento/eventos-paralelos/cards/proposta-v1-com-imagem/2026-08-10_eventos-paralelos_carrossel-completo.zip">Baixar as 7 imagens (zip)</a>
+    </div>
+    <div class="grade" id="grade-ig"></div>
+  </div>
+</section>
+
+<!-- ============ WHATSAPP ============ -->
+<section>
+  <div class="sec-head">
+    <h2>WhatsApp</h2><span>um card e um texto por evento</span>
+  </div>
+  <p class="sec-sub">Cada texto já traz o formulário do próprio encontro e o link de inscrição no
+     Concefor.</p>
+  <div id="lista"></div>
+</section>
+
+<footer>
+  <p><b>Dúvidas ou ajustes</b> no card e no texto: fale com a equipe de comunicação da CGTE,
+     <a href="mailto:cgte.cefor@ifes.edu.br">cgte.cefor@ifes.edu.br</a>.</p>
+  <p>Artes e textos do VIII Concefor · Coordenadoria Geral de Tecnologias Educacionais, Cefor/Ifes.
+     As inscrições no congresso vão até 15 de agosto de 2026.</p>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const ART = "../producao/02-pre-evento/eventos-paralelos/cards/proposta-v1-com-imagem/";
+const CONCEFOR = "https://concefor.cefor.ifes.edu.br/inscricoes/";
+const FECHO = "*Inscrição no Concefor* (até 15/08), o principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância:\n" + CONCEFOR;
+
+const EVENTOS = [
+  { slug:"ia-alem-do-chat", n:"01",
+    titulo:"IA além do chat: da célula ao organismo baseado em IA",
+    tipo:"Oficina prática", hora:"9h às 12h e 13h30 às 16h", local:"Laboratório de Informática",
+    vagas:"20 pessoas",
+    form:"https://docs.google.com/forms/d/e/1FAIpQLScT0PBfPLGfWC3Dqn5DoLLr7z0VQvY1JG28dU4cgfiAY4151w/viewform",
+    rotuloForm:"Inscrição na oficina",
+    corpo:"🤖 *IA além do chat: da célula ao organismo baseado em IA*\nOficina prática\n\nUm professor levava uma semana para transformar aulas antigas em aulas interativas. Passou a levar meia hora. Nesta oficina você monta um espaço de trabalho que guarda o seu contexto, o seu jeito e o seu processo, e sai com ele pronto para usar.\n\n📅 20/08 (quinta), 9h às 12h e 13h30 às 16h\n📍 Laboratório de Informática, Cefor/Ifes, Vitória\n👥 *Vagas limitadas: 20 pessoas*" },
+
+  { slug:"ciencia-delas", n:"02",
+    titulo:"“Ciência delas” no Projeto Rio Doce Escolar",
+    tipo:"Mesa-redonda", hora:"9h às 12h", local:"Auditório",
+    form:"https://docs.google.com/forms/d/e/1FAIpQLSe74_bV7qvN0foFezBWmmeLT9J6N9Fdxh1iIUcfSrKP78eIrw/viewform",
+    rotuloForm:"Inscrição na mesa-redonda",
+    corpo:"🔬 *\"Ciência delas\" no contexto do Projeto Rio Doce Escolar*\nMesa-redonda\n\nGestoras, pesquisadoras, professoras e agentes comunitárias da bacia do Rio Doce contam a ciência que fazem na Rede de Educadores Ambientais. O encontro dialoga com o tema da Semana Nacional de Ciência e Tecnologia.\n\n📅 20/08 (quinta), 9h às 12h\n📍 Auditório do Cefor/Ifes, Vitória" },
+
+  { slug:"escola-de-inovacao", n:"03",
+    titulo:"Escola de Inovação: 6º ano de popularização de novas tecnologias digitais",
+    tipo:"Cultura maker e robótica", hora:"9h às 12h e 13h30 às 16h", local:"Sala 2",
+    form:"https://docs.google.com/forms/d/e/1FAIpQLSeR3Qr9AMh79SbCtmvDA7UgsWRsvAQx2eevJlUtgm9sSVLYlg/viewform",
+    rotuloForm:"Inscrição no evento",
+    corpo:"🛠️ *Escola de Inovação: 6º ano de popularização de novas tecnologias digitais*\n\nImpressão 3D, corte a laser, robótica e realidade virtual: seis anos levando tecnologia digital para a educação de Vitória. A programação inclui visita às estações onde tudo acontece.\n\n📅 20/08 (quinta), 9h às 12h e 13h30 às 16h\n📍 Sala 2, Cefor/Ifes, Vitória" },
+
+  { slug:"entre-dois-mundos", n:"04",
+    titulo:"Entre Dois Mundos: uma aventura para aprender IA",
+    tipo:"Oficina", hora:"13h30 às 16h", local:"Sala 4",
+    form:"https://docs.google.com/forms/d/e/1FAIpQLSdlGMQs3RPPoERWbk-N-MiiXO3gM8nrhoORqhlgObfSEHhb5g/viewform",
+    rotuloForm:"Inscrição na oficina",
+    corpo:"📚 *Entre Dois Mundos: uma aventura para aprender IA*\nOficina\n\nUma jornada em sete etapas com a coleção de livros-jogo Sofia Carter, para levar a alfabetização em Inteligência Artificial à sua sala de aula. A oficina apresenta a arquitetura pedagógica completa: livros-jogo, atividades, projeto autoral e guia do professor, com abordagem STEAM.\n\n📅 20/08 (quinta), 13h30 às 16h\n📍 Sala 4, Cefor/Ifes, Vitória" },
+
+  { slug:"workshop-prostec", n:"05",
+    titulo:"Workshop Pros@tec: Desafios da Educação em Computação e da Informática na Educação",
+    tipo:"Workshop", hora:"9h às 12h e 13h30 às 16h", local:"Sala 1",
+    form:"https://docs.google.com/forms/d/e/1FAIpQLScwY-ubXyCmx7hA1CpxwDdTSVthgfVHWvWeY2pmFgnSdyN_CA/viewform",
+    rotuloForm:"Inscrição no workshop",
+    corpo:"💻 *Workshop Pros@tec: Desafios da Educação em Computação e da Informática na Educação*\n\nPesquisadores apresentam respostas aos desafios da Educação em Computação e da Informática na Educação apontados pela Sociedade Brasileira de Computação, em rodas de conversa nos dois turnos.\n\n📅 20/08 (quinta), 9h às 12h e 13h30 às 16h\n📍 Sala 1, Cefor/Ifes, Vitória" },
+
+  { slug:"educimat-15-anos", n:"06",
+    titulo:"EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas",
+    tipo:"Celebração dos 15 anos", hora:"13h30 às 16h", local:"Pátio",
+    form:null,
+    aviso:"Este é o único encontro sem formulário próprio. O texto leva só à inscrição no Concefor.",
+    corpo:"🎉 *EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas*\nCelebração\n\nO Educimat, mestrado e doutorado profissional em Educação em Ciências e Matemática do Ifes, completa 15 anos, e a comemoração acontece dentro do Concefor.\n\n📅 20/08 (quinta), 13h30 às 16h\n📍 Pátio do Cefor/Ifes, Vitória",
+    extra:"Contato do Educimat: coordenacao.educimat@ifes.edu.br" },
+];
+
+const arte = s => ART + "2026-08-10_pre_card_evento-paralelo-" + s + "_v1-com-imagem.png";
+
+/* monta o texto final de WhatsApp: abertura + corpo + links */
+function textoWhats(e){
+  let t = "📢 *VIII Concefor · Evento paralelo*\n\n" + e.corpo + "\n\n";
+  if (e.form) t += "*" + e.rotuloForm + ":*\n" + e.form + "\n\n";
+  t += FECHO;
+  if (e.extra) t += "\n\n" + e.extra;
+  return t;
+}
+
+/* ---- grade de download do carrossel ---- */
+const capa = ART + "2026-08-10_pre_capa-carrossel-eventos-paralelos.png";
+document.getElementById("grade-ig").innerHTML =
+  '<a download href="' + capa + '"><img src="' + capa + '" alt="Capa">Capa</a>' +
+  EVENTOS.map(e => '<a download href="' + arte(e.slug) + '"><img src="' + arte(e.slug) +
+    '" alt="' + e.titulo + '">' + e.n + '</a>').join("");
+
+/* ---- blocos do WhatsApp ---- */
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+document.getElementById("lista").innerHTML = EVENTOS.map((e, i) => {
+  const id = "t-" + e.slug;
+  return '<div class="bloco">' +
+    '<div class="bloco-head">' +
+      '<div class="num">' + e.n + '</div>' +
+      '<div class="t"><h3>' + esc(e.titulo) + '</h3>' +
+        '<div class="meta">' + e.tipo + ' · <b>' + e.hora + '</b> · ' + e.local +
+        (e.vagas ? ' · <b>' + e.vagas + '</b>' : '') + '</div></div>' +
+      '<img class="thumb" src="' + arte(e.slug) + '" alt="Card do evento ' + esc(e.titulo) + '">' +
+    '</div>' +
+    (e.aviso ? '<p class="aviso">' + e.aviso + '</p>' : '') +
+    '<pre class="txt" id="' + id + '">' + esc(textoWhats(e)) + '</pre>' +
+    '<button class="ver-mais" data-alvo="' + id + '">Ver o texto completo</button>' +
+    '<div class="acoes">' +
+      '<button class="btn btn-copiar" data-copia="' + id + '">Copiar texto</button>' +
+      '<a class="btn btn-baixar" download href="' + arte(e.slug) + '">Baixar card</a>' +
+      (e.form ? '<a class="btn btn-form" target="_blank" rel="noopener" href="' + e.form + '">Abrir formulário</a>' : '') +
+    '</div>' +
+  '</div>';
+}).join("");
+
+/* ---- toast ---- */
+let timer;
+function toast(msg){
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("on");
+  clearTimeout(timer); timer = setTimeout(() => t.classList.remove("on"), 2200);
+}
+
+/* ---- copiar ---- */
+document.addEventListener("click", async ev => {
+  const btn = ev.target.closest("[data-copia]");
+  if (btn){
+    const txt = document.getElementById(btn.dataset.copia).textContent;
+    try {
+      await navigator.clipboard.writeText(txt);
+    } catch (err){
+      // fallback para navegador sem permissão de clipboard (http, webview antiga)
+      const ta = document.createElement("textarea");
+      ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      document.execCommand("copy"); ta.remove();
+    }
+    btn.classList.add("feito");
+    const antes = btn.textContent;
+    btn.textContent = "Copiado";
+    setTimeout(() => { btn.textContent = antes; btn.classList.remove("feito"); }, 2200);
+    toast("Texto copiado. Cole no WhatsApp junto com o card.");
+    return;
+  }
+  const vm = ev.target.closest("[data-alvo]");
+  if (vm){
+    const pre = document.getElementById(vm.dataset.alvo);
+    const aberto = pre.classList.toggle("aberto");
+    vm.textContent = aberto ? "Recolher o texto" : "Ver o texto completo";
+  }
+});
+
+/* esconde o "ver mais" quando o texto ja cabe inteiro */
+document.querySelectorAll(".txt").forEach(pre => {
+  if (pre.scrollHeight <= pre.clientHeight + 2){
+    const b = document.querySelector('[data-alvo="' + pre.id + '"]');
+    if (b) b.style.display = "none";
+  }
+});
+</script>
