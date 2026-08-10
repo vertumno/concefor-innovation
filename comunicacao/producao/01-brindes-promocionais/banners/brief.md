@@ -1,8 +1,37 @@
 # Brief — Banners de sinalização (10 un · TR 72/2026)
 
+> ✅ **05/08 — AS ARTES FICARAM PRONTAS E ESTÃO NO REPO.** A Juliana entregou, e os arquivos
+> finais vivem nesta pasta:
+>
+> | Arquivo | O quê |
+> |---|---|
+> | [`#01-concefor-geral.pdf`](#01-concefor-geral.pdf) | Banner geral do evento |
+> | [`#02-Dia-17-08-segunda-feira-Abertura.pdf`](#02-Dia-17-08-segunda-feira-Abertura.pdf) | Programação de 17/08 |
+> | [`#03-Dia-18-08-terca-feira.pdf`](#03-Dia-18-08-terca-feira.pdf) | Programação de 18/08 |
+> | [`#04-Dia-19-08-quarta-feira.pdf`](#04-Dia-19-08-quarta-feira.pdf) | Programação de 19/08 |
+> | [`#05-Dia-20-08-quinta-feira.pdf`](#05-Dia-20-08-quinta-feira.pdf) | Programação de 20/08 (Encerramento) |
+> | [`#06-...-eventos-paralelos.pdf`](#06-Dia-20-08-quinta-feira-eventos-paralelos.pdf) | Os 6 eventos paralelos |
+> | `#07-a-#10-locais-do-cefor-{TERREO,PISO-1,PISO-2,PISO-4}.png` | Localização, **4 artes distintas** |
+>
+> ✅ **Seguiram para a gráfica.** 🔴 **A entrega mudou: era 07/08, agora é 14/08 (sexta), e vem
+> tudo de uma vez** — banners e brindes no mesmo lote, três dias antes da abertura.
+>
+> ✳️ **As duas dúvidas que estavam em aberto foram respondidas pela própria arte:**
+> - **"Destacar o andar em cada banner?"** → **Sim.** Os quatro **deixaram de ser iguais**: cada um
+>   marca **"VOCÊ ESTÁ AQUI"** (em vermelho, com alfinete) no piso onde vai ficar. Some o risco de
+>   pendurar o banner errado no andar errado, e o custo é não poder trocá-los de lugar depois.
+> - **"O que fazer com o 3º piso?"** → **Ficou fora.** A lista de espaços vai de Térreo (Pátio) a
+>   1º (Salas 1 e 2), 2º (Salas 3 e 4) e 4º (Auditório e Laboratório), sem menção ao 3º.
+>
+> Confirmado também o que havia sido decidido em 28/07: **sem logo do Concefor e sem selo 20 anos**
+> nos de localização, para não datarem a peça. Assinam com o logo do Ifes/Cefor e `cefor.ifes.edu.br`.
+>
+> ⚠️ **Risco assumido:** a Juliana pediu que **alguém conferisse as informações com calma antes de
+> fechar com a gráfica**, e não há registro dessa conferência. Como as artes já seguiram, um erro de
+> horário, nome ou sala só aparece com o banner impresso em mãos, em 14/08.
+
 > ✅ **Rateio definido em 28/07/2026 pela Viviane (Coordenação Geral).** A pendência que travava
 > esta peça desde 20/07 está resolvida: sabemos o que é cada um dos 10.
-> Falta produzir as artes — é o **último item do TR sem arte**.
 >
 > 👷 **Produção com a Juliana (02/08).** O briefing entregue a ela é a página
 > https://vertumno.github.io/concefor-innovation/comunicacao/briefing-banners/
@@ -29,7 +58,7 @@
 | **#01 Geral** | ✅ Aprovado com **um ajuste**. Nome do Cefor entrou no topo; **selo 20 anos vai embaixo** (em cima disputava com a marca do Concefor); **"Cefor · Vitória" fica** na peça. |
 | **#02 a #05 dias** | ✅ Aprovados com ajustes de acabamento. Fundo branco com box azul escuro, "20" sangrando na borda. |
 | **#06 Eventos paralelos** | ✅ **Aprovado sem ajuste.** O título propositalmente diferente, para não ter cara de "mais um dia", funcionou. |
-| **#07 a #10 andares** | 🟡 **É o que falta.** Confirmado que **os quatro são iguais**. O desenho do prédio precisa de outra rodada e sai depois dos demais. |
+| **#07 a #10 andares** | 🟡 Era o que faltava. Nesta reunião ficou dito que **os quatro seriam iguais** e que o desenho do prédio sairia depois. ✅ **Superado em 05/08: saíram como 4 artes distintas**, cada uma marcando o próprio piso (ver o bloco no topo). |
 
 ### Ajustes a fazer
 

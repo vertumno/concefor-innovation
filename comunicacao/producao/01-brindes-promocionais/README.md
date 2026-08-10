@@ -11,7 +11,12 @@
 >
 > ⏰ **Cronograma real (21/07):** envio das artes para a gráfica em **22/07**, prova digital na
 > sequência, e **avaliação das amostras pela comissão em 28/07 (terça), às 11h** — acompanhar:
-> **Marquito e/ou Andreia**. O prazo contratado de entrega (07/08) é só o limite final.
+> **Marquito e/ou Andreia**. ~~O prazo contratado de entrega (07/08) é só o limite final.~~
+>
+> 🔴 **Atualização de 10/08: o prazo contratado de 07/08 não foi cumprido.** A gráfica entrega
+> **tudo de uma vez em 14/08 (sexta)**, três dias antes da abertura. Isso aperta especialmente as
+> **etiquetas de nome do crachá**, que dependiam de ter os 400 em mãos para testar com folga —
+> ver o [board de produção](../../planejamento/board-producao.md).
 
 ## Peças (itens contratados no TR 72/2026)
 Quantidades e medidas fechadas — ver o doc de especificações.

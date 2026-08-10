@@ -3,10 +3,16 @@
 > Quem faz o quê durante o evento. Base: [equipe da CGTE](../contexto/04-equipe-cgte.md) e
 > [programação](../contexto/01-programacao.md).
 >
-> 📊 **A escala operacional do evento é a planilha
-> [ATUACAO DA CGTE NO CONCEFOR 2026.xlsx](ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202026.xlsx)**
-> (criada em 04/08/2026, no formato da [planilha de 2024](_referencias/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202024.xlsx)):
-> uma aba por dia, com programação · local · transmissão e filmagem · Libras · podcast ·
+> 📊 **A escala operacional do evento é a planilha oficial no Drive (FONTE CANÔNICA, documento vivo):**
+> https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit?usp=sharing&ouid=113484400272441488098&rtpof=true&sd=true
+> — `ATUACAO DA CGTE NO CONCEFOR 2026.xlsx`, compartilhada em 10/08/2026 e **atualizada
+> constantemente por lá**. Sempre consultar a versão do Drive antes de afirmar qualquer coisa
+> sobre escala. Cópia local (ponto de partida, gerada em 04/08/2026 no formato da
+> [planilha de 2024](_referencias/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202024.xlsx)):
+> [ATUACAO DA CGTE NO CONCEFOR 2026.xlsx](ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202026.xlsx).
+>
+> Estrutura: abas de equipe/legenda, regras fixas e pendências + uma aba por dia (1708 · 1808 ·
+> 1908 · 2008), com programação · local · transmissão e filmagem · Libras · podcast ·
 > cobertura reels/stories e fotografia · observações. É ela que vai impressa/aberta durante
 > o evento — as tabelas abaixo continuam sendo o rascunho de planejamento.
 

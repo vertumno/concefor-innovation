@@ -18,6 +18,14 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 
 ## Comunicação (CGTE)
 
+- **📊 Planilha oficial de atuação da CGTE no Concefor (Drive — FONTE CANÔNICA da escala do evento):**
+  https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit?usp=sharing&ouid=113484400272441488098&rtpof=true&sd=true
+  — `ATUACAO DA CGTE NO CONCEFOR 2026.xlsx` (compartilhada em 10/08/2026). Abas: equipe e legenda,
+  regras fixas, pendências + uma aba por dia (1708 · 1808 · 1908 · 2008) com programação · local ·
+  transmissão e filmagem · Libras · podcast · cobertura reels/fotografia · observações.
+  **É documento vivo, atualizado constantemente lá — sempre ler a versão do Drive antes de decidir
+  qualquer coisa de escala.** A cópia `.xlsx` em `comunicacao/planejamento/` é só o ponto de partida
+  (gerada em 04/08) e o rascunho de planejamento fica em `comunicacao/planejamento/distribuicao-equipe.md`.
 - **📋 Doc de solicitações da Márcia (coordenadora do Concefor)** — onde ela pede atualizações
   do site e novas peças; **consultar sempre**: https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true
 - **🖼️ Briefing dos banners (GitHub Pages — entregue à Andreia em 28/07):**

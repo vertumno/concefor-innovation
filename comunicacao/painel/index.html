@@ -241,7 +241,7 @@
    links:   [{t:'rótulo', u:'caminho'}]  — .md abre no GitHub, resto abre direto
    ========================================================================= */
 
-const ATUALIZADO = '03/08/2026';
+const ATUALIZADO = '10/08/2026';
 const EVENTO     = '2026-08-17';
 const GITHUB     = 'https://github.com/vertumno/concefor-innovation/blob/main/comunicacao/';
 
@@ -257,9 +257,9 @@ const PECAS = [
     prazo:'2026-08-10', prazoTx:'sem efeito',
     nota:'DEIXOU DE EXISTIR (verificado em 03/08). O arquivo enviado à gráfica é uma arte só, de uma página, igual para os 400: sem faixa de PALESTRANTE e sem QR code. Se for preciso distinguir palestrante, organização e participante, a distinção passa para a etiqueta com o nome.' },
 
-  { nome:'Etiquetas com os nomes · comprar e imprimir', fase:'impressao', status:'producao', resp:'Alex',
-    prazo:'2026-08-04', prazoTx:'comprar até 04/08',
-    nota:'MEDIDA RESOLVIDA em 03/08: a área livre do crachá é de 100 x 43,7 mm, medida no PDF final. Isso descarta 3 das 5 opções (as de 101,6 mm são mais largas que o crachá) e deixa Pimaco A4360 (25,4 x 66,7 mm, folgada, recomendada) ou A4362 (33,9 x 99 mm, justa). FALTA: comprar e definir como será a impressão dos nomes (impressora, operador, arquivo). Testar numa amostra quando os 400 chegarem, em 07/08.',
+  { nome:'Etiquetas com os nomes · comprar e imprimir', fase:'impressao', status:'bloqueado', resp:'Alex',
+    prazo:'2026-08-04', prazoTx:'compra vencida em 04/08 · crachás chegam 14/08',
+    nota:'RISCO DE VÉSPERA (10/08). A medida está resolvida desde 03/08: a área livre do crachá é de 100 x 43,7 mm, o que descarta 3 das 5 opções (as de 101,6 mm são mais largas que o crachá) e deixa Pimaco A4360 (25,4 x 66,7 mm, folgada, recomendada) ou A4362 (33,9 x 99 mm, justa). O que mudou é o prazo: o plano contava com os 400 crachás em mãos em 07/08 para testar com folga, e a gráfica passou a entrega para 14/08, uma sexta. Sobram sexta, o fim de semana e a manhã da abertura para testar numa amostra, imprimir e colar até 400 nomes — com as inscrições fechando no sábado, no meio disso. FALTA: comprar as etiquetas, o que virou condição para haver nome nos crachás, e definir como será a impressão (impressora, operador, arquivo).',
     links:[{t:'Brief',u:'../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md'},
            {t:'Medida visual',u:'../producao/01-brindes-promocionais/cracha/area-livre-etiqueta.png'}] },
 
@@ -289,21 +289,25 @@ const PECAS = [
     nota:'APROVADO em 02/08. Selo 20 anos no lado oposto à logo do Concefor, tamanho ok.',
     links:[{t:'E-mail à gráfica',u:'../producao/01-brindes-promocionais/_especificacoes/email-grafica-envio-artes.md'}] },
 
-  { nome:'Banners · 10 un · 0,90 × 1,20 m', fase:'impressao', status:'producao', resp:'Juliana',
-    prazo:'2026-08-04', prazoTx:'artes até 04/08 12h · gráfica entrega 11/08',
-    nota:'APROVAÇÃO FEITA EM 03/08, em reunião de 47 min com a Juliana. Todos os banners do evento já existem em versão para avaliação, feitos no Illustrator e no tamanho final de 0,90 x 1,20 m, com o padrão visual alinhado com a Andreia. O #06 (eventos paralelos) passou sem ajuste; o #01 e os dias #02 a #05 saem com ajustes de acabamento (tirar a caixa da data, padronizar horários com 9h e tracinho, aliviar o peso da tipografia, acrescentar Encerramento do Evento no dia 20); o de localização (#07 a #10) é o que falta e vai depois, com o desenho do prédio refeito. Fluxo: ela ajusta, exporta em JPG e o Elton manda para a Viviane avaliar. ATENÇÃO: a Juliana pediu que alguém confira as informações com calma antes de fechar com a gráfica. Sem definição: destacar o andar em cada banner (se sim, deixam de ser 4 iguais) e o que fazer com o 3º piso, que não tem atividade.',
-    links:[{t:'Briefing da produção',u:'../briefing-banners/'},
+  { nome:'Banners · 10 un · 0,90 × 1,20 m', fase:'impressao', status:'feito', resp:'Juliana',
+    prazo:'2026-08-05', prazoTx:'artes entregues 05/08 · gráfica entrega 14/08',
+    nota:'ARTES PRONTAS E NA GRÁFICA. A Juliana entregou em 05/08 e os arquivos finais estão no repo: PDFs de #01 a #06 (geral, os quatro dias e os eventos paralelos) e 4 PNGs de localização. Duas dúvidas antigas foram respondidas pela própria arte. Primeira: os banners de andar NÃO são 4 iguais, cada um marca VOCÊ ESTÁ AQUI, em vermelho com alfinete, no piso onde vai ficar (Térreo, 1º, 2º e 4º) — ganha-se clareza e perde-se a chance de trocá-los de lugar depois. Segunda: o 3º piso ficou fora da lista, por não ter atividade nenhuma. Mantido o que foi decidido em 28/07: sem logo do Concefor e sem selo 20 anos nos de localização, que ficam no prédio depois do evento. ATENÇÃO: a Juliana pediu que alguém conferisse as informações com calma antes de fechar com a gráfica e não há registro dessa conferência — como as artes já seguiram, um erro de horário, nome ou sala só aparece com o banner impresso em mãos, em 14/08.',
+    links:[{t:'Artes finais no repo',u:'producao/01-brindes-promocionais/banners/'},
+           {t:'Briefing da produção',u:'../briefing-banners/'},
            {t:'Brief com os 10',u:'producao/01-brindes-promocionais/banners/brief.md'},
            {t:'Conteúdo dos banners de dia',u:'producao/01-brindes-promocionais/banners/conteudo-banners-programacao.md'},
            {t:'Referência geral 2024',u:'../producao/01-brindes-promocionais/banners/_refs/banner-geral-concefor-2024.png'},
            {t:'Referência paralelos 2024',u:'../producao/01-brindes-promocionais/banners/_refs/banner-eventos-paralelos-concefor-2024.jpeg'}] },
 
   /* ---------------- IMPRESSÃO — fora do TR ---------------- */
-  { nome:'Banners institucionais · 3 un · livro, Base de Conhecimentos, MOOCs', fase:'impressao',
-    status:'bloqueado', resp:'a definir (Juliana ou Andreia) / UAB (custeio)', prazo:null,
-    nota:'SAÍRAM DA LEVA DE AMANHÃ (03/08). Nenhuma das três artes foi produzida e a Juliana não vai fazê-las agora: o banner do prédio consome o tempo dela até 04/08. Como são outro fornecedor e outra leva, dá para adiar: o Elton renegocia a data com a Vanessa e a Andreia é candidata a assumir, já que trabalha no livro. Decidido antes: arte única, um template para os três, pagos pela UAB. Links: Base confirmada (conhecimento.cefor.ifes.edu.br), livro com link provisório e MOOCs sem endereço. Falta também o Elton mandar o conteúdo da vitrine de MOOCs.',
-    links:[{t:'Briefing da produção',u:'../briefing-banners/#institucionais'},
-           {t:'Brief',u:'producao/02-pre-evento/banners-institucionais/brief.md'}] },
+  { nome:'Banners institucionais · 3 un, possivelmente 4 · livro, Base de Conhecimentos, MOOCs', fase:'impressao',
+    status:'bloqueado', resp:'a definir (Juliana ou Andreia) / UAB (custeio)',
+    prazo:'2026-08-13', prazoTx:'arte sem data · impressão cabe até 13/08',
+    nota:'ORÇAMENTOS LEVANTADOS EM 10/08, com quatro fornecedores. Vitória Cópias é a mais barata em lona por larga margem: R$ 97,20 por unidade contra R$ 141,25 da segunda colocada, o que põe as 4 unidades em R$ 388,80. A comparação que importa é a de lona, não a de papel: estes banners ficam no Cefor depois do evento e papel não sobrevive a exposição permanente, então o preço de papel serve como piso, não como opção. O prazo deixou de ser problema, e isso é a notícia boa: Copyexpress entrega em 24 horas, Unicopy no mesmo dia (entra 10h, sai 17h) e a Vitória Cópias em 3 dias úteis se o pedido entrar até 13/08. Ou seja, o gargalo destes banners nunca foi a gráfica: é a arte, que segue sem dono e sem data. Antes de fechar com a Vitória Cópias, confirmar se a lona é fosca ou brilho, porque brilho reflete a luz do ambiente e atrapalha a leitura do QR code pelo celular, e conferir o que o acabamento incluído contempla, já que é o único preço bem abaixo do mercado. Atenção ao tamanho: a Unicopy cotou em A0, que dá 84,1 x 118,9 cm, contra os 90 x 120 cm dos banners do evento. A quantidade pode subir de 3 para 4, com um quarto produto ainda não identificado; a decisão de arte única, de 29/07, já previa exatamente isso, então o quarto não custa arte nova, só conteúdo e um link. ' +
+         'A TRAVA DE INFORMAÇÃO CAIU EM 10/08: a nova vitrine de MOOCs tem endereço definitivo, https://mooc.cefor.ifes.edu.br/, que este brief registrava como a única trava dos três. Com ele o QR code do banner #13 pode ser gerado, e o print da home já entrou no repo como imagem de apoio. Placar dos links: Base de Conhecimentos confirmada em 29/07, MOOCs em 10/08 e o livro dos 20 anos ainda aponta para um Drive provisório — é o único que falta, e QR impresso não tem volta. Decidido antes: arte única, um template para os três, pagos pela UAB. O que trava agora não é mais informação: é quem produz e com que data. A Juliana entregou os banners do evento em 05/08 e voltou a ter agenda; a Andreia segue candidata, já que trabalha no livro. Mensagem para a Vanessa pronta no brief, atualizada em 10/08.',
+    links:[{t:'Brief com a tabela de orçamentos',u:'producao/02-pre-evento/banners-institucionais/brief.md'},
+           {t:'Briefing da produção',u:'../briefing-banners/#institucionais'},
+           {t:'Print da home dos MOOCs',u:'../producao/02-pre-evento/banners-institucionais/_refs/2026-08-10_print-home-vitrine-moocs.png'}] },
 
   { nome:'Fundo de palco', fase:'impressao', status:'bloqueado', resp:'—', prazo:null,
     nota:'Citado na descrição do TR mas sem item contratado. Precisa confirmar se existe verba ou se sai de outro lugar.' },
@@ -370,13 +374,17 @@ const PECAS = [
            {t:'Arte v1',u:'../producao/02-pre-evento/palestrantes/cards/2026-08-02_pre_card_palestrante-mauro-oliveira_v1.png'},
            {t:'Infos para o card',u:'producao/02-pre-evento/palestrantes/painel-producao-cards.md'}] },
 
-  { nome:'Card mesa · "Desafios da EaD"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-01',
-    nota:'ATRASADO: era para publicar em 01/08 e a arte nunca foi produzida, então o feed está sem card desde então. Legenda pronta, composição fechada (Rutinelli + Tessarolo). É a peça mais urgente da comunicação.',
-    links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'}] },
+  { nome:'Card mesa · "Desafios da EaD"', fase:'pre', status:'bloqueado', resp:'Elton', prazo:'2026-08-01',
+    nota:'A PEÇA MAIS ATRASADA DA OPERAÇÃO. Era para publicar em 01/08 e a arte nunca foi produzida. O feed está sem card desde 03/08, são 7 dias, e esta é a última semana antes do evento, quando a audiência mais cresce. O QUE MUDOU EM 10/08: tudo para desbloquear já existe no repo. A legenda e o alt-text estão prontos (seção 8 de legendas.md), a composição foi fechada em 21/07 (Rutinelli da Penha Fávero + Felipe Maciel Tessarolo), as duas fotos estão em _refs/fotos/ e desde 09/08 existe o pipeline de geração de cards por código (HTML/CSS para Chrome headless, PNG 1080x1350) que produziu os 6 cards dos eventos paralelos na mesma família visual dos cards de palestrante. Não depende de designer nem de Canva: é executável no mesmo dia.',
+    links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'},
+           {t:'Pipeline de cards',u:'producao/02-pre-evento/eventos-paralelos/_build/build_cards.py'},
+           {t:'Fotos',u:'../producao/02-pre-evento/palestrantes/_refs/fotos/'}] },
 
-  { nome:'Card mesa · "Tecnologia Delas"', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-02',
-    nota:'ATRASADO: era para publicar em 02/08 e a arte nunca foi produzida. Legenda pronta. Entra logo depois da mesa "Desafios da EaD".',
-    links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'}] },
+  { nome:'Card mesa · "Tecnologia Delas"', fase:'pre', status:'bloqueado', resp:'Elton', prazo:'2026-08-02',
+    nota:'ATRASADO: era para publicar em 02/08 e a arte nunca foi produzida. Entra logo depois da mesa Desafios da EaD, respeitando a cadência de um card por dia. Legenda e alt-text prontos (seção 9 de legendas.md), com as três participantes: Márcia Gonçalves de Oliveira, Mariella Berger Andrade e Jaqueline Sanz. As três fotos estão em _refs/fotos/ e o card sai pelo mesmo pipeline de código do card anterior.',
+    links:[{t:'Legendas',u:'producao/02-pre-evento/palestrantes/legendas.md'},
+           {t:'Pipeline de cards',u:'producao/02-pre-evento/eventos-paralelos/_build/build_cards.py'},
+           {t:'Fotos',u:'../producao/02-pre-evento/palestrantes/_refs/fotos/'}] },
 
   { nome:'Cantinho instagramável · espaço de fotos', fase:'durante', status:'bloqueado',
     resp:'sem dono (Elton leva à comissão)', prazo:'2026-08-05', prazoTx:'retorno pedido até 05/08',
@@ -391,10 +399,11 @@ const PECAS = [
   { nome:'Vídeos-convite dos palestrantes', fase:'pre', status:'todo', resp:'Elton',
     prazo:'2026-08-03', nota:'Receber até 03/08 para virar reels entre 08 e 14/08.' },
 
-  { nome:'Cards dos eventos paralelos · 6 cards individuais', fase:'pre', status:'todo',
-    resp:'a definir (arte)', prazo:'2026-08-06', prazoTx:'quanto antes · eventos em 20/08',
-    nota:'PEDIDO RECEBIDO EM 03/08: cards dos eventos paralelos para os coordenadores divulgarem entre os seus. É a liberação que faltava desde 16/07. MUDA O FORMATO: era um carrossel único no nosso feed, agora são 6 cards individuais entregues a cada coordenação, com texto pronto para ela enviar. Conteúdo dos 6, especificação da arte e os textos de WhatsApp já estão escritos no brief. FALTA DEFINIR QUEM PRODUZ: a Juliana está nos 13 banners e a Andreia no bolo e no livro. Em aberto também: se participar de evento paralelo exige inscrição no Concefor além do formulário próprio, e o Educimat, que não tem formulário.',
+  { nome:'Cards dos eventos paralelos · 6 cards individuais', fase:'pre', status:'aprovacao',
+    resp:'Elton', prazo:'2026-08-12', prazoTx:'enviar esta semana · eventos em 20/08',
+    nota:'REVISÃO CONCLUÍDA EM 10/08 (v3): as artes estão prontas e o que falta é só o envio. Os 6 PNGs de 1080x1350 estão em cards/, gerados por código na mesma família visual dos 8 cards de palestrante (logo, selo 20 anos, gradiente turquesa para azul, Teko e Montserrat). O achado da revisão foi que as 3 abreviações de coordenação nunca precisaram existir: a segunda linha do bloco estava praticamente vazia nos três casos. Todas voltaram ao nome completo, conferidas contra a fonte canônica, e continuam ocupando 2 linhas. Ciência delas recuperou Ifes Vila Velha, Escola de Inovação recuperou CCEC-EI / SEME / PMV e o Educimat voltou a trazer Ana Raquel Santos de Medeiros Garcia por extenso. Foram corrigidos ainda dois problemas que não estavam na lista: nos cards IA além do chat e Entre Dois Mundos o título quebrava deixando IA sozinho na terceira linha, e no primeiro isso empurrava o bloco Quando para cima do rodapé, porque é o único card com selo de vagas limitadas. Os arquivos _v1 saíram da pasta para não haver risco de enviar a versão errada. URGÊNCIA: quem divulga aqui são as 6 coordenações, não a CGTE, então cada dia parado é um dia que elas não têm o material em mãos, e os eventos são em 20/08. DECIDIR ANTES DE ENVIAR: a arte fecha com o site do Concefor, mas a inscrição de cada evento é por um Google Forms próprio, que vai só no texto que acompanha o card. Como o uso previsto é a coordenação jogar o card num grupo de WhatsApp, ele pode ser repassado adiante sem o texto, e quem receber assim não chega ao formulário. As saídas são pôr um QR code do formulário na arte ou aceitar o risco. Em aberto também: se participar de evento paralelo exige inscrição no Concefor além do formulário próprio, e o Educimat, que não tem formulário.',
     links:[{t:'Brief com os 6 cards e os textos',u:'producao/02-pre-evento/eventos-paralelos/brief-cards.md'},
+           {t:'As 6 artes',u:'../producao/02-pre-evento/eventos-paralelos/cards/'},
            {t:'Fonte',u:'producao/02-pre-evento/eventos-paralelos/fonte-eventos-satelites.md'}] },
 
   { nome:'Contagem regressiva · 10 peças', fase:'pre', status:'todo', resp:'Elton', prazo:'2026-08-07',
@@ -464,21 +473,26 @@ const MARCOS = [
   { data:'2026-07-28', tx:'Amostras dos brindes avaliadas', sub:'FINALIZADO · realizado por Viviane e Dennis' },
   { data:'2026-07-28', tx:'Retorno das montagens à gráfica', sub:'camisa, bloco e crachá aprovados; caneta, copo e bolsa com ajuste' },
   { data:'2026-07-30', tx:'Validação do app', sub:'com a coordenação' },
-  { data:'2026-08-04', tx:'Artes dos 13 banners na gráfica', sub:'até 12h · impressos voltam em 11/08' },
   { data:'2026-08-03', tx:'Prazo de envio final dos trabalhos', sub:'Even3 · e vídeos-convite' },
-  { data:'2026-08-07', tx:'Lançamento do app + entrega da gráfica', sub:'prazo-limite contratado' },
+  { data:'2026-08-05', tx:'Artes dos banners entregues e na gráfica', sub:'#01 a #06 em PDF + 4 de localização' },
+  { data:'2026-08-14', tx:'ENTREGA DA GRÁFICA: tudo de uma vez', sub:'brindes e banners · era 07/08 · 3 dias antes da abertura' },
   { data:'2026-08-15', tx:'Fim das inscrições', sub:'capacidade: 400 pessoas' },
-  { data:'2026-08-17', tx:'Abertura do VIII Concefor', sub:'até 20/08 · Cefor/Ifes' }
+  { data:'2026-08-17', tx:'Abertura do VIII Concefor', sub:'até 20/08 · e-book do NTE lançado às 20h' }
 ];
 
 const AGUARDANDO = [
-  { q:'Endereço da nova vitrine de MOOCs — trava o banner #13', who:'Vanessa Battestin · cobrado 03/08' },
-  { q:'Link definitivo do livro dos 20 anos (hoje é um link provisório do Drive)', who:'Vanessa Battestin · cobrado 03/08' },
-  { q:'Status de cada uma das 13 artes de banner, antes do prazo de 04/08', who:'Juliana · cobrado 03/08' },
+  { q:'Onde o e-book do NTE fica hospedado — sem local não há link nem QR code, e ele é lançado no palco em 17/08 às 20h', who:'Vanessa / Andrômeda · CRÍTICO' },
+  { q:'Link definitivo do livro dos 20 anos (hoje é um link provisório do Drive) — último link que falta para os banners institucionais', who:'Vanessa Battestin · cobrado 03/08' },
+  { q:'Data e quem produz os banners institucionais, agora que os links e os orçamentos estão resolvidos', who:'Vanessa Battestin · mensagem pronta 10/08' },
+  { q:'São 3 ou 4 banners institucionais? E qual é o quarto produto (precisa de link próprio para o QR code)', who:'Vanessa Battestin · levantado 10/08' },
+  { q:'Sinopse do e-book do NTE, para o card que a Vanessa pediu', who:'NTE · pedida em 14/07, sem retorno' },
+  { q:'Compra das etiquetas de nome do crachá — condição para haver nome nos 400', who:'Alex · prazo vencido em 04/08' },
+  { q:'Quem assume o cantinho instagramável, devolvido pela CGTE à comissão', who:'Comissão organizadora · retorno pedido até 05/08, vencido' },
   { q:'Hosts dos podcasts (1 por episódio)', who:'Márcia / Coordenação' },
   { q:'Local das sessões técnicas e da Mostra de Produtos — e confirmar UAB/UnAC no Pátio e NTE no Auditório', who:'Viviane · perguntado 28/07' },
   { q:'Logo do Educimat para os impressos', who:'Educimat' },
-  { q:'Revisão da notícia para a ACS', who:'Márcia' }
+  { q:'Revisão da notícia para a ACS', who:'Márcia' },
+  { q:'RESOLVIDO 10/08: endereço da nova vitrine de MOOCs — mooc.cefor.ifes.edu.br', who:'✅ era a única trava dos 3 banners institucionais' }
 ];
 
 /* ======================== FIM DOS DADOS ======================== */

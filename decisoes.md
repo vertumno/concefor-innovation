@@ -4,6 +4,50 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-10 — A vitrine de MOOCs tem endereço definitivo: mooc.cefor.ifes.edu.br
+
+Cai a última trava de informação dos **banners institucionais**. O link da nova vitrine era
+pedido desde **14/07** e o brief o registrava como *"a única trava dos três"*, porque sem endereço
+não há QR code para imprimir. Agora dois dos três estão fechados: **Base de Conhecimentos**
+(`conhecimento.cefor.ifes.edu.br`, desde 29/07) e **MOOCs** (`mooc.cefor.ifes.edu.br`).
+
+Falta um só: o **link definitivo do livro dos 20 anos**, que segue apontando para um Drive
+provisório. É o que ainda impede fechar a arte, porque QR code impresso não tem volta.
+
+*Consequência prática:* o que trava os três banners deixou de ser informação e passou a ser
+**decisão de produção** — quem faz e com que data. A Juliana entregou os banners do evento em
+05/08 e voltou a ter agenda; a Andreia segue candidata, já que trabalha no livro. A mensagem para
+a Vanessa foi reescrita para pedir só isso.
+
+Junto veio o print da home da plataforma, que resolve a **imagem representativa** do banner: ela
+se apresenta como *"Cursos Abertos do Ifes: aprendizado no seu ritmo"*, com catálogo gratuito,
+on-line e certificado, trilhas por área e o Planejador de Licença para Capacitação.
+
+---
+
+## 2026-08-05 — Os banners de localização viraram 4 artes distintas, e o 3º piso ficou fora
+
+Quando a Juliana entregou as artes dos banners, duas perguntas que estavam em aberto desde a
+reunião de 03/08 foram respondidas **pela própria arte**, sem precisar de nova rodada:
+
+**Os quatro banners de andar deixaram de ser iguais.** Em 03/08 estava dito que seriam 4 impressões
+da mesma arte. O que chegou foram **4 artes distintas**, cada uma marcando **"VOCÊ ESTÁ AQUI"** (em
+vermelho, com alfinete) no piso onde o banner vai ficar: Térreo, 1º, 2º e 4º.
+
+*Por quê é melhor assim:* um mapa que não diz onde você está obriga cada pessoa a se localizar
+sozinha, e é o tipo de detalhe que gera fila de perguntas na recepção. *O que se perde:* eles
+deixam de ser intercambiáveis — pendurar o banner errado no andar errado agora é um erro visível,
+e não dá para trocá-los de lugar em edições futuras.
+
+**O 3º piso ficou fora da lista.** Não tem atividade nenhuma no evento, e listá-lo vazio só
+convidaria alguém a subir lá. Os espaços vão de Térreo (Pátio) a 1º (Salas 1 e 2), 2º (Salas 3 e 4)
+e 4º (Auditório e Laboratório).
+
+Mantido o que já havia sido decidido em 28/07: **sem logo do Concefor e sem selo dos 20 anos** nos
+de localização, porque eles ficam no prédio depois do evento e o selo os deixaria datados.
+
+---
+
 ## 2026-08-05 (fim de tarde) — Conexão pode ser desfeita, e some para os dois
 
 **Decisão do Marquito:** a pessoa pode **desfazer uma conexão** no card do contato
