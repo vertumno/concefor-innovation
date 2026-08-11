@@ -22,14 +22,20 @@
 > Link não é clicável na legenda do Instagram, por isso a legenda manda para uma página só,
 > `concefor.cefor.ifes.edu.br/eventos-paralelos`, que reúne os seis formulários.
 
-> ✏️ **Reescrita em 10/08.** A primeira versão abria com "seis encontros, cada um com inscrição
-> própria" e listava 01 a 06. Falava de **formato e de processo**, que não interessam a quem lê, e
-> a lista numerada tinha cara de sumário. Esta versão troca o eixo: diz **o que a pessoa vai fazer
-> lá**, com a coisa mais concreta de cada encontro. A inscrição virou o que ela é, um detalhe do
-> fim, não a manchete.
+> ✏️ **Reescrita em 10/08, em duas rodadas.**
+> A primeira versão abria com "seis encontros, cada um com inscrição própria" e listava 01 a 06:
+> falava de **formato e de processo**, que não interessam a quem lê, e a lista tinha cara de
+> sumário. O corpo passou a dizer **o que a pessoa vai fazer lá**, com a coisa mais concreta de
+> cada encontro, e a inscrição virou o que é, um detalhe do fim.
+> Depois entrou a abertura pedida pelo Elton, que **amarra os paralelos ao congresso**: eles não
+> são um evento à parte, são mais um momento do Concefor, e a chamada já entrega os temas
+> ("inteligência artificial, robótica, cultura maker e ensino de ciências") antes de detalhar
+> encontro por encontro.
 
 ```
-No dia 20 de agosto o Cefor funciona em seis lugares ao mesmo tempo, e você escolhe onde estar.
+No dia 20 acontecem os eventos paralelos do VIII Concefor, mais um momento para se aprofundar em temas como inteligência artificial, robótica, cultura maker e ensino de ciências.
+
+São seis ao mesmo tempo, em seis lugares do Cefor, e você escolhe onde estar.
 
 Tem oficina para montar do zero um espaço de trabalho com IA que guarda o seu contexto. Começamos com o caso de um professor que levava uma semana para transformar aulas antigas em aulas interativas e passou a levar meia hora.
 
