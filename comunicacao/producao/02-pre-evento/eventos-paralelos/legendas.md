@@ -22,28 +22,38 @@
 > Link não é clicável na legenda do Instagram, por isso a legenda manda para uma página só,
 > `concefor.cefor.ifes.edu.br/eventos-paralelos`, que reúne os seis formulários.
 
+> ✏️ **Reescrita em 10/08.** A primeira versão abria com "seis encontros, cada um com inscrição
+> própria" e listava 01 a 06. Falava de **formato e de processo**, que não interessam a quem lê, e
+> a lista numerada tinha cara de sumário. Esta versão troca o eixo: diz **o que a pessoa vai fazer
+> lá**, com a coisa mais concreta de cada encontro. A inscrição virou o que ela é, um detalhe do
+> fim, não a manchete.
+
 ```
-Seis encontros acontecem ao mesmo tempo no dia 20 de agosto, o último dia do VIII Concefor. Cada um tem inscrição própria, e dá para escolher pelo que chega mais perto do seu trabalho.
+No dia 20 de agosto o Cefor funciona em seis lugares ao mesmo tempo, e você escolhe onde estar.
 
-01 IA além do chat. Oficina prática: você monta um espaço de trabalho que guarda o seu contexto e produz com você. Abrimos com o caso de um professor que levava uma semana para transformar aulas antigas e passou a levar meia hora. São 20 vagas.
+Tem oficina para montar do zero um espaço de trabalho com IA que guarda o seu contexto. Começamos com o caso de um professor que levava uma semana para transformar aulas antigas em aulas interativas e passou a levar meia hora.
 
-02 "Ciência delas" no Projeto Rio Doce Escolar. Gestoras, pesquisadoras, professoras e agentes comunitárias da bacia do Rio Doce contam a ciência que fazem na Rede de Educadores Ambientais.
+Tem impressão 3D, corte a laser, robótica e realidade virtual, com visita às estações da Escola de Inovação.
 
-03 Escola de Inovação. Seis anos levando impressão 3D, corte a laser, robótica e realidade virtual para a educação de Vitória, com visita às estações onde tudo acontece.
+Tem livro-jogo para ensinar inteligência artificial na educação básica, com a coleção Sofia Carter.
 
-04 Entre Dois Mundos. Alfabetização em Inteligência Artificial na educação básica, com a coleção de livros-jogo Sofia Carter e abordagem STEAM.
+Tem mesa com as gestoras, pesquisadoras, professoras e agentes comunitárias que fazem ciência na bacia do Rio Doce.
 
-05 Workshop Pros@tec. Pesquisadores apresentam respostas aos desafios da Educação em Computação apontados pela SBC, em rodas de conversa nos dois turnos.
+Tem roda de conversa sobre os desafios da Educação em Computação apontados pela SBC.
 
-06 Educimat. Os 15 anos do mestrado e doutorado profissional em Educação em Ciências e Matemática do Ifes, comemorados dentro do Concefor.
+E tem os 15 anos do Educimat, comemorados no pátio.
 
-Arraste para ver o horário, o local e a coordenação de cada encontro.
+Arraste para ver horário, local e coordenação de cada um. Os formulários estão reunidos em concefor.cefor.ifes.edu.br/eventos-paralelos
 
-Os seis formulários estão reunidos em concefor.cefor.ifes.edu.br/eventos-paralelos
 Inscrição no Concefor até 15/08, o principal congresso do Espírito Santo sobre Tecnologia e Educação a Distância: concefor.cefor.ifes.edu.br/inscricoes
 
 #Concefor #VIIIConcefor #Cefor20Anos #Cefor #Ifes #EaD
 ```
+
+> ℹ️ **"Seis lugares ao mesmo tempo" é literal**, não força de expressão: Laboratório de
+> Informática, Auditório, Sala 1, Sala 2, Sala 4 e Pátio.
+> **Texto da capa, na mesma direção:** *"Inteligência artificial, robótica, impressão 3D e
+> livros-jogo. Escolha por onde começar."*
 
 ### Alt text dos slides
 

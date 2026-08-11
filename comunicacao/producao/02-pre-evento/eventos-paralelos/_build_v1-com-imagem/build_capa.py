@@ -30,8 +30,11 @@ BRAND_H = _base["BRAND_H"]
 LOGO_H = _base["LOGO_H"]
 
 TITULO = "Eventos<br>paralelos"
-CHAMADA = ("Seis encontros no último dia do VIII Concefor, "
-           "cada um com inscrição própria.")
+# A chamada anterior ("seis encontros [...] cada um com inscricao propria")
+# falava de formato e de processo, que nao interessam a quem le. Esta diz o que
+# a pessoa vai encontrar la, com as coisas mais concretas dos seis.
+CHAMADA = ("Inteligência artificial, robótica, impressão 3D e livros-jogo. "
+           "Escolha por onde começar.")  # 2 linhas: a caixa comporta ~50 caracteres por linha
 DATA = "20 de agosto &middot; quinta-feira"
 # curto de proposito: na linha da data, "Arraste para ver os seis" passava por
 # cima do badge "20 de agosto · quinta-feira". A seta dupla ja diz o gesto.
@@ -64,10 +67,12 @@ html,body{{width:1080px;height:1350px;overflow:hidden;background:#000;}}
   text-transform:uppercase;letter-spacing:.002em;}}
 .titulo b{{color:#06213f;font-weight:700;}}
 
-.chamada{{position:absolute;left:96px;top:512px;width:790px;
+/* 500 a 636 = 136px, ou seja, tres linhas de folga para uma chamada de duas.
+   Sem essa margem, uma linha a mais joga o texto por baixo do badge da data. */
+.chamada{{position:absolute;left:96px;top:500px;width:790px;
   color:rgba(255,255,255,.95);font-weight:500;font-size:33px;line-height:1.34;}}
 
-.data{{position:absolute;left:96px;top:626px;padding:15px 34px;border-radius:999px;
+.data{{position:absolute;left:96px;top:636px;padding:15px 34px;border-radius:999px;
   background:var(--turquesa);color:var(--azul);font-weight:800;font-size:28px;
   text-transform:uppercase;letter-spacing:.05em;}}
 
@@ -90,7 +95,7 @@ html,body{{width:1080px;height:1350px;overflow:hidden;background:#000;}}
 /* na LINHA DA DATA, nao no rodape: o selo em losango tem 200x200 gpirado 45
    graus, entao seu bounding box invade a faixa de baixo a direita e cortava o
    fim da frase. Aqui ele fica livre e ainda equilibra o badge da esquerda. */
-.arraste{{position:absolute;right:96px;top:638px;font-weight:700;font-size:24px;
+.arraste{{position:absolute;right:96px;top:648px;font-weight:700;font-size:24px;
   letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.92);
   display:flex;align-items:center;gap:12px;}}
 .arraste span{{font-size:30px;line-height:1;}}
