@@ -4,6 +4,183 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-12 — Podcasts: os 8 palestrantes têm episódio, gravado colado à fala
+
+**Decisão:** o podcast passa a cobrir **os 8 palestrantes do evento** (os 4 externos e os 4 do
+Ifes) em **7 gravações** — Jaqueline e Mariella gravam juntas. Cada gravação acontece **no mesmo
+dia da palestra da pessoa**, imediatamente antes ou imediatamente depois, num **bloco reservado de
+40 minutos** (8 min de termo e setup, 25 de conversa, 7 de extras).
+
+| # | Convidado | Fala | Gravação |
+|---|---|---|---|
+| 1 | Vanessa Battestin | 17/08 19h | 17/08 16h40–17h20 ⚠️ *antes* |
+| 2 | 👥 Jaqueline Sanz **+** Mariella Berger | 18/08 9h30 | 18/08 11h30–12h10 |
+| 3 | Felipe Tessarolo | 18/08 14h30 | 18/08 16h20–17h00 |
+| 4 | Márcia Oliveira | 18/08 9h30 | 18/08 17h10–17h50 |
+| 5 | Rutinelli Fávero | 19/08 9h30 | 19/08 11h40–12h20 |
+| 6 | Mauro Oliveira | 19/08 16h30 | 19/08 17h40–18h20 |
+| 7 | Mariano Pimentel | 19/08 14h30 | 19/08 18h30–19h10 |
+
+**Por quê colar à fala:** a grade anterior jogava os episódios de Mariano e Mauro para
+quinta-feira, e os dois falam na quarta à tarde. Isso criava uma dependência frágil — **os dois
+episódios só existiam se os dois convidados ficassem até 20/08**. Colando cada gravação ao dia da
+fala, a dependência some: quem falou, gravou. O convidado já está no prédio e aquecido pelo tema.
+
+**Por quê todos e não só os externos:** a versão de mais cedo em 12/08 restringia aos externos, com
+o argumento de que é quem a audiência não vê no dia a dia do Cefor. Isso deixava de fora justamente
+as pessoas que **são** os 20 anos: Vanessa dirigiu a casa de 2014 a 2019 e Mariella de 2019 a
+2022 — juntas, quase metade da história que o congresso está celebrando. Ficava também uma
+assimetria ruim na mesa "Tecnologia Delas", com uma das três convidadas virando episódio e as
+outras duas não.
+
+**Por quê Jaqueline e Mariella juntas:** cobrir as três da mesa individualmente empilhava quatro
+gravações só na terça. Em dupla, a terça cai para três blocos e sobram dois livres no meio do dia,
+um conjunto de host inteiro se resolve, e a conversa rende sozinha — uma mede a desigualdade com
+dado, a outra construiu a tecnologia por dentro e dirigiu a casa. O custo é real: 25 minutos
+divididos por duas dão ~12 para cada, então **cortar perguntas vira regra** e o roteiro marca as
+que não se cortam. **A Márcia continua sozinha** porque tem um segundo chapéu — é a Coordenadora
+Geral, e o Bloco 3 do episódio dela vira balanço do congresso, material que serve à notícia de
+encerramento e ao relatório final.
+
+**Um único episódio é gravado antes da fala:** o da Vanessa. Depois da palestra dela vêm os 4
+lançamentos e a celebração dos 20 anos, com ela no centro dos dois, e não sobra janela. Sem
+transcrição, o Bloco 1 vira antecipação — o que dá ao episódio a função extra de chamada da
+abertura.
+
+**Os custos aceitos:**
+- **Terça das 11h30 às 17h50**, com três gravações e dois blocos livres no meio. Mais simples
+  bloquear a sala o dia inteiro do que negociar janela por janela.
+- **O ep. 2 começa 11h30, sem intervalo depois da mesa** — os primeiros minutos do bloco são o
+  deslocamento, o termo e o microfone. Se a mesa atrasar, o bloco escorrega junto.
+- **Quarta terminando às 19h10**, em dobradinha: a tarde está tomada por transmissão das 14h30 às
+  ~17h30 e sobra uma janela só para Mauro e Mariano. Grava primeiro quem acabou de sair do palco.
+- **A edição vai de 4 para 7 peças.**
+
+**Mitigação do custo de host:** os episódios foram agrupados em 4 conjuntos temáticos (IA na
+educação · Tecnologia Delas · Desafios da EaD · 20 anos), então **4 pessoas cobrem os 7** e cada
+host ganha repertório para retomar no episódio seguinte o que foi dito no anterior. A Mariana fica
+com o conjunto de IA; faltam 3. Junto disso ficou definida uma **ordem de corte** — se faltar host
+ou sala, corta de baixo para cima, começando pela Márcia — para essa decisão não ser tomada no
+susto no meio do evento.
+
+Ver [`comunicacao/producao/03-durante-evento/podcasts/plano-podcasts.md`](comunicacao/producao/03-durante-evento/podcasts/plano-podcasts.md)
+e os 7 roteiros em [`podcasts/roteiros/`](comunicacao/producao/03-durante-evento/podcasts/roteiros/).
+
+---
+
+## 2026-08-12 — Cinco frentes saem da mesa da CGTE de uma vez; sobram três coisas nossas
+
+Repasse geral da CGTE a 5 dias da abertura. Cinco itens que estavam abertos no board **foram
+resolvidos fora da CGTE ou simplesmente encerrados**, e isso muda o tamanho do que resta.
+
+**1. Etiquetas de nome do crachá: saiu da CGTE.** A **comissão geral assumiu e já está
+providenciando a impressão dos nomes**. Encerra a frente aberta em 27/07 e o risco de véspera
+levantado em 10/08 (comprar Pimaco A4360, definir impressora e operador, testar antes de rodar
+400). *Por quê importa registrar:* era a **prioridade nº 2** da operação e a única presa ao
+atraso da gráfica — com ela fora, a entrega de 14/08 deixa de ter fim de semana crítico atrás.
+
+**2. Livro dos 20 anos tem link definitivo:**
+https://cefor.ifes.edu.br/index.php/publicacoes/2-uncategorised/17710-livro20anos
+Cai a última trava de informação dos banners institucionais, aberta desde 14/07. **O placar dos
+três links fechou:** Base de Conhecimentos ✅ (29/07) · MOOCs ✅ (10/08) · livro dos 20 anos ✅
+(12/08). É endereço no site institucional do Cefor, não Drive provisório — QR impresso sobrevive
+ao evento, que era exatamente a exigência.
+
+**3. Banners institucionais: enviados à gráfica, prontos até sexta (14/08).** A arte, que em 10/08
+era "o gargalo, sem dono e sem data", foi produzida e despachada. Chegam junto com o lote do TR.
+
+**4. O e-book do NTE segue sem endereço.** É o **único** dos dois livros que continua em aberto, e
+o lançamento é **17/08 às 20h**. Recomendação registrada segue de pé: publicar na Base de
+Conhecimentos. Sem link não há QR code nem card.
+
+**5. Cantinho instagramável: sai da demanda da CGTE.** **Luciane Lacerda e Carol, da CGA**, são as
+responsáveis. Confirma a posição que a Juliana defendeu em 03/08 — o cantinho é da comissão
+organizadora, não da CGTE — e fecha a frente que estava "sem dono" desde 05/08.
+
+**6. Kit dos eventos paralelos: enviado e publicado.** As 6 coordenações receberam card e texto, e
+o carrossel foi ao ar no Instagram em 11/08
+(https://www.instagram.com/p/Db6dlZPm7kS/?img_index=1). **É o primeiro post do feed desde 03/08**,
+o que quebra os 8 dias de silêncio.
+
+**7. Vídeos-convite dos palestrantes: cancelados.** Não serão feitos. Encerra a frente aberta em
+18/07 (mensagem de solicitação sem registro de envio) e **derruba junto os reels de 08 a 14/08**,
+que dependiam deles. *Por quê é decisão e não desistência:* faltando 5 dias, gravar, receber,
+editar e publicar vídeo de sete pessoas não cabe — e a contagem regressiva ocupa o mesmo espaço no
+feed com custo muito menor.
+
+**8. Podcasts: 4 episódios, um por palestrante externo, e a Mariana assume dois.** Muda a estrutura
+que estava no plano desde 16/07. Os convidados passam a ser **Felipe Tessarolo, Jaqueline Sanz,
+Mauro Oliveira e Mariano Pimentel** — saem os episódios de mesa e o da Vanessa Battestin, entram
+Jaqueline individualmente e o Mauro, que nem estava na lista. **A Mariana é host de dois; faltam
+hosts para os outros dois.** *Por quê a troca faz sentido:* palestrante externo é quem a audiência
+não vê no dia a dia do Cefor, e episódio individual rende roteiro mais fundo que mesa com dois
+convidados dividindo o mesmo microfone.
+
+**9. Divulgação do app aos inscritos: travada por problema nos sistemas do Ifes.** O e-mail aos
+288 inscritos não foi enviado e a causa é externa à CGTE. Registrado para não seguir aparecendo
+como esquecimento nosso — mas o app continua sem chegar a quem já está inscrito, e é preciso um
+plano B (QR no crachá, fala na abertura, telão ocioso).
+
+**10. Conferência dos banners impressos: Elton.** Resolve o pedido que a Juliana fez em 03/08 e
+que não tinha dono. Os banners chegam em 14/08 e um erro de horário, nome ou sala só aparece com a
+peça em mãos.
+
+**O que sobra para a CGTE decidir:** as **artes dos 2 cards de mesa** (ainda vamos ver), o
+**destino da contagem regressiva** (decidido que precisa fazer) e os **hosts de podcast que
+faltam**.
+
+---
+
+## 2026-08-12 (tarde) — A escala do evento ganhou nomes; e apareceram 5 demandas que não existiam
+
+Reunião periódica da CGTE, 78 min em duas partes (o Meet caiu e migrou de link). Marquito, Elton,
+Juliana e Bárbara. **Pauta única: preencher a planilha de atuação hora a hora**, nos quatro dias.
+Transcrições e síntese completa em
+[`contexto/reunioes/sintese-2026-08-12.md`](contexto/reunioes/sintese-2026-08-12.md).
+
+**1. O escopo da CGTE no evento ficou explícito, com um limite declarado.** As frentes são
+transmissão, Libras, podcasts, **cobertura de reels e stories no Instagram do Cefor** (igual a
+2024, com a senha passada para a equipe e trocada de volta depois), fotografia e admin do app.
+🔴 **O limite: a CGTE não fotografa apresentação por apresentação** nas sessões técnicas e na
+mostra. *Por quê:* ninguém solicitou e a comissão não passou lista de quem apresenta, onde e a que
+horas — sem lista, cobrir tudo é impossível de garantir. A Juliana pediu que isso seja
+**confirmado com a comissão** em vez de assumido, para não virar cobrança depois; o Marquito leva
+à Márcia. *Consequência já aplicada:* ninguém precisa estar às 8h; a cobertura começa às 9h30.
+
+**2. Responsáveis fixos, para não haver buraco.** Postagens **Elton** · app admin **Marquito** ·
+termos do podcast **Andreia** · transmissão **Leo e Tiago** · cobertura e fotografia **Nanda,
+Andreia e Juliana**. *A régua, na fala do Marquito:* "na hora, uma pessoa fica presa fazendo outra
+coisa e aí ninguém fez, e a gente pergunta quem que ia fazer". Nome na célula é o que impede o
+buraco. **A equipe do repo estava desatualizada** — entraram Juliana, Bárbara e Alessandra.
+
+**3. Transmissão: 8 lives, um link por palestra.** Só a segunda concentra abertura, palestra da
+Vanessa e lançamentos no mesmo link, por serem bloco contínuo. Entrou o **Educimat** (2 blocos em
+20/08), por pedido da organização. O chat do YouTube foi desativado em todas por causa da
+legislação eleitoral.
+
+**4. 🔴 Dois riscos que só apareceram ao conferir a planilha:**
+- **O link do Mariano (19/08 14h30) é o mesmo do Tessarolo (18/08 14h30).** Cópia de célula.
+  Quem divulgar manda o público para a live do dia anterior.
+- **A Eliana está nos 7 momentos de Libras, sem uma folga.** Na reunião a preocupação declarada
+  foi com a Bárbara; na planilha final quem não descansa é a Eliana.
+
+**5. 🔴 O app entrou em risco real: os servidores do Ifes estão fora do ar.** Isso é maior do que
+a divulgação que não saiu — não dá para mexer no app e não se sabe se ele sobe na segunda.
+Precisa de plano B declarado.
+
+**6. Cinco demandas novas, todas sem dono:** **thumbnails das 8 transmissões** (a primeira é
+segunda) · **modelo único de slides** para palestrantes, sessões técnicas, lançamentos e premiação
+· **reações do app sobre a transmissão ao vivo** · **espaço compartilhado** para o material
+gravado em celular · **aba de links úteis** na planilha.
+
+**7. O podcast tem data para fechar: 13/08.** É a frente mais indefinida ("depende de muitas
+outras pessoas"). Caiu o horário das 8h da Vanessa, Jaqueline e Mariella passam a gravar juntas,
+o Mariano não cabe depois da palestra e o Mauro não tem episódio na planilha. ⚠️ **A planilha (5
+episódios + repescagem) e o `plano-podcasts.md` do repo (7 episódios) divergem** — a reunião de
+amanhã escolhe uma, e a escolhida volta para a planilha, que é o que vai impresso.
+
+---
+
 ## 2026-08-10 — A vitrine de MOOCs tem endereço definitivo: mooc.cefor.ifes.edu.br
 
 Cai a última trava de informação dos **banners institucionais**. O link da nova vitrine era

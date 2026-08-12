@@ -65,10 +65,14 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 - **📚 Base de Conhecimentos (nova versão):** https://conhecimento.cefor.ifes.edu.br/
   — *"Aprenda. Consulte. Ensine melhor."* · 130 artigos em trilhas sobre Moodle, acessibilidade e
   IA na educação. Link confirmado em 29/07 e já usável no QR code do banner.
-- **📘 Livro dos 20 anos do Cefor:** link **provisório** no Drive
-  (https://drive.google.com/file/d/1qqyn-bmjGM8ZAoFlJXHJxqzVNCogR9ko/view) — **pegar o definitivo
-  com a Vanessa antes de imprimir**.
-- **🎓 Plataforma de MOOCs (nova vitrine):** `<link a confirmar>` — trava o banner 13.
+- **📘 Livro dos 20 anos do Cefor:** ✅ **definitivo (12/08)** —
+  https://cefor.ifes.edu.br/index.php/publicacoes/2-uncategorised/17710-livro20anos
+  Substitui o Drive provisório (`.../file/d/1qqyn-bmjGM8ZAoFlJXHJxqzVNCogR9ko/view`), que não
+  servia para QR impresso porque quebra se alguém mexer na pasta.
+- **🎓 Plataforma de MOOCs (nova vitrine):** ✅ https://mooc.cefor.ifes.edu.br/ (confirmado 10/08)
+  — *"Cursos Abertos do Ifes: aprendizado no seu ritmo"*.
+- **📕 E-book do NTE:** 🔴 **ainda sem endereço** — lançamento em 17/08 às 20h. Recomendação:
+  publicar na Base de Conhecimentos. É o único dos três produtos sem link.
 
 ## Evento
 

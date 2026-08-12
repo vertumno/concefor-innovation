@@ -7,14 +7,20 @@
 ## Checklist por palestrante
 | Palestrante | Participação | Foto oficial | Card divulgação | Reel | Podcast |
 |---|---|---|---|---|---|
-| Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ✅ | ⬜ | ⬜ |
-| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ✅ | ⬜ | ⬜ |
-| Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ✅ | ⬜ | ⬜ |
-| Dra. Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
-| Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | ⬜ |
-| Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | ⬜ |
-| Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | ⬜ |
-| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ✅ *(28/07, precisa recorte)* | ✅ **produzido (02/08)** | ⬜ | ⬜ |
+| Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 3 · 18/08 16h20** |
+| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ✅ | ⬜ | 🟡 **ep. 7 · 19/08 18h30** |
+| Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ✅ | ⬜ | 🟡 **ep. 1 · 17/08 16h40** *(antes da fala)* |
+| Dra. Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 2 · 18/08 11h30** 👥 *(com a Mariella)* |
+| Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 2 · 18/08 11h30** 👥 *(com a Jaqueline)* |
+| Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | 🟡 **ep. 4 · 18/08 17h10** *(confirmar com ela primeiro)* |
+| Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | 🟡 **ep. 5 · 19/08 11h40** |
+| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ✅ *(28/07, precisa recorte)* | ✅ **produzido (02/08)** | ⬜ | 🟡 **ep. 6 · 19/08 17h40** |
+
+> 🎙️ **Podcast (12/08): os 8 palestrantes têm episódio**, em **7 gravações** — Jaqueline e Mariella
+> dividem o ep. 2 (👥), gravado em dupla direto da mesa. Bloco de 40 min no mesmo dia da fala.
+> Grade, hosts, ordem de corte e roteiros em
+> [`plano-podcasts.md`](../producao/03-durante-evento/podcasts/plano-podcasts.md).
+> Status 🟡 = horário definido, **falta confirmar com o convidado** no ato do convite.
 
 > ✅ Fotos oficiais dos 7 recebidas em 16/07/2026 →
 > `producao/02-pre-evento/palestrantes/_refs/fotos/` (PNG, nome = nome do palestrante).

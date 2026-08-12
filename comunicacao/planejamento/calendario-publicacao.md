@@ -29,8 +29,8 @@
 | ~~02/08~~ *(dom)* | Card mesa — "Tecnologia Delas" (as três juntas) | Feed | 🔴 **não publicou: a arte não existe** — remarcar |
 | 03/08 | Marco: prazo de envio final (Even3) + prazo interno dos vídeos | — | ⬜ |
 | **03/08** *(era 11/08)* | Card palestrante — Mauro Oliveira ("Inovações da IA para a Educação", 19/08 16h30) | Feed | ✅ [publicado](https://www.instagram.com/ifescefor/p/DblPpaYuAN9/) — **antecipado** porque o feed estava parado desde 01/08. Foi ao ar com a v1, que traz "MESA" em vez de "PALESTRA" |
-| 04/08 | Eventos paralelos — carrossel dos 6 eventos | Feed | ⬜ dados completos · ⚠️ **o pedido de 03/08 é por 6 cards individuais para os coordenadores**, não pelo carrossel. A recomendação é fazer os cards primeiro e montar o carrossel a partir deles. [Brief](../producao/02-pre-evento/eventos-paralelos/brief-cards.md) |
-| 🆕 sem data | **6 cards dos eventos paralelos** para as coordenações divulgarem (não é publicação nossa: é entrega a cada coordenador, com texto pronto) | WhatsApp/redes de terceiros | ⬜ conteúdo pronto · 🔴 **falta quem produz** · [Brief](../producao/02-pre-evento/eventos-paralelos/brief-cards.md) |
+| **11/08** *(era 04/08)* | Eventos paralelos — carrossel dos 6 eventos + capa | Feed | ✅ [publicado](https://www.instagram.com/p/Db6dlZPm7kS/?img_index=1) — **primeiro post desde 03/08**, encerra 8 dias de feed parado |
+| **11/08** | **6 cards dos eventos paralelos** entregues às coordenações (não é publicação nossa: cada coordenador recebe card + texto pronto pelo [kit](https://vertumno.github.io/concefor-innovation/comunicacao/kit-eventos-paralelos/)) | WhatsApp/redes de terceiros | ✅ enviado |
 | ~~01/08~~ | ~~Reforço: últimos dias do prazo de envio~~ | ~~Story~~ | ❌ retirado em 27/07 (só cards) |
 
 > ⚠️ **A cadência diária quebrou em 01/08.** Os 7 individuais se esgotaram em 31/07 e as duas
@@ -44,27 +44,21 @@
 > ⚠️ **01/08 foi sábado e 02/08 domingo.** A sequência diária caía neles e não rodou. Se a
 > preferência for só dia útil, isso precisa virar regra explícita, e não acidente.
 
-### Contagem regressiva (07–16/08) — ⚠️ pendente de decisão
-As 10 peças planejadas aqui são, em sua maioria, **stories**. A regra "só cards" de 27/07 as
-derruba quase inteiras, então elas **não foram apagadas** até você decidir:
+### Contagem regressiva — ✅ decidida em 12/08: VAI SER FEITA
+
+A regra "só cards" derrubava 9 das 10 peças originais (eram stories), e o plano começava em
+07/08 — data que já passou. **O que sobrou é o trecho final, convertido para card de feed:**
 
 | Data | Publicação | Formato | Status |
 |---|---|---|---|
-| 07/08 | Regressiva: faltam 10 dias | Feed/Story | ⏸️ decidir |
-| 08/08 | Regressiva: 9 dias · Reel vídeo-convite Vanessa Battestin | Story/Reel | ⏸️ decidir |
-| 09/08 | Regressiva: 8 dias | Story | ⏸️ decidir |
-| 10/08 | Regressiva: 7 dias · Reel vídeo-convite Felipe Tessarolo | Story/Reel | ⏸️ decidir |
-| 11/08 | Regressiva: 6 dias | Story | ⏸️ decidir |
-| 12/08 | Regressiva: 5 dias · Reel vídeo-convite Tecnologia Delas | Story/Reel | ⏸️ decidir |
-| 13/08 | Regressiva: 4 dias | Story | ⏸️ decidir |
-| 14/08 | Regressiva: 3 dias · Reel vídeo-convite Mariano Pimentel | Story/Reel | ⏸️ decidir |
-| 15/08 | Regressiva: 2 dias · Último dia de inscrição | Story | ⏸️ decidir |
-| 16/08 | Regressiva: é amanhã! | Feed | ⬜ |
+| 15/08 *(sáb)* | Regressiva: faltam 2 dias · **último dia de inscrição** | Feed | ⬜ |
+| 16/08 *(dom)* | Regressiva: é amanhã! | Feed | ⬜ |
+| 17/08 *(seg)* | É hoje! | Feed | ⬜ |
 
-**Opções:** (a) converter a regressiva inteira para card de feed, mantendo um por dia;
-(b) manter os stories só nesse bloco final; (c) cortar a regressiva e deixar os reels.
-Os **reels de vídeo-convite** são peça própria (dependem dos vídeos, prazo 03/08) e não são
-stories — ficam de pé em qualquer opção.
+> ❌ **Os reels de vídeo-convite caíram junto:** os vídeos foram **cancelados em 12/08** e não
+> serão gravados, então as peças de 08, 10, 12 e 14/08 que dependiam deles saem do plano.
+> ⚠️ **15 e 16/08 caem em sábado e domingo** — a mesma armadilha que fez o feed parar em 01–02/08.
+> Se for para publicar, precisa estar programado antes de sexta.
 
 ## 17 a 20 de agosto — durante o evento
 | Data | Publicação | Formato | Status |
@@ -83,11 +77,13 @@ stories — ficam de pé em qualquer opção.
 | a definir | Publicação das gravações / podcasts | YouTube | ⬜ |
 
 ## Pendências
-- **Artes dos 2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") — não existem ainda, e
-  com a cadência diária a primeira vence em **01/08**. Legendas prontas; falta só a arte.
-- Decidir o destino da **contagem regressiva** (bloco acima).
-- Decidir se a sequência diária **pula fim de semana** (01–02/08).
+- **Artes dos 2 cards de mesa** ("Desafios da EaD" e "Tecnologia Delas") — seguem sem existir, e
+  a decisão ficou **em aberto na reunião de 12/08** ("ainda vamos ver"). Legendas, alt-text, as 5
+  fotos e o pipeline de geração por código estão prontos; falta só decidir e rodar.
+  ⏰ Se saírem, disputam com a regressiva os únicos 3 dias que restam de feed.
+- ✅ ~~Decidir o destino da **contagem regressiva**~~ → **vai ser feita** (bloco acima).
+- Decidir se a sequência diária **pula fim de semana** — volta a importar agora: 15 e 16/08 são
+  sábado e domingo.
 - ~~Aula Inaugural do Educimat (evento paralelo)~~ → ✅ **completo (29/07)**.
-- Vídeos-convite dos palestrantes — receber até 03/08 (**mensagem de solicitação ainda não
-  consta como enviada**).
+- ~~Vídeos-convite dos palestrantes~~ → ❌ **cancelados em 12/08**, não serão feitos.
 - ~~Foto e minibio do Dr. Mauro Oliveira~~ → ✅ chegaram em 28/07; ✅ **arte produzida em 02/08**.

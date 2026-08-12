@@ -49,17 +49,47 @@
 
 ## Plano de podcasts com palestrantes
 > 📋 **Plano completo** (premissas, fluxo, roteiro, pendências):
-> [plano-podcasts.md](../producao/03-durante-evento/podcasts/plano-podcasts.md)
-> Regras: gravação **sempre após a fala** do convidado (roteiro usa a transcrição) e **nunca
-> durante uma transmissão**. Host de cada episódio: **Coordenação do Concefor define** (🔴 pendente).
+> [plano-podcasts.md](../producao/03-durante-evento/podcasts/plano-podcasts.md) ·
+> roteiros por episódio em [`roteiros/`](../producao/03-durante-evento/podcasts/roteiros/)
+> Regras: gravação **no mesmo dia da fala do convidado**, imediatamente antes ou depois, em
+> **bloco de 40 min**, e **nunca durante uma transmissão**.
+> ✅ **12/08 — os 8 palestrantes do evento têm episódio**, em **7 gravações**: Jaqueline e Mariella
+> gravam juntas. Numeração = **ordem de gravação**, não de publicação.
 
-| Convidado | Gravação proposta | Pauta | Host (Coordenação) | Edição |
-|---|---|---|---|---|
-| Vanessa Battestin | 18/08 8h–9h (alt.: almoço 18/08) | 20 anos de EaD e o Cefor | ___ | ___ |
-| Mesa "Tecnologia Delas" | 18/08 12h–13h30 | mulheres e tecnologia | ___ | ___ |
-| Felipe Tessarolo | 18/08 16h20–17h (pós-coffee) | IA, OU, acessibilidade | ___ | ___ |
-| Mesa "Desafios da EaD" | 19/08 12h–13h30 | futuro da EaD | ___ | ___ |
-| Mariano Pimentel | 19/08 16h20–17h (pós-coffee) | IA generativa e educação | ___ | ___ |
+| # | Convidado | Fala | 🎙️ Gravação (40 min) | Pauta | Host | Edição |
+|---|---|---|---|---|---|---|
+| 1 | Vanessa Battestin | 17/08 19h | **17/08 16h40–17h20** ⚠️ *antes* | 20 anos de EaD e o Cefor | ___ | ___ |
+| 2 | 👥 Jaqueline Sanz **+** Mariella Berger | 18/08 9h30 | **18/08 11h30–12h10** | dado e desigualdade + computação e gestão | ___ | ___ |
+| 3 | Felipe Tessarolo | 18/08 14h30 | **18/08 16h20–17h00** | IA, Open University, acessibilidade | ___ | ___ |
+| 4 | Márcia Oliveira | 18/08 9h30 | **18/08 17h10–17h50** | Corte de Lovelace + balanço do congresso | ___ | ___ |
+| 5 | Rutinelli Fávero | 19/08 9h30 | **19/08 11h40–12h20** | gamificação e formação docente | ___ | ___ |
+| 6 | Mauro Oliveira | 19/08 16h30 | **19/08 17h40–18h20** | inovações da IA para a educação | ___ | ___ |
+| 7 | Mariano Pimentel | 19/08 14h30 | **19/08 18h30–19h10** | IA generativa e autoria | ___ | ___ |
+
+**Blocos livres:** 18/08 12h30–13h10 e 13h20–14h00 · 19/08 12h40–13h20 · 20/08 dia inteiro
+(último recurso). O de 12h30 na terça também serve para esticar o ep. 2, se as duas renderem.
+
+### Hosts por conjunto — 4 pessoas cobrem os 7
+
+| Conjunto | Episódios | Quem |
+|---|---|---|
+| IA na educação | 6 Mauro · 7 Mariano | ✅ **Mariana** |
+| Tecnologia Delas | 2 Jaqueline+Mariella · 4 Márcia | 🔴 ___ |
+| Desafios da EaD | 3 Tessarolo · 5 Rutinelli | 🔴 ___ |
+| 20 anos | 1 Vanessa | 🔴 ___ |
+
+> 🔴 **Faltam 3 hosts** (os conjuntos "Desafios da EaD" e "20 anos" podem ser a mesma pessoa).
+> ⚠️ **O ep. 2 é o mais difícil de conduzir** — duas convidadas em 25 min de conversa. Não dar para
+> quem nunca apresentou.
+> ✅ **Nenhum episódio depende de quinta-feira** — todo mundo grava no dia em que fala.
+> ⚠️ **O ep. 2 começa 11h30, direto da mesa, sem intervalo.** Se a mesa atrasar, escorrega junto.
+> ⚠️ **A escala de câmera/áudio da quarta precisa cobrir até 19h10** (dobradinha Mauro/Mariano;
+> a tarde está tomada por transmissão das 14h30 às ~17h30).
+> ⚠️ **Márcia é a Coordenadora Geral** — combinar o horário dela primeiro; se 17h10 não servir, a
+> terça tem dois blocos vagos (12h30 e 13h20).
+> 🎬 **O set do ep. 2 precisa de duas cadeiras e dois microfones.**
+> 📋 **Ordem de corte**, se faltar host ou sala, está definida no plano — corta de baixo para cima,
+> começando pela Márcia.
 
 > Antes de gravar: **termo de autorização de imagem/voz assinado** (modelo a providenciar).
 > Definir: local fixo de gravação, kit de áudio/vídeo, e responsável por publicação.
