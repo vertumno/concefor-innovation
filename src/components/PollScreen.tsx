@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import QRCode from "qrcode";
 import { type Poll, wordFrequencies } from "@/lib/polls";
+import { PollCloud } from "@/components/PollCloud";
 
 export function PollScreen() {
   const [poll, setPoll] = useState<Poll | null>(null);
@@ -37,7 +38,6 @@ export function PollScreen() {
     () => (poll ? wordFrequencies(poll.responses, poll.stopwords) : []),
     [poll],
   );
-  const max = Math.max(1, ...words.map((w) => w.count));
 
   if (!poll) {
     return (
@@ -69,17 +69,7 @@ export function PollScreen() {
         {poll.responses.length === 0 ? (
           <p className="poll-screen-wait">Aguardando respostas…</p>
         ) : poll.mode === "cloud" ? (
-          <div className="poll-cloud" aria-label="Nuvem de palavras">
-            {words.map(({ word, count }) => (
-              <span
-                key={word}
-                style={{ fontSize: `${26 + Math.round((count / max) * 48)}px` }}
-                title={`${count} ocorrência${count > 1 ? "s" : ""}`}
-              >
-                {word}
-              </span>
-            ))}
-          </div>
+          <PollCloud words={words} />
         ) : (
           <ol className="poll-screen-list">
             {poll.responses.map((response) => (

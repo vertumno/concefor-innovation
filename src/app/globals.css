@@ -2510,6 +2510,9 @@ h1.page-title {
   display: grid;
   align-items: center;
   padding: clamp(22px, 4vw, 64px) 0;
+  /* Item de grid não encolhe abaixo do conteúdo por padrão: sem isto a faixa
+     `1fr` da tela cresce junto com a nuvem e empurra o rodapé para fora. */
+  min-height: 0;
 }
 .poll-screen-wait {
   margin: 0;
@@ -2517,28 +2520,51 @@ h1.page-title {
   font-size: clamp(24px, 3vw, 46px);
   text-align: center;
 }
+/* A nuvem é posicionada palavra a palavra por @/lib/wordcloud (espiral + grade
+   de ocupação), então aqui ela é só a ÁREA: quem dá coordenada é o layout, não
+   o fluxo do CSS. A altura precisa ser concreta — é o espaço que o algoritmo
+   tem para encaixar, e sem ela o container mediria zero. */
+/* A nuvem é posicionada palavra a palavra por @/lib/wordcloud (espiral + grade
+   de ocupação), então aqui ela é só a ÁREA: quem dá coordenada é o layout, não
+   o fluxo do CSS. A altura precisa ser concreta — é o espaço que o algoritmo
+   tem para encaixar, e sem ela o container mediria zero.
+   O peso 500 tem que casar com PESO_FONTE_NUVEM, que é com o que o canvas mede.
+   Também é mais leve que o bold de antes de propósito: em corpo pequeno o bold
+   fecha os contraórganos das letras e a palavra vira mancha na projeção. */
 .poll-cloud {
+  position: relative;
+  width: 100%;
+  /* Ocupa a faixa que o grid reserva, sem altura própria. Com `min(72vh, 900px)`
+     a nuvem podia ficar mais alta que a faixa e as palavras vazavam pela tela —
+     o algoritmo só garante caber na área que ele recebe, e a área precisa ser a
+     real. O `overflow` é a rede: nada escapa nem em resolução inesperada. */
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  /* Inter, não a Oswald dos títulos: Oswald é condensada e alta, e numa nuvem
+     cheia vira parede — as palavras se confundem umas com as outras. A largura
+     normal da Inter separa melhor e lê de longe.
+     Peso e tracking NÃO ficam aqui: são aplicados palavra a palavra, a partir
+     das mesmas constantes que o canvas usa para rasterizar (o tracking depende
+     do corpo). Duplicar os valores neste arquivo é como eles divergiriam. */
+  font-family: var(--font-text);
+}
+.poll-cloud-word {
+  position: absolute;
   display: flex;
-  align-content: center;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
-  gap: clamp(10px, 1.5vw, 25px);
-  flex-wrap: wrap;
-  max-width: 1600px;
-  margin: auto;
-}
-.poll-cloud span {
-  color: #fff;
-  font-family: var(--font-title);
-  font-weight: var(--weight-semibold);
-  line-height: 1.05;
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.3);
-}
-.poll-cloud span:nth-child(3n + 1) {
-  color: #7ff8ee;
-}
-.poll-cloud span:nth-child(3n + 2) {
-  color: #f5b82e;
+  line-height: 1;
+  white-space: nowrap;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+  /* A nuvem se refaz a cada resposta nova; sem a transição, as palavras que
+     mudam de lugar piscariam de uma posição para a outra. */
+  transition:
+    left 0.5s ease,
+    top 0.5s ease,
+    width 0.5s ease,
+    height 0.5s ease,
+    font-size 0.5s ease;
 }
 .poll-screen-list {
   display: grid;

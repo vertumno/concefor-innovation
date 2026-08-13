@@ -105,3 +105,6 @@ export function wordFrequencies(
     .sort((a, b) => b.count - a.count || a.word.localeCompare(b.word, "pt-BR"))
     .slice(0, 60);
 }
+
+// O tamanho e a posição de cada palavra na nuvem ficam em @/lib/wordcloud: o
+// resultado depende do espaço livre na tela, não só da contagem daqui.
