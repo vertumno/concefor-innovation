@@ -9,4 +9,4 @@ acento: "#00c9c9"
 
 Registros dos quatro dias, atualizados durante o evento.
 
-Postou? **Marque @ifescefor** e a sua pode aparecer aqui.
+Postou a sua? **Marque @ifescefor** e venha para o nosso Instagram.

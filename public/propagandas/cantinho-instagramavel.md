@@ -9,4 +9,4 @@ acento: "#ff66cc"
 
 Tire sua foto, poste e **marque @ifescefor**.
 
-As melhores aparecem aqui no telão.
+Faça parte do nosso Instagram.
