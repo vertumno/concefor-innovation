@@ -73,6 +73,11 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
   — *"Cursos Abertos do Ifes: aprendizado no seu ritmo"*.
 - **📕 E-book do NTE:** 🔴 **ainda sem endereço** — lançamento em 17/08 às 20h. Recomendação:
   publicar na Base de Conhecimentos. É o único dos três produtos sem link.
+  ✅ **13/08: o PDF oficial está no repo** em
+  `comunicacao/producao/02-pre-evento/livro-nte/Ebook_Chegando-Agora-no-NTE_Oficial.pdf`,
+  e a **notícia do site já está escrita** (texto + HTML para o Joomla) em
+  `comunicacao/producao/02-pre-evento/livro-nte/noticia-site.md`. Falta só publicar o arquivo e
+  colher o endereço, que fecha o QR do card, o QR do banner e o CTA da notícia.
 
 ## Evento
 

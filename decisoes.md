@@ -4,6 +4,31 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-13 — E-book do NTE: o arquivo chegou e o lançamento ganha notícia de site
+
+**Decisão:** o e-book do NTE não é anunciado só por card de Instagram. Ele ganha **uma notícia
+de site**, escrita e pronta para colar, publicada **a partir do lançamento em 17/08 às 20h**. O
+texto está em
+[`comunicacao/producao/02-pre-evento/livro-nte/noticia-site.md`](comunicacao/producao/02-pre-evento/livro-nte/noticia-site.md),
+em duas versões: texto corrido e **HTML no padrão do editor Joomla**, que é o do site do Cefor.
+O PDF oficial passou a morar no repo, ao lado do brief.
+
+**Por quê:** o card serve ao feed e some em um dia. Uma publicação técnica precisa de um endereço
+estável que continue sendo achado por busca depois do congresso, e o caminho já existe: o livro
+dos 20 anos se resolveu em 12/08 numa página de publicações do site do Cefor
+(`.../publicacoes/2-uncategorised/17710-livro20anos`). Fazer o mesmo aqui resolve de uma vez a
+divulgação e a hospedagem, que eram tratadas como dois problemas.
+
+**O que isso destravou:** a **sinopse do NTE**, pedida em 14/07 e nunca recebida, deixou de ser
+bloqueio. Com o PDF em mãos, conteúdo, sumário e ficha técnica saem do próprio arquivo, e o
+rascunho da legenda do card foi completado com eles.
+
+**O que segue travado:** o **link**. O CTA da notícia está com `LINK-A-DEFINIR`, e agora esse
+mesmo endereço trava três peças ao mesmo tempo: QR do card, QR do banner institucional e CTA da
+notícia. Falta também confirmar se a publicação é no site do Cefor ou no do congresso.
+
+---
+
 ## 2026-08-12 — Podcasts: os 8 palestrantes têm episódio, gravado colado à fala
 
 **Decisão:** o podcast passa a cobrir **os 8 palestrantes do evento** (os 4 externos e os 4 do

@@ -420,13 +420,20 @@ const PECAS = [
 
   { nome:'Card do e-book do NTE', fase:'pre', status:'todo', resp:'texto: Elton/Marquito · arte: a definir',
     prazo:'2026-08-17', prazoTx:'antes do lançamento, 17/08',
-    nota:'PEDIDO DE 14/07 RECUPERADO DO INBOX EM 04/08, em dois áudios da Vanessa Battestin. Ela pediu que a própria CGTE escrevesse o texto do card sobre o livro do NTE. O rascunho da copy já está escrito no brief. Faltam duas coisas: a sinopse do e-book, que ela pediu ao NTE em 14/07 e não há registro de retorno, e quem produz a arte, já que a Juliana está nos banners e a Andreia no bolo e no livro dos 20 anos. Título do e-book: "Chegando agora no NTE? Núcleo de Tecnologias Educacionais: práticas, processos e orientações".',
+    nota:'PEDIDO DE 14/07 RECUPERADO DO INBOX EM 04/08, em dois áudios da Vanessa Battestin. Ela pediu que a própria CGTE escrevesse o texto do card sobre o livro do NTE. O rascunho da copy já está escrito no brief. EM 13/08 O PDF OFICIAL CHEGOU e foi versionado no repo, o que derruba a trava da sinopse: conteúdo, sumário e ficha técnica saem agora do próprio arquivo, e o rascunho da legenda já foi completado com eles. Falta só quem produz a arte, já que a Juliana está nos banners e a Andreia no bolo e no livro dos 20 anos. Título do e-book: "Chegando agora no NTE? Núcleo de Tecnologias Educacionais: práticas, processos e orientações".',
     links:[{t:'Brief com o rascunho da copy',u:'producao/02-pre-evento/livro-nte/brief.md'},
+           {t:'PDF oficial do e-book',u:'producao/02-pre-evento/livro-nte/Ebook_Chegando-Agora-no-NTE_Oficial.pdf'},
            {t:'Áudios da Vanessa (14/07)',u:'producao/02-pre-evento/livro-nte/_refs/2026-07-14-audios-vanessa.md'}] },
+
+  { nome:'Notícia do e-book do NTE para o site', fase:'pre', status:'producao', resp:'Elton',
+    prazo:'2026-08-17', prazoTx:'publicar a partir de 17/08',
+    nota:'ESCRITA EM 13/08, a partir do PDF oficial. Está pronta para colar: versão em texto (título, intro e corpo), HTML no padrão do editor Joomla e a ficha técnica completa conferida no arquivo, incluindo a equipe de revisão de conteúdo, que não entra na ficha rápida da notícia. Vai ao ar depois do lançamento no Pátio, em 17/08 às 20h. O único bloqueio é o mesmo de sempre: o CTA está com LINK-A-DEFINIR e só fecha quando a hospedagem sair. Confirmar também se a publicação é no site do Cefor (Joomla, o mesmo caminho do livro dos 20 anos) ou no site do congresso.',
+    links:[{t:'Texto e HTML prontos',u:'producao/02-pre-evento/livro-nte/noticia-site.md'},
+           {t:'PDF oficial do e-book',u:'producao/02-pre-evento/livro-nte/Ebook_Chegando-Agora-no-NTE_Oficial.pdf'}] },
 
   { nome:'Hospedagem do e-book do NTE · link e QR code', fase:'pre', status:'todo', resp:'a definir',
     prazo:'2026-08-17', prazoTx:'CRÍTICO · lançamento 17/08 às 20h',
-    nota:'MESMO PEDIDO DE 14/07 e agora O ITEM MAIS CRÍTICO DA OPERAÇÃO INTEIRA. O e-book é lançado no palco em 17/08 às 20h e não tem endereço de acesso: sem local de hospedagem, não há link nem QR code, e ninguém consegue abrir o arquivo. Recomendação registrada no brief: publicar na Base de Conhecimentos (conhecimento.cefor.ifes.edu.br), que já está no ar, é do Cefor e mantém o link válido depois do Concefor. O livro dos 20 anos, que era o problema gêmeo deste, se resolveu em 12/08 com endereço definitivo no site institucional — o do NTE é o único dos dois que segue sem lugar para morar.',
+    nota:'MESMO PEDIDO DE 14/07 e agora O ITEM MAIS CRÍTICO DA OPERAÇÃO INTEIRA. O e-book é lançado no palco em 17/08 às 20h e não tem endereço de acesso: sem local de hospedagem, não há link nem QR code, e ninguém consegue abrir o arquivo. EM 13/08 O ARQUIVO FINAL CHEGOU e está versionado no repo, então não falta mais produzir nada, falta publicar. Esse mesmo link trava agora três peças de uma vez: o QR do card, o QR do banner e o CTA da notícia do site, que já está escrita. Recomendação registrada no brief: publicar na Base de Conhecimentos (conhecimento.cefor.ifes.edu.br), que já está no ar, é do Cefor e mantém o link válido depois do Concefor. O livro dos 20 anos, que era o problema gêmeo deste, se resolveu em 12/08 com endereço definitivo no site institucional — o do NTE é o único dos dois que segue sem lugar para morar.',
     links:[{t:'Brief e mensagem pronta p/ Vanessa e Andrômeda',u:'producao/02-pre-evento/livro-nte/brief.md'}] },
 
   { nome:'Divulgação do lançamento do app', fase:'pre', status:'bloqueado', resp:'Marquito / Elton',
@@ -509,7 +516,7 @@ const AGUARDANDO = [
   { q:'Link definitivo do livro dos 20 anos (hoje é um link provisório do Drive) — último link que falta para os banners institucionais', who:'Vanessa Battestin · cobrado 03/08' },
   { q:'Data e quem produz os banners institucionais, agora que os links e os orçamentos estão resolvidos', who:'Vanessa Battestin · mensagem pronta 10/08' },
   { q:'São 3 ou 4 banners institucionais? E qual é o quarto produto (precisa de link próprio para o QR code)', who:'Vanessa Battestin · levantado 10/08' },
-  { q:'Sinopse do e-book do NTE, para o card que a Vanessa pediu', who:'NTE · pedida em 14/07, sem retorno' },
+  { q:'Onde publicar a notícia do e-book do NTE, já escrita: site do Cefor (Joomla, o mesmo caminho do livro dos 20 anos) ou site do congresso', who:'Vanessa / Márcia · levantado 13/08' },
   { q:'Compra das etiquetas de nome do crachá — condição para haver nome nos 400', who:'Alex · prazo vencido em 04/08' },
   { q:'Quem assume o cantinho instagramável, devolvido pela CGTE à comissão', who:'Comissão organizadora · retorno pedido até 05/08, vencido' },
   { q:'Hosts dos podcasts (1 por episódio)', who:'Márcia / Coordenação' },

@@ -50,6 +50,7 @@ comunicacao/
 | Eventos paralelos (**6 confirmados, todos com local**) | [contexto/07-eventos-paralelos.md](contexto/07-eventos-paralelos.md) |
 | Escrever notícia para o site (estilo + exemplos) | [contexto/08-referencia-noticias.md](contexto/08-referencia-noticias.md) |
 | **Estado de TODAS as peças** | [planejamento/board-producao.md](planejamento/board-producao.md) |
+| ✅ **Checklist da reta final** (o que falta, por prazo, até 17/08) | [planejamento/checklist-reta-final.md](planejamento/checklist-reta-final.md) |
 | **Painel visual do status** (abrir no celular / mostrar em reunião) | [painel/](painel/) · [no ar](https://vertumno.github.io/concefor-innovation/comunicacao/painel/) |
 | **Kit dos eventos paralelos** (mandar para as 6 coordenações: copiar texto e baixar card) | [kit-eventos-paralelos/](kit-eventos-paralelos/) · [no ar](https://vertumno.github.io/concefor-innovation/comunicacao/kit-eventos-paralelos/) |
 | Calendário de posts | [planejamento/calendario-publicacao.md](planejamento/calendario-publicacao.md) |
