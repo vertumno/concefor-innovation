@@ -1205,8 +1205,10 @@ h1.page-title {
   position: absolute;
   left: 3vw;
   bottom: 4vh;
-  /* Maior que no ao vivo: aqui não disputa espaço com a linha do tempo. */
-  width: clamp(320px, 27vw, 520px);
+  /* Maior que no ao vivo: aqui não disputa espaço com a linha do tempo. Uns 30%
+     acima do tamanho anterior — já que o cartaz passa por cima do título de
+     qualquer jeito, que passe como peça de divulgação e não como bilhete. */
+  width: clamp(416px, 35vw, 676px);
   max-height: 76vh;
   /* A sala de espera centraliza tudo; dentro do cartaz o texto volta a ser
      alinhado à esquerda, senão os marcadores da lista ficam soltos do item. */
@@ -1236,10 +1238,26 @@ h1.page-title {
    contraste dos banners impressos (base clara + faixa de acento). O modal fica
    de fora desta regra — lá o fundo escuro é o efeito, e ele já funciona. */
 .telao-propaganda .propaganda {
-  background: #f7fbff;
-  border: 1px solid rgba(16, 42, 92, 0.18);
+  /* Vidro jateado BRANCO. O que o telão tem atrás é navy escuro, então abrir a
+     base para o fundo aparecer só escurece e azula o cartaz — foi o que deu
+     errado na primeira tentativa, com `saturate` ainda por cima intensificando
+     o azul que atravessava. Aqui a base fica branca e quase fechada, e o pouco
+     que passa é clareado (`brightness`) e lavado (`saturate` < 1) antes de
+     chegar: o jateado aparece como leitura difusa da luz, sem tingir nada. */
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(30px) brightness(1.75) saturate(0.45);
+  -webkit-backdrop-filter: blur(30px) brightness(1.75) saturate(0.45);
+  border: 1px solid rgba(255, 255, 255, 0.55);
   border-top: 6px solid var(--propaganda-acento, var(--accent));
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38);
+  /* A linha clara por dentro é o que dá espessura de vidro à borda. */
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  /* Entra e sai pela esquerda, como se o cartaz fosse trazido de fora da tela. */
+  animation: propagandaEntraEsquerda 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.telao-propaganda .propaganda--saindo {
+  animation: propagandaSaiEsquerda 0.5s cubic-bezier(0.55, 0, 0.68, 0.2) both;
 }
 .telao-propaganda .propaganda-titulo {
   color: var(--brand-navy-900);
@@ -1370,7 +1388,10 @@ h1.page-title {
   display: grid;
   place-items: center;
   padding: 6vh 6vw;
-  background: rgba(11, 31, 69, 0.94);
+  /* Quase opaco: com 0.94 o telão aparecia demais atrás e o cartaz perdia força. */
+  background: rgba(11, 31, 69, 0.985);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   animation: propagandaEntra 0.5s ease both;
 }
 .propaganda-modal .propaganda {
@@ -1409,6 +1430,40 @@ h1.page-title {
   to {
     opacity: 1;
     transform: none;
+  }
+}
+/* 120% para o cartaz sumir mesmo depois da borda esquerda, contando a sombra. */
+@keyframes propagandaEntraEsquerda {
+  from {
+    opacity: 0;
+    transform: translateX(-120%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes propagandaSaiEsquerda {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-120%);
+  }
+}
+/* O modal é centralizado: sair pela esquerda não faz sentido nele, e o véu
+   escuro tem que ir junto com o cartaz — senão a tela pisca de escuro no fim. */
+.propaganda-modal:has(.propaganda--saindo) {
+  animation: propagandaModalSai 0.5s ease both;
+}
+@keyframes propagandaModalSai {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 @keyframes propagandaTempo {

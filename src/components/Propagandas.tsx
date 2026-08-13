@@ -16,6 +16,12 @@ import type { Propaganda } from "@/lib/propagandas";
 const RECARGA_MS = 5 * 60_000;
 const GALERIA_MS = 6_000; // troca de foto dentro de um cartaz de galeria
 
+// Entre um cartaz e o outro o telão fica limpo. A divulgação vira visita, não
+// moradora: quem olha volta a ver só a informação do evento, e o cartaz seguinte
+// reconquista a atenção em vez de virar paisagem.
+const PAUSA_MS = 10_000;
+const SAIDA_MS = 500; // tem que casar com a animação propagandaSaiEsquerda
+
 // `espera` = telão entre sessões (sala de espera). Ali a divulgação aparece
 // sempre: a tela está ociosa e é justamente o momento dela. No `ao-vivo` quem
 // manda é o botão do /admin, porque aí o cartaz divide espaço com a palestra.
@@ -25,6 +31,7 @@ export function Propagandas({ contexto = "ao-vivo" }: { contexto?: "ao-vivo" | "
   const [foto, setFoto] = useState(0);
   const [qr, setQr] = useState<string | null>(null);
   const [ligado, setLigado] = useState(true);
+  const [fase, setFase] = useState<"no-ar" | "saindo" | "pausa">("no-ar");
 
   useEffect(() => {
     if (contexto !== "ao-vivo") {
@@ -76,11 +83,29 @@ export function Propagandas({ contexto = "ao-vivo" }: { contexto?: "ao-vivo" | "
   // da pasta no meio do giro não deixa o telão apontando para o vazio.
   const atual = lista.length ? lista[indice % lista.length] : null;
 
+  // Ciclo de cada cartaz: no ar pelo `duracao` → sai deslizando → tela limpa por
+  // PAUSA_MS → entra o próximo. Três fases em vez de um timer só porque a saída
+  // precisa terminar na tela antes de o elemento sumir do DOM.
   useEffect(() => {
-    if (!atual) return;
-    const t = setTimeout(() => setIndice((n) => n + 1), atual.duracao * 1000);
+    if (!atual || fase !== "no-ar") return;
+    const t = setTimeout(() => setFase("saindo"), atual.duracao * 1000);
     return () => clearTimeout(t);
-  }, [atual, indice]);
+  }, [atual, fase, indice]);
+
+  useEffect(() => {
+    if (fase !== "saindo") return;
+    const t = setTimeout(() => setFase("pausa"), SAIDA_MS);
+    return () => clearTimeout(t);
+  }, [fase]);
+
+  useEffect(() => {
+    if (fase !== "pausa") return;
+    const t = setTimeout(() => {
+      setIndice((n) => n + 1);
+      setFase("no-ar");
+    }, PAUSA_MS);
+    return () => clearTimeout(t);
+  }, [fase]);
 
   const alvoQr = atual?.qr;
   useEffect(() => {
@@ -112,7 +137,9 @@ export function Propagandas({ contexto = "ao-vivo" }: { contexto?: "ao-vivo" | "
     return () => clearInterval(id);
   }, [atual?.id, quantasFotos]);
 
-  if (!atual || !ligado) return null;
+  // Na pausa some do DOM de verdade: o telão fica com a informação do evento e
+  // mais nada, que é o ponto de existir a pausa.
+  if (!atual || !ligado || fase === "pausa") return null;
 
   const capa = quantasFotos ? atual.imagens?.[foto % quantasFotos] : atual.imagem;
   const rotulo = atual.rotulo;
@@ -121,7 +148,7 @@ export function Propagandas({ contexto = "ao-vivo" }: { contexto?: "ao-vivo" | "
     <article
       // key no id: trocar de cartaz remonta o bloco e replaya a entrada + a barra de tempo.
       key={atual.id}
-      className="propaganda"
+      className={`propaganda${fase === "saindo" ? " propaganda--saindo" : ""}`}
       style={atual.acento ? ({ "--propaganda-acento": atual.acento } as CSSProperties) : undefined}
     >
       {capa && (
