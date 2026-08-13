@@ -1,5 +1,15 @@
 # Brief — Card do e-book do NTE (+ hospedagem com link/QR code)
 
+> ## 🆕 13/08/2026: o e-book ficou pronto e a notícia do site também
+>
+> - 📄 **PDF oficial no repo:** [`Ebook_Chegando-Agora-no-NTE_Oficial.pdf`](Ebook_Chegando-Agora-no-NTE_Oficial.pdf)
+>   (chegou pelo `_inbox/` e foi processado em 13/08). Com ele, **a trava 1 caiu**: não dependemos
+>   mais da sinopse do NTE, porque o conteúdo, o sumário e a ficha técnica saem do próprio arquivo.
+> - 📰 **Notícia do site escrita e pronta para colar:** [`noticia-site.md`](noticia-site.md),
+>   com versão em texto, HTML para o editor Joomla e a ficha técnica completa conferida no PDF.
+> - 🔴 **Segue faltando o link.** O CTA da notícia e o QR do card apontam para `LINK-A-DEFINIR`.
+>   Enquanto a hospedagem não sair, nem a notícia nem o card podem ir ao ar.
+
 > ⚠️ **Pedido de 14/07 que ficou 3 semanas parado no `_inbox/`.** Chegou por dois áudios de
 > WhatsApp da **Vanessa Battestin**, no mesmo dia e no mesmo assunto do e-mail dela sobre os
 > banners institucionais, e só foi processado em **04/08/2026**.
@@ -35,12 +45,13 @@
 
 | # | O que falta | De quem depende | Situação |
 |---|---|---|---|
-| 1 | **Sinopse** do e-book (e imagem, opcional) | NTE | Vanessa pediu em 14/07 e combinou receber na **quinta 16/07**. Sem registro de que chegou. |
-| 2 | **Local de hospedagem** + link definitivo | 🔴 a definir | Não existe. É o que trava o QR code. |
-| 3 | **Arte do card** | 🔴 a definir | Juliana está nos banners, Andreia no bolo e no livro dos 20 anos. |
+| 1 | ~~**Sinopse** do e-book~~ | NTE | ✅ **Resolvida em 13/08 pelo PDF oficial.** O conteúdo sai do próprio arquivo; a notícia já está escrita em [`noticia-site.md`](noticia-site.md). |
+| 2 | **Local de hospedagem** + link definitivo | 🔴 a definir | Não existe. É o que trava o QR code **e a publicação da notícia**. |
+| 3 | **Arte do card** | 🔴 a definir | Juliana está nos banners, Andreia no bolo e no livro dos 20 anos. A capa do e-book já serve de imagem de apoio. |
 
-O item 1 destrava o texto. O item 2 destrava o CTA e o QR. Dá para escrever o card sem a sinopse
-usando só o título e a proposta do e-book, mas fica genérico.
+Sobrou o item 2: ele destrava o CTA da notícia, o QR do card e o QR do banner de uma vez só.
+Referência de caminho: o **livro dos 20 anos** se resolveu em 12/08 numa página de publicações do
+site do Cefor (`cefor.ifes.edu.br/index.php/publicacoes/...`), e o mesmo caminho serve aqui.
 
 ## Onde hospedar: recomendação
 
@@ -77,7 +88,10 @@ outro.
 > ainda se decide caso a caso. O e-book *"Chegando agora no NTE? Núcleo de Tecnologias
 > Educacionais: práticas, processos e orientações"* reúne isso num lugar só.
 >
-> [1 ou 2 frases da sinopse que o NTE mandar]
+> São duas partes. A primeira apresenta a estrutura, os objetivos e as competências dos Núcleos:
+> quem somos, como o NTE é composto, o papel do coordenador e a carga horária dos membros. A
+> segunda traz dicas e pílulas de capacitação sobre Moodle, acessibilidade digital, parecer em
+> cursos MOOC, elaboração de projetos de curso e uso ético da inteligência artificial.
 >
 > O lançamento acontece no dia 17 de agosto, às 20h, na abertura do VIII Concefor, junto com o
 > e-book dos 20 anos do Cefor, a nova plataforma de MOOCs e a nova Base de Conhecimentos.
@@ -107,6 +121,8 @@ Assim que eu tiver a sinopse e o link, mando o card para aprovação.
 Obrigado!
 
 ## Referências
+- **PDF oficial do e-book:** [`Ebook_Chegando-Agora-no-NTE_Oficial.pdf`](Ebook_Chegando-Agora-no-NTE_Oficial.pdf)
+- **Notícia do site (texto + HTML + ficha técnica):** [`noticia-site.md`](noticia-site.md)
 - [Áudios da Vanessa, 14/07](_refs/2026-07-14-audios-vanessa.md)
 - Programação e os 4 lançamentos: [`contexto/01-programacao.md`](../../../contexto/01-programacao.md)
 - Lista dos lançamentos: [`contexto/00-evento.md`](../../../contexto/00-evento.md)
@@ -124,7 +140,8 @@ Obrigado!
 - Aprovado por: Vanessa Battestin
 
 ## Checklist final
-- [ ] Sinopse do NTE recebida
+- [x] Sinopse do NTE recebida *(dispensada em 13/08: o PDF oficial chegou e serve de fonte)*
+- [x] Notícia do site escrita ([`noticia-site.md`](noticia-site.md))
 - [ ] Local de hospedagem definido e e-book publicado
 - [ ] Link definitivo confirmado e testado
 - [ ] QR code gerado e lido no celular
