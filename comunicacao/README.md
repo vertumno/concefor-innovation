@@ -55,7 +55,7 @@ comunicacao/
 | **Kit dos eventos paralelos** (mandar para as 6 coordenações: copiar texto e baixar card) | [kit-eventos-paralelos/](kit-eventos-paralelos/) · [no ar](https://vertumno.github.io/concefor-innovation/comunicacao/kit-eventos-paralelos/) |
 | Calendário de posts | [planejamento/calendario-publicacao.md](planejamento/calendario-publicacao.md) |
 | Escalas (podcast, transmissão, fotografia) | [planejamento/distribuicao-equipe.md](planejamento/distribuicao-equipe.md) |
-| **Planilha de atuação da CGTE no evento** (uma aba por dia) — **oficial e viva, sempre ler o Drive** | [📊 Planilha no Drive (canônica)](https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit?usp=sharing&ouid=113484400272441488098&rtpof=true&sd=true) · [cópia local](planejamento/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202026.xlsx) · [modelo de 2024](planejamento/_referencias/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202024.xlsx) |
+| **Planilha de atuação da CGTE no evento** (uma aba por dia) — **oficial e viva, sempre ler o Drive** | [📊 Planilha no Drive (canônica)](https://bit.ly/conceforcgte) · [cópia local](planejamento/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202026.xlsx) · [modelo de 2024](planejamento/_referencias/ATUACAO%20DA%20CGTE%20NO%20CONCEFOR%202024.xlsx) |
 | Começar uma peça nova | [templates/brief-peca.md](templates/brief-peca.md) |
 | **Pedidos da Márcia** (atualização do site + novas peças) | [Doc de solicitações (Google Docs)](https://docs.google.com/document/d/1un58VaMY0wwIVaxfcf9Ssb3tBKuKz_Nj/edit?usp=sharing&ouid=102948503336580466969&rtpof=true&sd=true) |
 | Artes produzidas (Canva) | [Pasta no Canva](https://canva.link/wdnsx8ggf61x2hs) |
@@ -66,8 +66,10 @@ comunicacao/
 
 ## Estado do momento (atualizar sempre)
 
-- **Hoje:** 12/08/2026 (quarta) — faltam **5 dias** para a abertura (17/08).
-  *Atualizado na reunião geral da CGTE de 12/08.*
+- **Hoje:** 13/08/2026 (quinta) — faltam **4 dias** para a abertura (17/08).
+  📋 **O que falta, item a item e por prazo:**
+  [checklist da reta final](planejamento/checklist-reta-final.md).
+  📊 **A planilha suprema da operação:** https://bit.ly/conceforcgte
 - 🗓️ **A semana decisiva.** Três datas mandam em tudo daqui pra frente:
   **14/08 (sexta)** a gráfica entrega **todo o material impresso de uma vez** (brindes + banners
   do TR + os institucionais) · **15/08 (sábado)** fecham as inscrições ·
@@ -152,7 +154,7 @@ comunicacao/
 - 📋 **Reunião de escala, 12/08 (78 min):** a planilha de atuação saiu do esqueleto e ganhou nomes
   hora a hora nos quatro dias.
   [Síntese completa](../contexto/reunioes/sintese-2026-08-12.md) ·
-  [planilha canônica](https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit).
+  [planilha canônica](https://bit.ly/conceforcgte).
   **Responsáveis fixos:** postagens **Elton** · app admin **Marquito** · termos do podcast
   **Andreia** · transmissão **Leo e Tiago** · cobertura e fotografia **Nanda, Andreia e Juliana**.
   ✅ **Confirmado que reels e stories são da CGTE**, no Instagram do Cefor, igual a 2024.

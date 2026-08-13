@@ -7,7 +7,7 @@
 ## Membros e competências
 
 > Atualizado em **12/08/2026** a partir da aba de equipe da
-> [planilha de atuação](https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit)
+> [planilha de atuação](https://bit.ly/conceforcgte)
 > (canônica). Entraram **Juliana**, **Bárbara** e **Alessandra**, que não constavam aqui.
 
 | Pessoa | Papel | Competências principais |

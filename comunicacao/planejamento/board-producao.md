@@ -198,9 +198,9 @@
 |---|---|---|---|---|
 | 🏷️ **Etiquetas com os nomes** (crachá) | ✅ **12/08 — SAIU DA CGTE.** A **comissão geral assumiu e já está providenciando a impressão dos nomes**. Encerra a frente aberta em 27/07 e o risco de véspera de 10/08. *(Histórico, caso a comissão precise:* a área livre do crachá foi medida no PDF final em 03/08 — **100 × 43,7 mm** —, o que descarta as opções de 101,6 mm e deixa **Pimaco A4360** como recomendada.*)* [Brief](../producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) · [medida visual](../producao/01-brindes-promocionais/cracha/area-livre-etiqueta.png) | **Comissão geral** | — | ✅ |
 | **Banners institucionais** — livro dos 20 anos, Base de Conhecimentos, MOOCs *(**3, possivelmente 4**)* | ✅ **12/08 — ARTES ENVIADAS À GRÁFICA, prontos até sexta (14/08).** A arte, que em 10/08 era "o gargalo, sem dono e sem data", foi produzida e despachada; chegam junto com o lote do TR. 🔗 **Os três links fecharam:** Base de Conhecimentos ✅ (29/07) · MOOCs ✅ `https://mooc.cefor.ifes.edu.br/` (10/08) · **livro dos 20 anos ✅ (12/08)**, `https://cefor.ifes.edu.br/index.php/publicacoes/2-uncategorised/17710-livro20anos` — endereço no site institucional do Cefor, não mais o Drive provisório, que era a condição para imprimir QR code. ✅ Decidido antes: arte única, um template para os três; pagos pela UAB. *(Os [orçamentos de 10/08](../producao/02-pre-evento/banners-institucionais/brief.md#-orçamentos-levantados-10082026) ficam registrados como referência de preço de lona para peças futuras.)* [Brief](../producao/02-pre-evento/banners-institucionais/brief.md) | UAB *(custeio)* | ✅ na gráfica · prontos **14/08** | ✅ |
-| **Fundo de palco** | 🔴 citado na descrição do TR mas **sem item contratado** — confirmar | ___ | ___ | ⬜ |
+| ~~**Fundo de palco**~~ | ❌ **NÃO VAI TER (13/08).** Encerra a dúvida aberta desde 20/07: era citado na descrição do TR, mas nunca teve item contratado — e agora está definido que não haverá | — | — | ❌ |
 | ~~Arte **squeezes**~~ | ❌ **CANCELADO (28/07): não será produzido.** O **copo bucks** ocupou o lugar — é ele que vai no kit. Encerra a dúvida aberta desde 20/07 | — | — | ❌ |
-| Arte **bolo** comemoração (20 anos do Cefor) | não é item de gráfica; alinhar com quem fornece o bolo | **Andreia** | ___ | ⬜ |
+| Arte **bolo** comemoração (20 anos do Cefor) | ✅ **PRONTA (13/08) — a Andreia fez tudo e está ok.** Não é item de gráfica. É a arte do momento mais forte do evento para reels: a celebração dos 20 anos, 17/08 às 20h30 | **Andreia** | — | ✅ |
 
 ## Pré-evento
 | Peça | Responsável | Prazo | Status |
@@ -246,7 +246,7 @@
 ## Durante o evento
 
 > 📋 **A escala nominal saiu na reunião de 12/08** e vive na
-> [planilha do Drive](https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit)
+> [planilha do Drive](https://bit.ly/conceforcgte)
 > (canônica). Responsáveis fixos: **postagens — Elton** · **app admin — Marquito** ·
 > **termos do podcast — Andreia** · **transmissão — Leo e Tiago** ·
 > **cobertura/fotografia — Nanda, Andreia e Juliana**.

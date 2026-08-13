@@ -241,7 +241,7 @@
    links:   [{t:'rótulo', u:'caminho'}]  — .md abre no GitHub, resto abre direto
    ========================================================================= */
 
-const ATUALIZADO = '12/08/2026';
+const ATUALIZADO = '13/08/2026';
 const EVENTO     = '2026-08-17';
 const GITHUB     = 'https://github.com/vertumno/concefor-innovation/blob/main/comunicacao/';
 
@@ -310,11 +310,13 @@ const PECAS = [
            {t:'Briefing da produção',u:'../briefing-banners/#institucionais'},
            {t:'Print da home dos MOOCs',u:'../producao/02-pre-evento/banners-institucionais/_refs/2026-08-10_print-home-vitrine-moocs.png'}] },
 
-  { nome:'Fundo de palco', fase:'impressao', status:'bloqueado', resp:'—', prazo:null,
-    nota:'Citado na descrição do TR mas sem item contratado. Precisa confirmar se existe verba ou se sai de outro lugar.' },
+  { nome:'Fundo de palco', fase:'impressao', status:'feito', resp:'—',
+    prazo:'2026-08-13', prazoTx:'não vai ter',
+    nota:'NÃO VAI TER, decidido em 13/08. Encerra a dúvida que estava aberta desde 20/07: o fundo de palco aparecia na descrição do TR 72/2026, mas nunca teve item contratado, e por isso ficou semanas no board como uma pendência que ninguém sabia se era obrigação nossa ou da comissão. Agora está definido que não haverá.' },
 
-  { nome:'Arte do bolo · 20 anos do Cefor', fase:'impressao', status:'todo', resp:'Andreia', prazo:null,
-    nota:'Não é item de gráfica. Alinhar com quem fornece o bolo.' },
+  { nome:'Arte do bolo · 20 anos do Cefor', fase:'impressao', status:'feito', resp:'Andreia',
+    prazo:'2026-08-13', prazoTx:'pronta',
+    nota:'PRONTA (13/08): a Andreia fez tudo e a arte está ok. Não é item de gráfica, vai no bolo da celebração. É a peça do momento mais forte do evento para reels — a celebração dos 20 anos do Cefor, na segunda 17/08 às 20h30, logo depois dos 4 lançamentos.' },
 
   /* ---------------- PRÉ-EVENTO ---------------- */
   { nome:'Card · prazo de envio final (03/08 · Even3)', fase:'pre', status:'feito', resp:'Elton',
@@ -444,7 +446,7 @@ const PECAS = [
   { nome:'Thumbnails das transmissões ao vivo · 8 lives', fase:'durante', status:'bloqueado',
     resp:'sem dono', prazo:'2026-08-17', prazoTx:'a primeira live é 17/08',
     nota:'DEMANDA NOVA, APARECIDA EM 12/08. São 8 transmissões com link do YouTube já criado e nenhuma capa: abertura, palestra da Vanessa e lançamentos na segunda, que dividem o mesmo link por serem bloco contínuo; mesa Tecnologia Delas e palestra do Tessarolo na terça; mesa Desafios da EaD, Mariano e Mauro na quarta; Educimat em dois blocos e a premiação na quinta. O thumbnail é o que aparece quando alguém compartilha o link e na lista do canal — sem ele a live entra no feed como um retângulo cinza, o que é ruim justamente no material que mais circula por WhatsApp. DÁ PARA RESOLVER PELO MESMO PIPELINE DE CÓDIGO dos cards, trocando o formato de 1080x1350 para 1280x720: título da atividade, nome de quem fala, data e a marca do Concefor com o selo dos 20 anos resolvem a peça, e as 8 saem numa rodada só. A primeira transmissão é na segunda, 17/08.',
-    links:[{t:'Planilha com os links',u:'https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit'},
+    links:[{t:'Planilha com os links',u:'https://bit.ly/conceforcgte'},
            {t:'Síntese da reunião',u:'../../contexto/reunioes/sintese-2026-08-12.md'}] },
 
   { nome:'Modelo único de slides · palestrantes e sessões técnicas', fase:'durante', status:'todo',
@@ -455,7 +457,7 @@ const PECAS = [
   { nome:'Link duplicado da transmissão do Mariano', fase:'durante', status:'bloqueado',
     resp:'Leo', prazo:'2026-08-13', prazoTx:'corrigir antes de divulgar',
     nota:'ERRO ENCONTRADO NA CONFERÊNCIA DA PLANILHA (12/08): a transmissão da palestra do Mariano Pimentel, quarta às 14h30, aponta para o mesmo endereço da palestra do Tessarolo, terça às 14h30 — youtube.com/live/2fCU8tmmXoo nos dois. É quase certamente cópia de célula, e contraria a decisão tomada na própria reunião de ter um link por palestra em vez de um por dia. O efeito prático é direto: quem divulgar o link do Mariano manda o público para a transmissão do dia anterior. Corrigir antes de o endereço entrar em qualquer peça, e-mail ou grupo.',
-    links:[{t:'Planilha',u:'https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit'}] },
+    links:[{t:'Planilha',u:'https://bit.ly/conceforcgte'}] },
 
   { nome:'Escala de Libras · revisar sobrecarga', fase:'durante', status:'bloqueado',
     resp:'Carol / Eliana', prazo:'2026-08-17', prazoTx:'revisar antes de segunda',

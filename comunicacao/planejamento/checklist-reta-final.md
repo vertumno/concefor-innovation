@@ -3,7 +3,7 @@
 > Tudo que está pendente na comunicação, organizado **por prazo**. Gerado em **13/08 (quinta)** a
 > partir do [board](board-producao.md), da
 > [síntese da reunião de 12/08](../../contexto/reunioes/sintese-2026-08-12.md), da
-> [planilha de atuação](https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit)
+> [planilha de atuação](https://bit.ly/conceforcgte)
 > e do estado real do repositório.
 >
 > 🔴 crítico · 🟡 importante · 🔵 desejável · **⚠️ sem dono**
@@ -77,8 +77,10 @@
 ### Preparação da operação
 - [ ] 🔴 **Modelo único de slides** — pedido da Coordenação, para palestrantes, sessões técnicas,
       lançamentos e premiação. **⚠️ sem dono**
-- [ ] 🔴 **Termos de autorização de imagem e voz** — obter/adaptar o modelo de 2024, imprimir as
-      cópias e definir onde ficam guardados. Sem termo assinado, não grava. → **Andreia**
+- [ ] 🔴 **Termos de autorização de imagem e voz — só para os podcasts.** Não é necessário para
+      transmissão, fotografia nem cobertura: vale apenas para quem senta na cadeira do podcast.
+      Obter/adaptar o modelo de 2024, imprimir as cópias e definir onde ficam guardados.
+      Sem termo assinado, não grava. → **Andreia** *(já é a responsável nos 4 dias)*
 - [ ] 🟡 **Criar o espaço compartilhado de upload** do material gravado em celular e divulgar o
       link para a equipe. → **Elton** *(responsável pelas postagens)*
 - [ ] 🟡 **Fechar a aba de links úteis da planilha** — falta o link do app (campo vazio) e o da
@@ -87,8 +89,6 @@
       a cobertura não virar excesso.
 - [ ] 🟡 **Definir quem recebe os palestrantes** — Vanessa (17/08) e Tessarolo (18/08) seguem
       `___` na planilha. **⚠️ sem dono**
-- [ ] 🟡 **Definir o responsável pelos termos na segunda-feira** — as outras três abas já têm a
-      Andreia; a de segunda está `___`. **⚠️ sem dono**
 - [ ] 🟡 **Definir o apoio da quinta-feira** — Marquito e Elton ministram oficina nos dois turnos e
       ficam fora da cobertura, no dia com **6 eventos paralelos simultâneos**. **⚠️ sem dono**
 - [ ] 🔵 **Definir horário e ponto de encontro da foto oficial** dos servidores e colaboradores no
@@ -121,7 +121,7 @@
 ## 🎬 Durante o evento (17 a 20/08)
 
 > A escala nominal está na
-> [planilha](https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit).
+> [planilha](https://bit.ly/conceforcgte).
 > Responsáveis fixos: postagens **Elton** · app admin **Marquito** · termos **Andreia** ·
 > transmissão **Leo e Tiago** · cobertura **Nanda, Andreia e Juliana**.
 
@@ -136,7 +136,8 @@
       ⭐ **premiação e foto dos vencedores** · momento cultural · ⭐ **foto oficial dos servidores**
 - [ ] **Diário** — stories da programação do dia + reel de fechamento do dia
 - [ ] **Operar as 8 transmissões** com Libras
-- [ ] **Colher os termos assinados** antes de cada gravação de podcast
+- [ ] **Colher os termos assinados antes de cada gravação de podcast** — só os podcasts pedem
+      termo. → **Andreia**
 
 ---
 
@@ -147,15 +148,6 @@
 - [ ] 🟡 **Edição e publicação dos podcasts** — definir responsável, canal e data **⚠️ sem dono**
 - [ ] 🔵 **Publicação das gravações das transmissões** **⚠️ sem dono**
 - [ ] 🔵 **Relatório final** — o app gera o dashboard; definir quem escreve a leitura
-
----
-
-## 🧩 Pendências antigas, sem prazo de véspera
-
-- [ ] 🔵 **Fundo de palco** — citado na descrição do TR, mas **sem item contratado**. Confirmar se
-      existe ou se sai de outro lugar. **⚠️ sem dono**
-- [ ] 🔵 **Arte do bolo** dos 20 anos — não é item de gráfica, alinhar com quem fornece.
-      → **Andreia**
 
 ---
 
@@ -174,13 +166,17 @@
 | Thumbnails das lives | **6 das 8 prontas** (13/08) + 3 genéricos |
 | Card "últimos dias para se inscrever" | **produzido** (13/08) |
 | Banner #13 · vitrine de MOOCs | **arte atualizada** (13/08) |
+| **Fundo de palco** | ❌ **não vai ter** (13/08) — encerra a dúvida do TR |
+| **Arte do bolo dos 20 anos** | ✅ **pronta, a Andreia fez tudo** (13/08) |
 
 ---
 
 ## O resumo do resumo
 
-**8 itens seguem sem dono**, marcados com ⚠️. São eles que produzem o risco real da semana, porque
-tarefa sem nome não acontece sozinha.
+**49 itens em aberto**, dos quais **8 seguem sem dono** (marcados com ⚠️): a arte do card do NTE,
+o modelo de slides, quem recebe os palestrantes, o apoio da quinta e as **4 frentes de
+pós-evento**. São eles que produzem o risco real, porque tarefa sem nome não acontece sozinha —
+e metade está no pós-evento, que é quando a equipe já se dispersou.
 
 **Os 3 que não podem escorregar:**
 1. **Link de hospedagem do e-book do NTE** — trava a notícia, o card e o QR, e o lançamento é

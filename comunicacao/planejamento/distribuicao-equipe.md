@@ -4,7 +4,7 @@
 > [programação](../contexto/01-programacao.md).
 >
 > 📊 **A escala operacional do evento é a planilha oficial no Drive (FONTE CANÔNICA, documento vivo):**
-> https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit?usp=sharing&ouid=113484400272441488098&rtpof=true&sd=true
+> https://bit.ly/conceforcgte
 > — `ATUACAO DA CGTE NO CONCEFOR 2026.xlsx`, compartilhada em 10/08/2026 e **atualizada
 > constantemente por lá**. Sempre consultar a versão do Drive antes de afirmar qualquer coisa
 > sobre escala. Cópia local (ponto de partida, gerada em 04/08/2026 no formato da

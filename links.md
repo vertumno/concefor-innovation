@@ -19,7 +19,7 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 ## Comunicação (CGTE)
 
 - **📊 Planilha oficial de atuação da CGTE no Concefor (Drive — FONTE CANÔNICA da escala do evento):**
-  https://docs.google.com/spreadsheets/d/1vNC7KQ-CkahdDx4beIZB97S5RjeziITm/edit?usp=sharing&ouid=113484400272441488098&rtpof=true&sd=true
+  https://bit.ly/conceforcgte
   — `ATUACAO DA CGTE NO CONCEFOR 2026.xlsx` (compartilhada em 10/08/2026). Abas: equipe e legenda,
   regras fixas, pendências + uma aba por dia (1708 · 1808 · 1908 · 2008) com programação · local ·
   transmissão e filmagem · Libras · podcast · cobertura reels/fotografia · observações.
@@ -73,6 +73,15 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
   — *"Cursos Abertos do Ifes: aprendizado no seu ritmo"*.
 - **📕 E-book do NTE:** 🔴 **ainda sem endereço** — lançamento em 17/08 às 20h. Recomendação:
   publicar na Base de Conhecimentos. É o único dos três produtos sem link.
+  ✅ O PDF oficial já está no repo:
+  `comunicacao/producao/02-pre-evento/livro-nte/Ebook_Chegando-Agora-no-NTE_Oficial.pdf`
+
+## Planilha suprema da operação (CGTE no evento)
+
+- **📊 https://bit.ly/conceforcgte** — *"ATUAÇÃO DA CGTE NO CONCEFOR 2026"*, uma aba por dia
+  (1708 · 1808 · 1908 · 2008) mais equipe/legenda, regras fixas, pendências e links.
+  **É a fonte canônica e viva da escala** — sempre ler ela antes de afirmar qualquer coisa sobre
+  quem faz o quê e a que horas. Link curto adotado em 13/08 para substituir a URL longa do Drive.
   ✅ **13/08: o PDF oficial está no repo** em
   `comunicacao/producao/02-pre-evento/livro-nte/Ebook_Chegando-Agora-no-NTE_Oficial.pdf`,
   e a **notícia do site já está escrita** (texto + HTML para o Joomla) em
