@@ -99,10 +99,12 @@ export function Poll({ sessionId }: { sessionId: string }) {
           </label>
           <textarea
             id={`poll-response-${poll.id}`}
-            rows={3}
+            // Duas linhas: com 30 caracteres, três deixavam o campo com um vazio
+            // que convidava a escrever mais do que cabe.
+            rows={2}
             maxLength={POLL_RESPONSE_MAX}
             value={texto}
-            placeholder="Escreva uma resposta curta…"
+            placeholder="Uma palavra ou duas…"
             onChange={(e) => {
               setTexto(e.target.value);
               localStorage.setItem(`concefor:poll-draft:${poll.id}`, e.target.value);

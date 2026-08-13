@@ -200,8 +200,10 @@ test("enquete aplica cooldown, modera e preserva resultado após encerrar", asyn
       method: "POST",
       headers: { cookie, "content-type": "application/json" },
       body: JSON.stringify({
+        // Repetição de propósito: uma palavra conta uma vez por resposta. Cabe
+        // nos 30 caracteres do campo, que é o limite que a API também aplica.
         pollId: poll.id,
-        texto: "Educação pública e educação educação inclusiva!",
+        texto: "Educação e educação inclusiva",
       }),
     }),
   );
@@ -261,6 +263,19 @@ test("enquete aplica cooldown, modera e preserva resultado após encerrar", asyn
     ],
   );
   assert.equal(pollModule.POLL_COOLDOWN_SECONDS, 5);
+
+  // Resposta longa é recusada pela API, não só pelo maxLength do campo: o
+  // limite curto é o que mantém a nuvem com termos em vez de frases inteiras.
+  assert.equal(pollModule.POLL_RESPONSE_MAX, 30);
+  const longa = await pollApiModule.POST(
+    new Request("http://localhost/api/polls", {
+      method: "POST",
+      headers: { cookie, "content-type": "application/json" },
+      body: JSON.stringify({ pollId: poll.id, texto: "x".repeat(31) }),
+    }),
+  );
+  assert.equal(longa.status, 400);
+
 
   assert.equal(dbModule.closePoll(poll.id), true);
   assert.equal(dbModule.getActivePoll("sessao-1"), null);

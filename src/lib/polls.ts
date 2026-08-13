@@ -1,4 +1,8 @@
-export const POLL_RESPONSE_MAX = 150;
+// Curto de propósito: a resposta vira nuvem de palavras no telão, e uma frase
+// longa entra ali como um punhado de palavras de contagem 1, que só engrossam a
+// cauda. Com pouco espaço, quem responde escolhe o termo — que é o que a nuvem
+// mede. Vale para o campo e para a API: as duas pontas leem esta constante.
+export const POLL_RESPONSE_MAX = 30;
 export const POLL_QUESTION_MAX = 180;
 export const POLL_COOLDOWN_SECONDS = 5;
 
