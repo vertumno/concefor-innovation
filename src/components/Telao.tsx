@@ -18,6 +18,7 @@ import {
   type ReactionCounts,
   type ReactionKind,
 } from "@/lib/reactions";
+import { Propagandas } from "@/components/Propagandas";
 import { getAvatar } from "@/lib/clientId";
 import { getNow } from "@/lib/clock";
 import { formatDiaCurto, formatHoraH } from "@/lib/sessions";
@@ -425,6 +426,9 @@ export function Telao({ session }: { session: Session }) {
       </div>
 
       <div className="telao-miolo">
+        {/* Divulgação institucional à esquerda: gira sozinha, lida da pasta
+            public/propagandas. Cartaz `posicao: modal` sobe por cima da tela. */}
+        <Propagandas />
         <div className="telao-grafico">
           <canvas ref={canvasRef} className="telao-timeline" />
         </div>

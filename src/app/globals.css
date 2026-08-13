@@ -1183,6 +1183,177 @@ h1.page-title {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* ─────────────── Propagandas do telão (public/propagandas) ───────────────
+   Cartazes institucionais que giram sozinhos. `lateral` ocupa a coluna à
+   esquerda do gráfico; `modal` cobre a tela. Mesma linguagem da coluna de
+   perguntas, para não parecer outro app dentro do telão. */
+.telao-propaganda {
+  flex: none;
+  width: clamp(280px, 23vw, 480px);
+  align-self: stretch;
+  display: flex;
+  min-height: 0;
+}
+/* Com as perguntas no ar, as duas colunas juntas espremeriam a linha do tempo —
+   que é o miolo do telão. O cartaz cede espaço primeiro. */
+.telao-miolo:has(.telao-perguntas) .telao-propaganda {
+  width: clamp(240px, 17vw, 360px);
+}
+.propaganda {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vh;
+  overflow: hidden;
+  padding: 2.2vh 1.4vw;
+  background: rgba(16, 42, 92, 0.55);
+  border: 1px solid var(--line);
+  /* A borda de cima acesa é o que dá "peça de divulgação" sem pedir mais espaço. */
+  border-top: 3px solid var(--propaganda-acento, var(--accent));
+  border-radius: var(--radius-md);
+  animation: propagandaEntra 0.6s ease both;
+}
+.propaganda-capa {
+  width: 100%;
+  max-height: 32%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  animation: propagandaEntra 0.6s ease both;
+}
+.propaganda-chamada {
+  margin: 0;
+  color: var(--propaganda-acento, var(--accent));
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  font-weight: var(--weight-semibold);
+  font-size: clamp(0.85rem, 1.5vw, 1.3rem);
+}
+.propaganda-titulo {
+  margin: 0;
+  font-family: var(--font-title);
+  color: var(--ink);
+  line-height: 1.1;
+  font-size: clamp(1.3rem, 2.2vw, 2.05rem);
+}
+/* O cartaz corta o que não couber (é projeção, não página): a tipografia fica
+   um passo abaixo da coluna de perguntas para caber texto + QR sem clipar. */
+.propaganda-corpo {
+  min-height: 0;
+  overflow: hidden;
+  color: var(--ink-dim);
+  font-size: clamp(0.95rem, 1.55vw, 1.35rem);
+  line-height: 1.3;
+}
+.propaganda-corpo > * {
+  margin: 0 0 0.8vh;
+}
+.propaganda-corpo strong {
+  color: var(--ink);
+}
+.propaganda-corpo a {
+  color: var(--cyan-300);
+  text-decoration: none;
+}
+.propaganda-corpo ul {
+  padding-left: 1.1em;
+}
+.propaganda-corpo li {
+  margin-bottom: 0.5vh;
+}
+.propaganda-corpo img {
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+}
+/* QR é o CTA: o telão não é clicável e ninguém digita URL da plateia. */
+.propaganda-qr {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.9vw;
+}
+.propaganda-qr img {
+  width: clamp(88px, 8vw, 150px);
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+.propaganda-qr span {
+  color: var(--ink-dim);
+  font-size: clamp(0.8rem, 1.3vw, 1.15rem);
+  word-break: break-all;
+}
+/* Barra fina no rodapé: quanto falta para o próximo cartaz. */
+.propaganda-tempo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  transform-origin: left;
+  background: var(--propaganda-acento, var(--accent));
+  opacity: 0.65;
+  animation-name: propagandaTempo;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.propaganda-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 6vh 6vw;
+  background: rgba(11, 31, 69, 0.94);
+  animation: propagandaEntra 0.5s ease both;
+}
+.propaganda-modal .propaganda {
+  width: min(1100px, 100%);
+  max-height: 100%;
+  flex: none;
+  gap: 2vh;
+  padding: 4vh 4vw;
+  background: transparent;
+  border: none;
+  border-top: 4px solid var(--propaganda-acento, var(--accent));
+  text-align: center;
+  align-items: center;
+}
+.propaganda-modal .propaganda-titulo {
+  font-size: clamp(2.4rem, 6vw, 5.5rem);
+}
+.propaganda-modal .propaganda-chamada {
+  font-size: clamp(1rem, 2.2vw, 2rem);
+}
+.propaganda-modal .propaganda-corpo {
+  font-size: clamp(1.3rem, 2.8vw, 2.6rem);
+}
+.propaganda-modal .propaganda-capa {
+  max-height: 38vh;
+  width: auto;
+}
+.propaganda-modal .propaganda-qr img {
+  width: clamp(150px, 15vw, 280px);
+}
+@keyframes propagandaEntra {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes propagandaTempo {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
 .telao-foot {
   display: flex;
   align-items: center;
