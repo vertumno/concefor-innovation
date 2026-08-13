@@ -190,6 +190,12 @@ placeholder e trocar depois).
   pro crachá do outro → salva contato; sem chat interno — ver benchmark EDEN, o que NÃO
   levamos) · **gamificação leve** (QR codes espalhados → badges, contextuais ao conteúdo).
 
+- **Enquete ao vivo com nuvem de palavras** (spec escrita em 06/08 por Elton para o Marquito,
+  processada do `_inbox/` em 13/08): perguntas **só abertas**, resposta pelo celular em texto
+  livre e resultado agregado no telão em dois modos, nuvem de palavras ou lista de respostas.
+  O núcleo (coleta, agregação, projeção) é simples; o custo real está no tempo real e na
+  moderação. Escopo e pendências em [`enquete-ao-vivo.md`](enquete-ao-vivo.md).
+
 **Backlog fase 2:** anotação colaborativa → resumo automático · transcrição em tempo
 real (mic da mesa de som → IA local) · **motor de vídeo-destaques** (casar transcrição com picos
 de reação → resumos/nuvem de palavras/melhores momentos; alimenta notícias pós-evento) ·
