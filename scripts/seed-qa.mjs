@@ -80,6 +80,11 @@ for (const [id, code, name, email, document] of people) {
   insertPerson.run(id, code, name, name, email, document, now);
 }
 
+// Fuso de Brasília, como o sync do Even3 e o db.ts gravam — o /admin lê o HH:MM
+// direto da string ao editar horário (ver a nota em seed-live.mjs). `now` acima
+// segue em UTC de propósito: é `updated_at`, não horário de sessão.
+const emBrasilia = (ms) => `${new Date(ms - 3 * 60 * 60_000).toISOString().slice(0, 19)}-03:00`;
+
 db.prepare(
   `insert into sessions (id, titulo, descricao, sala, eixo, inicio, fim)
    values (?, ?, ?, ?, 'Teste', ?, ?)
@@ -95,8 +100,8 @@ db.prepare(
   "Teste local — Enquetes e networking",
   "Sessão fictícia e removível para validar o app antes do lançamento.",
   "Sala de QA",
-  new Date(Date.now() - 2 * 60_000).toISOString(),
-  new Date(Date.now() + 120 * 60_000).toISOString(),
+  emBrasilia(Date.now() - 2 * 60_000),
+  emBrasilia(Date.now() + 120 * 60_000),
 );
 
 db.close();

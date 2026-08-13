@@ -16,11 +16,41 @@ import type { Propaganda } from "@/lib/propagandas";
 const RECARGA_MS = 5 * 60_000;
 const GALERIA_MS = 6_000; // troca de foto dentro de um cartaz de galeria
 
-export function Propagandas() {
+// `espera` = telão entre sessões (sala de espera). Ali a divulgação aparece
+// sempre: a tela está ociosa e é justamente o momento dela. No `ao-vivo` quem
+// manda é o botão do /admin, porque aí o cartaz divide espaço com a palestra.
+export function Propagandas({ contexto = "ao-vivo" }: { contexto?: "ao-vivo" | "espera" }) {
   const [lista, setLista] = useState<Propaganda[]>([]);
   const [indice, setIndice] = useState(0);
   const [foto, setFoto] = useState(0);
   const [qr, setQr] = useState<string | null>(null);
+  const [ligado, setLigado] = useState(true);
+
+  useEffect(() => {
+    if (contexto !== "ao-vivo") {
+      setLigado(true);
+      return;
+    }
+    let vivo = true;
+    const buscar = async () => {
+      try {
+        const res = await fetch("/api/telao", { cache: "no-store" });
+        if (!res.ok) return;
+        const cfg = (await res.json()) as { propagandas?: boolean };
+        if (vivo) setLigado(cfg.propagandas !== false);
+      } catch {
+        /* rede oscilou: mantém o estado atual */
+      }
+    };
+    buscar();
+    // 5s, como o painel de perguntas: tirar do ar no meio de uma fala precisa
+    // valer quase na hora para quem apertou o botão.
+    const id = setInterval(buscar, 5_000);
+    return () => {
+      vivo = false;
+      clearInterval(id);
+    };
+  }, [contexto]);
 
   useEffect(() => {
     let vivo = true;
@@ -60,8 +90,11 @@ export function Propagandas() {
     }
     let vivo = true;
     QRCode.toDataURL(alvoQr, {
-      width: 420,
-      margin: 1, // zona de silêncio branca: o cartaz é escuro
+      // Bem acima do tamanho de tela (~200px): a lib escala o módulo por
+      // arredondamento, e em resolução baixa os quadradinhos saem com larguras
+      // diferentes — é o que dava o aspecto pixelado na projeção.
+      width: 800,
+      margin: 1, // zona de silêncio branca em volta do código
       color: { dark: "#102a5c", light: "#ffffff" },
     })
       .then((url) => vivo && setQr(url))
@@ -79,7 +112,7 @@ export function Propagandas() {
     return () => clearInterval(id);
   }, [atual?.id, quantasFotos]);
 
-  if (!atual) return null;
+  if (!atual || !ligado) return null;
 
   const capa = quantasFotos ? atual.imagens?.[foto % quantasFotos] : atual.imagem;
   const rotulo = atual.rotulo;

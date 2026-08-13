@@ -88,6 +88,12 @@ test("markdown do cartaz escapa HTML e formata título, lista, ênfase e link", 
   // Quebra de linha do arquivo é só conforto de quem escreve: no cartaz estreito
   // ela não pode virar quebra de verdade no meio da frase.
   assert.equal(renderMarkdown("uma frase\nque continua"), "<p>uma frase que continua</p>");
+  // Negrito que atravessa a quebra de linha do arquivo: apareceu com os ** crus
+  // no telão porque cada linha era formatada isolada antes de juntar.
+  assert.equal(
+    renderMarkdown("trilhas sobre **Moodle e IA na\neducação**."),
+    "<p>trilhas sobre <strong>Moodle e IA na educação</strong>.</p>",
+  );
 });
 
 test("link com esquema perigoso não vira href e o texto sobrevive", () => {

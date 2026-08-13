@@ -528,6 +528,9 @@ export function TelaoAguardando({ session, now }: { session: Session; now: Date 
           {formatCountdown(inicio.getTime() - now.getTime())}
         </span>
       </div>
+      {/* Entre sessões o telão está ocioso: a divulgação entra sempre aqui,
+          independente do botão do /admin (que só governa a sessão ao vivo). */}
+      <Propagandas contexto="espera" />
       {qr && (
         <div className="telao-wait-qr">
           <span className="telao-wait-qr-cta">Entre no app do evento</span>

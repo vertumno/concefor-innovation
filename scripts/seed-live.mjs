@@ -15,7 +15,11 @@ db.pragma("foreign_keys = ON");
 db.exec(readFileSync(join(process.cwd(), "db", "schema.sql"), "utf8"));
 
 const now = Date.now();
-const iso = (ms) => new Date(ms).toISOString();
+// Fuso de Brasília, como o sync do Even3 e o db.ts (agoraEmBrasilia) gravam.
+// Não é cosmético: o /admin lê o HH:MM direto da string ao abrir a edição de
+// horário, então uma sessão gravada em UTC ("…Z") aparece 3h adiantada no campo
+// em relação ao que a própria tela mostra — e salvar move a sessão sem querer.
+const iso = (ms) => `${new Date(ms - 3 * 60 * 60_000).toISOString().slice(0, 19)}-03:00`;
 const id = "teste-ao-vivo";
 const inicio = iso(now - 10 * 60 * 1000); // começou há 10 min
 const fim = iso(now + 50 * 60 * 1000); // termina em 50 min

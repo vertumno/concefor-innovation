@@ -20,7 +20,10 @@ db.pragma("foreign_keys = ON");
 db.exec(readFileSync(join(process.cwd(), "db", "schema.sql"), "utf8"));
 
 const now = Date.now();
-const at = (min) => new Date(now + min * 60000).toISOString();
+// Fuso de Brasília, como o sync do Even3 e o db.ts gravam — o /admin lê o HH:MM
+// direto da string ao editar horário (ver a nota em seed-live.mjs).
+const at = (min) =>
+  `${new Date(now + min * 60000 - 3 * 60 * 60_000).toISOString().slice(0, 19)}-03:00`;
 
 // Zera conteúdo e reações — demo limpa.
 db.exec("delete from session_speakers; delete from timeline_events; delete from speakers; delete from sessions;");

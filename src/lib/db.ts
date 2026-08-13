@@ -1006,26 +1006,50 @@ export function getAdminStats(): AdminStats {
 
 // ─────────────────────── Config do telão ───────────────────────
 // Mesmo padrão de questions_window: estado = último evento (tipo='telao_config'),
-// sem mudar o schema. Por ora um único ajuste: o painel "Perguntas mais votadas"
-// do telão, que o /admin pode ocultar na hora (padrão: exibe).
+// sem mudar o schema. Dois ajustes que o /admin liga e desliga na hora: o painel
+// "Perguntas mais votadas" e as propagandas durante uma sessão AO VIVO.
 
-export function telaoPerguntasVisiveis(): boolean {
+type ChaveTelao = "perguntas" | "propagandas";
+
+// Lê o último evento QUE MENCIONA a chave, não o último evento em geral: com
+// dois ajustes convivendo, desligar as propagandas gravaria um payload sem
+// `perguntas` e a leitura seguinte apagaria o estado do outro botão.
+function telaoFlag(chave: ChaveTelao, padrao: boolean): boolean {
   const row = getDb()
     .prepare(
-      `select json_extract(payload, '$.perguntas') as p from timeline_events
-        where tipo = 'telao_config' order by ts desc limit 1`,
+      `select json_extract(payload, '$.${chave}') as v from timeline_events
+        where tipo = 'telao_config' and json_extract(payload, '$.${chave}') is not null
+        order by ts desc limit 1`,
     )
-    .get() as { p: number | null } | undefined;
-  return row ? Boolean(row.p) : true; // padrão: exibe
+    .get() as { v: number | null } | undefined;
+  return row ? Boolean(row.v) : padrao;
 }
 
-export function setTelaoPerguntas(visiveis: boolean): void {
+function setTelaoFlag(chave: ChaveTelao, valor: boolean): void {
   getDb()
     .prepare(
       `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
        values (?, 'telao_config', null, ?, ?, null)`,
     )
-    .run(randomUUID(), new Date().toISOString(), JSON.stringify({ perguntas: visiveis }));
+    .run(randomUUID(), new Date().toISOString(), JSON.stringify({ [chave]: valor }));
+}
+
+export function telaoPerguntasVisiveis(): boolean {
+  return telaoFlag("perguntas", true); // padrão: exibe
+}
+
+export function setTelaoPerguntas(visiveis: boolean): void {
+  setTelaoFlag("perguntas", visiveis);
+}
+
+// Só vale para sessão ao vivo. Entre as sessões o telão está ocioso e a
+// divulgação aparece de qualquer jeito — é justamente o momento dela.
+export function telaoPropagandasNoAoVivo(): boolean {
+  return telaoFlag("propagandas", true);
+}
+
+export function setTelaoPropagandas(ligado: boolean): void {
+  setTelaoFlag("propagandas", ligado);
 }
 
 // ─────────────────────── Perguntas com upvote (R4) ───────────────────────

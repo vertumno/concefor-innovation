@@ -93,7 +93,9 @@ export function renderMarkdown(md: string): string {
       // Linha simples é quebra SUAVE (vira espaço), como em markdown de verdade:
       // o cartaz mora numa coluna estreita e um <br> no meio da frase quebraria
       // o texto num ponto arbitrário. Parágrafo novo se faz com linha em branco.
-      return `<p>${linhas.map(inline).join(" ")}</p>`;
+      // Junta ANTES de formatar: um **negrito** que atravessa a quebra de linha
+      // do arquivo não casa se cada linha for formatada isolada.
+      return `<p>${inline(linhas.join(" "))}</p>`;
     })
     .join("");
 }

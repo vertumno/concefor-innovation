@@ -6,5 +6,7 @@ export const runtime = "nodejs"; // better-sqlite3 é binário nativo: precisa d
 export const dynamic = "force-dynamic"; // dados vivos: nunca pré-renderizar/cachear no build
 
 export function GET() {
-  return NextResponse.json(getSessions());
+  // force-dynamic só impede o cache do build; quem repete a chamada por horas é
+  // o navegador do telão. O cabeçalho é o que garante que ele não guarde nada.
+  return NextResponse.json(getSessions(), { headers: { "cache-control": "no-store" } });
 }

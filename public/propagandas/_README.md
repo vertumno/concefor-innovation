@@ -45,10 +45,22 @@ Cursos **gratuitos, on-line e com certificado**.
 | `acento` | dourado | Cor da borda e da chamada (hex ou `rgb()`) |
 | `ativo` | `true` | `false` tira do ar sem apagar o arquivo |
 
+## Imagens
+
+Ficam em [`_img/`](_img/) e entram pelo campo `imagem:`, com caminho a partir da
+raiz pública — `imagem: /propagandas/_img/mooc-cursos.webp`.
+
+As artes dos banners impressos são feitas para lona (dezenas de MB, formato em
+pé) e **não** servem direto: gere uma versão leve antes, na horizontal, com o
+lado maior em torno de 900 px em `.webp`. As duas do MOOC que já estão aqui têm
+37 KB cada. Prefira o **recorte do produto** (a tela do sistema, a capa do
+livro) ao banner inteiro — o cartaz é uma coluna estreita, e o banner completo
+vira um borrão com texto ilegível.
+
 ## Convenções
 
-- **`_` na frente = rascunho.** Arquivos começando com `_` (como este README)
-  ficam versionados e **não** vão ao telão.
+- **`_` na frente = rascunho.** Arquivos e pastas começando com `_` (como este
+  README e a `_img/`) ficam versionados e **não** viram cartaz.
 - **O telão não é clicável.** Quando houver `link:`, use `qr: true` — o QR é o
   único CTA que funciona para quem está na plateia.
 - **Texto curto.** O cartaz é lido do fundo do auditório: 2 a 4 linhas.

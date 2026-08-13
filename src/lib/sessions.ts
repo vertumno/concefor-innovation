@@ -9,7 +9,10 @@ export async function fetchSessions(): Promise<Session[]> {
   if (DEMO_MODE) return getDemoSessions();
   // Dados reais: backend próprio (SQLite via /api/sessions — ver lib/db.ts).
   try {
-    const res = await fetch("/api/sessions");
+    // no-store: o telão fica horas na mesma aba e repete esta chamada em loop.
+    // Sem isto o navegador servia a programação do cache, e um ajuste de horário
+    // feito no /admin só aparecia depois de um F5 na máquina do projetor.
+    const res = await fetch("/api/sessions", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return (await res.json()) as Session[];
   } catch (err) {

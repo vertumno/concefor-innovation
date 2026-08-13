@@ -29,6 +29,7 @@ export default function AdminPage() {
   const [avisos, setAvisos] = useState<Aviso[]>([]);
   const [avisoTexto, setAvisoTexto] = useState("");
   const [telaoPerguntasOn, setTelaoPerguntasOn] = useState<boolean | null>(null);
+  const [telaoPropagandasOn, setTelaoPropagandasOn] = useState<boolean | null>(null);
   const [blocoTitulo, setBlocoTitulo] = useState("");
   const [blocoDesc, setBlocoDesc] = useState("");
   const [blocoMin, setBlocoMin] = useState(60);
@@ -80,7 +81,11 @@ export default function AdminPage() {
       const av = await fetch("/api/admin/avisos", { headers });
       if (av.ok) setAvisos((await av.json()) as Aviso[]);
       const tl = await fetch("/api/telao", { cache: "no-store" });
-      if (tl.ok) setTelaoPerguntasOn(((await tl.json()) as { perguntas: boolean }).perguntas);
+      if (tl.ok) {
+        const cfg = (await tl.json()) as { perguntas: boolean; propagandas: boolean };
+        setTelaoPerguntasOn(cfg.perguntas);
+        setTelaoPropagandasOn(cfg.propagandas);
+      }
     } catch {
       /* mantém o último estado */
     }
@@ -158,6 +163,24 @@ export default function AdminPage() {
       });
       if (res.ok) setTelaoPerguntasOn(((await res.json()) as { perguntas: boolean }).perguntas);
       setOpErro(res.ok ? null : "Falhou ao alternar as perguntas do telão.");
+    } catch {
+      setOpErro("Sem conexão com o servidor — tente de novo.");
+    }
+  }
+
+  // Propagandas durante a sessão AO VIVO. Entre as sessões elas aparecem de
+  // qualquer jeito: o telão está ocioso e é justamente o momento da divulgação.
+  async function alternarPropagandasTelao() {
+    try {
+      const res = await fetch("/api/admin/telao", {
+        method: "POST",
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify({ propagandas: !(telaoPropagandasOn ?? true) }),
+      });
+      if (res.ok) {
+        setTelaoPropagandasOn(((await res.json()) as { propagandas: boolean }).propagandas);
+      }
+      setOpErro(res.ok ? null : "Falhou ao alternar as propagandas do telão.");
     } catch {
       setOpErro("Sem conexão com o servidor — tente de novo.");
     }
@@ -360,6 +383,24 @@ export default function AdminPage() {
           : telaoPerguntasOn
             ? "Perguntas no telão: exibindo — ocultar"
             : "Perguntas no telão: OCULTAS — reexibir"}
+      </button>
+
+      <p className="page-sub">
+        As propagandas (livro, MOOCs, Base de Conhecimento, Instagram) giram na coluna ao lado
+        do gráfico. Este botão vale só para a <strong>sessão ao vivo</strong>: entre as sessões
+        elas aparecem de qualquer jeito, que é quando o telão está ocioso.
+      </p>
+      <button
+        type="button"
+        className="admin-btn"
+        onClick={alternarPropagandasTelao}
+        disabled={telaoPropagandasOn === null}
+      >
+        {telaoPropagandasOn === null
+          ? "Propagandas no ao vivo: …"
+          : telaoPropagandasOn
+            ? "Propagandas no ao vivo: exibindo — ocultar"
+            : "Propagandas no ao vivo: OCULTAS — reexibir"}
       </button>
 
       <AdminPolls sessions={sessions} token={token} />

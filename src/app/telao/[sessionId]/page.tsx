@@ -15,8 +15,15 @@ export default function TelaoSessao({ params }: { params: Promise<{ sessionId: s
   const [session, setSession] = useState<Session | null | undefined>(undefined);
   const now = useEventClock(1000); // 1s: mantém a contagem regressiva viva
 
+  // Recarrega a cada minuto, como o /telao: este telão também fica ligado por
+  // horas e precisa enxergar um ajuste de horário ou de sala feito no /admin
+  // sem que ninguém vá até o projetor apertar F5.
   useEffect(() => {
-    fetchSessions().then((all) => setSession(all.find((s) => s.id === sessionId) ?? null));
+    const buscar = () =>
+      fetchSessions().then((all) => setSession(all.find((s) => s.id === sessionId) ?? null));
+    buscar();
+    const id = setInterval(buscar, 60_000);
+    return () => clearInterval(id);
   }, [sessionId]);
 
   if (session === undefined) return <TelaoEmpty msg="Carregando…" />;
