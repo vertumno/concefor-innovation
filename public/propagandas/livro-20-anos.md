@@ -1,13 +1,13 @@
 ---
-titulo: Livro dos 20 anos do Cefor
-chamada: Leia e baixe
+titulo: "Educação a Distância no Ifes: trajetória e consolidação"
+chamada: Livro dos 20 anos do Cefor
 ordem: 20
 duracao: 24
 link: https://cefor.ifes.edu.br/index.php/publicacoes/2-uncategorised/17710-livro20anos
 qr: true
+acento: "#b2d235"
 ---
 
-Duas décadas de educação a distância no Ifes contadas por quem construiu essa
-história.
+Conheça a obra que registra **duas décadas de história**.
 
-Publicação oficial do Cefor, **gratuita e on-line**.
+*20 anos conectando saberes e expandindo horizontes.*

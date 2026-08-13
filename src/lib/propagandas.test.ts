@@ -58,6 +58,22 @@ test("qr: true aproveita o link; uma URL em qr: tem prioridade sobre ele", () =>
   assert.equal(parsePropaganda("x.md", "---\nlink: https://a.b/\n---\nCorpo.")?.qr, undefined);
 });
 
+test("o rótulo do QR é o domínio, não o caminho inteiro do link", () => {
+  // Um caminho longo projetado ao lado do QR quebra em várias linhas e ninguém
+  // digita: o QR carrega a URL completa, o texto só precisa dizer de onde é.
+  const livro = parsePropaganda(
+    "x.md",
+    "---\nlink: https://cefor.ifes.edu.br/index.php/publicacoes/2-uncategorised/17710-livro20anos\n---\nx",
+  );
+  assert.equal(livro?.rotulo, "cefor.ifes.edu.br");
+
+  const insta = parsePropaganda(
+    "x.md",
+    "---\nlink: https://www.instagram.com/ifescefor/\nrotulo: \"@ifescefor\"\n---\nx",
+  );
+  assert.equal(insta?.rotulo, "@ifescefor");
+});
+
 test("markdown do cartaz escapa HTML e formata título, lista, ênfase e link", () => {
   const html = renderMarkdown(
     ["## Base de Conhecimentos", "", "- **130 artigos**", "- Trilhas de *Moodle*", "", "[Acesse](https://conhecimento.cefor.ifes.edu.br/)"].join("\n"),

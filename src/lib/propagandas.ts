@@ -19,6 +19,7 @@ export type Propaganda = {
   ordem: number;
   imagem?: string;
   link?: string;
+  rotulo?: string; // texto ao lado do QR; sem ele, vale o domínio do link
   qr?: string; // URL que vira QR code (o telão não é clicável: QR é o CTA)
   acento?: string;
   galeria?: string; // pasta sob public/ cujas imagens giram dentro do cartaz
@@ -120,6 +121,10 @@ export function parseFrontmatter(bruto: string): {
   return { meta, corpo: texto.slice(bloco[0].length).trim() };
 }
 
+function dominio(url: string | undefined): string | undefined {
+  return url?.replace(/^https?:\/\//i, "").replace(/^www\./i, "").split("/")[0] || undefined;
+}
+
 function numero(valor: string | undefined, padrao: number): number {
   const n = Number(valor);
   return Number.isFinite(n) && valor?.trim() ? n : padrao;
@@ -157,6 +162,10 @@ export function parsePropaganda(arquivo: string, bruto: string): Propaganda | nu
     ordem: numero(meta.ordem, 999),
     imagem: urlSegura(meta.imagem ?? ""),
     link,
+    // Caminho longo ao lado do QR vira ruído ilegível na projeção: por padrão
+    // fica só o domínio, e `rotulo:` cobre o caso em que o endereço não descreve
+    // o destino (um @ do Instagram, por exemplo).
+    rotulo: meta.rotulo || dominio(link),
     qr,
     // Cor solta não entra: só hex/rgb() viram estilo inline.
     acento: /^(#[0-9a-f]{3,8}|rgba?\([\d\s.,%]+\))$/i.test(acento) ? acento : undefined,

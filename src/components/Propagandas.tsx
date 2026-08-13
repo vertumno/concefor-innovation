@@ -82,7 +82,7 @@ export function Propagandas() {
   if (!atual) return null;
 
   const capa = quantasFotos ? atual.imagens?.[foto % quantasFotos] : atual.imagem;
-  const rotulo = atual.link?.replace(/^https?:\/\//i, "").replace(/\/$/, "");
+  const rotulo = atual.rotulo;
 
   const cartao = (
     <article

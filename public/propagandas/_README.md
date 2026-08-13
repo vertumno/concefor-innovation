@@ -39,6 +39,7 @@ Cursos **gratuitos, on-line e com certificado**.
 | `ordem` | `999` | Ordem no giro; empate resolve por nome do arquivo |
 | `link` | — | Endereço do produto |
 | `qr` | — | `true` gera o QR do `link:`; ou uma URL própria |
+| `rotulo` | domínio do `link` | Texto ao lado do QR (ex.: `"@ifescefor"`) |
 | `imagem` | — | Caminho de uma imagem (ex.: `/propagandas/_img/capa.png`) |
 | `galeria` | — | Pasta sob `public/` cujas imagens giram dentro do cartaz |
 | `acento` | dourado | Cor da borda e da chamada (hex ou `rgb()`) |

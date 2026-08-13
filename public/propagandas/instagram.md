@@ -4,6 +4,7 @@ chamada: Siga o Cefor no Instagram
 ordem: 70
 duracao: 20
 link: https://www.instagram.com/ifescefor/
+rotulo: "@ifescefor"
 qr: true
 acento: "#ff66cc"
 ---
