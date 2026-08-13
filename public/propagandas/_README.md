@@ -45,6 +45,21 @@ Cursos **gratuitos, on-line e com certificado**.
 | `acento` | dourado | Cor da borda e da chamada (hex ou `rgb()`) |
 | `ativo` | `true` | `false` tira do ar sem apagar o arquivo |
 
+## Tirar e pôr no ar durante o evento
+
+O `ativo:` acima é o **padrão do arquivo**, e mudá-lo exige deploy — em produção
+a pasta `public/` faz parte da imagem Docker. Para o dia do evento existe o
+`/admin`: na seção **Telão** há uma linha por cartaz, com um botão que o tira ou
+põe no ar **na hora, sem deploy**. O telão pega a mudança na próxima leitura da
+pasta, em até 5 minutos.
+
+O botão do `/admin` tem a última palavra sobre o `ativo:` do arquivo. Quando os
+dois discordam, a própria lista avisa — é o caso de alguém editar o `.md`, subir
+e não entender por que o cartaz continua fora do ar.
+
+**Publicar um cartaz novo continua sendo arquivo + deploy**: solte o `.md` aqui e
+suba a versão. Ele aparece na lista do `/admin` sozinho, já no ar.
+
 ## Imagens
 
 Ficam em [`_img/`](_img/) e entram pelo campo `imagem:`, com caminho a partir da
@@ -63,6 +78,10 @@ vira um borrão com texto ilegível.
   README e a `_img/`) ficam versionados e **não** viram cartaz.
 - **O telão não é clicável.** Quando houver `link:`, use `qr: true` — o QR é o
   único CTA que funciona para quem está na plateia.
+- **Entre um cartaz e outro o telão fica limpo por 10 segundos.** O cartaz entra
+  deslizando pela esquerda, fica o seu `duracao`, sai pela esquerda e a tela volta
+  a mostrar só a informação do evento até o próximo. O intervalo é fixo no código
+  (`PAUSA_MS`, em `src/components/Propagandas.tsx`), não no frontmatter.
 - **Texto curto.** O cartaz é lido do fundo do auditório: 2 a 4 linhas.
 - **`modal` interrompe.** Ele cobre a linha do tempo da sessão ao vivo; use com
   parcimônia, para chamadas de ação de intervalo.

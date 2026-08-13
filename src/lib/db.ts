@@ -1052,6 +1052,37 @@ export function setTelaoPropagandas(ligado: boolean): void {
   setTelaoFlag("propagandas", ligado);
 }
 
+// Liga/desliga de CADA cartaz, por cima do `ativo:` do arquivo. O botão acima
+// tira a divulgação inteira do ar; este escolhe quais peças giram — um cartaz
+// que ficou desatualizado sai na hora, sem deploy (em produção public/ é parte
+// da imagem Docker, então mexer no arquivo custa uma subida inteira).
+//
+// Um evento por clique, estado = o último de cada id. São poucos cartazes e
+// poucos cliques: ler todos e reduzir em JS é mais simples que um group by.
+export function propagandasOverride(): Record<string, boolean> {
+  const linhas = getDb()
+    .prepare(
+      `select json_extract(payload, '$.id') as id, json_extract(payload, '$.ativo') as ativo
+         from timeline_events
+        where tipo = 'propaganda_config' and json_extract(payload, '$.id') is not null
+        order by ts asc`,
+    )
+    .all() as { id: string; ativo: number | null }[];
+
+  const mapa: Record<string, boolean> = {};
+  for (const l of linhas) mapa[l.id] = Boolean(l.ativo);
+  return mapa;
+}
+
+export function setPropagandaAtiva(id: string, ativo: boolean): void {
+  getDb()
+    .prepare(
+      `insert into timeline_events (id, tipo, session_id, ts, payload, client_id)
+       values (?, 'propaganda_config', null, ?, ?, null)`,
+    )
+    .run(randomUUID(), new Date().toISOString(), JSON.stringify({ id, ativo }));
+}
+
 // ─────────────────────── Perguntas com upvote (R4) ───────────────────────
 // Tudo em timeline_events, sem mudar o schema (spec §3):
 //   tipo='question'         payload {"texto": "...", "autor": "Nome", "hidden": true?}

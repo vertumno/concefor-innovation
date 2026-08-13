@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { ordenarPropagandas, parsePropaganda, renderMarkdown } from "./propagandas";
+import { ordenarPropagandas, parsePropaganda, propagandaNoAr, renderMarkdown } from "./propagandas";
 
 // O parse dos cartazes do telão é puro: nada de banco, nada de fs. Estes testes
 // seguram o contrato do frontmatter, que é a interface de quem escreve um cartaz
@@ -38,8 +38,21 @@ test("frontmatter define o cartaz e a duração é contida na faixa segura", () 
 });
 
 test("ativo: false tira o cartaz do ar sem apagar o arquivo", () => {
-  assert.equal(parsePropaganda("x.md", "---\nativo: false\n---\nCorpo."), null);
-  assert.ok(parsePropaganda("x.md", "---\nativo: true\n---\nCorpo."));
+  // O parse não descarta o inativo: marca e devolve, senão o /admin não tem
+  // como listar (e religar) um cartaz que o arquivo desligou.
+  assert.equal(parsePropaganda("x.md", "---\nativo: false\n---\nCorpo.").ativo, false);
+  assert.equal(parsePropaganda("x.md", "---\nativo: true\n---\nCorpo.").ativo, true);
+  assert.equal(parsePropaganda("x.md", "Sem frontmatter.").ativo, true);
+});
+
+test("o liga/desliga do admin tem a última palavra sobre o ativo: do arquivo", () => {
+  const doArquivo = parsePropaganda("x.md", "---\nativo: false\n---\nCorpo.");
+  assert.equal(propagandaNoAr(doArquivo, {}), false); // sem override, vale o arquivo
+  assert.equal(propagandaNoAr(doArquivo, { x: true }), true); // admin religou
+  assert.equal(propagandaNoAr(doArquivo, { outro: true }), false); // override é por id
+
+  const ligado = parsePropaganda("y.md", "---\nativo: true\n---\nCorpo.");
+  assert.equal(propagandaNoAr(ligado, { y: false }), false); // admin tirou do ar
 });
 
 test("qr: true aproveita o link; uma URL em qr: tem prioridade sobre ele", () => {

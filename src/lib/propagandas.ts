@@ -24,6 +24,7 @@ export type Propaganda = {
   acento?: string;
   galeria?: string; // pasta sob public/ cujas imagens giram dentro do cartaz
   imagens?: string[]; // preenchido pela rota ao expandir `galeria`
+  ativo: boolean; // o `ativo:` do arquivo — o /admin pode sobrescrever no banco
 };
 
 const DURACAO_PADRAO = 20;
@@ -132,12 +133,12 @@ function numero(valor: string | undefined, padrao: number): number {
   return Number.isFinite(n) && valor?.trim() ? n : padrao;
 }
 
-// `ativo: false` devolve null — desligar um cartaz é uma linha, não apagar o
-// arquivo (o texto continua versionado para a próxima edição do evento).
-export function parsePropaganda(arquivo: string, bruto: string): Propaganda | null {
+// `ativo: false` desliga o cartaz sem apagar o arquivo — o texto continua
+// versionado para a próxima edição do evento. O parse NÃO descarta o inativo:
+// devolve o cartaz com `ativo: false` e quem chama decide. É o que deixa o
+// /admin listar (e religar) um cartaz que o arquivo desligou.
+export function parsePropaganda(arquivo: string, bruto: string): Propaganda {
   const { meta, corpo } = parseFrontmatter(bruto);
-  if (!booleano(meta.ativo, true)) return null;
-
   const id = arquivo.replace(/\.(md|html?)$/i, "");
   const link = urlSegura(meta.link ?? "");
   const ehHtml = /\.html?$/i.test(arquivo);
@@ -173,7 +174,14 @@ export function parsePropaganda(arquivo: string, bruto: string): Propaganda | nu
     acento: /^(#[0-9a-f]{3,8}|rgba?\([\d\s.,%]+\))$/i.test(acento) ? acento : undefined,
     // Pasta de galeria fica sob public/: sem "..", sem caminho absoluto.
     galeria: /^[a-z0-9/_-]+$/i.test(galeria) ? galeria.replace(/^\/+|\/+$/g, "") : undefined,
+    ativo: booleano(meta.ativo, true),
   };
+}
+
+// O que vale no ar: o arquivo diz o padrão, o /admin tem a última palavra.
+// Separado do parse porque o override mora no banco e o parse é puro.
+export function propagandaNoAr(cartaz: Propaganda, override: Record<string, boolean>): boolean {
+  return override[cartaz.id] ?? cartaz.ativo;
 }
 
 // `ordem` manda; empate resolve por nome de arquivo, para o giro ser estável

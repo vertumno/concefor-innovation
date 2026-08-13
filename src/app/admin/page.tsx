@@ -17,6 +17,22 @@ const POLL_MS = 5000;
 
 type QState = { open: boolean; questions: Question[] };
 
+// Um cartaz do telão como o /admin o vê. `noArquivo` é o `ativo:` do .md;
+// `noAr` é o que vale depois do liga/desliga daqui — quando os dois divergem, a
+// tela avisa, senão alguém edita o arquivo e jura que não funcionou.
+type CartazAdmin = {
+  id: string;
+  titulo: string;
+  chamada?: string;
+  posicao: "lateral" | "modal";
+  ordem: number;
+  duracao: number;
+  temQr: boolean;
+  temImagem: boolean;
+  noArquivo: boolean;
+  noAr: boolean;
+};
+
 export default function AdminPage() {
   const [token, setToken] = useState<string | null>(null);
   const [tokenInput, setTokenInput] = useState("");
@@ -30,6 +46,7 @@ export default function AdminPage() {
   const [avisoTexto, setAvisoTexto] = useState("");
   const [telaoPerguntasOn, setTelaoPerguntasOn] = useState<boolean | null>(null);
   const [telaoPropagandasOn, setTelaoPropagandasOn] = useState<boolean | null>(null);
+  const [cartazes, setCartazes] = useState<CartazAdmin[] | null>(null);
   const [blocoTitulo, setBlocoTitulo] = useState("");
   const [blocoDesc, setBlocoDesc] = useState("");
   const [blocoMin, setBlocoMin] = useState(60);
@@ -86,6 +103,8 @@ export default function AdminPage() {
         setTelaoPerguntasOn(cfg.perguntas);
         setTelaoPropagandasOn(cfg.propagandas);
       }
+      const pr = await fetch("/api/admin/propagandas", { headers, cache: "no-store" });
+      if (pr.ok) setCartazes(((await pr.json()) as { propagandas: CartazAdmin[] }).propagandas);
     } catch {
       /* mantém o último estado */
     }
@@ -183,6 +202,25 @@ export default function AdminPage() {
       setOpErro(res.ok ? null : "Falhou ao alternar as propagandas do telão.");
     } catch {
       setOpErro("Sem conexão com o servidor — tente de novo.");
+    }
+  }
+
+  // Liga/desliga de um cartaz. Otimista na tela: o giro do telão é lento (o
+  // cartaz só some na próxima leitura da lista) e esperar o poll de 5s para o
+  // botão responder daria a impressão de que o clique não pegou.
+  async function alternarCartaz(id: string, ativo: boolean) {
+    setCartazes((prev) => prev?.map((c) => (c.id === id ? { ...c, noAr: ativo } : c)) ?? prev);
+    try {
+      const res = await fetch("/api/admin/propagandas", {
+        method: "POST",
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify({ id, ativo }),
+      });
+      setOpErro(res.ok ? null : "Falhou ao alternar o cartaz.");
+      if (!res.ok) refresh(); // desfaz o otimismo com o estado real
+    } catch {
+      setOpErro("Sem conexão com o servidor — tente de novo.");
+      refresh();
     }
   }
 
@@ -402,6 +440,46 @@ export default function AdminPage() {
             ? "Propagandas no ao vivo: exibindo — ocultar"
             : "Propagandas no ao vivo: OCULTAS — reexibir"}
       </button>
+
+      <p className="page-sub">
+        Cada cartaz do giro, um por arquivo em <code>public/propagandas/</code>. Tirar um do ar
+        aqui vale na hora e <strong>não precisa de deploy</strong> — o telão pega na próxima
+        leitura da lista, em até 5 minutos. Para <strong>publicar um cartaz novo</strong>, some um
+        arquivo <code>.md</code> naquela pasta e suba a versão: o cartaz aparece nesta lista
+        sozinho.
+      </p>
+      {cartazes === null ? (
+        <div className="empty">Carregando os cartazes…</div>
+      ) : cartazes.length === 0 ? (
+        <div className="empty">Nenhum cartaz na pasta public/propagandas.</div>
+      ) : (
+        <div className="admin-cartazes">
+          {cartazes.map((c) => (
+            <div key={c.id} className={`admin-cartaz${c.noAr ? "" : " admin-cartaz--fora"}`}>
+              <div className="admin-cartaz-info">
+                <strong>{c.titulo}</strong>
+                <span className="admin-cartaz-meta">
+                  {c.posicao === "modal" ? "modal · cobre a tela" : "lateral"} · {c.duracao}s ·
+                  ordem {c.ordem}
+                  {c.temImagem && " · com imagem"}
+                  {c.temQr && " · com QR"}
+                  {/* O arquivo diz uma coisa e o botão daqui diz outra: sem este
+                      aviso, quem edita o .md não entende por que nada mudou. */}
+                  {!c.noArquivo && c.noAr && " · ligado aqui, mas ativo: false no arquivo"}
+                  {c.noArquivo && !c.noAr && " · desligado aqui, não no arquivo"}
+                </span>
+              </div>
+              <button
+                type="button"
+                className="admin-btn"
+                onClick={() => alternarCartaz(c.id, !c.noAr)}
+              >
+                {c.noAr ? "No ar — tirar" : "Fora do ar — pôr"}
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
 
       <AdminPolls sessions={sessions} token={token} />
 
