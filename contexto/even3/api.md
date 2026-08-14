@@ -54,6 +54,16 @@ registration_category / registration_date / registration_hour (vieram vazios em 
 `getschedule` retornou sessões **duplicadas** dentro do mesmo dia (mesmo `id_session`
 repetido, com `all_dates` também duplicado) — deduplicar por `id_session` na importação.
 
+### Arquivos anexados a sessões NÃO saem pela API (verificado 14/08/2026)
+
+O Marquito anexou arquivos a atividades pelo painel (Dia 1 — Credenciamento e um PDF
+no Dia 2) e a API não os expõe em lugar nenhum: nem no `getschedule`, nem no
+`GET /session/:id` (campos verificados: título, descrição, credit_hour, capacity,
+ticket_price, type, venue, tags, speakers, times), e não há grupo de endpoints de
+materiais/arquivos na documentação. **Caminho para mostrar um arquivo no app:** colar
+a URL do arquivo na **descrição** da atividade no Even3 (a tela da sessão torna URLs
+clicáveis) ou anexar pelo `/admin` no campo **Link** da sessão (vira botão "Abrir").
+
 ## Escrita (mapeada, NÃO usada por ora)
 
 Para um eventual credenciamento pelo app, existem:
