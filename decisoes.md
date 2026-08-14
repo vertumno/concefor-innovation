@@ -4,6 +4,42 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-14 — O /admin ganha a palavra final sobre os textos, e a agenda ganha itens-link
+
+**Decisão:** o /admin passou a editar **título, descrição, horário, sala e link** de qualquer
+sessão — inclusive as do Even3 — e **o que for editado ali sobrevive ao re-sync** (coluna
+`campos_editados`; o upsert do sync só sobrescreve campo não editado). Junto vieram: **itens-link
+na linha do tempo** (prefixo `local-`, card com visual próprio de borda tracejada e chip "link ↗"
+que abre um URL em vez da tela de sessão — pra dar visibilidade ao que o Even3 só traz como bloco
+fechado, ex.: programação das sessões técnicas e eventos paralelos) e **URLs clicáveis** nos
+textos de descrição (componente `Linkify`).
+
+**Por quê:** os textos que a equipe do Even3 cadastra chegam ruins e não dava pra corrigir — o
+re-sync desfazia qualquer ajuste ("Even3 é a espinha" valia até para texto). A espinha continua
+sendo do Even3 (dias, sessões novas, remoções); o app só ganha a palavra final **campo a campo,
+quando alguém editou de propósito**. Itens-link não viram alvo de reação: ficam fora do Ao Vivo,
+do telão e do badge da barra.
+
+**Atenção:** se o Even3 **mudar o horário** de uma sessão, o id muda (o id embute data+hora), a
+linha antiga sai como stale e as edições daquela sessão se perdem — nesse caso é reeditar.
+
+---
+
+## 2026-08-14 — GitLab fora do ar: deploy na mão via repo GitHub privado
+
+**Decisão:** com os serviços do GitLab do IFES fora do ar (CI de produção incluída), o app foi
+publicado em **https://github.com/marcosaccioly/concefor-app** (privado, `main` = estado
+deployável — o branch `feat/telao-propagandas` com tudo até 14/08) para a **TI do Cefor clonar
+direto de lá** e subir na mão. Registrado em `links.md`.
+
+**Por quê:** a véspera do evento não pode ficar refém da infraestrutura do GitLab; o GitHub do
+Marquito já estava autenticado na máquina e resolve na hora. O repo é **privado** (pedido do
+Marquito) — a TI precisa ser adicionada como collaborator ou usar um fine-grained token
+somente-leitura. Quando o GitLab voltar, o fluxo oficial (branch + MR + CI) segue valendo; o
+GitHub vira espelho/contingência.
+
+---
+
 ## 2026-08-13 — E-book do NTE: o arquivo chegou e o lançamento ganha notícia de site
 
 **Decisão:** o e-book do NTE não é anunciado só por card de Instagram. Ele ganha **uma notícia
