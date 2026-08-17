@@ -55,6 +55,8 @@ não exigiram uma nova rodada de pontuação.
 
 - A pergunta sobre IA agêntica foi simplificada: indicador mínimo e pessoa com poder de
   interrupção, mantendo a precisão técnica.
+- Os dois estudos vencedores consecutivos do EDEN Best Research Paper Award passaram a orientar a
+  introdução e as perguntas 2 e 3, com a cronologia de 2025 e 2026 explicitada.
 
 ### Ep. 5 — Rutinelli
 

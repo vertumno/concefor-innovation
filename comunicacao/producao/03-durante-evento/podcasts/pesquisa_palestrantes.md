@@ -24,15 +24,29 @@ escala. É Senior Fellow da Advance HE e doutorando em Media Studies na Universi
 Distância: 20 anos construindo novos cenários educacionais” (18/08, 14h30) e participação na mesa
 “Desafios da EaD para os próximos 20 anos” (19/08, 9h30).
 
+**Prioridade editorial.** Conduzir a entrevista a partir dos dois trabalhos de que Felipe é
+coautor e que venceram, em anos consecutivos, o **EDEN Best Research Paper Award**. Juntos, eles
+formam uma sequência útil: o artigo de 2025 pergunta quem controla o acesso ao conhecimento quando
+a IA personaliza; o de 2026 investiga o que estudantes esperam e receiam antes do primeiro uso.
+
 **Últimos trabalhos e projetos.**
 
-- **“GenAI as an Educational Gatekeeper”** (artigo, 20/05/2026): discute como a IA seleciona e
-  organiza o conhecimento e propõe modelos de *gatekeeping* algorítmico e humano–IA. Foi o melhor
-  artigo da EDEN em 2025. [Artigo/DOI](https://doi.org/10.65043/eurodl.186)
-- **“Before the First Prompt”** (EDEN 2026): investiga como confiança, expectativas e receios
-  anteriores ao primeiro uso influenciam a adoção de um assistente de IA; venceu o Best Research
-  Paper Award 2026. [Registro ORO](https://oro.open.ac.uk/109711) ·
-  [premiação](https://research.open.ac.uk/news/ou-researchers-win-prestigious-eden-best-research-paper-award)
+- **“GenAI as an Educational Gatekeeper: Balancing Personalisation and Standardisation in Higher
+  Education” — EDEN Best Research Paper Award 2025.** A versão apresentada na conferência anual
+  da EDEN em Bolonha venceu o prêmio de 2025; uma versão em periódico foi publicada em 2026.
+  O trabalho examina como a IA seleciona e organiza conhecimento e os riscos para autonomia
+  acadêmica, equidade, coerência curricular e diversidade epistêmica.
+  [EDEN 2025](https://eden-europe.eu/highlights-of-eden-bologna-ac-2025/) ·
+  [registro da versão premiada](https://oro.open.ac.uk/104059/) ·
+  [artigo/DOI](https://doi.org/10.65043/eurodl.186)
+- **“Before the First Prompt: Understanding Students’ Pre-Use Perceptions of an AI Digital
+  Assistant in Higher Education” — EDEN Best Research Paper Award 2026.** Investiga confiança,
+  expectativas e receios antes do primeiro uso e combina evidências quantitativas e qualitativas
+  para reconhecer perfis distintos de estudantes. O júri o escolheu como vencedor na conferência
+  anual da EDEN no Porto.
+  [EDEN 2026](https://eden-europe.eu/eden-best-research-paper-award-granted-at-the-2026-annual-eden-conference-porto-portugal-14-16-june-2026/) ·
+  [registro ORO](https://oro.open.ac.uk/109711) ·
+  [Open University](https://research.open.ac.uk/news/ou-researchers-win-prestigious-eden-best-research-paper-award)
 - **“Evaluating Agentic AI: The Multi-Layer Evaluation Model”** (2026): amplia a avaliação de IA
   agêntica para além da precisão da resposta. [Registro ORO](https://oro.open.ac.uk/109712)
 - **Framework para a primeira atividade avaliada na EaD** (HEAd’26): pesquisa apoio, confiança,
@@ -45,10 +59,10 @@ Distância: 20 anos construindo novos cenários educacionais” (18/08, 14h30) e
 
 **Ângulos de abordagem.**
 
-1. Em que ponto personalizar passa a fragmentar o currículo ou limitar silenciosamente o
-   conhecimento a que o estudante tem acesso?
-2. Como preparar, antes do primeiro prompt, tanto o estudante desconfiado quanto o excessivamente
-   confiante?
+1. A partir de **“GenAI as an Educational Gatekeeper”**, em que ponto personalizar passa a
+   fragmentar o currículo ou limitar silenciosamente o conhecimento a que o estudante tem acesso?
+2. A partir de **“Before the First Prompt”**, como preparar tanto o estudante desconfiado quanto o
+   excessivamente confiante antes do primeiro uso de um assistente institucional?
 3. O que justifica uma IA institucional como o AIDA em vez da liberação irrestrita de ferramentas
    comerciais: dados, controle pedagógico ou evidência de aprendizagem?
 4. Quais métricas e poderes de veto humanos são indispensáveis quando um agente de IA planeja e

@@ -15,7 +15,8 @@
 limite.”
 
 “Este é o Concefor Podcast. Eu sou Mariana e recebo Felipe Maciel Tessarolo, do Institute of
-Educational Technology da The Open University, no Reino Unido. Ele acaba de apresentar a palestra
+Educational Technology da The Open University, no Reino Unido. Ele é coautor de trabalhos que
+venceram o EDEN Best Research Paper Award em 2025 e 2026. Acaba de apresentar a palestra
 internacional sobre tecnologia, transformação e duas décadas de educação a distância.”
 
 ## Conversa
@@ -26,11 +27,13 @@ internacional sobre tecnologia, transformação e duas décadas de educação a 
 **Gancho:** “Uma das decisões mais silenciosas acontece quando a tecnologia passa a organizar o
 próprio caminho de aprendizagem.”
 
-2. Seu trabalho descreve a IA generativa como *gatekeeper* do conhecimento. Em que ponto
-   personalizar deixa de ampliar acesso e começa a fechar portas que o estudante nem percebe?
+2. Em “GenAI as an Educational Gatekeeper”, vencedor do prêmio de melhor artigo da EDEN em 2025,
+   vocês tratam a IA generativa como filtro no acesso ao conhecimento. Em que ponto personalizar
+   deixa de ampliar acesso e começa a fechar portas que o estudante nem percebe?
 
-3. A pesquisa “Before the First Prompt” examina expectativas, confiança e receios antes do uso de
-   um assistente de IA. O que uma instituição deve fazer antes de liberar a primeira ferramenta?
+3. Um ano depois, “Before the First Prompt” também venceu o prêmio da EDEN ao investigar
+   expectativas, confiança e receios antes do uso de um assistente de IA. O que uma instituição
+   deve fazer antes de liberar a primeira ferramenta?
 
 **Gancho:** “Preparar o estudante é essencial, mas também é preciso decidir que tipo de ferramenta
 merece entrar no ambiente institucional.”
