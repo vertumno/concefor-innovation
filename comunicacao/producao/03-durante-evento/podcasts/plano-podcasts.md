@@ -25,24 +25,29 @@ uma nova janela surgir.
   fontes e ângulos editoriais.
 - [Roteiros individuais aprovados](roteiros/): fala de abertura, introdução, cinco perguntas,
   transições e encerramento.
+- [Roteiros editáveis em DOCX](roteiros-editaveis/): uma página de condução e uma página de
+  perguntas extras por entrevistado, prontas para edição colaborativa e impressão.
 - [Auditoria maker–checker](auditoria-qualidade.md): pontuação e correções de cada iteração.
 - [Caderno de impressão](roteiro_impressao.html): uma folha A4 por entrevista.
 
 Cada conversa foi desenhada para **20 a 30 minutos**. As cinco perguntas formam a linha principal;
-o host pode cortar a última se uma resposta render muito. Não transformar o roteiro em
-questionário: usar os ganchos para retomar uma palavra do convidado antes de avançar.
+o host pode cortar a última se uma resposta render muito e recorrer à página **Carta na manga**
+para ampliar a conversa. Não transformar o roteiro em questionário: usar os ganchos para retomar
+uma palavra do convidado antes de avançar.
 
 ## Protocolo de atualização pela palestra
 
-Não há transcrição de palestra ou mesa no repositório em 16/08. Em cada roteiro, uma pergunta está
-marcada para atualização: **[ATUALIZAR COM A PALESTRA]** ou, nos casos de Vanessa e Mariano, que
-serão entrevistados antes de suas falas, **[AJUSTAR COM O BRIEFING DO CONVIDADO]**.
+Não há transcrição de palestra ou mesa no repositório nesta versão. Quando ela chegar, a pauta deve
+ser reavaliada por inteiro: a conversa principal precisa partir sobretudo da fala no Concefor, e não
+apenas do currículo. Vanessa e Mariano serão entrevistados antes de suas falas e exigem briefing.
 
-1. Se a transcrição chegar antes da gravação, localizar uma afirmação, exemplo ou tensão concreta.
-2. Trocar a pergunta marcada por uma retomada curta: “Na palestra, você disse que…”.
-3. Manter a pergunta aberta; não pedir apenas confirmação do que já foi dito.
-4. Em gravações anteriores à fala (Vanessa e Mariano), perguntar o que o convidado pretende
-   tensionar e, se possível, gravar uma retomada curta depois para a edição.
+1. Localizar afirmações, exemplos, decisões, tensões e contrapontos concretos na transcrição.
+2. Reescrever de quatro a seis perguntas principais a partir desses trechos.
+3. Pedir explicação, consequência, exemplo, contraponto ou decisão; não pedir apenas repetição.
+4. Mover as perguntas principais substituídas para **Carta na manga**, sem limite de quantidade.
+5. Ajustar abertura, ganchos e encerramento se a transcrição mudar o centro da conversa.
+6. Em gravações anteriores à fala (Vanessa e Mariano), usar o briefing e, se possível, gravar uma
+   retomada curta depois da palestra para a edição.
 
 ## Checklist de set
 

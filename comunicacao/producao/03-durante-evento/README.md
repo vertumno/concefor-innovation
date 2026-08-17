@@ -19,6 +19,7 @@
 - 📋 **Plano completo:** [podcasts/plano-podcasts.md](podcasts/plano-podcasts.md) — **7 entrevistas
   individuais** na grade de 16/08. Márcia segue no evento, mas não tem gravação agendada.
 - 🎬 **Roteiros:** [podcasts/roteiros/](podcasts/roteiros/) ·
+  [DOCX editáveis](podcasts/roteiros-editaveis/) ·
   [caderno para impressão](podcasts/roteiro_impressao.html).
 - 🗓️ **Grade:** 17/08 16h Vanessa · 18/08 11h30 Jaqueline *(a confirmar)*, 13h30 Mariano,
   16h30 Felipe · 19/08 12h Rutinelli, 18h Mauro · 20/08 12h Mariella.
