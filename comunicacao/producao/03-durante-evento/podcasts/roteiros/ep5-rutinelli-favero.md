@@ -2,72 +2,46 @@
 
 | | |
 |---|---|
-| **Convidada** | Dra. Rutinelli da Penha Fávero |
-| **Credencial principal** | Professora do Ifes, doutora em Educação em Ciências e Saúde (UFRJ) |
-| **Fala no evento** | 19/08, 9h30–11h30 · mesa "Desafios da EaD para os próximos 20 anos" (com Felipe Maciel Tessarolo) |
-| **Gravação** | **19/08, 11h40–12h20** — 10 min depois da mesa |
-| **Alternativa** | 19/08, 12h40–13h20 (almoço) |
-| **Host** | ___ · *sugestão: mesmo host do Tessarolo (mesa "Desafios da EaD")* |
-| **Câmera/áudio** | ___ |
-| **Instagram** | @rutinha_fav |
+| **Gravação** | 19/08, 12h · depois da mesa |
+| **Host** | Mariana |
+| **Fala no evento** | 19/08, 9h30 · mesa “Desafios da EaD para os próximos 20 anos” |
 
-> 🔗 **É o episódio-par do Tessarolo** (ep. 3, gravado na véspera). Os dois dividem a mesa
-> "Desafios da EaD para os próximos 20 anos", e a mesa é o assunto **deste** episódio: ele falou
-> antes dela acontecer, ela fala depois. Se o mesmo host conduzir os dois, dá para retomar aqui o
-> que ele disse ontem e pedir a resposta dela.
->
-> ⏱️ É a única gravação da manhã de quarta. A tarde inteira é transmissão (14h30–17h30) e depois
-> dela vêm a dobradinha Mauro/Mariano — então este bloco não pode escorregar.
-> ✅ Termo de autorização assinado antes de rodar.
+> **Nota de atualização:** ainda não há transcrição. Se ela for incluída futuramente, substituir a
+> pergunta marcada **[ATUALIZAR COM A PALESTRA]** por uma retomada concreta da mesa.
 
-**Bio de apoio (não ler no ar):** professora do Ifes, doutora em Educação em Ciências e Saúde
-(UFRJ), com estágio doutoral em Coimbra. Coordenou a pós-graduação em Tecnologias Educacionais.
-Temas: tecnologia e educação, gamificação, EaD, formação docente.
+## Abertura e introdução do host
 
----
+**Frase de abertura:** “O futuro da EaD não será definido pela ferramenta mais nova, mas pelos
+limites que a educação tiver coragem de impor.”
 
-## Abertura (30s, host)
+“Este é o Concefor Podcast. Eu sou Mariana e recebo a Dra. Rutinelli da Penha Fávero, professora do
+Ifes e pesquisadora de formação docente, acessibilidade e uso ético de inteligência artificial. Ela
+acaba de participar da mesa sobre os desafios da EaD para os próximos 20 anos.”
 
-Apresentar a convidada como professora do Ifes e doutora em Educação em Ciências e Saúde, que
-acabou de sair da mesa sobre os desafios da EaD para os próximos 20 anos.
+## Conversa
 
-## Bloco 1 — a mesa (a fechar no dia, 2–3 perguntas)
+1. **[ATUALIZAR COM A PALESTRA]** Depois da conversa com Felipe Tessarolo na mesa desta manhã, o
+   que ficou mais nítido para você sobre os próximos 20 anos da EaD?
 
-Anotar durante a transmissão:
+**Gancho:** “O futuro começa nas dúvidas de quem precisa transformar tecnologia em prática
+pedagógica todos os dias.”
 
-- Ponto mais forte da fala dela: `___`
-- Frase que rendeu reação (app/plateia): `___`
-- **Onde ela e o Tessarolo divergiram** — é o melhor material do episódio: `___`
+2. Depois de 45 encontros do Papo com IA.IÁ e da participação de educadores de sete estados, que
+   medo docente diminuiu e que preocupação ficou maior?
 
-1. `___`
-2. `___`
-3. `___`
+3. Qual uso de inteligência artificial uma instituição educacional deveria recusar mesmo que ele
+   prometa ganho imediato de eficiência?
 
-## Bloco 2 — o tema (escrito)
+**Gancho:** “Definir limites é importante; redesenhar a aprendizagem para tornar o pensamento
+visível é o passo seguinte.”
 
-1. Você trabalha com gamificação. Existe uma diferença entre gamificar e só espalhar pontinho na
-   plataforma. Onde fica essa linha?
-2. Formação docente é a sua área. Qual é a maior resistência que você encontra num professor
-   quando o assunto é tecnologia — e ela é sem razão?
-3. Você fez estágio doutoral em Coimbra. O que a universidade portuguesa faz com tecnologia
-   educacional que aqui a gente ainda não faz?
-4. Sua formação é em Educação em Ciências e Saúde. Ensinar ciência a distância parece contradição,
-   por causa do laboratório. Como se resolve isso?
+4. Quando o estudante usa IA, que evidências de processo — versões, decisões, justificativas ou
+   conversa oral — ajudam a tornar o raciocínio visível sem transformar a avaliação em vigilância?
 
-## Bloco 3 — 20 anos (escrito)
+5. O projeto de videobook em Libras mostra que acessibilidade não pode ser correção de última hora.
+   Qual é a primeira decisão que muda quando ela nasce junto com o curso?
 
-O título da mesa de hoje fala dos **próximos** 20 anos. Se você pudesse garantir que a EaD
-brasileira acertasse uma única coisa nesse período, qual seria — e o que a gente precisa parar de
-fazer hoje para isso acontecer?
+## Considerações finais do host
 
-## Encerramento
-
-- Recado da convidada para quem assiste
-- Onde acompanhar o trabalho dela
-- Convite ao próximo Concefor
-
-## Extras (7 min finais)
-
-- [ ] Foto da convidada no set
-- [ ] Story de bastidor
-- [ ] Recado de 15s para o app do Concefor
+“Rutinelli, obrigada por trazer os próximos 20 anos para decisões que já precisam ser tomadas hoje.
+Esta conversa faz parte da cobertura do VIII Concefor. Até o próximo episódio.”

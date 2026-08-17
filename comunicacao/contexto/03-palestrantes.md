@@ -7,20 +7,21 @@
 ## Checklist por palestrante
 | Palestrante | Participação | Foto oficial | Card divulgação | Reel | Podcast |
 |---|---|---|---|---|---|
-| Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 3 · 18/08 16h20** |
-| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ✅ | ⬜ | 🟡 **ep. 7 · 19/08 18h30** |
-| Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ✅ | ⬜ | 🟡 **ep. 1 · 17/08 16h40** *(antes da fala)* |
-| Dra. Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 2 · 18/08 11h30** 👥 *(com a Mariella)* |
-| Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 2 · 18/08 11h30** 👥 *(com a Jaqueline)* |
-| Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | 🟡 **ep. 4 · 18/08 17h10** *(confirmar com ela primeiro)* |
-| Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | 🟡 **ep. 5 · 19/08 11h40** |
-| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ✅ *(28/07, precisa recorte)* | ✅ **produzido (02/08)** | ⬜ | 🟡 **ep. 6 · 19/08 17h40** |
+| Felipe Maciel Tessarolo | Palestra internacional (18/08, 14h30) + Mesa "Desafios da EaD" (19/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 4 · 18/08 16h30** · Mariana |
+| Dr. Mariano Pimentel | Palestra "IA" (19/08, 14h30) | ✅ | ✅ | ⬜ | 🟡 **ep. 6 · 18/08 13h30** *(antes da fala)* |
+| Dra. Vanessa Battestin | Palestra de abertura (17/08, 19h) | ✅ | ✅ | ⬜ | 🟡 **ep. 1 · 17/08 16h** *(antes da fala)* |
+| Dra. Jaqueline Sanz | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 2 · 18/08 11h30** *(falta confirmar)* |
+| Dra. Mariella Berger Andrade | Mesa "Tecnologia Delas" (18/08) | ✅ | ✅ | ⬜ | 🟡 **ep. 3 · 20/08 12h** |
+| Dra. Márcia Gonçalves de Oliveira | Mesa "Tecnologia Delas" + Coord. Geral | ✅ | ✅ | ⬜ | ➖ **sem gravação na grade atual** |
+| Dra. Rutinelli da Penha Fávero | Mesa "Desafios da EaD" (19/08, 9h30) | ✅ | ✅ | ⬜ | 🟡 **ep. 5 · 19/08 12h** · Mariana |
+| Dr. Mauro Oliveira | Palestra *"Inovações da IA para a Educação"* (19/08, 16h30) | ✅ *(28/07, precisa recorte)* | ✅ **produzido (02/08)** | ⬜ | 🟡 **ep. 7 · 19/08 18h** · Marquito |
 
-> 🎙️ **Podcast (12/08): os 8 palestrantes têm episódio**, em **7 gravações** — Jaqueline e Mariella
-> dividem o ep. 2 (👥), gravado em dupla direto da mesa. Bloco de 40 min no mesmo dia da fala.
+> 🎙️ **Podcast (grade de 16/08): 7 entrevistas individuais** entre 17 e 20/08. Jaqueline e
+> Mariella agora gravam separadamente; Márcia não tem entrevista na grade atual. Vanessa e Mariano
+> gravam antes de suas palestras. O horário de Jaqueline ainda precisa de confirmação.
 > Grade, hosts, ordem de corte e roteiros em
 > [`plano-podcasts.md`](../producao/03-durante-evento/podcasts/plano-podcasts.md).
-> Status 🟡 = horário definido, **falta confirmar com o convidado** no ato do convite.
+> Status 🟡 = roteiro pronto e horário informado pela produção; confirmar os detalhes no convite.
 
 > ✅ Fotos oficiais dos 7 recebidas em 16/07/2026 →
 > `producao/02-pre-evento/palestrantes/_refs/fotos/` (PNG, nome = nome do palestrante).

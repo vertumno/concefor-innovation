@@ -7,6 +7,8 @@
 > e do estado real do repositório.
 >
 > 🔴 crítico · 🟡 importante · 🔵 desejável · **⚠️ sem dono**
+>
+> **Adendo de 16/08:** itens de podcast atualizados para a grade mais recente.
 
 **Faltam 4 dias para a abertura.** Amanhã (14/08, sexta) chega todo o material impresso; sábado
 15/08 fecham as inscrições; segunda 17/08 abre o evento, e às 20h é o lançamento do e-book do NTE.
@@ -20,13 +22,10 @@
       para `LINK-A-DEFINIR`. Sem link, **nem a notícia nem o card podem ir ao ar**, e o lançamento
       é segunda às 20h. Caminho já validado: a mesma página de publicações do site do Cefor que
       resolveu o livro dos 20 anos. → **Elton leva à Vanessa / Andrômeda**
-- [ ] 🔴 **Fechar a grade dos podcasts** — a reunião de ontem marcou hoje para isso. Definir
-      horários, falar com cada convidado e **reconciliar a planilha (5 episódios + repescagem) com
-      o [`plano-podcasts.md`](../producao/03-durante-evento/podcasts/plano-podcasts.md) (7
-      episódios)**. A versão escolhida volta para a planilha, que é o que vai impresso.
-      → **Marquito / Elton**
-- [ ] 🔴 **Definir os hosts que faltam** — a Mariana assume dois; o Marquito se ofereceu para
-      outros. → **Coordenação**
+- [x] ✅ **Grade dos podcasts fechada em 16/08** — 7 entrevistas individuais; plano e roteiros
+      reconciliados. Márcia fica sem gravação na grade atual.
+- [ ] 🔴 **Definir os 4 mediadores que faltam** — Vanessa, Jaqueline, Mariella e Mariano. Mariana
+      assume Felipe e Rutinelli; Marquito assume Mauro. → **Coordenação**
 - [ ] 🔴 **Corrigir o link duplicado da transmissão do Mariano** — hoje aponta para
       `youtube.com/live/2fCU8tmmXoo`, o mesmo do Tessarolo. Quem divulgar manda o público para a
       live do dia anterior. → **Leo**
@@ -108,8 +107,7 @@
 - [ ] 🔴 **O que transmitir na quinta (20/08)** — a organização pediu transmissão do aniversário de
       15 anos do Educimat, mas não mandou título nem disse se é o dia todo. **Trava os 2
       thumbnails que faltam.** → **Marquito**
-- [ ] 🟡 **Confirmar a permanência de Mariano e Mauro até quinta**, se a grade de podcasts que
-      vencer depender do dia 20.
+- [ ] 🟡 **Confirmar Jaqueline em 18/08 às 11h30** e os quatro mediadores ainda sem nome.
 - [ ] 🟡 **Chat do YouTube desativado por legislação eleitoral** — confirmar se é orientação formal
       do Ifes ou decisão nossa.
 - [ ] 🟡 **Logo do Educimat** para os impressos.
@@ -126,14 +124,15 @@
 > transmissão **Leo e Tiago** · cobertura **Nanda, Andreia e Juliana**.
 
 - [ ] **17/08 13h30** — montagem dos equipamentos *(Tiago, com Marquito, Carol e Elton)*
-- [ ] **17/08** — cobertura do credenciamento · momento musical · abertura · palestra da Vanessa ·
-      4 lançamentos · ⭐ **celebração do bolo dos 20 anos**
+- [ ] **17/08** — podcast Vanessa às 16h · cobertura do credenciamento · momento musical · abertura
+      · palestra da Vanessa · 4 lançamentos · ⭐ **celebração do bolo dos 20 anos**
 - [ ] **18/08** — mesa "Tecnologia Delas" · palestra Tessarolo · mostra de produtos ·
-      sessões técnicas · **2 podcasts**
+      sessões técnicas · **3 podcasts** (Jaqueline, Mariano e Felipe)
 - [ ] **19/08** — momento cultural · mesa "Desafios da EaD" · palestra Mariano · palestra Mauro ·
-      sessões técnicas · **2 podcasts**
+      sessões técnicas · **2 podcasts** (Rutinelli e Mauro)
 - [ ] **20/08** — 6 eventos paralelos simultâneos *(cobertura em rodízio entre as salas)* ·
-      ⭐ **premiação e foto dos vencedores** · momento cultural · ⭐ **foto oficial dos servidores**
+      **podcast Mariella às 12h** · ⭐ **premiação e foto dos vencedores** · momento cultural ·
+      ⭐ **foto oficial dos servidores**
 - [ ] **Diário** — stories da programação do dia + reel de fechamento do dia
 - [ ] **Operar as 8 transmissões** com Libras
 - [ ] **Colher os termos assinados antes de cada gravação de podcast** — só os podcasts pedem
@@ -181,5 +180,6 @@ e metade está no pós-evento, que é quando a equipe já se dispersou.
 **Os 3 que não podem escorregar:**
 1. **Link de hospedagem do e-book do NTE** — trava a notícia, o card e o QR, e o lançamento é
    segunda às 20h. É a última peça de uma frente que já está 90% pronta.
-2. **Grade dos podcasts** — a reunião é hoje, e há duas versões conflitantes em circulação.
+2. **Operação dos podcasts** — faltam quatro mediadores, confirmar Jaqueline e sincronizar a
+   grade de 16/08 com a planilha operacional do Drive.
 3. **Plano B do app** — os servidores do Ifes estão fora do ar.
