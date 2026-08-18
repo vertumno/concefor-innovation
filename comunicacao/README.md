@@ -78,8 +78,8 @@ comunicacao/
   [`decisoes.md`](../decisoes.md)): **etiquetas de nome** (comissão geral assumiu) ·
   **link do livro dos 20 anos** (definitivo) · **banners institucionais** (na gráfica) ·
   **cantinho instagramável** (CGA) · **vídeos-convite** (cancelados). Sobram três coisas nossas:
-  **artes dos 2 cards de mesa**, **contagem regressiva** e **3 hosts de podcast**
-  *(eram 2 quando os episódios eram 4; a grade de 12/08 passou para 8)*.
+  **artes dos 2 cards de mesa**, **contagem regressiva** e **4 mediadores de podcast**
+  *(grade de 16/08: 7 entrevistas individuais; 3 já têm mediador)*.
 - ⚠️ **O que a entrega em 14/08 ainda significa:** o prazo contratado era 07/08 e escorregou uma
   semana. Com as etiquetas fora da nossa mesa, o que resta é **conferir as peças impressas** assim
   que chegarem — erro de horário, nome ou sala em banner não tem conserto a três dias do evento.
@@ -137,17 +137,16 @@ comunicacao/
   [`etiquetas-nomes.md`](producao/01-brindes-promocionais/cracha/etiquetas-nomes.md) caso a
   comissão precise da medida.
 - **Transmissão + Libras:** ✅ definido — **todas as palestras e mesas-redondas** (16/07).
-- **Podcasts (12/08): os 8 palestrantes do evento têm episódio, em 7 gravações** — Jaqueline e
-  Mariella gravam **juntas**, às 11h30 de 18/08, direto da mesa "Tecnologia Delas".
-  ✅ **Grade fechada:** cada gravação é um **bloco de 40 min no mesmo dia da fala** do convidado,
-  o que tirou a dependência de alguém ficar até quinta. 6 das 7 são **depois** da fala; só a
-  Vanessa grava antes, porque a noite de abertura não deixa janela. ✅ **7 roteiros escritos.**
-  ✅ **Mariana é host da dupla de IA**; 🔴 **faltam 3 hosts** (agrupados por conjunto temático) e
-  🔴 **falta a sala de gravação** — a terça vai das 11h30 às 17h50 e o set precisa comportar duas
-  convidadas. [Plano](producao/03-durante-evento/podcasts/plano-podcasts.md) ·
-  [roteiros](producao/03-durante-evento/podcasts/roteiros/)
+- **Podcasts (grade de 16/08): 7 entrevistas individuais** — Vanessa (17/08 16h) · Jaqueline
+  (18/08 11h30, **a confirmar**) · Mariano (18/08 13h30) · Felipe (18/08 16h30) · Rutinelli
+  (19/08 12h) · Mauro (19/08 18h) · Mariella (20/08 12h). Márcia permanece como palestrante,
+  mas não tem gravação na grade atual. ✅ **7 roteiros pesquisados e escritos.**
+  ✅ **Mariana:** Felipe e Rutinelli · ✅ **Marquito:** Mauro · 🔴 **faltam 4 mediadores** e a
+  sala de gravação. [Plano](producao/03-durante-evento/podcasts/plano-podcasts.md) ·
+  [roteiros](producao/03-durante-evento/podcasts/roteiros/) ·
+  [caderno de impressão](producao/03-durante-evento/podcasts/roteiro_impressao.html)
 - **Aguardando da Márcia/Coordenação:** ✅ camisa (**opção 2**) e bloco **aprovados em 28/07** ·
-  🟡 **3 hosts de podcast** (a Mariana já assumiu o conjunto de IA; são 7 episódios em 4 conjuntos) ·
+  🟡 **4 mediadores de podcast** (Vanessa, Jaqueline, Mariella e Mariano) ·
   ✅ eventos paralelos completos (29/07) · logo do Educimat p/ impressos · revisão da
   [notícia para a ACS](producao/02-pre-evento/noticia-acs/rascunho-noticia.md) ·
   atualização do **Even3** para espelhar o site (o app do evento lê de lá).
@@ -190,11 +189,9 @@ comunicacao/
   3. 🟡 **Artes dos 2 cards de mesa — em aberto ("ainda vamos ver").** Tudo pronto menos a
      decisão: legenda, alt-text, fotos e pipeline. Se sair hoje ou amanhã, ainda cabem antes da
      regressiva; depois de 14/08 elas disputam espaço com ela no feed.
-  4. 🟡 **Faltam 3 hosts de podcast.** Com a grade de 12/08 (**os 8 palestrantes, em 7
-     gravações**), os episódios foram agrupados em 4 conjuntos temáticos, então 4 pessoas cobrem
-     tudo. A **Mariana** assume o conjunto de IA (Mauro + Mariano); faltam "Tecnologia Delas" (2
-     episódios), "Desafios da EaD" (2) e "20 anos" (1) — os dois últimos podem ser a mesma pessoa.
-     Junto disso, falta a **sala de gravação**, e a terça precisa dela o dia inteiro.
+  4. 🟡 **Faltam 4 mediadores de podcast** para Vanessa, Jaqueline, Mariella e Mariano. Mariana
+     cobre Felipe e Rutinelli; Marquito cobre Mauro. Também falta a **sala de gravação**, inclusive
+     para 20/08 às 12h, e o horário de Jaqueline ainda precisa de confirmação.
      [Plano](producao/03-durante-evento/podcasts/plano-podcasts.md)
   5. ✅ **Eventos paralelos — ENVIADO E PUBLICADO (11/08).** As 6 coordenações receberam card e
      texto pelo [kit](https://vertumno.github.io/concefor-innovation/comunicacao/kit-eventos-paralelos/),

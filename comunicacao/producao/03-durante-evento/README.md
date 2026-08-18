@@ -16,17 +16,15 @@
 - Reels de destaques (abertura, palestras internacionais, premiação).
 
 ### C) Podcasts com palestrantes
-- 📋 **Plano completo:** [podcasts/plano-podcasts.md](podcasts/plano-podcasts.md) — os **8
-  palestrantes** do evento têm episódio, em **7 gravações** (Jaqueline e Mariella gravam juntas).
-  🎬 **Roteiros por episódio (todos escritos):** [podcasts/roteiros/](podcasts/roteiros/).
-- Gravação **no mesmo dia da fala** do convidado (antes ou depois), em **bloco de 40 min**;
-  **nunca** durante transmissão (Leo/Tiago/Nanda ocupados).
-- 🗓️ **Grade (12/08):** 17/08 16h40 Vanessa *(antes)* · 18/08 **11h30 Jaqueline + Mariella**,
-  16h20 Tessarolo, 17h10 Márcia · 19/08 11h40 Rutinelli, 17h40 Mauro, 18h30 Mariano.
-  A quarta termina às **19h10**.
-- 👤 **Hosts em 4 conjuntos temáticos** — a Mariana cobre a dupla de IA; 🔴 faltam 3.
-- 🔴 Pendente: **3 hosts**, **termo de autorização de imagem/voz** e **sala fixa de gravação**
-  (terça bloqueada o dia inteiro, set com **duas cadeiras e dois microfones** para o episódio duplo).
+- 📋 **Plano completo:** [podcasts/plano-podcasts.md](podcasts/plano-podcasts.md) — **7 entrevistas
+  individuais** na grade de 16/08. Márcia segue no evento, mas não tem gravação agendada.
+- 🎬 **Roteiros:** [podcasts/roteiros/](podcasts/roteiros/) ·
+  [DOCX editáveis](podcasts/roteiros-editaveis/) ·
+  [caderno para impressão](podcasts/roteiro_impressao.html).
+- 🗓️ **Grade:** 17/08 16h Vanessa · 18/08 11h30 Jaqueline *(a confirmar)*, 13h30 Mariano,
+  16h30 Felipe · 19/08 12h Rutinelli, 18h Mauro · 20/08 12h Mariella.
+- 👤 **Hosts:** Mariana (Felipe e Rutinelli) · Marquito (Mauro) · 🔴 faltam 4 mediadores.
+- 🔴 Pendente: confirmar Jaqueline, 4 mediadores, autorização de imagem/voz e sala fixa.
 
 ### D) Transmissão ao vivo (simultânea)
 - ✅ Decidido (16/07): **todas as palestras e mesas-redondas** transmitidas ao vivo.
@@ -44,5 +42,5 @@
 - [ ] Escala de fotografia por turno
 - [ ] Escala de intérpretes por palestra
 - [ ] Kit de stories/templates prontos para postagem rápida
-- [ ] Local de gravação dos podcasts (sala silenciosa, livre nos 4 horários, até 19h10 na quarta)
-- [ ] Confirmar as 4 janelas de podcast com os convidados no ato do convite
+- [ ] Local de gravação dos podcasts (sala silenciosa e disponível nos sete horários)
+- [ ] Confirmar Jaqueline, os quatro mediadores e os detalhes das sete janelas
