@@ -17,6 +17,18 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
 - **GitHub (app — deploy manual, PRIVADO):** https://github.com/marcosaccioly/concefor-app — criado em **14/08** com os serviços do GitLab fora do ar, para a **TI do Cefor clonar direto** e subir na mão. `main` = estado deployável do app (branch `feat/telao-propagandas` + ajustes de 14/08). Repo **privado**: a TI precisa ser adicionada como collaborator ou receber um fine-grained token somente-leitura. Quando o GitLab voltar, o fluxo oficial (branch + MR) volta a valer e este repo vira espelho
 - **Ex-repo `concefor2026`** (central de comunicação): https://github.com/vertumno/concefor2026 — **incorporado aqui em `comunicacao/` (16/07/2026)**; arquivar no GitHub para não virar fonte concorrente
 
+## Cobertura do evento (transcrições e documentos)
+
+- **📝 Transcrições ao vivo do VIII Concefor (GitHub):** https://github.com/marcosaccioly/transcricoes-concefor
+  — a máquina do evento (transcritor-local) faz push automático a cada ~5 min; clone local em
+  `C:\dev\transcricoes-concefor`.
+- **📄 Documentos das palestras para os participantes (PDF + fonte HTML):** pasta `documentos/`
+  do mesmo repo — gerados em 18/08 a partir das transcrições timestamped, com a identidade
+  Concefor + selo 20 anos (`documentos/html/_estilo.css`). Quatro até agora: ① momento musical +
+  abertura oficial · ② palestra Vanessa Battestin · ③ lançamentos + celebração 20 anos ·
+  ④ mesa "Tecnologia Delas". Para os próximos, replicar o padrão dos HTML e renderizar com
+  Chrome headless (`--headless=new --print-to-pdf --no-pdf-header-footer`).
+
 ## Comunicação (CGTE)
 
 - **📊 Planilha oficial de atuação da CGTE no Concefor (Drive — FONTE CANÔNICA da escala do evento):**
