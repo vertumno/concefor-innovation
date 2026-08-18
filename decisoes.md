@@ -4,6 +4,41 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-14 — Lançamento: app no ar e e-mail enviado aos participantes pelo Even3
+
+**O app subiu e o e-mail saiu, no mesmo dia.** O deploy de contingência (GitHub privado →
+TI) se concretizou e https://app.cefor.ifes.edu.br respondeu; na sequência, o e-mail de
+lançamento foi redigido e **disparado pela ferramenta do Even3** (Pessoas → Notificar
+pessoas, conta do organizador). Fecha a frente "Divulgação do app aos inscritos", travada
+desde 12/08 pelos sistemas do Ifes. Copy, configuração e histórico da peça:
+`comunicacao/producao/02-pre-evento/app-lancamento/email-lancamento.md`.
+
+**Aprendizados operacionais do Even3** (para o próximo envio):
+
+- O dropdown "Situação" do envio **não tem "Inscrição confirmada"**; o equivalente é
+  **"Inscritos"** (grupo Evento). "Credenciado/não credenciado" é check-in presencial,
+  inútil antes do evento.
+- **"Pré-visualizar" e "Envio de exemplo" vão para a conta do organizador logado** (Alex),
+  e **não há envio para pessoas selecionadas uma a uma** — sem o organizador por perto,
+  não existe teste de verdade; o grupo "Organizadores" (3 pessoas) é o menor alvo possível.
+- Conferência de alcance é **a posteriori**, na aba "Histórico de envios".
+
+**Conferido na planilha de envios (exportada 17h38 do mesmo dia):** **254 destinatários,
+254 entregas, zero bounce** — exatamente os inscritos confirmados, o público certo. Até
+aquela hora, 44 aberturas (17%) e 11 cliques (7 no link do app). 🔴 **Achado: @ifes.edu.br
+abriu 1 em 75 (1%), contra 26% no Gmail** — e a caixa do Marquito (Delivery registrado,
+mensagem ausente até do spam) **confirmou na mesma noite: quarentena institucional**. Os 75
+participantes @ifes.edu.br (30% da base) não receberam. **Duas lições:** (1) "Delivery" do
+Even3 = aceito pelo gateway de destino, **não** entregue à caixa — quarentena é invisível
+para a plataforma; (2) envio externo em massa para @ifes.edu.br precisa de whitelist prévia
+na TI. **Contorno definido: reenvio interno** (conta @ifes.edu.br → os 75 em Cco, texto
+simples), com copy pronta na peça. **LGPD:** a planilha tem nome+e-mail de 254 pessoas e o
+repo é público; ela entrou no `.gitignore` (`ListaDetalhesEnvio_*.xlsx`) e nunca foi
+commitada. Análise completa e copy do reenvio:
+`comunicacao/producao/02-pre-evento/app-lancamento/email-lancamento.md` (+ `_refs/`, só local).
+
+---
+
 ## 2026-08-14 — O /admin ganha a palavra final sobre os textos, e a agenda ganha itens-link
 
 **Decisão:** o /admin passou a editar **título, descrição, horário, sala e link** de qualquer

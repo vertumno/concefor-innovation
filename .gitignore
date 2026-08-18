@@ -1,3 +1,6 @@
 # Ignorar arquivos fontes grandes do Illustrator e arquivos compactados de download
 *.ai
 *.zip
+
+# Dados pessoais de participantes (LGPD) — o repo é PÚBLICO, nunca commitar
+ListaDetalhesEnvio_*.xlsx
