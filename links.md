@@ -24,9 +24,10 @@ aqui todo recurso que mora fora deste repo. (Preencher os `<placeholder>`.)
   `C:\dev\transcricoes-concefor`.
 - **📄 Documentos das palestras para os participantes (PDF + fonte HTML):** pasta `documentos/`
   do mesmo repo — gerados em 18/08 a partir das transcrições timestamped, com a identidade
-  Concefor + selo 20 anos (`documentos/html/_estilo.css`). Cinco até agora: ① momento musical +
+  Concefor + selo 20 anos (`documentos/html/_estilo.css`). Seis até agora: ① momento musical +
   abertura oficial · ② palestra Vanessa Battestin · ③ lançamentos + celebração 20 anos ·
-  ④ mesa "Tecnologia Delas" · ⑤ palestra internacional Felipe Tessarolo. Para os
+  ④ mesa "Tecnologia Delas" · ⑤ palestra internacional Felipe Tessarolo · ⑥ mesa "Desafios
+  da EaD para os próximos 20 anos". Para os
   próximos, replicar o padrão dos HTML e renderizar com Chrome headless
   (`--headless=new --print-to-pdf --no-pdf-header-footer`).
 
