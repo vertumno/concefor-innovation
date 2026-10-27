@@ -1,0 +1,111 @@
+{
+  "sessaoId": "even3-1412350-20260819-0930",
+  "sessao": "Mesa-Redonda Desafios da EaD para os próximos 20 anos",
+  "respostas": [
+    {
+      "perguntaHora": "10:06",
+      "pergunta": "Como incentivar o uso de IA para um aprendizado profundo",
+      "encontrada": true,
+      "lidaEm": "11:19",
+      "quem": "Dr. Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero",
+      "resposta": "Felipe trouxe o dado da AIDA: dos 60 alunos que usaram o assistente, só um tentou usá-lo para responder à avaliação — os demais pediam contexto e explicações, num desejo real de aprender mais. Para ele, o caminho é desenvolver pensamento crítico sobre o que a IA oferece: questionar a resposta, refletir sobre ela, pedir outros pontos de vista, com a mesma desconfiança que se aprendeu a ter com estranhos na rua e que se perdeu diante de um vídeo na internet. Rutinelli somou a analogia da memória externa — ninguém mais decora número de telefone e nem por isso o telefone deixou de ser importante — e disse que o que baliza sua avaliação é aquilo que o aluno precisa essencialmente desenvolver naquele curso: é isso que define se o uso da IA ajuda ou atrapalha. Felipe fechou com a calculadora, um dia proibida nas provas de matemática e depois superada pelo Excel: a exigência do profissional deixou de ser fazer conta e passou a ser analisar a complexidade das informações.",
+      "citacao": "A grande maioria deles não queria usar aquilo para burlar o sistema. Era, literalmente, um desejo de aprimorar o aprendizado deles.",
+      "aprovada": "rascunho",
+      "citacaoDe": "Dr. Felipe Maciel Tessarolo"
+    },
+    {
+      "perguntaHora": "10:15",
+      "pergunta": "Qual o pensamento dos palestrantes sobre a proibição",
+      "encontrada": true,
+      "lidaEm": "11:15",
+      "quem": "Dra. Rutinelli da Penha Fávero e Dr. Felipe Maciel Tessarolo",
+      "resposta": "Rutinelli, que se debruçou sobre o tema num estudo feito no Cefor, separou as duas coisas: acredita na licenciatura a distância e vê todos os dias em sala que ela pode formar excelentes professores, mas não se nega a compreender a lógica do legislador diante das dificuldades brasileiras na formação docente. Exigir algum componente presencial, na leitura dela, busca garantir a coletividade que essa formação pressupõe — e a realidade em jogo não é só a do Cefor nem a do Ifes. Felipe complementou com a Open University, maior formadora de enfermeiros do Reino Unido: a parte teórica é a distância, mas o estágio final acontece em hospitais universitários, acompanhado pela universidade, porque manuseio de paciente e contato humano não se avaliam remotamente.",
+      "citacao": "Acho, sim, que é possível que um curso a distância seja muito bem feito e que possam se formar excelentes professores. Mas compreendo o momento histórico brasileiro frente à legislação.",
+      "aprovada": "rascunho",
+      "citacaoDe": "Dra. Rutinelli da Penha Fávero"
+    },
+    {
+      "perguntaHora": "10:16",
+      "pergunta": "A CAPES, em algumas áreas, tem resistência",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "10:18",
+      "pergunta": "Gostaria que os palestrantes comentassem ações de permanência",
+      "encontrada": true,
+      "lidaEm": "11:27",
+      "quem": "Dra. Rutinelli da Penha Fávero e Dr. Felipe Maciel Tessarolo",
+      "resposta": "Rutinelli recusou a solução em pedaços: a permanência passa pela desigualdade econômica e de acesso, mas também pelo currículo, pelo mercado que espera aquele profissional e pela escola como lugar de saber e de segurança — inclusive alimentar. A escola não resolverá sozinha o que é problema da sociedade, mas colabora na reflexão; ao educador ela devolveu a tarefa de fazer o aluno querer estar ali, porque é o desejo que sustenta a permanência e o êxito. Felipe apontou o que a instituição de fato controla: oferecer introdução e treinamento nas tecnologias a quem chega sem familiaridade, produzir material didático acessível e mapear as barreiras criadas não pela escola, mas pelo sistema e pelas metodologias que ela usa.",
+      "citacao": "A escola é a sociedade. Nós não estamos fora do muro da sociedade.",
+      "aprovada": "rascunho",
+      "citacaoDe": "Dra. Rutinelli da Penha Fávero"
+    },
+    {
+      "perguntaHora": "10:19",
+      "pergunta": "O NotebookLM permite",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "10:27",
+      "pergunta": "Vocês tem pesquisado sobre as consequências de terceirizar",
+      "encontrada": true,
+      "lidaEm": "11:32",
+      "quem": "Dra. Rutinelli da Penha Fávero, Dr. Felipe Maciel Tessarolo e a mediadora Dra. Andromeda Goretti de Menezes Campos",
+      "resposta": "Rutinelli disse não pesquisar exatamente isso, mas admitiu que o tema a preocupa: quem tem o primeiro contato com um conteúdo já mediado por IA — sobretudo uma criança ou um jovem — não reúne condições de verificar o que recebe. A defesa dela é a dúvida epistêmica como função docente: o professor que nunca acredita de primeira transmite ao aluno o hábito de perguntar se a IA está falando a verdade, porque, se tudo entra como certo, nada falseado será questionado. Felipe contou que, nos testes com alunos, um treinamento prévio sobre a proposta e os limites da ferramenta mudava por completo o tipo de pergunta feita à IA, e lembrou o caso de um estudante que, após um acidente que lhe deixou déficit de atenção, disse que teria abandonado o curso se não fosse o ChatGPT, a quem pedia que explicasse o conteúdo de outra forma. Andromeda reforçou o nó da pergunta — não há análise crítica possível sobre o que ainda não se conhece — e relatou que, com seus alunos de design, exigir o registro de como a IA foi usada fez muitos preferirem não usá-la: usar com responsabilidade dá trabalho.",
+      "citacao": "Em alguns momentos, a gente pode estar pedindo ao aluno para andar de bicicleta quando ele não aprendeu a caminhar ainda.",
+      "aprovada": "rascunho",
+      "citacaoDe": "Dr. Felipe Maciel Tessarolo"
+    },
+    {
+      "perguntaHora": "10:48",
+      "pergunta": "O que falta na legislação brasileira",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "10:49",
+      "pergunta": "Alguns cursos ainda mantém resistência",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "10:56",
+      "pergunta": "Qual o futuro dos Polos de Apoio Presencial",
+      "encontrada": true,
+      "lidaEm": "11:42",
+      "quem": "Dra. Rutinelli da Penha Fávero e Dr. Felipe Maciel Tessarolo",
+      "resposta": "Rutinelli respondeu pelo desejo, não pela previsão: como pesquisadora da área de interação, acha muito pobre um futuro em que não esteja garantido que as pessoas possam se encontrar. Lembrou que, na pesquisa do seu doutorado durante a pandemia, o que apareceu foi a vontade de voltar para a escola — o encontro presencial fazia falta, a festa online não. Aposta na continuidade de algum momento de encontro, seja por desigualdade, por local de acesso, por currículo ou pela necessidade de estar junto, ainda que nem sempre obrigatório. Felipe acrescentou o pertencimento e a credibilidade: alunos jovens da Open University compram caneca e camisa para ter algo físico da universidade, e o polo cumpre esse papel de materializar o curso a distância — o prédio que as pessoas veem ao passar cria raiz e torna palpável aquilo que existia só na tela.",
+      "citacao": "Me parece um futuro muito pobre se não tiver garantido que, em algum momento, as pessoas possam de alguma maneira se encontrar.",
+      "aprovada": "rascunho",
+      "citacaoDe": "Dra. Rutinelli da Penha Fávero"
+    },
+    {
+      "perguntaHora": "10:59",
+      "pergunta": "vocês acreditam que em 2046 teremos que pagar",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "11:03",
+      "pergunta": "Que análise vocês fazem da afirmação",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "11:03",
+      "pergunta": "Ontem, Felipe",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "11:06",
+      "pergunta": "Que ações nós, educadores",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    }
+  ],
+  "_chave": "perguntaHora sozinha NÃO identifica a pergunta: duas chegaram às 11:03. O campo `pergunta` guarda um trecho do texto original e é ele que desempata.",
+  "_citacaoDe": "A resposta costuma ser de mais de uma pessoa da mesa, mas a frase citada é de uma só — por isso `citacaoDe` existe separado de `quem`."
+}

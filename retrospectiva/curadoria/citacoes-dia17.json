@@ -1,0 +1,134 @@
+{
+  "_dia": "17/08/2026 — noite de abertura",
+  "_leia": "Curadoria editorial das melhores falas da noite de abertura, para a retrospectiva pública. Cada citação foi lida na transcrição crua, cortada e pontuada à mão. O `sessaoId` segue a HORA DE RELÓGIO, não o nome do arquivo de transcrição — a programação derrapou e os arquivos seguem o roteiro planejado, não o que aconteceu.",
+  "_naoRepetidas": "Ficaram de fora, porque já estão publicadas em citacoes.json: 19:23 Fabiana Malheiros, 19:29 Adriana Pionttkovsky Barcellos, 20:09 Vanessa Battestin, 20:31 app do Concefor, 20:39 IA soberana.",
+  "_semCitacoes": "A sessão 'Celebração dos 20 anos' (even3-1485788-20260817-2030, 20:45–21:45) não tem citação: a gravação da noite termina às 20:44, quando o cerimonial encerra e o público sai para o bolo. Tudo que a relatoria chamou de 'celebração' aconteceu ANTES das 20:45 e é, pela hora, Lançamentos.",
+
+  "citacoes": [
+    {
+      "sessaoId": "even3-1485781-20260817-1800",
+      "hora": "18:37",
+      "texto": "O repertório desta noite é um repertório de música brasileira — e, dentro da música brasileira, é impossível não tocarmos um chorinho.",
+      "quem": "Maestro Walter Costa Bacildo, regente da Orquestra Acadêmica do Ifes",
+      "nota": "anunciando o Brasileirinho, no palco do momento musical",
+      "porQueEssa": "Dá o tom da noite em uma frase e funciona sem o palco na frente; é o maestro explicando a escolha, não só apresentando a música.",
+      "conferir": "grafia do sobrenome do maestro — a transcrição registrou \"Basildo\" e a relatoria, \"Bacildo\"",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1485781-20260817-1800",
+      "hora": "18:47",
+      "texto": "A festa de aniversário tem que ter parabéns, né? Só que eu quero passar uma vez com vocês antes. Vamos fazer juntos essa música.",
+      "quem": "Maestro Walter Costa Bacildo, regente da Orquestra Acadêmica do Ifes",
+      "nota": "ensaiando com a plateia o primeiro Parabéns dos 20 anos",
+      "porQueEssa": "É o instante em que a plateia inteira vira parte da comemoração — a orquestra puxando o parabéns dos 20 anos do Cefor.",
+      "conferir": "grafia do sobrenome do maestro",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412334-20260817-1830",
+      "hora": "19:12",
+      "texto": "Durante duas décadas, os servidores vêm fazendo um trabalho que criou na nossa instituição algo que vai muito além do ensino a distância: é a cultura de se fazer um ensino a distância de excelência.",
+      "quem": "Anderson Roseno Bozzetti Batista, pró-reitor de Extensão do Ifes",
+      "porQueEssa": "A virada de raciocínio da mesa de abertura: o legado dos 20 anos não é a modalidade, é a cultura de qualidade que ficou.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412334-20260817-1830",
+      "hora": "19:14",
+      "texto": "Falar de 20 anos de uma história é falar de vidas. Não é só uma data no calendário: estamos comemorando 20 anos de produção de vidas, de conhecimento, de transformação. E essas vidas que passam por aqui transformam outras vidas.",
+      "quem": "Sanandrea Torezani Perini, pró-reitora de Ensino do Ifes",
+      "porQueEssa": "Tira a comemoração do calendário e coloca em gente. A frase mais citável da mesa de autoridades.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412334-20260817-1830",
+      "hora": "19:27",
+      "texto": "Tem alguém aqui que está desde o começo? Opa, muitas mãos! Que maravilha!... Lá no momento em que a gente tinha que aprender o que era ser tutor, o que era o AVA e o Moodle. Eu fiz um curso também, para poder ser tutora, para entender um pouco o que era isso.",
+      "quem": "Adriana Pionttkovsky Barcellos, reitora do Ifes",
+      "nota": "pedindo que levantassem a mão os que estão no Cefor desde o início",
+      "porQueEssa": "Memória pessoal da reitora, com a cena da sala junto: as muitas mãos levantadas e ela mesma tendo feito o curso de tutora.",
+      "conferir": "grafia do sobrenome — a transcrição registrou \"Piontikovski-Barcelos\"",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412335-20260817-1900",
+      "hora": "19:40",
+      "texto": "Em 2009 o Cead deixou de ser coordenação e virou diretoria. Mas nós nos recusamos a trocar o C pelo D, porque ia ficar \"dead\" — morto, em inglês. Nós não quisemos.",
+      "quem": "Dra. Vanessa Battestin",
+      "porQueEssa": "O humor que funcionou na sala e continua funcionando no papel — e ainda explica por que a sigla é a que é.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412335-20260817-1900",
+      "hora": "19:44",
+      "texto": "Muitos anos depois, o Dênio falou comigo assim: \"Eu dei uma missão impossível para vocês. Eu sabia que era impossível, que vocês não tinham como cumprir. Mas vocês cumpriram.\"",
+      "quem": "Dra. Vanessa Battestin",
+      "nota": "sobre a reforma e a mudança para o prédio atual, em 2016",
+      "porQueEssa": "História com começo, meio e fim, contada por quem viveu: 10% do orçamento, meses em vez de um ano e meio, e o prédio inaugurado no Concefor.",
+      "conferir": "Dênio Rebello Arantes, ex-reitor do Ifes — a transcrição às vezes troca o nome por \"Daniel\"",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412335-20260817-1900",
+      "hora": "19:47",
+      "texto": "Em 20 anos de Cefor, quatro diretoras mulheres. A gente sabe que os cargos de alta gestão são ocupados majoritariamente por homens — ter 20 anos de ocupação de cargos femininos, por competência, é realmente muito gratificante.",
+      "quem": "Dra. Vanessa Battestin",
+      "porQueEssa": "Número que impressiona e diz algo sobre a rede federal inteira, não só sobre o Cefor. Conversa com a mesa de abertura, que tinha mais mulheres que homens.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412335-20260817-1900",
+      "hora": "20:05",
+      "texto": "Algumas pessoas mudaram de campus, outras mudaram de instituição, outras se aposentaram, outras infelizmente não estão mais nessa vida aqui com a gente. Mas todas, de alguma forma, contribuíram — porque o que faz o Cefor ser o Cefor somos nós.",
+      "quem": "Dra. Vanessa Battestin",
+      "nota": "no fecho da palestra dos 20 anos",
+      "porQueEssa": "O momento mais emocionado da palestra. Resume a trajetória inteira em cinco palavras e ainda lembra de quem não está mais.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1485786-20260817-2000",
+      "hora": "20:12",
+      "texto": "Cada gestão recebeu algo que veio antes, acrescentou sua contribuição e entregou um Cefor diferente para quem veio depois.",
+      "quem": "Aline Freitas, diretora do Cefor",
+      "nota": "recapitulando a linha que vai de 2004 ao nascimento do Cefor",
+      "porQueEssa": "A fala forte da Aline sobre os 20 anos: uma frase que explica a instituição inteira sem citar uma data. Pedido explícito do cliente atendido aqui.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1485786-20260817-2000",
+      "hora": "20:16",
+      "texto": "A melhor forma de honrar uma história não é preservá-la — é fazê-la continuar. E continuar não significa repetir. A educação de hoje já não é a educação de 2006, e a de 2046 certamente não será a de hoje.",
+      "quem": "Aline Freitas, diretora do Cefor",
+      "porQueEssa": "A frase da noite: honra o passado e recusa a nostalgia no mesmo fôlego, e ainda joga a régua para 2046.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1485786-20260817-2000",
+      "hora": "20:27",
+      "texto": "Nossa vitrine de cursos MOOC começou como uma página HTML que era nada... Hoje são mil e poucas inscrições por dia, quase 10 milhões de visualizações por ano. É muita coisa. É uma responsabilidade grande.",
+      "quem": null,
+      "nota": "no lançamento da nova vitrine de cursos MOOC do Ifes",
+      "porQueEssa": "Virada mais número: de \"uma página HTML que era nada\" a 10 milhões de visualizações por ano. O tipo de dado que ninguém da plateia sabia.",
+      "conferir": "quem falou — é o mesmo apresentador da citação das 20:31 (app do Concefor), falando em nome da CGTE e substituindo a Rutinelli; vale creditar o nome",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1485786-20260817-2000",
+      "hora": "20:42",
+      "texto": "Instituições não são construídas por prédios, plataformas ou tecnologia. São construídas por pessoas. Foram pessoas que construíram os primeiros 20 anos do Cefor — e somos nós, agora, que começamos a construir os próximos.",
+      "quem": "Aline Freitas, diretora do Cefor",
+      "porQueEssa": "A tese da noite, dita em três frases que se sustentam isoladas em qualquer peça.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1485786-20260817-2000",
+      "hora": "20:43",
+      "texto": "Eu gostaria de terminar não com uma resposta, mas com uma pergunta: quando nos encontrarmos para celebrar os 40 anos do Cefor, que história queremos contar?",
+      "quem": "Aline Freitas, diretora do Cefor",
+      "nota": "a última fala da noite de abertura, antes do bolo",
+      "porQueEssa": "Deixa a pergunta aberta e amarra a retrospectiva inteira — bom candidato a fechar a página do dia 17.",
+      "aprovada": "rascunho"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "_porQue": "O banco do evento guarda a instituição como ela foi cadastrada no Even3, e alguns registros ficaram incompletos. Corrigir no banco significaria mexer numa cópia do que aconteceu; a correção mora aqui e é aplicada na montagem da página.",
+  "_comoUsar": "A chave é o id do palestrante na tabela `speakers`. Só os campos declarados são sobrescritos.",
+
+  "ajustes": {
+    "mariella-berger": {
+      "instituicao": "Ifes — Cefor",
+      "_nota": "Ex-diretora do Cefor (2019–2022); a ficha do Even3 trazia só \"Ifes\"."
+    },
+    "rutinelli-favero": {
+      "instituicao": "Ifes — Cefor",
+      "_nota": "Coordenou a CGTE do Cefor; a ficha do Even3 trazia só \"Ifes\"."
+    }
+  }
+}

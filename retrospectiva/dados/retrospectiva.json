@@ -1,0 +1,7467 @@
+{
+ "geradoEm": "2026-08-27T17:48:20.959Z",
+ "evento": {
+  "nome": "VIII Concefor",
+  "tema": "Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais",
+  "periodo": "17 a 20 de agosto de 2026",
+  "local": "Cefor/Ifes — Vitória, ES"
+ },
+ "totais": {
+  "inscritosConfirmados": 279,
+  "inscritosTotal": 426,
+  "entraramComInscricao": 151,
+  "dispositivos": 123,
+  "reacoes": 2329,
+  "perguntas": 22,
+  "votosEmPerguntas": 117,
+  "respostasEnquete": 102,
+  "conexoes": 85,
+  "perfisPreenchidos": 48,
+  "minutosComReacao": 531
+ },
+ "reacoesPorTipo": [
+  {
+   "kind": "massa",
+   "emoji": "👏",
+   "label": "Que massa",
+   "labelRelatorio": "Satisfação",
+   "n": 765
+  },
+  {
+   "kind": "amei",
+   "emoji": "♥",
+   "label": "Amei",
+   "labelRelatorio": "Afeto",
+   "n": 585
+  },
+  {
+   "kind": "identifico",
+   "emoji": "🙋",
+   "label": "Me identifico",
+   "labelRelatorio": "Relevância",
+   "n": 186
+  },
+  {
+   "kind": "usar",
+   "emoji": "✅",
+   "label": "Vou usar",
+   "labelRelatorio": "Intenção de aplicação",
+   "n": 267
+  },
+  {
+   "kind": "explodiu",
+   "emoji": "🤯",
+   "label": "Explodiu a mente",
+   "labelRelatorio": "Aprendizagem",
+   "n": 526
+  }
+ ],
+ "marcos": {
+  "_fonte": "contexto/livro/livro-completo.md (Livro Cefor 20 anos). Extraído em 27/08/2026 e conferido contra o texto. Só entram marcos explícitos no livro.",
+  "_nota": "A Figura 4.1 (linha do tempo dos NTEs) e a Figura 1.2 (trajetória geral) são IMAGENS no PDF — o texto dos marcos não foi extraído. Se um dia quisermos mais densidade, é lá que estão.",
+  "marcos": [
+   {
+    "ano": "2004",
+    "titulo": "A EaD começa por uma portaria",
+    "descricao": "A Portaria nº 38, de 1º de março, cria a comissão que elaborou o Projeto de Educação a Distância do Sistema Cefetes."
+   },
+   {
+    "ano": "2005",
+    "titulo": "Primeira submissão à UAB",
+    "descricao": "O curso TADS, do campus Serra, é submetido ao Edital UAB nº 1/2005 — viria a ser o primeiro curso superior a distância do Ifes."
+   },
+   {
+    "ano": "2006",
+    "titulo": "Nasce o Cead",
+    "descricao": "A Portaria nº 1184, de 20 de dezembro, cria o Centro de Educação a Distância, gerido por Yvina Pavan Baldo.",
+    "destaque": true
+   },
+   {
+    "ano": "2007",
+    "titulo": "O primeiro Moodle",
+    "descricao": "Instalação do Moodle 1.9 em cead.ifes.edu.br e início das formações de professores e tutores para a modalidade."
+   },
+   {
+    "ano": "2008",
+    "titulo": "O Cefetes vira Ifes",
+    "descricao": "A união com três escolas agrotécnicas forma o Ifes. No mesmo ano sai o primeiro curso técnico a distância, Técnico em Informática."
+   },
+   {
+    "ano": "2009",
+    "titulo": "Cead se torna diretoria",
+    "descricao": "Em 2009 vira diretoria e, no ano seguinte, os cursos a distância passam a ser descentralizados para os campi."
+   },
+   {
+    "ano": "2014",
+    "titulo": "Cead se transforma em Cefor",
+    "descricao": "Pela Portaria nº 1602, de 11 de agosto, o Cead une-se ao Educimat e vira Centro de Referência em Formação e em Educação a Distância.",
+    "destaque": true
+   },
+   {
+    "ano": "2016",
+    "titulo": "Sede própria em Vitória",
+    "descricao": "O Cefor deixa o prédio do campus Serra e transfere suas atividades para sede exclusiva em Vitória. Aos 10 anos, já era referência nacional."
+   },
+   {
+    "ano": "2017",
+    "titulo": "Os NTEs são propostos",
+    "descricao": "Primeira minuta para criação dos Núcleos de Tecnologias Educacionais nos campi, e abertura do ava.cefor.ifes.edu.br."
+   },
+   {
+    "ano": "2019",
+    "titulo": "Conceito máximo do Inep",
+    "descricao": "O Ifes obtém nota 5 na avaliação para recredenciamento da modalidade EaD. No mesmo ano nasce a Plataforma de Cursos Abertos e o primeiro doutorado do Ifes.",
+    "destaque": true
+   },
+   {
+    "ano": "2020",
+    "titulo": "A pandemia",
+    "descricao": "O Cefor sustenta as Atividades Pedagógicas Não Presenciais, mantém os cursos a distância e forma servidores; os NTEs apoiam os campi."
+   },
+   {
+    "ano": "2021",
+    "titulo": "Criação da UnAC",
+    "descricao": "A Universidade Aberta Capixaba é instituída pelo Decreto Estadual nº 5.009, parceria entre o Governo do Estado e o Ifes com fomento da Fapes."
+   },
+   {
+    "ano": "2024",
+    "titulo": "A vez da inteligência artificial",
+    "descricao": "Oficinas \"Professor + IA\", edições do \"Papo com IA.IÁ\" e a página de Ações de IA. Mais de 23 mil vagas ofertadas no ano."
+   },
+   {
+    "ano": "2026",
+    "titulo": "20 anos e VIII Concefor",
+    "descricao": "O Cefor e a UAB completam 20 anos. O Concefor chega à oitava edição para celebrar as duas décadas.",
+    "destaque": true,
+    "eOEvento": true
+   }
+  ],
+  "direcao": [
+   {
+    "periodo": "2006–2014",
+    "nome": "Yvina Pavan Baldo"
+   },
+   {
+    "periodo": "2014–2019",
+    "nome": "Vanessa Battestin"
+   },
+   {
+    "periodo": "2019–2022",
+    "nome": "Mariella Berger Andrade"
+   },
+   {
+    "periodo": "2022–hoje",
+    "nome": "Aline Freitas da Silva de Carvalho"
+   }
+  ],
+  "_direcaoNota": "O livro destaca que o Cefor foi dirigido por mulheres em toda a sua história. Vanessa Battestin e Mariella Berger, ex-diretoras, palestraram no VIII Concefor — a linha do tempo se fecha sozinha."
+ },
+ "dias": [
+  {
+   "data": "2026-08-17",
+   "ordem": 1,
+   "diaSemana": "segunda-feira",
+   "extenso": "17 de agosto",
+   "numero": "17",
+   "sessoes": [
+    {
+     "id": "even3-1485769-20260817-1330",
+     "titulo": "Credenciamento",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Retire seu crachá e o material do congressista. O QR do crachá é a sua chave: com ele você entra no app do evento, reage às palestras e registra suas conexões.",
+     "sala": null,
+     "eixo": "Intervalo",
+     "palestrantes": [],
+     "inicio": "2026-08-17T13:30",
+     "fim": null,
+     "totalReacoes": 1,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": null,
+     "horaInicio": "13:30",
+     "horaFim": null,
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "14:14",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1412333-20260817-1400",
+     "titulo": "Eventos Forum UAB/UNAC e NTE",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Encontro de coordenadores de polos UAB/UnAC do Espírito Santo e membros do NTE — eventos paralelos que abrem o congresso, destinados apenas a participantes convidados (eventos fechados).",
+     "sala": null,
+     "eixo": "Evento paralelo",
+     "palestrantes": [],
+     "inicio": "2026-08-17T14:00",
+     "fim": "2026-08-17T17:30",
+     "totalReacoes": 22,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 210,
+     "horaInicio": "14:00",
+     "horaFim": "17:30",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "14:14",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "14:21",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "14:24",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "14:28",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "14:30",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:41",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:44",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:36",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:13",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:43",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "17:17",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "17:18",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "17:19",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "17:21",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "17:28",
+       "n": 8,
+       "porTipo": {
+        "explodiu": 1,
+        "amei": 4,
+        "identifico": 3
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1485781-20260817-1800",
+     "titulo": "Momento Musical",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Recepção musical para abrir a noite de celebração dos 20 anos, com a renomada Orquestra Acadêmica do Ifes Campus Vitória.",
+     "sala": "Pátio (térreo)",
+     "eixo": null,
+     "palestrantes": [],
+     "inicio": "2026-08-17T18:15",
+     "fim": "2026-08-17T18:50",
+     "totalReacoes": 276,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 35,
+     "horaInicio": "18:15",
+     "horaFim": "18:50",
+     "momentos": [
+      {
+       "hora": "18:37",
+       "minuto": "2026-08-17T18:37",
+       "n": 28,
+       "porTipo": {
+        "amei": 14,
+        "massa": 13,
+        "usar": 1
+       },
+       "citacao": {
+        "texto": "O repertório desta noite é um repertório de música brasileira — e, dentro da música brasileira, é impossível não tocarmos um chorinho.",
+        "quem": "Maestro Walter Costa Bacildo, regente da Orquestra Acadêmica do Ifes",
+        "nota": "anunciando o Brasileirinho, no palco do momento musical"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 1659,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=1659s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "18:47",
+       "minuto": "2026-08-17T18:47",
+       "n": 15,
+       "porTipo": {
+        "amei": 7,
+        "massa": 8
+       },
+       "citacao": {
+        "texto": "A festa de aniversário tem que ter parabéns, né? Só que eu quero passar uma vez com vocês antes. Vamos fazer juntos essa música.",
+        "quem": "Maestro Walter Costa Bacildo, regente da Orquestra Acadêmica do Ifes",
+        "nota": "ensaiando com a plateia o primeiro Parabéns dos 20 anos"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 2259,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=2259s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "18:37",
+      "18:47"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "18:16",
+       "n": 4,
+       "porTipo": {
+        "massa": 1,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "18:17",
+       "n": 23,
+       "porTipo": {
+        "amei": 10,
+        "massa": 3,
+        "identifico": 5,
+        "explodiu": 3,
+        "usar": 2
+       }
+      },
+      {
+       "hora": "18:18",
+       "n": 15,
+       "porTipo": {
+        "amei": 7,
+        "usar": 2,
+        "massa": 4,
+        "identifico": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "18:19",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "18:21",
+       "n": 4,
+       "porTipo": {
+        "massa": 1,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "18:22",
+       "n": 7,
+       "porTipo": {
+        "usar": 1,
+        "explodiu": 2,
+        "massa": 3,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "18:23",
+       "n": 3,
+       "porTipo": {
+        "amei": 1,
+        "identifico": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "18:24",
+       "n": 2,
+       "porTipo": {
+        "identifico": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "18:25",
+       "n": 6,
+       "porTipo": {
+        "massa": 2,
+        "amei": 4
+       }
+      },
+      {
+       "hora": "18:27",
+       "n": 10,
+       "porTipo": {
+        "massa": 3,
+        "explodiu": 2,
+        "amei": 4,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "18:28",
+       "n": 6,
+       "porTipo": {
+        "massa": 2,
+        "explodiu": 1,
+        "identifico": 1,
+        "usar": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "18:29",
+       "n": 11,
+       "porTipo": {
+        "massa": 4,
+        "amei": 6,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "18:30",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "18:31",
+       "n": 3,
+       "porTipo": {
+        "amei": 3
+       }
+      },
+      {
+       "hora": "18:32",
+       "n": 3,
+       "porTipo": {
+        "amei": 3
+       }
+      },
+      {
+       "hora": "18:34",
+       "n": 2,
+       "porTipo": {
+        "amei": 2
+       }
+      },
+      {
+       "hora": "18:35",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "18:36",
+       "n": 8,
+       "porTipo": {
+        "amei": 6,
+        "usar": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "18:37",
+       "n": 6,
+       "porTipo": {
+        "amei": 3,
+        "massa": 3
+       }
+      },
+      {
+       "hora": "18:38",
+       "n": 10,
+       "porTipo": {
+        "amei": 3,
+        "massa": 7
+       }
+      },
+      {
+       "hora": "18:39",
+       "n": 12,
+       "porTipo": {
+        "massa": 3,
+        "amei": 8,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "18:40",
+       "n": 16,
+       "porTipo": {
+        "massa": 7,
+        "amei": 8,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "18:41",
+       "n": 8,
+       "porTipo": {
+        "massa": 5,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "18:42",
+       "n": 25,
+       "porTipo": {
+        "massa": 10,
+        "explodiu": 5,
+        "amei": 10
+       }
+      },
+      {
+       "hora": "18:43",
+       "n": 26,
+       "porTipo": {
+        "massa": 13,
+        "amei": 9,
+        "explodiu": 2,
+        "identifico": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "18:44",
+       "n": 13,
+       "porTipo": {
+        "massa": 11,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "18:45",
+       "n": 16,
+       "porTipo": {
+        "massa": 14,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "18:46",
+       "n": 5,
+       "porTipo": {
+        "massa": 4,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "18:47",
+       "n": 8,
+       "porTipo": {
+        "amei": 5,
+        "massa": 3
+       }
+      },
+      {
+       "hora": "18:48",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "18:49",
+       "n": 4,
+       "porTipo": {
+        "amei": 2,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "18:50",
+       "n": 8,
+       "porTipo": {
+        "amei": 4,
+        "explodiu": 2,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "18:51",
+       "n": 6,
+       "porTipo": {
+        "massa": 4,
+        "amei": 2
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "okyYHQ1sM1k",
+      "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+      "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+      "offset": 339,
+      "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=339s",
+      "aproximado": false,
+      "duracao": "2h36"
+     },
+     "documento": {
+      "titulo": "Momento Musical e Abertura",
+      "arquivo": "documentos/01-momento-musical-e-abertura.pdf",
+      "externo": false,
+      "bytes": 475914
+     }
+    },
+    {
+     "id": "even3-1412334-20260817-1830",
+     "titulo": "Abertura do VIII Concefor",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Cerimônia oficial de abertura, com momento cultural. O VIII Concefor celebra os 20 anos do Cefor com o tema \"Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais\".",
+     "sala": "Pátio (térreo)",
+     "eixo": "Solenidade",
+     "palestrantes": [],
+     "inicio": "2026-08-17T19:00",
+     "fim": "2026-08-17T19:35",
+     "totalReacoes": 231,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 35,
+     "horaInicio": "19:00",
+     "horaFim": "19:35",
+     "momentos": [
+      {
+       "hora": "19:12",
+       "minuto": "2026-08-17T19:12",
+       "n": 10,
+       "porTipo": {
+        "explodiu": 5,
+        "amei": 1,
+        "usar": 1,
+        "massa": 2,
+        "identifico": 1
+       },
+       "citacao": {
+        "texto": "Durante duas décadas, os servidores vêm fazendo um trabalho que criou na nossa instituição algo que vai muito além do ensino a distância: é a cultura de se fazer um ensino a distância de excelência.",
+        "quem": "Anderson Roseno Bozzetti Batista, pró-reitor de Extensão do Ifes",
+        "nota": null
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 3759,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=3759s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "19:14",
+       "minuto": "2026-08-17T19:14",
+       "n": 10,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 4,
+        "amei": 3,
+        "identifico": 1,
+        "usar": 1
+       },
+       "citacao": {
+        "texto": "Falar de 20 anos de uma história é falar de vidas. Não é só uma data no calendário: estamos comemorando 20 anos de produção de vidas, de conhecimento, de transformação. E essas vidas que passam por aqui transformam outras vidas.",
+        "quem": "Sanandrea Torezani Perini, pró-reitora de Ensino do Ifes",
+        "nota": null
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 3879,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=3879s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "19:23",
+       "minuto": "2026-08-17T19:23",
+       "n": 54,
+       "porTipo": {
+        "amei": 17,
+        "explodiu": 12,
+        "massa": 20,
+        "usar": 2,
+        "identifico": 3
+       },
+       "citacao": {
+        "texto": "Quando educamos e capacitamos uma mulher, transformamos famílias inteiras e fortalecemos a base de toda a nossa sociedade. Tecnologia e transformação só fazem sentido se estiverem a serviço das pessoas.",
+        "quem": "Fabiana Malheiros, secretária de Estado das Mulheres",
+        "nota": null
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 4419,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=4419s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "19:27",
+       "minuto": "2026-08-17T19:27",
+       "n": 34,
+       "porTipo": {
+        "explodiu": 20,
+        "amei": 8,
+        "usar": 1,
+        "massa": 4,
+        "identifico": 1
+       },
+       "citacao": {
+        "texto": "Tem alguém aqui que está desde o começo? Opa, muitas mãos! Que maravilha!... Lá no momento em que a gente tinha que aprender o que era ser tutor, o que era o AVA e o Moodle. Eu fiz um curso também, para poder ser tutora, para entender um pouco o que era isso.",
+        "quem": "Adriana Pionttkovsky Barcellos, reitora do Ifes",
+        "nota": "pedindo que levantassem a mão os que estão no Cefor desde o início"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 4659,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=4659s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "19:29",
+       "minuto": "2026-08-17T19:29",
+       "n": 35,
+       "porTipo": {
+        "amei": 6,
+        "explodiu": 26,
+        "massa": 2,
+        "identifico": 1
+       },
+       "citacao": {
+        "texto": "A nossa essência é oferecer educação de qualidade, inclusiva, socialmente referenciada em todos os territórios. E a EaD consegue fazer isso de uma forma espetacular.",
+        "quem": "Adriana Pionttkovsky Barcellos, reitora do Ifes",
+        "nota": null
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 4779,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=4779s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "19:12",
+      "19:14",
+      "19:23",
+      "19:27",
+      "19:29"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "19:00",
+       "n": 2,
+       "porTipo": {
+        "amei": 2
+       }
+      },
+      {
+       "hora": "19:01",
+       "n": 3,
+       "porTipo": {
+        "massa": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:02",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "19:04",
+       "n": 9,
+       "porTipo": {
+        "massa": 4,
+        "amei": 3,
+        "identifico": 2
+       }
+      },
+      {
+       "hora": "19:05",
+       "n": 5,
+       "porTipo": {
+        "amei": 2,
+        "massa": 3
+       }
+      },
+      {
+       "hora": "19:06",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:07",
+       "n": 11,
+       "porTipo": {
+        "massa": 4,
+        "amei": 6,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "19:08",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:10",
+       "n": 4,
+       "porTipo": {
+        "massa": 3,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:11",
+       "n": 3,
+       "porTipo": {
+        "amei": 2,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "19:12",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 4,
+        "amei": 1,
+        "usar": 1,
+        "massa": 2,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "19:14",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "19:15",
+       "n": 8,
+       "porTipo": {
+        "massa": 4,
+        "amei": 3,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "19:16",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "19:17",
+       "n": 2,
+       "porTipo": {
+        "amei": 2
+       }
+      },
+      {
+       "hora": "19:18",
+       "n": 5,
+       "porTipo": {
+        "massa": 2,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "19:19",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "19:20",
+       "n": 3,
+       "porTipo": {
+        "identifico": 1,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "19:21",
+       "n": 4,
+       "porTipo": {
+        "massa": 1,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "19:22",
+       "n": 6,
+       "porTipo": {
+        "massa": 2,
+        "amei": 3,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "19:23",
+       "n": 37,
+       "porTipo": {
+        "amei": 13,
+        "explodiu": 3,
+        "massa": 17,
+        "usar": 1,
+        "identifico": 3
+       }
+      },
+      {
+       "hora": "19:24",
+       "n": 8,
+       "porTipo": {
+        "amei": 4,
+        "massa": 2,
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "19:25",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 7,
+        "usar": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "19:26",
+       "n": 13,
+       "porTipo": {
+        "explodiu": 6,
+        "massa": 5,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "19:27",
+       "n": 10,
+       "porTipo": {
+        "explodiu": 8,
+        "amei": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "19:28",
+       "n": 6,
+       "porTipo": {
+        "explodiu": 2,
+        "amei": 2,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "19:29",
+       "n": 18,
+       "porTipo": {
+        "amei": 5,
+        "explodiu": 10,
+        "massa": 2,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "19:30",
+       "n": 8,
+       "porTipo": {
+        "explodiu": 7,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:31",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 9
+       }
+      },
+      {
+       "hora": "19:32",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 9
+       }
+      },
+      {
+       "hora": "19:33",
+       "n": 13,
+       "porTipo": {
+        "explodiu": 11,
+        "identifico": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "19:34",
+       "n": 8,
+       "porTipo": {
+        "explodiu": 8
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "okyYHQ1sM1k",
+      "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+      "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+      "offset": 3039,
+      "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=3039s",
+      "aproximado": false,
+      "duracao": "2h36"
+     },
+     "documento": {
+      "titulo": "Momento Musical e Abertura",
+      "arquivo": "documentos/01-momento-musical-e-abertura.pdf",
+      "externo": false,
+      "bytes": 475914
+     }
+    },
+    {
+     "id": "even3-1412335-20260817-1900",
+     "titulo": "20 Anos de EaD e o Cefor",
+     "prefixo": "Palestra",
+     "pessoa": "Dra. Vanessa Battestin",
+     "descricao": "Com a Dra. Vanessa Battestin (Ifes/Cefor) — professora titular do Ifes, coordenadora da UAB e ex-diretora do Cefor. A palestra-âncora dos 20 anos: de onde a EaD do Ifes veio e o que aprendeu-se no caminho.",
+     "sala": "Pátio (térreo)",
+     "eixo": "Palestra",
+     "palestrantes": [
+      {
+       "nome": "Vanessa Battestin",
+       "titulo": "Dra.",
+       "instituicao": "Ifes — Cefor",
+       "bio": "Professora titular do Ifes (Cefor), doutora em Educação. Coordenadora da UAB e docente do Educimat. Foi diretora do Cefor (2014–2019). Especialista internacional da A3ES (Portugal)."
+      }
+     ],
+     "inicio": "2026-08-17T19:35",
+     "fim": "2026-08-17T20:10",
+     "totalReacoes": 134,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 35,
+     "horaInicio": "19:35",
+     "horaFim": "20:10",
+     "momentos": [
+      {
+       "hora": "19:40",
+       "minuto": "2026-08-17T19:40",
+       "n": 15,
+       "porTipo": {
+        "identifico": 1,
+        "explodiu": 10,
+        "amei": 4
+       },
+       "citacao": {
+        "texto": "Em 2009 o Cead deixou de ser coordenação e virou diretoria. Mas nós nos recusamos a trocar o C pelo D, porque ia ficar \"dead\" — morto, em inglês. Nós não quisemos.",
+        "quem": "Dra. Vanessa Battestin",
+        "nota": null
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 5439,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=5439s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "19:44",
+       "minuto": "2026-08-17T19:44",
+       "n": 11,
+       "porTipo": {
+        "explodiu": 10,
+        "amei": 1
+       },
+       "citacao": {
+        "texto": "Muitos anos depois, o Dênio falou comigo assim: \"Eu dei uma missão impossível para vocês. Eu sabia que era impossível, que vocês não tinham como cumprir. Mas vocês cumpriram.\"",
+        "quem": "Dra. Vanessa Battestin",
+        "nota": "sobre a reforma e a mudança para o prédio atual, em 2016"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 5679,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=5679s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "19:47",
+       "minuto": "2026-08-17T19:47",
+       "n": 14,
+       "porTipo": {
+        "amei": 3,
+        "explodiu": 7,
+        "identifico": 2,
+        "massa": 1,
+        "usar": 1
+       },
+       "citacao": {
+        "texto": "Em 20 anos de Cefor, quatro diretoras mulheres. A gente sabe que os cargos de alta gestão são ocupados majoritariamente por homens — ter 20 anos de ocupação de cargos femininos, por competência, é realmente muito gratificante.",
+        "quem": "Dra. Vanessa Battestin",
+        "nota": null
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 5859,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=5859s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "20:05",
+       "minuto": "2026-08-17T20:05",
+       "n": 4,
+       "porTipo": {
+        "explodiu": 1,
+        "amei": 3
+       },
+       "citacao": {
+        "texto": "Algumas pessoas mudaram de campus, outras mudaram de instituição, outras se aposentaram, outras infelizmente não estão mais nessa vida aqui com a gente. Mas todas, de alguma forma, contribuíram — porque o que faz o Cefor ser o Cefor somos nós.",
+        "quem": "Dra. Vanessa Battestin",
+        "nota": "no fecho da palestra dos 20 anos"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 6939,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=6939s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "20:08",
+       "minuto": "2026-08-17T20:08",
+       "n": 17,
+       "porTipo": {
+        "amei": 16,
+        "massa": 1
+       },
+       "citacao": {
+        "texto": "A gente saiu de uma salinha emprestada para referência nacional. Eu espero que nos próximos 20 anos a gente mude esse slide para referência internacional.",
+        "quem": "Dra. Vanessa Battestin",
+        "nota": "encerrando a palestra dos 20 anos"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 7119,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=7119s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "19:40",
+      "19:44",
+      "19:47",
+      "20:05",
+      "20:08"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "19:35",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 3,
+        "amei": 3,
+        "massa": 2,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "19:36",
+       "n": 10,
+       "porTipo": {
+        "explodiu": 7,
+        "massa": 1,
+        "identifico": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:37",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 3
+       }
+      },
+      {
+       "hora": "19:38",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "19:39",
+       "n": 7,
+       "porTipo": {
+        "explodiu": 3,
+        "amei": 2,
+        "massa": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "19:40",
+       "n": 7,
+       "porTipo": {
+        "identifico": 1,
+        "explodiu": 6
+       }
+      },
+      {
+       "hora": "19:41",
+       "n": 4,
+       "porTipo": {
+        "amei": 3,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "19:42",
+       "n": 4,
+       "porTipo": {
+        "explodiu": 3,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:43",
+       "n": 6,
+       "porTipo": {
+        "identifico": 1,
+        "explodiu": 4,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "19:44",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "19:45",
+       "n": 6,
+       "porTipo": {
+        "explodiu": 5,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:46",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 3
+       }
+      },
+      {
+       "hora": "19:47",
+       "n": 3,
+       "porTipo": {
+        "amei": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "19:48",
+       "n": 7,
+       "porTipo": {
+        "amei": 1,
+        "explodiu": 4,
+        "identifico": 2
+       }
+      },
+      {
+       "hora": "19:49",
+       "n": 4,
+       "porTipo": {
+        "massa": 1,
+        "usar": 1,
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "19:50",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "19:52",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "19:53",
+       "n": 4,
+       "porTipo": {
+        "amei": 1,
+        "explodiu": 3
+       }
+      },
+      {
+       "hora": "19:54",
+       "n": 8,
+       "porTipo": {
+        "explodiu": 7,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "19:55",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 3
+       }
+      },
+      {
+       "hora": "19:56",
+       "n": 8,
+       "porTipo": {
+        "explodiu": 5,
+        "amei": 1,
+        "identifico": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "19:58",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "19:59",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "20:01",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "20:02",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "20:04",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "20:05",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "20:06",
+       "n": 3,
+       "porTipo": {
+        "amei": 3
+       }
+      },
+      {
+       "hora": "20:09",
+       "n": 15,
+       "porTipo": {
+        "amei": 15
+       }
+      },
+      {
+       "hora": "20:10",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "20:11",
+       "n": 2,
+       "porTipo": {
+        "identifico": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "20:19",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "okyYHQ1sM1k",
+      "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+      "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+      "offset": 5139,
+      "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=5139s",
+      "aproximado": false,
+      "duracao": "2h36"
+     },
+     "documento": {
+      "titulo": "Palestra \"20 Anos de EaD e o Cefor\"",
+      "arquivo": "documentos/02-palestra-vanessa-battestin.pdf",
+      "externo": false,
+      "bytes": 547266
+     }
+    },
+    {
+     "id": "even3-1485786-20260817-2000",
+     "titulo": "Lançamentos",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Quatro lançamentos na noite de aniversário: o e-book comemorativo dos 20 anos do Cefor; o e-book do NTE \"Chegando agora no NTE? práticas, processos e orientações\"; a nova plataforma de cursos MOOCs; e a nova versão da Base de Conhecimento do Cefor.",
+     "sala": "Pátio (térreo)",
+     "eixo": null,
+     "palestrantes": [],
+     "inicio": "2026-08-17T20:10",
+     "fim": "2026-08-17T20:45",
+     "totalReacoes": 307,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 35,
+     "horaInicio": "20:10",
+     "horaFim": "20:45",
+     "momentos": [
+      {
+       "hora": "20:12",
+       "minuto": "2026-08-17T20:12",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       },
+       "citacao": {
+        "texto": "Cada gestão recebeu algo que veio antes, acrescentou sua contribuição e entregou um Cefor diferente para quem veio depois.",
+        "quem": "Aline Freitas, diretora do Cefor",
+        "nota": "recapitulando a linha que vai de 2004 ao nascimento do Cefor"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 7359,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=7359s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "20:16",
+       "minuto": "2026-08-17T20:16",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 2
+       },
+       "citacao": {
+        "texto": "A melhor forma de honrar uma história não é preservá-la — é fazê-la continuar. E continuar não significa repetir. A educação de hoje já não é a educação de 2006, e a de 2046 certamente não será a de hoje.",
+        "quem": "Aline Freitas, diretora do Cefor",
+        "nota": null
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 7599,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=7599s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "20:27",
+       "minuto": "2026-08-17T20:27",
+       "n": 34,
+       "porTipo": {
+        "explodiu": 9,
+        "usar": 15,
+        "amei": 6,
+        "massa": 2,
+        "identifico": 2
+       },
+       "citacao": {
+        "texto": "Nossa vitrine de cursos MOOC começou como uma página HTML que era nada... Hoje são mil e poucas inscrições por dia, quase 10 milhões de visualizações por ano. É muita coisa. É uma responsabilidade grande.",
+        "quem": null,
+        "nota": "no lançamento da nova vitrine de cursos MOOC do Ifes"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 8259,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=8259s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "20:31",
+       "minuto": "2026-08-17T20:31",
+       "n": 67,
+       "porTipo": {
+        "amei": 21,
+        "explodiu": 15,
+        "usar": 7,
+        "massa": 21,
+        "identifico": 3
+       },
+       "citacao": {
+        "texto": "A gente estava lá inquieto e eu falei: por que a gente não faz um app para o Concefor? Vocês me veem com o celular toda hora na mão — não é chat, não, sou eu ajeitando o horário que vai estendendo. É a versão zero do zero, nosso protótipo, que nós estamos experimentando aqui com vocês.",
+        "quem": null,
+        "nota": "apresentação do app do evento, no palco dos Lançamentos"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 8499,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=8499s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "20:39",
+       "minuto": "2026-08-17T20:39",
+       "n": 105,
+       "porTipo": {
+        "massa": 21,
+        "amei": 21,
+        "explodiu": 30,
+        "usar": 31,
+        "identifico": 2
+       },
+       "citacao": {
+        "texto": "Eu arrisco dizer que somos talvez uma das instituições precursoras na rede federal a ter a nossa própria inteligência artificial soberana, com processamento local, sem depender de fornecedores externos, com os dados retidos dentro da própria instituição.",
+        "quem": null,
+        "nota": "no lançamento da IA soberana do Ifes — o minuto mais reagido do evento inteiro"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 8979,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=8979s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "20:42",
+       "minuto": "2026-08-17T20:42",
+       "n": 25,
+       "porTipo": {
+        "usar": 9,
+        "amei": 10,
+        "massa": 5,
+        "explodiu": 1
+       },
+       "citacao": {
+        "texto": "Instituições não são construídas por prédios, plataformas ou tecnologia. São construídas por pessoas. Foram pessoas que construíram os primeiros 20 anos do Cefor — e somos nós, agora, que começamos a construir os próximos.",
+        "quem": "Aline Freitas, diretora do Cefor",
+        "nota": null
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 9159,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=9159s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      },
+      {
+       "hora": "20:43",
+       "minuto": "2026-08-17T20:43",
+       "n": 16,
+       "porTipo": {
+        "usar": 7,
+        "amei": 4,
+        "explodiu": 1,
+        "massa": 4
+       },
+       "citacao": {
+        "texto": "Eu gostaria de terminar não com uma resposta, mas com uma pergunta: quando nos encontrarmos para celebrar os 40 anos do Cefor, que história queremos contar?",
+        "quem": "Aline Freitas, diretora do Cefor",
+        "nota": "a última fala da noite de abertura, antes do bolo"
+       },
+       "video": {
+        "id": "okyYHQ1sM1k",
+        "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+        "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+        "offset": 9219,
+        "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=9219s",
+        "aproximado": false,
+        "duracao": "2h36"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "20:12",
+      "20:16",
+      "20:27",
+      "20:31",
+      "20:39",
+      "20:42",
+      "20:43"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "20:10",
+       "n": 5,
+       "porTipo": {
+        "massa": 3,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "20:11",
+       "n": 3,
+       "porTipo": {
+        "massa": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "20:14",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "20:17",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "20:18",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "20:19",
+       "n": 9,
+       "porTipo": {
+        "usar": 1,
+        "massa": 3,
+        "amei": 4,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "20:20",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "20:22",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "20:23",
+       "n": 7,
+       "porTipo": {
+        "massa": 4,
+        "usar": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "20:24",
+       "n": 8,
+       "porTipo": {
+        "massa": 3,
+        "explodiu": 2,
+        "amei": 2,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "20:25",
+       "n": 7,
+       "porTipo": {
+        "explodiu": 4,
+        "identifico": 1,
+        "usar": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "20:26",
+       "n": 6,
+       "porTipo": {
+        "usar": 3,
+        "explodiu": 3
+       }
+      },
+      {
+       "hora": "20:27",
+       "n": 10,
+       "porTipo": {
+        "explodiu": 4,
+        "usar": 4,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "20:28",
+       "n": 15,
+       "porTipo": {
+        "explodiu": 3,
+        "massa": 2,
+        "usar": 6,
+        "identifico": 2,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "20:29",
+       "n": 9,
+       "porTipo": {
+        "usar": 5,
+        "amei": 2,
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "20:30",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 6,
+        "usar": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "20:31",
+       "n": 36,
+       "porTipo": {
+        "amei": 16,
+        "explodiu": 6,
+        "usar": 5,
+        "massa": 8,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "20:32",
+       "n": 27,
+       "porTipo": {
+        "massa": 11,
+        "amei": 5,
+        "explodiu": 8,
+        "usar": 1,
+        "identifico": 2
+       }
+      },
+      {
+       "hora": "20:33",
+       "n": 4,
+       "porTipo": {
+        "usar": 1,
+        "explodiu": 1,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "20:34",
+       "n": 8,
+       "porTipo": {
+        "massa": 4,
+        "usar": 1,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "20:35",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "20:38",
+       "n": 6,
+       "porTipo": {
+        "explodiu": 3,
+        "massa": 1,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "20:39",
+       "n": 82,
+       "porTipo": {
+        "massa": 18,
+        "amei": 14,
+        "explodiu": 25,
+        "usar": 23,
+        "identifico": 2
+       }
+      },
+      {
+       "hora": "20:40",
+       "n": 13,
+       "porTipo": {
+        "explodiu": 5,
+        "massa": 3,
+        "usar": 3,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "20:41",
+       "n": 10,
+       "porTipo": {
+        "amei": 5,
+        "usar": 5
+       }
+      },
+      {
+       "hora": "20:42",
+       "n": 9,
+       "porTipo": {
+        "usar": 2,
+        "amei": 6,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "20:43",
+       "n": 12,
+       "porTipo": {
+        "usar": 6,
+        "amei": 2,
+        "explodiu": 1,
+        "massa": 3
+       }
+      },
+      {
+       "hora": "20:44",
+       "n": 4,
+       "porTipo": {
+        "usar": 1,
+        "amei": 2,
+        "massa": 1
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "okyYHQ1sM1k",
+      "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+      "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+      "offset": 7239,
+      "url": "https://www.youtube.com/watch?v=okyYHQ1sM1k&t=7239s",
+      "aproximado": false,
+      "duracao": "2h36"
+     },
+     "documento": {
+      "titulo": "Lançamentos e Celebração dos 20 anos",
+      "arquivo": "documentos/03-lancamentos-e-celebracao-20-anos.pdf",
+      "externo": false,
+      "bytes": 498171
+     }
+    },
+    {
+     "id": "even3-1485788-20260817-2030",
+     "titulo": "Celebração do aniversário de 20 anos do Cefor",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "O momento festivo da noite: parabéns aos 20 anos do Cefor com quem constrói essa história todos os dias.",
+     "sala": "Pátio (térreo)",
+     "eixo": null,
+     "palestrantes": [],
+     "inicio": "2026-08-17T20:45",
+     "fim": "2026-08-17T21:45",
+     "totalReacoes": 9,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 60,
+     "horaInicio": "20:45",
+     "horaFim": "21:45",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "20:52",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "usar": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "20:53",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "21:17",
+       "n": 3,
+       "porTipo": {
+        "identifico": 1,
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "21:24",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "21:26",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": {
+      "titulo": "Lançamentos e Celebração dos 20 anos",
+      "arquivo": "documentos/03-lancamentos-e-celebracao-20-anos.pdf",
+      "externo": false,
+      "bytes": 498171
+     }
+    }
+   ],
+   "reacoes": 980,
+   "perguntas": 0,
+   "fotos": 0,
+   "destaque": {
+    "titulo": "Lançamentos",
+    "reacoes": 307
+   }
+  },
+  {
+   "data": "2026-08-18",
+   "ordem": 2,
+   "diaSemana": "terça-feira",
+   "extenso": "18 de agosto",
+   "numero": "18",
+   "sessoes": [
+    {
+     "id": "even3-1412339-20260818-0800",
+     "titulo": "Mostra de Produtos e Produções Técnicas – Painel",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Apresentação em painéis dos resumos de produções técnicas e produtos educacionais selecionados. Passe, converse com quem produziu e vote no seu favorito.",
+     "sala": "Auditório (4º piso)",
+     "eixo": "Mostra",
+     "palestrantes": [],
+     "inicio": "2026-08-18T08:00",
+     "fim": "2026-08-18T09:40",
+     "totalReacoes": 31,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 100,
+     "horaInicio": "08:00",
+     "horaFim": "09:40",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "08:32",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "08:33",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "08:53",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "08:57",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "09:04",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "09:05",
+       "n": 3,
+       "porTipo": {
+        "massa": 2,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "09:06",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "09:07",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "09:08",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "09:09",
+       "n": 4,
+       "porTipo": {
+        "usar": 1,
+        "massa": 3
+       }
+      },
+      {
+       "hora": "09:11",
+       "n": 4,
+       "porTipo": {
+        "identifico": 1,
+        "amei": 2,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "09:32",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1412342-20260818-0930",
+     "titulo": "Tecnologia Delas",
+     "prefixo": "Mesa-Redonda",
+     "pessoa": null,
+     "descricao": "Com a Dra. Márcia Oliveira (coordenadora geral do VIII Concefor e coordenadora do projeto Corte de Lovelace), a Dra. Jaqueline Sanz (coordenadora do Atlas das Mulheres do ES) e a Dra. Mariella Berger (Ifes). Três trajetórias sobre mulheres, tecnologia e educação.",
+     "sala": "Pátio (térreo)",
+     "eixo": "Mesa-redonda",
+     "palestrantes": [
+      {
+       "nome": "Márcia Gonçalves de Oliveira",
+       "titulo": "Dra.",
+       "instituicao": "Ifes — Cefor",
+       "bio": "Coordenadora Geral do VIII Concefor. Professora do Ifes-Cefor, doutora em Engenharia Elétrica. Coordena o Educimat, o programa Corte de Lovelace e o grupo Pros@tec."
+      },
+      {
+       "nome": "Jaqueline Sanz",
+       "titulo": "Dra.",
+       "instituicao": "Atlas das Mulheres do ES",
+       "bio": "Coordenadora do Atlas das Mulheres do ES. Cientista social (Ufes), mestre em Políticas Sociais (Uenf), doutora em Desenvolvimento Rural (UFRGS). Servidora do Incaper, atua na Secretaria Estadual das Mulheres."
+      },
+      {
+       "nome": "Mariella Berger Andrade",
+       "titulo": "Dra.",
+       "instituicao": "Ifes — Cefor",
+       "bio": "Professora do Ifes, doutora em Ciência da Computação (Ufes). Coordenadora das pós-graduações em Docência para EaD e EPT. Foi Diretora Executiva do Ifes e Diretora do Cefor (2019–2022)."
+      }
+     ],
+     "inicio": "2026-08-18T09:55",
+     "fim": "2026-08-18T12:00",
+     "totalReacoes": 303,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 125,
+     "horaInicio": "09:55",
+     "horaFim": "12:00",
+     "momentos": [
+      {
+       "hora": "10:02",
+       "minuto": "2026-08-18T10:02",
+       "n": 61,
+       "porTipo": {
+        "massa": 40,
+        "amei": 10,
+        "explodiu": 8,
+        "identifico": 2,
+        "usar": 1
+       },
+       "citacao": {
+        "texto": "Percebam que, dos cinco alunos formados, só tinha eu, mulher, nessa turma. Depois eu comecei a atuar como professora na Ufes. Por 14 anos eu trabalhei lá — e em 14 anos eu tive cinco alunas mulheres.",
+        "quem": "Dra. Mariella Berger Andrade",
+        "nota": "contando a própria trajetória antes de abrir a mesa que ela mediava"
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 384,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=384s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      },
+      {
+       "hora": "10:25",
+       "minuto": "2026-08-18T10:25",
+       "n": 15,
+       "porTipo": {
+        "amei": 5,
+        "identifico": 2,
+        "explodiu": 3,
+        "massa": 5
+       },
+       "citacao": {
+        "texto": "\"Era tudo tão lindo que não coube nos seus pequenos sonhos. Ela precisou aprender a sonhar mais.\" Eu lembro da primeira vez que vi o carro andando sozinho. Cheguei em casa e falei com o meu marido: eu nunca imaginei, vindo lá de Colatina, que eu pudesse viver um negócio desse na minha vida. Eu precisei aprender a sonhar mais.",
+        "quem": "Dra. Mariella Berger Andrade",
+        "nota": "citando \"A Cabeça do Santo\", de Socorro Acioli, ao fechar sua trajetória"
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 1764,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=1764s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      },
+      {
+       "hora": "10:28",
+       "minuto": "2026-08-18T10:28",
+       "n": 12,
+       "porTipo": {
+        "explodiu": 5,
+        "massa": 6,
+        "amei": 1
+       },
+       "citacao": {
+        "texto": "Esse conceito ensina para a gente que não existe a mulher: existem as mulheres, que vivem e constroem as suas subjetividades a partir de estruturas sociais. É diferente quando falamos da mulher negra, da mulher indígena, da mulher na ciência — porque elas são atravessadas por gênero, raça, classe social e território.",
+        "quem": "Dra. Célia Jaqueline Sanz Rodrigues",
+        "nota": "sobre a interseccionalidade, o conceito que fundou o Atlas"
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 1944,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=1944s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      },
+      {
+       "hora": "10:31",
+       "minuto": "2026-08-18T10:31",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 2
+       },
+       "citacao": {
+        "texto": "Quando queríamos conhecer o que é ser mulher quilombola, íamos para dentro do quilombo. Quando queríamos conhecer o que é ser mulher indígena, íamos para dentro da aldeia. Mulher cigana, íamos para dentro dos acampamentos. Devemos ter percorrido mais de 16 mil quilômetros estado afora, fazendo essa pergunta: o que é ser mulher?",
+        "quem": "Dra. Célia Jaqueline Sanz Rodrigues",
+        "nota": "sobre o método do Atlas: 31 segmentos, mais de 95 rodas de conversa, 1.400 mulheres"
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 2124,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=2124s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      },
+      {
+       "hora": "10:40",
+       "minuto": "2026-08-18T10:40",
+       "n": 5,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 3,
+        "usar": 1
+       },
+       "citacao": {
+        "texto": "39% das cientistas mulheres afirmam ter sido afetadas na carreira pela maternidade. E apenas 16% dos cientistas homens afirmam ter sido afetados na carreira pela paternidade. … Quando eu ouço mulheres numa roda de conversa, elas dizem: depois que eu engravidei, ninguém me convida para fazer um artigo.",
+        "quem": "Dra. Célia Jaqueline Sanz Rodrigues",
+        "nota": "no recorte \"Mulheres na Ciência\" do Atlas"
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 2664,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=2664s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      },
+      {
+       "hora": "11:02",
+       "minuto": "2026-08-18T11:02",
+       "n": 19,
+       "porTipo": {
+        "amei": 9,
+        "massa": 9,
+        "explodiu": 1
+       },
+       "citacao": {
+        "texto": "Contem a nossa história, porque ela não é contada. Não espere que um homem vá contar a sua história.",
+        "quem": "Dra. Márcia Gonçalves de Oliveira",
+        "nota": null
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 3984,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=3984s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      },
+      {
+       "hora": "11:09",
+       "minuto": "2026-08-18T11:09",
+       "n": 17,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 7,
+        "identifico": 1,
+        "amei": 8
+       },
+       "citacao": {
+        "texto": "Eu tenho guardado lá em casa, cheio de mofo, o meu livro de COBOL do ensino médio técnico. Aparece o nome de toda a equipe, todos os homens — o nome da Grace Hopper nem aparece. … Fui ver se o nome da Mary Kenneth Keller estava na equipe de desenvolvimento da linguagem Basic. Não estava. Só tinha homens.",
+        "quem": "Dra. Márcia Gonçalves de Oliveira",
+        "nota": "sobre as pioneiras apagadas da história da computação"
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 4404,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=4404s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      },
+      {
+       "hora": "11:23",
+       "minuto": "2026-08-18T11:23",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       },
+       "citacao": {
+        "texto": "As meninas valorizam mais o título de nobreza do que o próprio certificado do Ifes. Elas não podem sair do curso sem os títulos de nobreza. Por quê? Porque a menina que sai do curso uma duquesa se sente empoderada. Essa coisa da nobreza não é uma brincadeira: é uma forma de conferir status ao protagonismo feminino.",
+        "quem": "Dra. Márcia Gonçalves de Oliveira",
+        "nota": "sobre a Corte de Lovelace, programa de extensão do Cefor"
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 5244,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=5244s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      },
+      {
+       "hora": "11:39",
+       "minuto": "2026-08-18T11:39",
+       "n": 0,
+       "porTipo": {},
+       "citacao": {
+        "texto": "Esqueceram de me contar que aquele não era o meu lugar — por isso que eu fui. Me perguntaram, quando eu fui fazer doutorado, se eu sabia apertar um parafuso. Passei num concurso e não fui convocada porque eu era uma mulher grávida. E, quando fui aprovada no meu primeiro trabalho na Ufes, disputando com outras 18 pessoas, o professor falou: \"eu já comprei a sua vassoura\".",
+        "quem": "Dra. Mariella Berger Andrade",
+        "nota": "respondendo, no debate, à pergunta sobre o que aconteceu com as mulheres na computação"
+       },
+       "video": {
+        "id": "dsr8kUkwnGA",
+        "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+        "nota": null,
+        "offset": 6204,
+        "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=6204s",
+        "aproximado": false,
+        "duracao": "1h57"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "10:02",
+      "10:25",
+      "10:28",
+      "10:31",
+      "10:40",
+      "11:02",
+      "11:09",
+      "11:23",
+      "11:39"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "09:56",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "09:59",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "10:01",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "10:02",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:03",
+       "n": 31,
+       "porTipo": {
+        "amei": 7,
+        "massa": 19,
+        "explodiu": 3,
+        "identifico": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "10:04",
+       "n": 29,
+       "porTipo": {
+        "massa": 20,
+        "explodiu": 5,
+        "identifico": 1,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "10:05",
+       "n": 12,
+       "porTipo": {
+        "massa": 4,
+        "explodiu": 6,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "10:06",
+       "n": 10,
+       "porTipo": {
+        "amei": 5,
+        "massa": 4,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:07",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:08",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "10:09",
+       "n": 4,
+       "porTipo": {
+        "massa": 2,
+        "amei": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:10",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:12",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:16",
+       "n": 9,
+       "porTipo": {
+        "massa": 3,
+        "explodiu": 5,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:17",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 2,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:18",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:19",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "10:20",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "10:21",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:22",
+       "n": 4,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:23",
+       "n": 3,
+       "porTipo": {
+        "massa": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:24",
+       "n": 6,
+       "porTipo": {
+        "massa": 2,
+        "explodiu": 1,
+        "amei": 1,
+        "usar": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "10:25",
+       "n": 5,
+       "porTipo": {
+        "amei": 2,
+        "identifico": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:26",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:27",
+       "n": 8,
+       "porTipo": {
+        "amei": 2,
+        "explodiu": 2,
+        "massa": 4
+       }
+      },
+      {
+       "hora": "10:28",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 4,
+        "massa": 5
+       }
+      },
+      {
+       "hora": "10:29",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:30",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:32",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:33",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:35",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "10:38",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "10:40",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:41",
+       "n": 3,
+       "porTipo": {
+        "identifico": 3
+       }
+      },
+      {
+       "hora": "10:42",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "10:43",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "10:44",
+       "n": 4,
+       "porTipo": {
+        "amei": 1,
+        "massa": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:46",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:47",
+       "n": 10,
+       "porTipo": {
+        "massa": 7,
+        "explodiu": 1,
+        "identifico": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:49",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:50",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:51",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:52",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:53",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:55",
+       "n": 8,
+       "porTipo": {
+        "massa": 5,
+        "amei": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:56",
+       "n": 3,
+       "porTipo": {
+        "identifico": 1,
+        "explodiu": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:57",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:59",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:03",
+       "n": 3,
+       "porTipo": {
+        "amei": 3
+       }
+      },
+      {
+       "hora": "11:04",
+       "n": 16,
+       "porTipo": {
+        "amei": 6,
+        "massa": 9,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "11:05",
+       "n": 2,
+       "porTipo": {
+        "identifico": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:06",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:07",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:08",
+       "n": 4,
+       "porTipo": {
+        "massa": 1,
+        "amei": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "11:09",
+       "n": 8,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 4,
+        "identifico": 1,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "11:10",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "11:11",
+       "n": 6,
+       "porTipo": {
+        "amei": 4,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "11:13",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "11:14",
+       "n": 4,
+       "porTipo": {
+        "massa": 1,
+        "usar": 1,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "11:16",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:17",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:20",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:21",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "11:22",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:25",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "11:27",
+       "n": 7,
+       "porTipo": {
+        "massa": 4,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "11:28",
+       "n": 3,
+       "porTipo": {
+        "massa": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:29",
+       "n": 6,
+       "porTipo": {
+        "massa": 3,
+        "amei": 2,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "11:30",
+       "n": 6,
+       "porTipo": {
+        "massa": 2,
+        "usar": 1,
+        "explodiu": 1,
+        "amei": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "11:31",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "11:32",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:33",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:37",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:43",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:44",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "dsr8kUkwnGA",
+      "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+      "nota": null,
+      "offset": 0,
+      "url": "https://www.youtube.com/watch?v=dsr8kUkwnGA&t=0s",
+      "aproximado": false,
+      "duracao": "1h57"
+     },
+     "documento": {
+      "titulo": "Mesa-Redonda \"Tecnologia Delas\"",
+      "arquivo": "documentos/04-mesa-tecnologia-delas.pdf",
+      "externo": false,
+      "bytes": 600348
+     }
+    },
+    {
+     "id": "even3-1412343-20260818-1130",
+     "titulo": "Mostra de Produtos e Produções Técnicas – Painel",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Apresentação dos artigos completos aprovados, organizados por eixo temático.",
+     "sala": "Auditório (4º piso)",
+     "eixo": "Mostra",
+     "palestrantes": [],
+     "inicio": "2026-08-18T11:45",
+     "fim": "2026-08-18T12:20",
+     "totalReacoes": 17,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 35,
+     "horaInicio": "11:45",
+     "horaFim": "12:20",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "11:51",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "12:00",
+       "n": 4,
+       "porTipo": {
+        "massa": 3,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "12:01",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "12:02",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "12:04",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "12:12",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "12:13",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "12:14",
+       "n": 6,
+       "porTipo": {
+        "identifico": 1,
+        "usar": 5
+       }
+      },
+      {
+       "hora": "12:15",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1412344-20260818-1330",
+     "titulo": "Sessões técnicas de apresentação de artigos completos",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Apresentação dos artigos completos aprovados, organizados por eixo temático.",
+     "sala": "Auditório, Sala 1 e Sala 2",
+     "eixo": "Sessões técnicas",
+     "palestrantes": [],
+     "inicio": "2026-08-18T13:30",
+     "fim": "2026-08-18T14:35",
+     "totalReacoes": 24,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 65,
+     "horaInicio": "13:30",
+     "horaFim": "14:35",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "13:37",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "13:41",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "13:44",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "13:45",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "13:46",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "13:47",
+       "n": 3,
+       "porTipo": {
+        "usar": 2,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "13:48",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "13:55",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "13:57",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "13:59",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:20",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "14:23",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:28",
+       "n": 5,
+       "porTipo": {
+        "explodiu": 5
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1412345-20260818-1430",
+     "titulo": "Tecnologia, Transformação e EaD: 20 anos construindo novos cenários educacionais",
+     "prefixo": "Palestra",
+     "pessoa": "Dr. Felipe Tessarolo",
+     "descricao": "\"Tecnologia, Transformação e Educação a Distância: 20 anos construindo novos cenários educacionais\", com Felipe Maciel Tessarolo, do Institute of Educational Technology da The Open University (Reino Unido) — pesquisador de IA na educação, aprendizagem online e personalização em larga escala.",
+     "sala": "Pátio (térreo)",
+     "eixo": "Palestra",
+     "palestrantes": [
+      {
+       "nome": "Felipe Maciel Tessarolo",
+       "titulo": null,
+       "instituicao": "The Open University – UK",
+       "bio": "Pesquisador do Institute of Educational Technology da The Open University (Reino Unido). Atua com IA na educação, aprendizagem online, acessibilidade e personalização em larga escala. EDEN Best Research Paper Award em 2025 e 2026."
+      }
+     ],
+     "inicio": "2026-08-18T14:45",
+     "fim": "2026-08-18T16:30",
+     "totalReacoes": 131,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 105,
+     "horaInicio": "14:45",
+     "horaFim": "16:30",
+     "momentos": [
+      {
+       "hora": "15:06",
+       "minuto": "2026-08-18T15:06",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 2
+       },
+       "citacao": {
+        "texto": "Essa é a missão da Open University: possibilitar a oportunidade de aprendizado. A gente não vai utilizar IA porque é uma coisa inovadora, sem saber o impacto que isso tem na universidade e qual é o benefício que isso traz para o aluno. Não é a inovação pela inovação.",
+        "quem": "Dr. Felipe Maciel Tessarolo",
+        "nota": "sobre a fundação da Open University, em 1969, como \"University of the Air\""
+       },
+       "video": {
+        "id": "C5grho_vUwI",
+        "titulo": "Palestra internacional \"Tecnologia, Transformação e EaD: 20 anos construindo novos cenários educacionais\"",
+        "nota": "O título no YouTube traz o tema do evento e não nomeia o palestrante; pelo horário é a palestra do Dr. Felipe Tessarolo, e a transmissão começou 25 min depois do início da sessão.",
+        "offset": 0,
+        "url": "https://www.youtube.com/watch?v=C5grho_vUwI&t=0s",
+        "aproximado": false,
+        "duracao": "1h19"
+       }
+      },
+      {
+       "hora": "15:08",
+       "minuto": "2026-08-18T15:08",
+       "n": 3,
+       "porTipo": {
+        "massa": 2,
+        "explodiu": 1
+       },
+       "citacao": {
+        "texto": "A Open University já formou 2,3 milhões de pessoas. Atualmente a gente tem 200 mil estudantes ativos — e cerca de um terço desses alunos declarou algum tipo de deficiência. A gente é a instituição com o maior número proporcional de alunos que fazem esse tipo de declaração.",
+        "quem": "Dr. Felipe Maciel Tessarolo",
+        "nota": "a maior universidade a distância do Reino Unido, criada em 1969; a primeira turma, em 1971, teve 26 mil alunos"
+       },
+       "video": {
+        "id": "C5grho_vUwI",
+        "titulo": "Palestra internacional \"Tecnologia, Transformação e EaD: 20 anos construindo novos cenários educacionais\"",
+        "nota": "O título no YouTube traz o tema do evento e não nomeia o palestrante; pelo horário é a palestra do Dr. Felipe Tessarolo, e a transmissão começou 25 min depois do início da sessão.",
+        "offset": 0,
+        "url": "https://www.youtube.com/watch?v=C5grho_vUwI&t=0s",
+        "aproximado": false,
+        "duracao": "1h19"
+       }
+      },
+      {
+       "hora": "15:23",
+       "minuto": "2026-08-18T15:23",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       },
+       "citacao": {
+        "texto": "Apesar de toda essa tecnologia, quem cuida são as pessoas. Não adianta nada a gente ter um sistema pipocando dados e informação, trazendo isso para o professor, se isso efetivamente não engatilhar alguma ação que seja benéfica para o aluno.",
+        "quem": "Dr. Felipe Maciel Tessarolo",
+        "nota": "sobre o time de suporte antecipado ao aluno em risco, na Open University"
+       },
+       "video": {
+        "id": "C5grho_vUwI",
+        "titulo": "Palestra internacional \"Tecnologia, Transformação e EaD: 20 anos construindo novos cenários educacionais\"",
+        "nota": "O título no YouTube traz o tema do evento e não nomeia o palestrante; pelo horário é a palestra do Dr. Felipe Tessarolo, e a transmissão começou 25 min depois do início da sessão.",
+        "offset": 723,
+        "url": "https://www.youtube.com/watch?v=C5grho_vUwI&t=723s",
+        "aproximado": false,
+        "duracao": "1h19"
+       }
+      },
+      {
+       "hora": "16:00",
+       "minuto": "2026-08-18T16:00",
+       "n": 5,
+       "porTipo": {
+        "usar": 4,
+        "amei": 1
+       },
+       "citacao": {
+        "texto": "Antes da internet, chegavam quinze notícias para o Bonner escolher o que ia transmitir para o Brasil. Ele escolhia cinco, eliminava dez — e o Brasil ia ter acesso só àquelas cinco. A IA, dependendo de como a gente coloca dentro desses sistemas, vai fazer a mesma coisa: vai funcionar como um guardião do conhecimento, adaptando, gerenciando, modificando.",
+        "quem": "Dr. Felipe Maciel Tessarolo",
+        "nota": "a analogia que dá título ao artigo premiado do grupo, \"GenAI as an Educational Gatekeeper\""
+       },
+       "video": {
+        "id": "C5grho_vUwI",
+        "titulo": "Palestra internacional \"Tecnologia, Transformação e EaD: 20 anos construindo novos cenários educacionais\"",
+        "nota": "O título no YouTube traz o tema do evento e não nomeia o palestrante; pelo horário é a palestra do Dr. Felipe Tessarolo, e a transmissão começou 25 min depois do início da sessão.",
+        "offset": 2943,
+        "url": "https://www.youtube.com/watch?v=C5grho_vUwI&t=2943s",
+        "aproximado": false,
+        "duracao": "1h19"
+       }
+      },
+      {
+       "hora": "16:03",
+       "minuto": "2026-08-18T16:03",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 2
+       },
+       "citacao": {
+        "texto": "Quando vocês me perguntam o que realmente mudou na educação nesses últimos 20 anos, eu digo que eu não parto de um princípio tecnológico. Eu acho que é uma visão pedagógica: é como essas evoluções tecnológicas alteram a nossa pedagogia — em possibilidades, em desafios e até nos ruídos que isso causa. E aí eu fico com essa pergunta: o que vai permanecer de humano nessa educação?",
+        "quem": "Dr. Felipe Maciel Tessarolo",
+        "nota": "no fecho da palestra internacional"
+       },
+       "video": {
+        "id": "C5grho_vUwI",
+        "titulo": "Palestra internacional \"Tecnologia, Transformação e EaD: 20 anos construindo novos cenários educacionais\"",
+        "nota": "O título no YouTube traz o tema do evento e não nomeia o palestrante; pelo horário é a palestra do Dr. Felipe Tessarolo, e a transmissão começou 25 min depois do início da sessão.",
+        "offset": 3123,
+        "url": "https://www.youtube.com/watch?v=C5grho_vUwI&t=3123s",
+        "aproximado": false,
+        "duracao": "1h19"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "15:06",
+      "15:08",
+      "15:23",
+      "16:00",
+      "16:03"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "14:46",
+       "n": 4,
+       "porTipo": {
+        "amei": 3,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:50",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "14:51",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "14:52",
+       "n": 6,
+       "porTipo": {
+        "massa": 4,
+        "identifico": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "14:53",
+       "n": 13,
+       "porTipo": {
+        "identifico": 5,
+        "massa": 4,
+        "amei": 4
+       }
+      },
+      {
+       "hora": "14:54",
+       "n": 3,
+       "porTipo": {
+        "amei": 3
+       }
+      },
+      {
+       "hora": "14:55",
+       "n": 3,
+       "porTipo": {
+        "amei": 2,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "14:57",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:58",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "14:59",
+       "n": 7,
+       "porTipo": {
+        "usar": 6,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:00",
+       "n": 6,
+       "porTipo": {
+        "massa": 4,
+        "amei": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "15:01",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "15:06",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:08",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "15:09",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:11",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:14",
+       "n": 4,
+       "porTipo": {
+        "massa": 2,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "15:17",
+       "n": 3,
+       "porTipo": {
+        "massa": 2,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "15:22",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "15:23",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:24",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:25",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:26",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "15:27",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:28",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:30",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:31",
+       "n": 3,
+       "porTipo": {
+        "amei": 1,
+        "explodiu": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "15:35",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:38",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:39",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:40",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:48",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "usar": 2
+       }
+      },
+      {
+       "hora": "15:49",
+       "n": 2,
+       "porTipo": {
+        "usar": 2
+       }
+      },
+      {
+       "hora": "15:50",
+       "n": 7,
+       "porTipo": {
+        "explodiu": 6,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:51",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:53",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "15:55",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "15:56",
+       "n": 10,
+       "porTipo": {
+        "massa": 2,
+        "usar": 8
+       }
+      },
+      {
+       "hora": "15:57",
+       "n": 3,
+       "porTipo": {
+        "usar": 3
+       }
+      },
+      {
+       "hora": "15:58",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "15:59",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "16:01",
+       "n": 4,
+       "porTipo": {
+        "usar": 4
+       }
+      },
+      {
+       "hora": "16:02",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:03",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "16:05",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "16:07",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:08",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:13",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:15",
+       "n": 2,
+       "porTipo": {
+        "usar": 2
+       }
+      },
+      {
+       "hora": "16:19",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "16:22",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "16:23",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "C5grho_vUwI",
+      "titulo": "Palestra internacional \"Tecnologia, Transformação e EaD: 20 anos construindo novos cenários educacionais\"",
+      "nota": "O título no YouTube traz o tema do evento e não nomeia o palestrante; pelo horário é a palestra do Dr. Felipe Tessarolo, e a transmissão começou 25 min depois do início da sessão.",
+      "offset": 0,
+      "url": "https://www.youtube.com/watch?v=C5grho_vUwI&t=0s",
+      "aproximado": true,
+      "duracao": "1h19"
+     },
+     "documento": {
+      "titulo": "Palestra internacional — Dr. Felipe Tessarolo",
+      "arquivo": "documentos/05-palestra-felipe-tessarolo.pdf",
+      "externo": false,
+      "bytes": 497618
+     }
+    }
+   ],
+   "reacoes": 506,
+   "perguntas": 0,
+   "fotos": 0,
+   "destaque": {
+    "titulo": "Tecnologia Delas",
+    "reacoes": 303
+   }
+  },
+  {
+   "data": "2026-08-19",
+   "ordem": 3,
+   "diaSemana": "quarta-feira",
+   "extenso": "19 de agosto",
+   "numero": "19",
+   "sessoes": [
+    {
+     "id": "even3-1412347-20260819-0800",
+     "titulo": "Sessões técnicas de apresentação de artigos completos",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Apresentação dos artigos completos aprovados, organizados por eixo temático.",
+     "sala": "Auditório, Sala 1 e Sala 2",
+     "eixo": "Sessões técnicas",
+     "palestrantes": [],
+     "inicio": "2026-08-19T08:00",
+     "fim": "2026-08-19T09:00",
+     "totalReacoes": 31,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 60,
+     "horaInicio": "08:00",
+     "horaFim": "09:00",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "08:32",
+       "n": 5,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 2,
+        "usar": 2
+       }
+      },
+      {
+       "hora": "08:33",
+       "n": 3,
+       "porTipo": {
+        "usar": 1,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "08:34",
+       "n": 3,
+       "porTipo": {
+        "usar": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "08:36",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "08:49",
+       "n": 5,
+       "porTipo": {
+        "usar": 3,
+        "amei": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "08:55",
+       "n": 3,
+       "porTipo": {
+        "amei": 1,
+        "usar": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "08:56",
+       "n": 6,
+       "porTipo": {
+        "massa": 3,
+        "amei": 2,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "08:57",
+       "n": 4,
+       "porTipo": {
+        "explodiu": 1,
+        "usar": 1,
+        "identifico": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "08:59",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1492254-20260819-0900",
+     "titulo": "Momento Cultural",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Abertura cultural da manhã.",
+     "sala": "Pátio (térreo)",
+     "eixo": null,
+     "palestrantes": [],
+     "inicio": "2026-08-19T09:00",
+     "fim": "2026-08-19T09:45",
+     "totalReacoes": 9,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 45,
+     "horaInicio": "09:00",
+     "horaFim": "09:45",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "09:34",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "09:44",
+       "n": 5,
+       "porTipo": {
+        "massa": 3,
+        "amei": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "09:45",
+       "n": 3,
+       "porTipo": {
+        "amei": 2,
+        "usar": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1412350-20260819-0930",
+     "titulo": "Desafios da EaD para os próximos 20 anos",
+     "prefixo": "Mesa-Redonda",
+     "pessoa": null,
+     "descricao": "Com pesquisadores do Ifes e da Ufes, o palestrante internacional Felipe Maciel Tessarolo (The Open University, UK) e a Dra. Rutinelli da Penha Fávero (Ifes). Se os primeiros 20 anos construíram a EaD que temos, o que vem agora?",
+     "sala": "Pátio (térreo)",
+     "eixo": "Mesa-redonda",
+     "palestrantes": [
+      {
+       "nome": "Felipe Maciel Tessarolo",
+       "titulo": null,
+       "instituicao": "The Open University – UK",
+       "bio": "Pesquisador do Institute of Educational Technology da The Open University (Reino Unido). Atua com IA na educação, aprendizagem online, acessibilidade e personalização em larga escala. EDEN Best Research Paper Award em 2025 e 2026."
+      },
+      {
+       "nome": "Rutinelli da Penha Fávero",
+       "titulo": "Dra.",
+       "instituicao": "Ifes — Cefor",
+       "bio": "Professora do Ifes, doutora em Educação em Ciências e Saúde (UFRJ), com estágio doutoral em Coimbra. Coordenou a pós em Tecnologias Educacionais. Pesquisa tecnologia e educação, gamificação, EaD e formação docente."
+      }
+     ],
+     "inicio": "2026-08-19T09:45",
+     "fim": "2026-08-19T11:45",
+     "totalReacoes": 196,
+     "perguntas": [
+      {
+       "hora": "10:06",
+       "texto": "Como incentivar o uso de IA para um aprendizado profundo? Vejo cada vez mais o uso indiscriminado da IA resultando um \"aprendizado\" raso.",
+       "autor": "Filipe",
+       "votos": 10,
+       "resposta": {
+        "texto": "Felipe trouxe o dado da AIDA: dos 60 alunos que usaram o assistente, só um tentou usá-lo para responder à avaliação — os demais pediam contexto e explicações, num desejo real de aprender mais. Para ele, o caminho é desenvolver pensamento crítico sobre o que a IA oferece: questionar a resposta, refletir sobre ela, pedir outros pontos de vista, com a mesma desconfiança que se aprendeu a ter com estranhos na rua e que se perdeu diante de um vídeo na internet. Rutinelli somou a analogia da memória externa — ninguém mais decora número de telefone e nem por isso o telefone deixou de ser importante — e disse que o que baliza sua avaliação é aquilo que o aluno precisa essencialmente desenvolver naquele curso: é isso que define se o uso da IA ajuda ou atrapalha. Felipe fechou com a calculadora, um dia proibida nas provas de matemática e depois superada pelo Excel: a exigência do profissional deixou de ser fazer conta e passou a ser analisar a complexidade das informações.",
+        "quem": "Dr. Felipe Maciel Tessarolo e Dra. Rutinelli da Penha Fávero",
+        "citacao": "A grande maioria deles não queria usar aquilo para burlar o sistema. Era, literalmente, um desejo de aprimorar o aprendizado deles.",
+        "citacaoDe": "Dr. Felipe Maciel Tessarolo",
+        "hora": "11:19",
+        "video": {
+         "id": "4-7Ckd7LNEY",
+         "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+         "nota": null,
+         "offset": 5469,
+         "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=5469s",
+         "aproximado": false,
+         "duracao": "2h03"
+        }
+       }
+      },
+      {
+       "hora": "10:15",
+       "texto": "Bom dia! Qual o pensamento dos palestrantes sobre a proibição dos cursos de licenciatura em EaD?",
+       "autor": "Danielli",
+       "votos": 11,
+       "resposta": {
+        "texto": "Rutinelli, que se debruçou sobre o tema num estudo feito no Cefor, separou as duas coisas: acredita na licenciatura a distância e vê todos os dias em sala que ela pode formar excelentes professores, mas não se nega a compreender a lógica do legislador diante das dificuldades brasileiras na formação docente. Exigir algum componente presencial, na leitura dela, busca garantir a coletividade que essa formação pressupõe — e a realidade em jogo não é só a do Cefor nem a do Ifes. Felipe complementou com a Open University, maior formadora de enfermeiros do Reino Unido: a parte teórica é a distância, mas o estágio final acontece em hospitais universitários, acompanhado pela universidade, porque manuseio de paciente e contato humano não se avaliam remotamente.",
+        "quem": "Dra. Rutinelli da Penha Fávero e Dr. Felipe Maciel Tessarolo",
+        "citacao": "Acho, sim, que é possível que um curso a distância seja muito bem feito e que possam se formar excelentes professores. Mas compreendo o momento histórico brasileiro frente à legislação.",
+        "citacaoDe": "Dra. Rutinelli da Penha Fávero",
+        "hora": "11:15",
+        "video": {
+         "id": "4-7Ckd7LNEY",
+         "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+         "nota": null,
+         "offset": 5229,
+         "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=5229s",
+         "aproximado": false,
+         "duracao": "2h03"
+        }
+       }
+      },
+      {
+       "hora": "10:16",
+       "texto": "A CAPES, em algumas áreas, tem resistência a EaD, mas aceita os momentos síncronos. O que pensam sobre isso?",
+       "autor": "Danielli",
+       "votos": 6
+      },
+      {
+       "hora": "10:18",
+       "texto": "Bom dia! Gostaria que os palestrantes comentassem ações de permanência estudantil para alunos EaD. Como superar esse desafio?",
+       "autor": "Arthur",
+       "votos": 8,
+       "resposta": {
+        "texto": "Rutinelli recusou a solução em pedaços: a permanência passa pela desigualdade econômica e de acesso, mas também pelo currículo, pelo mercado que espera aquele profissional e pela escola como lugar de saber e de segurança — inclusive alimentar. A escola não resolverá sozinha o que é problema da sociedade, mas colabora na reflexão; ao educador ela devolveu a tarefa de fazer o aluno querer estar ali, porque é o desejo que sustenta a permanência e o êxito. Felipe apontou o que a instituição de fato controla: oferecer introdução e treinamento nas tecnologias a quem chega sem familiaridade, produzir material didático acessível e mapear as barreiras criadas não pela escola, mas pelo sistema e pelas metodologias que ela usa.",
+        "quem": "Dra. Rutinelli da Penha Fávero e Dr. Felipe Maciel Tessarolo",
+        "citacao": "A escola é a sociedade. Nós não estamos fora do muro da sociedade.",
+        "citacaoDe": "Dra. Rutinelli da Penha Fávero",
+        "hora": "11:27",
+        "video": {
+         "id": "4-7Ckd7LNEY",
+         "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+         "nota": null,
+         "offset": 5949,
+         "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=5949s",
+         "aproximado": false,
+         "duracao": "2h03"
+        }
+       }
+      },
+      {
+       "hora": "10:19",
+       "texto": "O NotebookLM permite várias formatos para ao conteúdo. O que pensam sobre o processo de leitura na íntegra em tempos de IA?",
+       "autor": "Danielli",
+       "votos": 6
+      },
+      {
+       "hora": "10:27",
+       "texto": "Vocês tem pesquisado sobre as consequências de terceirizar para a IA parte do proc. de aprendizagem no  primeiro contato com um conteúdo?",
+       "autor": "Aline",
+       "votos": 9,
+       "resposta": {
+        "texto": "Rutinelli disse não pesquisar exatamente isso, mas admitiu que o tema a preocupa: quem tem o primeiro contato com um conteúdo já mediado por IA — sobretudo uma criança ou um jovem — não reúne condições de verificar o que recebe. A defesa dela é a dúvida epistêmica como função docente: o professor que nunca acredita de primeira transmite ao aluno o hábito de perguntar se a IA está falando a verdade, porque, se tudo entra como certo, nada falseado será questionado. Felipe contou que, nos testes com alunos, um treinamento prévio sobre a proposta e os limites da ferramenta mudava por completo o tipo de pergunta feita à IA, e lembrou o caso de um estudante que, após um acidente que lhe deixou déficit de atenção, disse que teria abandonado o curso se não fosse o ChatGPT, a quem pedia que explicasse o conteúdo de outra forma. Andromeda reforçou o nó da pergunta — não há análise crítica possível sobre o que ainda não se conhece — e relatou que, com seus alunos de design, exigir o registro de como a IA foi usada fez muitos preferirem não usá-la: usar com responsabilidade dá trabalho.",
+        "quem": "Dra. Rutinelli da Penha Fávero, Dr. Felipe Maciel Tessarolo e a mediadora Dra. Andromeda Goretti de Menezes Campos",
+        "citacao": "Em alguns momentos, a gente pode estar pedindo ao aluno para andar de bicicleta quando ele não aprendeu a caminhar ainda.",
+        "citacaoDe": "Dr. Felipe Maciel Tessarolo",
+        "hora": "11:32",
+        "video": {
+         "id": "4-7Ckd7LNEY",
+         "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+         "nota": null,
+         "offset": 6249,
+         "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=6249s",
+         "aproximado": false,
+         "duracao": "2h03"
+        }
+       }
+      },
+      {
+       "hora": "10:48",
+       "texto": "O que falta na legislação brasileira para garantir a qualidade nos cursos na modalidade a distância?",
+       "autor": "Danielli",
+       "votos": 6
+      },
+      {
+       "hora": "10:49",
+       "texto": "Alguns cursos ainda mantém resistência em ir ao modelo EaD. É possível que com o avanço tecnológico e as novidades da EaD haja uma mudança?",
+       "autor": "Marines",
+       "votos": 4
+      },
+      {
+       "hora": "10:56",
+       "texto": "Qual o futuro dos Polos de Apoio Presencial no contexto da EAD nos próximos 20 anos?",
+       "autor": "Silvana",
+       "votos": 9,
+       "resposta": {
+        "texto": "Rutinelli respondeu pelo desejo, não pela previsão: como pesquisadora da área de interação, acha muito pobre um futuro em que não esteja garantido que as pessoas possam se encontrar. Lembrou que, na pesquisa do seu doutorado durante a pandemia, o que apareceu foi a vontade de voltar para a escola — o encontro presencial fazia falta, a festa online não. Aposta na continuidade de algum momento de encontro, seja por desigualdade, por local de acesso, por currículo ou pela necessidade de estar junto, ainda que nem sempre obrigatório. Felipe acrescentou o pertencimento e a credibilidade: alunos jovens da Open University compram caneca e camisa para ter algo físico da universidade, e o polo cumpre esse papel de materializar o curso a distância — o prédio que as pessoas veem ao passar cria raiz e torna palpável aquilo que existia só na tela.",
+        "quem": "Dra. Rutinelli da Penha Fávero e Dr. Felipe Maciel Tessarolo",
+        "citacao": "Me parece um futuro muito pobre se não tiver garantido que, em algum momento, as pessoas possam de alguma maneira se encontrar.",
+        "citacaoDe": "Dra. Rutinelli da Penha Fávero",
+        "hora": "11:42",
+        "video": {
+         "id": "4-7Ckd7LNEY",
+         "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+         "nota": null,
+         "offset": 6849,
+         "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=6849s",
+         "aproximado": false,
+         "duracao": "2h03"
+        }
+       }
+      },
+      {
+       "hora": "10:59",
+       "texto": "vocês acreditam que em 2046 teremos que pagar pra acessar não só a internet mas ao conhecimento tambem? E essa curadoria das empresas de IA?",
+       "autor": "Leonardo",
+       "votos": 4
+      },
+      {
+       "hora": "11:03",
+       "texto": "Que análise vocês fazem da afirmação: \"A IA atende o interesse do aluno em obter o diploma (recompensa do jogo) sem o esforço do aprendizado",
+       "autor": "Archimedes",
+       "votos": 4
+      },
+      {
+       "hora": "11:03",
+       "texto": "Ontem, Felipe: “o desafio da EAD não é tecnológico, mas pedagógico”. Ruti ratificou: os desafios NÃO tecnológicos que vão permanecer.Comente",
+       "autor": "Luzimara",
+       "votos": 6
+      },
+      {
+       "hora": "11:06",
+       "texto": "Que ações nós, educadores de instituições formais de ensino, podemos adotar para convencer estudantes do necessário esforço da aprendizagem",
+       "autor": "Archimedes",
+       "votos": 3
+      }
+     ],
+     "enquetes": [
+      {
+       "hora": "10:42",
+       "pergunta": "Escreva UM desafio da EaD de hoje que ainda existirá em 2046",
+       "nuvem": [
+        {
+         "palavra": "amor",
+         "n": 6
+        },
+        {
+         "palavra": "engajamento",
+         "n": 6
+        },
+        {
+         "palavra": "empatia",
+         "n": 4
+        },
+        {
+         "palavra": "pessoas",
+         "n": 4
+        },
+        {
+         "palavra": "aprendizagem",
+         "n": 3
+        },
+        {
+         "palavra": "interesse",
+         "n": 3
+        },
+        {
+         "palavra": "permanência",
+         "n": 3
+        },
+        {
+         "palavra": "acessibilidade",
+         "n": 2
+        },
+        {
+         "palavra": "acesso",
+         "n": 2
+        },
+        {
+         "palavra": "inclusão",
+         "n": 2
+        },
+        {
+         "palavra": "interação",
+         "n": 2
+        },
+        {
+         "palavra": "pertencimento",
+         "n": 2
+        },
+        {
+         "palavra": "alteridade",
+         "n": 1
+        },
+        {
+         "palavra": "alunado",
+         "n": 1
+        },
+        {
+         "palavra": "aproveitamento",
+         "n": 1
+        },
+        {
+         "palavra": "aproximar",
+         "n": 1
+        },
+        {
+         "palavra": "atenção",
+         "n": 1
+        },
+        {
+         "palavra": "baixa",
+         "n": 1
+        },
+        {
+         "palavra": "baixo",
+         "n": 1
+        },
+        {
+         "palavra": "compromisso",
+         "n": 1
+        },
+        {
+         "palavra": "conexão",
+         "n": 1
+        },
+        {
+         "palavra": "confiança",
+         "n": 1
+        },
+        {
+         "palavra": "conhecimento",
+         "n": 1
+        },
+        {
+         "palavra": "convivência",
+         "n": 1
+        },
+        {
+         "palavra": "credibilidade",
+         "n": 1
+        },
+        {
+         "palavra": "desigualdade",
+         "n": 1
+        },
+        {
+         "palavra": "disciplina",
+         "n": 1
+        },
+        {
+         "palavra": "estudantil",
+         "n": 1
+        },
+        {
+         "palavra": "esvaziamento",
+         "n": 1
+        },
+        {
+         "palavra": "evasão",
+         "n": 1
+        },
+        {
+         "palavra": "falta",
+         "n": 1
+        },
+        {
+         "palavra": "humana",
+         "n": 1
+        },
+        {
+         "palavra": "individualidade",
+         "n": 1
+        },
+        {
+         "palavra": "método",
+         "n": 1
+        },
+        {
+         "palavra": "parceria",
+         "n": 1
+        },
+        {
+         "palavra": "pedagogico",
+         "n": 1
+        },
+        {
+         "palavra": "personalização",
+         "n": 1
+        },
+        {
+         "palavra": "planejamento",
+         "n": 1
+        },
+        {
+         "palavra": "professor",
+         "n": 1
+        },
+        {
+         "palavra": "professores",
+         "n": 1
+        },
+        {
+         "palavra": "qualidade",
+         "n": 1
+        },
+        {
+         "palavra": "recurso",
+         "n": 1
+        },
+        {
+         "palavra": "responsabilidade",
+         "n": 1
+        },
+        {
+         "palavra": "sociabilidade",
+         "n": 1
+        },
+        {
+         "palavra": "social",
+         "n": 1
+        },
+        {
+         "palavra": "tdah",
+         "n": 1
+        }
+       ],
+       "respostas": [
+        {
+         "palavra": "Amor",
+         "n": 6
+        },
+        {
+         "palavra": "Engajamento",
+         "n": 6
+        },
+        {
+         "palavra": "Empatia",
+         "n": 3
+        },
+        {
+         "palavra": "Interesse",
+         "n": 3
+        },
+        {
+         "palavra": "Pessoas",
+         "n": 3
+        },
+        {
+         "palavra": "Acessibilidade",
+         "n": 2
+        },
+        {
+         "palavra": "Aprendizagem",
+         "n": 2
+        },
+        {
+         "palavra": "Inclusão",
+         "n": 2
+        },
+        {
+         "palavra": "Permanência",
+         "n": 2
+        },
+        {
+         "palavra": "Pertencimento",
+         "n": 2
+        },
+        {
+         "palavra": "Acesso",
+         "n": 1
+        },
+        {
+         "palavra": "Acesso ao conhecimento",
+         "n": 1
+        },
+        {
+         "palavra": "Alteridade",
+         "n": 1
+        },
+        {
+         "palavra": "Aprendizagem do alunado.",
+         "n": 1
+        },
+        {
+         "palavra": "Aproximar as pessoas",
+         "n": 1
+        },
+        {
+         "palavra": "atenção",
+         "n": 1
+        },
+        {
+         "palavra": "Baixa interação",
+         "n": 1
+        },
+        {
+         "palavra": "Baixo aproveitamento",
+         "n": 1
+        },
+        {
+         "palavra": "Compromisso",
+         "n": 1
+        },
+        {
+         "palavra": "Conexão humana",
+         "n": 1
+        },
+        {
+         "palavra": "Confiança",
+         "n": 1
+        },
+        {
+         "palavra": "Convivência",
+         "n": 1
+        },
+        {
+         "palavra": "Credibilidade",
+         "n": 1
+        },
+        {
+         "palavra": "Desigualdade social",
+         "n": 1
+        },
+        {
+         "palavra": "Disciplina",
+         "n": 1
+        },
+        {
+         "palavra": "Esvaziamento",
+         "n": 1
+        },
+        {
+         "palavra": "Evasão",
+         "n": 1
+        },
+        {
+         "palavra": "Falta de empatia",
+         "n": 1
+        },
+        {
+         "palavra": "Individualidade",
+         "n": 1
+        },
+        {
+         "palavra": "Interação",
+         "n": 1
+        },
+        {
+         "palavra": "Método",
+         "n": 1
+        },
+        {
+         "palavra": "Parceria",
+         "n": 1
+        },
+        {
+         "palavra": "Pedagogico",
+         "n": 1
+        },
+        {
+         "palavra": "Permanência Estudantil",
+         "n": 1
+        },
+        {
+         "palavra": "Personalização",
+         "n": 1
+        },
+        {
+         "palavra": "planejamento",
+         "n": 1
+        },
+        {
+         "palavra": "Professor",
+         "n": 1
+        },
+        {
+         "palavra": "Professores",
+         "n": 1
+        },
+        {
+         "palavra": "Qualidade",
+         "n": 1
+        },
+        {
+         "palavra": "Recurso",
+         "n": 1
+        },
+        {
+         "palavra": "Responsabilidade",
+         "n": 1
+        },
+        {
+         "palavra": "Sociabilidade",
+         "n": 1
+        },
+        {
+         "palavra": "TDAH",
+         "n": 1
+        }
+       ],
+       "totalRespostas": 64
+      },
+      {
+       "hora": "10:44",
+       "pergunta": "Escreva UM desafio da EaD que terá desaparecido em 2046",
+       "nuvem": [
+        {
+         "palavra": "acessibilidade",
+         "n": 3
+        },
+        {
+         "palavra": "presencialidade",
+         "n": 3
+        },
+        {
+         "palavra": "tolerância",
+         "n": 3
+        },
+        {
+         "palavra": "acesso",
+         "n": 2
+        },
+        {
+         "palavra": "mediador",
+         "n": 2
+        },
+        {
+         "palavra": "presencial",
+         "n": 2
+        },
+        {
+         "palavra": "professor",
+         "n": 2
+        },
+        {
+         "palavra": "tecnológicos",
+         "n": 2
+        },
+        {
+         "palavra": "análise",
+         "n": 1
+        },
+        {
+         "palavra": "aula",
+         "n": 1
+        },
+        {
+         "palavra": "coletivo",
+         "n": 1
+        },
+        {
+         "palavra": "computador",
+         "n": 1
+        },
+        {
+         "palavra": "comunicação",
+         "n": 1
+        },
+        {
+         "palavra": "contato",
+         "n": 1
+        },
+        {
+         "palavra": "correção",
+         "n": 1
+        },
+        {
+         "palavra": "dados",
+         "n": 1
+        },
+        {
+         "palavra": "didático",
+         "n": 1
+        },
+        {
+         "palavra": "difícil",
+         "n": 1
+        },
+        {
+         "palavra": "ead",
+         "n": 1
+        },
+        {
+         "palavra": "encontro",
+         "n": 1
+        },
+        {
+         "palavra": "escolha",
+         "n": 1
+        },
+        {
+         "palavra": "evadao",
+         "n": 1
+        },
+        {
+         "palavra": "figura",
+         "n": 1
+        },
+        {
+         "palavra": "fisico",
+         "n": 1
+        },
+        {
+         "palavra": "fronteiras",
+         "n": 1
+        },
+        {
+         "palavra": "ia",
+         "n": 1
+        },
+        {
+         "palavra": "internet",
+         "n": 1
+        },
+        {
+         "palavra": "limites",
+         "n": 1
+        },
+        {
+         "palavra": "material",
+         "n": 1
+        },
+        {
+         "palavra": "multipla",
+         "n": 1
+        },
+        {
+         "palavra": "oportunidade",
+         "n": 1
+        },
+        {
+         "palavra": "plágio",
+         "n": 1
+        },
+        {
+         "palavra": "preconceito",
+         "n": 1
+        },
+        {
+         "palavra": "privada",
+         "n": 1
+        },
+        {
+         "palavra": "professores",
+         "n": 1
+        },
+        {
+         "palavra": "puro",
+         "n": 1
+        },
+        {
+         "palavra": "recursos",
+         "n": 1
+        },
+        {
+         "palavra": "revisão",
+         "n": 1
+        },
+        {
+         "palavra": "sala",
+         "n": 1
+        },
+        {
+         "palavra": "tradicional",
+         "n": 1
+        }
+       ],
+       "respostas": [
+        {
+         "palavra": "Acessibilidade",
+         "n": 3
+        },
+        {
+         "palavra": "Presencialidade",
+         "n": 3
+        },
+        {
+         "palavra": "Tolerância",
+         "n": 3
+        },
+        {
+         "palavra": "Acesso",
+         "n": 2
+        },
+        {
+         "palavra": "Análise de dados",
+         "n": 1
+        },
+        {
+         "palavra": "Coletivo",
+         "n": 1
+        },
+        {
+         "palavra": "Computador",
+         "n": 1
+        },
+        {
+         "palavra": "Comunicação",
+         "n": 1
+        },
+        {
+         "palavra": "Contato fisico",
+         "n": 1
+        },
+        {
+         "palavra": "Correção",
+         "n": 1
+        },
+        {
+         "palavra": "Difícil",
+         "n": 1
+        },
+        {
+         "palavra": "Encontro presencial",
+         "n": 1
+        },
+        {
+         "palavra": "Evadao",
+         "n": 1
+        },
+        {
+         "palavra": "Figura do mediador",
+         "n": 1
+        },
+        {
+         "palavra": "Fronteiras",
+         "n": 1
+        },
+        {
+         "palavra": "IA privada",
+         "n": 1
+        },
+        {
+         "palavra": "Internet",
+         "n": 1
+        },
+        {
+         "palavra": "Limites tecnológicos",
+         "n": 1
+        },
+        {
+         "palavra": "Material Didático",
+         "n": 1
+        },
+        {
+         "palavra": "Mediador",
+         "n": 1
+        },
+        {
+         "palavra": "Multipla-escolha",
+         "n": 1
+        },
+        {
+         "palavra": "Oportunidade",
+         "n": 1
+        },
+        {
+         "palavra": "Plágio",
+         "n": 1
+        },
+        {
+         "palavra": "Preconceito EAD",
+         "n": 1
+        },
+        {
+         "palavra": "Presencial puro",
+         "n": 1
+        },
+        {
+         "palavra": "Professor",
+         "n": 1
+        },
+        {
+         "palavra": "Professor tradicional",
+         "n": 1
+        },
+        {
+         "palavra": "Professores",
+         "n": 1
+        },
+        {
+         "palavra": "Recursos Tecnológicos",
+         "n": 1
+        },
+        {
+         "palavra": "Revisão",
+         "n": 1
+        },
+        {
+         "palavra": "Sala de aula",
+         "n": 1
+        }
+       ],
+       "totalRespostas": 38
+      }
+     ],
+     "duracaoMin": 120,
+     "horaInicio": "09:45",
+     "horaFim": "11:45",
+     "momentos": [
+      {
+       "hora": "09:56",
+       "minuto": "2026-08-19T09:56",
+       "n": 5,
+       "porTipo": {
+        "massa": 4,
+        "amei": 1
+       },
+       "citacao": {
+        "texto": "Vocês entendem que os próximos 20 anos são 2046? É tentador pensar em ferramentas, em tecnologias — mas isso não é o mais importante. O desafio da EaD não é incorporar a inteligência artificial: isso a gente tira de letra. É decidir que educação nós queremos oferecer, para quem, com que qualidade, com que inclusão — e qual o papel dos professores e dos estudantes nesse processo.",
+        "quem": "Dra. Andromeda Goretti de Menezes Campos",
+        "nota": "abrindo a mesa-redonda, na mediação"
+       },
+       "video": {
+        "id": "4-7Ckd7LNEY",
+        "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+        "nota": null,
+        "offset": 489,
+        "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=489s",
+        "aproximado": false,
+        "duracao": "2h03"
+       }
+      },
+      {
+       "hora": "10:30",
+       "minuto": "2026-08-19T10:30",
+       "n": 23,
+       "porTipo": {
+        "usar": 12,
+        "amei": 3,
+        "massa": 5,
+        "explodiu": 2,
+        "identifico": 1
+       },
+       "citacao": {
+        "texto": "Antes a gente tinha o desafio de oferecer educação para todos. Agora a gente tem a possibilidade de criar experiências para cada um. Mas, se a aprendizagem vai se tornar cada vez mais individual, o que a gente vai fazer para manter a educação coletiva — sem isolar ainda mais o indivíduo?",
+        "quem": "Dr. Felipe Maciel Tessarolo",
+        "nota": "encerrando a fala sobre personalização em escala"
+       },
+       "video": {
+        "id": "4-7Ckd7LNEY",
+        "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+        "nota": null,
+        "offset": 2529,
+        "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=2529s",
+        "aproximado": false,
+        "duracao": "2h03"
+       }
+      },
+      {
+       "hora": "10:40",
+       "minuto": "2026-08-19T10:40",
+       "n": 5,
+       "porTipo": {
+        "massa": 3,
+        "amei": 1,
+        "explodiu": 1
+       },
+       "citacao": {
+        "texto": "O professor no Second Life podia ser um gato roxo de dois metros. Mas sabe o que permanecia? É que o gato roxo de dois metros dava aula expositiva. A tecnologia mudou o ambiente, mas nós permanecemos no método. Então não sei se foi a tecnologia que falhou.",
+        "quem": "Dra. Rutinelli da Penha Fávero",
+        "nota": "sobre os campi que universidades compraram no Second Life e hoje estão vazios"
+       },
+       "video": {
+        "id": "4-7Ckd7LNEY",
+        "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+        "nota": null,
+        "offset": 3129,
+        "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=3129s",
+        "aproximado": false,
+        "duracao": "2h03"
+       }
+      },
+      {
+       "hora": "11:06",
+       "minuto": "2026-08-19T11:06",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 2,
+        "identifico": 1
+       },
+       "citacao": {
+        "texto": "Só um modelo falou sobre a precarização do trabalho docente. Os outros não sabem? Eu acho que é porque nenhuma IA tem um corpo que trabalha. E o corpo que trabalha sabe sobre a precarização — somos nós que precisamos falar sobre isso.",
+        "quem": "Dra. Rutinelli da Penha Fávero",
+        "nota": "lendo os silêncios das cinco IAs que respondeu ao mesmo prompt"
+       },
+       "video": {
+        "id": "4-7Ckd7LNEY",
+        "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+        "nota": null,
+        "offset": 4689,
+        "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=4689s",
+        "aproximado": false,
+        "duracao": "2h03"
+       }
+      },
+      {
+       "hora": "11:08",
+       "minuto": "2026-08-19T11:08",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 2,
+        "identifico": 1
+       },
+       "citacao": {
+        "texto": "Fazer isso na EaD é o processo — o produto não adianta mais. E eu vou repetir, porque estou repetindo o luto para mim: duzentos anos da maneira como a gente avalia. Acabou. Faça o luto comigo. Acabou.",
+        "quem": "Dra. Rutinelli da Penha Fávero",
+        "nota": "concordando com Felipe Tessarolo sobre o fim de um modelo de avaliação"
+       },
+       "video": {
+        "id": "4-7Ckd7LNEY",
+        "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+        "nota": null,
+        "offset": 4809,
+        "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=4809s",
+        "aproximado": false,
+        "duracao": "2h03"
+       }
+      },
+      {
+       "hora": "11:14",
+       "minuto": "2026-08-19T11:14",
+       "n": 14,
+       "porTipo": {
+        "explodiu": 13,
+        "amei": 1
+       },
+       "citacao": {
+        "texto": "Talvez, quando a gente faz aqui as nossas previsões, a gente não esteja prevendo. Talvez a gente estivesse decidindo.",
+        "quem": "Dra. Rutinelli da Penha Fávero",
+        "nota": "última frase da fala dela"
+       },
+       "video": {
+        "id": "4-7Ckd7LNEY",
+        "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+        "nota": null,
+        "offset": 5169,
+        "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=5169s",
+        "aproximado": false,
+        "duracao": "2h03"
+       }
+      },
+      {
+       "hora": "11:47",
+       "minuto": "2026-08-19T11:47",
+       "n": 6,
+       "porTipo": {
+        "explodiu": 4,
+        "amei": 2
+       },
+       "citacao": {
+        "texto": "O futuro da EaD não começa em 2046 — ele está sendo desenhado agora: nas políticas que formulamos, nas tecnologias que escolhemos, na maneira como formamos professores. Talvez o maior desafio dos próximos 20 anos não seja tornar a EaD mais tecnológica, e sim torná-la cada vez mais educacional, mais inclusiva e mais humana.",
+        "quem": "Dra. Andromeda Goretti de Menezes Campos",
+        "nota": "encerrando a mesa-redonda"
+       },
+       "video": {
+        "id": "4-7Ckd7LNEY",
+        "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+        "nota": null,
+        "offset": 7149,
+        "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=7149s",
+        "aproximado": false,
+        "duracao": "2h03"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "09:56",
+      "10:30",
+      "10:40",
+      "11:06",
+      "11:08",
+      "11:14",
+      "11:47"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "09:48",
+       "n": 4,
+       "porTipo": {
+        "massa": 4
+       }
+      },
+      {
+       "hora": "09:49",
+       "n": 6,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 3,
+        "usar": 2
+       }
+      },
+      {
+       "hora": "09:52",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "09:58",
+       "n": 5,
+       "porTipo": {
+        "massa": 4,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "09:59",
+       "n": 13,
+       "porTipo": {
+        "massa": 6,
+        "amei": 3,
+        "identifico": 4
+       }
+      },
+      {
+       "hora": "10:00",
+       "n": 7,
+       "porTipo": {
+        "identifico": 2,
+        "massa": 4,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:01",
+       "n": 3,
+       "porTipo": {
+        "massa": 3
+       }
+      },
+      {
+       "hora": "10:02",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:03",
+       "n": 4,
+       "porTipo": {
+        "explodiu": 2,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "10:05",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:06",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:07",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:11",
+       "n": 2,
+       "porTipo": {
+        "identifico": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:12",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:13",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:15",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:17",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:19",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:22",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:23",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:24",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:27",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:29",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:30",
+       "n": 2,
+       "porTipo": {
+        "usar": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:31",
+       "n": 8,
+       "porTipo": {
+        "usar": 6,
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:32",
+       "n": 13,
+       "porTipo": {
+        "usar": 5,
+        "explodiu": 2,
+        "massa": 4,
+        "amei": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "10:33",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 4,
+        "massa": 3,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "10:35",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:38",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "10:39",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:41",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:42",
+       "n": 4,
+       "porTipo": {
+        "massa": 2,
+        "amei": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:43",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:44",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "10:47",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "10:48",
+       "n": 4,
+       "porTipo": {
+        "massa": 2,
+        "explodiu": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "10:49",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "10:52",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "10:53",
+       "n": 6,
+       "porTipo": {
+        "amei": 1,
+        "usar": 2,
+        "identifico": 3
+       }
+      },
+      {
+       "hora": "10:54",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "10:58",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:01",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "11:04",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:08",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 2,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "11:13",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 3
+       }
+      },
+      {
+       "hora": "11:14",
+       "n": 13,
+       "porTipo": {
+        "explodiu": 12,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:15",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "11:17",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "11:18",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:23",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "11:25",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:26",
+       "n": 6,
+       "porTipo": {
+        "amei": 2,
+        "massa": 3,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "11:27",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "11:28",
+       "n": 6,
+       "porTipo": {
+        "massa": 3,
+        "explodiu": 2,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "11:29",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "11:30",
+       "n": 10,
+       "porTipo": {
+        "massa": 5,
+        "explodiu": 4,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:31",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "11:33",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "11:34",
+       "n": 6,
+       "porTipo": {
+        "identifico": 2,
+        "amei": 2,
+        "explodiu": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:37",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:44",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "11:47",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "11:48",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 2,
+        "amei": 1
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "4-7Ckd7LNEY",
+      "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+      "nota": null,
+      "offset": 0,
+      "url": "https://www.youtube.com/watch?v=4-7Ckd7LNEY&t=0s",
+      "aproximado": false,
+      "duracao": "2h03"
+     },
+     "documento": {
+      "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\"",
+      "arquivo": "documentos/06-mesa-desafios-ead.pdf",
+      "externo": false,
+      "bytes": 565379
+     }
+    },
+    {
+     "id": "even3-1412352-20260819-1330",
+     "titulo": "Sessões técnicas de apresentação de artigos completos",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Apresentação dos artigos completos aprovados, organizados por eixo temático.",
+     "sala": "Auditório, Sala 1 e Sala 2",
+     "eixo": "Sessões técnicas",
+     "palestrantes": [],
+     "inicio": "2026-08-19T13:30",
+     "fim": "2026-08-19T14:30",
+     "totalReacoes": 16,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 60,
+     "horaInicio": "13:30",
+     "horaFim": "14:30",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "13:36",
+       "n": 2,
+       "porTipo": {
+        "usar": 2
+       }
+      },
+      {
+       "hora": "13:38",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "13:46",
+       "n": 3,
+       "porTipo": {
+        "usar": 3
+       }
+      },
+      {
+       "hora": "13:53",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "13:59",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:00",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "14:16",
+       "n": 2,
+       "porTipo": {
+        "usar": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:18",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:27",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "14:28",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1412354-20260819-1430",
+     "titulo": "Autoria com IA generativa: desafios para a EAD",
+     "prefixo": "Palestra",
+     "pessoa": "Dr. Mariano Pimentel",
+     "descricao": "Com o Dr. Mariano Pimentel (Unirio) — Prêmio Jabuti 2012 e autor do livro aberto \"IA Generativa e Educação\", com mais de 10 mil downloads.",
+     "sala": "Pátio (térreo)",
+     "eixo": "Palestra",
+     "palestrantes": [
+      {
+       "nome": "Mariano Pimentel",
+       "titulo": "Dr.",
+       "instituicao": "Unirio",
+       "bio": "Professor da Unirio, doutor em Informática. Prêmio Jabuti 2012 com \"Sistemas Colaborativos\". Autor de \"IA Generativa e Educação\" (SBC, +10 mil downloads). Editor-chefe da revista SBC Horizontes."
+      }
+     ],
+     "inicio": "2026-08-19T14:40",
+     "fim": "2026-08-19T16:15",
+     "totalReacoes": 299,
+     "perguntas": [
+      {
+       "hora": "15:42",
+       "texto": "Como interagir com a IA sem uma leitura prévia? Os resumos são suficientes? Ainda tenho resistência e dúvidas sobre como se dá a construção.",
+       "autor": "Danielli",
+       "votos": 4,
+       "resposta": {
+        "texto": "A dúvida é legítima, e ele começou dizendo isso: é para ter dúvida mesmo. Usar IA não garante formação nenhuma — quem entrega à máquina a tarefa de pensar por si não aprende —, mas proibir também não resolve, porque significa abrir mão de uma potência num mundo que já mudou. O resumo pronto não basta, e olhar só o produto entregue tampouco: é preciso inventar formas de tornar visível o processo. Só analisando como aquele texto foi construído é que a aprendizagem e a autoria aparecem.",
+        "quem": "Dr. Mariano Pimentel",
+        "citacao": "Se você entrega para a IA pensar por você, não tem formação.",
+        "citacaoDe": null,
+        "hora": "15:58",
+        "video": {
+         "id": "2fCU8tmmXoo",
+         "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+         "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+         "offset": 4464,
+         "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=4464s",
+         "aproximado": false,
+         "duracao": "1h35"
+        }
+       }
+      },
+      {
+       "hora": "15:45",
+       "texto": "Mesmo sendo plágio, muitos alunos já usam a IA para gerar textos. Como gerenciar isso?",
+       "autor": "Danielli",
+       "votos": 4,
+       "resposta": {
+        "texto": "A estratégia não é caçar plágio, é redesenhar as atividades para que plagiar deixe de fazer sentido: se a tarefa é facilmente terceirizável para a IA, ela vai ser terceirizada. Ele parte da identidade e do cotidiano vivido de cada estudante — quem a pessoa é, o que pensa, o que a incomoda —, porque isso não faz sentido pedir a uma máquina. Ainda assim admitiu o limite, e sem retoque: metade da turma dele continua entregando texto de ChatGPT, e fórmula para isso não existe. A saída que propõe é deslocar a avaliação — o produto certo ou bem escrito virou irrelevante; o que passa a contar é o processo de autoria com a IA.",
+        "quem": "Dr. Mariano Pimentel",
+        "citacao": "A tentativa é que eles não queiram plagiar. Que plagiar não faça sentido.",
+        "citacaoDe": null,
+        "hora": "15:59",
+        "video": {
+         "id": "2fCU8tmmXoo",
+         "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+         "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+         "offset": 4524,
+         "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=4524s",
+         "aproximado": false,
+         "duracao": "1h35"
+        }
+       }
+      },
+      {
+       "hora": "15:49",
+       "texto": "Como foi pra você o processo de aceitação da IA na educação? Foi automático ou teve uma briga interna e receio do que poderia acontecer?",
+       "autor": "Aline",
+       "votos": 5,
+       "resposta": {
+        "texto": "Não houve aceitação: a briga interna continua, e o receio do que pode acontecer também. Compreender a potência pedagógica da interlocução, da cocriação e da mediação híbrida não resolveu os problemas dentro da sala de aula dele — estar ciente de uma coisa não é saber mobilizá-la. É um desafio real, que se apresenta a ele como professor do ensino superior presencial e igualmente na EaD, no ensino médio e no fundamental.",
+        "quem": "Dr. Mariano Pimentel",
+        "citacao": "Continua uma briga interna. Continua um receio do que pode vir a acontecer. Eu não estou tranquilo.",
+        "citacaoDe": null,
+        "hora": "16:03",
+        "video": {
+         "id": "2fCU8tmmXoo",
+         "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+         "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+         "offset": 4764,
+         "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=4764s",
+         "aproximado": false,
+         "duracao": "1h35"
+        }
+       }
+      },
+      {
+       "hora": "15:59",
+       "texto": "A  Anthropic implementou uma marca d'água digital invisível e um selo de procedência nos textos…. Qual a sua análise dentro da co-criacao?",
+       "autor": "Juliana",
+       "votos": 3,
+       "resposta": {
+        "texto": "Marca d'água pode ser útil neste momento, mas não resolve o problema: há formas de burlá-la e, sobretudo, um texto inteiramente gerado por IA não é prova de que houve delegação. Ele contou o caso da imagem premiada que teve os direitos autorais negados por não se reconhecer autoria humana e, no ano seguinte, o da Adobe, que conseguiu o registro de uma imagem também toda feita por IA ao demonstrar as horas de decisões intencionais por trás dela — cada elemento pedido e reeditado de propósito. É a mesma história da fotografia, que no começo não era considerada arte porque bastava clicar; hoje já se fala em promptografia, porque o prompt carrega a intencionalidade humana. Não há garantia de ética ou de fraude analisando apenas o produto: o que precisa ficar registrado é o que se usou e como se usou.",
+        "quem": "Dr. Mariano Pimentel",
+        "citacao": "A IA não faz nada sozinha, no final das contas.",
+        "citacaoDe": null,
+        "hora": "16:08",
+        "video": {
+         "id": "2fCU8tmmXoo",
+         "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+         "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+         "offset": 5064,
+         "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=5064s",
+         "aproximado": false,
+         "duracao": "1h35"
+        }
+       }
+      },
+      {
+       "hora": "15:59",
+       "texto": "Boa tarde professor.  Você acredita que não cabe mais na sociedade moderna o uso de IA?",
+       "autor": "Sidineia",
+       "votos": 2,
+       "resposta": {
+        "texto": "Ele disse não ter entendido a pergunta e recolocou o quadro: não vivemos mais na sociedade moderna, isso já acabou, e a sociedade contemporânea está estruturada pelo digital em rede, com a camada da IA por cima. A IA não vai embora e já está em tudo — quem busca no Google lê primeiro um resumo feito por IA, quem abre um PDF recebe a oferta de um resumo, quem escreve no Gmail recebe sugestões de texto. Qualquer área com trabalho intelectual está sendo transformada: no direito há uma revolução em curso e, na computação, já se questiona se ainda faz sentido ensinar a programar do jeito que se conhecia.",
+        "quem": "Dr. Mariano Pimentel",
+        "citacao": "190 bilhões de dólares não é alguém que está fazendo uma aposta. É alguém que sabe o que vai ser o futuro — e essa empresa quer ser dona desse futuro.",
+        "citacaoDe": null,
+        "hora": "16:13",
+        "video": {
+         "id": "2fCU8tmmXoo",
+         "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+         "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+         "offset": 5364,
+         "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=5364s",
+         "aproximado": false,
+         "duracao": "1h35"
+        }
+       }
+      },
+      {
+       "hora": "16:00",
+       "texto": "Como os avaliadores  de periódicos têm olhado para essa chamada autoria Hibrida?",
+       "autor": "Elizangela",
+       "votos": 3,
+       "resposta": {
+        "texto": "Com muita desconfiança — ele chamou a pergunta de maravilhosa e respondeu que hoje ainda é tabu. Pedir a revisão de literatura à IA funciona, mas copiar e colar significa não ter lido os autores nem passado pelo processo formativo: é terceirização do pensamento, e a Capes trata isso como quebra da integridade acadêmica, com perda de bolsa e de Lattes. Daí a exigência da declaração de uso, que não se cumpre só admitindo que usou: é preciso dizer para quê, com quais tecnologias e em que momento, porque isso passa a fazer parte do método de produção de conhecimento. E ele apostou na inversão do jogo em poucos anos — a pergunta constrangedora passará a ser por que você não usou IA.",
+        "quem": "Dr. Mariano Pimentel",
+        "citacao": "Não vai ser mais aceitável você ter aberto mão desses superpoderes para escrever, para analisar dados, para revisar literatura com a IA.",
+        "citacaoDe": null,
+        "hora": "16:04",
+        "video": {
+         "id": "2fCU8tmmXoo",
+         "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+         "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+         "offset": 4824,
+         "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=4824s",
+         "aproximado": false,
+         "duracao": "1h35"
+        }
+       }
+      },
+      {
+       "hora": "16:00",
+       "texto": "Você apoia usar IA para resumir livros. Como fazer isso sem comprometer a leitura crítica e o papel do professor e do tutor na EAD?",
+       "autor": "Luzimara",
+       "votos": 3
+      },
+      {
+       "hora": "16:02",
+       "texto": "Profe, tenho buscado estudar sobre anti-produtivismo, justamente para tentar me preparar para o ócio criativo. Nenhuma esperança mesmo? 🤭",
+       "autor": "Mariana",
+       "votos": 4
+      },
+      {
+       "hora": "16:14",
+       "texto": "qual sua visao sobre ocio criativo na atualidade? cada vez mais nos forçam a ser produtivos, como lidar c essa falsa promessa de eficiência?",
+       "autor": "Leonardo",
+       "votos": 3
+      }
+     ],
+     "enquetes": [],
+     "duracaoMin": 95,
+     "horaInicio": "14:40",
+     "horaFim": "16:15",
+     "momentos": [
+      {
+       "hora": "14:50",
+       "minuto": "2026-08-19T14:50",
+       "n": 6,
+       "porTipo": {
+        "massa": 2,
+        "amei": 3,
+        "explodiu": 1
+       },
+       "citacao": {
+        "texto": "Não é que eu não consiga escrever sem a inteligência artificial. É simplesmente que eu não gosto mais do autor que eu era quando ganhei o Prêmio Jabuti. Eu acho que hoje eu escrevo muito melhor do que aquele Pimentel de muitos anos atrás.",
+        "quem": "Dr. Mariano Pimentel",
+        "nota": "explicando por que passou a se reconhecer como autor híbrido"
+       },
+       "video": {
+        "id": "2fCU8tmmXoo",
+        "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+        "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+        "offset": 384,
+        "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=384s",
+        "aproximado": false,
+        "duracao": "1h35"
+       }
+      },
+      {
+       "hora": "15:28",
+       "minuto": "2026-08-19T15:28",
+       "n": 17,
+       "porTipo": {
+        "explodiu": 5,
+        "identifico": 12
+       },
+       "citacao": {
+        "texto": "Eu vi muito aqui o lado racional da educação: a customização de caminhos mais personalizados, respostas mais rápidas para o estudante. Mas nós não escutamos sobre essa necessária convivência e o enfrentamento do diferente, do pensamento diferente do seu. A IA tende a concordar com você — não sei se isso forma boas pessoas.",
+        "quem": "Dr. Mariano Pimentel",
+        "nota": "criticando diretamente o que ouvira nas falas do próprio dia"
+       },
+       "video": {
+        "id": "2fCU8tmmXoo",
+        "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+        "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+        "offset": 2664,
+        "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=2664s",
+        "aproximado": false,
+        "duracao": "1h35"
+       }
+      },
+      {
+       "hora": "15:47",
+       "minuto": "2026-08-19T15:47",
+       "n": 10,
+       "porTipo": {
+        "amei": 3,
+        "massa": 1,
+        "explodiu": 6
+       },
+       "citacao": {
+        "texto": "Quando eu delego, eu não tenho que pensar nada: estou entregando a minha mente e a minha voz para a IA pensar e se expressar por mim. Se eu só deixo ela mexer no português, estou blindado contra a IA — e também não vou aprender nada. Não há potência formativa na delegação nem na assistência. Somente no híbrido, quando você realmente trabalha com, em parceria intelectual.",
+        "quem": "Dr. Mariano Pimentel",
+        "nota": "a taxonomia central da palestra: delegação, assistência e criação híbrida"
+       },
+       "video": {
+        "id": "2fCU8tmmXoo",
+        "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+        "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+        "offset": 3804,
+        "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=3804s",
+        "aproximado": false,
+        "duracao": "1h35"
+       }
+      },
+      {
+       "hora": "15:54",
+       "minuto": "2026-08-19T15:54",
+       "n": 11,
+       "porTipo": {
+        "explodiu": 2,
+        "massa": 5,
+        "amei": 4
+       },
+       "citacao": {
+        "texto": "Não adianta tentar detectar a IA, é muito problemático. O que a gente tem que aprender a fazer é que a IA deixe de ser um problema na nossa aula. Eu sempre começo a minha atividade dizendo: usando a IA, faça tal coisa. Aí eu tenho que reler a minha atividade — o que então eu posso pedir a esse estudante, usando a IA, que ainda faça sentido para a formação dele?",
+        "quem": "Dr. Mariano Pimentel",
+        "nota": "sobre reinventar a docência sem abrir mão do professor"
+       },
+       "video": {
+        "id": "2fCU8tmmXoo",
+        "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+        "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+        "offset": 4224,
+        "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=4224s",
+        "aproximado": false,
+        "duracao": "1h35"
+       }
+      },
+      {
+       "hora": "15:59",
+       "minuto": "2026-08-19T15:59",
+       "n": 38,
+       "porTipo": {
+        "explodiu": 16,
+        "amei": 10,
+        "massa": 12
+       },
+       "citacao": {
+        "texto": "Não adianta proibir, porque abrir mão de uma potência… o mundo mudou, não adianta mais a gente querer viver num mundo que não existe. Olhar o produto não é suficiente: a gente precisa inventar formas de tornar visível o processo. Só analisando o processo de construção daquele produto é que a gente torna a aprendizagem e a autoria visíveis.",
+        "quem": "Dr. Mariano Pimentel",
+        "nota": "respondendo à pergunta mais votada no app"
+       },
+       "video": {
+        "id": "2fCU8tmmXoo",
+        "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+        "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+        "offset": 4524,
+        "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=4524s",
+        "aproximado": false,
+        "duracao": "1h35"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "14:50",
+      "15:28",
+      "15:47",
+      "15:54",
+      "15:59"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "14:45",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:46",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "14:47",
+       "n": 2,
+       "porTipo": {
+        "identifico": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "14:48",
+       "n": 2,
+       "porTipo": {
+        "identifico": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "14:49",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "14:50",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:51",
+       "n": 4,
+       "porTipo": {
+        "amei": 3,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "14:52",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:53",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "14:54",
+       "n": 4,
+       "porTipo": {
+        "massa": 1,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "14:55",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "14:56",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "14:58",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "14:59",
+       "n": 7,
+       "porTipo": {
+        "massa": 5,
+        "amei": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:02",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:04",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "15:06",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:07",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "15:09",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:10",
+       "n": 4,
+       "porTipo": {
+        "usar": 3,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:11",
+       "n": 8,
+       "porTipo": {
+        "usar": 3,
+        "massa": 2,
+        "identifico": 1,
+        "explodiu": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:13",
+       "n": 7,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 5,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:14",
+       "n": 4,
+       "porTipo": {
+        "explodiu": 3,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:15",
+       "n": 5,
+       "porTipo": {
+        "amei": 3,
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:16",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "15:17",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:18",
+       "n": 2,
+       "porTipo": {
+        "amei": 2
+       }
+      },
+      {
+       "hora": "15:22",
+       "n": 3,
+       "porTipo": {
+        "massa": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:24",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:27",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:28",
+       "n": 7,
+       "porTipo": {
+        "explodiu": 5,
+        "identifico": 2
+       }
+      },
+      {
+       "hora": "15:29",
+       "n": 9,
+       "porTipo": {
+        "identifico": 9
+       }
+      },
+      {
+       "hora": "15:30",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "15:32",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:34",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "usar": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:38",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:39",
+       "n": 11,
+       "porTipo": {
+        "explodiu": 4,
+        "amei": 4,
+        "identifico": 1,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "15:40",
+       "n": 5,
+       "porTipo": {
+        "massa": 2,
+        "amei": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:41",
+       "n": 4,
+       "porTipo": {
+        "massa": 2,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "15:43",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:44",
+       "n": 4,
+       "porTipo": {
+        "amei": 1,
+        "explodiu": 2,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "15:45",
+       "n": 8,
+       "porTipo": {
+        "massa": 2,
+        "explodiu": 5,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "15:46",
+       "n": 11,
+       "porTipo": {
+        "amei": 5,
+        "massa": 5,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "15:47",
+       "n": 5,
+       "porTipo": {
+        "amei": 3,
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "15:49",
+       "n": 5,
+       "porTipo": {
+        "explodiu": 5
+       }
+      },
+      {
+       "hora": "15:50",
+       "n": 5,
+       "porTipo": {
+        "explodiu": 5
+       }
+      },
+      {
+       "hora": "15:54",
+       "n": 3,
+       "porTipo": {
+        "explodiu": 2,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:55",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:56",
+       "n": 7,
+       "porTipo": {
+        "massa": 3,
+        "amei": 4
+       }
+      },
+      {
+       "hora": "15:57",
+       "n": 7,
+       "porTipo": {
+        "massa": 4,
+        "amei": 3
+       }
+      },
+      {
+       "hora": "15:58",
+       "n": 12,
+       "porTipo": {
+        "massa": 3,
+        "amei": 3,
+        "usar": 2,
+        "explodiu": 3,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "15:59",
+       "n": 26,
+       "porTipo": {
+        "explodiu": 11,
+        "amei": 8,
+        "massa": 7
+       }
+      },
+      {
+       "hora": "16:00",
+       "n": 7,
+       "porTipo": {
+        "massa": 2,
+        "explodiu": 4,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:01",
+       "n": 5,
+       "porTipo": {
+        "massa": 3,
+        "explodiu": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:02",
+       "n": 3,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "16:03",
+       "n": 5,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 3,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:04",
+       "n": 14,
+       "porTipo": {
+        "massa": 2,
+        "explodiu": 4,
+        "amei": 2,
+        "identifico": 4,
+        "usar": 2
+       }
+      },
+      {
+       "hora": "16:05",
+       "n": 8,
+       "porTipo": {
+        "explodiu": 5,
+        "amei": 1,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "16:06",
+       "n": 3,
+       "porTipo": {
+        "amei": 1,
+        "massa": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "16:09",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "16:10",
+       "n": 3,
+       "porTipo": {
+        "amei": 3
+       }
+      },
+      {
+       "hora": "16:11",
+       "n": 11,
+       "porTipo": {
+        "amei": 5,
+        "massa": 5,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "16:12",
+       "n": 14,
+       "porTipo": {
+        "amei": 4,
+        "explodiu": 5,
+        "massa": 4,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "16:13",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:14",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "16:16",
+       "n": 6,
+       "porTipo": {
+        "massa": 1,
+        "usar": 4,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:17",
+       "n": 2,
+       "porTipo": {
+        "usar": 2
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "2fCU8tmmXoo",
+      "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+      "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\").",
+      "offset": 0,
+      "url": "https://www.youtube.com/watch?v=2fCU8tmmXoo&t=0s",
+      "aproximado": false,
+      "duracao": "1h35"
+     },
+     "documento": {
+      "titulo": "Palestra \"Autoria com IA generativa\" — Dr. Mariano Pimentel",
+      "arquivo": "documentos/07-palestra-mariano-pimentel.pdf",
+      "externo": false,
+      "bytes": 754396
+     }
+    },
+    {
+     "id": "even3-1492265-20260819-1630",
+     "titulo": "Inovações da IA para a Educação",
+     "prefixo": "Palestra",
+     "pessoa": "Dr. Mauro Oliveira",
+     "descricao": "Com o Dr. Mauro Oliveira, professor do IFCE e do doutorado da Fiocruz, doutor pela Sorbonne. Para ele, a IA generativa é ruptura, não evolução — e a educação precisa responder à altura.",
+     "sala": "Pátio (térreo)",
+     "eixo": "Palestra",
+     "palestrantes": [
+      {
+       "nome": "Mauro Oliveira",
+       "titulo": "Dr.",
+       "instituicao": "IFCE / Fiocruz",
+       "bio": "Professor do IFCE e do doutorado da Fiocruz. Doutor em Informática (Sorbonne), com pós-doutorados em Telecomunicações (King's College London e Ottawa). Foi Secretário de Telecomunicações do Ministério das Comunicações."
+      }
+     ],
+     "inicio": "2026-08-19T17:30",
+     "fim": "2026-08-19T18:40",
+     "totalReacoes": 42,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 70,
+     "horaInicio": "17:30",
+     "horaFim": "18:40",
+     "momentos": [
+      {
+       "hora": "17:39",
+       "minuto": "2026-08-19T17:39",
+       "n": 9,
+       "porTipo": {
+        "usar": 3,
+        "massa": 4,
+        "amei": 1,
+        "explodiu": 1
+       },
+       "citacao": {
+        "texto": "Olha só por que aqui não é uma evolução, é uma disrupção. Meu pai dizia: meu filho, estude, porque quem tem conhecimento está com tudo garantido. Essa frase, que é bonita, agora tem uma vírgula — porque agora tem uma rapadura eletrônica que também tem conhecimento.",
+        "quem": "Dr. Mauro Oliveira",
+        "nota": "rapadura eletrônica é como se chama o celular no Ceará"
+       },
+       "video": {
+        "id": "J8k-35kT6ac",
+        "titulo": "Palestra \"Inovações da IA para a Educação\" — Dr. Mauro Oliveira",
+        "nota": null,
+        "offset": 1824,
+        "url": "https://www.youtube.com/watch?v=J8k-35kT6ac&t=1824s",
+        "aproximado": false,
+        "duracao": "1h47"
+       }
+      },
+      {
+       "hora": "18:00",
+       "minuto": "2026-08-19T18:00",
+       "n": 0,
+       "porTipo": {},
+       "citacao": {
+        "texto": "Não há, a preço de hoje, energia para alimentar a demanda de IA das big techs. Não há como. E se não tem mais volta — porque somos todos viciados — e o modelo capitalista não perdoa, o que vai acontecer? A nossa qualidade de vida vai ficar cada vez mais comprometida para alimentar um sistema que a gente não quer que pare.",
+        "quem": "Dr. Mauro Oliveira",
+        "nota": "sobre a chegada dos data centers de IA ao Brasil"
+       },
+       "video": {
+        "id": "J8k-35kT6ac",
+        "titulo": "Palestra \"Inovações da IA para a Educação\" — Dr. Mauro Oliveira",
+        "nota": null,
+        "offset": 3084,
+        "url": "https://www.youtube.com/watch?v=J8k-35kT6ac&t=3084s",
+        "aproximado": false,
+        "duracao": "1h47"
+       }
+      },
+      {
+       "hora": "18:08",
+       "minuto": "2026-08-19T18:08",
+       "n": 0,
+       "porTipo": {},
+       "citacao": {
+        "texto": "Tem um estudo de Harvard… na verdade não é de Harvard, mas quando eu digo que é de Harvard faz maior sucesso — na verdade é da Universidade de Itapipoca. Ele diz que os engenheiros formados com a régua de cálculo foram mais criativos e mais assertivos do que os formados com a calculadora, porque a régua obrigava o cara a um nível de raciocínio. Hoje nós temos a terceirização do raciocínio.",
+        "quem": "Dr. Mauro Oliveira",
+        "nota": "de régua de cálculo na mão, no palco"
+       },
+       "video": {
+        "id": "J8k-35kT6ac",
+        "titulo": "Palestra \"Inovações da IA para a Educação\" — Dr. Mauro Oliveira",
+        "nota": null,
+        "offset": 3564,
+        "url": "https://www.youtube.com/watch?v=J8k-35kT6ac&t=3564s",
+        "aproximado": false,
+        "duracao": "1h47"
+       }
+      },
+      {
+       "hora": "18:35",
+       "minuto": "2026-08-19T18:35",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "explodiu": 1
+       },
+       "citacao": {
+        "texto": "O maior arrependimento que eu tenho como diretor… nós tínhamos 6 mil alunos na época. Meu maior arrependimento foi não ter comprado 6 mil violões. Eu ia preso — mas eu era um prisioneiro feliz.",
+        "quem": "Dr. Mauro Oliveira",
+        "nota": "ele encerraria a palestra tocando pandeiro e cantando com a plateia"
+       },
+       "video": {
+        "id": "J8k-35kT6ac",
+        "titulo": "Palestra \"Inovações da IA para a Educação\" — Dr. Mauro Oliveira",
+        "nota": null,
+        "offset": 5184,
+        "url": "https://www.youtube.com/watch?v=J8k-35kT6ac&t=5184s",
+        "aproximado": false,
+        "duracao": "1h47"
+       }
+      }
+     ],
+     "minutosCitados": [
+      "17:39",
+      "18:00",
+      "18:08",
+      "18:35"
+     ],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "17:21",
+       "n": 4,
+       "porTipo": {
+        "massa": 2,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "17:32",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "17:33",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "17:34",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "17:35",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "17:36",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "17:38",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "17:39",
+       "n": 7,
+       "porTipo": {
+        "usar": 3,
+        "massa": 3,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "17:40",
+       "n": 2,
+       "porTipo": {
+        "explodiu": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "17:45",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "17:50",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "17:54",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "17:55",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "18:11",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "18:15",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "18:16",
+       "n": 9,
+       "porTipo": {
+        "massa": 3,
+        "explodiu": 4,
+        "amei": 2
+       }
+      },
+      {
+       "hora": "18:19",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "18:24",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "18:36",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "18:37",
+       "n": 1,
+       "porTipo": {
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "18:39",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      }
+     ],
+     "temFalaGravada": true,
+     "video": {
+      "id": "J8k-35kT6ac",
+      "titulo": "Palestra \"Inovações da IA para a Educação\" — Dr. Mauro Oliveira",
+      "nota": null,
+      "offset": 1284,
+      "url": "https://www.youtube.com/watch?v=J8k-35kT6ac&t=1284s",
+      "aproximado": false,
+      "duracao": "1h47"
+     },
+     "documento": {
+      "titulo": "Palestra \"Inovações da IA para a Educação\" — Dr. Mauro Oliveira",
+      "arquivo": "documentos/08-palestra-mauro-oliveira.pdf",
+      "externo": false,
+      "bytes": 637120
+     }
+    }
+   ],
+   "reacoes": 593,
+   "perguntas": 22,
+   "fotos": 0,
+   "destaque": {
+    "titulo": "Autoria com IA generativa: desafios para a EAD",
+    "reacoes": 299
+   }
+  },
+  {
+   "data": "2026-08-20",
+   "ordem": 4,
+   "diaSemana": "quinta-feira",
+   "extenso": "20 de agosto",
+   "numero": "20",
+   "sessoes": [
+    {
+     "id": "even3-1412357-20260820-0900",
+     "titulo": "Momento I - Eventos paralelos",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Atividades com inscrição própria e vagas limitadas: • IA além do chat: da célula ao organismo baseado em IA (Lab. de Informática, 4º andar) • \"Ciência delas\" no contexto do Projeto Rio Doce Escolar (Auditório, 4º andar) • Escola de Inovação: 6º ano de popularização de novas tecnologias digitais (Sala 2, 1º andar) • Workshop Pros@tec: Desafios da Educação em Computação e da Informática na Educação (Sala 1, 1º andar). \n\nConfira mais informações: https://concefor.cefor.ifes.edu.br/eventos-paralelos/",
+     "sala": "Locais variados",
+     "eixo": "Evento paralelo",
+     "palestrantes": [],
+     "inicio": "2026-08-20T09:00",
+     "fim": "2026-08-20T12:00",
+     "totalReacoes": 27,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 180,
+     "horaInicio": "09:00",
+     "horaFim": "12:00",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "09:54",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "09:55",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "09:56",
+       "n": 5,
+       "porTipo": {
+        "identifico": 2,
+        "amei": 1,
+        "usar": 2
+       }
+      },
+      {
+       "hora": "09:57",
+       "n": 9,
+       "porTipo": {
+        "amei": 3,
+        "identifico": 1,
+        "usar": 3,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "09:58",
+       "n": 2,
+       "porTipo": {
+        "usar": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:06",
+       "n": 2,
+       "porTipo": {
+        "usar": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:08",
+       "n": 2,
+       "porTipo": {
+        "usar": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "10:28",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "10:57",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "11:17",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "11:20",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "11:22",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    },
+    {
+     "id": "even3-1412364-20260820-1330",
+     "titulo": "Momento II - Eventos paralelos",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Atividades com inscrição própria e vagas limitadas: • IA além do chat: da célula ao organismo baseado em IA (Lab. de Informática, 4º andar) • Entre Dois Mundos: uma aventura para aprender IA (Sala 4, 2º andar) • Escola de Inovação: 6º ano de popularização de novas tecnologias digitais (Sala 2, 1º andar) • Workshop Pros@tec: Desafios da Educação em Computação e da Informática na Educação (Sala 1, 1º andar) • EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas (Pátio, térreo).\n\nConfira mais informações: https://concefor.cefor.ifes.edu.br/eventos-paralelos/",
+     "sala": "Locais variados",
+     "eixo": "Evento paralelo",
+     "palestrantes": [],
+     "inicio": "2026-08-20T13:30",
+     "fim": "2026-08-20T16:15",
+     "totalReacoes": 69,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 165,
+     "horaInicio": "13:30",
+     "horaFim": "16:15",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "13:55",
+       "n": 8,
+       "porTipo": {
+        "usar": 3,
+        "massa": 2,
+        "amei": 2,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "13:56",
+       "n": 3,
+       "porTipo": {
+        "usar": 3
+       }
+      },
+      {
+       "hora": "13:57",
+       "n": 2,
+       "porTipo": {
+        "usar": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "13:58",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:07",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      },
+      {
+       "hora": "14:19",
+       "n": 11,
+       "porTipo": {
+        "explodiu": 5,
+        "massa": 2,
+        "amei": 1,
+        "identifico": 1,
+        "usar": 2
+       }
+      },
+      {
+       "hora": "14:20",
+       "n": 8,
+       "porTipo": {
+        "amei": 2,
+        "identifico": 3,
+        "explodiu": 2,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "14:21",
+       "n": 7,
+       "porTipo": {
+        "amei": 2,
+        "massa": 2,
+        "identifico": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "14:22",
+       "n": 8,
+       "porTipo": {
+        "explodiu": 2,
+        "identifico": 2,
+        "amei": 2,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "14:23",
+       "n": 6,
+       "porTipo": {
+        "identifico": 1,
+        "usar": 2,
+        "amei": 1,
+        "massa": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "14:43",
+       "n": 1,
+       "porTipo": {
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "14:45",
+       "n": 2,
+       "porTipo": {
+        "massa": 2
+       }
+      },
+      {
+       "hora": "14:48",
+       "n": 7,
+       "porTipo": {
+        "amei": 2,
+        "usar": 2,
+        "identifico": 1,
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "15:10",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:14",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:16",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "15:29",
+       "n": 1,
+       "porTipo": {
+        "amei": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": {
+      "id": "A-XIVDMUU7w",
+      "titulo": "EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas",
+      "nota": "Uma das atividades do Momento II de eventos paralelos, no pátio.",
+      "offset": 0,
+      "url": "https://www.youtube.com/watch?v=A-XIVDMUU7w&t=0s",
+      "aproximado": false,
+      "duracao": "3h24"
+     },
+     "documento": null
+    },
+    {
+     "id": "even3-1412365-20260820-1600",
+     "titulo": "Premiação dos Melhores Trabalhos do VIII Concefor",
+     "prefixo": null,
+     "pessoa": null,
+     "descricao": "Anúncio e premiação dos melhores trabalhos do VIII Concefor, seguidos do encerramento com coffee-break e momento cultural.",
+     "sala": "Pátio (térreo)",
+     "eixo": "Solenidade",
+     "palestrantes": [],
+     "inicio": "2026-08-20T16:15",
+     "fim": "2026-08-20T17:15",
+     "totalReacoes": 154,
+     "perguntas": [],
+     "enquetes": [],
+     "duracaoMin": 60,
+     "horaInicio": "16:15",
+     "horaFim": "17:15",
+     "momentos": [],
+     "minutosCitados": [],
+     "fotos": [],
+     "serie": [
+      {
+       "hora": "16:16",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:17",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "explodiu": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "16:18",
+       "n": 6,
+       "porTipo": {
+        "amei": 2,
+        "identifico": 2,
+        "explodiu": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "16:19",
+       "n": 8,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1,
+        "identifico": 2,
+        "usar": 2,
+        "explodiu": 2
+       }
+      },
+      {
+       "hora": "16:20",
+       "n": 9,
+       "porTipo": {
+        "amei": 2,
+        "massa": 4,
+        "identifico": 1,
+        "usar": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "16:21",
+       "n": 18,
+       "porTipo": {
+        "amei": 4,
+        "usar": 4,
+        "identifico": 4,
+        "explodiu": 3,
+        "massa": 3
+       }
+      },
+      {
+       "hora": "16:22",
+       "n": 10,
+       "porTipo": {
+        "explodiu": 3,
+        "amei": 2,
+        "identifico": 2,
+        "usar": 2,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:23",
+       "n": 5,
+       "porTipo": {
+        "explodiu": 2,
+        "usar": 1,
+        "identifico": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:24",
+       "n": 5,
+       "porTipo": {
+        "usar": 1,
+        "identifico": 1,
+        "amei": 1,
+        "massa": 2
+       }
+      },
+      {
+       "hora": "16:25",
+       "n": 2,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:26",
+       "n": 7,
+       "porTipo": {
+        "identifico": 2,
+        "usar": 2,
+        "explodiu": 2,
+        "amei": 1
+       }
+      },
+      {
+       "hora": "16:27",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:29",
+       "n": 5,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1,
+        "identifico": 1,
+        "usar": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "16:30",
+       "n": 5,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1,
+        "identifico": 1,
+        "usar": 1,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "16:44",
+       "n": 3,
+       "porTipo": {
+        "massa": 1,
+        "amei": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "16:45",
+       "n": 10,
+       "porTipo": {
+        "usar": 2,
+        "explodiu": 2,
+        "massa": 2,
+        "amei": 2,
+        "identifico": 2
+       }
+      },
+      {
+       "hora": "16:46",
+       "n": 9,
+       "porTipo": {
+        "usar": 2,
+        "explodiu": 2,
+        "identifico": 1,
+        "amei": 1,
+        "massa": 3
+       }
+      },
+      {
+       "hora": "16:47",
+       "n": 8,
+       "porTipo": {
+        "massa": 1,
+        "amei": 3,
+        "identifico": 3,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "16:48",
+       "n": 10,
+       "porTipo": {
+        "explodiu": 4,
+        "usar": 3,
+        "amei": 1,
+        "identifico": 1,
+        "massa": 1
+       }
+      },
+      {
+       "hora": "16:49",
+       "n": 7,
+       "porTipo": {
+        "massa": 2,
+        "amei": 2,
+        "identifico": 2,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "16:50",
+       "n": 9,
+       "porTipo": {
+        "explodiu": 4,
+        "usar": 2,
+        "massa": 1,
+        "amei": 1,
+        "identifico": 1
+       }
+      },
+      {
+       "hora": "16:51",
+       "n": 8,
+       "porTipo": {
+        "massa": 1,
+        "usar": 2,
+        "amei": 2,
+        "identifico": 2,
+        "explodiu": 1
+       }
+      },
+      {
+       "hora": "16:52",
+       "n": 1,
+       "porTipo": {
+        "massa": 1
+       }
+      },
+      {
+       "hora": "17:07",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      },
+      {
+       "hora": "17:08",
+       "n": 2,
+       "porTipo": {
+        "amei": 1,
+        "usar": 1
+       }
+      },
+      {
+       "hora": "17:09",
+       "n": 1,
+       "porTipo": {
+        "usar": 1
+       }
+      }
+     ],
+     "temFalaGravada": false,
+     "video": null,
+     "documento": null
+    }
+   ],
+   "reacoes": 250,
+   "perguntas": 0,
+   "fotos": 0,
+   "destaque": {
+    "titulo": "Premiação dos Melhores Trabalhos do VIII Concefor",
+    "reacoes": 154
+   }
+  }
+ ],
+ "procedencia": {
+  "banco": "linha do tempo do app (timeline_events), cópia de 25/08/2026",
+  "transcricoes": {
+   "arquivos": 10,
+   "linhas": 8404,
+   "cobertura": {
+    "de": "2026-08-17T18:06",
+    "ate": "2026-08-19T18:50"
+   }
+  },
+  "citacoesAprovadas": 49,
+  "fotos": {
+   "total": 0,
+   "semDono": 0,
+   "pastaExiste": false
+  },
+  "videos": {
+   "total": 7,
+   "sessoesComVideo": 10,
+   "playlist": "https://www.youtube.com/playlist?list=PLHKM4BxClqXU"
+  },
+  "documentos": {
+   "total": 8,
+   "sessoesComDocumento": 10
+  }
+ }
+}

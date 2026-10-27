@@ -1,0 +1,155 @@
+{
+  "_dia": "19/08/2026",
+  "_leia": "Curadoria editorial do terceiro dia do VIII Concefor, para a retrospectiva pública. Cada citação foi lida no bruto, conferida contra a relatoria, pontuada e cortada à mão. Fontes: documentos/html/06, 07 e 08 (relatorias) + 09, 10 e 11 .completo.timestamped.txt (transcrições cruas).",
+  "_estado": "PRIMEIRA CURADORIA, feita pela máquina e ainda não conferida por quem estava na sala. Campo `conferir` marca o que precisa de olho humano. Para tirar uma citação da página, ponha \"aprovada\": false.",
+  "_cuidado": "Neste dia o transcritor trocou IA por EaD de forma sistemática (sobretudo em Mariano e Mauro). As correções estão marcadas em `conferir`. Já publicada e NÃO repetida aqui: 15:59 do Dr. Mariano Pimentel sobre tornar visível o processo.",
+
+  "citacoes": [
+    {
+      "sessaoId": "even3-1412350-20260819-0930",
+      "hora": "09:56",
+      "texto": "Vocês entendem que os próximos 20 anos são 2046? É tentador pensar em ferramentas, em tecnologias — mas isso não é o mais importante. O desafio da EaD não é incorporar a inteligência artificial: isso a gente tira de letra. É decidir que educação nós queremos oferecer, para quem, com que qualidade, com que inclusão — e qual o papel dos professores e dos estudantes nesse processo.",
+      "quem": "Dra. Andromeda Goretti de Menezes Campos",
+      "nota": "abrindo a mesa-redonda, na mediação",
+      "porQueEssa": "É a provocação que tira o debate das ferramentas e o joga na pergunta política — e funciona sozinha como abertura de qualquer retrospectiva sobre 2046.",
+      "conferir": "junta duas falas contíguas da mesma pessoa: a provocação sobre 2046 (09h56) e o desdobramento (09h57).",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412350-20260819-0930",
+      "hora": "10:30",
+      "texto": "Antes a gente tinha o desafio de oferecer educação para todos. Agora a gente tem a possibilidade de criar experiências para cada um. Mas, se a aprendizagem vai se tornar cada vez mais individual, o que a gente vai fazer para manter a educação coletiva — sem isolar ainda mais o indivíduo?",
+      "quem": "Dr. Felipe Maciel Tessarolo",
+      "nota": "encerrando a fala sobre personalização em escala",
+      "porQueEssa": "Resume a virada de raciocínio dele em duas frases: a EaD resolveu o \"para todos\" e agora precisa defender o \"em comum\". Pergunta aberta, não sentença.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412350-20260819-0930",
+      "hora": "10:40",
+      "texto": "O professor no Second Life podia ser um gato roxo de dois metros. Mas sabe o que permanecia? É que o gato roxo de dois metros dava aula expositiva. A tecnologia mudou o ambiente, mas nós permanecemos no método. Então não sei se foi a tecnologia que falhou.",
+      "quem": "Dra. Rutinelli da Penha Fávero",
+      "nota": "sobre os campi que universidades compraram no Second Life e hoje estão vazios",
+      "porQueEssa": "A imagem mais memorável do dia, e a que mais viaja: humor que carrega um argumento inteiro sobre por que promessa tecnológica não vira mudança pedagógica.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412350-20260819-0930",
+      "hora": "11:06",
+      "texto": "Só um modelo falou sobre a precarização do trabalho docente. Os outros não sabem? Eu acho que é porque nenhuma IA tem um corpo que trabalha. E o corpo que trabalha sabe sobre a precarização — somos nós que precisamos falar sobre isso.",
+      "quem": "Dra. Rutinelli da Penha Fávero",
+      "nota": "lendo os silêncios das cinco IAs que respondeu ao mesmo prompt",
+      "porQueEssa": "O melhor achado do experimento das cinco IAs: não o que elas disseram, o que elas não têm como saber. \"Nenhuma IA tem um corpo que trabalha\" se sustenta sozinha.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412350-20260819-0930",
+      "hora": "11:08",
+      "texto": "Fazer isso na EaD é o processo — o produto não adianta mais. E eu vou repetir, porque estou repetindo o luto para mim: duzentos anos da maneira como a gente avalia. Acabou. Faça o luto comigo. Acabou.",
+      "quem": "Dra. Rutinelli da Penha Fávero",
+      "nota": "concordando com Felipe Tessarolo sobre o fim de um modelo de avaliação",
+      "porQueEssa": "É o consenso da mesa dito no registro mais forte possível — luto, não diagnóstico. O número (200 anos) dá escala e a repetição de \"acabou\" dá o tom.",
+      "conferir": "junta 11h08 (processo/produto) e 11h09 (os duzentos anos), falas contíguas. No bruto o número aparece como resposta a Felipe, que havia falado em cem anos.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412350-20260819-0930",
+      "hora": "11:14",
+      "texto": "Talvez, quando a gente faz aqui as nossas previsões, a gente não esteja prevendo. Talvez a gente estivesse decidindo.",
+      "quem": "Dra. Rutinelli da Penha Fávero",
+      "nota": "última frase da fala dela",
+      "porQueEssa": "A frase que reorganiza o tema inteiro do evento: 20 anos não é profecia, é escolha. Curta, autossuficiente, e é a tese que a mesa passa adiante.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412350-20260819-0930",
+      "hora": "11:47",
+      "texto": "O futuro da EaD não começa em 2046 — ele está sendo desenhado agora: nas políticas que formulamos, nas tecnologias que escolhemos, na maneira como formamos professores. Talvez o maior desafio dos próximos 20 anos não seja tornar a EaD mais tecnológica, e sim torná-la cada vez mais educacional, mais inclusiva e mais humana.",
+      "quem": "Dra. Andromeda Goretti de Menezes Campos",
+      "nota": "encerrando a mesa-redonda",
+      "porQueEssa": "O fecho que amarra a manhã e devolve a pergunta ao leitor. Fecha o arco aberto na provocação das 09h56.",
+      "conferir": "a segunda metade foi dita às 11h48; falas contíguas do mesmo encerramento.",
+      "aprovada": "rascunho"
+    },
+
+    {
+      "sessaoId": "even3-1412354-20260819-1430",
+      "hora": "14:50",
+      "texto": "Não é que eu não consiga escrever sem a inteligência artificial. É simplesmente que eu não gosto mais do autor que eu era quando ganhei o Prêmio Jabuti. Eu acho que hoje eu escrevo muito melhor do que aquele Pimentel de muitos anos atrás.",
+      "quem": "Dr. Mariano Pimentel",
+      "nota": "explicando por que passou a se reconhecer como autor híbrido",
+      "porQueEssa": "Um ganhador do Jabuti dizendo que não gosta mais do autor que era — é a tese da autoria híbrida provada no próprio corpo, sem teoria nenhuma no caminho.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412354-20260819-1430",
+      "hora": "15:28",
+      "texto": "Eu vi muito aqui o lado racional da educação: a customização de caminhos mais personalizados, respostas mais rápidas para o estudante. Mas nós não escutamos sobre essa necessária convivência e o enfrentamento do diferente, do pensamento diferente do seu. A IA tende a concordar com você — não sei se isso forma boas pessoas.",
+      "quem": "Dr. Mariano Pimentel",
+      "nota": "criticando diretamente o que ouvira nas falas do próprio dia",
+      "porQueEssa": "A provocação que mudou o rumo do debate: ele vira o dia contra si mesmo. E \"a IA tende a concordar com você\" é a frase mais citável da palestra.",
+      "conferir": "a transcrição registrou \"A EaD tende a concordar com você\" — troca sistemática de IA por EaD neste dia. O sentido exige IA; conferir contra a gravação.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412354-20260819-1430",
+      "hora": "15:47",
+      "texto": "Quando eu delego, eu não tenho que pensar nada: estou entregando a minha mente e a minha voz para a IA pensar e se expressar por mim. Se eu só deixo ela mexer no português, estou blindado contra a IA — e também não vou aprender nada. Não há potência formativa na delegação nem na assistência. Somente no híbrido, quando você realmente trabalha com, em parceria intelectual.",
+      "quem": "Dr. Mariano Pimentel",
+      "nota": "a taxonomia central da palestra: delegação, assistência e criação híbrida",
+      "porQueEssa": "É a tese da autoria híbrida inteira em quatro frases, e o único trecho que explica por que \"usar IA\" não é uma coisa só. Sustenta-se sem o slide.",
+      "conferir": "no bruto o transcritor grafou \"Ea\" onde ele disse IA, ao longo de todo o trecho.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412354-20260819-1430",
+      "hora": "15:54",
+      "texto": "Não adianta tentar detectar a IA, é muito problemático. O que a gente tem que aprender a fazer é que a IA deixe de ser um problema na nossa aula. Eu sempre começo a minha atividade dizendo: usando a IA, faça tal coisa. Aí eu tenho que reler a minha atividade — o que então eu posso pedir a esse estudante, usando a IA, que ainda faça sentido para a formação dele?",
+      "quem": "Dr. Mariano Pimentel",
+      "nota": "sobre reinventar a docência sem abrir mão do professor",
+      "porQueEssa": "É o que muda na prática quando o processo vira o objeto da avaliação: a rendição vira método. A pergunta final é acionável para qualquer professor que ler.",
+      "conferir": "distinta da citação já publicada (15h59): aqui ele fala do redesenho da atividade, não da visibilidade do processo.",
+      "aprovada": "rascunho"
+    },
+
+    {
+      "sessaoId": "even3-1492265-20260819-1630",
+      "hora": "17:39",
+      "texto": "Olha só por que aqui não é uma evolução, é uma disrupção. Meu pai dizia: meu filho, estude, porque quem tem conhecimento está com tudo garantido. Essa frase, que é bonita, agora tem uma vírgula — porque agora tem uma rapadura eletrônica que também tem conhecimento.",
+      "quem": "Dr. Mauro Oliveira",
+      "nota": "rapadura eletrônica é como se chama o celular no Ceará",
+      "porQueEssa": "A tese da disrupção aterrissada numa frase de pai. Ele repetiu três vezes para não ser mal entendido — e é o momento em que a plateia entendeu o tamanho do assunto.",
+      "conferir": "junta 17h39 (a tese da disrupção) e 17h40 (a frase do pai), falas contíguas. Logo depois ele ressalva: não é que o conhecimento deixou de importar, é que as garantias mudaram.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1492265-20260819-1630",
+      "hora": "18:00",
+      "texto": "Não há, a preço de hoje, energia para alimentar a demanda de IA das big techs. Não há como. E se não tem mais volta — porque somos todos viciados — e o modelo capitalista não perdoa, o que vai acontecer? A nossa qualidade de vida vai ficar cada vez mais comprometida para alimentar um sistema que a gente não quer que pare.",
+      "quem": "Dr. Mauro Oliveira",
+      "nota": "sobre a chegada dos data centers de IA ao Brasil",
+      "porQueEssa": "O alerta menos esperado numa palestra de educação, e o único trecho do dia sobre energia e soberania. Fecha o raciocínio sem sair para o pânico.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1492265-20260819-1630",
+      "hora": "18:08",
+      "texto": "Tem um estudo de Harvard… na verdade não é de Harvard, mas quando eu digo que é de Harvard faz maior sucesso — na verdade é da Universidade de Itapipoca. Ele diz que os engenheiros formados com a régua de cálculo foram mais criativos e mais assertivos do que os formados com a calculadora, porque a régua obrigava o cara a um nível de raciocínio. Hoje nós temos a terceirização do raciocínio.",
+      "quem": "Dr. Mauro Oliveira",
+      "nota": "de régua de cálculo na mão, no palco",
+      "porQueEssa": "Humor que funciona e crítica que fica: ele demole a própria fonte na frente da plateia e mesmo assim entrega o argumento. É a melhor imagem do dia para \"terceirização do raciocínio\".",
+      "conferir": "A AUTODEMOLIÇÃO PRECISA FICAR NA CITAÇÃO. Sem ela, a página propaga um \"estudo de Harvard\" que não existe. Não cortar o trecho da Universidade de Itapipoca.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1492265-20260819-1630",
+      "hora": "18:35",
+      "texto": "O maior arrependimento que eu tenho como diretor… nós tínhamos 6 mil alunos na época. Meu maior arrependimento foi não ter comprado 6 mil violões. Eu ia preso — mas eu era um prisioneiro feliz.",
+      "quem": "Dr. Mauro Oliveira",
+      "nota": "ele encerraria a palestra tocando pandeiro e cantando com a plateia",
+      "porQueEssa": "O fecho emocional do dia inteiro, e a resposta dele à própria pergunta \"para que serve a escola\". Funciona sozinho e prepara quem lê para o final cantado.",
+      "conferir": "a punchline dos 6 mil violões é 18h36; a frase começa em 18h35.",
+      "aprovada": "rascunho"
+    }
+  ]
+}

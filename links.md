@@ -147,6 +147,22 @@ desorganizados por lá, mas podem ser necessários):
 
 Busca geral por "CONCEFOR" no Kanboard: https://board.cefor.ifes.edu.br/?controller=SearchController&action=index&search=CONCEFOR
 
+## Retrospectiva do evento
+
+- **Preview navegável (privado):** https://claude.ai/code/artifact/12104126-2e9c-4cc3-9434-bcb2604e1b53
+  — gerado de `retrospectiva/dist/index.html`. Republicar no mesmo endereço a cada build novo.
+- **Gravações (playlist do canal):** https://www.youtube.com/playlist?list=PLHKM4BxClqXU
+  — 7 transmissões públicas (uma 8ª posição está privada/removida). Os metadados usados pela
+  retrospectiva estão em `retrospectiva/dados/videos.json`; o que importa ali é a hora real de
+  início de cada live, que é o que permite abrir o vídeo no minuto exato de cada momento.
+- **Transcrições do palco (repo PRIVADO):** https://github.com/marcosaccioly/transcricoes-concefor
+  — saída crua do transcritor, 10 sessões do auditório, mais a pasta `documentos/` com as 8
+  peças editoriais em PDF. Não é publicável sem curadoria (ver `retrospectiva/README.md`); o
+  build espera esse repo clonado ao lado deste, ou os caminhos em `--transcricoes=` e
+  `--documentos=`.
+- **Fotos da cobertura:** ficam com a CGTE (Drive). Para entrarem na linha do tempo, copiar
+  para `retrospectiva/fotos/` e rodar o build — o horário do EXIF ancora cada foto no minuto.
+
 ## Tracks paralelos
 
 - **Animações Remotion (selo 20 anos):** `<repo/pasta>`

@@ -1,0 +1,27 @@
+{
+  "_fonte": "contexto/livro/livro-completo.md (Livro Cefor 20 anos). Extraído em 27/08/2026 e conferido contra o texto. Só entram marcos explícitos no livro.",
+  "_nota": "A Figura 4.1 (linha do tempo dos NTEs) e a Figura 1.2 (trajetória geral) são IMAGENS no PDF — o texto dos marcos não foi extraído. Se um dia quisermos mais densidade, é lá que estão.",
+  "marcos": [
+    { "ano": "2004", "titulo": "A EaD começa por uma portaria", "descricao": "A Portaria nº 38, de 1º de março, cria a comissão que elaborou o Projeto de Educação a Distância do Sistema Cefetes." },
+    { "ano": "2005", "titulo": "Primeira submissão à UAB", "descricao": "O curso TADS, do campus Serra, é submetido ao Edital UAB nº 1/2005 — viria a ser o primeiro curso superior a distância do Ifes." },
+    { "ano": "2006", "titulo": "Nasce o Cead", "descricao": "A Portaria nº 1184, de 20 de dezembro, cria o Centro de Educação a Distância, gerido por Yvina Pavan Baldo.", "destaque": true },
+    { "ano": "2007", "titulo": "O primeiro Moodle", "descricao": "Instalação do Moodle 1.9 em cead.ifes.edu.br e início das formações de professores e tutores para a modalidade." },
+    { "ano": "2008", "titulo": "O Cefetes vira Ifes", "descricao": "A união com três escolas agrotécnicas forma o Ifes. No mesmo ano sai o primeiro curso técnico a distância, Técnico em Informática." },
+    { "ano": "2009", "titulo": "Cead se torna diretoria", "descricao": "Em 2009 vira diretoria e, no ano seguinte, os cursos a distância passam a ser descentralizados para os campi." },
+    { "ano": "2014", "titulo": "Cead se transforma em Cefor", "descricao": "Pela Portaria nº 1602, de 11 de agosto, o Cead une-se ao Educimat e vira Centro de Referência em Formação e em Educação a Distância.", "destaque": true },
+    { "ano": "2016", "titulo": "Sede própria em Vitória", "descricao": "O Cefor deixa o prédio do campus Serra e transfere suas atividades para sede exclusiva em Vitória. Aos 10 anos, já era referência nacional." },
+    { "ano": "2017", "titulo": "Os NTEs são propostos", "descricao": "Primeira minuta para criação dos Núcleos de Tecnologias Educacionais nos campi, e abertura do ava.cefor.ifes.edu.br." },
+    { "ano": "2019", "titulo": "Conceito máximo do Inep", "descricao": "O Ifes obtém nota 5 na avaliação para recredenciamento da modalidade EaD. No mesmo ano nasce a Plataforma de Cursos Abertos e o primeiro doutorado do Ifes.", "destaque": true },
+    { "ano": "2020", "titulo": "A pandemia", "descricao": "O Cefor sustenta as Atividades Pedagógicas Não Presenciais, mantém os cursos a distância e forma servidores; os NTEs apoiam os campi." },
+    { "ano": "2021", "titulo": "Criação da UnAC", "descricao": "A Universidade Aberta Capixaba é instituída pelo Decreto Estadual nº 5.009, parceria entre o Governo do Estado e o Ifes com fomento da Fapes." },
+    { "ano": "2024", "titulo": "A vez da inteligência artificial", "descricao": "Oficinas \"Professor + IA\", edições do \"Papo com IA.IÁ\" e a página de Ações de IA. Mais de 23 mil vagas ofertadas no ano." },
+    { "ano": "2026", "titulo": "20 anos e VIII Concefor", "descricao": "O Cefor e a UAB completam 20 anos. O Concefor chega à oitava edição para celebrar as duas décadas.", "destaque": true, "eOEvento": true }
+  ],
+  "direcao": [
+    { "periodo": "2006–2014", "nome": "Yvina Pavan Baldo" },
+    { "periodo": "2014–2019", "nome": "Vanessa Battestin" },
+    { "periodo": "2019–2022", "nome": "Mariella Berger Andrade" },
+    { "periodo": "2022–hoje", "nome": "Aline Freitas da Silva de Carvalho" }
+  ],
+  "_direcaoNota": "O livro destaca que o Cefor foi dirigido por mulheres em toda a sua história. Vanessa Battestin e Mariella Berger, ex-diretoras, palestraram no VIII Concefor — a linha do tempo se fecha sozinha."
+}

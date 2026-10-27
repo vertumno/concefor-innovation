@@ -1,0 +1,16 @@
+# Transcrição crua nunca entra no git deste repo, que é público.
+# O texto do Whisper pega microfone aberto (conversa de bastidor, achados e
+# perdidos com nome de gente) e alucina em trechos de silêncio. Só o que passou
+# pela curadoria — curadoria/citacoes.json — pode ser publicado.
+curadoria/citacoes-candidatas.md
+curadoria/citacoes-sugeridas.json
+
+# Cópia de trabalho do banco: tem PII dos inscritos (nome, e-mail, CPF).
+.cache/
+
+# Fotos da cobertura: são pesadas e o dono é a CGTE. Ficam no Drive; aqui só
+# passam para o build encaixá-las na linha do tempo.
+fotos/
+
+# Página gerada — sai do build, não do commit.
+dist/

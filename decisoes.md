@@ -4,6 +4,159 @@ Log datado das decisões do projeto, com o porquê. Mais recente no topo.
 
 ---
 
+## 2026-08-27 (noite) — Quem manda na retrospectiva é a curadoria, não o pico
+
+**A regra virou de cabeça para baixo, e era ela que estava errada.** Até aqui os momentos
+da página saíam dos três minutos mais reagidos de cada sessão, e a fala era um enfeite que
+se pendurava neles. Não funciona por dois motivos: pico alto não é frase memorável (o
+Momento Musical estourou de reações durante a música, sem nada dito), e pico sem frase
+virava um cartão que só anunciava que faltava frase.
+
+Agora **cada fala escolhida vira um momento**, no minuto em que foi dita, e basta
+`sessaoId` + `hora` — não precisa haver reação naquele minuto. Foi o que permitiu entrar a
+sequência da Aline Freitas nos Lançamentos, que aconteceu em minutos mornos e é o melhor
+material da noite sobre os 20 anos: *"a melhor forma de honrar uma história não é
+preservá-la — é fazê-la continuar"* e o fecho, que pergunta que história queremos contar
+quando o Cefor fizer 40.
+
+A página saiu de 8 para **49 falas**, de 16 vozes, cobrindo 9 sessões. A curadoria foi
+feita dia a dia (`curadoria/citacoes-dia17/18/19.json`), tendo como primeira fonte as
+relatorias — que já traziam as citações escolhidas a dedo, com hora — e a transcrição crua
+para conferir e achar o que ficou de fora.
+
+**Três consertos que vieram junto, todos por causa da mesma confusão entre a hora da fala e
+a hora da reação:**
+
+- **A hora da citação é a da FALA, não a do pico.** Três citações antigas tinham nascido com
+  a hora do pico, o que deslocava o link da gravação. Corrigidas.
+- **A contagem de reações de um momento cobre 3 minutos** (o da fala e os dois seguintes).
+  Ancorar no minuto exato subestimava demais: a fala da Mariella sobre ser a única mulher da
+  turma tinha 1 reação no minuto dela e 31 no seguinte — agora mostra as 61 da sequência,
+  que é a repercussão real.
+- **A faixa dourada passou a marcar o minuto citado**, não o mais reagido, ligando o gráfico
+  aos cartões logo abaixo.
+
+**Dois achados da curadoria que corrigem o material:** "Contem a nossa história, porque ela
+não é contada" é da **Dra. Márcia Gonçalves de Oliveira** (estava sem atribuição); e a
+sessão **Celebração dos 20 anos ficou sem vídeo** de propósito — a transmissão da noite
+termina 20h45:26 e a sessão começa 20h45, então o link mandaria para o último suspiro do
+vídeo. O bolo não foi gravado.
+
+**Ainda pendente:** a tese "o desafio da EaD não é tecnológico, mas pedagógico", citada no
+dia seguinte como se fosse literal, **não é dita com essas palavras** pelo Tessarolo — ele
+formula a ideia duas vezes, em outras palavras. Quem for usar a frase curta precisa saber
+que é paráfrase.
+
+## 2026-08-27 (fim do dia) — O vínculo vídeo↔sessão passa a ser declarado, não deduzido
+
+O Marquito viu o vídeo da mesa "Tecnologia Delas" listado na "Mostra de Produtos". Não era
+um caso isolado: a Premiação também tinha recebido o vídeo do EDUCIMAT. **A causa é a
+mesma e vale como regra geral do projeto — o congresso tinha sessões simultâneas em salas
+diferentes, e horário não distingue sala.** A Mostra rodava no Auditório do 4º piso
+enquanto a mesa acontecia no Pátio, no mesmo intervalo.
+
+Agora `dados/videos.json` declara `sessoes: [ids]` à mão, e o horário serve só para
+calcular o PONTO dentro do vídeo. Quando aparecer outro vídeo no lugar errado, é essa lista
+que se corrige — e é ela que o Marquito vai alimentando à medida que identificar.
+
+Outras correções da mesma leitura:
+
+- **"Assistir" ia para o meio do vídeo em sessão que não foi gravada desde o começo.**
+  Agora, quando a transmissão entrou no ar depois do início, o link vai para o começo do
+  vídeo e diz "o bloco inteiro". A tolerância subiu para 5 min: a mesa Tecnologia Delas
+  aparecia como "bloco" por 16 segundos de diferença, o que confundia à toa.
+- **O link agora abre 20 s antes** do minuto marcado — a reação vem depois da fala, e quem
+  clica quer ouvir o que a provocou. Se a gravação ainda estiver deslocada, há
+  `ajusteSegundos` por vídeo para calibrar sem mexer no código.
+- **"Documento" virou "Relatoria da sessão"** — o PDF não é a transcrição corrida, é uma
+  peça curada com resumo, bios e citações; o nome precisava dizer isso.
+- **As perguntas sem resposta saíram da lista principal** para um bloco recolhido no fim
+  ("ficaram na fila — o tempo acabou antes"). Não somem, porque a fila cheia no fim das
+  duas sessões é parte do que aconteceu, mas param de competir com as respondidas.
+- **Nota de IA no rodapé**, dizendo o que foi gerado com auxílio de IA (transcrição,
+  relatorias, resumos e a página) e o que vem direto do banco (os números).
+- Ícone do YouTube nos links de vídeo; Mariella Berger e Rutinelli Fávero corrigidas para
+  **Ifes — Cefor** (a ficha do Even3 trazia só "Ifes"), via `dados/palestrantes-ajustes.json`.
+- **"A frase ainda espera curadoria" agora diz onde ficam as frases.** O build passou a
+  gerar `curadoria/citacoes-sugeridas.json` — só os picos sem citação, cada um já no
+  formato final, pronto para revisar e colar. O `.md` continua, mas para ler o contexto.
+
+## 2026-08-27 (tarde) — Retrospectiva ganha gravações, documentos, nuvem e respostas
+
+Segunda rodada sobre a retrospectiva, a partir da leitura do Marquito. O que mudou:
+
+- **Cada momento abre a gravação no segundo exato.** `dados/videos.json` guarda a hora
+  REAL em que cada live começou (o `release_timestamp`, lido com `yt-dlp`); como sessões e
+  picos têm hora na mesma linha do tempo, a diferença vira `&t=NNNNs`. Era o único jeito
+  decente de linkar: as sete transmissões não seguem a divisão da programação — a noite de
+  abertura inteira está num vídeo só, de 2h36. Duas ressalvas ficaram registradas: uma
+  posição da playlist está privada (linkar daria erro, ficou de fora) e a transmissão do
+  Tessarolo entrou no ar 25 min depois do início da sessão, então ali o link diz "gravação
+  do bloco" em vez de prometer um trecho que não existe.
+- **Os 8 documentos em PDF entraram**, um link por sessão. Faltavam dois (Mariano Pimentel
+  e Mauro Oliveira) e foram gerados no mesmo padrão editorial dos outros seis. **Descoberta
+  que vale para sempre:** sem `--virtual-time-budget=20000` o Chrome imprime antes de as
+  fontes do Google chegarem e o PDF sai em Arial — menor e sem identidade, um erro que
+  passa despercebido porque o arquivo é gerado do mesmo jeito.
+- **A enquete virou nuvem de palavras** — a MESMA do telão, com o algoritmo do app portado
+  para a página (`lib/wordcloud-browser.js`). Reimplementar diferente daria outra imagem
+  para o mesmo dado. A lista de respostas ficou num `<details>` embaixo, então o número
+  exato continua acessível sem depender de JavaScript.
+- **As perguntas do público agora mostram o que o palco respondeu**, com resumo, citação e
+  link para ouvir. Só 11 das 22 tiveram resposta: nas duas sessões o tempo acabou com a
+  fila cheia, e isso aparece na página como está.
+- **Duas armadilhas de dados** que o código passou a tratar: `perguntaHora` **não é chave
+  única** (duas perguntas chegaram às 15:59, duas às 16:00 e duas às 11:03), então o
+  casamento usa hora + trecho do texto; e numa mesa a resposta é de várias pessoas mas a
+  **frase citada é de uma só** — daí `citacaoDe` existir separado de `quem`, senão a página
+  atribuiria a citação ao palestrante errado.
+- **Correção visual:** os pontos da régua da linha do tempo estavam ancorados em
+  `--regua - gap`, o que os punha dentro da coluna da hora, por cima do número. A régua
+  vive no vão entre as colunas. Os 20 anos viraram slider com controles, e as duas marcas
+  entraram no topo — o selo em branco e o Concefor num cartão branco, porque o manual
+  restringe a versão colorida a fundo branco.
+
+**Achado que atravessa o dia 19:** a troca **"IA" → "EaD"** na transcrição é sistemática nas
+falas do Mariano Pimentel e do Mauro Oliveira, e chega a se acumular ("a década da
+EaGenerativa"). Não é do palestrante, é do pipeline — vale investigar `termos.toml`.
+
+## 2026-08-27 — Retrospectiva: a linha do tempo do evento vira página navegável
+
+**O que ficou do congresso agora tem forma.** `retrospectiva/` gera uma página HTML única
+que remonta os quatro dias a partir da linha do tempo do app: cada barra é um minuto, a
+altura é quanta gente reagiu, e nos picos aparece **a frase que estava sendo dita no palco**.
+Fecha o conceito-espinha (*tudo é registro com timestamp*) — o mesmo modelo de dados que
+alimentou o app e o telão vira memória, com os 20 anos do Cefor como prólogo.
+
+Preview: ver `links.md`. Como rodar e o que ainda falta: `retrospectiva/README.md`.
+
+**As decisões que valem registro:**
+
+- **O cruzamento é por minuto absoluto, não por arquivo de gravação.** Os arquivos do
+  transcritor seguem o roteiro planejado; a programação real derrapou — o arquivo da
+  palestra da Vanessa começa 19:00 e contém o fim da Abertura, porque a palestra só
+  começou 19:35. Casar arquivo com sessão erraria a atribuição. Indexar a fala por minuto
+  e perguntar "o que se dizia às 20:39?" é a mesma pergunta que a linha do tempo faz.
+- **Citação passa por curadoria humana, sempre.** O texto do Whisper é cru: pega microfone
+  aberto (achados e perdidos com nome de pessoa) e alucina em silêncio. O build escreve
+  candidatas em arquivo **fora do git**; só `curadoria/citacoes.json` é publicável. A
+  primeira curadoria (8 citações) está marcada `"aprovada": "rascunho"` — precisa do olho
+  de quem estava na sala.
+- **Perguntas aparecem com o primeiro nome, não o nome completo.** Elas eram identificadas
+  no telão (decisão de 05/08), mas nome completo indexável na web é exposição maior que
+  nome projetado numa sala. Conexões, só como total.
+- **Gráfico: intensidade numa cor, composição em outro lugar.** Empilhar as cinco reações
+  numa barra de três pixels seria ilegível, e o que interessa na faixa é *quando* a sala
+  esquentou. A composição por tipo aparece uma vez por sessão, com rótulo e número. As
+  cinco cores foram validadas para daltonismo sobre o navy (pior par vizinho: ΔE 11,9
+  deutan); as cores vivas da marca ficaram para a interface.
+- **Tema escuro assumido, com `@media print` claro.** É a identidade do evento e do telão;
+  o print resolve o uso institucional.
+
+**Achado para o transcritor:** na palestra do Mariano Pimentel a transcrição trocou **"IA"
+por "EaD"** ao longo de todo o trecho ("se você entrega para a EaD pensar por você"). Vale
+conferir o glossário em `C:\dev\transcritor-local\evento\termos.toml`.
+
 ## 2026-08-14 — Lançamento: app no ar e e-mail enviado aos participantes pelo Even3
 
 **O app subiu e o e-mail saiu, no mesmo dia.** O deploy de contingência (GitHub privado →

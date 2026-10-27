@@ -1,0 +1,86 @@
+{
+  "sessaoId": "even3-1412354-20260819-1430",
+  "sessao": "Palestra Autoria com IA generativa — Dr. Mariano Pimentel",
+  "_chave": "perguntaHora sozinha NÃO identifica a pergunta: duas chegaram às 15:59 e duas às 16:00. O campo `pergunta` guarda um trecho do texto original e é ele que desempata.",
+  "_ordemDeLeitura": "O palco não seguiu a ordem de envio — leu por número de votos, e perguntas continuaram chegando durante o bloco. Por isso `lidaEm` não cresce junto com `perguntaHora`.",
+  "respostas": [
+    {
+      "perguntaHora": "15:42",
+      "pergunta": "Como interagir com a IA sem uma leitura prévia",
+      "encontrada": true,
+      "lidaEm": "15:58",
+      "quem": "Dr. Mariano Pimentel",
+      "resposta": "A dúvida é legítima, e ele começou dizendo isso: é para ter dúvida mesmo. Usar IA não garante formação nenhuma — quem entrega à máquina a tarefa de pensar por si não aprende —, mas proibir também não resolve, porque significa abrir mão de uma potência num mundo que já mudou. O resumo pronto não basta, e olhar só o produto entregue tampouco: é preciso inventar formas de tornar visível o processo. Só analisando como aquele texto foi construído é que a aprendizagem e a autoria aparecem.",
+      "citacao": "Se você entrega para a IA pensar por você, não tem formação.",
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "15:45",
+      "pergunta": "Mesmo sendo plágio, muitos alunos já usam a IA",
+      "encontrada": true,
+      "lidaEm": "15:59",
+      "quem": "Dr. Mariano Pimentel",
+      "resposta": "A estratégia não é caçar plágio, é redesenhar as atividades para que plagiar deixe de fazer sentido: se a tarefa é facilmente terceirizável para a IA, ela vai ser terceirizada. Ele parte da identidade e do cotidiano vivido de cada estudante — quem a pessoa é, o que pensa, o que a incomoda —, porque isso não faz sentido pedir a uma máquina. Ainda assim admitiu o limite, e sem retoque: metade da turma dele continua entregando texto de ChatGPT, e fórmula para isso não existe. A saída que propõe é deslocar a avaliação — o produto certo ou bem escrito virou irrelevante; o que passa a contar é o processo de autoria com a IA.",
+      "citacao": "A tentativa é que eles não queiram plagiar. Que plagiar não faça sentido.",
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "15:49",
+      "pergunta": "Como foi pra você o processo de aceitação da IA",
+      "encontrada": true,
+      "lidaEm": "16:03",
+      "quem": "Dr. Mariano Pimentel",
+      "resposta": "Não houve aceitação: a briga interna continua, e o receio do que pode acontecer também. Compreender a potência pedagógica da interlocução, da cocriação e da mediação híbrida não resolveu os problemas dentro da sala de aula dele — estar ciente de uma coisa não é saber mobilizá-la. É um desafio real, que se apresenta a ele como professor do ensino superior presencial e igualmente na EaD, no ensino médio e no fundamental.",
+      "citacao": "Continua uma briga interna. Continua um receio do que pode vir a acontecer. Eu não estou tranquilo.",
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "15:59",
+      "pergunta": "A  Anthropic implementou uma marca",
+      "encontrada": true,
+      "lidaEm": "16:08",
+      "quem": "Dr. Mariano Pimentel",
+      "resposta": "Marca d'água pode ser útil neste momento, mas não resolve o problema: há formas de burlá-la e, sobretudo, um texto inteiramente gerado por IA não é prova de que houve delegação. Ele contou o caso da imagem premiada que teve os direitos autorais negados por não se reconhecer autoria humana e, no ano seguinte, o da Adobe, que conseguiu o registro de uma imagem também toda feita por IA ao demonstrar as horas de decisões intencionais por trás dela — cada elemento pedido e reeditado de propósito. É a mesma história da fotografia, que no começo não era considerada arte porque bastava clicar; hoje já se fala em promptografia, porque o prompt carrega a intencionalidade humana. Não há garantia de ética ou de fraude analisando apenas o produto: o que precisa ficar registrado é o que se usou e como se usou.",
+      "citacao": "A IA não faz nada sozinha, no final das contas.",
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "15:59",
+      "pergunta": "Você acredita que não cabe mais na sociedade moderna",
+      "encontrada": true,
+      "lidaEm": "16:13",
+      "quem": "Dr. Mariano Pimentel",
+      "resposta": "Ele disse não ter entendido a pergunta e recolocou o quadro: não vivemos mais na sociedade moderna, isso já acabou, e a sociedade contemporânea está estruturada pelo digital em rede, com a camada da IA por cima. A IA não vai embora e já está em tudo — quem busca no Google lê primeiro um resumo feito por IA, quem abre um PDF recebe a oferta de um resumo, quem escreve no Gmail recebe sugestões de texto. Qualquer área com trabalho intelectual está sendo transformada: no direito há uma revolução em curso e, na computação, já se questiona se ainda faz sentido ensinar a programar do jeito que se conhecia.",
+      "citacao": "190 bilhões de dólares não é alguém que está fazendo uma aposta. É alguém que sabe o que vai ser o futuro — e essa empresa quer ser dona desse futuro.",
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "16:00",
+      "pergunta": "Como os avaliadores  de periódicos",
+      "encontrada": true,
+      "lidaEm": "16:04",
+      "quem": "Dr. Mariano Pimentel",
+      "resposta": "Com muita desconfiança — ele chamou a pergunta de maravilhosa e respondeu que hoje ainda é tabu. Pedir a revisão de literatura à IA funciona, mas copiar e colar significa não ter lido os autores nem passado pelo processo formativo: é terceirização do pensamento, e a Capes trata isso como quebra da integridade acadêmica, com perda de bolsa e de Lattes. Daí a exigência da declaração de uso, que não se cumpre só admitindo que usou: é preciso dizer para quê, com quais tecnologias e em que momento, porque isso passa a fazer parte do método de produção de conhecimento. E ele apostou na inversão do jogo em poucos anos — a pergunta constrangedora passará a ser por que você não usou IA.",
+      "citacao": "Não vai ser mais aceitável você ter aberto mão desses superpoderes para escrever, para analisar dados, para revisar literatura com a IA.",
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "16:00",
+      "pergunta": "Você apoia usar IA para resumir livros",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "16:02",
+      "pergunta": "anti-produtivismo",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    },
+    {
+      "perguntaHora": "16:14",
+      "pergunta": "qual sua visao sobre ocio criativo",
+      "encontrada": false,
+      "aprovada": "rascunho"
+    }
+  ]
+}

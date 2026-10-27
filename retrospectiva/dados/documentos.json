@@ -1,0 +1,18 @@
+{
+  "_fonte": "Relatorias montadas a partir das transcrições, no repo PRIVADO transcricoes-concefor (pasta documentos/). Não são a transcrição corrida: são peças curadas, com resumo, bios, citações e horários.",
+  "_comoFunciona": "O build copia para dist/documentos/ apenas os arquivos que encontrar no disco — um PDF que ainda não existe simplesmente não vira link. A pasta de origem sai de --documentos=, da variável CONCEFOR_DOCUMENTOS, ou é procurada ao lado do repo.",
+  "_umDocumentoVariasSessoes": "A noite de abertura e a virada Lançamentos/Celebração foram documentadas em peças que cobrem duas sessões cada; por isso o mesmo arquivo aparece em mais de uma linha.",
+
+  "_hospedagemExterna": "Cada item aceita um campo `url`. Quando ele existe, o link da página aponta para lá em vez do arquivo local — é o caminho para servir os PDFs do Drive e fazer os links funcionarem em qualquer lugar, inclusive num preview publicado. Use o formato de link direto: https://drive.google.com/uc?export=download&id=ID_DO_ARQUIVO (o ID sai do link de compartilhamento, entre /d/ e /view), e o arquivo precisa estar como \"qualquer pessoa com o link\".",
+
+  "documentos": [
+    { "arquivo": "01-momento-musical-e-abertura.pdf", "titulo": "Momento Musical e Abertura", "sessoes": ["even3-1485781-20260817-1800", "even3-1412334-20260817-1830"] },
+    { "arquivo": "02-palestra-vanessa-battestin.pdf", "titulo": "Palestra \"20 Anos de EaD e o Cefor\"", "sessoes": ["even3-1412335-20260817-1900"] },
+    { "arquivo": "03-lancamentos-e-celebracao-20-anos.pdf", "titulo": "Lançamentos e Celebração dos 20 anos", "sessoes": ["even3-1485786-20260817-2000", "even3-1485788-20260817-2030"] },
+    { "arquivo": "04-mesa-tecnologia-delas.pdf", "titulo": "Mesa-Redonda \"Tecnologia Delas\"", "sessoes": ["even3-1412342-20260818-0930"] },
+    { "arquivo": "05-palestra-felipe-tessarolo.pdf", "titulo": "Palestra internacional — Dr. Felipe Tessarolo", "sessoes": ["even3-1412345-20260818-1430"] },
+    { "arquivo": "06-mesa-desafios-ead.pdf", "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\"", "sessoes": ["even3-1412350-20260819-0930"] },
+    { "arquivo": "07-palestra-mariano-pimentel.pdf", "titulo": "Palestra \"Autoria com IA generativa\" — Dr. Mariano Pimentel", "sessoes": ["even3-1412354-20260819-1430"] },
+    { "arquivo": "08-palestra-mauro-oliveira.pdf", "titulo": "Palestra \"Inovações da IA para a Educação\" — Dr. Mauro Oliveira", "sessoes": ["even3-1492265-20260819-1630"] }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "_leia": "As frases ditas no palco nos minutos de maior reação. Este é o único arquivo de fala que pode ir para a página: o texto bruto do Whisper fica fora do git (ver .gitignore). Cada item foi lido, cortado e pontuado à mão a partir de curadoria/citacoes-candidatas.md.",
+  "_estado": "PRIMEIRA CURADORIA, feita pela máquina e ainda não conferida por quem estava na sala. Campo `conferir` marca o que precisa de olho humano. Para tirar uma citação da página, ponha \"aprovada\": false.",
+  "_comoFunciona": "A chave é sessaoId + hora do PICO. O texto costuma ser do minuto anterior ao pico, porque a reação vem depois do estímulo: a pessoa ouve, se emociona e só então pega o telefone.",
+  "citacoes": [
+    {
+      "sessaoId": "even3-1412334-20260817-1830",
+      "hora": "19:23",
+      "texto": "Quando educamos e capacitamos uma mulher, transformamos famílias inteiras e fortalecemos a base de toda a nossa sociedade. Tecnologia e transformação só fazem sentido se estiverem a serviço das pessoas.",
+      "quem": "Fabiana Malheiros, secretária de Estado das Mulheres",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412334-20260817-1830",
+      "hora": "19:29",
+      "texto": "A nossa essência é oferecer educação de qualidade, inclusiva, socialmente referenciada em todos os territórios. E a EaD consegue fazer isso de uma forma espetacular.",
+      "quem": "Adriana Pionttkovsky Barcellos, reitora do Ifes",
+      "conferir": "grafia do sobrenome — a transcrição registrou \"Piontikovski-Barcelos\", que o Whisper provavelmente deformou",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412335-20260817-1900",
+      "hora": "20:08",
+      "texto": "A gente saiu de uma salinha emprestada para referência nacional. Eu espero que nos próximos 20 anos a gente mude esse slide para referência internacional.",
+      "quem": "Dra. Vanessa Battestin",
+      "nota": "encerrando a palestra dos 20 anos",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1485786-20260817-2000",
+      "hora": "20:31",
+      "texto": "A gente estava lá inquieto e eu falei: por que a gente não faz um app para o Concefor? Vocês me veem com o celular toda hora na mão — não é chat, não, sou eu ajeitando o horário que vai estendendo. É a versão zero do zero, nosso protótipo, que nós estamos experimentando aqui com vocês.",
+      "quem": null,
+      "nota": "apresentação do app do evento, no palco dos Lançamentos",
+      "conferir": "assinar com nome? quem apresentou foi o próprio time do app",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1485786-20260817-2000",
+      "hora": "20:39",
+      "texto": "Eu arrisco dizer que somos talvez uma das instituições precursoras na rede federal a ter a nossa própria inteligência artificial soberana, com processamento local, sem depender de fornecedores externos, com os dados retidos dentro da própria instituição.",
+      "quem": null,
+      "nota": "no lançamento da IA soberana do Ifes — o minuto mais reagido do evento inteiro",
+      "conferir": "quem falou (equipe da CGTI) — vale creditar o nome",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "10:02",
+      "texto": "Percebam que, dos cinco alunos formados, só tinha eu, mulher, nessa turma. Depois eu comecei a atuar como professora na Ufes. Por 14 anos eu trabalhei lá — e em 14 anos eu tive cinco alunas mulheres.",
+      "quem": "Dra. Mariella Berger Andrade",
+      "nota": "contando a própria trajetória antes de abrir a mesa que ela mediava",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "11:02",
+      "texto": "Contem a nossa história, porque ela não é contada. Não espere que um homem vá contar a sua história.",
+      "quem": "Dra. Márcia Gonçalves de Oliveira",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412354-20260819-1430",
+      "hora": "15:59",
+      "texto": "Não adianta proibir, porque abrir mão de uma potência… o mundo mudou, não adianta mais a gente querer viver num mundo que não existe. Olhar o produto não é suficiente: a gente precisa inventar formas de tornar visível o processo. Só analisando o processo de construção daquele produto é que a gente torna a aprendizagem e a autoria visíveis.",
+      "quem": "Dr. Mariano Pimentel",
+      "nota": "respondendo à pergunta mais votada no app",
+      "conferir": "CORRIGIDO À MÃO: a transcrição trocou \"IA\" por \"EaD\" ao longo de todo este trecho (\"se você entrega para a EaD pensar por você\"). Confirmar contra a gravação — e conferir se o glossário do transcritor causou isso.",
+      "aprovada": "rascunho"
+    }
+  ],
+  "_horaEhDaFala": "A hora de cada citação é a do minuto em que a frase foi DITA, não a do pico de reação que ela provocou — é dela que sai o link para o instante certo da gravação. Três itens nasceram com a hora do pico e foram corrigidos em 27/08."
+}

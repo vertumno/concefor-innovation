@@ -1,0 +1,126 @@
+{
+  "_dia": "18/08/2026",
+  "_leia": "Curadoria editorial das melhores falas do segundo dia, para a retrospectiva pública. Cada citação foi lida na transcrição crua (06-mesa-tecnologia-delas e 07-palestra-tessarolo, .completo.timestamped.txt), cortada e pontuada à mão, e conferida contra as relatorias prontas em documentos/html. O campo `hora` é a HORA EM QUE A FRASE FOI DITA, no relógio da transcrição — não a hora do pico de reação usada em citacoes.json.",
+  "_naoRepetidas": "Ficaram de fora, porque já estão publicadas em citacoes.json: 10:03 Mariella Berger (única mulher da turma / cinco alunas em 14 anos) e 11:04 \"Contem a nossa história, porque ela não é contada\".",
+  "_achado": "A citação publicada com hora 11:04 (\"Contem a nossa história\") é da Dra. Márcia Gonçalves de Oliveira — na transcrição ela está em 11:02:08, e o que vem depois é \"Não espere que um homem vá contar a história da Mariella\". Dá para preencher o `quem: null` e o `conferir` daquele item.",
+  "_tese": "A frase \"o desafio da EaD não é tecnológico, mas pedagógico\" NÃO aparece com todas as letras na palestra do Tessarolo. Ele a formula duas vezes, em outras palavras: às 15:00 (\"não acredito que foi uma mudança focada na tecnologia; foi a forma como a aprendizagem passou a ser mediada\") e, mais completa, às 16:03 — que é a versão escolhida aqui.",
+
+  "citacoes": [
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "10:25",
+      "texto": "\"Era tudo tão lindo que não coube nos seus pequenos sonhos. Ela precisou aprender a sonhar mais.\" Eu lembro da primeira vez que vi o carro andando sozinho. Cheguei em casa e falei com o meu marido: eu nunca imaginei, vindo lá de Colatina, que eu pudesse viver um negócio desse na minha vida. Eu precisei aprender a sonhar mais.",
+      "quem": "Dra. Mariella Berger Andrade",
+      "nota": "citando \"A Cabeça do Santo\", de Socorro Acioli, ao fechar sua trajetória",
+      "porQueEssa": "Memória pessoal com cena junto — ela sentada no meio-fio da Ufes com o botão de emergência na mão — e a frase que resume a trajetória inteira em cinco palavras.",
+      "conferir": "a transcrição deforma a autora do livro para \"Socorro à Senhora\"; é Socorro Acioli. Também insere um \"Bruno\" solto no meio da frase, que foi cortado por ser ruído.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "10:28",
+      "texto": "Esse conceito ensina para a gente que não existe a mulher: existem as mulheres, que vivem e constroem as suas subjetividades a partir de estruturas sociais. É diferente quando falamos da mulher negra, da mulher indígena, da mulher na ciência — porque elas são atravessadas por gênero, raça, classe social e território.",
+      "quem": "Dra. Célia Jaqueline Sanz Rodrigues",
+      "nota": "sobre a interseccionalidade, o conceito que fundou o Atlas",
+      "porQueEssa": "A virada de raciocínio da mesa, e a pergunta que originou o Atlas das Mulheres do ES. Funciona sozinha e não depende de nenhum slide.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "10:31",
+      "texto": "Quando queríamos conhecer o que é ser mulher quilombola, íamos para dentro do quilombo. Quando queríamos conhecer o que é ser mulher indígena, íamos para dentro da aldeia. Mulher cigana, íamos para dentro dos acampamentos. Devemos ter percorrido mais de 16 mil quilômetros estado afora, fazendo essa pergunta: o que é ser mulher?",
+      "quem": "Dra. Célia Jaqueline Sanz Rodrigues",
+      "nota": "sobre o método do Atlas: 31 segmentos, mais de 95 rodas de conversa, 1.400 mulheres",
+      "porQueEssa": "Método e número na mesma frase. Explica o que é o Atlas sem definir o Atlas — e o 16 mil km é o dado que ninguém na plateia esperava.",
+      "conferir": "junta 10:31 (as rodas) e 10:32 (os 16 mil km), falas contíguas da mesma pessoa.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "10:40",
+      "texto": "39% das cientistas mulheres afirmam ter sido afetadas na carreira pela maternidade. E apenas 16% dos cientistas homens afirmam ter sido afetados na carreira pela paternidade. … Quando eu ouço mulheres numa roda de conversa, elas dizem: depois que eu engravidei, ninguém me convida para fazer um artigo.",
+      "quem": "Dra. Célia Jaqueline Sanz Rodrigues",
+      "nota": "no recorte \"Mulheres na Ciência\" do Atlas",
+      "porQueEssa": "O par de números mais eloquente da manhã — e logo em seguida a voz crua da roda de conversa, que faz o número doer.",
+      "conferir": "os percentuais vêm do Perfil do Cientista Brasileiro, citado dentro do Atlas (não são dado do Atlas). A fala da roda está em 10:41.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "11:09",
+      "texto": "Eu tenho guardado lá em casa, cheio de mofo, o meu livro de COBOL do ensino médio técnico. Aparece o nome de toda a equipe, todos os homens — o nome da Grace Hopper nem aparece. … Fui ver se o nome da Mary Kenneth Keller estava na equipe de desenvolvimento da linguagem Basic. Não estava. Só tinha homens.",
+      "quem": "Dra. Márcia Gonçalves de Oliveira",
+      "nota": "sobre as pioneiras apagadas da história da computação",
+      "porQueEssa": "É a tese \"contem a nossa história\" virada em prova material: dois livros guardados em casa, dois apagamentos. Concreto, verificável e devastador.",
+      "conferir": "nomes corrigidos — a transcrição registra \"Grace Hope\" e \"Mary Kelly\". Junta 11:09 (COBOL) e 11:10 (Basic), duas passagens da mesma fala.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "11:23",
+      "texto": "As meninas valorizam mais o título de nobreza do que o próprio certificado do Ifes. Elas não podem sair do curso sem os títulos de nobreza. Por quê? Porque a menina que sai do curso uma duquesa se sente empoderada. Essa coisa da nobreza não é uma brincadeira: é uma forma de conferir status ao protagonismo feminino.",
+      "quem": "Dra. Márcia Gonçalves de Oliveira",
+      "nota": "sobre a Corte de Lovelace, programa de extensão do Cefor",
+      "porQueEssa": "O humor que funcionou na sala e continua funcionando no papel — e, no fim da frase, explica exatamente por que o projeto se chama \"corte\".",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412342-20260818-0930",
+      "hora": "11:39",
+      "texto": "Esqueceram de me contar que aquele não era o meu lugar — por isso que eu fui. Me perguntaram, quando eu fui fazer doutorado, se eu sabia apertar um parafuso. Passei num concurso e não fui convocada porque eu era uma mulher grávida. E, quando fui aprovada no meu primeiro trabalho na Ufes, disputando com outras 18 pessoas, o professor falou: \"eu já comprei a sua vassoura\".",
+      "quem": "Dra. Mariella Berger Andrade",
+      "nota": "respondendo, no debate, à pergunta sobre o que aconteceu com as mulheres na computação",
+      "porQueEssa": "A frase mais forte do dia. Abre com uma virada de raciocínio que já é título, e emenda três episódios concretos que dispensam qualquer contexto.",
+      "conferir": "a transcrição diz \"outras 18 pessoas\" (19 no total, com ela); a relatoria escreveu \"19 candidatos\".",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412345-20260818-1430",
+      "hora": "15:06",
+      "texto": "Essa é a missão da Open University: possibilitar a oportunidade de aprendizado. A gente não vai utilizar IA porque é uma coisa inovadora, sem saber o impacto que isso tem na universidade e qual é o benefício que isso traz para o aluno. Não é a inovação pela inovação.",
+      "quem": "Dr. Felipe Maciel Tessarolo",
+      "nota": "sobre a fundação da Open University, em 1969, como \"University of the Air\"",
+      "porQueEssa": "\"Não é a inovação pela inovação\" é a frase mais reaproveitável da palestra e conversa direto com o princípio do Cefor de não correr atrás de tecnologia por moda.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412345-20260818-1430",
+      "hora": "15:08",
+      "texto": "A Open University já formou 2,3 milhões de pessoas. Atualmente a gente tem 200 mil estudantes ativos — e cerca de um terço desses alunos declarou algum tipo de deficiência. A gente é a instituição com o maior número proporcional de alunos que fazem esse tipo de declaração.",
+      "quem": "Dr. Felipe Maciel Tessarolo",
+      "nota": "a maior universidade a distância do Reino Unido, criada em 1969; a primeira turma, em 1971, teve 26 mil alunos",
+      "porQueEssa": "A escala que ninguém na sala tinha dimensão, e o dado de acessibilidade que muda o que \"EaD em larga escala\" significa: um em cada três.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412345-20260818-1430",
+      "hora": "15:23",
+      "texto": "Apesar de toda essa tecnologia, quem cuida são as pessoas. Não adianta nada a gente ter um sistema pipocando dados e informação, trazendo isso para o professor, se isso efetivamente não engatilhar alguma ação que seja benéfica para o aluno.",
+      "quem": "Dr. Felipe Maciel Tessarolo",
+      "nota": "sobre o time de suporte antecipado ao aluno em risco, na Open University",
+      "porQueEssa": "Dito no meio da parte mais técnica da palestra (learning analytics, painéis, previsão de evasão) — e é justamente ali que ele desarma a própria tecnologia.",
+      "conferir": "a transcrição registra \"pocando\" e \"engatigasse\"; corrigidos para pipocando/engatilhar.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412345-20260818-1430",
+      "hora": "16:00",
+      "texto": "Antes da internet, chegavam quinze notícias para o Bonner escolher o que ia transmitir para o Brasil. Ele escolhia cinco, eliminava dez — e o Brasil ia ter acesso só àquelas cinco. A IA, dependendo de como a gente coloca dentro desses sistemas, vai fazer a mesma coisa: vai funcionar como um guardião do conhecimento, adaptando, gerenciando, modificando.",
+      "quem": "Dr. Felipe Maciel Tessarolo",
+      "nota": "a analogia que dá título ao artigo premiado do grupo, \"GenAI as an Educational Gatekeeper\"",
+      "porQueEssa": "A melhor imagem da palestra: explica o que é um gatekeeper educacional sem usar a palavra, com uma cena que qualquer leitor brasileiro entende de imediato.",
+      "conferir": "ele cita \"o Bonner\" (William Bonner, Jornal Nacional) — decidir se mantém o nome próprio na peça pública.",
+      "aprovada": "rascunho"
+    },
+    {
+      "sessaoId": "even3-1412345-20260818-1430",
+      "hora": "16:03",
+      "texto": "Quando vocês me perguntam o que realmente mudou na educação nesses últimos 20 anos, eu digo que eu não parto de um princípio tecnológico. Eu acho que é uma visão pedagógica: é como essas evoluções tecnológicas alteram a nossa pedagogia — em possibilidades, em desafios e até nos ruídos que isso causa. E aí eu fico com essa pergunta: o que vai permanecer de humano nessa educação?",
+      "quem": "Dr. Felipe Maciel Tessarolo",
+      "nota": "no fecho da palestra internacional",
+      "porQueEssa": "É a tese do dia e o gancho para a mesa do dia seguinte. Fecha com pergunta, não com resposta — o mesmo movimento do encerramento da noite de abertura.",
+      "conferir": "esta é a formulação mais completa da tese \"o desafio não é tecnológico, é pedagógico\"; ele não diz a frase com essas palavras. Junta 16:03 (a tese) e 16:04 (a pergunta final), fala contínua.",
+      "aprovada": "rascunho"
+    }
+  ]
+}

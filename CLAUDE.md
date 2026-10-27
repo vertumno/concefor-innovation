@@ -54,6 +54,7 @@ concefor-innovation/
 │   ├── app-v1.md             (especificação do app)
 │   └── proximos-passos.md    (plano de execução — etapas acionáveis, uma por sessão)
 ├── app/                      (código do PWA — Next.js + SQLite local)
+├── retrospectiva/            (linha do tempo visual do evento: banco + transcrições + fotos → HTML)
 └── comunicacao/              (central de comunicação da CGTE — ex-repo concefor2026)
     ├── README.md             (entrada da área: fluxo, atalhos, estado do momento)
     ├── contexto/             (fatos canônicos: programação, palestrantes, cronograma, marca)
@@ -82,6 +83,7 @@ processado — movido pro lugar certo, sintetizado, e as decisões extraídas re
 | Trabalhar em divulgação/peças de comunicação | `comunicacao/README.md` |
 | Ver programação oficial e palestrantes | `comunicacao/contexto/01-programacao.md` e `03-palestrantes.md` |
 | Ver estado das peças em produção | `comunicacao/planejamento/board-producao.md` |
+| Revisitar o que aconteceu no evento | `retrospectiva/README.md` |
 
 ## Princípios
 

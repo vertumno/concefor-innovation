@@ -4,3 +4,7 @@
 
 # Dados pessoais de participantes (LGPD) — o repo é PÚBLICO, nunca commitar
 ListaDetalhesEnvio_*.xlsx
+# Snapshot do banco do app: nome, e-mail e CPF de todos os inscritos. Passa pela equipe
+# pelo Drive, nunca pelo git (já vazou uma vez no commit 7b42ca9, apagado em 27/10/2026).
+db-concefor*.tar.gz
+concefor.db*

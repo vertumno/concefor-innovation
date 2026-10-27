@@ -1,0 +1,81 @@
+{
+  "_fonte": "Playlist do canal do Cefor no YouTube, lida com yt-dlp em 27/08/2026. O campo `inicio` é a hora REAL em que a transmissão começou (release_timestamp da live), não a hora prevista na programação — é dela que sai o cálculo do ponto exato de cada momento dentro do vídeo.",
+  "_atencao": "A playlist tem 8 posições, mas uma delas (xTpf67HEvlQ) está privada ou removida e por isso ficou de fora: linkar daria página de erro. Os títulos abaixo são os ORIGINAIS em português — o YouTube às vezes devolve versões auto-traduzidas para inglês em novas consultas.",
+  "_porQueSessoesExplicitas": "O vínculo vídeo↔sessão é declarado à mão, e NÃO deduzido do horário. O congresso tinha sessões simultâneas em salas diferentes: a Mostra de Produtos rodava no Auditório do 4º piso enquanto a mesa Tecnologia Delas acontecia no Pátio, e casar por tempo dava à Mostra o vídeo da mesa. O horário continua servindo para calcular o PONTO dentro do vídeo — só não serve para decidir de quem ele é. Achou um vídeo no lugar errado? É esta lista que se corrige.",
+  "playlist": "https://www.youtube.com/playlist?list=PLHKM4BxClqXU",
+  "canal": "Ifes Cefor",
+  "videos": [
+    {
+      "id": "okyYHQ1sM1k",
+      "titulo": "Abertura e Palestra \"20 Anos de EaD e o Cefor\" — Dra. Vanessa Battestin",
+      "inicio": "2026-08-17T18:09:01-03:00",
+      "duracaoSegundos": 9385,
+      "sessoes": [
+        "even3-1485781-20260817-1800",
+        "even3-1412334-20260817-1830",
+        "even3-1412335-20260817-1900",
+        "even3-1485786-20260817-2000"
+      ],
+      "nota": "Bloco único da noite de abertura: pega o Momento Musical, a Abertura, a palestra da Vanessa e os Lançamentos.",
+      "_semCelebracao": "A transmissão termina 20h45:26, e a Celebração dos 20 anos começa 20h45 — 26 segundos de sobreposição. Linkar a Celebração aqui mandaria quem clicasse para o último suspiro do vídeo, então ela ficou de fora. O bolo e a confraternização não foram gravados."
+    },
+    {
+      "id": "dsr8kUkwnGA",
+      "titulo": "Mesa-Redonda \"Tecnologia Delas\" — Dra. Márcia, Dra. Jaqueline e Dra. Mariella",
+      "inicio": "2026-08-18T09:55:16-03:00",
+      "duracaoSegundos": 7030,
+      "sessoes": [
+        "even3-1412342-20260818-0930"
+      ]
+    },
+    {
+      "id": "C5grho_vUwI",
+      "titulo": "Palestra internacional \"Tecnologia, Transformação e EaD: 20 anos construindo novos cenários educacionais\"",
+      "inicio": "2026-08-18T15:10:37-03:00",
+      "duracaoSegundos": 4755,
+      "sessoes": [
+        "even3-1412345-20260818-1430"
+      ],
+      "nota": "O título no YouTube traz o tema do evento e não nomeia o palestrante; pelo horário é a palestra do Dr. Felipe Tessarolo, e a transmissão começou 25 min depois do início da sessão."
+    },
+    {
+      "id": "4-7Ckd7LNEY",
+      "titulo": "Mesa-Redonda \"Desafios da EaD para os próximos 20 anos\" — Dr. Felipe, Dra. Rutinelli",
+      "inicio": "2026-08-19T09:47:31-03:00",
+      "duracaoSegundos": 7355,
+      "sessoes": [
+        "even3-1412350-20260819-0930"
+      ]
+    },
+    {
+      "id": "2fCU8tmmXoo",
+      "titulo": "Palestra \"Desafios da EaD e as ondas de IA\" — Prof. Dr. Mariano Pimentel",
+      "inicio": "2026-08-19T14:43:16-03:00",
+      "duracaoSegundos": 5670,
+      "sessoes": [
+        "even3-1412354-20260819-1430"
+      ],
+      "nota": "O título da transmissão difere do título na programação (\"Autoria com IA generativa: desafios para a EaD\")."
+    },
+    {
+      "id": "J8k-35kT6ac",
+      "titulo": "Palestra \"Inovações da IA para a Educação\" — Dr. Mauro Oliveira",
+      "inicio": "2026-08-19T17:08:16-03:00",
+      "duracaoSegundos": 6447,
+      "sessoes": [
+        "even3-1492265-20260819-1630"
+      ]
+    },
+    {
+      "id": "A-XIVDMUU7w",
+      "titulo": "EDUCIMAT: 15 anos elaborando produtos, tecendo saberes e modificando vidas",
+      "inicio": "2026-08-20T13:30:07-03:00",
+      "duracaoSegundos": 12240,
+      "sessoes": [
+        "even3-1412364-20260820-1330"
+      ],
+      "nota": "Uma das atividades do Momento II de eventos paralelos, no pátio."
+    }
+  ],
+  "_semGravacao": "Momento Cultural, as duas Mostras de Produtos, as Sessões técnicas, o Momento I do dia 20 e a Premiação não foram transmitidos — por isso não aparecem em nenhuma lista de sessões. A Premiação é a principal candidata a ser o vídeo indisponível da playlist."
+}
